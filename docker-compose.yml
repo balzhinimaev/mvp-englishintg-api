@@ -22,8 +22,6 @@ services:
       - SELF_EMPLOYED_INN=${SELF_EMPLOYED_INN:-}
       - BOT_API_URL=${BOT_API_URL:-}
       - BOT_API_KEY=${BOT_API_KEY:-}
-    depends_on:
-      - mongodb
     networks:
       - burlive-network
 
