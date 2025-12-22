@@ -9,16 +9,16 @@ services:
     restart: unless-stopped
     ports:
       - "7777:7777"
-    # Используем bridge сеть для изоляции контейнера
-    # Для подключения к MongoDB на хосте используем host.docker.internal (Linux) или IP хоста
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    # Подключаемся к внешней сети db_default, где работает MongoDB
+    networks:
+      - db_default
     environment:
       - NODE_ENV=production
       - PORT=7777
-      # Подключение к MongoDB на хосте через host.docker.internal или IP хоста
-      - MONGODB_URI=${MONGODB_URI:-mongodb://host.docker.internal:27017/english-db}
-      - MONGO_URI=${MONGO_URI:-mongodb://host.docker.internal:27017/english-db}
+      # Подключение к MongoDB по имени контейнера (в одной сети)
+      # Формат: mongodb://user:password@mongodb:27017/dbname?authSource=admin
+      - MONGODB_URI=${MONGODB_URI}
+      - MONGO_URI=${MONGO_URI}
       - MONGODB_DB_NAME=${MONGODB_DB_NAME:-english-db}
       - JWT_SECRET=${JWT_SECRET}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
@@ -28,4 +28,9 @@ services:
       - SELF_EMPLOYED_INN=${SELF_EMPLOYED_INN:-}
       - BOT_API_URL=${BOT_API_URL:-}
       - BOT_API_KEY=${BOT_API_KEY:-}
+
+# Внешняя сеть, где работает MongoDB (из /opt/db)
+networks:
+  db_default:
+    external: true
 
