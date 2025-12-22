@@ -12,7 +12,8 @@ services:
     environment:
       - NODE_ENV=production
       - PORT=7777
-      - MONGO_URI=mongodb://mongodb:27017
+      - MONGODB_URI=${MONGODB_URI}
+      - MONGO_URI=${MONGO_URI}
       - MONGODB_DB_NAME=${MONGODB_DB_NAME:-}
       - JWT_SECRET=${JWT_SECRET}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
