@@ -9,13 +9,16 @@ services:
     restart: unless-stopped
     ports:
       - "7777:7777"
-    # MongoDB на хосте → нужен network_mode: host
-    network_mode: host
+    # Используем bridge сеть для изоляции контейнера
+    # Для подключения к MongoDB на хосте используем host.docker.internal (Linux) или IP хоста
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       - NODE_ENV=production
       - PORT=7777
-      - MONGODB_URI=${MONGODB_URI:-}
-      - MONGO_URI=${MONGO_URI:-}
+      # Подключение к MongoDB на хосте через host.docker.internal или IP хоста
+      - MONGODB_URI=${MONGODB_URI:-mongodb://host.docker.internal:27017/english-db}
+      - MONGO_URI=${MONGO_URI:-mongodb://host.docker.internal:27017/english-db}
       - MONGODB_DB_NAME=${MONGODB_DB_NAME:-english-db}
       - JWT_SECRET=${JWT_SECRET}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
