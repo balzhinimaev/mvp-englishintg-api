@@ -12,9 +12,13 @@ WORKDIR /app
 ENV NODE_ENV=production
 
 COPY --from=builder /app/package*.json ./
-RUN npm install --omit=dev --no-audit --no-fund
+RUN npm install --omit=dev --no-audit --no-fund && \
+    npm install ts-node typescript --save --no-audit --no-fund
 
 COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/scripts ./scripts
+COPY --from=builder /app/tsconfig.json ./tsconfig.json
+COPY --from=builder /app/seeds ./seeds
 
 EXPOSE 7777
 
