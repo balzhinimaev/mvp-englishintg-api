@@ -7,14 +7,14 @@ services:
       dockerfile: Dockerfile
     container_name: english-api
     restart: unless-stopped
-    ports:
-      - "7777:7777"
+    # MongoDB на хосте → нужен network_mode: host
+    network_mode: host
     environment:
       - NODE_ENV=production
       - PORT=7777
       - MONGODB_URI=${MONGODB_URI:-}
       - MONGO_URI=${MONGO_URI:-}
-      - MONGODB_DB_NAME=${MONGODB_DB_NAME:-}
+      - MONGODB_DB_NAME=${MONGODB_DB_NAME:-english-db}
       - JWT_SECRET=${JWT_SECRET}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
       - YOOKASSA_SHOP_ID=${YOOKASSA_SHOP_ID:-}
@@ -23,25 +23,4 @@ services:
       - SELF_EMPLOYED_INN=${SELF_EMPLOYED_INN:-}
       - BOT_API_URL=${BOT_API_URL:-}
       - BOT_API_KEY=${BOT_API_KEY:-}
-    networks:
-      - burlive-network
-
-  # mongodb:
-  #   image: mongo:7
-  #   container_name: burlive-mongodb
-  #   restart: unless-stopped
-  #   ports:
-  #     - "27017:27017"
-  #   volumes:
-  #     - mongodb_data:/data/db
-  #     - mongodb_config:/data/configdb
-  #   environment:
-  #     - MONGO_INITDB_DATABASE=${MONGODB_DB_NAME:-burlang-db}
-  #   networks:
-  #     - burlive-network
-  #   command: mongod --bind_ip_all
-
-networks:
-  burlive-network:
-    driver: bridge
 
