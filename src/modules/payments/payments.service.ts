@@ -618,7 +618,7 @@ export class PaymentsService {
         }
       };
 
-      const response = await fetch(`${this.botApiUrl}/api/payment-creation-log`, {
+      const response = await fetch(`${this.botApiUrl}/payment-creation-log`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -664,7 +664,7 @@ export class PaymentsService {
         tariffName: tariffNames[product]
       };
 
-      const url = `${this.botApiUrl}/api/payment-log`;
+      const url = `${this.botApiUrl}/payment-log`;
       this.logger.log(`📤 Sending payment success notification to Bot API:`);
       this.logger.log(`   URL: ${url}`);
       this.logger.log(`   UserId: ${userId}`);
