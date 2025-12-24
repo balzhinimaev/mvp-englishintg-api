@@ -323,7 +323,21 @@ export class PaymentsService {
    * Create payment via YooKassa API
    * Based on: https://yookassa.ru/developers/payment-acceptance/getting-started/quick-start
    */
-  async createPayment(request: CreatePaymentRequest): Promise<{ paymentUrl: string; paymentId: string }> {
+  async createPayment(request: CreatePaymentRequest): Promise<{
+    paymentUrl: string;
+    paymentId: string;
+    amount: number;
+    createdAt: Date;
+    paymentMethod: string;
+    user: {
+      userId: string;
+      username?: string;
+      firstName?: string;
+      lastName?: string;
+      email?: string;
+    };
+    cohort: string;
+  }> {
     if (!this.shopId || !this.secretKey) {
       throw new BadRequestException('YooKassa credentials not configured');
     }
@@ -472,7 +486,8 @@ export class PaymentsService {
       this.logger.log(`Payment description in response: ${paymentResponse.description}`);
 
       // Save payment to database immediately
-      await this.paymentModel.create([{
+      const createdAt = new Date();
+      const savedPayment = await this.paymentModel.create([{
         userId: request.userId,
         provider: 'yookassa',
         providerId: paymentResponse.id,
@@ -503,7 +518,18 @@ export class PaymentsService {
 
       return {
         paymentUrl: paymentResponse.confirmation.confirmation_url,
-        paymentId: paymentResponse.id
+        paymentId: paymentResponse.id,
+        amount: amount,
+        createdAt: createdAt,
+        paymentMethod: 'yookassa',
+        user: {
+          userId: user.userId,
+          username: user.username,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email
+        },
+        cohort: cohort
       };
 
     } catch (error: any) {
