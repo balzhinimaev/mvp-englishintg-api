@@ -46,17 +46,17 @@ interface YooKassaPaymentResponse {
 
 interface BotPaymentCreationLog {
   userId: number;
-  username: string;
+  username?: string;
   firstName: string;
   lastName: string;
   paymentId: string;
   amount: number;
   currency: string;
   tariffName: string;
-  utm: {
-    utm_source: string;
-    utm_medium: string;
-  };
+  utm: Record<string, string>;
+  userRegistrationDate?: string;
+  paymentCreationDate: string;
+  product: 'monthly' | 'quarterly' | 'yearly';
 }
 
 interface BotPaymentSuccessLog {
@@ -530,7 +530,7 @@ export class PaymentsService {
       }]);
 
       // Log payment creation to bot API
-      await this.logPaymentCreation(user, paymentResponse.id, amount, request.product);
+      await this.logPaymentCreation(user, paymentResponse.id, amount, request.product, createdAt);
 
       return {
         paymentUrl: paymentResponse.confirmation.confirmation_url,
@@ -590,7 +590,7 @@ export class PaymentsService {
   /**
    * Log payment creation to bot API
    */
-  private async logPaymentCreation(user: any, paymentId: string, amount: number, product: string): Promise<void> {
+  private async logPaymentCreation(user: any, paymentId: string, amount: number, product: 'monthly' | 'quarterly' | 'yearly', paymentCreationDate: Date): Promise<void> {
     if (!this.botApiUrl || !this.botApiKey) {
       this.logger.warn('Bot API credentials not configured, skipping payment creation log');
       return;
@@ -603,19 +603,22 @@ export class PaymentsService {
         yearly: 'Премиум на год'
       };
 
+      // Get UTM from user (prefer firstUtm, fallback to lastUtm, or empty object)
+      const utm = user.firstUtm || user.lastUtm || {};
+
       const logData: BotPaymentCreationLog = {
         userId: parseInt(user.userId),
-        username: user.username || 'unknown',
+        username: user.username,
         firstName: user.firstName || 'Unknown',
         lastName: user.lastName || 'User',
         paymentId: paymentId,
         amount: amount / 100, // Convert from cents to rubles
         currency: 'RUB',
-        tariffName: tariffNames[product as keyof typeof tariffNames] || product,
-        utm: {
-          utm_source: 'telegram',
-          utm_medium: 'bot'
-        }
+        tariffName: tariffNames[product] || product,
+        utm: utm,
+        userRegistrationDate: user.createdAt ? new Date(user.createdAt).toISOString() : undefined,
+        paymentCreationDate: paymentCreationDate.toISOString(),
+        product: product
       };
 
       const response = await fetch(`${this.botApiUrl}/payment-creation-log`, {
