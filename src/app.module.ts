@@ -28,10 +28,30 @@ import configuration from './config/configuration';
       },
     }),
     MongooseModule.forRootAsync({
-      useFactory: (configService: ConfigService) => ({
-        uri: configService.get<string>('app.database.uri'),
-        dbName: configService.get<string>('app.database.dbName'),
-      }),
+      useFactory: (configService: ConfigService) => {
+        const uri = configService.get<string>('app.database.uri');
+        const dbName = configService.get<string>('app.database.dbName');
+        
+        // Log connection details (without credentials)
+        if (uri) {
+          const uriForLog = uri.replace(/\/\/[^:]+:[^@]+@/, '//***:***@');
+          console.log(`🔌 Connecting to MongoDB: ${uriForLog}`);
+          console.log(`📚 Database name: ${dbName}`);
+        } else {
+          console.error('❌ ERROR: MongoDB URI is empty!');
+          console.error('   Please set MONGODB_URI or MONGO_URI environment variable');
+        }
+        
+        return {
+          uri,
+          dbName,
+          // Options for replica set support
+          serverSelectionTimeoutMS: 10000, // 10 seconds timeout for server selection
+          retryWrites: true, // Enable retryable writes (required for transactions)
+          retryReads: true, // Enable retryable reads
+          // Note: directConnection is automatically false when replicaSet is in URI
+        };
+      },
       inject: [ConfigService],
     }),
     AuthModule,

@@ -12,9 +12,19 @@ export const validationSchema = Joi.object({
   
   PORT: Joi.number().default(7777),
   
+  // Support both MONGODB_URI and MONGO_URI (at least one must be set)
   MONGODB_URI: Joi.string()
-    .required()
-    .description('URI подключения к MongoDB'),
+    .optional()
+    .description('URI подключения к MongoDB (альтернатива: MONGO_URI)'),
+  
+  MONGO_URI: Joi.string()
+    .optional()
+    .description('URI подключения к MongoDB (альтернатива: MONGODB_URI)'),
+  
+  MONGODB_REPLICA_SET: Joi.string()
+    .optional()
+    .default('rs0')
+    .description('Имя replica set MongoDB (по умолчанию: rs0). Параметр replicaSet будет автоматически добавлен в URI, если отсутствует.'),
   
   MONGODB_DB_NAME: Joi.string()
     .default('burlang-db')

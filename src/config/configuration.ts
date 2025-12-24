@@ -34,13 +34,41 @@ export interface AppConfig {
   botApi: BotApiConfig;
 }
 
-export default registerAs('app', (): AppConfig => ({
-  port: parseInt(process.env.PORT || '7777', 10),
-  nodeEnv: process.env.NODE_ENV || 'development',
-  database: {
-    uri: process.env.MONGODB_URI || '',
-    dbName: process.env.MONGODB_DB_NAME || 'burlang-db',
-  },
+export default registerAs('app', (): AppConfig => {
+  // Support both MONGODB_URI and MONGO_URI for compatibility
+  let mongoUri = process.env.MONGODB_URI || process.env.MONGO_URI || '';
+  
+  // Validate that at least one MongoDB URI is set
+  if (!mongoUri) {
+    const error = new Error(
+      'MongoDB connection URI is required. Please set MONGODB_URI or MONGO_URI environment variable.'
+    );
+    console.error('❌ Configuration Error:', error.message);
+    throw error;
+  }
+  
+  // If MongoDB is configured as replica set, ensure replicaSet parameter is present
+  const replicaSetName = process.env.MONGODB_REPLICA_SET || 'rs0';
+  const hasReplicaSet = mongoUri.includes('replicaSet=');
+  
+  if (!hasReplicaSet) {
+    // Add replicaSet parameter if not present
+    const separator = mongoUri.includes('?') ? '&' : '?';
+    mongoUri = `${mongoUri}${separator}replicaSet=${replicaSetName}`;
+    console.log(`🔧 Added replicaSet=${replicaSetName} parameter to MongoDB URI (required for replica set mode)`);
+  }
+  
+  // Log connection info (without credentials)
+  const uriForLog = mongoUri.replace(/\/\/[^:]+:[^@]+@/, '//***:***@');
+  console.log(`📦 MongoDB URI configured: ${uriForLog}`);
+  
+  return {
+    port: parseInt(process.env.PORT || '7777', 10),
+    nodeEnv: process.env.NODE_ENV || 'development',
+    database: {
+      uri: mongoUri,
+      dbName: process.env.MONGODB_DB_NAME || 'burlang-db',
+    },
   auth: {
     jwtSecret: process.env.JWT_SECRET || '',
     telegramBotToken: process.env.TELEGRAM_BOT_TOKEN || '',
@@ -54,9 +82,10 @@ export default registerAs('app', (): AppConfig => ({
     yookassaApiUrl: process.env.YOOKASSA_API_URL || 'https://api.yookassa.ru/v3',
     selfEmployedInn: process.env.SELF_EMPLOYED_INN,
   },
-  botApi: {
-    url: process.env.BOT_API_URL,
-    key: process.env.BOT_API_KEY,
-  },
-}));
+    botApi: {
+      url: process.env.BOT_API_URL,
+      key: process.env.BOT_API_KEY,
+    },
+  };
+});
 

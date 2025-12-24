@@ -17,8 +17,10 @@ services:
       - PORT=7777
       # Подключение к MongoDB по имени контейнера (в одной сети)
       # Формат: mongodb://user:password@mongodb:27017/dbname?authSource=admin
+      # Если MongoDB запущен как replica set, параметр replicaSet=rs0 будет добавлен автоматически
       - MONGODB_URI=${MONGODB_URI}
       - MONGO_URI=${MONGO_URI}
+      - MONGODB_REPLICA_SET=${MONGODB_REPLICA_SET:-rs0}
       - MONGODB_DB_NAME=${MONGODB_DB_NAME:-english-db}
       - JWT_SECRET=${JWT_SECRET}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
