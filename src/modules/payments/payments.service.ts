@@ -66,6 +66,8 @@ interface BotPaymentSuccessLog {
   currency: string;
   registrationTime: string;
   paymentTime: string;
+  product: 'monthly' | 'quarterly' | 'yearly';
+  tariffName?: string;
 }
 
 @Injectable()
@@ -173,13 +175,27 @@ export class PaymentsService {
           const base = existing?.endsAt && existing.endsAt > now ? existing.endsAt : now;
           const newEndsAt = new Date(base.getTime() + durationDays * 24 * 60 * 60 * 1000);
 
+          const startsAt = existing?.startsAt || now;
           await this.entitlementModel.updateOne(
             { userId: payload.userId, product: payload.product },
             {
-              $setOnInsert: { startsAt: existing?.startsAt || now },
+              $setOnInsert: { startsAt },
               $set: { endsAt: newEndsAt },
             },
             { upsert: true, session },
+          );
+
+          // Update user.pro to reflect active premium subscription
+          await this.userModel.updateOne(
+            { userId: payload.userId },
+            {
+              $set: {
+                'pro.active': true,
+                'pro.since': startsAt,
+                'pro.plan': payload.product,
+              },
+            },
+            { session },
           );
 
           const user = await this.userModel.findOne({ userId: payload.userId }).lean();
@@ -202,7 +218,7 @@ export class PaymentsService {
           // Log successful payment to bot API
           const registrationTime = new Date().toISOString();
           const paymentTime = new Date().toISOString();
-          await this.logPaymentSuccess(payload.userId, payload.providerId, payload.amount, registrationTime, paymentTime);
+          await this.logPaymentSuccess(payload.userId, payload.providerId, payload.amount, registrationTime, paymentTime, payload.product);
         }
       });
 
@@ -624,20 +640,28 @@ export class PaymentsService {
   /**
    * Log successful payment to bot API
    */
-  private async logPaymentSuccess(userId: string, paymentId: string, amount: number, registrationTime: string, paymentTime: string): Promise<void> {
+  private async logPaymentSuccess(userId: string, paymentId: string, amount: number, registrationTime: string, paymentTime: string, product: 'monthly' | 'quarterly' | 'yearly'): Promise<void> {
     if (!this.botApiUrl || !this.botApiKey) {
       this.logger.warn('Bot API credentials not configured, skipping payment success log');
       return;
     }
 
     try {
+      const tariffNames = {
+        monthly: 'Премиум на месяц',
+        quarterly: 'Премиум на квартал',
+        yearly: 'Премиум на год'
+      };
+
       const logData: BotPaymentSuccessLog = {
         userId: parseInt(userId),
         paymentId: paymentId,
         amount: amount / 100, // Convert from cents to rubles
         currency: 'RUB',
         registrationTime: registrationTime,
-        paymentTime: paymentTime
+        paymentTime: paymentTime,
+        product: product,
+        tariffName: tariffNames[product]
       };
 
       const response = await fetch(`${this.botApiUrl}/api/payment-log`, {
