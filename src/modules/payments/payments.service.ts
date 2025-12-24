@@ -664,7 +664,16 @@ export class PaymentsService {
         tariffName: tariffNames[product]
       };
 
-      const response = await fetch(`${this.botApiUrl}/api/payment-log`, {
+      const url = `${this.botApiUrl}/api/payment-log`;
+      this.logger.log(`📤 Sending payment success notification to Bot API:`);
+      this.logger.log(`   URL: ${url}`);
+      this.logger.log(`   UserId: ${userId}`);
+      this.logger.log(`   PaymentId: ${paymentId}`);
+      this.logger.log(`   Product: ${product} (${tariffNames[product]})`);
+      this.logger.log(`   Amount: ${logData.amount} ${logData.currency}`);
+      this.logger.log(`   Request data: ${JSON.stringify(logData, null, 2)}`);
+
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -673,13 +682,35 @@ export class PaymentsService {
         body: JSON.stringify(logData)
       });
 
+      this.logger.log(`📥 Bot API response status: ${response.status} ${response.statusText}`);
+
       if (!response.ok) {
-        this.logger.error(`Failed to log payment success: ${response.status} - ${await response.text()}`);
+        const errorText = await response.text();
+        this.logger.error(`❌ Failed to log payment success to Bot API:`);
+        this.logger.error(`   Status: ${response.status} ${response.statusText}`);
+        this.logger.error(`   Response body: ${errorText}`);
+        this.logger.error(`   URL: ${url}`);
+        this.logger.error(`   UserId: ${userId}, PaymentId: ${paymentId}`);
       } else {
-        this.logger.log(`Payment success logged successfully for user ${userId}`);
+        const responseText = await response.text();
+        this.logger.log(`✅ Payment success logged successfully to Bot API for user ${userId}`);
+        if (responseText) {
+          this.logger.log(`   Response: ${responseText}`);
+        }
       }
     } catch (error: any) {
-      this.logger.error(`Error logging payment success: ${error.message}`);
+      this.logger.error(`❌ Error logging payment success to Bot API:`);
+      this.logger.error(`   Error message: ${error.message}`);
+      this.logger.error(`   Error type: ${error.constructor.name}`);
+      if (error.stack) {
+        this.logger.error(`   Stack trace: ${error.stack}`);
+      }
+      if (error.cause) {
+        this.logger.error(`   Cause: ${JSON.stringify(error.cause, null, 2)}`);
+      }
+      this.logger.error(`   UserId: ${userId}, PaymentId: ${paymentId}`);
+      this.logger.error(`   Bot API URL: ${this.botApiUrl}`);
+      this.logger.error(`   Bot API Key configured: ${!!this.botApiKey}`);
     }
   }
 }
