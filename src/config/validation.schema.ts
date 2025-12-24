@@ -31,13 +31,26 @@ export const validationSchema = Joi.object({
   
   // Опциональные переменные
   // YooKassa платежи (опционально, требуются только если используется функционал платежей)
+  YOOKASSA_MODE: Joi.string()
+    .valid('test', 'production')
+    .default('production')
+    .description('Режим работы YooKassa: test (тестовый магазин) или production (боевой магазин)'),
+  
   YOOKASSA_SHOP_ID: Joi.string()
     .optional()
-    .description('ID магазина в YooKassa (требуется для работы платежей)'),
+    .description('ID магазина в YooKassa для production режима (требуется для работы платежей)'),
   
   YOOKASSA_SECRET_KEY: Joi.string()
     .optional()
-    .description('Секретный ключ YooKassa (требуется для работы платежей)'),
+    .description('Секретный ключ YooKassa для production режима (требуется для работы платежей)'),
+  
+  YOOKASSA_TEST_SHOP_ID: Joi.string()
+    .optional()
+    .description('ID тестового магазина в YooKassa для test режима'),
+  
+  YOOKASSA_TEST_SECRET_KEY: Joi.string()
+    .optional()
+    .description('Секретный ключ тестового магазина YooKassa для test режима'),
   
   YOOKASSA_API_URL: Joi.string()
     .uri()

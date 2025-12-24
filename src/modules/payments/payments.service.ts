@@ -1,4 +1,5 @@
 import { Injectable, Logger, BadRequestException } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import { Connection, Model } from 'mongoose';
 import { Payment, PaymentDocument } from '../common/schemas/payment.schema';
@@ -71,6 +72,12 @@ interface BotPaymentSuccessLog {
 export class PaymentsService {
   private readonly logger = new Logger(PaymentsService.name);
 
+  // YooKassa API configuration
+  private readonly yookassaApiUrl: string;
+  private readonly shopId: string | undefined;
+  private readonly secretKey: string | undefined;
+  private readonly yookassaMode: 'test' | 'production';
+
   constructor(
     @InjectModel(Payment.name) private readonly paymentModel: Model<PaymentDocument>,
     @InjectModel(Entitlement.name) private readonly entitlementModel: Model<EntitlementDocument>,
@@ -79,12 +86,24 @@ export class PaymentsService {
     @InjectModel(User.name) private readonly userModel: Model<UserDocument>,
     @InjectModel(UserLessonProgress.name) private readonly progressModel: Model<UserLessonProgressDocument>,
     private readonly pricingService: PricingService,
-  ) {}
-
-  // YooKassa API configuration
-  private readonly yookassaApiUrl = process.env.YOOKASSA_API_URL || 'https://api.yookassa.ru/v3';
-  private readonly shopId = process.env.YOOKASSA_SHOP_ID;
-  private readonly secretKey = process.env.YOOKASSA_SECRET_KEY;
+    private readonly configService: ConfigService,
+  ) {
+    // Get YooKassa mode (test or production)
+    this.yookassaMode = this.configService.get<'test' | 'production'>('app.payment.yookassaMode', 'production');
+    
+    // Select credentials based on mode
+    if (this.yookassaMode === 'test') {
+      this.shopId = this.configService.get<string>('app.payment.yookassaTestShopId');
+      this.secretKey = this.configService.get<string>('app.payment.yookassaTestSecretKey');
+      this.logger.log(`🔧 YooKassa mode: TEST (using test shop credentials)`);
+    } else {
+      this.shopId = this.configService.get<string>('app.payment.yookassaShopId');
+      this.secretKey = this.configService.get<string>('app.payment.yookassaSecretKey');
+      this.logger.log(`🔧 YooKassa mode: PRODUCTION (using production shop credentials)`);
+    }
+    
+    this.yookassaApiUrl = this.configService.get<string>('app.payment.yookassaApiUrl', 'https://api.yookassa.ru/v3');
+  }
 
   // Bot API configuration for logging
   private readonly botApiUrl = process.env.BOT_API_URL;

@@ -11,8 +11,11 @@ export interface AuthConfig {
 }
 
 export interface PaymentConfig {
+  yookassaMode?: 'test' | 'production';
   yookassaShopId?: string;
   yookassaSecretKey?: string;
+  yookassaTestShopId?: string;
+  yookassaTestSecretKey?: string;
   yookassaApiUrl: string;
   selfEmployedInn?: string;
 }
@@ -43,8 +46,11 @@ export default registerAs('app', (): AppConfig => ({
     telegramBotToken: process.env.TELEGRAM_BOT_TOKEN || '',
   },
   payment: {
+    yookassaMode: (process.env.YOOKASSA_MODE as 'test' | 'production') || 'production',
     yookassaShopId: process.env.YOOKASSA_SHOP_ID || '',
     yookassaSecretKey: process.env.YOOKASSA_SECRET_KEY || '',
+    yookassaTestShopId: process.env.YOOKASSA_TEST_SHOP_ID || '',
+    yookassaTestSecretKey: process.env.YOOKASSA_TEST_SECRET_KEY || '',
     yookassaApiUrl: process.env.YOOKASSA_API_URL || 'https://api.yookassa.ru/v3',
     selfEmployedInn: process.env.SELF_EMPLOYED_INN,
   },

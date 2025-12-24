@@ -54,19 +54,40 @@
 
 ## Опциональные переменные
 
+### `YOOKASSA_MODE`
+- **Тип**: `string`
+- **Значения**: `test` | `production`
+- **По умолчанию**: `production`
+- **Описание**: Режим работы YooKassa: `test` (тестовый магазин) или `production` (боевой магазин)
+- **Примечание**: В зависимости от режима используются разные credentials (см. ниже)
+
 ### `YOOKASSA_SHOP_ID`
 - **Тип**: `string`
 - **Обязательно**: Нет
-- **Описание**: ID магазина в YooKassa
+- **Описание**: ID магазина в YooKassa для production режима
 - **Где найти**: В личном кабинете YooKassa
-- **Примечание**: Требуется только если используется функционал платежей YooKassa. Если не указан, методы создания платежей будут возвращать ошибку "YooKassa credentials not configured"
+- **Примечание**: Используется только когда `YOOKASSA_MODE=production`. Требуется только если используется функционал платежей YooKassa. Если не указан, методы создания платежей будут возвращать ошибку "YooKassa credentials not configured"
 
 ### `YOOKASSA_SECRET_KEY`
 - **Тип**: `string`
 - **Обязательно**: Нет
-- **Описание**: Секретный ключ YooKassa
+- **Описание**: Секретный ключ YooKassa для production режима
 - **Где найти**: В личном кабинете YooKassa
-- **Примечание**: Требуется только если используется функционал платежей YooKassa. Если не указан, методы создания платежей будут возвращать ошибку "YooKassa credentials not configured"
+- **Примечание**: Используется только когда `YOOKASSA_MODE=production`. Требуется только если используется функционал платежей YooKassa. Если не указан, методы создания платежей будут возвращать ошибку "YooKassa credentials not configured"
+
+### `YOOKASSA_TEST_SHOP_ID`
+- **Тип**: `string`
+- **Обязательно**: Нет
+- **Описание**: ID тестового магазина в YooKassa для test режима
+- **Где найти**: В личном кабинете YooKassa (тестовый магазин)
+- **Примечание**: Используется только когда `YOOKASSA_MODE=test`
+
+### `YOOKASSA_TEST_SECRET_KEY`
+- **Тип**: `string`
+- **Обязательно**: Нет
+- **Описание**: Секретный ключ тестового магазина YooKassa для test режима
+- **Где найти**: В личном кабинете YooKassa (тестовый магазин)
+- **Примечание**: Используется только когда `YOOKASSA_MODE=test`
 
 ### `YOOKASSA_API_URL`
 - **Тип**: `string`
@@ -117,9 +138,21 @@ JWT_SECRET=your-super-secret-jwt-key-minimum-32-characters-long
 TELEGRAM_BOT_TOKEN=1234567890:ABCdefGHIjklMNOpqrsTUVwxyz
 
 # Платежи YooKassa (опционально, требуются только если используется функционал платежей)
+# Режим работы: test (тестовый магазин) или production (боевой магазин)
+YOOKASSA_MODE=production
+
+# Production магазин (используется когда YOOKASSA_MODE=production)
 # YOOKASSA_SHOP_ID=123456
 # YOOKASSA_SECRET_KEY=live_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Test магазин (используется когда YOOKASSA_MODE=test)
+# YOOKASSA_TEST_SHOP_ID=123456
+# YOOKASSA_TEST_SECRET_KEY=test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# URL API YooKassa (по умолчанию https://api.yookassa.ru/v3)
 # YOOKASSA_API_URL=https://api.yookassa.ru/v3
+
+# ИНН самозанятого для автоматической регистрации чеков в "Мой налог"
 # SELF_EMPLOYED_INN=123456789012
 
 # API бота (опционально)
