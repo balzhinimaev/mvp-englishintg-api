@@ -61,6 +61,9 @@ interface BotPaymentCreationLog {
 
 interface BotPaymentSuccessLog {
   userId: number;
+  username?: string;
+  firstName: string;
+  lastName: string;
   paymentId: string;
   amount: number;
   currency: string;
@@ -216,9 +219,17 @@ export class PaymentsService {
           ], { session });
 
           // Log successful payment to bot API
-          const registrationTime = new Date().toISOString();
+          const registrationTime = user?.createdAt ? new Date(user.createdAt).toISOString() : new Date().toISOString();
           const paymentTime = new Date().toISOString();
-          await this.logPaymentSuccess(payload.userId, payload.providerId, payload.amount, registrationTime, paymentTime, payload.product);
+          await this.logPaymentSuccess(
+            payload.userId,
+            payload.providerId,
+            payload.amount,
+            registrationTime,
+            paymentTime,
+            payload.product,
+            user
+          );
         }
       });
 
@@ -643,7 +654,7 @@ export class PaymentsService {
   /**
    * Log successful payment to bot API
    */
-  private async logPaymentSuccess(userId: string, paymentId: string, amount: number, registrationTime: string, paymentTime: string, product: 'monthly' | 'quarterly' | 'yearly'): Promise<void> {
+  private async logPaymentSuccess(userId: string, paymentId: string, amount: number, registrationTime: string, paymentTime: string, product: 'monthly' | 'quarterly' | 'yearly', user: any): Promise<void> {
     if (!this.botApiUrl || !this.botApiKey) {
       this.logger.warn('Bot API credentials not configured, skipping payment success log');
       return;
@@ -658,6 +669,9 @@ export class PaymentsService {
 
       const logData: BotPaymentSuccessLog = {
         userId: parseInt(userId),
+        username: user?.username,
+        firstName: user?.firstName || 'Unknown',
+        lastName: user?.lastName || 'User',
         paymentId: paymentId,
         amount: amount / 100, // Convert from cents to rubles
         currency: 'RUB',
