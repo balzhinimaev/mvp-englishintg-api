@@ -11,13 +11,39 @@ import {
   VocabularyResponseDto,
   VocabularyProgressResponseDto,
   UserWordProgressResponseDto,
-  SyncVocabularyResponseDto
+  SyncVocabularyResponseDto,
+  VocabularyStatsResponseDto
 } from './dto/vocabulary.dto';
 
 @Controller('vocabulary')
 @UseGuards(JwtAuthGuard)
 export class VocabularyController {
   constructor(private readonly vocabularyService: VocabularyService) {}
+
+  /**
+   * Get comprehensive vocabulary statistics for the current user
+   * GET /vocabulary/stats
+   * 
+   * Returns statistics including:
+   * - Summary (learned, learning, notStarted, total, percentage)
+   * - By difficulty (easy, medium, hard)
+   * - By category (travel, food, etc.)
+   * - By part of speech (noun, verb, etc.)
+   * - Recent activity
+   * - Streak information
+   * - Weekly progress
+   */
+  @Get('stats')
+  async getVocabularyStats(
+    @Request() req: any
+  ): Promise<VocabularyStatsResponseDto> {
+    const userId = req.user?.userId;
+    if (!userId) {
+      throw new BadRequestException('userId is required');
+    }
+
+    return await this.vocabularyService.getVocabularyStats(userId);
+  }
 
   /**
    * Get vocabulary for a specific module

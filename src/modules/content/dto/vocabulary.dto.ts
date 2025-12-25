@@ -117,3 +117,80 @@ export interface SyncVocabularyResponseDto {
   updated: number;
   message: string;
 }
+
+// ============= VocabularyStats DTOs =============
+
+export interface VocabularySummaryDto {
+  learned: number;
+  learning: number;
+  notStarted: number;
+  total: number;
+  learnedPercentage: number;
+}
+
+export interface VocabularyDifficultyStatsDto {
+  learned: number;
+  learning: number;
+  notStarted: number;
+  total: number;
+  learnedPercentage: number;
+  averageTimeToLearn?: number; // in minutes
+}
+
+export interface VocabularyByDifficultyDto {
+  easy: VocabularyDifficultyStatsDto;
+  medium: VocabularyDifficultyStatsDto;
+  hard: VocabularyDifficultyStatsDto;
+}
+
+export interface VocabularyCategoryStatsDto {
+  categoryKey: string;
+  categoryName: string;
+  learned: number;
+  learning: number;
+  notStarted: number;
+  total: number;
+  learnedPercentage: number;
+  priority: 'high' | 'medium' | 'low';
+}
+
+export interface VocabularyPartOfSpeechStatsDto {
+  partOfSpeech: string;
+  learned: number;
+  total: number;
+  learnedPercentage: number;
+}
+
+export interface VocabularyRecentActivityDto {
+  id: string;
+  wordId: string;
+  word: string;
+  action: 'learned' | 'reviewed' | 'forgot';
+  timestamp: string; // ISO 8601
+  difficulty: 'easy' | 'medium' | 'hard';
+  timeSpent: number; // in seconds
+  score?: number; // 0-100, only for "reviewed"
+}
+
+export interface VocabularyStreakDto {
+  current: number;
+  longest: number;
+  lastLearnedAt?: string; // ISO 8601
+}
+
+export interface VocabularyWeeklyProgressDto {
+  week: string; // format "YYYY-WW"
+  learned: number;
+  reviewed: number;
+  totalTimeSpent: number; // in minutes
+}
+
+export interface VocabularyStatsResponseDto {
+  summary: VocabularySummaryDto;
+  byDifficulty: VocabularyByDifficultyDto;
+  byCategory: Record<string, VocabularyCategoryStatsDto>;
+  byPartOfSpeech: Record<string, VocabularyPartOfSpeechStatsDto>;
+  recentActivity: VocabularyRecentActivityDto[];
+  streak: VocabularyStreakDto;
+  weeklyProgress: VocabularyWeeklyProgressDto[];
+}
