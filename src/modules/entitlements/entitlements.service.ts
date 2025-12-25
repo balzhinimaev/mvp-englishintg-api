@@ -13,6 +13,14 @@ export class EntitlementsService {
     const now = new Date();
     return this.entitlementModel.findOne({ userId, endsAt: { $gt: now } }).lean();
   }
+
+  async getEntitlementByUserId(userId: string): Promise<Entitlement | null> {
+    // Get the latest entitlement (active or expired) sorted by endsAt descending
+    return this.entitlementModel
+      .findOne({ userId })
+      .sort({ endsAt: -1 })
+      .lean();
+  }
 }
 
 
