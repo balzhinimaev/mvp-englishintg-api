@@ -22,8 +22,9 @@ export function presentModule(
     description: choose(doc.description, lang),
     tags: doc.tags || [],
     order: doc.order ?? 0,
-    requiresPro: !!doc.requiresPro,
-    isAvailable: doc.isAvailable !== false,
+    // Используем переданные значения, если они есть, иначе вычисляем из схемы
+    requiresPro: doc.requiresPro !== undefined ? !!doc.requiresPro : false,
+    isAvailable: doc.isAvailable !== undefined ? doc.isAvailable : true,
     progress,
   };
 }
