@@ -8,6 +8,7 @@ import { UserLessonProgress, UserLessonProgressDocument } from '../common/schema
 import { User, UserDocument } from '../common/schemas/user.schema';
 import { presentLesson, presentModule } from './presenter';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { GetModulesDto } from './dto/get-content.dto';
 
 @Controller('content/v2')
 @UseGuards(JwtAuthGuard)
@@ -20,13 +21,37 @@ export class ContentV2Controller {
   ) {}
 
   @Get('modules')
-  async getModules(@Query('lang') lang = 'ru', @Request() req: any) {
+  async getModules(@Query() query: GetModulesDto, @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
       return { error: 'userId is required' };
     }
 
-    const modules = await this.moduleModel.find({ published: true }).sort({ level: 1, order: 1 }).lean();
+    const { level, lang = 'ru', page = 1, limit = 20 } = query;
+    
+    // Валидация level
+    if (level && !['A0', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(level)) {
+      return { error: 'Invalid level' };
+    }
+
+    // Построение фильтра
+    const filter: any = { published: true };
+    if (level) {
+      filter.level = level;
+    }
+
+    // Подсчет общего количества для пагинации
+    const total = await this.moduleModel.countDocuments(filter);
+    const totalPages = Math.ceil(total / limit);
+    const skip = (page - 1) * limit;
+
+    // Получение модулей с пагинацией
+    const modules = await this.moduleModel
+      .find(filter)
+      .sort({ level: 1, order: 1 })
+      .skip(skip)
+      .limit(limit)
+      .lean();
     // для каждого модуля посчитаем прогресс пользователя
     const lessonCounts = await this.lessonModel.aggregate([
       { $match: { published: true } },
@@ -50,7 +75,7 @@ export class ContentV2Controller {
     ]);
     const progresses = new Map(byModule.map((x: any) => [x._id, { completed: x.completed, inProgress: x.inProgress }]));
 
-    return modules.map(m => {
+    const presentedModules = modules.map(m => {
       const total = countsMap.get(m.moduleRef) || 0;
       const pr = progresses.get(m.moduleRef) || { completed: 0, inProgress: 0 };
       
@@ -70,24 +95,44 @@ export class ContentV2Controller {
       
       return presentModule(moduleData as any, lang, { completed: pr.completed, inProgress: pr.inProgress, total });
     });
+
+    return {
+      modules: presentedModules,
+      pagination: {
+        page,
+        limit,
+        total,
+        totalPages,
+        hasNextPage: page < totalPages,
+        hasPrevPage: page > 1,
+      },
+    };
   }
 
   @Get('modules/:moduleRef/lessons')
-  async getLessons(@Param('moduleRef') moduleRef: string, @Query('userId') userId: string, @Query('lang') lang = 'ru') {
+  async getLessons(@Param('moduleRef') moduleRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
+    const userId = req.user?.userId; // Get userId from JWT token
+    if (!userId) {
+      return { error: 'userId is required' };
+    }
+
     const lessons = await this.lessonModel.find({ moduleRef, published: true }).sort({ order: 1 }).lean();
-    const progresses = userId
-      ? await this.progressModel.find({ userId, moduleRef }).lean()
-      : [];
+    const progresses = await this.progressModel.find({ userId: String(userId), moduleRef }).lean();
 
     const progressMap = new Map(progresses.map((p: any) => [p.lessonRef, p]));
     return lessons.map(l => presentLesson(l as any, lang, progressMap.get(l.lessonRef)));
   }
 
   @Get('lessons/:lessonRef')
-  async getLesson(@Param('lessonRef') lessonRef: string, @Query('userId') userId: string, @Query('lang') lang = 'ru') {
+  async getLesson(@Param('lessonRef') lessonRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
+    const userId = req.user?.userId; // Get userId from JWT token
+    if (!userId) {
+      return { error: 'userId is required' };
+    }
+
     const l = await this.lessonModel.findOne({ lessonRef, published: true }).lean();
     if (!l) return null;
-    const p = userId ? await this.progressModel.findOne({ userId, lessonRef }).lean() : null;
+    const p = await this.progressModel.findOne({ userId: String(userId), lessonRef }).lean();
     // detailed: вернём ещё tasks
     const presented = presentLesson(l as any, lang, p as any);
     (presented as any).tasks = l.tasks || [];

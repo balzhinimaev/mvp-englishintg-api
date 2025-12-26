@@ -1,4 +1,5 @@
-import { IsString, IsOptional, IsEnum, Length } from 'class-validator';
+import { IsString, IsOptional, IsEnum, Length, IsInt, Min } from 'class-validator';
+import { Type } from 'class-transformer';
 
 export class GetModulesDto {
   @IsOptional()
@@ -8,6 +9,18 @@ export class GetModulesDto {
   @IsOptional()
   @IsEnum(['ru', 'en'])
   lang?: string;
+
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  page?: number;
+
+  @IsOptional()
+  @Type(() => Number)
+  @IsInt()
+  @Min(1)
+  limit?: number;
 }
 
 export class GetLessonsDto {
