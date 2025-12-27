@@ -33,7 +33,7 @@ async function runRegressionTests(): Promise<TestResult[]> {
   
   try {
     await client.connect();
-    const db = client.db('burlang-db');
+    const db = client.db('englishintg');
     
     console.log('🧪 Запускаем тесты регресса...\n');
     

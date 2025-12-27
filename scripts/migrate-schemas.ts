@@ -22,7 +22,7 @@ async function migrateSchemas() {
     await client.connect();
     console.log('🔗 Подключились к MongoDB');
     
-    const db = client.db("burlang-db");
+    const db = client.db("englishintg");
     
     console.log('\n📋 Начинаем миграцию схем...');
     

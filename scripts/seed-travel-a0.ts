@@ -19,7 +19,7 @@ import { Lesson, LessonSchema } from '../src/modules/common/schemas/lesson.schem
 (async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/burlive', {
-        dbName: 'burlang-db',
+        dbName: 'englishintg',
     });
     console.log('🔗 Подключились к MongoDB');
     

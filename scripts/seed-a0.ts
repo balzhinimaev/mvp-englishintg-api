@@ -70,7 +70,7 @@ if (!DRY_RUN && !APPLY) {
 
 // Database connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017';
-const MONGODB_DB_NAME = process.env.MONGODB_DB_NAME || 'burlang-db';
+const MONGODB_DB_NAME = process.env.MONGODB_DB_NAME || 'englishintg';
 
 // Models
 let CourseModuleModel: mongoose.Model<CourseModule>;

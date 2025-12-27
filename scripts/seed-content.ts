@@ -22,7 +22,7 @@
  *
  * Env
  *   MONGODB_URI (required)
- *   MONGODB_DB_NAME (default: burlang-db)
+ *   MONGODB_DB_NAME (default: englishintg)
  */
 
 import 'dotenv/config';
@@ -379,7 +379,7 @@ async function upsertLessons(lessons: LessonSeed[], session: ClientSession | nul
 
 async function main() {
   const uri = process.env.MONGODB_URI || '';
-  const dbName = process.env.MONGODB_DB_NAME || 'burlang-db';
+  const dbName = process.env.MONGODB_DB_NAME || 'englishintg';
   if (!uri) throw new Error('MONGODB_URI is required');
 
   logMode();

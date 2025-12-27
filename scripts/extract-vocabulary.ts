@@ -21,7 +21,7 @@
  * 
  * Env:
  *   MONGODB_URI (required)
- *   MONGODB_DB_NAME (default: burlang-db)
+ *   MONGODB_DB_NAME (default: englishintg)
  */
 
 import 'dotenv/config';
@@ -45,7 +45,7 @@ if (!isDryRun && !isApply && !isStats) {
 
 // Database connection
 const MONGODB_URI = <string>process.env.MONGODB_URI;
-const MONGODB_DB_NAME = process.env.MONGODB_DB_NAME || 'burlang-db';
+const MONGODB_DB_NAME = process.env.MONGODB_DB_NAME || 'englishintg';
 
 if (!MONGODB_URI) {
   console.error('❌ MONGODB_URI environment variable is required');

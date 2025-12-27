@@ -36,7 +36,7 @@
 
 ### `MONGODB_DB_NAME`
 - **Тип**: `string`
-- **По умолчанию**: `burlang-db`
+- **По умолчанию**: `englishintg`
 - **Описание**: Название базы данных MongoDB
 
 ### `JWT_SECRET`
@@ -131,7 +131,7 @@ PORT=7777
 
 # База данных
 MONGODB_URI=mongodb://localhost:27017
-MONGODB_DB_NAME=burlang-db
+MONGODB_DB_NAME=englishintg
 
 # Аутентификация
 JWT_SECRET=your-super-secret-jwt-key-minimum-32-characters-long

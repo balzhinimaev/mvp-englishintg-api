@@ -21,7 +21,7 @@ async function denormalizeModuleRef() {
   
   try {
     await client.connect();
-    const db = client.db('burlang-db');
+    const db = client.db('englishintg');
     
     console.log(`🚀 Начинаем денормализацию moduleRef${DRY_RUN ? ' (DRY RUN)' : ''}`);
     

@@ -27,7 +27,7 @@ export const validationSchema = Joi.object({
     .description('Имя replica set MongoDB (по умолчанию: rs0). Параметр replicaSet будет автоматически добавлен в URI, если отсутствует.'),
   
   MONGODB_DB_NAME: Joi.string()
-    .default('burlang-db')
+    .default('englishintg')
     .description('Название базы данных MongoDB'),
   
   JWT_SECRET: Joi.string()

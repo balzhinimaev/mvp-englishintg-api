@@ -66,7 +66,7 @@ PORT=7777
 
 # База данных
 MONGODB_URI=mongodb://mongodb:27017
-MONGODB_DB_NAME=burlang-db
+MONGODB_DB_NAME=englishintg
 
 # Аутентификация (ОБЯЗАТЕЛЬНО)
 JWT_SECRET=ваш-секретный-ключ-минимум-32-символа-длинный

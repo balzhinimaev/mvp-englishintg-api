@@ -5,7 +5,7 @@ import { Lesson, LessonSchema } from '../src/modules/common/schemas/lesson.schem
 
 async function main() {
   const uri = process.env.MONGODB_URI || '';
-  const dbName = process.env.MONGODB_DB_NAME || 'burlang-db';
+  const dbName = process.env.MONGODB_DB_NAME || 'englishintg';
   if (!uri) throw new Error('MONGODB_URI is required');
 
   await mongoose.connect(uri, { dbName });

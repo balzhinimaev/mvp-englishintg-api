@@ -67,7 +67,7 @@ export default registerAs('app', (): AppConfig => {
     nodeEnv: process.env.NODE_ENV || 'development',
     database: {
       uri: mongoUri,
-      dbName: process.env.MONGODB_DB_NAME || 'burlang-db',
+      dbName: process.env.MONGODB_DB_NAME || 'englishintg',
     },
   auth: {
     jwtSecret: process.env.JWT_SECRET || '',

@@ -36,7 +36,7 @@ async function migrateUserIdToString() {
   
   try {
     await client.connect();
-    const db = client.db('burlang-db');
+    const db = client.db('englishintg');
     
     console.log(`🚀 Начинаем миграцию userId: Number → String${DRY_RUN ? ' (DRY RUN)' : ''}`);
     

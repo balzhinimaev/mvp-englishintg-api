@@ -1,9 +1,6 @@
 services:
   app:
-    image: mvp-englishintg-api-app:latest
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/mvp-englishintg-api:latest
     container_name: english-api
     restart: unless-stopped
     ports:
@@ -11,6 +8,8 @@ services:
     # Подключаемся к внешней сети db_default, где работает MongoDB
     networks:
       - db_default
+    env_file:
+      - .env
     environment:
       - NODE_ENV=production
       - PORT=7777
