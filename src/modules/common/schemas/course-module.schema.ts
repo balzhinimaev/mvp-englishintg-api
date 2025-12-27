@@ -35,8 +35,13 @@ export class CourseModule {
 
   @Prop({ default: true })
   isAvailable?: boolean;
+
+  @Prop({ type: Object })
+  author?: {
+    userId: string;
+    name?: string;
+  };
 }
 
 export const CourseModuleSchema = SchemaFactory.createForClass(CourseModule);
 CourseModuleSchema.index({ level: 1, order: 1 });
-

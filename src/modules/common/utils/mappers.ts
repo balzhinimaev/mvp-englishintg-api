@@ -32,6 +32,7 @@ export class ModuleMapper {
       order: module.order || 0,
       requiresPro: module.requiresPro || false,
       isAvailable: module.isAvailable ?? true,
+      author: module.author,
       progress: progress || { completed: 0, total: 0, inProgress: 0 }
     };
   }
