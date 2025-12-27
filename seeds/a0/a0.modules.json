@@ -1,0 +1,358 @@
+{
+    "version": 1,
+    "level": "A0",
+    "items": [
+        {
+            "moduleRef": "a0.basics",
+            "level": "A0",
+            "order": 0,
+            "title": {
+                "ru": "Основы общения",
+                "en": "Communication Basics"
+            },
+            "description": {
+                "ru": "Самые нужные слова и фразы, чтобы начать говорить: да/нет, простые ответы, короткие реплики.",
+                "en": "Essential words and phrases to start speaking: yes/no, simple replies, short responses."
+            },
+            "tags": [
+                "basics",
+                "starter",
+                "survival"
+            ],
+            "difficultyRating": 1.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.greetings",
+            "level": "A0",
+            "order": 1,
+            "title": {
+                "ru": "Приветствия и прощания",
+                "en": "Greetings & Goodbyes"
+            },
+            "description": {
+                "ru": "Hello/Hi, Good morning/evening, Bye/Goodbye, See you — базовый этикет.",
+                "en": "Hello/Hi, Good morning/evening, Bye/Goodbye, See you — basic etiquette."
+            },
+            "tags": [
+                "greetings",
+                "speaking",
+                "survival"
+            ],
+            "difficultyRating": 1.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.introductions",
+            "level": "A0",
+            "order": 2,
+            "title": {
+                "ru": "Знакомство",
+                "en": "Introductions"
+            },
+            "description": {
+                "ru": "Как представиться и спросить имя: My name is…, I’m…, What’s your name? Nice to meet you.",
+                "en": "Introduce yourself and ask a name: My name is…, I’m…, What’s your name? Nice to meet you."
+            },
+            "tags": [
+                "introductions",
+                "speaking",
+                "starter"
+            ],
+            "difficultyRating": 1.5,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.polite",
+            "level": "A0",
+            "order": 3,
+            "title": {
+                "ru": "Вежливые слова",
+                "en": "Polite Words"
+            },
+            "description": {
+                "ru": "Please, Thank you, You’re welcome, Sorry, Excuse me — короткие фразы в ситуациях.",
+                "en": "Please, Thank you, You’re welcome, Sorry, Excuse me — short phrases for everyday situations."
+            },
+            "tags": [
+                "polite",
+                "etiquette",
+                "survival"
+            ],
+            "difficultyRating": 1.5,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.howareyou",
+            "level": "A0",
+            "order": 4,
+            "title": {
+                "ru": "Как дела?",
+                "en": "How Are You?"
+            },
+            "description": {
+                "ru": "How are you? I’m fine/OK/great/not bad + thanks. Мини-диалоги и быстрые ответы.",
+                "en": "How are you? I’m fine/OK/great/not bad + thanks. Mini-dialogs and quick answers."
+            },
+            "tags": [
+                "smalltalk",
+                "speaking",
+                "basics"
+            ],
+            "difficultyRating": 1.5,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.numbers",
+            "level": "A0",
+            "order": 5,
+            "title": {
+                "ru": "Числа 1–20",
+                "en": "Numbers 1–20"
+            },
+            "description": {
+                "ru": "Числа, возраст, количество: one–twenty, сколько? простые ответы.",
+                "en": "Numbers, age, quantity: one–twenty, how many? simple replies."
+            },
+            "tags": [
+                "numbers",
+                "vocabulary",
+                "starter"
+            ],
+            "difficultyRating": 2.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.time-days",
+            "level": "A0",
+            "order": 6,
+            "title": {
+                "ru": "Время и дни",
+                "en": "Time & Days"
+            },
+            "description": {
+                "ru": "Today/tomorrow/yesterday, morning/afternoon/evening, o’clock — очень базово и практично.",
+                "en": "Today/tomorrow/yesterday, morning/afternoon/evening, o’clock — very basic and practical."
+            },
+            "tags": [
+                "time",
+                "days",
+                "survival"
+            ],
+            "difficultyRating": 2.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.pronouns",
+            "level": "A0",
+            "order": 7,
+            "title": {
+                "ru": "Я/ты/он/она + мой/твой",
+                "en": "Pronouns: I/You/He/She + My/Your"
+            },
+            "description": {
+                "ru": "Мини-грамматика: I/you/he/she + my/your. Короткие фразы без перегруза.",
+                "en": "Light grammar: I/you/he/she + my/your. Short phrases without overload."
+            },
+            "tags": [
+                "pronouns",
+                "grammar",
+                "basics"
+            ],
+            "difficultyRating": 2.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.family",
+            "level": "A0",
+            "order": 8,
+            "title": {
+                "ru": "Семья",
+                "en": "Family"
+            },
+            "description": {
+                "ru": "mom/dad/sister/brother + простые фразы: This is my…, I have…",
+                "en": "mom/dad/sister/brother + simple phrases: This is my…, I have…"
+            },
+            "tags": [
+                "family",
+                "vocabulary",
+                "pronouns"
+            ],
+            "difficultyRating": 2.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.colors",
+            "level": "A0",
+            "order": 9,
+            "title": {
+                "ru": "Цвета и описание",
+                "en": "Colors & Describing"
+            },
+            "description": {
+                "ru": "Основные цвета + простые описания: red/blue/black, It’s …",
+                "en": "Basic colors + simple descriptions: red/blue/black, It’s …"
+            },
+            "tags": [
+                "colors",
+                "vocabulary",
+                "basics"
+            ],
+            "difficultyRating": 2.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.objects",
+            "level": "A0",
+            "order": 10,
+            "title": {
+                "ru": "Вещи вокруг",
+                "en": "Everyday Objects"
+            },
+            "description": {
+                "ru": "phone, key, money, water, ticket — базовые предметы и короткие вопросы: Where is…?",
+                "en": "phone, key, money, water, ticket — everyday items and short questions: Where is…?"
+            },
+            "tags": [
+                "objects",
+                "vocabulary",
+                "survival"
+            ],
+            "difficultyRating": 2.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.food-drinks",
+            "level": "A0",
+            "order": 11,
+            "title": {
+                "ru": "Еда и напитки",
+                "en": "Food & Drinks"
+            },
+            "description": {
+                "ru": "water/tea/coffee, bread, apple и т.п. Попросить, выбрать, понять простые слова.",
+                "en": "water/tea/coffee, bread, apple, etc. Ask, choose, understand simple words."
+            },
+            "tags": [
+                "food",
+                "vocabulary",
+                "daily"
+            ],
+            "difficultyRating": 2.5,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.cafe",
+            "level": "A0",
+            "order": 12,
+            "title": {
+                "ru": "В кафе",
+                "en": "At a Café"
+            },
+            "description": {
+                "ru": "Can I have…? I’d like… Please/Thanks. Мини-сценарии и диалоги.",
+                "en": "Can I have…? I’d like… Please/Thanks. Mini-scenarios and dialogs."
+            },
+            "tags": [
+                "cafe",
+                "speaking",
+                "survival"
+            ],
+            "difficultyRating": 2.5,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.shopping",
+            "level": "A0",
+            "order": 13,
+            "title": {
+                "ru": "Покупки и цена",
+                "en": "Shopping & Price"
+            },
+            "description": {
+                "ru": "How much? price, cheap/expensive. Простые покупки без сложной грамматики.",
+                "en": "How much? price, cheap/expensive. Simple shopping without heavy grammar."
+            },
+            "tags": [
+                "shopping",
+                "survival",
+                "speaking"
+            ],
+            "difficultyRating": 2.5,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.directions",
+            "level": "A0",
+            "order": 14,
+            "title": {
+                "ru": "Спросить дорогу",
+                "en": "Asking for Directions"
+            },
+            "description": {
+                "ru": "Where is…? left/right/straight, near/far. Очень прикладные фразы.",
+                "en": "Where is…? left/right/straight, near/far. Highly practical phrases."
+            },
+            "tags": [
+                "directions",
+                "travel",
+                "survival"
+            ],
+            "difficultyRating": 2.5,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        },
+        {
+            "moduleRef": "a0.travel",
+            "level": "A0",
+            "order": 15,
+            "title": {
+                "ru": "Путешествия (мини)",
+                "en": "Travel (Mini)"
+            },
+            "description": {
+                "ru": "Аэропорт/билеты/переезд: ticket, passport, gate. Минимум, чтобы не потеряться.",
+                "en": "Airport/tickets/transit: ticket, passport, gate. Minimum to not get lost."
+            },
+            "tags": [
+                "travel",
+                "airport",
+                "survival"
+            ],
+            "difficultyRating": 3.0,
+            "published": true,
+            "requiresPro": false,
+            "isAvailable": true
+        }
+    ]
+}
