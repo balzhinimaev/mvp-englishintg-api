@@ -20,10 +20,12 @@ export function presentModule(
     title: doc.title,
     description: doc.description,
     tags: doc.tags || [],
+    difficultyRating: doc.difficultyRating,
     order: doc.order ?? 0,
     // Используем переданные значения, если они есть, иначе вычисляем из схемы
     requiresPro: doc.requiresPro !== undefined ? !!doc.requiresPro : false,
     isAvailable: doc.isAvailable !== undefined ? doc.isAvailable : true,
+    author: doc.author,
     progress,
   };
 }

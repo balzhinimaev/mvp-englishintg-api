@@ -1,5 +1,6 @@
 import { Type } from 'class-transformer';
 import { IsArray, IsBoolean, IsInt, IsNumber, IsObject, IsOptional, IsString, Max, Min, ValidateNested, registerDecorator, ValidationArguments, ValidationOptions } from 'class-validator';
+
 export type CEFR = 'A0'|'A1'|'A2'|'B1'|'B2'|'C1'|'C2';
 
 const isHalfStep = (value: number): boolean => Number.isInteger(value * 2);
@@ -94,4 +95,52 @@ export class CreateModuleDto {
   isAvailable?: boolean;
 }
 
-export class UpdateModuleDto extends CreateModuleDto {}
+export class UpdateModuleDto {
+  @IsOptional()
+  @IsString()
+  moduleRef?: string;
+
+  @IsOptional()
+  @IsString()
+  level?: CEFR;
+
+  @IsOptional()
+  @IsObject()
+  @ValidateNested()
+  @Type(() => MultilingualTextDto)
+  title?: MultilingualTextDto;
+
+  @IsOptional()
+  @IsObject()
+  @ValidateNested()
+  @Type(() => OptionalMultilingualTextDto)
+  description?: OptionalMultilingualTextDto;
+
+  @IsOptional()
+  @IsArray()
+  tags?: string[];
+
+  @IsOptional()
+  @IsNumber()
+  @Min(1)
+  @Max(5)
+  @IsHalfStep()
+  difficultyRating?: number;
+
+  @IsOptional()
+  @IsInt()
+  @Min(0)
+  order?: number;
+
+  @IsOptional()
+  @IsBoolean()
+  published?: boolean;
+
+  @IsOptional()
+  @IsBoolean()
+  requiresPro?: boolean;
+
+  @IsOptional()
+  @IsBoolean()
+  isAvailable?: boolean;
+}
