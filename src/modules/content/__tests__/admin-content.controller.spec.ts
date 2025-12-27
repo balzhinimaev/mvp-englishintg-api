@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { INestApplication, ValidationPipe } from '@nestjs/common';
+import { INestApplication, ValidationPipe, ExecutionContext } from '@nestjs/common';
 import * as request from 'supertest';
 import { AdminContentController } from '../admin-content.controller';
 import { ContentService } from '../content.service';
@@ -11,12 +11,14 @@ import {
   validMultilingualDescription,
   validDifficultyRatings,
   mockJwtUser,
+  mockJwtUserMinimal,
   createModuleDto,
 } from './fixtures/module.fixtures';
 
 describe('AdminContentController', () => {
   let app: INestApplication;
   let contentService: ContentService;
+  let currentMockUser: typeof mockJwtUser | typeof mockJwtUserMinimal;
 
   const mockContentService = {
     createModule: jest.fn(),
@@ -27,7 +29,18 @@ describe('AdminContentController', () => {
     updateLesson: jest.fn(),
   };
 
+  // Mock guard that injects user into request
+  const mockJwtAuthGuard = {
+    canActivate: (context: ExecutionContext) => {
+      const req = context.switchToHttp().getRequest();
+      req.user = currentMockUser;
+      return true;
+    },
+  };
+
   beforeEach(async () => {
+    currentMockUser = mockJwtUser; // Default user for tests
+
     const moduleFixture: TestingModule = await Test.createTestingModule({
       controllers: [AdminContentController],
       providers: [
@@ -38,7 +51,7 @@ describe('AdminContentController', () => {
       ],
     })
       .overrideGuard(JwtAuthGuard)
-      .useValue({ canActivate: () => true })
+      .useValue(mockJwtAuthGuard)
       .overrideGuard(AdminGuard)
       .useValue({ canActivate: () => true })
       .compile();
@@ -77,17 +90,58 @@ describe('AdminContentController', () => {
         );
       });
 
-      it('should save author from request user', async () => {
+      it('should save author from request user with full name', async () => {
+        currentMockUser = mockJwtUser; // user with firstName and lastName
         mockContentService.createModule.mockResolvedValue({ _id: 'id' });
 
-        // Симулируем req.user через middleware в контроллере
-        // В реальных тестах нужно мокать guard чтобы подставить user
         await request(app.getHttpServer())
           .post('/admin/content/modules')
           .send(validCreateModuleDto)
           .expect(201);
 
-        expect(mockContentService.createModule).toHaveBeenCalled();
+        expect(mockContentService.createModule).toHaveBeenCalledWith(
+          expect.objectContaining({
+            author: {
+              userId: mockJwtUser.userId,
+              name: 'John Doe', // firstName + lastName
+            },
+          })
+        );
+      });
+
+      it('should save author with username when firstName/lastName missing', async () => {
+        currentMockUser = mockJwtUserMinimal; // user with only username
+        mockContentService.createModule.mockResolvedValue({ _id: 'id' });
+
+        await request(app.getHttpServer())
+          .post('/admin/content/modules')
+          .send(validCreateModuleDto)
+          .expect(201);
+
+        expect(mockContentService.createModule).toHaveBeenCalledWith(
+          expect.objectContaining({
+            author: {
+              userId: mockJwtUserMinimal.userId,
+              name: 'minimaluser', // username fallback
+            },
+          })
+        );
+      });
+
+      it('should not save author when userId is missing from token', async () => {
+        currentMockUser = { user: { username: 'nouser' } } as any; // no userId
+        mockContentService.createModule.mockResolvedValue({ _id: 'id' });
+
+        await request(app.getHttpServer())
+          .post('/admin/content/modules')
+          .send(validCreateModuleDto)
+          .expect(201);
+
+        expect(mockContentService.createModule).toHaveBeenCalledWith(
+          expect.objectContaining({
+            author: undefined,
+          })
+        );
       });
 
       it.each(validDifficultyRatings)(
@@ -328,6 +382,55 @@ describe('AdminContentController', () => {
       await request(app.getHttpServer())
         .patch('/admin/content/modules/a0.travel')
         .send({ difficultyRating: 5.5 })
+        .expect(400);
+    });
+
+    it('should return 400 for difficultyRating not in half steps', async () => {
+      await request(app.getHttpServer())
+        .patch('/admin/content/modules/a0.travel')
+        .send({ difficultyRating: 2.3 })
+        .expect(400);
+    });
+
+    it('should allow partial update (only title)', async () => {
+      mockContentService.updateModule.mockResolvedValue({ ok: true });
+
+      await request(app.getHttpServer())
+        .patch('/admin/content/modules/a0.travel')
+        .send({ title: { ru: 'Новый', en: 'New' } })
+        .expect(200);
+
+      expect(mockContentService.updateModule).toHaveBeenCalledWith(
+        'a0.travel',
+        { title: { ru: 'Новый', en: 'New' } }
+      );
+    });
+
+    it('should allow partial update (only difficultyRating)', async () => {
+      mockContentService.updateModule.mockResolvedValue({ ok: true });
+
+      await request(app.getHttpServer())
+        .patch('/admin/content/modules/a0.travel')
+        .send({ difficultyRating: 3.5 })
+        .expect(200);
+
+      expect(mockContentService.updateModule).toHaveBeenCalledWith(
+        'a0.travel',
+        { difficultyRating: 3.5 }
+      );
+    });
+
+    it('should return 400 when updating title with missing en field', async () => {
+      await request(app.getHttpServer())
+        .patch('/admin/content/modules/a0.travel')
+        .send({ title: { ru: 'Только русский' } })
+        .expect(400);
+    });
+
+    it('should return 400 when updating title with missing ru field', async () => {
+      await request(app.getHttpServer())
+        .patch('/admin/content/modules/a0.travel')
+        .send({ title: { en: 'Only English' } })
         .expect(400);
     });
   });

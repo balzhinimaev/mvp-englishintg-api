@@ -145,21 +145,44 @@ describe('ContentService', () => {
   });
 
   describe('updateModule', () => {
-    it('should update module and not allow author change', async () => {
+    it('should strip author field from update to prevent tampering', async () => {
       mockModuleModel.updateOne.mockResolvedValue({ acknowledged: true, modifiedCount: 1 });
 
       const update = {
         title: { ru: 'Новый заголовок', en: 'New Title' },
-        author: { userId: 'hacker', name: 'Hacker' }, // should be stripped
+        author: { userId: 'hacker', name: 'Hacker' }, // malicious attempt to change author
       } as any;
 
       const result = await service.updateModule('a0.travel', update);
 
-      expect(mockModuleModel.updateOne).toHaveBeenCalledWith(
-        { moduleRef: 'a0.travel' },
-        { $set: expect.not.objectContaining({ author: expect.anything() }) }
-      );
+      // Verify updateOne was called
+      expect(mockModuleModel.updateOne).toHaveBeenCalledTimes(1);
+      
+      // Get the actual $set object passed to updateOne
+      const [, updateArg] = mockModuleModel.updateOne.mock.calls[0];
+      const setObject = updateArg.$set;
+      
+      // Verify author is NOT in the update
+      expect(setObject).not.toHaveProperty('author');
+      // Verify title IS in the update
+      expect(setObject).toHaveProperty('title');
+      expect(setObject.title).toEqual({ ru: 'Новый заголовок', en: 'New Title' });
+      
       expect(result).toEqual({ ok: true });
+    });
+
+    it('should update only title when author is also passed', async () => {
+      mockModuleModel.updateOne.mockResolvedValue({ acknowledged: true, modifiedCount: 1 });
+
+      await service.updateModule('a0.test', {
+        title: { ru: 'Обновлено', en: 'Updated' },
+        author: { userId: 'attacker', name: 'Attacker' },
+      } as any);
+
+      expect(mockModuleModel.updateOne).toHaveBeenCalledWith(
+        { moduleRef: 'a0.test' },
+        { $set: { title: { ru: 'Обновлено', en: 'Updated' } } }
+      );
     });
 
     it('should update multilingual title', async () => {
@@ -186,6 +209,39 @@ describe('ContentService', () => {
         { moduleRef: 'a0.test' },
         { $set: { difficultyRating: 4.5 } }
       );
+    });
+
+    it('should update description with multilingual object', async () => {
+      mockModuleModel.updateOne.mockResolvedValue({ acknowledged: true, modifiedCount: 1 });
+
+      await service.updateModule('a0.test', {
+        description: { ru: 'Описание', en: 'Description' },
+      } as any);
+
+      expect(mockModuleModel.updateOne).toHaveBeenCalledWith(
+        { moduleRef: 'a0.test' },
+        { $set: { description: { ru: 'Описание', en: 'Description' } } }
+      );
+    });
+
+    it('should update multiple fields at once (excluding author)', async () => {
+      mockModuleModel.updateOne.mockResolvedValue({ acknowledged: true, modifiedCount: 1 });
+
+      await service.updateModule('a0.test', {
+        title: { ru: 'Новый', en: 'New' },
+        difficultyRating: 3,
+        published: false,
+        author: { userId: 'hacker', name: 'Hacker' }, // should be stripped
+      } as any);
+
+      const [, updateArg] = mockModuleModel.updateOne.mock.calls[0];
+      
+      expect(updateArg.$set).toEqual({
+        title: { ru: 'Новый', en: 'New' },
+        difficultyRating: 3,
+        published: false,
+      });
+      expect(updateArg.$set).not.toHaveProperty('author');
     });
   });
 
