@@ -15,7 +15,7 @@ export class ContentService {
   ) {}
 
   // Modules
-  async createModule(body: { moduleRef: string; level: CourseModule['level']; title: MultilingualText; description?: OptionalMultilingualText; tags?: string[]; order?: number; published?: boolean }) {
+  async createModule(body: { moduleRef: string; level: CourseModule['level']; title: MultilingualText; description?: OptionalMultilingualText; tags?: string[]; order?: number; published?: boolean; author?: CourseModule['author'] }) {
     return this.moduleModel.create(body);
   }
 
@@ -26,7 +26,8 @@ export class ContentService {
   }
 
   async updateModule(moduleRef: string, update: Partial<CourseModule>) {
-    await this.moduleModel.updateOne({ moduleRef }, { $set: update });
+    const { author, ...safeUpdate } = update;
+    await this.moduleModel.updateOne({ moduleRef }, { $set: safeUpdate });
     return { ok: true };
   }
 
@@ -91,4 +92,3 @@ export class ContentService {
     return { canStart: true };
   }
 }
-

@@ -14,8 +14,12 @@ export class AdminContentController {
   // Modules
   @Post('modules')
   async createModule(@Body() body: CreateModuleDto, @Request() req: any) {
+    const user = req.user?.user;
     const userId = req.user?.userId; // Get userId from JWT token
-    const doc = await this.content.createModule(body as any);
+    const nameParts = [user?.firstName, user?.lastName].filter(Boolean);
+    const authorName = nameParts.length ? nameParts.join(' ') : user?.username;
+    const author = userId ? { userId, name: authorName } : undefined;
+    const doc = await this.content.createModule({ ...(body as any), author });
     return { id: (doc as any)._id };
   }
 
@@ -59,5 +63,4 @@ export class AdminContentController {
     return this.content.updateLesson(lessonRef, body as any);
   }
 }
-
 

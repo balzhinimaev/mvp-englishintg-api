@@ -18,6 +18,10 @@ export interface ModuleItem {
   order: number;
   requiresPro: boolean;
   isAvailable: boolean;
+  author?: {
+    userId: string;
+    name?: string;
+  };
   progress?: ModuleProgress;  // вычисляется для текущего userId
 }
 
