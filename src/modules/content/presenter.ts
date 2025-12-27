@@ -12,14 +12,13 @@ const choose = (mt: any, lang: string) => {
 
 export function presentModule(
   doc: CourseModule,
-  lang = 'ru',
   progress?: { completed: number; total: number; inProgress: number },
 ): ModuleItem {
   return {
     moduleRef: doc.moduleRef,
     level: doc.level,
-    title: choose(doc.title, lang),
-    description: choose(doc.description, lang),
+    title: doc.title,
+    description: doc.description,
     tags: doc.tags || [],
     order: doc.order ?? 0,
     // Используем переданные значения, если они есть, иначе вычисляем из схемы

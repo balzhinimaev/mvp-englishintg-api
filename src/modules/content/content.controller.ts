@@ -30,9 +30,8 @@ export class ContentController {
   @Get('modules')
   @UseGuards(JwtAuthGuard)
   async getModules(@Query() query: GetModulesDto, @Request() req: any) {
-    const { level, lang } = query;
+    const { level } = query;
     const userId = req.user?.userId; // Get userId from JWT token
-    const language = parseLanguage(lang);
     const filter: any = { published: true };
     if (level) filter.level = level;
 
@@ -74,7 +73,7 @@ export class ContentController {
           const requiresPro = m.requiresPro || order > 1; // Use schema field or business rule
           const isAvailable = m.isAvailable ?? (!requiresPro || hasProAccess);
 
-          return ModuleMapper.toDto(m, String(userId), language, progressMap.get(m.moduleRef));
+          return ModuleMapper.toDto(m, progressMap.get(m.moduleRef));
         }),
       };
     }
@@ -86,7 +85,7 @@ export class ContentController {
         const requiresPro = m.requiresPro || order > 1;
         const isAvailable = m.isAvailable ?? !requiresPro; // Anonymous user never has pro access
         
-        return ModuleMapper.toDto(m, '', language, undefined);
+        return ModuleMapper.toDto(m);
       }),
     };
   }
@@ -351,5 +350,3 @@ export class ContentController {
     };
   }
 }
-
-

@@ -27,7 +27,7 @@ export class ContentV2Controller {
       return { error: 'userId is required' };
     }
 
-    const { level, lang = 'ru', page = 1, limit = 20 } = query;
+    const { level, page = 1, limit = 20 } = query;
     
     // Валидация level
     if (level && !['A0', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(level)) {
@@ -93,7 +93,7 @@ export class ContentV2Controller {
         isAvailable,
       };
       
-      return presentModule(moduleData as any, lang, { completed: pr.completed, inProgress: pr.inProgress, total });
+      return presentModule(moduleData as any, { completed: pr.completed, inProgress: pr.inProgress, total });
     });
 
     return {
