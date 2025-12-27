@@ -14,6 +14,7 @@ export interface ModuleItem {
   title: MultilingualText;
   description?: OptionalMultilingualText;
   tags: string[];
+  difficultyRating?: number;
   order: number;
   requiresPro: boolean;
   isAvailable: boolean;
