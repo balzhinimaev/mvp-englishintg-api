@@ -28,6 +28,7 @@ export class ModuleMapper {
       title: module.title,
       description: module.description,
       tags: module.tags || [],
+      difficultyRating: module.difficultyRating,
       order: module.order || 0,
       requiresPro: module.requiresPro || false,
       isAvailable: module.isAvailable ?? true,

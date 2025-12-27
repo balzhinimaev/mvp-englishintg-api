@@ -21,6 +21,9 @@ export class CourseModule {
   @Prop({ type: [String], default: [] })
   tags?: string[]; // e.g., travel, speaking
 
+  @Prop({ min: 1, max: 5 })
+  difficultyRating?: number;
+
   @Prop({ default: true })
   published?: boolean;
 
@@ -36,5 +39,4 @@ export class CourseModule {
 
 export const CourseModuleSchema = SchemaFactory.createForClass(CourseModule);
 CourseModuleSchema.index({ level: 1, order: 1 });
-
 
