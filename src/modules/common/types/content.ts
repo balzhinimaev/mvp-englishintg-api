@@ -1,4 +1,5 @@
 // src/common/types/content.ts
+import { MultilingualText, OptionalMultilingualText } from '../utils/i18n.util';
 export type CEFR = 'A0'|'A1'|'A2'|'B1'|'B2'|'C1'|'C2';
 
 export interface ModuleProgress {
@@ -10,8 +11,8 @@ export interface ModuleProgress {
 export interface ModuleItem {
   moduleRef: string;
   level: CEFR;
-  title: string;              // Простой string как «presented» поле; хранить можно мультиязычно
-  description?: string;
+  title: MultilingualText;
+  description?: OptionalMultilingualText;
   tags: string[];
   order: number;
   requiresPro: boolean;

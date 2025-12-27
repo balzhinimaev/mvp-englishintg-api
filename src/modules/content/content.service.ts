@@ -4,6 +4,7 @@ import { Model } from 'mongoose';
 import { CourseModule, CourseModuleDocument } from '../common/schemas/course-module.schema';
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
+import { MultilingualText, OptionalMultilingualText } from '../common/utils/i18n.util';
 
 @Injectable()
 export class ContentService {
@@ -14,7 +15,7 @@ export class ContentService {
   ) {}
 
   // Modules
-  async createModule(body: { moduleRef: string; level: CourseModule['level']; title: string; description?: string; tags?: string[]; order?: number; published?: boolean }) {
+  async createModule(body: { moduleRef: string; level: CourseModule['level']; title: MultilingualText; description?: OptionalMultilingualText; tags?: string[]; order?: number; published?: boolean }) {
     return this.moduleModel.create(body);
   }
 
@@ -90,5 +91,4 @@ export class ContentService {
     return { canStart: true };
   }
 }
-
 

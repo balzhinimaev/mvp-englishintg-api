@@ -20,15 +20,13 @@ const redact = (v: any): any =>
 export class ModuleMapper {
   static toDto(
     module: CourseModule,
-    userId: string,
-    language: SupportedLanguage = 'ru',
     progress?: { completed: number; total: number; inProgress: number }
   ): ModuleItem {
     return {
       moduleRef: module.moduleRef,
       level: module.level,
-      title: getLocalizedText(module.title, language),
-      description: getLocalizedText(module.description, language),
+      title: module.title,
+      description: module.description,
       tags: module.tags || [],
       order: module.order || 0,
       requiresPro: module.requiresPro || false,
