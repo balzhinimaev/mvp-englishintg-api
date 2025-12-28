@@ -26,7 +26,7 @@ export class ContentV2Controller {
   async getModules(@Query() query: GetModulesDto, @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
-      return { error: 'userId is required' };
+      throw new BadRequestException('userId is required');
     }
 
     const { level, page = 1, limit = 20 } = query;
@@ -115,7 +115,7 @@ export class ContentV2Controller {
   async getLessons(@Param('moduleRef') moduleRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
-      return { error: 'userId is required' };
+      throw new BadRequestException('userId is required');
     }
 
     if (!/^[a-z0-9]+\.[a-z0-9_]+$/.test(moduleRef)) {
@@ -138,7 +138,7 @@ export class ContentV2Controller {
   async getLesson(@Param('lessonRef') lessonRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
-      return { error: 'userId is required' };
+      throw new BadRequestException('userId is required');
     }
 
     if (!/^[a-z0-9]+\.[a-z0-9_]+\.\d{3}$/.test(lessonRef)) {
