@@ -35,8 +35,8 @@ export class InvalidAnswerFormatError extends Error {
 }
 
 export class ValidationDataError extends Error {
-  constructor() {
-    super('Missing validation data');
+  constructor(message = 'Отсутствуют данные для валидации') {
+    super(message);
     this.name = 'ValidationDataError';
   }
 }
@@ -66,7 +66,7 @@ export class AnswerValidatorService {
     if (task.type === 'translate') {
       const expected = (validationData as TranslateValidationData | undefined)?.expected;
       if (!expected?.length) {
-        throw new Error('Missing expected answers for translate task');
+        throw new ValidationDataError('Отсутствуют ожидаемые ответы для translate-задачи');
       }
     }
 

@@ -122,7 +122,7 @@ describe('AnswerValidatorService', () => {
     });
 
     await expect(service.validateAnswer('a0.basics.001', 't1', 'Hello')).rejects.toThrow(
-      'Missing expected answers for translate task',
+      'Отсутствуют ожидаемые ответы для translate-задачи',
     );
   });
 
