@@ -1,6 +1,7 @@
 import { TaskDto } from '../dto/task-data.dto';
 
 const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const isNonEmptyString = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0;
 
 export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[], moduleRef?: string): string[] {
   const errors: string[] = [];
@@ -26,6 +27,36 @@ export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[], moduleRef?
       const d = t.data as any;
       if (typeof d.text !== 'string' || !d.text.includes('____')) errors.push(`gap[${i}].text must contain ____`);
       if (typeof d.answer !== 'string' || !d.answer) errors.push(`gap[${i}].answer is required`);
+    }
+    if (t.type === 'translate') {
+      const d = t.data as any;
+      if (!Array.isArray(d.expected) || d.expected.length === 0 || !d.expected.every(isNonEmptyString)) {
+        errors.push(`translate[${i}].expected must be non-empty string array`);
+      }
+    }
+    if (t.type === 'order') {
+      const d = t.data as any;
+      if (!Array.isArray(d.tokens) || d.tokens.length === 0 || !d.tokens.every(isNonEmptyString)) {
+        errors.push(`order[${i}].tokens must be non-empty string array`);
+      }
+    }
+    if (t.type === 'matching' || t.type === 'match') {
+      const d = t.data as any;
+      const pairsValid =
+        Array.isArray(d.pairs) &&
+        d.pairs.length > 0 &&
+        d.pairs.every((pair: any) => isNonEmptyString(pair?.left) && isNonEmptyString(pair?.right));
+      if (!pairsValid) errors.push(`${t.type}[${i}].pairs must include left/right`);
+    }
+    if (t.type === 'listen' || t.type === 'listening') {
+      const d = t.data as any;
+      if (!isNonEmptyString(d.audioKey)) errors.push(`${t.type}[${i}].audioKey is required`);
+    }
+    if (t.type === 'flashcard') {
+      const d = t.data as any;
+      if (!isNonEmptyString(d.front) || !isNonEmptyString(d.back)) {
+        errors.push(`flashcard[${i}].front/back are required`);
+      }
     }
   });
   return errors;
