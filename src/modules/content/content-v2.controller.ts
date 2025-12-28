@@ -131,7 +131,7 @@ export class ContentV2Controller {
     }
 
     const progressMap = new Map(progresses.map((p: any) => [p.lessonRef, p]));
-    return lessons.map(l => presentLesson(l as any, lang, progressMap.get(l.lessonRef)));
+    return { lessons: lessons.map(l => presentLesson(l as any, lang, progressMap.get(l.lessonRef))) };
   }
 
   @Get('lessons/:lessonRef')
