@@ -13,6 +13,34 @@ export interface ValidationResult {
   explanation?: string;
 }
 
+export class LessonNotFoundError extends Error {
+  constructor() {
+    super('Lesson not found');
+    this.name = 'LessonNotFoundError';
+  }
+}
+
+export class TaskNotFoundError extends Error {
+  constructor() {
+    super('Task not found');
+    this.name = 'TaskNotFoundError';
+  }
+}
+
+export class InvalidAnswerFormatError extends Error {
+  constructor() {
+    super('Invalid answer format');
+    this.name = 'InvalidAnswerFormatError';
+  }
+}
+
+export class ValidationDataError extends Error {
+  constructor() {
+    super('Missing validation data');
+    this.name = 'ValidationDataError';
+  }
+}
+
 @Injectable()
 export class AnswerValidatorService {
   constructor(
@@ -23,12 +51,12 @@ export class AnswerValidatorService {
     // 🔍 ПОЛУЧАЕМ УРОК С ПРАВИЛЬНЫМИ ОТВЕТАМИ (только на сервере!)
     const lesson = await this.lessonModel.findOne({ lessonRef, published: true }).lean();
     if (!lesson) {
-      throw new Error('Lesson not found');
+      throw new LessonNotFoundError();
     }
 
     const task = lesson.tasks?.find(t => t.ref === taskRef);
     if (!task) {
-      throw new Error('Task not found');
+      throw new TaskNotFoundError();
     }
 
     // 🔒 ВАЛИДАЦИЯ НА СЕРВЕРЕ ПО ТИПУ ЗАДАЧИ
@@ -38,12 +66,12 @@ export class AnswerValidatorService {
     if (task.type === 'translate') {
       const expected = (validationData as TranslateValidationData | undefined)?.expected;
       if (!expected?.length) {
-        throw new Error('Missing expected answers for translate task');
+        throw new ValidationDataError();
       }
     }
 
     if (!validationData) {
-      return { isCorrect: false, score: 0, feedback: 'Missing validation data' };
+      throw new ValidationDataError();
     }
 
     switch (task.type) {
@@ -122,13 +150,13 @@ export class AnswerValidatorService {
         feedback: isCorrect ? 'Perfect!' : 'Check the word order'
       };
     } catch (e) {
-      return { isCorrect: false, score: 0, feedback: 'Invalid answer format' };
+      throw new InvalidAnswerFormatError();
     }
   }
 
   private validateTranslateAnswer(taskData: TranslateValidationData, userAnswer: string): ValidationResult {
     if (!taskData.expected?.length) {
-      throw new Error('Missing expected answers for translate task');
+      throw new ValidationDataError();
     }
 
     const { expected } = taskData;
@@ -178,11 +206,11 @@ export class AnswerValidatorService {
     try {
       parsedAnswer = JSON.parse(userAnswer);
     } catch (e) {
-      return { isCorrect: false, score: 0, feedback: 'Invalid answer format' };
+      throw new InvalidAnswerFormatError();
     }
 
     if (!Array.isArray(parsedAnswer)) {
-      return { isCorrect: false, score: 0, feedback: 'Invalid answer format' };
+      throw new InvalidAnswerFormatError();
     }
 
     const correctMap = new Map(pairs.map(pair => [pair.left, pair.right]));
