@@ -4,6 +4,8 @@ import { getModelToken } from '@nestjs/mongoose';
 import * as request from 'supertest';
 import { ContentV2Controller } from '../content-v2.controller';
 import { JwtAuthGuard } from '../../auth/jwt-auth.guard';
+import { ContentService } from '../content.service';
+import { LessonPrerequisiteGuard } from '../guards/lesson-prerequisite.guard';
 import { CourseModule } from '../../common/schemas/course-module.schema';
 import { Lesson } from '../../common/schemas/lesson.schema';
 import { UserLessonProgress } from '../../common/schemas/user-lesson-progress.schema';
@@ -42,6 +44,9 @@ describe('ContentV2Controller', () => {
   const mockUserModel = {
     findOne: jest.fn(),
   };
+  const mockContentService = {
+    canStartLesson: jest.fn(),
+  };
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
@@ -51,6 +56,8 @@ describe('ContentV2Controller', () => {
         { provide: getModelToken(Lesson.name), useValue: mockLessonModel },
         { provide: getModelToken(UserLessonProgress.name), useValue: mockProgressModel },
         { provide: getModelToken(User.name), useValue: mockUserModel },
+        { provide: ContentService, useValue: mockContentService },
+        LessonPrerequisiteGuard,
       ],
     })
       .overrideGuard(JwtAuthGuard)
@@ -62,6 +69,7 @@ describe('ContentV2Controller', () => {
     await app.init();
 
     jest.clearAllMocks();
+    mockContentService.canStartLesson.mockResolvedValue({ canStart: true });
   });
 
   afterEach(async () => {
@@ -228,6 +236,74 @@ describe('ContentV2Controller', () => {
         expect.objectContaining({
           statusCode: 400,
           message: 'userId is required',
+        })
+      );
+    });
+
+    it('should call prerequisite guard with userId and lessonRef', async () => {
+      mockLessonModel.findOne.mockReturnValue({
+        lean: jest.fn().mockResolvedValue({
+          lessonRef: 'a0.basics.001',
+          moduleRef: 'a0.basics',
+          title: { ru: 'Урок 1', en: 'Lesson 1' },
+          description: { ru: 'Описание', en: 'Description' },
+          order: 0,
+          tags: [],
+          estimatedMinutes: 10,
+          type: 'vocabulary',
+          difficulty: 'easy',
+          xpReward: 25,
+          hasAudio: true,
+          hasVideo: false,
+          tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: { options: ['a', 'b'], correctIndex: 0 } }],
+        }),
+      });
+      mockProgressModel.findOne.mockReturnValue({
+        lean: jest.fn().mockResolvedValue({ status: 'completed', attempts: 1 }),
+      });
+
+      await request(app.getHttpServer())
+        .get('/content/v2/lessons/a0.basics.001?lang=ru')
+        .expect(200);
+
+      expect(mockContentService.canStartLesson).toHaveBeenCalledWith('user-1', 'a0.basics.001');
+    });
+
+    it('should return 400 when prerequisite guard reports missing lesson', async () => {
+      mockContentService.canStartLesson.mockResolvedValue({
+        canStart: false,
+        reason: 'Lesson not found',
+      });
+
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/lessons/a0.basics.999')
+        .expect(400);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 400,
+          message: 'Lesson not found',
+        })
+      );
+    });
+
+    it('should return 403 with prerequisite payload when previous lesson is required', async () => {
+      mockContentService.canStartLesson.mockResolvedValue({
+        canStart: false,
+        reason: 'Нужно пройти предыдущий урок',
+        requiredLesson: 'a0.basics.001',
+      });
+
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/lessons/a0.basics.002')
+        .expect(403);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          error: 'PREREQ_NOT_MET',
+          message: 'Нужно пройти предыдущий урок',
+          requiredLesson: 'a0.basics.001',
+          currentLesson: 'a0.basics.002',
         })
       );
     });
