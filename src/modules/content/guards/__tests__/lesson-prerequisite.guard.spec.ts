@@ -1,10 +1,7 @@
 import { BadRequestException, ForbiddenException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { getModelToken } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
 import { LessonPrerequisiteGuard } from '../lesson-prerequisite.guard';
-import { Lesson, LessonDocument } from '../../../common/schemas/lesson.schema';
-import { UserLessonProgress, UserLessonProgressDocument } from '../../../common/schemas/user-lesson-progress.schema';
+import { ContentService } from '../../content.service';
 
 const buildContext = (params: Record<string, any>, query: Record<string, any> = {}, body: Record<string, any> = {}) =>
   ({
@@ -15,15 +12,10 @@ const buildContext = (params: Record<string, any>, query: Record<string, any> = 
 
 describe('LessonPrerequisiteGuard', () => {
   let guard: LessonPrerequisiteGuard;
-  let lessonModel: Model<LessonDocument>;
-  let progressModel: Model<UserLessonProgressDocument>;
+  let contentService: ContentService;
 
-  const mockLessonModel = {
-    findOne: jest.fn(),
-  };
-
-  const mockProgressModel = {
-    findOne: jest.fn(),
+  const mockContentService = {
+    canStartLesson: jest.fn(),
   };
 
   beforeEach(async () => {
@@ -31,19 +23,14 @@ describe('LessonPrerequisiteGuard', () => {
       providers: [
         LessonPrerequisiteGuard,
         {
-          provide: getModelToken(Lesson.name),
-          useValue: mockLessonModel,
-        },
-        {
-          provide: getModelToken(UserLessonProgress.name),
-          useValue: mockProgressModel,
+          provide: ContentService,
+          useValue: mockContentService,
         },
       ],
     }).compile();
 
     guard = module.get<LessonPrerequisiteGuard>(LessonPrerequisiteGuard);
-    lessonModel = module.get<Model<LessonDocument>>(getModelToken(Lesson.name));
-    progressModel = module.get<Model<UserLessonProgressDocument>>(getModelToken(UserLessonProgress.name));
+    contentService = module.get<ContentService>(ContentService);
 
     jest.clearAllMocks();
   });
@@ -60,46 +47,42 @@ describe('LessonPrerequisiteGuard', () => {
     );
   });
 
-  it('should forbid when previous lesson is not completed', async () => {
-    mockLessonModel.findOne
-      .mockReturnValueOnce({
-        lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.002', moduleRef: 'a0.basics', order: 2 }),
-      })
-      .mockReturnValueOnce({
-        lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.001' }),
-      });
-    mockProgressModel.findOne.mockReturnValue({
-      lean: jest.fn().mockResolvedValue(null),
-    });
+  it('should throw when lesson is not found', async () => {
+    mockContentService.canStartLesson.mockResolvedValue({ canStart: false, reason: 'Lesson not found' });
 
     await expect(
-      guard.canActivate(buildContext({ lessonRef: 'a0.basics.002' }, { userId: 'user-1' }))
-    ).rejects.toThrow(ForbiddenException);
+      guard.canActivate(buildContext({ lessonRef: 'a0.basics.999' }, { userId: 'user-1' }))
+    ).rejects.toThrow(new BadRequestException('Lesson not found'));
+    expect(contentService.canStartLesson).toHaveBeenCalledWith('user-1', 'a0.basics.999');
   });
 
-  it('should allow access for first lesson', async () => {
-    mockLessonModel.findOne.mockReturnValue({
-      lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.001', moduleRef: 'a0.basics', order: 1 }),
+  it('should forbid when previous lesson is not completed', async () => {
+    mockContentService.canStartLesson.mockResolvedValue({
+      canStart: false,
+      reason: 'Previous lesson a0.basics.001 must be completed before starting a0.basics.002',
+      requiredLesson: 'a0.basics.001',
     });
+
+    try {
+      await guard.canActivate(buildContext({ lessonRef: 'a0.basics.002' }, { userId: 'user-1' }));
+      throw new Error('should have thrown');
+    } catch (error: any) {
+      expect(error).toBeInstanceOf(ForbiddenException);
+      expect(error.getResponse()).toEqual({
+        error: 'PREREQ_NOT_MET',
+        message: 'Previous lesson a0.basics.001 must be completed before starting a0.basics.002',
+        requiredLesson: 'a0.basics.001',
+        currentLesson: 'a0.basics.002',
+      });
+    }
+  });
+
+  it('should allow access when prerequisites are met', async () => {
+    mockContentService.canStartLesson.mockResolvedValue({ canStart: true });
 
     await expect(
       guard.canActivate(buildContext({ lessonRef: 'a0.basics.001' }, { userId: 'user-1' }))
     ).resolves.toBe(true);
-    expect(progressModel.findOne).not.toHaveBeenCalled();
-  });
-
-  it('should allow access when previous lesson is missing', async () => {
-    mockLessonModel.findOne
-      .mockReturnValueOnce({
-        lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.002', moduleRef: 'a0.basics', order: 2 }),
-      })
-      .mockReturnValueOnce({
-        lean: jest.fn().mockResolvedValue(null),
-      });
-
-    await expect(
-      guard.canActivate(buildContext({ lessonRef: 'a0.basics.002' }, { userId: 'user-1' }))
-    ).resolves.toBe(true);
-    expect(progressModel.findOne).not.toHaveBeenCalled();
+    expect(contentService.canStartLesson).toHaveBeenCalledWith('user-1', 'a0.basics.001');
   });
 });
