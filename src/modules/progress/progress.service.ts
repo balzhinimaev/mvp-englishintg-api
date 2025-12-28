@@ -145,8 +145,31 @@ export class ProgressService {
       source: 'lesson',
     });
 
-    // Update ULP
-    await this.ulpModel.updateOne({ _id: ulp._id }, { $inc: { attempts: 1 }, $set: { lastTaskIndex: args.lastTaskIndex } });
+    // Рассчитываем новые значения для ULP
+    const prevAttempts = ulp.attempts || 0;
+    const newAttempts = prevAttempts + 1;
+
+    // timeSpent инкрементируется на длительность попытки (в секундах)
+    const timeSpentIncrement = args.durationMs ? Math.round(args.durationMs / 1000) : 0;
+
+    // Подготавливаем update операции — объединяем $inc и $set в один запрос для атомарности
+    const updateInc: Record<string, number> = { attempts: 1 };
+    if (timeSpentIncrement > 0) {
+      updateInc.timeSpent = timeSpentIncrement;
+    }
+
+    const updateSet: Record<string, any> = { lastTaskIndex: args.lastTaskIndex };
+
+    // Если score передан — обновляем среднее значение по всем попыткам
+    // Формула: newScore = ((prevScore * prevAttempts) + currentScore) / newAttempts
+    if (args.score !== undefined) {
+      const prevScore = ulp.score || 0;
+      const newScore = (prevScore * prevAttempts + args.score) / newAttempts;
+      updateSet.score = newScore;
+    }
+
+    // Обновляем ULP одним запросом
+    await this.ulpModel.updateOne({ _id: ulp._id }, { $inc: updateInc, $set: updateSet });
 
     // XP
     if (args.isCorrect) {
