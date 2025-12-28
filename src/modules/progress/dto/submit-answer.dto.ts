@@ -1,8 +1,9 @@
 import { IsString, IsOptional, IsNumber, IsBoolean, Min } from 'class-validator';
 
 export class SubmitAnswerDto {
+  @IsOptional()
   @IsString()
-  userId!: string;
+  userId?: string;
 
   @IsString()
   lessonRef!: string;
