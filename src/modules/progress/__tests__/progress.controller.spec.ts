@@ -6,6 +6,9 @@ import { SubmitAnswerDto } from '../dto/submit-answer.dto';
 
 describe('ProgressController', () => {
   it('should throw BadRequestException with validator error message', async () => {
+    // Мокируем console.error чтобы не загрязнять вывод тестов
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
+
     const mockProgressService = {
       recordTaskAttempt: jest.fn(),
     } as unknown as ProgressService;
@@ -39,6 +42,9 @@ describe('ProgressController', () => {
       } else {
         expect(response).toMatchObject({ message: 'Lesson not found' });
       }
+    } finally {
+      // Восстанавливаем оригинальную реализацию console.error
+      consoleErrorSpy.mockRestore();
     }
   });
 });
