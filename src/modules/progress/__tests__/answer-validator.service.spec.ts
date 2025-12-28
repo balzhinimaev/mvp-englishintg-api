@@ -53,7 +53,7 @@ describe('AnswerValidatorService', () => {
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
         tasks: [
-          { ref: 't1', type: 'gap', data: { text: 'Hello ____' }, validationData: { answer: 'Hello', alternatives: ['Hi'] } },
+          { ref: 't1', type: 'gap', data: { text: 'Hello ____', answer: 'Hello', accept: ['Hi'] } },
         ],
       }),
     });

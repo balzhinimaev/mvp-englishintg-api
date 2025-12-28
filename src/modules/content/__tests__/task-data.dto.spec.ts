@@ -18,7 +18,7 @@ describe('TaskDto', () => {
     const dto = plainToInstance(TaskDto, {
       ref: 'a0.basics.001.t2',
       type: 'gap',
-      data: { text: 'It costs ____ dollars' },
+      data: { text: 'It costs ____ dollars', answer: '10' },
     });
 
     const errors = await validate(dto);
