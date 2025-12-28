@@ -145,31 +145,40 @@ export class ProgressService {
       source: 'lesson',
     });
 
-    // Рассчитываем новые значения для ULP
-    const prevAttempts = ulp.attempts || 0;
-    const newAttempts = prevAttempts + 1;
+    // Инкременты для агрегатов
+    const scoreIncrement = args.score ?? 0;
+    const timeIncrement = args.durationMs ?? 0;
 
-    // timeSpent инкрементируется на длительность попытки (в секундах)
-    const timeSpentIncrement = args.durationMs ? Math.round(args.durationMs / 1000) : 0;
-
-    // Подготавливаем update операции — объединяем $inc и $set в один запрос для атомарности
-    const updateInc: Record<string, number> = { attempts: 1 };
-    if (timeSpentIncrement > 0) {
-      updateInc.timeSpent = timeSpentIncrement;
-    }
-
-    const updateSet: Record<string, any> = { lastTaskIndex: args.lastTaskIndex };
-
-    // Если score передан — обновляем среднее значение по всем попыткам
-    // Формула: newScore = ((prevScore * prevAttempts) + currentScore) / newAttempts
-    if (args.score !== undefined) {
-      const prevScore = ulp.score || 0;
-      const newScore = (prevScore * prevAttempts + args.score) / newAttempts;
-      updateSet.score = newScore;
-    }
-
-    // Обновляем ULP одним запросом
-    await this.ulpModel.updateOne({ _id: ulp._id }, { $inc: updateInc, $set: updateSet });
+    // Атомарное обновление через aggregation pipeline:
+    // 1. Инкрементируем агрегаты (attempts, totalScore, totalTimeMs)
+    // 2. Вычисляем производные поля (score, timeSpent) на основе агрегатов
+    await this.ulpModel.updateOne(
+      { _id: ulp._id },
+      [
+        {
+          $set: {
+            attempts: { $add: [{ $ifNull: ['$attempts', 0] }, 1] },
+            totalScore: { $add: [{ $ifNull: ['$totalScore', 0] }, scoreIncrement] },
+            totalTimeMs: { $add: [{ $ifNull: ['$totalTimeMs', 0] }, timeIncrement] },
+            lastTaskIndex: args.lastTaskIndex,
+          },
+        },
+        {
+          $set: {
+            // score = totalScore / attempts (среднее по всем попыткам)
+            score: {
+              $cond: {
+                if: { $gt: ['$attempts', 0] },
+                then: { $divide: ['$totalScore', '$attempts'] },
+                else: 0,
+              },
+            },
+            // timeSpent = round(totalTimeMs / 1000) — в секундах
+            timeSpent: { $round: [{ $divide: ['$totalTimeMs', 1000] }, 0] },
+          },
+        },
+      ],
+    );
 
     // XP
     if (args.isCorrect) {

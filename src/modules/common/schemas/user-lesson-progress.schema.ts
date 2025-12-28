@@ -26,7 +26,14 @@ export class UserLessonProgress {
   attempts?: number;
 
   @Prop({ default: 0 })
-  timeSpent?: number; // seconds
+  timeSpent?: number; // seconds — вычисляется из totalTimeMs
+
+  // Агрегаты для точного расчёта среднего score и времени
+  @Prop({ default: 0 })
+  totalScore?: number; // сумма всех score попыток
+
+  @Prop({ default: 0 })
+  totalTimeMs?: number; // сумма времени в миллисекундах
 
   @Prop()
   lastTaskIndex?: number;
