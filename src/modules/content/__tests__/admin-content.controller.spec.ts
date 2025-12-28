@@ -466,7 +466,7 @@ describe('AdminContentController', () => {
     const validLesson = {
       moduleRef: 'a0.basics',
       lessonRef: 'a0.basics.001',
-      title: 'Lesson 1',
+      title: { ru: 'Урок 1', en: 'Lesson 1' },
       tasks: [
         {
           ref: 'a0.basics.001.t1',
