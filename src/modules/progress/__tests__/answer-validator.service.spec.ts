@@ -96,6 +96,21 @@ describe('AnswerValidatorService', () => {
     expect(result.score).toBe(1);
   });
 
+  it('throws when translate expected answers are missing', async () => {
+    mockLessonModel.findOne.mockReturnValue({
+      lean: jest.fn().mockResolvedValue({
+        lessonRef: 'a0.basics.001',
+        tasks: [
+          { ref: 't1', type: 'translate', data: { question: 'Translate' } },
+        ],
+      }),
+    });
+
+    await expect(service.validateAnswer('a0.basics.001', 't1', 'Hello')).rejects.toThrow(
+      'Missing expected answers for translate task',
+    );
+  });
+
   it('validates listen/speak answers with audio similarity', async () => {
     mockLessonModel.findOne.mockReturnValue({
       lean: jest.fn().mockResolvedValue({

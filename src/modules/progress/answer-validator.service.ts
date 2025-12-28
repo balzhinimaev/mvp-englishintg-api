@@ -35,6 +35,13 @@ export class AnswerValidatorService {
     const validationData = (task as { validationData?: Record<string, any> }).validationData
       ?? mapTaskDataToValidationData({ type: task.type as any, data: task.data });
 
+    if (task.type === 'translate') {
+      const expected = (validationData as TranslateValidationData | undefined)?.expected;
+      if (!expected?.length) {
+        throw new Error('Missing expected answers for translate task');
+      }
+    }
+
     if (!validationData) {
       return { isCorrect: false, score: 0, feedback: 'Missing validation data' };
     }
@@ -112,7 +119,11 @@ export class AnswerValidatorService {
   }
 
   private validateTranslateAnswer(taskData: TranslateValidationData, userAnswer: string): ValidationResult {
-    const expected = taskData.expected || [];
+    if (!taskData.expected?.length) {
+      throw new Error('Missing expected answers for translate task');
+    }
+
+    const { expected } = taskData;
     const user = userAnswer.toLowerCase().trim();
     
     // Проверяем все возможные варианты перевода

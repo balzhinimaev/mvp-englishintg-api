@@ -1,5 +1,6 @@
 import { Type } from 'class-transformer';
 import {
+  ArrayNotEmpty,
   IsArray,
   IsBoolean,
   IsInt,
@@ -122,6 +123,11 @@ export class TranslateTaskDataDto {
   @IsString()
   @IsNotEmpty()
   question!: string; // e.g., "Переведи: 'сколько это стоит?'"
+
+  @IsArray()
+  @ArrayNotEmpty()
+  @IsString({ each: true })
+  expected!: string[];
 }
 
 export class FlashcardTaskDataDto {

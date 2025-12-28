@@ -35,4 +35,27 @@ describe('TaskDto', () => {
     const errors = await validate(dto);
     expect(errors.some(e => e.property === 'type')).toBe(true);
   });
+
+  it('should validate translate task data with expected answers', async () => {
+    const dto = plainToInstance(TaskDto, {
+      ref: 'a0.basics.001.t4',
+      type: 'translate',
+      data: { question: 'Переведи', expected: ['Hello'] },
+    });
+
+    const errors = await validate(dto);
+    expect(errors).toHaveLength(0);
+  });
+
+  it('should fail translate task data without expected answers', async () => {
+    const dto = plainToInstance(TaskDto, {
+      ref: 'a0.basics.001.t5',
+      type: 'translate',
+      data: { question: 'Переведи' },
+    });
+
+    const errors = await validate(dto);
+    const dataError = errors.find(error => error.property === 'data');
+    expect(dataError).toBeDefined();
+  });
 });
