@@ -129,12 +129,14 @@ describe('ContentV2Controller', () => {
         .get('/content/v2/modules/a0.basics/lessons?lang=ru')
         .expect(200);
 
-      expect(response.body).toEqual([
-        expect.objectContaining({
-          lessonRef: 'a0.basics.001',
-          progress: expect.objectContaining({ status: 'in_progress' }),
-        }),
-      ]);
+      expect(response.body).toEqual({
+        lessons: [
+          expect.objectContaining({
+            lessonRef: 'a0.basics.001',
+            progress: expect.objectContaining({ status: 'in_progress' }),
+          }),
+        ],
+      });
     });
 
     it('should fallback to lessonRef regex when moduleRef progress is missing', async () => {
@@ -171,12 +173,14 @@ describe('ContentV2Controller', () => {
         userId: 'user-1',
         lessonRef: { $regex: '^a0.basics\\.' },
       });
-      expect(response.body).toEqual([
-        expect.objectContaining({
-          lessonRef: 'a0.basics.001',
-          progress: expect.objectContaining({ status: 'completed' }),
-        }),
-      ]);
+      expect(response.body).toEqual({
+        lessons: [
+          expect.objectContaining({
+            lessonRef: 'a0.basics.001',
+            progress: expect.objectContaining({ status: 'completed' }),
+          }),
+        ],
+      });
     });
   });
 
