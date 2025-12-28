@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { BadRequestException, ForbiddenException, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User, UserDocument } from '../common/schemas/user.schema';
@@ -9,6 +9,7 @@ import { DailyStat, DailyStatDocument } from '../common/schemas/daily-stat.schem
 import { LearningSession, LearningSessionDocument } from '../common/schemas/learning-session.schema';
 import { Achievement, AchievementDocument } from '../common/schemas/achievement.schema';
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
+import { ContentService } from '../content/content.service';
 
 @Injectable()
 export class ProgressService {
@@ -21,6 +22,7 @@ export class ProgressService {
     @InjectModel(LearningSession.name) private readonly sessionModel: Model<LearningSessionDocument>,
     @InjectModel(Achievement.name) private readonly achModel: Model<AchievementDocument>,
     @InjectModel(Lesson.name) private readonly lessonModel: Model<LessonDocument>,
+    private readonly contentService: ContentService,
   ) {}
 
   private getDayKey(date: Date, tz: string): string {
@@ -95,6 +97,33 @@ export class ProgressService {
   }) {
     const xpPerCorrect = args.xpPerCorrect ?? 10;
 
+    const lesson = await this.lessonModel.findOne({ lessonRef: args.lessonRef, published: true }).lean();
+    if (!lesson) {
+      throw new BadRequestException('Lesson not found');
+    }
+
+    const canStartResult = await this.contentService.canStartLesson(args.userId, args.lessonRef);
+    if (!canStartResult.canStart) {
+      if (canStartResult.reason === 'Lesson not found') {
+        throw new BadRequestException('Lesson not found');
+      }
+
+      if (canStartResult.requiredLesson) {
+        throw new ForbiddenException({
+          error: 'PREREQ_NOT_MET',
+          message: canStartResult.reason,
+          requiredLesson: canStartResult.requiredLesson,
+          currentLesson: args.lessonRef,
+        });
+      }
+
+      throw new ForbiddenException({
+        error: 'PREREQ_NOT_MET',
+        message: canStartResult.reason || `Previous lesson must be completed before starting ${args.lessonRef}`,
+        currentLesson: args.lessonRef,
+      });
+    }
+
     // Ensure ULP exists with moduleRef denormalization
     const moduleRef = args.lessonRef.split('.').slice(0, 2).join('.');
     const ulp = await this.ulpModel.findOneAndUpdate(
@@ -111,7 +140,6 @@ export class ProgressService {
       { new: true, upsert: true },
     );
 
-    const lesson = await this.lessonModel.findOne({ lessonRef: args.lessonRef }).lean();
     const hasTasks = Array.isArray(lesson?.tasks) && lesson.tasks.length > 0;
     const actualLastTaskIndex = hasTasks ? lesson!.tasks!.length - 1 : undefined;
     const actualLastTaskRef = hasTasks ? lesson!.tasks![actualLastTaskIndex!]?.ref : undefined;

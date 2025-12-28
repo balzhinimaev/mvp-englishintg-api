@@ -13,10 +13,12 @@ import { Achievement, AchievementSchema } from '../common/schemas/achievement.sc
 import { Lesson, LessonSchema } from '../common/schemas/lesson.schema';
 import { AuthModule } from '../auth/auth.module';
 import { SessionCleanupService } from './session-cleanup.service';
+import { ContentModule } from '../content/content.module';
 
 @Module({
   imports: [
     AuthModule,
+    ContentModule,
     MongooseModule.forFeature([
       { name: User.name, schema: UserSchema },
       { name: UserLessonProgress.name, schema: UserLessonProgressSchema },
@@ -33,5 +35,4 @@ import { SessionCleanupService } from './session-cleanup.service';
   exports: [ProgressService],
 })
 export class ProgressModule {}
-
 

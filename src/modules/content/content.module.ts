@@ -31,8 +31,7 @@ import { LessonPrerequisiteGuard } from './guards/lesson-prerequisite.guard';
   ],
   controllers: [ContentController, ContentV2Controller, AdminContentController, VocabularyController],
   providers: [ContentService, VocabularyService, OptionalUserGuard, PublicGuard, LessonPrerequisiteGuard],
-  exports: [VocabularyService],
+  exports: [ContentService, VocabularyService],
 })
 export class ContentModule {}
-
 
