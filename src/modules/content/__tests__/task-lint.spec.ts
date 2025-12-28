@@ -56,4 +56,33 @@ describe('lintLessonTasks', () => {
 
     expect(errors).toEqual(expect.arrayContaining(['published lesson requires tasks']));
   });
+
+  it('should validate speak prompt and listen audioKey trimming', () => {
+    const errors = lintLessonTasks('a0.basics.001', [
+      { ref: 'a0.basics.001.t1', type: 'speak', data: { prompt: '   ' } },
+      { ref: 'a0.basics.001.t2', type: 'listen', data: { audioKey: ' audio.key ' } },
+    ] as any);
+
+    expect(errors).toEqual(
+      expect.arrayContaining(['speak[0].prompt is required', 'listen[1].audioKey is required'])
+    );
+  });
+
+  it('should validate flashcard front/back as non-empty strings', () => {
+    const errors = lintLessonTasks('a0.basics.001', [
+      { ref: 'a0.basics.001.t1', type: 'flashcard', data: { front: '', back: '   ' } },
+    ] as any);
+
+    expect(errors).toEqual(expect.arrayContaining(['flashcard[0].front/back are required']));
+  });
+
+  it('should accept valid speak, listen, and flashcard tasks', () => {
+    const errors = lintLessonTasks('a0.basics.001', [
+      { ref: 'a0.basics.001.t1', type: 'speak', data: { prompt: 'Say hello' } },
+      { ref: 'a0.basics.001.t2', type: 'listening', data: { audioKey: 'a0.basics.001.t2' } },
+      { ref: 'a0.basics.001.t3', type: 'flashcard', data: { front: 'Hello', back: 'Привет' } },
+    ] as any);
+
+    expect(errors).toEqual([]);
+  });
 });
