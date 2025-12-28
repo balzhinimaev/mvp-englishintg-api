@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Patch, Post, Query, UseGuards, Request } from '@nestjs/common';
+import { BadRequestException, Body, Controller, Get, Param, Patch, Post, Query, UseGuards, Request } from '@nestjs/common';
 import { ContentService } from './content.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { AdminGuard } from '../auth/admin.guard';
@@ -41,7 +41,7 @@ export class AdminContentController {
     const userId = req.user?.userId; // Get userId from JWT token
     const errors = lintLessonTasks(body.lessonRef, body.tasks);
     if (errors.length) {
-      return { ok: false, errors };
+      throw new BadRequestException({ message: 'Lesson tasks validation failed', errors });
     }
     const doc = await this.content.createLesson(body as any);
     return { id: (doc as any)._id };
@@ -58,9 +58,8 @@ export class AdminContentController {
     const userId = req.user?.userId; // Get userId from JWT token
     const errors = lintLessonTasks(lessonRef, body.tasks);
     if (errors.length) {
-      return { ok: false, errors };
+      throw new BadRequestException({ message: 'Lesson tasks validation failed', errors });
     }
     return this.content.updateLesson(lessonRef, body as any);
   }
 }
-

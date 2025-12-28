@@ -494,9 +494,9 @@ describe('AdminContentController', () => {
             },
           ],
         })
-        .expect(201);
+        .expect(400);
 
-      expect(response.body.ok).toBe(false);
+      expect(response.body.message).toBe('Lesson tasks validation failed');
       expect(response.body.errors).toEqual(
         expect.arrayContaining([
           'duplicate task.ref: wrong-prefix.t1',
@@ -536,9 +536,9 @@ describe('AdminContentController', () => {
             },
           ],
         })
-        .expect(200);
+        .expect(400);
 
-      expect(response.body.ok).toBe(false);
+      expect(response.body.message).toBe('Lesson tasks validation failed');
       expect(response.body.errors).toEqual(
         expect.arrayContaining([
           'task[0].ref must start with a0.basics.001.',
