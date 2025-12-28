@@ -60,7 +60,7 @@ export class AdminContentController {
     if (body.published === true) {
       const currentLesson = await this.content.getLessonByRef(lessonRef);
       if (currentLesson) {
-        if (!tasksForLint) tasksForLint = currentLesson.tasks;
+        if (!tasksForLint) tasksForLint = currentLesson.tasks as any;
         if (!moduleRefForLint) moduleRefForLint = currentLesson.moduleRef;
       }
     }

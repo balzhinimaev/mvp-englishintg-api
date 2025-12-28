@@ -66,7 +66,7 @@ export class AnswerValidatorService {
     if (task.type === 'translate') {
       const expected = (validationData as TranslateValidationData | undefined)?.expected;
       if (!expected?.length) {
-        throw new ValidationDataError();
+        throw new Error('Missing expected answers for translate task');
       }
     }
 

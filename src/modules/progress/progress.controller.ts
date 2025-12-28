@@ -138,7 +138,6 @@ export class ProgressController {
         throw new InternalServerErrorException('Internal server error');
       }
 
-      throw new InternalServerErrorException('Internal server error');
       console.error('Answer validation error:', error);
       if (error instanceof BadRequestException) {
         throw error;
