@@ -53,6 +53,7 @@ export class GapTaskDataDto {
   @IsNotEmpty()
   text!: string; // e.g., "It costs ____ dollars"
 
+  @IsOptional()
   @IsString()
   @IsNotEmpty()
   answer!: string; // correct answer for the gap
