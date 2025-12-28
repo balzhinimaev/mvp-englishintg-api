@@ -132,6 +132,7 @@ export class ContentController {
           score: (p as any).score || 0,
           attempts: (p as any).attempts || 0,
           completedAt: (p as any).completedAt,
+          timeSpent: (p as any).timeSpent || 0,
         });
       }
 
