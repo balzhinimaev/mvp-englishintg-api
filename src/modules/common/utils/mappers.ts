@@ -53,7 +53,7 @@ export class LessonMapper {
       moduleRef: lesson.moduleRef,
       title: getLocalizedText(lesson.title, language),
       description: getLocalizedText(lesson.description, language),
-      estimatedMinutes: lesson.estimatedMinutes || 8,
+      estimatedMinutes: lesson.estimatedMinutes || 10,
       order: lesson.order || 0,
       type: lesson.type,
       difficulty: lesson.difficulty,

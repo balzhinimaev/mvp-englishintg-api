@@ -44,7 +44,7 @@ export function presentLesson(
     moduleRef: doc.moduleRef,
     title: choose(doc.title, lang),
     description: choose(doc.description, lang),
-    estimatedMinutes: doc.estimatedMinutes ?? 8,
+    estimatedMinutes: doc.estimatedMinutes ?? 10,
     order: doc.order ?? 0,
     type: doc.type || 'vocabulary',
     difficulty: doc.difficulty || 'easy',
