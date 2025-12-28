@@ -1,5 +1,5 @@
 // src/content/content-v2.controller.ts
-import { Controller, Get, Param, Query, UseGuards, Request } from '@nestjs/common';
+import { Controller, Get, Param, Query, UseGuards, Request, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { CourseModule, CourseModuleDocument } from '../common/schemas/course-module.schema';
@@ -131,7 +131,9 @@ export class ContentV2Controller {
     }
 
     const l = await this.lessonModel.findOne({ lessonRef, published: true }).lean();
-    if (!l) return null;
+    if (!l) {
+      throw new NotFoundException('Lesson not found');
+    }
     const p = await this.progressModel.findOne({ userId: String(userId), lessonRef }).lean();
     // detailed: вернём ещё tasks
     const presented = presentLesson(l as any, lang, p as any);
