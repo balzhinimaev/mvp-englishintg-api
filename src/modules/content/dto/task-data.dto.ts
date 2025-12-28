@@ -221,4 +221,8 @@ export class TaskDto {
     | FlashcardTaskDataDto
     | MatchingTaskDataDto
     | Record<string, any>;
+
+  @IsOptional()
+  @IsObject()
+  validationData?: Record<string, any>;
 }

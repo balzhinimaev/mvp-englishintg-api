@@ -34,8 +34,8 @@ describe('AnswerValidatorService', () => {
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
         tasks: [
-          { ref: 't1', type: 'choice', data: { options: ['a', 'b'], correctIndex: 1 } },
-          { ref: 't2', type: 'multiple_choice', data: { options: ['x', 'y'], correctIndex: 0 } },
+          { ref: 't1', type: 'choice', data: { options: ['a', 'b'] }, validationData: { options: ['a', 'b'], correctIndex: 1 } },
+          { ref: 't2', type: 'multiple_choice', data: { options: ['x', 'y'] }, validationData: { options: ['x', 'y'], correctIndex: 0 } },
         ],
       }),
     });
@@ -53,7 +53,7 @@ describe('AnswerValidatorService', () => {
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
         tasks: [
-          { ref: 't1', type: 'gap', data: { answer: 'Hello', alternatives: ['Hi'] } },
+          { ref: 't1', type: 'gap', data: { text: 'Hello ____' }, validationData: { answer: 'Hello', alternatives: ['Hi'] } },
         ],
       }),
     });
@@ -69,7 +69,7 @@ describe('AnswerValidatorService', () => {
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
         tasks: [
-          { ref: 't1', type: 'order', data: { tokens: ['What', 'time', 'is', 'it'] } },
+          { ref: 't1', type: 'order', data: { tokens: ['What', 'time', 'is', 'it'] }, validationData: { tokens: ['What', 'time', 'is', 'it'] } },
         ],
       }),
     });
@@ -85,7 +85,7 @@ describe('AnswerValidatorService', () => {
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
         tasks: [
-          { ref: 't1', type: 'translate', data: { expected: ['Hello there'] } },
+          { ref: 't1', type: 'translate', data: { question: 'Translate' }, validationData: { expected: ['Hello there'] } },
         ],
       }),
     });
@@ -101,8 +101,8 @@ describe('AnswerValidatorService', () => {
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
         tasks: [
-          { ref: 't1', type: 'listen', data: { target: 'hello' } },
-          { ref: 't2', type: 'speak', data: { target: 'hello' } },
+          { ref: 't1', type: 'listen', data: { audioKey: 'audio' }, validationData: { target: 'hello' } },
+          { ref: 't2', type: 'speak', data: { prompt: 'Say hello' }, validationData: { target: 'hello' } },
         ],
       }),
     });

@@ -19,3 +19,10 @@ export interface TranslateValidationData {
 export interface AudioValidationData {
   target?: string;
 }
+
+export type TaskValidationData =
+  | ChoiceValidationData
+  | GapValidationData
+  | OrderValidationData
+  | TranslateValidationData
+  | AudioValidationData;

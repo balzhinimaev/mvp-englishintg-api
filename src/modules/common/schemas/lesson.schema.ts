@@ -22,7 +22,7 @@ export class Lesson {
   estimatedMinutes?: number;
 
   @Prop({ type: [Object], default: [] })
-  tasks?: Array<{ ref: string; type: string; data: Record<string, any> }>;
+  tasks?: Array<{ ref: string; type: string; data: Record<string, any>; validationData?: Record<string, any> }>;
 
   @Prop({ default: true })
   published?: boolean;
@@ -55,5 +55,4 @@ export class Lesson {
 export const LessonSchema = SchemaFactory.createForClass(Lesson);
 LessonSchema.index({ moduleRef: 1, order: 1 });
 LessonSchema.index({ lessonRef: 1 }, { unique: true });
-
 
