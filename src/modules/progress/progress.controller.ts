@@ -84,11 +84,11 @@ export class ProgressController {
       };
     } catch (error) {
       console.error('Answer validation error:', error);
-      return {
-        isCorrect: false,
-        score: 0,
-        feedback: 'An error occurred while checking your answer',
-      };
+      if (error instanceof BadRequestException) {
+        throw error;
+      }
+      const message = error instanceof Error ? error.message : String(error);
+      throw new BadRequestException(message);
     }
   }
 
@@ -174,4 +174,3 @@ export class ProgressController {
     return { items };
   }
 }
-
