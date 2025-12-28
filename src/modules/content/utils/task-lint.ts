@@ -1,7 +1,15 @@
 import { TaskDto } from '../dto/task-data.dto';
 
-export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[]): string[] {
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[], moduleRef?: string): string[] {
   const errors: string[] = [];
+  if (moduleRef) {
+    const pattern = new RegExp(`^${escapeRegExp(moduleRef)}\\.\\d{3}$`);
+    if (!pattern.test(lessonRef)) {
+      errors.push(`lessonRef must match ${moduleRef}.NNN`);
+    }
+  }
   if (!tasks || tasks.length === 0) return errors;
   const seen = new Set<string>();
   tasks.forEach((t, i) => {
@@ -21,5 +29,4 @@ export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[]): string[] 
   });
   return errors;
 }
-
 

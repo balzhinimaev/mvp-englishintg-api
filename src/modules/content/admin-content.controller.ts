@@ -39,7 +39,7 @@ export class AdminContentController {
   @Post('lessons')
   async createLesson(@Body() body: CreateLessonDto, @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
-    const errors = lintLessonTasks(body.lessonRef, body.tasks);
+    const errors = lintLessonTasks(body.lessonRef, body.tasks, body.moduleRef);
     if (errors.length) {
       throw new BadRequestException({ message: 'Lesson tasks validation failed', errors });
     }
@@ -56,7 +56,7 @@ export class AdminContentController {
   @Patch('lessons/:lessonRef')
   async updateLesson(@Param('lessonRef') lessonRef: string, @Body() body: UpdateLessonDto, @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
-    const errors = lintLessonTasks(lessonRef, body.tasks);
+    const errors = lintLessonTasks(lessonRef, body.tasks, body.moduleRef);
     if (errors.length) {
       throw new BadRequestException({ message: 'Lesson tasks validation failed', errors });
     }
