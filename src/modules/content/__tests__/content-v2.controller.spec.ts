@@ -192,7 +192,15 @@ describe('ContentV2Controller', () => {
           moduleRef: 'a0.basics',
           title: { ru: 'Урок 1', en: 'Lesson 1' },
           description: { ru: 'Описание', en: 'Description' },
-          tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: { options: ['a', 'b'] } }],
+          order: 0,
+          tags: [],
+          estimatedMinutes: 10,
+          type: 'vocabulary',
+          difficulty: 'easy',
+          xpReward: 25,
+          hasAudio: true,
+          hasVideo: false,
+          tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: { options: ['a', 'b'], correctIndex: 0 } }],
         }),
       });
       mockProgressModel.findOne.mockReturnValue({
@@ -203,12 +211,19 @@ describe('ContentV2Controller', () => {
         .get('/content/v2/lessons/a0.basics.001?lang=ru')
         .expect(200);
 
-      expect(response.body).toEqual(
-        expect.objectContaining({
+      expect(response.body).toEqual({
+        lesson: expect.objectContaining({
           lessonRef: 'a0.basics.001',
+          moduleRef: 'a0.basics',
+          title: 'Урок 1',
+          description: 'Описание',
           tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: { options: ['a', 'b'] } }],
-        })
-      );
+          progress: expect.objectContaining({
+            status: 'completed',
+            attempts: 1,
+          }),
+        }),
+      });
     });
 
     it('should return 404 for missing lesson', async () => {
