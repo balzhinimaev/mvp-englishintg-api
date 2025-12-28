@@ -31,10 +31,12 @@ export class CreateLessonDto {
   @IsOptional() @IsBoolean()
   published?: boolean;
 
-  @IsOptional() @IsString()
+  @IsOptional()
+  @IsEnum(['conversation', 'vocabulary', 'grammar'])
   type?: 'conversation'|'vocabulary'|'grammar';
 
-  @IsOptional() @IsString()
+  @IsOptional()
+  @IsEnum(['easy', 'medium', 'hard'])
   difficulty?: 'easy'|'medium'|'hard';
 
   @IsOptional() @IsArray()
@@ -60,4 +62,3 @@ export class CreateLessonDto {
 }
 
 export class UpdateLessonDto extends PartialType(CreateLessonDto) {}
-
