@@ -52,4 +52,18 @@ describe('CreateLessonDto', () => {
 
     expect(errors.some(e => e.property === 'estimatedMinutes')).toBe(true);
   });
+
+  it('should fail when type is invalid', async () => {
+    const dto = plainToInstance(CreateLessonDto, { ...validLesson, type: 'speaking' });
+    const errors = await validate(dto);
+
+    expect(errors.some(e => e.property === 'type')).toBe(true);
+  });
+
+  it('should fail when difficulty is invalid', async () => {
+    const dto = plainToInstance(CreateLessonDto, { ...validLesson, difficulty: 'expert' });
+    const errors = await validate(dto);
+
+    expect(errors.some(e => e.property === 'difficulty')).toBe(true);
+  });
 });
