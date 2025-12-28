@@ -527,6 +527,21 @@ describe('AdminContentController', () => {
       expect(mockContentService.createLesson).not.toHaveBeenCalled();
     });
 
+    it('should return 400 when published lesson has no tasks', async () => {
+      const response = await request(app.getHttpServer())
+        .post('/admin/content/lessons')
+        .send({
+          ...validLesson,
+          published: true,
+          tasks: [],
+        })
+        .expect(400);
+
+      expect(response.body.message).toBe('Lesson tasks validation failed');
+      expect(response.body.errors).toEqual(expect.arrayContaining(['published lesson requires tasks']));
+      expect(mockContentService.createLesson).not.toHaveBeenCalled();
+    });
+
     it('should create lesson when lint passes', async () => {
       mockContentService.createLesson.mockResolvedValue({ _id: 'lesson-id' });
 

@@ -3,13 +3,22 @@ import { TaskDto } from '../dto/task-data.dto';
 const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const isNonEmptyString = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0;
 
-export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[], moduleRef?: string): string[] {
+export function lintLessonTasks(
+  lessonRef: string,
+  tasks?: TaskDto[],
+  moduleRef?: string,
+  published?: boolean
+): string[] {
   const errors: string[] = [];
   if (moduleRef) {
     const pattern = new RegExp(`^${escapeRegExp(moduleRef)}\\.\\d{3}$`);
     if (!pattern.test(lessonRef)) {
       errors.push(`lessonRef must match ${moduleRef}.NNN`);
     }
+  }
+  if (published === true && (!tasks || tasks.length === 0)) {
+    errors.push('published lesson requires tasks');
+    return errors;
   }
   if (!tasks || tasks.length === 0) return errors;
   const seen = new Set<string>();

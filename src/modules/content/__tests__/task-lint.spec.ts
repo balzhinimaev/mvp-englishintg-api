@@ -50,4 +50,10 @@ describe('lintLessonTasks', () => {
 
     expect(errors).toEqual(expect.arrayContaining(['lessonRef must match a0.travel.NNN']));
   });
+
+  it('should require tasks when published', () => {
+    const errors = lintLessonTasks('a0.basics.001', undefined, 'a0.basics', true);
+
+    expect(errors).toEqual(expect.arrayContaining(['published lesson requires tasks']));
+  });
 });
