@@ -12,7 +12,12 @@ import { User } from '../../common/schemas/user.schema';
 const mockJwtAuthGuard = {
   canActivate: (context: ExecutionContext) => {
     const req = context.switchToHttp().getRequest();
-    req.user = { userId: 'user-1' };
+    const headerUserId = req.headers['x-user-id'];
+    if (headerUserId === 'none') {
+      req.user = undefined;
+    } else {
+      req.user = { userId: headerUserId ?? 'user-1' };
+    }
     return true;
   },
 };
@@ -64,6 +69,20 @@ describe('ContentV2Controller', () => {
   });
 
   describe('GET /content/v2/modules', () => {
+    it('should return 400 when userId is missing', async () => {
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/modules')
+        .set('x-user-id', 'none')
+        .expect(400);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 400,
+          message: 'userId is required',
+        })
+      );
+    });
+
     it('should paginate modules and compute requiresPro/isAvailable', async () => {
       mockModuleModel.countDocuments.mockResolvedValue(2);
       mockModuleModel.find.mockReturnValue({
@@ -104,6 +123,20 @@ describe('ContentV2Controller', () => {
   });
 
   describe('GET /content/v2/modules/:moduleRef/lessons', () => {
+    it('should return 400 when userId is missing', async () => {
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/modules/a0.basics/lessons')
+        .set('x-user-id', 'none')
+        .expect(400);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 400,
+          message: 'userId is required',
+        })
+      );
+    });
+
     it('should return lessons with progress', async () => {
       mockLessonModel.find.mockReturnValue({
         sort: jest.fn().mockReturnValue({
@@ -129,12 +162,14 @@ describe('ContentV2Controller', () => {
         .get('/content/v2/modules/a0.basics/lessons?lang=ru')
         .expect(200);
 
-      expect(response.body).toEqual([
-        expect.objectContaining({
-          lessonRef: 'a0.basics.001',
-          progress: expect.objectContaining({ status: 'in_progress' }),
-        }),
-      ]);
+      expect(response.body).toEqual({
+        lessons: [
+          expect.objectContaining({
+            lessonRef: 'a0.basics.001',
+            progress: expect.objectContaining({ status: 'in_progress' }),
+          }),
+        ],
+      });
     });
 
     it('should fallback to lessonRef regex when moduleRef progress is missing', async () => {
@@ -171,16 +206,32 @@ describe('ContentV2Controller', () => {
         userId: 'user-1',
         lessonRef: { $regex: '^a0.basics\\.' },
       });
-      expect(response.body).toEqual([
-        expect.objectContaining({
-          lessonRef: 'a0.basics.001',
-          progress: expect.objectContaining({ status: 'completed' }),
-        }),
-      ]);
+      expect(response.body).toEqual({
+        lessons: [
+          expect.objectContaining({
+            lessonRef: 'a0.basics.001',
+            progress: expect.objectContaining({ status: 'completed' }),
+          }),
+        ],
+      });
     });
   });
 
   describe('GET /content/v2/lessons/:lessonRef', () => {
+    it('should return 400 when userId is missing', async () => {
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/lessons/a0.basics.001')
+        .set('x-user-id', 'none')
+        .expect(400);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 400,
+          message: 'userId is required',
+        })
+      );
+    });
+
     it('should return lesson with tasks', async () => {
       mockLessonModel.findOne.mockReturnValue({
         lean: jest.fn().mockResolvedValue({
@@ -188,7 +239,15 @@ describe('ContentV2Controller', () => {
           moduleRef: 'a0.basics',
           title: { ru: 'Урок 1', en: 'Lesson 1' },
           description: { ru: 'Описание', en: 'Description' },
-          tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: { options: ['a', 'b'] } }],
+          order: 0,
+          tags: [],
+          estimatedMinutes: 10,
+          type: 'vocabulary',
+          difficulty: 'easy',
+          xpReward: 25,
+          hasAudio: true,
+          hasVideo: false,
+          tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: { options: ['a', 'b'], correctIndex: 0 } }],
         }),
       });
       mockProgressModel.findOne.mockReturnValue({
@@ -199,12 +258,19 @@ describe('ContentV2Controller', () => {
         .get('/content/v2/lessons/a0.basics.001?lang=ru')
         .expect(200);
 
-      expect(response.body).toEqual(
-        expect.objectContaining({
+      expect(response.body).toEqual({
+        lesson: expect.objectContaining({
           lessonRef: 'a0.basics.001',
+          moduleRef: 'a0.basics',
+          title: 'Урок 1',
+          description: 'Описание',
           tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: { options: ['a', 'b'] } }],
-        })
-      );
+          progress: expect.objectContaining({
+            status: 'completed',
+            attempts: 1,
+          }),
+        }),
+      });
     });
 
     it('should return 404 for missing lesson', async () => {

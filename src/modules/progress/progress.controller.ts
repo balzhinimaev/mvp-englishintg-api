@@ -8,6 +8,7 @@ import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { DailyStat, DailyStatDocument } from '../common/schemas/daily-stat.schema';
 import { XpTransaction, XpTransactionDocument } from '../common/schemas/xp-transaction.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
+import { AdminGuard } from '../auth/admin.guard';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 const badRequestResponseSchema = {
@@ -138,11 +139,21 @@ export class ProgressController {
       }
 
       throw new InternalServerErrorException('Internal server error');
+      console.error('Answer validation error:', error);
+      if (error instanceof BadRequestException) {
+        throw error;
+      }
+      const message = error instanceof Error ? error.message : String(error);
+      throw new BadRequestException(message);
     }
   }
 
+  /**
+   * @deprecated Устаревший эндпоинт. Используйте POST /progress/submit-answer.
+   */
   // 🚨 СТАРЫЙ НЕБЕЗОПАСНЫЙ ЭНДПОИНТ (для обратной совместимости)
   @Post('attempts')
+  @UseGuards(AdminGuard)
   async attempt(
     @Headers('idempotency-key') idempotencyKey: string,
     @Body()
@@ -163,7 +174,7 @@ export class ProgressController {
     @Request() req: any,
   ) {
     const userId = req.user?.userId; // Get userId from JWT token
-    console.warn(`⚠️ SECURITY WARNING: Using deprecated /attempts endpoint for ${body.taskRef}`);
+    console.warn(`⚠️ УСТАРЕВШИЙ ЭНДПОИНТ: /progress/attempts для ${body.taskRef}`);
     
     if (!idempotencyKey) {
       throw new BadRequestException('Idempotency-Key header is required');

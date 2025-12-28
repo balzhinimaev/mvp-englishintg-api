@@ -1,4 +1,4 @@
-import { IsString, IsOptional, IsNumber, IsBoolean, Min } from 'class-validator';
+import { IsString, IsOptional, IsNumber, IsBoolean, Min, Matches } from 'class-validator';
 
 export class SubmitAnswerDto {
   @IsOptional()
@@ -6,9 +6,15 @@ export class SubmitAnswerDto {
   userId?: string;
 
   @IsString()
+  @Matches(/^[a-z0-9]+\.[a-z0-9_]+\.\d{3}$/, {
+    message: 'lessonRef должен иметь формат: level.module.###',
+  })
   lessonRef!: string;
 
   @IsString()
+  @Matches(/^[a-z0-9]+\.[a-z0-9_]+\.\d{3}\.[a-z0-9_]+$/, {
+    message: 'taskRef должен иметь формат: level.module.###.taskId',
+  })
   taskRef!: string;
 
   // 🔒 ФРОНТЕНД ОТПРАВЛЯЕТ ТОЛЬКО СВОЙ ОТВЕТ

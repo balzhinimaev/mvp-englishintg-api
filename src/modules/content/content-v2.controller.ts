@@ -6,8 +6,8 @@ import { CourseModule, CourseModuleDocument } from '../common/schemas/course-mod
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
 import { User, UserDocument } from '../common/schemas/user.schema';
-import { TaskType } from '../common/types/content';
-import { redact } from '../common/utils/mappers';
+import { LessonMapper } from '../common/utils/mappers';
+import { parseLanguage } from '../common/utils/i18n.util';
 import { presentLesson, presentModule } from './presenter';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { GetModulesDto } from './dto/get-content.dto';
@@ -26,7 +26,7 @@ export class ContentV2Controller {
   async getModules(@Query() query: GetModulesDto, @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
-      return { error: 'userId is required' };
+      throw new BadRequestException('userId is required');
     }
 
     const { level, page = 1, limit = 20 } = query;
@@ -115,7 +115,7 @@ export class ContentV2Controller {
   async getLessons(@Param('moduleRef') moduleRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
-      return { error: 'userId is required' };
+      throw new BadRequestException('userId is required');
     }
 
     if (!/^[a-z0-9]+\.[a-z0-9_]+$/.test(moduleRef)) {
@@ -131,14 +131,14 @@ export class ContentV2Controller {
     }
 
     const progressMap = new Map(progresses.map((p: any) => [p.lessonRef, p]));
-    return lessons.map(l => presentLesson(l as any, lang, progressMap.get(l.lessonRef)));
+    return { lessons: lessons.map(l => presentLesson(l as any, lang, progressMap.get(l.lessonRef))) };
   }
 
   @Get('lessons/:lessonRef')
   async getLesson(@Param('lessonRef') lessonRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
-      return { error: 'userId is required' };
+      throw new BadRequestException('userId is required');
     }
 
     if (!/^[a-z0-9]+\.[a-z0-9_]+\.\d{3}$/.test(lessonRef)) {
@@ -150,13 +150,11 @@ export class ContentV2Controller {
       throw new NotFoundException('Lesson not found');
     }
     const p = await this.progressModel.findOne({ userId: String(userId), lessonRef }).lean();
-    // detailed: вернём ещё tasks
-    const presented = presentLesson(l as any, lang, p as any);
-    (presented as any).tasks = (l.tasks || []).map(({ ref, type, data }) => ({
-      ref,
-      type: type as TaskType,
-      data: redact(data),
-    }));
-    return presented;
+    
+    // Используем LessonMapper.toDto, который уже включает tasks с redact
+    const lessonDto = LessonMapper.toDto(l as any, parseLanguage(lang), p as any);
+    
+    // Унифицируем формат ответа с V1: возвращаем обёртку { lesson: ... }
+    return { lesson: lessonDto };
   }
 }

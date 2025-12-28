@@ -2,6 +2,8 @@ import { TaskDto } from '../dto/task-data.dto';
 
 const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const isNonEmptyString = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0;
+const isTrimmedNonEmptyString = (value: unknown): value is string =>
+  typeof value === 'string' && value.trim().length > 0 && value.trim() === value;
 
 export function lintLessonTasks(
   lessonRef: string,
@@ -59,13 +61,17 @@ export function lintLessonTasks(
     }
     if (t.type === 'listen' || t.type === 'listening') {
       const d = t.data as any;
-      if (!isNonEmptyString(d.audioKey)) errors.push(`${t.type}[${i}].audioKey is required`);
+      if (!isTrimmedNonEmptyString(d.audioKey)) errors.push(`${t.type}[${i}].audioKey is required`);
     }
     if (t.type === 'flashcard') {
       const d = t.data as any;
       if (!isNonEmptyString(d.front) || !isNonEmptyString(d.back)) {
         errors.push(`flashcard[${i}].front/back are required`);
       }
+    }
+    if (t.type === 'speak') {
+      const d = t.data as any;
+      if (!isNonEmptyString(d.prompt)) errors.push(`speak[${i}].prompt is required`);
     }
   });
   return errors;
