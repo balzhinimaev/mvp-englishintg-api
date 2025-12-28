@@ -5,7 +5,10 @@ import { CreateLessonDto } from '../dto/lesson.dto';
 const validLesson = {
   moduleRef: 'a0.basics',
   lessonRef: 'a0.basics.001',
-  title: 'Lesson 1',
+  title: {
+    ru: 'Урок 1',
+    en: 'Lesson 1',
+  },
   estimatedMinutes: 5,
   tasks: [
     {
@@ -30,6 +33,17 @@ describe('CreateLessonDto', () => {
 
     expect(errors.some(e => e.property === 'lessonRef')).toBe(true);
     expect(errors.some(e => e.property === 'title')).toBe(true);
+  });
+
+  it('should fail when multilingual title is missing locales', async () => {
+    const dto = plainToInstance(CreateLessonDto, {
+      ...validLesson,
+      title: { ru: 'Только русский' },
+    });
+    const errors = await validate(dto);
+
+    const titleError = errors.find(e => e.property === 'title');
+    expect(titleError?.children?.some(child => child.property === 'en')).toBe(true);
   });
 
   it('should validate estimatedMinutes min value', async () => {

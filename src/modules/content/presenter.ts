@@ -3,12 +3,12 @@ import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { CourseModule } from '../common/schemas/course-module.schema';
 import { UserLessonProgress } from '../common/schemas/user-lesson-progress.schema';
 import { LessonItem, ModuleItem, TaskType } from '../common/types/content';
+import { getLocalizedText } from '../common/utils/i18n.util';
 
-const choose = (mt: any, lang: string) => {
-  // Простой выбор языка из MultilingualText; fallback на 'ru'/'en'
-  if (!mt) return '';
-  return mt[lang] || mt['en'] || mt['ru'] || Object.values(mt)[0] || '';
-};
+const choose = (mt: unknown, lang: string) => getLocalizedText(
+  mt as any,
+  lang as any,
+);
 
 export function presentModule(
   doc: CourseModule,

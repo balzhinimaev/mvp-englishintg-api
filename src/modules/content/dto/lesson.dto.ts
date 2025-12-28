@@ -1,7 +1,8 @@
 import { Type } from 'class-transformer';
-import { IsArray, IsBoolean, IsEnum, IsInt, IsOptional, IsString, Min, ValidateNested } from 'class-validator';
+import { IsArray, IsBoolean, IsEnum, IsInt, IsObject, IsOptional, IsString, Min, ValidateNested } from 'class-validator';
 import { PartialType } from '@nestjs/mapped-types';
 import { TaskDto } from './task-data.dto';
+import { MultilingualTextDto, OptionalMultilingualTextDto } from './module.dto';
 
 export class CreateLessonDto {
   @IsString()
@@ -10,11 +11,16 @@ export class CreateLessonDto {
   @IsString()
   lessonRef!: string;
 
-  @IsString()
-  title!: string;
+  @IsObject()
+  @ValidateNested()
+  @Type(() => MultilingualTextDto)
+  title!: MultilingualTextDto;
 
-  @IsOptional() @IsString()
-  description?: string;
+  @IsOptional()
+  @IsObject()
+  @ValidateNested()
+  @Type(() => OptionalMultilingualTextDto)
+  description?: OptionalMultilingualTextDto;
 
   @IsOptional() @IsInt() @Min(1)
   estimatedMinutes?: number;
@@ -54,5 +60,4 @@ export class CreateLessonDto {
 }
 
 export class UpdateLessonDto extends PartialType(CreateLessonDto) {}
-
 
