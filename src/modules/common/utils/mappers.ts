@@ -6,6 +6,7 @@ import { UserVocabularyProgress } from '../schemas/user-vocabulary-progress.sche
 import { User } from '../schemas/user.schema';
 import { ModuleItem, LessonItem, LessonProgress, VocabularyItem as VocabType, TaskType, UserVocabularyProgress as UserVocabularyProgressType, VocabularyProgressStats } from '../types/content';
 import { getLocalizedText, SupportedLanguage } from './i18n.util';
+import { normalizeLessonDefaults } from './lesson-defaults';
 
 const STRIP = new Set(['correct','isCorrect','correctIndex','correctIndexes','answer','answers','expected','expectedAnswers','target','targets','solution','solutions']);
 export const redact = (v: any): any =>
@@ -48,19 +49,21 @@ export class LessonMapper {
     progress?: LessonProgress,
     taskTypes?: TaskType[]
   ): LessonItem {
+    const defaults = normalizeLessonDefaults(lesson);
+
     return {
       lessonRef: lesson.lessonRef,
       moduleRef: lesson.moduleRef,
       title: getLocalizedText(lesson.title, language),
       description: getLocalizedText(lesson.description, language),
-      estimatedMinutes: lesson.estimatedMinutes || 10,
+      estimatedMinutes: defaults.estimatedMinutes,
       order: lesson.order || 0,
-      type: lesson.type,
-      difficulty: lesson.difficulty,
+      type: defaults.type,
+      difficulty: defaults.difficulty,
       tags: lesson.tags || [],
-      xpReward: lesson.xpReward || 25,
-      hasAudio: lesson.hasAudio ?? true,
-      hasVideo: lesson.hasVideo ?? false,
+      xpReward: defaults.xpReward,
+      hasAudio: defaults.hasAudio,
+      hasVideo: defaults.hasVideo,
       previewText: lesson.previewText,
       taskTypes: taskTypes || lesson.tasks?.map(t => t.type as TaskType) || [],
       progress: progress,

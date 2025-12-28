@@ -27,6 +27,8 @@ describe('LessonMapper', () => {
 
     expect(result.estimatedMinutes).toBe(10);
     expect(result.xpReward).toBe(25);
+    expect(result.type).toBe('vocabulary');
+    expect(result.difficulty).toBe('easy');
     expect(result.hasAudio).toBe(true);
     expect(result.hasVideo).toBe(false);
     expect(result.order).toBe(0);
