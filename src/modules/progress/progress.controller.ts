@@ -1,8 +1,9 @@
-import { Body, Controller, Get, Headers, Param, Post, Query, UseGuards, BadRequestException, Request } from '@nestjs/common';
+import { Body, Controller, Get, Headers, Param, Post, Query, UseGuards, BadRequestException, InternalServerErrorException, NotFoundException, Request } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
+import { ApiBadRequestResponse, ApiInternalServerErrorResponse, ApiNotFoundResponse, ApiOkResponse, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { ProgressService } from './progress.service';
-import { AnswerValidatorService } from './answer-validator.service';
+import { AnswerValidatorService, InvalidAnswerFormatError, LessonNotFoundError, TaskNotFoundError, ValidationDataError } from './answer-validator.service';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
 import { DailyStat, DailyStatDocument } from '../common/schemas/daily-stat.schema';
 import { XpTransaction, XpTransactionDocument } from '../common/schemas/xp-transaction.schema';
@@ -10,8 +11,36 @@ import { UserLessonProgress, UserLessonProgressDocument } from '../common/schema
 import { AdminGuard } from '../auth/admin.guard';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
+const badRequestResponseSchema = {
+  type: 'object',
+  properties: {
+    statusCode: { type: 'number', example: 400 },
+    message: { type: 'string', example: 'Invalid answer format' },
+    error: { type: 'string', example: 'Bad Request' },
+  },
+};
+
+const notFoundResponseSchema = {
+  type: 'object',
+  properties: {
+    statusCode: { type: 'number', example: 404 },
+    message: { type: 'string', example: 'Lesson not found' },
+    error: { type: 'string', example: 'Not Found' },
+  },
+};
+
+const internalServerErrorResponseSchema = {
+  type: 'object',
+  properties: {
+    statusCode: { type: 'number', example: 500 },
+    message: { type: 'string', example: 'Internal server error' },
+    error: { type: 'string', example: 'Internal Server Error' },
+  },
+};
+
 @Controller('progress')
 @UseGuards(JwtAuthGuard)
+@ApiTags('progress')
 export class ProgressController {
   constructor(
     private readonly progress: ProgressService,
@@ -39,6 +68,20 @@ export class ProgressController {
 
   // 🔒 НОВЫЙ БЕЗОПАСНЫЙ ЭНДПОИНТ
   @Post('submit-answer')
+  @ApiOperation({ summary: 'Проверить ответ пользователя и сохранить попытку' })
+  @ApiOkResponse({ description: 'Результат проверки и данные попытки.' })
+  @ApiBadRequestResponse({
+    description: 'Ошибка валидации ответа.',
+    schema: badRequestResponseSchema,
+  })
+  @ApiNotFoundResponse({
+    description: 'Урок или задание не найдены.',
+    schema: notFoundResponseSchema,
+  })
+  @ApiInternalServerErrorResponse({
+    description: 'Внутренняя ошибка сервера.',
+    schema: internalServerErrorResponseSchema,
+  })
   async submitAnswer(
     @Headers('idempotency-key') idempotencyKey: string,
     @Body() body: SubmitAnswerDto,
@@ -83,6 +126,19 @@ export class ProgressController {
         explanation: validation.explanation,
       };
     } catch (error) {
+      if (error instanceof LessonNotFoundError || error instanceof TaskNotFoundError) {
+        throw new NotFoundException(error.message);
+      }
+
+      if (error instanceof InvalidAnswerFormatError) {
+        throw new BadRequestException(error.message);
+      }
+
+      if (error instanceof ValidationDataError) {
+        throw new InternalServerErrorException('Internal server error');
+      }
+
+      throw new InternalServerErrorException('Internal server error');
       console.error('Answer validation error:', error);
       if (error instanceof BadRequestException) {
         throw error;
