@@ -106,6 +106,7 @@ describe('ContentController', () => {
           score: 0.9,
           attempts: 2,
           completedAt,
+          timeSpent: 135,
         },
       ];
 
@@ -131,7 +132,7 @@ describe('ContentController', () => {
             score: 0.9,
             attempts: 2,
             completedAt: completedAt.toISOString(),
-            timeSpent: 0,
+            timeSpent: 135,
           },
         })
       );
