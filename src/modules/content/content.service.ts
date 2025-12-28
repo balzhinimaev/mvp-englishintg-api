@@ -56,6 +56,10 @@ export class ContentService {
     return this.lessonModel.find(q).sort({ moduleRef: 1, order: 1 }).lean();
   }
 
+  async getLessonByRef(lessonRef: string) {
+    return this.lessonModel.findOne({ lessonRef }).lean();
+  }
+
   async updateLesson(lessonRef: string, update: UpdateLessonInput) {
     const nextUpdate = { ...update } as Partial<Lesson>;
     if (update.tasks) {

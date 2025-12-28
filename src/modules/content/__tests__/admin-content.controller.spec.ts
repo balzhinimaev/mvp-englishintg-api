@@ -26,6 +26,7 @@ describe('AdminContentController', () => {
     updateModule: jest.fn(),
     createLesson: jest.fn(),
     listLessons: jest.fn(),
+    getLessonByRef: jest.fn(),
     updateLesson: jest.fn(),
   };
 
@@ -600,6 +601,30 @@ describe('AdminContentController', () => {
         'a0.basics.001',
         expect.objectContaining({ tasks: expect.any(Array) })
       );
+    });
+
+    it('should allow publish without tasks by using tasks from db', async () => {
+      mockContentService.getLessonByRef.mockResolvedValue({
+        lessonRef: 'a0.basics.001',
+        moduleRef: 'a0.basics',
+        tasks: [
+          {
+            ref: 'a0.basics.001.t1',
+            type: 'gap',
+            data: { text: 'It costs ____ dollars', answer: '10' },
+          },
+        ],
+      });
+      mockContentService.updateLesson.mockResolvedValue({ ok: true });
+
+      const response = await request(app.getHttpServer())
+        .patch('/admin/content/lessons/a0.basics.001')
+        .send({ published: true })
+        .expect(200);
+
+      expect(response.body).toEqual({ ok: true });
+      expect(mockContentService.getLessonByRef).toHaveBeenCalledWith('a0.basics.001');
+      expect(mockContentService.updateLesson).toHaveBeenCalledWith('a0.basics.001', { published: true });
     });
   });
 });
