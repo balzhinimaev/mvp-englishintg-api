@@ -31,4 +31,10 @@ describe('lintLessonTasks', () => {
       ])
     );
   });
+
+  it('should report mismatched moduleRef and lessonRef', () => {
+    const errors = lintLessonTasks('a0.basics.001', undefined, 'a0.travel');
+
+    expect(errors).toEqual(expect.arrayContaining(['lessonRef must match a0.travel.NNN']));
+  });
 });

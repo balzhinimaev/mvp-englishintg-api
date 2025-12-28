@@ -53,6 +53,13 @@ describe('CreateLessonDto', () => {
     expect(errors.some(e => e.property === 'estimatedMinutes')).toBe(true);
   });
 
+  it('should fail when lessonRef does not match moduleRef', async () => {
+    const dto = plainToInstance(CreateLessonDto, { ...validLesson, lessonRef: 'a0.travel.001' });
+    const errors = await validate(dto);
+
+    expect(errors.some(e => e.property === 'lessonRef')).toBe(true);
+  });
+
   it('should fail when type is invalid', async () => {
     const dto = plainToInstance(CreateLessonDto, { ...validLesson, type: 'speaking' });
     const errors = await validate(dto);
