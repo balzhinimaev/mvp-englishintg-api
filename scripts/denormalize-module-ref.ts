@@ -28,8 +28,8 @@ async function denormalizeModuleRef() {
     const collection = db.collection('user_lesson_progress');
     
     // Находим документы без moduleRef
-    const documentsWithoutModuleRef = await collection.find({ 
-      moduleRef: { $exists: false } 
+    const documentsWithoutModuleRef = await collection.find({
+      $or: [{ moduleRef: { $exists: false } }, { moduleRef: null }, { moduleRef: '' }],
     }).toArray();
     
     console.log(`📋 Найдено документов без moduleRef: ${documentsWithoutModuleRef.length}`);
@@ -42,18 +42,25 @@ async function denormalizeModuleRef() {
     if (!DRY_RUN) {
       // Обновляем документы, добавляя moduleRef
       const result = await collection.updateMany(
-        { moduleRef: { $exists: false } },
-        [{ 
-          $set: { 
-            moduleRef: { 
-              $substrBytes: [
-                "$lessonRef", 
-                0, 
-                { $subtract: [{ $strLenBytes: "$lessonRef" }, 4] }
-              ]
-            }
-          } 
-        }]
+        { $or: [{ moduleRef: { $exists: false } }, { moduleRef: null }, { moduleRef: '' }] },
+        [
+          {
+            $set: {
+              moduleRef: {
+                $let: {
+                  vars: { parts: { $split: ['$lessonRef', '.'] } },
+                  in: {
+                    $cond: [
+                      { $gte: [{ $size: '$$parts' }, 2] },
+                      { $concat: [{ $arrayElemAt: ['$$parts', 0] }, '.', { $arrayElemAt: ['$$parts', 1] }] },
+                      '$$REMOVE',
+                    ],
+                  },
+                },
+              },
+            },
+          },
+        ]
       );
       
       console.log(`✅ Обновлено документов: ${result.modifiedCount}`);
@@ -79,8 +86,8 @@ async function denormalizeModuleRef() {
     }
     
     // Проверяем результат
-    const remainingWithoutModuleRef = await collection.countDocuments({ 
-      moduleRef: { $exists: false } 
+    const remainingWithoutModuleRef = await collection.countDocuments({
+      $or: [{ moduleRef: { $exists: false } }, { moduleRef: null }, { moduleRef: '' }],
     });
     
     console.log(`\n📊 Документов без moduleRef осталось: ${remainingWithoutModuleRef}`);
