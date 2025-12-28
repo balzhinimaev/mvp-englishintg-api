@@ -7,6 +7,17 @@ import { UserLessonProgress, UserLessonProgressDocument } from '../common/schema
 import { MultilingualText, OptionalMultilingualText } from '../common/utils/i18n.util';
 import { mapTaskDataToValidationData } from '../common/utils/task-validation-data';
 import { TaskValidationData } from '../common/types/validation-data';
+import { CreateLessonDto, UpdateLessonDto } from './dto/lesson.dto';
+
+type CreateLessonInput = Omit<CreateLessonDto, 'title' | 'description'> & {
+  title: MultilingualText;
+  description?: OptionalMultilingualText;
+};
+
+type UpdateLessonInput = Omit<UpdateLessonDto, 'title' | 'description'> & {
+  title?: MultilingualText;
+  description?: OptionalMultilingualText;
+};
 
 @Injectable()
 export class ContentService {
@@ -34,7 +45,7 @@ export class ContentService {
   }
 
   // Lessons
-  async createLesson(body: { moduleRef: string; lessonRef: string; title: string; description?: string; estimatedMinutes?: number; tasks?: Array<{ ref: string; type: string; data: Record<string, any>; validationData?: TaskValidationData }>; order?: number; published?: boolean }) {
+  async createLesson(body: CreateLessonInput) {
     const tasks = this.withValidationData(body.tasks);
     return this.lessonModel.create({ ...body, tasks });
   }
@@ -45,7 +56,7 @@ export class ContentService {
     return this.lessonModel.find(q).sort({ moduleRef: 1, order: 1 }).lean();
   }
 
-  async updateLesson(lessonRef: string, update: Partial<Lesson>) {
+  async updateLesson(lessonRef: string, update: UpdateLessonInput) {
     const nextUpdate = { ...update } as Partial<Lesson>;
     if (update.tasks) {
       nextUpdate.tasks = this.withValidationData(update.tasks as Lesson['tasks']);
