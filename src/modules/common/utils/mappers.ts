@@ -50,6 +50,10 @@ export class LessonMapper {
     taskTypes?: TaskType[]
   ): LessonItem {
     const defaults = normalizeLessonDefaults(lesson);
+    const lessonTaskTypes = taskTypes
+      || (lesson.taskTypes as TaskType[] | undefined)
+      || lesson.tasks?.map(t => t.type as TaskType)
+      || [];
 
     return {
       lessonRef: lesson.lessonRef,
@@ -65,7 +69,7 @@ export class LessonMapper {
       hasAudio: defaults.hasAudio,
       hasVideo: defaults.hasVideo,
       previewText: lesson.previewText,
-      taskTypes: taskTypes || lesson.tasks?.map(t => t.type as TaskType) || [],
+      taskTypes: lessonTaskTypes,
       progress: progress,
       tasks: lesson.tasks?.map(({ ref, type, data }) => ({ ref, type: type as TaskType, data: redact(data) }))
     };
