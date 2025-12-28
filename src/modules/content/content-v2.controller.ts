@@ -6,6 +6,8 @@ import { CourseModule, CourseModuleDocument } from '../common/schemas/course-mod
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
 import { User, UserDocument } from '../common/schemas/user.schema';
+import { TaskType } from '../common/types/content';
+import { redact } from '../common/utils/mappers';
 import { presentLesson, presentModule } from './presenter';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { GetModulesDto } from './dto/get-content.dto';
@@ -137,7 +139,11 @@ export class ContentV2Controller {
     const p = await this.progressModel.findOne({ userId: String(userId), lessonRef }).lean();
     // detailed: вернём ещё tasks
     const presented = presentLesson(l as any, lang, p as any);
-    (presented as any).tasks = l.tasks || [];
+    (presented as any).tasks = (l.tasks || []).map(({ ref, type, data }) => ({
+      ref,
+      type: type as TaskType,
+      data: redact(data),
+    }));
     return presented;
   }
 }

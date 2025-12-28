@@ -8,7 +8,7 @@ import { ModuleItem, LessonItem, LessonProgress, VocabularyItem as VocabType, Ta
 import { getLocalizedText, SupportedLanguage } from './i18n.util';
 
 const STRIP = new Set(['correct','isCorrect','correctIndex','correctIndexes','answer','answers','expected','expectedAnswers','target','targets','solution','solutions']);
-const redact = (v: any): any =>
+export const redact = (v: any): any =>
   Array.isArray(v) ? v.map(redact)
   : v && typeof v === 'object'
     ? Object.fromEntries(Object.entries(v).filter(([k]) => !STRIP.has(k)).map(([k, val]) => [k, redact(val)]))
