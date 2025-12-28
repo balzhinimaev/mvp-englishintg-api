@@ -4,6 +4,7 @@ import { CourseModule } from '../common/schemas/course-module.schema';
 import { UserLessonProgress } from '../common/schemas/user-lesson-progress.schema';
 import { LessonItem, ModuleItem, TaskType } from '../common/types/content';
 import { getLocalizedText } from '../common/utils/i18n.util';
+import { normalizeLessonDefaults } from '../common/utils/lesson-defaults';
 
 const choose = (mt: unknown, lang: string) => getLocalizedText(
   mt as any,
@@ -39,19 +40,21 @@ export function presentLesson(
   }>
 ): LessonItem {
   const taskTypes: TaskType[] = (doc.tasks || []).map(t => t.type as TaskType);
+  const defaults = normalizeLessonDefaults(doc);
+
   return {
     lessonRef: doc.lessonRef,
     moduleRef: doc.moduleRef,
     title: choose(doc.title, lang),
     description: choose(doc.description, lang),
-    estimatedMinutes: doc.estimatedMinutes ?? 10,
+    estimatedMinutes: defaults.estimatedMinutes,
     order: doc.order ?? 0,
-    type: doc.type || 'vocabulary',
-    difficulty: doc.difficulty || 'easy',
+    type: defaults.type,
+    difficulty: defaults.difficulty,
     tags: doc.tags || [],
-    xpReward: doc.xpReward ?? 25,
-    hasAudio: doc.hasAudio !== false,
-    hasVideo: !!doc.hasVideo,
+    xpReward: defaults.xpReward,
+    hasAudio: defaults.hasAudio,
+    hasVideo: defaults.hasVideo,
     previewText: doc.previewText,
     taskTypes,
     progress: progress && {

@@ -253,6 +253,7 @@ describe('presentLesson', () => {
     expect(result.estimatedMinutes).toBe(10);
     expect(result.type).toBe('vocabulary');
     expect(result.difficulty).toBe('easy');
+    expect(result.xpReward).toBe(25);
     expect(result.hasAudio).toBe(true);
     expect(result.hasVideo).toBe(false);
     expect(result.progress).toEqual({
