@@ -14,7 +14,11 @@ export class LessonPrerequisiteGuard implements CanActivate {
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest();
     const lessonRef = request.params?.lessonRef;
-    const userId = request.query?.userId || request.body?.userId || request.params?.userId;
+    const userId =
+      request.user?.userId ||
+      request.query?.userId ||
+      request.body?.userId ||
+      request.params?.userId;
 
     if (!lessonRef) {
       throw new BadRequestException('lessonRef is required');
