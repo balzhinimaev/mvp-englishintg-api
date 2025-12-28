@@ -72,7 +72,14 @@ export function validateMultilingualText(
     return false;
   }
 
-  return requiredLangs.every(lang => textObj[lang] && textObj[lang].trim().length > 0);
+  return requiredLangs.every(lang => {
+    if (!Object.prototype.hasOwnProperty.call(textObj, lang)) {
+      return false;
+    }
+
+    const value = textObj[lang];
+    return typeof value === 'string' && value.trim().length > 0;
+  });
 }
 
 /**
