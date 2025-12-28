@@ -2,7 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
-import { AudioValidationData, ChoiceValidationData, GapValidationData, OrderValidationData, TranslateValidationData } from './validation-data.types';
+import { AudioValidationData, ChoiceValidationData, GapValidationData, OrderValidationData, TranslateValidationData } from '../common/types/validation-data';
+import { mapTaskDataToValidationData } from '../common/utils/task-validation-data';
 
 export interface ValidationResult {
   isCorrect: boolean;
@@ -31,23 +32,30 @@ export class AnswerValidatorService {
     }
 
     // 🔒 ВАЛИДАЦИЯ НА СЕРВЕРЕ ПО ТИПУ ЗАДАЧИ
+    const validationData = (task as { validationData?: Record<string, any> }).validationData
+      ?? mapTaskDataToValidationData({ type: task.type as any, data: task.data });
+
+    if (!validationData) {
+      return { isCorrect: false, score: 0, feedback: 'Missing validation data' };
+    }
+
     switch (task.type) {
       case 'choice':
       case 'multiple_choice':
-        return this.validateChoiceAnswer(task.data as ChoiceValidationData, userAnswer);
+        return this.validateChoiceAnswer(validationData as ChoiceValidationData, userAnswer);
       
       case 'gap':
-        return this.validateGapAnswer(task.data as GapValidationData, userAnswer);
+        return this.validateGapAnswer(validationData as GapValidationData, userAnswer);
       
       case 'order':
-        return this.validateOrderAnswer(task.data as OrderValidationData, userAnswer);
+        return this.validateOrderAnswer(validationData as OrderValidationData, userAnswer);
       
       case 'translate':
-        return this.validateTranslateAnswer(task.data as TranslateValidationData, userAnswer);
+        return this.validateTranslateAnswer(validationData as TranslateValidationData, userAnswer);
       
       case 'listen':
       case 'speak':
-        return this.validateAudioAnswer(task.data as AudioValidationData, userAnswer);
+        return this.validateAudioAnswer(validationData as AudioValidationData, userAnswer);
       
       default:
         return { isCorrect: false, score: 0, feedback: 'Unknown task type' };

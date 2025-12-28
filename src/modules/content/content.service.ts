@@ -5,6 +5,8 @@ import { CourseModule, CourseModuleDocument } from '../common/schemas/course-mod
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
 import { MultilingualText, OptionalMultilingualText } from '../common/utils/i18n.util';
+import { mapTaskDataToValidationData } from '../common/utils/task-validation-data';
+import { TaskValidationData } from '../common/types/validation-data';
 
 @Injectable()
 export class ContentService {
@@ -32,8 +34,9 @@ export class ContentService {
   }
 
   // Lessons
-  async createLesson(body: { moduleRef: string; lessonRef: string; title: string; description?: string; estimatedMinutes?: number; tasks?: Array<{ ref: string; type: string; data: Record<string, any> }>; order?: number; published?: boolean }) {
-    return this.lessonModel.create(body);
+  async createLesson(body: { moduleRef: string; lessonRef: string; title: string; description?: string; estimatedMinutes?: number; tasks?: Array<{ ref: string; type: string; data: Record<string, any>; validationData?: TaskValidationData }>; order?: number; published?: boolean }) {
+    const tasks = this.withValidationData(body.tasks);
+    return this.lessonModel.create({ ...body, tasks });
   }
 
   async listLessons(moduleRef?: string) {
@@ -43,8 +46,20 @@ export class ContentService {
   }
 
   async updateLesson(lessonRef: string, update: Partial<Lesson>) {
-    await this.lessonModel.updateOne({ lessonRef }, { $set: update });
+    const nextUpdate = { ...update } as Partial<Lesson>;
+    if (update.tasks) {
+      nextUpdate.tasks = this.withValidationData(update.tasks as Lesson['tasks']);
+    }
+    await this.lessonModel.updateOne({ lessonRef }, { $set: nextUpdate });
     return { ok: true };
+  }
+
+  private withValidationData(tasks?: Array<{ ref: string; type: string; data: Record<string, any>; validationData?: TaskValidationData }>) {
+    if (!tasks) return tasks;
+    return tasks.map(task => ({
+      ...task,
+      validationData: mapTaskDataToValidationData({ type: task.type as any, data: task.data }) ?? task.validationData,
+    }));
   }
 
   /**
