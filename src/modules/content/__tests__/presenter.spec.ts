@@ -1,4 +1,4 @@
-import { presentModule } from '../presenter';
+import { presentLesson, presentModule } from '../presenter';
 import { CourseModule } from '../../common/schemas/course-module.schema';
 import { ModuleItem } from '../../common/types/content';
 import { validMultilingualTitle, validMultilingualDescription } from './fixtures/module.fixtures';
@@ -233,3 +233,34 @@ describe('presentModule', () => {
   });
 });
 
+describe('presentLesson', () => {
+  it('should apply defaults and include progress', () => {
+    const lesson = {
+      lessonRef: 'a0.basics.001',
+      moduleRef: 'a0.basics',
+      title: { ru: 'Урок 1', en: 'Lesson 1' },
+      description: { ru: 'Описание', en: 'Description' },
+      tasks: [{ ref: 'a0.basics.001.t1', type: 'choice', data: {} }],
+    } as any;
+
+    const result = presentLesson(lesson, 'ru', {
+      status: 'completed',
+      score: 1,
+      attempts: 2,
+      completedAt: new Date('2024-01-02T00:00:00Z'),
+    });
+
+    expect(result.estimatedMinutes).toBe(8);
+    expect(result.type).toBe('vocabulary');
+    expect(result.difficulty).toBe('easy');
+    expect(result.hasAudio).toBe(true);
+    expect(result.hasVideo).toBe(false);
+    expect(result.progress).toEqual({
+      status: 'completed',
+      score: 1,
+      attempts: 2,
+      completedAt: '2024-01-02T00:00:00.000Z',
+      timeSpent: 0,
+    });
+  });
+});
