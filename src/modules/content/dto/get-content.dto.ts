@@ -1,4 +1,4 @@
-import { IsString, IsOptional, IsEnum, Length, IsInt, Min } from 'class-validator';
+import { IsString, IsOptional, IsEnum, Length, IsInt, Min, Matches } from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class GetModulesDto {
@@ -26,6 +26,7 @@ export class GetModulesDto {
 export class GetLessonsDto {
   @IsOptional()
   @IsString()
+  @Matches(/^[a-z0-9]+\.[a-z0-9_]+$/)
   moduleRef?: string;
 
   @IsOptional()

@@ -107,10 +107,6 @@ export class ContentController {
     const language = parseLanguage(lang);
     const filter: any = { published: true };
     if (moduleRef) {
-      // 🔒 БАЗОВАЯ ВАЛИДАЦИЯ moduleRef
-      if (!/^[a-z0-9]+\.[a-z0-9_]+$/.test(moduleRef)) {
-        throw new BadRequestException('Invalid moduleRef format');
-      }
       filter.moduleRef = moduleRef;
     }
     
