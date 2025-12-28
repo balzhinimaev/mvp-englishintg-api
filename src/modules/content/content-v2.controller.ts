@@ -8,6 +8,7 @@ import { UserLessonProgress, UserLessonProgressDocument } from '../common/schema
 import { User, UserDocument } from '../common/schemas/user.schema';
 import { LessonMapper } from '../common/utils/mappers';
 import { parseLanguage } from '../common/utils/i18n.util';
+import { isValidLessonRef } from '../common/utils/lesson-ref';
 import { presentLesson, presentModule } from './presenter';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { LessonPrerequisiteGuard } from './guards/lesson-prerequisite.guard';
@@ -143,7 +144,7 @@ export class ContentV2Controller {
       throw new BadRequestException('userId is required');
     }
 
-    if (!/^[a-z0-9]+\.[a-z0-9_]+\.\d{3}$/.test(lessonRef)) {
+    if (!isValidLessonRef(lessonRef)) {
       throw new BadRequestException('Invalid lessonRef format');
     }
 

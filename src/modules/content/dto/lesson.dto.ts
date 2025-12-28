@@ -17,16 +17,14 @@ import {
 import { PartialType } from '@nestjs/mapped-types';
 import { TaskDto } from './task-data.dto';
 import { MultilingualTextDto, OptionalMultilingualTextDto } from './module.dto';
-
-const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+import { matchesModuleRef } from '../../common/utils/lesson-ref';
 
 @ValidatorConstraint({ name: 'LessonRefMatchesModuleRef', async: false })
 class LessonRefMatchesModuleRefConstraint implements ValidatorConstraintInterface {
   validate(value: string, args: ValidationArguments): boolean {
     const dto = args.object as CreateLessonDto;
     if (typeof value !== 'string' || typeof dto?.moduleRef !== 'string') return false;
-    const pattern = new RegExp(`^${escapeRegExp(dto.moduleRef)}\\.\\d{3}$`);
-    return pattern.test(value);
+    return matchesModuleRef(value, dto.moduleRef);
   }
 
   defaultMessage(args: ValidationArguments): string {

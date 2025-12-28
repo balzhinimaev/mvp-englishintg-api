@@ -1,6 +1,5 @@
 import { TaskDto } from '../dto/task-data.dto';
-
-const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+import { matchesModuleRef } from '../../common/utils/lesson-ref';
 const isNonEmptyString = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0;
 const isTrimmedNonEmptyString = (value: unknown): value is string =>
   typeof value === 'string' && value.trim().length > 0 && value.trim() === value;
@@ -14,8 +13,7 @@ export function lintLessonTasks(
 ): string[] {
   const errors: string[] = [];
   if (moduleRef) {
-    const pattern = new RegExp(`^${escapeRegExp(moduleRef)}\\.\\d{3}$`);
-    if (!pattern.test(lessonRef)) {
+    if (!matchesModuleRef(lessonRef, moduleRef)) {
       errors.push(`lessonRef must match ${moduleRef}.NNN`);
     }
   }

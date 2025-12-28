@@ -19,6 +19,7 @@ import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { User, UserDocument } from '../common/schemas/user.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
 import { getLocalizedText, parseLanguage } from '../common/utils/i18n.util';
+import { isValidLessonRef } from '../common/utils/lesson-ref';
 import { ModuleMapper, LessonMapper, LessonProgressMapper } from '../common/utils/mappers';
 import { GetModulesDto, GetLessonsDto, GetLessonDto } from './dto/get-content.dto';
 import { ContentService } from './content.service';
@@ -153,7 +154,7 @@ export class ContentController {
     const language = parseLanguage(lang);
 
     // 🔒 БАЗОВАЯ ВАЛИДАЦИЯ lessonRef
-    if (!/^[a-z0-9]+\.[a-z0-9_]+\.\d{3}$/.test(lessonRef)) {
+    if (!isValidLessonRef(lessonRef)) {
       throw new BadRequestException('Invalid lessonRef format');
     }
 
