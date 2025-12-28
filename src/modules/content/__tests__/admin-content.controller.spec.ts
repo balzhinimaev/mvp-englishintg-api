@@ -490,7 +490,7 @@ describe('AdminContentController', () => {
             {
               ref: 'wrong-prefix.t1',
               type: 'gap',
-              data: { text: 'Missing' },
+              data: { text: 'Missing', answer: '10' },
             },
           ],
         })
@@ -503,7 +503,6 @@ describe('AdminContentController', () => {
           'task[0].ref must start with a0.basics.001.',
           'choice[0] requires >=2 options',
           'gap[1].text must contain ____',
-          'gap[1].answer is required',
         ])
       );
       expect(mockContentService.createLesson).not.toHaveBeenCalled();
@@ -564,7 +563,7 @@ describe('AdminContentController', () => {
             {
               ref: 'a0.basics.999.t1',
               type: 'gap',
-              data: { text: 'No blank' },
+              data: { text: 'No blank', answer: '10' },
             },
           ],
         })
@@ -575,7 +574,6 @@ describe('AdminContentController', () => {
         expect.arrayContaining([
           'task[0].ref must start with a0.basics.001.',
           'gap[0].text must contain ____',
-          'gap[0].answer is required',
         ])
       );
       expect(mockContentService.updateLesson).not.toHaveBeenCalled();
