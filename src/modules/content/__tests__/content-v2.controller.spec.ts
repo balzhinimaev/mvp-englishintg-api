@@ -164,5 +164,22 @@ describe('ContentV2Controller', () => {
         })
       );
     });
+
+    it('should return 404 for missing lesson', async () => {
+      mockLessonModel.findOne.mockReturnValue({
+        lean: jest.fn().mockResolvedValue(null),
+      });
+
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/lessons/missing.lesson?lang=ru')
+        .expect(404);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 404,
+          message: 'Lesson not found',
+        })
+      );
+    });
   });
 });
