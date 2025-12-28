@@ -1,5 +1,6 @@
 import { Type } from 'class-transformer';
 import { IsArray, IsBoolean, IsEnum, IsInt, IsOptional, IsString, Min, ValidateNested } from 'class-validator';
+import { PartialType } from '@nestjs/mapped-types';
 import { TaskDto } from './task-data.dto';
 
 export class CreateLessonDto {
@@ -52,6 +53,6 @@ export class CreateLessonDto {
   tasks?: TaskDto[];
 }
 
-export class UpdateLessonDto extends CreateLessonDto {}
+export class UpdateLessonDto extends PartialType(CreateLessonDto) {}
 
 

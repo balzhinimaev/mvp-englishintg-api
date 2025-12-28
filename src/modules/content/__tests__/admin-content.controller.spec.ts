@@ -485,12 +485,12 @@ describe('AdminContentController', () => {
             {
               ref: 'wrong-prefix.t1',
               type: 'choice',
-              data: { options: ['a'] },
+              data: { question: 'Pick one', options: ['a'] },
             },
             {
               ref: 'wrong-prefix.t1',
               type: 'gap',
-              data: { text: 'Missing', answer: '' },
+              data: { text: 'Missing' },
             },
           ],
         })
@@ -532,7 +532,7 @@ describe('AdminContentController', () => {
             {
               ref: 'a0.basics.999.t1',
               type: 'gap',
-              data: { text: 'No blank', answer: '' },
+              data: { text: 'No blank' },
             },
           ],
         })

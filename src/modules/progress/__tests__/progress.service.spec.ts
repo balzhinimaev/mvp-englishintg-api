@@ -29,6 +29,16 @@ describe('ProgressService.recordTaskAttempt', () => {
     findOne: jest.fn(),
     create: jest.fn(),
   };
+
+  // Helper to create chainable mock for attemptModel.findOne
+  const mockAttemptFindOneChain = (result: any) => {
+    return {
+      lean: jest.fn().mockResolvedValue(result),
+      sort: jest.fn().mockReturnValue({
+        lean: jest.fn().mockResolvedValue(result),
+      }),
+    };
+  };
   const mockXpModel = {
     create: jest.fn(),
   };
@@ -75,7 +85,7 @@ describe('ProgressService.recordTaskAttempt', () => {
 
   it('should create ULP with moduleRef denormalization', async () => {
     mockUlpModel.findOneAndUpdate.mockResolvedValue({ _id: 'ulp-id' });
-    mockAttemptModel.findOne.mockResolvedValue(null);
+    mockAttemptModel.findOne.mockReturnValue(mockAttemptFindOneChain(null));
     mockAttemptModel.create.mockResolvedValue({ _id: 'attempt-id' });
 
     await service.recordTaskAttempt({
@@ -97,7 +107,7 @@ describe('ProgressService.recordTaskAttempt', () => {
   it('should be idempotent for clientAttemptId', async () => {
     const existingAttempt = { _id: 'attempt-id', clientAttemptId: 'client-1' };
     mockUlpModel.findOneAndUpdate.mockResolvedValue({ _id: 'ulp-id' });
-    mockAttemptModel.findOne.mockResolvedValue(existingAttempt);
+    mockAttemptModel.findOne.mockReturnValue(mockAttemptFindOneChain(existingAttempt));
 
     const result = await service.recordTaskAttempt({
       userId: 'user-1',
@@ -116,7 +126,7 @@ describe('ProgressService.recordTaskAttempt', () => {
 
   it('should award XP and complete lesson on last task', async () => {
     mockUlpModel.findOneAndUpdate.mockResolvedValue({ _id: 'ulp-id' });
-    mockAttemptModel.findOne.mockResolvedValue(null);
+    mockAttemptModel.findOne.mockReturnValue(mockAttemptFindOneChain(null));
     mockAttemptModel.create.mockResolvedValue({ _id: 'attempt-id' });
 
     await service.recordTaskAttempt({

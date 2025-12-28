@@ -140,9 +140,9 @@ describe('ContentController', () => {
     it('should return error when moduleRef format is invalid', async () => {
       const response = await request(app.getHttpServer())
         .get('/content/lessons?moduleRef=invalid-module')
-        .expect(200);
+        .expect(400);
 
-      expect(response.body).toEqual({ error: 'Invalid moduleRef format' });
+      expect(response.body.message).toBe('Invalid moduleRef format');
     });
 
     it('should filter lessons by moduleRef', async () => {
@@ -182,9 +182,9 @@ describe('ContentController', () => {
     it('should return error for invalid lessonRef format', async () => {
       const response = await request(app.getHttpServer())
         .get('/content/lessons/invalid')
-        .expect(200);
+        .expect(400);
 
-      expect(response.body).toEqual({ error: 'Invalid lessonRef format' });
+      expect(response.body.message).toBe('Invalid lessonRef format');
     });
 
     it('should return error when lesson is not found', async () => {
@@ -194,9 +194,9 @@ describe('ContentController', () => {
 
       const response = await request(app.getHttpServer())
         .get('/content/lessons/a0.basics.001')
-        .expect(200);
+        .expect(404);
 
-      expect(response.body).toEqual({ error: 'Lesson not found' });
+      expect(response.body.message).toBe('Lesson not found');
     });
 
     it('should return lesson with task types', async () => {
