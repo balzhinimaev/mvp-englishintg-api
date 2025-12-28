@@ -168,30 +168,28 @@ Content-Type: application/json
   "source": "home"
 }
 
-### Progress - attempt (t1)
-POST {{base}}/progress/attempts
+### Progress - submit-answer (t1)
+POST {{base}}/progress/submit-answer
 Content-Type: application/json
+Idempotency-Key: {{idempotencyKey1}}
 
 {
-  "userId": 12345,
   "lessonRef": "a0.travel.001",
   "taskRef": "a0.travel.001.t1",
-  "isCorrect": true,
-  "score": 1,
+  "userAnswer": "Hello",
   "lastTaskIndex": 0,
   "isLastTask": false
 }
 
-### Progress - attempt (t2, last)
-POST {{base}}/progress/attempts
+### Progress - submit-answer (t2, last)
+POST {{base}}/progress/submit-answer
 Content-Type: application/json
+Idempotency-Key: {{idempotencyKey2}}
 
 {
-  "userId": 12345,
   "lessonRef": "a0.travel.001",
   "taskRef": "a0.travel.001.t2",
-  "isCorrect": true,
-  "score": 1,
+  "userAnswer": "passport",
   "lastTaskIndex": 1,
   "isLastTask": true
 }
@@ -266,5 +264,4 @@ Content-Type: application/json
   "utm": { "utm_source": "vk", "utm_campaign": "launch" },
   "promoId": "BURI79"
 }
-
 

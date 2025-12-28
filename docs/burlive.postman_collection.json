@@ -235,15 +235,18 @@
           }
         },
         {
-          "name": "POST /progress/attempts",
+          "name": "POST /progress/submit-answer",
           "request": {
             "method": "POST",
-            "header": [ { "key": "Content-Type", "value": "application/json" } ],
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Idempotency-Key", "value": "{{idempotencyKey}}" }
+            ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"userId\": 12345,\n  \"lessonRef\": \"a0.travel.001\",\n  \"taskRef\": \"a0.travel.001.t1\",\n  \"isCorrect\": true,\n  \"score\": 1,\n  \"lastTaskIndex\": 0,\n  \"isLastTask\": false\n}"
+              "raw": "{\n  \"lessonRef\": \"a0.travel.001\",\n  \"taskRef\": \"a0.travel.001.t1\",\n  \"userAnswer\": \"Hello\",\n  \"lastTaskIndex\": 0,\n  \"isLastTask\": false\n}"
             },
-            "url": "{{baseUrl}}/progress/attempts"
+            "url": "{{baseUrl}}/progress/submit-answer"
           }
         },
         {
@@ -271,8 +274,8 @@
     }
   ],
   "variable": [
-    { "key": "baseUrl", "value": "https://burlive.ru/api/v2" }
+    { "key": "baseUrl", "value": "https://burlive.ru/api/v2" },
+    { "key": "idempotencyKey", "value": "test-idempotency-key" }
   ]
 }
-
 
