@@ -54,7 +54,18 @@ export class AdminContentController {
 
   @Patch('lessons/:lessonRef')
   async updateLesson(@Param('lessonRef') lessonRef: string, @Body() body: UpdateLessonDto) {
-    const errors = lintLessonTasks(lessonRef, body.tasks, body.moduleRef, body.published);
+    let tasksForLint = body.tasks;
+    let moduleRefForLint = body.moduleRef;
+
+    if (body.published === true) {
+      const currentLesson = await this.content.getLessonByRef(lessonRef);
+      if (currentLesson) {
+        if (!tasksForLint) tasksForLint = currentLesson.tasks;
+        if (!moduleRefForLint) moduleRefForLint = currentLesson.moduleRef;
+      }
+    }
+
+    const errors = lintLessonTasks(lessonRef, tasksForLint, moduleRefForLint, body.published);
     if (errors.length) {
       throw new BadRequestException({ message: 'Lesson tasks validation failed', errors });
     }
