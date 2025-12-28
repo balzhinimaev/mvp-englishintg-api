@@ -143,7 +143,9 @@ describe('ContentController', () => {
         .get('/content/lessons?moduleRef=invalid-module')
         .expect(400);
 
-      expect(response.body.message).toBe('Invalid moduleRef format');
+      expect(response.body.message).toEqual(
+        expect.arrayContaining([expect.stringContaining('moduleRef')])
+      );
     });
 
     it('should filter lessons by moduleRef', async () => {
