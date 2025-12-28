@@ -245,6 +245,91 @@ describe('ContentService', () => {
     });
   });
 
+  describe('canStartLesson', () => {
+    it('should return false when lesson not found', async () => {
+      mockLessonModel.findOne.mockReturnValue({
+        lean: jest.fn().mockResolvedValue(null),
+      });
+
+      const result = await service.canStartLesson('user-1', 'a0.basics.001');
+
+      expect(result).toEqual({ canStart: false, reason: 'Lesson not found' });
+      expect(mockLessonModel.findOne).toHaveBeenCalledWith({ lessonRef: 'a0.basics.001', published: true });
+    });
+
+    it('should allow access when order is 1', async () => {
+      mockLessonModel.findOne.mockReturnValueOnce({
+        lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.001', moduleRef: 'a0.basics', order: 1 }),
+      });
+
+      const result = await service.canStartLesson('user-1', 'a0.basics.001');
+
+      expect(result).toEqual({ canStart: true });
+      expect(mockLessonModel.findOne).toHaveBeenCalledTimes(1);
+      expect(mockProgressModel.findOne).not.toHaveBeenCalled();
+    });
+
+    it('should allow access when previous lesson is missing', async () => {
+      mockLessonModel.findOne
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.002', moduleRef: 'a0.basics', order: 2 }),
+        })
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue(null),
+        });
+
+      const result = await service.canStartLesson('user-1', 'a0.basics.002');
+
+      expect(result).toEqual({ canStart: true });
+      expect(mockLessonModel.findOne).toHaveBeenCalledTimes(2);
+      expect(mockProgressModel.findOne).not.toHaveBeenCalled();
+    });
+
+    it('should block access when previous lesson is not completed', async () => {
+      mockLessonModel.findOne
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.002', moduleRef: 'a0.basics', order: 2 }),
+        })
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.001' }),
+        });
+      mockProgressModel.findOne.mockReturnValue({
+        lean: jest.fn().mockResolvedValue(null),
+      });
+
+      const result = await service.canStartLesson('user-1', 'a0.basics.002');
+
+      expect(result).toEqual({
+        canStart: false,
+        reason: 'Previous lesson a0.basics.001 must be completed before starting a0.basics.002',
+        requiredLesson: 'a0.basics.001',
+      });
+      expect(mockProgressModel.findOne).toHaveBeenCalledWith({
+        userId: 'user-1',
+        lessonRef: 'a0.basics.001',
+        status: 'completed',
+      });
+    });
+
+    it('should allow access when previous lesson is completed', async () => {
+      mockLessonModel.findOne
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.002', moduleRef: 'a0.basics', order: 2 }),
+        })
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.001' }),
+        });
+      mockProgressModel.findOne.mockReturnValue({
+        lean: jest.fn().mockResolvedValue({ lessonRef: 'a0.basics.001', status: 'completed' }),
+      });
+
+      const result = await service.canStartLesson('user-1', 'a0.basics.002');
+
+      expect(result).toEqual({ canStart: true });
+      expect(mockProgressModel.findOne).toHaveBeenCalled();
+    });
+  });
+
   describe('listModules', () => {
     it('should list all modules when no level specified', async () => {
       const mockModules = [
@@ -282,4 +367,3 @@ describe('ContentService', () => {
     });
   });
 });
-

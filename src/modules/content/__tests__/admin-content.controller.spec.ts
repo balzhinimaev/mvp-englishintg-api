@@ -461,5 +461,115 @@ describe('AdminContentController', () => {
       expect(mockContentService.listModules).toHaveBeenCalledWith('A1');
     });
   });
-});
 
+  describe('POST /admin/content/lessons', () => {
+    const validLesson = {
+      moduleRef: 'a0.basics',
+      lessonRef: 'a0.basics.001',
+      title: 'Lesson 1',
+      tasks: [
+        {
+          ref: 'a0.basics.001.t1',
+          type: 'choice',
+          data: { question: 'Pick', options: ['a', 'b'], correctIndex: 1 },
+        },
+      ],
+    };
+
+    it('should return lint errors for invalid tasks', async () => {
+      const response = await request(app.getHttpServer())
+        .post('/admin/content/lessons')
+        .send({
+          ...validLesson,
+          tasks: [
+            {
+              ref: 'wrong-prefix.t1',
+              type: 'choice',
+              data: { options: ['a'] },
+            },
+            {
+              ref: 'wrong-prefix.t1',
+              type: 'gap',
+              data: { text: 'Missing', answer: '' },
+            },
+          ],
+        })
+        .expect(201);
+
+      expect(response.body.ok).toBe(false);
+      expect(response.body.errors).toEqual(
+        expect.arrayContaining([
+          'duplicate task.ref: wrong-prefix.t1',
+          'task[0].ref must start with a0.basics.001.',
+          'choice[0] requires >=2 options',
+          'choice[0] missing correctIndex',
+          'gap[1].text must contain ____',
+          'gap[1].answer is required',
+        ])
+      );
+      expect(mockContentService.createLesson).not.toHaveBeenCalled();
+    });
+
+    it('should create lesson when lint passes', async () => {
+      mockContentService.createLesson.mockResolvedValue({ _id: 'lesson-id' });
+
+      const response = await request(app.getHttpServer())
+        .post('/admin/content/lessons')
+        .send(validLesson)
+        .expect(201);
+
+      expect(response.body).toEqual({ id: 'lesson-id' });
+      expect(mockContentService.createLesson).toHaveBeenCalledWith(expect.objectContaining(validLesson));
+    });
+  });
+
+  describe('PATCH /admin/content/lessons/:lessonRef', () => {
+    it('should return lint errors for invalid tasks', async () => {
+      const response = await request(app.getHttpServer())
+        .patch('/admin/content/lessons/a0.basics.001')
+        .send({
+          tasks: [
+            {
+              ref: 'a0.basics.999.t1',
+              type: 'gap',
+              data: { text: 'No blank', answer: '' },
+            },
+          ],
+        })
+        .expect(200);
+
+      expect(response.body.ok).toBe(false);
+      expect(response.body.errors).toEqual(
+        expect.arrayContaining([
+          'task[0].ref must start with a0.basics.001.',
+          'gap[0].text must contain ____',
+          'gap[0].answer is required',
+        ])
+      );
+      expect(mockContentService.updateLesson).not.toHaveBeenCalled();
+    });
+
+    it('should update lesson when lint passes', async () => {
+      mockContentService.updateLesson.mockResolvedValue({ ok: true });
+
+      const response = await request(app.getHttpServer())
+        .patch('/admin/content/lessons/a0.basics.001')
+        .send({
+          tasks: [
+            {
+              ref: 'a0.basics.001.t1',
+              type: 'gap',
+              data: { text: 'It costs ____ dollars', answer: '10' },
+            },
+          ],
+        })
+        .expect(200);
+
+      expect(response.body).toEqual({ ok: true });
+      expect(mockContentService.updateLesson).toHaveBeenCalledWith(
+        'a0.basics.001',
+        expect.objectContaining({ tasks: expect.any(Array) })
+      );
+    });
+  });
+});
