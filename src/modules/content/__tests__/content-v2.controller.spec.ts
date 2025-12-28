@@ -136,6 +136,48 @@ describe('ContentV2Controller', () => {
         }),
       ]);
     });
+
+    it('should fallback to lessonRef regex when moduleRef progress is missing', async () => {
+      mockLessonModel.find.mockReturnValue({
+        sort: jest.fn().mockReturnValue({
+          lean: jest.fn().mockResolvedValue([
+            {
+              lessonRef: 'a0.basics.001',
+              moduleRef: 'a0.basics',
+              title: { ru: 'Урок 1', en: 'Lesson 1' },
+              description: { ru: 'Описание', en: 'Description' },
+              order: 1,
+              tasks: [],
+            },
+          ]),
+        }),
+      });
+      mockProgressModel.find
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue([]),
+        })
+        .mockReturnValueOnce({
+          lean: jest.fn().mockResolvedValue([
+            { lessonRef: 'a0.basics.001', status: 'completed', attempts: 2 },
+          ]),
+        });
+
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/modules/a0.basics/lessons?lang=ru')
+        .expect(200);
+
+      expect(mockProgressModel.find).toHaveBeenNthCalledWith(1, { userId: 'user-1', moduleRef: 'a0.basics' });
+      expect(mockProgressModel.find).toHaveBeenNthCalledWith(2, {
+        userId: 'user-1',
+        lessonRef: { $regex: '^a0.basics\\.' },
+      });
+      expect(response.body).toEqual([
+        expect.objectContaining({
+          lessonRef: 'a0.basics.001',
+          progress: expect.objectContaining({ status: 'completed' }),
+        }),
+      ]);
+    });
   });
 
   describe('GET /content/v2/lessons/:lessonRef', () => {
