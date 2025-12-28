@@ -49,6 +49,18 @@ describe('TaskDto', () => {
     expect(errors).toHaveLength(0);
   });
 
+  it('should fail gap task data without answer', async () => {
+    const dto = plainToInstance(TaskDto, {
+      ref: 'a0.basics.001.t2',
+      type: 'gap',
+      data: { text: 'It costs ____ dollars' },
+    });
+
+    const errors = await validate(dto);
+    const dataError = errors.find(error => error.property === 'data');
+    expect(dataError).toBeDefined();
+  });
+
   it('should fail for invalid type', async () => {
     const dto = plainToInstance(TaskDto, {
       ref: 'a0.basics.001.t3',
