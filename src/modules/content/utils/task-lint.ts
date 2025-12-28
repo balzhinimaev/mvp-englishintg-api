@@ -16,10 +16,11 @@ export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[], moduleRef?
     if (seen.has(t.ref)) errors.push(`duplicate task.ref: ${t.ref}`);
     seen.add(t.ref);
     if (!t.ref.startsWith(`${lessonRef}.`)) errors.push(`task[${i}].ref must start with ${lessonRef}.`);
-    if (t.type === 'choice') {
+    if (t.type === 'choice' || t.type === 'multiple_choice') {
+      const label = t.type;
       const d = t.data as any;
-      if (!Array.isArray(d.options) || d.options.length < 2) errors.push(`choice[${i}] requires >=2 options`);
-      if (typeof d.correctIndex !== 'number') errors.push(`choice[${i}] missing correctIndex`);
+      if (!Array.isArray(d.options) || d.options.length < 2) errors.push(`${label}[${i}] requires >=2 options`);
+      if (typeof d.correctIndex !== 'number') errors.push(`${label}[${i}] missing correctIndex`);
     }
     if (t.type === 'gap') {
       const d = t.data as any;
@@ -29,4 +30,3 @@ export function lintLessonTasks(lessonRef: string, tasks?: TaskDto[], moduleRef?
   });
   return errors;
 }
-

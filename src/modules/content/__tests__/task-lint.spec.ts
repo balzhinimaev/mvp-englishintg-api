@@ -32,6 +32,19 @@ describe('lintLessonTasks', () => {
     );
   });
 
+  it('should validate multiple_choice task fields', () => {
+    const errors = lintLessonTasks('a0.basics.001', [
+      { ref: 'a0.basics.001.t1', type: 'multiple_choice', data: { options: ['a'] } },
+    ] as any);
+
+    expect(errors).toEqual(
+      expect.arrayContaining([
+        'multiple_choice[0] requires >=2 options',
+        'multiple_choice[0] missing correctIndex',
+      ])
+    );
+  });
+
   it('should report mismatched moduleRef and lessonRef', () => {
     const errors = lintLessonTasks('a0.basics.001', undefined, 'a0.travel');
 
