@@ -12,7 +12,12 @@ import { User } from '../../common/schemas/user.schema';
 const mockJwtAuthGuard = {
   canActivate: (context: ExecutionContext) => {
     const req = context.switchToHttp().getRequest();
-    req.user = { userId: 'user-1' };
+    const headerUserId = req.headers['x-user-id'];
+    if (headerUserId === 'none') {
+      req.user = undefined;
+    } else {
+      req.user = { userId: headerUserId ?? 'user-1' };
+    }
     return true;
   },
 };
@@ -64,6 +69,20 @@ describe('ContentV2Controller', () => {
   });
 
   describe('GET /content/v2/modules', () => {
+    it('should return 400 when userId is missing', async () => {
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/modules')
+        .set('x-user-id', 'none')
+        .expect(400);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 400,
+          message: 'userId is required',
+        })
+      );
+    });
+
     it('should paginate modules and compute requiresPro/isAvailable', async () => {
       mockModuleModel.countDocuments.mockResolvedValue(2);
       mockModuleModel.find.mockReturnValue({
@@ -104,6 +123,20 @@ describe('ContentV2Controller', () => {
   });
 
   describe('GET /content/v2/modules/:moduleRef/lessons', () => {
+    it('should return 400 when userId is missing', async () => {
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/modules/a0.basics/lessons')
+        .set('x-user-id', 'none')
+        .expect(400);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 400,
+          message: 'userId is required',
+        })
+      );
+    });
+
     it('should return lessons with progress', async () => {
       mockLessonModel.find.mockReturnValue({
         sort: jest.fn().mockReturnValue({
@@ -185,6 +218,20 @@ describe('ContentV2Controller', () => {
   });
 
   describe('GET /content/v2/lessons/:lessonRef', () => {
+    it('should return 400 when userId is missing', async () => {
+      const response = await request(app.getHttpServer())
+        .get('/content/v2/lessons/a0.basics.001')
+        .set('x-user-id', 'none')
+        .expect(400);
+
+      expect(response.body).toEqual(
+        expect.objectContaining({
+          statusCode: 400,
+          message: 'userId is required',
+        })
+      );
+    });
+
     it('should return lesson with tasks', async () => {
       mockLessonModel.findOne.mockReturnValue({
         lean: jest.fn().mockResolvedValue({
