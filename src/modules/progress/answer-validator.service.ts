@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
-import { AudioValidationData, ChoiceValidationData, GapValidationData, OrderValidationData, TranslateValidationData } from '../common/types/validation-data';
+import { AudioValidationData, ChoiceValidationData, FlashcardValidationData, GapValidationData, MatchingValidationData, OrderValidationData, TranslateValidationData } from '../common/types/validation-data';
 import { mapTaskDataToValidationData } from '../common/utils/task-validation-data';
 
 export interface ValidationResult {
@@ -61,8 +61,16 @@ export class AnswerValidatorService {
         return this.validateTranslateAnswer(validationData as TranslateValidationData, userAnswer);
       
       case 'listen':
+      case 'listening':
       case 'speak':
         return this.validateAudioAnswer(validationData as AudioValidationData, userAnswer);
+
+      case 'match':
+      case 'matching':
+        return this.validateMatchingAnswer(validationData as MatchingValidationData, userAnswer);
+
+      case 'flashcard':
+        return this.validateFlashcardAnswer(validationData as FlashcardValidationData, userAnswer);
       
       default:
         return { isCorrect: false, score: 0, feedback: 'Unknown task type' };
@@ -157,6 +165,94 @@ export class AnswerValidatorService {
       score: similarity,
       correctAnswer: taskData.target,
       feedback: isCorrect ? 'Good pronunciation!' : 'Try again'
+    };
+  }
+
+  private validateMatchingAnswer(taskData: MatchingValidationData, userAnswer: string): ValidationResult {
+    const pairs = taskData.pairs ?? [];
+    if (pairs.length === 0) {
+      return { isCorrect: true, score: 1.0, feedback: 'No pairs to validate' };
+    }
+
+    let parsedAnswer: unknown;
+    try {
+      parsedAnswer = JSON.parse(userAnswer);
+    } catch (e) {
+      return { isCorrect: false, score: 0, feedback: 'Invalid answer format' };
+    }
+
+    if (!Array.isArray(parsedAnswer)) {
+      return { isCorrect: false, score: 0, feedback: 'Invalid answer format' };
+    }
+
+    const correctMap = new Map(pairs.map(pair => [pair.left, pair.right]));
+
+    const normalizedPairs = parsedAnswer
+      .map((item: any) => {
+        if (Array.isArray(item) && item.length >= 2) {
+          if (typeof item[0] === 'number' && typeof item[1] === 'number') {
+            return {
+              left: pairs[item[0]]?.left,
+              right: pairs[item[1]]?.right,
+            };
+          }
+          if (typeof item[0] === 'string' && typeof item[1] === 'string') {
+            return { left: item[0], right: item[1] };
+          }
+        }
+
+        if (item && typeof item === 'object') {
+          if (typeof item.leftIndex === 'number' && typeof item.rightIndex === 'number') {
+            return {
+              left: pairs[item.leftIndex]?.left,
+              right: pairs[item.rightIndex]?.right,
+            };
+          }
+          if (typeof item.left === 'string' && typeof item.right === 'string') {
+            return { left: item.left, right: item.right };
+          }
+        }
+
+        return undefined;
+      })
+      .filter((pair: { left?: string; right?: string } | undefined): pair is { left: string; right: string } => Boolean(pair?.left && pair?.right));
+
+    const correctCount = normalizedPairs.reduce((count, pair) => {
+      return correctMap.get(pair.left) === pair.right ? count + 1 : count;
+    }, 0);
+
+    const totalPairs = pairs.length;
+    const score = totalPairs > 0 ? correctCount / totalPairs : 1.0;
+    const isCorrect = score === 1.0;
+
+    return {
+      isCorrect,
+      score,
+      feedback: isCorrect ? 'Great job!' : 'Try matching again',
+    };
+  }
+
+  private validateFlashcardAnswer(taskData: FlashcardValidationData, userAnswer: string): ValidationResult {
+    const expected = taskData.back ?? taskData.expected?.[0];
+    const user = userAnswer?.toLowerCase().trim();
+
+    if (!expected) {
+      return { isCorrect: true, score: 1.0, feedback: 'Flashcard reviewed!' };
+    }
+
+    if (!user) {
+      return { isCorrect: true, score: 1.0, feedback: 'Flashcard reviewed!' };
+    }
+
+    const normalizedExpected = expected.toLowerCase().trim();
+    const similarity = this.similarityScore(user, normalizedExpected);
+    const isCorrect = similarity > 0.8;
+
+    return {
+      isCorrect,
+      score: isCorrect ? 1.0 : similarity,
+      correctAnswer: expected,
+      feedback: isCorrect ? 'Well done!' : 'Review the flashcard'
     };
   }
 
