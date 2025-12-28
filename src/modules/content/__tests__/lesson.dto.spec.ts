@@ -60,6 +60,13 @@ describe('CreateLessonDto', () => {
     expect(errors.some(e => e.property === 'lessonRef')).toBe(true);
   });
 
+  it('should fail when lessonRef format is invalid', async () => {
+    const dto = plainToInstance(CreateLessonDto, { ...validLesson, lessonRef: 'a0.basics.01' });
+    const errors = await validate(dto);
+
+    expect(errors.some(e => e.property === 'lessonRef')).toBe(true);
+  });
+
   it('should fail when type is invalid', async () => {
     const dto = plainToInstance(CreateLessonDto, { ...validLesson, type: 'speaking' });
     const errors = await validate(dto);
