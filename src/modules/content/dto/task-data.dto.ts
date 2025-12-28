@@ -40,9 +40,8 @@ export class ChoiceTaskDataDto {
   @IsString({ each: true })
   options!: string[];
 
-  @IsOptional()
   @IsNumber()
-  correctIndex?: number; // Index of correct answer
+  correctIndex!: number; // Index of correct answer
 
   @IsOptional()
   @IsString()

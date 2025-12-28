@@ -14,6 +14,30 @@ describe('TaskDto', () => {
     expect(errors).toHaveLength(0);
   });
 
+  it('should fail choice task data without correctIndex', async () => {
+    const dto = plainToInstance(TaskDto, {
+      ref: 'a0.basics.001.t1',
+      type: 'choice',
+      data: { question: 'Pick', options: ['a', 'b'] },
+    });
+
+    const errors = await validate(dto);
+    const dataError = errors.find(error => error.property === 'data');
+    expect(dataError).toBeDefined();
+  });
+
+  it('should fail multiple_choice task data without correctIndex', async () => {
+    const dto = plainToInstance(TaskDto, {
+      ref: 'a0.basics.001.t1',
+      type: 'multiple_choice',
+      data: { question: 'Pick', options: ['a', 'b'] },
+    });
+
+    const errors = await validate(dto);
+    const dataError = errors.find(error => error.property === 'data');
+    expect(dataError).toBeDefined();
+  });
+
   it('should validate gap task data', async () => {
     const dto = plainToInstance(TaskDto, {
       ref: 'a0.basics.001.t2',

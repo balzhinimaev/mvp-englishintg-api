@@ -485,7 +485,7 @@ describe('AdminContentController', () => {
             {
               ref: 'wrong-prefix.t1',
               type: 'choice',
-              data: { question: 'Pick one', options: ['a'] },
+              data: { question: 'Pick one', options: ['a'], correctIndex: 0 },
             },
             {
               ref: 'wrong-prefix.t1',
@@ -502,11 +502,28 @@ describe('AdminContentController', () => {
           'duplicate task.ref: wrong-prefix.t1',
           'task[0].ref must start with a0.basics.001.',
           'choice[0] requires >=2 options',
-          'choice[0] missing correctIndex',
           'gap[1].text must contain ____',
           'gap[1].answer is required',
         ])
       );
+      expect(mockContentService.createLesson).not.toHaveBeenCalled();
+    });
+
+    it('should return 400 when choice task is missing correctIndex', async () => {
+      await request(app.getHttpServer())
+        .post('/admin/content/lessons')
+        .send({
+          ...validLesson,
+          tasks: [
+            {
+              ref: 'a0.basics.001.t1',
+              type: 'choice',
+              data: { question: 'Pick one', options: ['a', 'b'] },
+            },
+          ],
+        })
+        .expect(400);
+
       expect(mockContentService.createLesson).not.toHaveBeenCalled();
     });
 
