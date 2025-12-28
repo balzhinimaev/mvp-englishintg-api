@@ -15,7 +15,7 @@ const badRequestResponseSchema = {
   type: 'object',
   properties: {
     statusCode: { type: 'number', example: 400 },
-    message: { type: 'string', example: 'Invalid answer format' },
+    message: { type: 'string', example: 'Неверный формат ответа для order: ожидается JSON-массив строк, например ["What","time","is","it","?"]' },
     error: { type: 'string', example: 'Bad Request' },
   },
 };
@@ -68,11 +68,45 @@ export class ProgressController {
 
   // 🔒 НОВЫЙ БЕЗОПАСНЫЙ ЭНДПОИНТ
   @Post('submit-answer')
-  @ApiOperation({ summary: 'Проверить ответ пользователя и сохранить попытку' })
-  @ApiOkResponse({ description: 'Результат проверки и данные попытки.' })
+  @ApiOperation({
+    summary: 'Проверить ответ пользователя и сохранить попытку',
+    description: 'Пример запроса:\n```json\n{\n  "lessonRef": "a0.basics.001",\n  "taskRef": "a0.basics.001.t1",\n  "userAnswer": "[\\"What\\",\\"time\\",\\"is\\",\\"it\\",\\"?\\"]",\n  "durationMs": 1200\n}\n```',
+  })
+  @ApiOkResponse({
+    description: 'Результат проверки и данные попытки.',
+    schema: {
+      type: 'object',
+      properties: {
+        attemptId: { type: 'string', example: '64f9b6a0b3b6c92f4e2a1234' },
+        isCorrect: { type: 'boolean', example: false },
+        score: { type: 'number', example: 0.5 },
+        feedback: { type: 'string', example: 'Check the word order' },
+        correctAnswer: { type: 'string', example: 'What time is it ?' },
+        explanation: { type: 'string', example: 'Порядок слов в вопросе.' },
+      },
+    },
+  })
   @ApiBadRequestResponse({
     description: 'Ошибка валидации ответа.',
     schema: badRequestResponseSchema,
+    examples: {
+      invalidOrderFormat: {
+        summary: 'Неверный формат order',
+        value: {
+          statusCode: 400,
+          message: 'Неверный формат ответа для order: ожидается JSON-массив строк, например ["What","time","is","it","?"]',
+          error: 'Bad Request',
+        },
+      },
+      invalidMatchingFormat: {
+        summary: 'Неверный формат matching',
+        value: {
+          statusCode: 400,
+          message: 'Неверный формат ответа для matching: ожидается JSON-массив пар или объектов с left/right.',
+          error: 'Bad Request',
+        },
+      },
+    },
   })
   @ApiNotFoundResponse({
     description: 'Урок или задание не найдены.',
@@ -135,7 +169,7 @@ export class ProgressController {
       }
 
       if (error instanceof ValidationDataError) {
-        throw new InternalServerErrorException('Internal server error');
+        throw new InternalServerErrorException(error.message);
       }
 
       console.error('Answer validation error:', error);
