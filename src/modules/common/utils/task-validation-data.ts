@@ -1,5 +1,5 @@
 import { TaskType } from '../types/content';
-import { AudioValidationData, ChoiceValidationData, GapValidationData, OrderValidationData, TaskValidationData, TranslateValidationData } from '../types/validation-data';
+import { AudioValidationData, ChoiceValidationData, FlashcardValidationData, GapValidationData, MatchingValidationData, OrderValidationData, TaskValidationData, TranslateValidationData } from '../types/validation-data';
 
 const toStringArray = (value: unknown): string[] | undefined =>
   Array.isArray(value) && value.every(item => typeof item === 'string') ? value : undefined;
@@ -36,10 +36,28 @@ export const mapTaskDataToValidationData = (task: { type: TaskType; data?: Recor
       return { expected } satisfies TranslateValidationData;
     }
     case 'listen':
+    case 'listening':
     case 'speak': {
       return {
         target: typeof data.target === 'string' ? data.target : undefined,
       } satisfies AudioValidationData;
+    }
+    case 'match':
+    case 'matching': {
+      if (!Array.isArray(data.pairs)) return undefined;
+      const pairs = data.pairs
+        .filter((pair: { left?: unknown; right?: unknown }) => typeof pair?.left === 'string' && typeof pair?.right === 'string')
+        .map((pair: { left: string; right: string }) => ({ left: pair.left, right: pair.right }));
+      return {
+        pairs,
+      } satisfies MatchingValidationData;
+    }
+    case 'flashcard': {
+      const expected = toStringArray(data.expected);
+      return {
+        back: typeof data.back === 'string' ? data.back : undefined,
+        expected,
+      } satisfies FlashcardValidationData;
     }
     default:
       return undefined;

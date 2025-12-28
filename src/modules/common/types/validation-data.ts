@@ -20,9 +20,20 @@ export interface AudioValidationData {
   target?: string;
 }
 
+export interface MatchingValidationData {
+  pairs: Array<{ left: string; right: string }>;
+}
+
+export interface FlashcardValidationData {
+  back?: string;
+  expected?: string[];
+}
+
 export type TaskValidationData =
   | ChoiceValidationData
   | GapValidationData
   | OrderValidationData
   | TranslateValidationData
-  | AudioValidationData;
+  | AudioValidationData
+  | MatchingValidationData
+  | FlashcardValidationData;
