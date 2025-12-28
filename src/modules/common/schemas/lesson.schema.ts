@@ -24,6 +24,9 @@ export class Lesson {
   @Prop({ type: [Object], default: [] })
   tasks?: Array<{ ref: string; type: string; data: Record<string, any>; validationData?: Record<string, any> }>;
 
+  @Prop({ type: [String], default: [] })
+  taskTypes?: string[];
+
   @Prop({ default: true })
   published?: boolean;
 
@@ -73,4 +76,3 @@ LessonSchema.index(
     name: 'unique_module_order_published'
   }
 );
-

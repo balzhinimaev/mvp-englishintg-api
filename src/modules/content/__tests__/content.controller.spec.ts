@@ -95,7 +95,7 @@ describe('ContentController', () => {
           title: { ru: 'Урок 1', en: 'Lesson 1' },
           description: { ru: 'Описание', en: 'Description' },
           order: 1,
-          tasks: [],
+          taskTypes: ['choice', 'gap'],
         },
       ];
       const completedAt = new Date('2024-01-02T00:00:00Z');
@@ -127,6 +127,7 @@ describe('ContentController', () => {
       expect(response.body.lessons[0]).toEqual(
         expect.objectContaining({
           lessonRef: 'a0.basics.001',
+          taskTypes: ['choice', 'gap'],
           progress: {
             status: 'completed',
             score: 0.9,
@@ -177,6 +178,39 @@ describe('ContentController', () => {
       expect(mockLessonModel.find).toHaveBeenCalledWith(
         { published: true, moduleRef: 'a0.basics' },
         { tasks: 0 }
+      );
+    });
+
+    it('should include taskTypes when tasks are excluded', async () => {
+      const lessons = [
+        {
+          lessonRef: 'a0.basics.002',
+          moduleRef: 'a0.basics',
+          title: { ru: 'Урок 2', en: 'Lesson 2' },
+          description: { ru: 'Описание 2', en: 'Description 2' },
+          order: 2,
+          taskTypes: ['match', 'listen'],
+        },
+      ];
+
+      mockLessonModel.find.mockReturnValue({
+        sort: jest.fn().mockReturnValue({
+          lean: jest.fn().mockResolvedValue(lessons),
+        }),
+      });
+      mockProgressModel.find.mockReturnValue({
+        lean: jest.fn().mockResolvedValue([]),
+      });
+
+      const response = await request(app.getHttpServer())
+        .get('/content/lessons?moduleRef=a0.basics')
+        .expect(200);
+
+      expect(response.body.lessons[0]).toEqual(
+        expect.objectContaining({
+          lessonRef: 'a0.basics.002',
+          taskTypes: ['match', 'listen'],
+        })
       );
     });
   });

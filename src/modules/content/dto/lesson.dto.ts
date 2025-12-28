@@ -95,6 +95,11 @@ export class CreateLessonDto {
   @ValidateNested({ each: true })
   @Type(() => TaskDto)
   tasks?: TaskDto[];
+
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  taskTypes?: string[];
 }
 
 export class UpdateLessonDto extends PartialType(CreateLessonDto) {}

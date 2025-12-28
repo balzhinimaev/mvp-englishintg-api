@@ -49,7 +49,8 @@ export class ContentService {
   // Lessons
   async createLesson(body: CreateLessonInput) {
     const tasks = this.withValidationData(body.tasks);
-    return this.lessonModel.create({ ...body, tasks });
+    const taskTypes = this.extractTaskTypes(tasks) ?? body.taskTypes;
+    return this.lessonModel.create({ ...body, tasks, taskTypes });
   }
 
   async listLessons(moduleRef?: string) {
@@ -66,6 +67,9 @@ export class ContentService {
     const nextUpdate = { ...update } as Partial<Lesson>;
     if (update.tasks) {
       nextUpdate.tasks = this.withValidationData(update.tasks as Lesson['tasks']);
+      nextUpdate.taskTypes = this.extractTaskTypes(nextUpdate.tasks);
+    } else if (update.taskTypes) {
+      nextUpdate.taskTypes = update.taskTypes;
     }
     await this.lessonModel.updateOne({ lessonRef }, { $set: nextUpdate });
     return { ok: true };
@@ -77,6 +81,12 @@ export class ContentService {
       ...task,
       validationData: mapTaskDataToValidationData({ type: task.type as any, data: task.data }) ?? task.validationData,
     }));
+  }
+
+  private extractTaskTypes(tasks?: Lesson['tasks']) {
+    if (!tasks?.length) return undefined;
+    const types = tasks.map(task => task.type).filter(Boolean);
+    return Array.from(new Set(types));
   }
 
   /**
