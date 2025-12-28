@@ -9,6 +9,8 @@ import { XpTransaction, XpTransactionDocument } from '../../common/schemas/xp-tr
 import { DailyStat, DailyStatDocument } from '../../common/schemas/daily-stat.schema';
 import { LearningSession, LearningSessionDocument } from '../../common/schemas/learning-session.schema';
 import { Achievement, AchievementDocument } from '../../common/schemas/achievement.schema';
+import { Lesson, LessonDocument } from '../../common/schemas/lesson.schema';
+import { BadRequestException } from '@nestjs/common';
 
 describe('ProgressService.recordTaskAttempt', () => {
   let service: ProgressService;
@@ -16,6 +18,7 @@ describe('ProgressService.recordTaskAttempt', () => {
   let attemptModel: Model<UserTaskAttemptDocument>;
   let dailyModel: Model<DailyStatDocument>;
   let userModel: Model<UserDocument>;
+  let lessonModel: Model<LessonDocument>;
 
   const mockUserModel = {
     findOne: jest.fn(),
@@ -52,6 +55,9 @@ describe('ProgressService.recordTaskAttempt', () => {
   const mockAchModel = {
     create: jest.fn(),
   };
+  const mockLessonModel = {
+    findOne: jest.fn(),
+  };
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -64,6 +70,7 @@ describe('ProgressService.recordTaskAttempt', () => {
         { provide: getModelToken(DailyStat.name), useValue: mockDailyModel },
         { provide: getModelToken(LearningSession.name), useValue: mockSessionModel },
         { provide: getModelToken(Achievement.name), useValue: mockAchModel },
+        { provide: getModelToken(Lesson.name), useValue: mockLessonModel },
       ],
     }).compile();
 
@@ -72,6 +79,7 @@ describe('ProgressService.recordTaskAttempt', () => {
     attemptModel = module.get<Model<UserTaskAttemptDocument>>(getModelToken(UserTaskAttempt.name));
     dailyModel = module.get<Model<DailyStatDocument>>(getModelToken(DailyStat.name));
     userModel = module.get<Model<UserDocument>>(getModelToken(User.name));
+    lessonModel = module.get<Model<LessonDocument>>(getModelToken(Lesson.name));
 
     jest.clearAllMocks();
 
@@ -80,6 +88,9 @@ describe('ProgressService.recordTaskAttempt', () => {
 
     mockUserModel.findOne.mockReturnValue({
       lean: jest.fn().mockResolvedValue({ tz: 'UTC' }),
+    });
+    mockLessonModel.findOne.mockReturnValue({
+      lean: jest.fn().mockResolvedValue({ tasks: [{ ref: 'a0.basics.001.t1' }] }),
     });
   });
 
@@ -150,5 +161,30 @@ describe('ProgressService.recordTaskAttempt', () => {
       expect.objectContaining({ $inc: expect.objectContaining({ lessonsCompleted: 1 }) }),
       { upsert: true }
     );
+  });
+
+  it('should reject completion when task is not last', async () => {
+    mockLessonModel.findOne.mockReturnValueOnce({
+      lean: jest.fn().mockResolvedValue({
+        tasks: [{ ref: 'a0.basics.001.t1' }, { ref: 'a0.basics.001.t2' }],
+      }),
+    });
+    mockUlpModel.findOneAndUpdate.mockResolvedValue({ _id: 'ulp-id' });
+    mockAttemptModel.findOne.mockReturnValue(mockAttemptFindOneChain(null));
+
+    await expect(
+      service.recordTaskAttempt({
+        userId: 'user-1',
+        lessonRef: 'a0.basics.001',
+        taskRef: 'a0.basics.001.t1',
+        isCorrect: true,
+        isLastTask: true,
+      })
+    ).rejects.toThrow(new BadRequestException('Некорректный признак последней задачи'));
+
+    expect(attemptModel.create).not.toHaveBeenCalled();
+    expect(ulpModel.updateOne).not.toHaveBeenCalled();
+    expect(dailyModel.updateOne).not.toHaveBeenCalled();
+    expect(lessonModel.findOne).toHaveBeenCalledWith({ lessonRef: 'a0.basics.001' });
   });
 });

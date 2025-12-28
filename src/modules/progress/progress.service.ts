@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User, UserDocument } from '../common/schemas/user.schema';
@@ -8,6 +8,7 @@ import { XpTransaction, XpTransactionDocument, XpSource } from '../common/schema
 import { DailyStat, DailyStatDocument } from '../common/schemas/daily-stat.schema';
 import { LearningSession, LearningSessionDocument } from '../common/schemas/learning-session.schema';
 import { Achievement, AchievementDocument } from '../common/schemas/achievement.schema';
+import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 
 @Injectable()
 export class ProgressService {
@@ -19,6 +20,7 @@ export class ProgressService {
     @InjectModel(DailyStat.name) private readonly dailyModel: Model<DailyStatDocument>,
     @InjectModel(LearningSession.name) private readonly sessionModel: Model<LearningSessionDocument>,
     @InjectModel(Achievement.name) private readonly achModel: Model<AchievementDocument>,
+    @InjectModel(Lesson.name) private readonly lessonModel: Model<LessonDocument>,
   ) {}
 
   private getDayKey(date: Date, tz: string): string {
@@ -109,6 +111,12 @@ export class ProgressService {
       { new: true, upsert: true },
     );
 
+    const lesson = await this.lessonModel.findOne({ lessonRef: args.lessonRef }).lean();
+    const hasTasks = Array.isArray(lesson?.tasks) && lesson.tasks.length > 0;
+    const actualLastTaskIndex = hasTasks ? lesson!.tasks!.length - 1 : undefined;
+    const actualLastTaskRef = hasTasks ? lesson!.tasks![actualLastTaskIndex!]?.ref : undefined;
+    const resolvedLastTaskIndex = actualLastTaskIndex ?? args.lastTaskIndex;
+
     // Идемпотентность: проверяем, есть ли уже попытка с таким clientAttemptId
     if (args.clientAttemptId) {
       const existingAttempt = await this.attemptModel.findOne({
@@ -120,6 +128,16 @@ export class ProgressService {
       if (existingAttempt) {
         // Возвращаем существующую попытку
         return existingAttempt;
+      }
+    }
+
+    if (args.isLastTask) {
+      const matchesTaskRef = actualLastTaskRef === args.taskRef;
+      const matchesIndex =
+        typeof args.lastTaskIndex === 'number' ? args.lastTaskIndex === actualLastTaskIndex : true;
+
+      if (!matchesTaskRef || !matchesIndex) {
+        throw new BadRequestException('Некорректный признак последней задачи');
       }
     }
 
@@ -160,7 +178,7 @@ export class ProgressService {
             attempts: { $add: [{ $ifNull: ['$attempts', 0] }, 1] },
             totalScore: { $add: [{ $ifNull: ['$totalScore', 0] }, scoreIncrement] },
             totalTimeMs: { $add: [{ $ifNull: ['$totalTimeMs', 0] }, timeIncrement] },
-            lastTaskIndex: args.lastTaskIndex,
+            lastTaskIndex: resolvedLastTaskIndex,
           },
         },
         {
@@ -213,5 +231,3 @@ export class ProgressService {
     return attempt;
   }
 }
-
-
