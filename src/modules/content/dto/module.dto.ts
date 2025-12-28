@@ -93,6 +93,11 @@ export class CreateModuleDto {
   @IsOptional()
   @IsBoolean()
   isAvailable?: boolean;
+
+  @IsOptional()
+  @IsInt()
+  @Min(1)
+  freeUntilOrder?: number; // Уроки с order <= freeUntilOrder доступны бесплатно
 }
 
 export class UpdateModuleDto {
@@ -143,4 +148,9 @@ export class UpdateModuleDto {
   @IsOptional()
   @IsBoolean()
   isAvailable?: boolean;
+
+  @IsOptional()
+  @IsInt()
+  @Min(1)
+  freeUntilOrder?: number; // Уроки с order <= freeUntilOrder доступны бесплатно
 }

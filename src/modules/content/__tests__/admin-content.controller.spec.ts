@@ -607,6 +607,7 @@ describe('AdminContentController', () => {
       mockContentService.getLessonByRef.mockResolvedValue({
         lessonRef: 'a0.basics.001',
         moduleRef: 'a0.basics',
+        order: 1, // Добавлен order для валидации
         tasks: [
           {
             ref: 'a0.basics.001.t1',

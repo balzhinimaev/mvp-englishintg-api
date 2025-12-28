@@ -64,6 +64,9 @@ export class CreateLessonDto {
   @IsOptional() @IsBoolean()
   published?: boolean;
 
+  @IsOptional() @IsBoolean()
+  requiresPro?: boolean; // Явное требование PRO подписки для этого урока
+
   @IsOptional()
   @IsEnum(['conversation', 'vocabulary', 'grammar'])
   type?: 'conversation'|'vocabulary'|'grammar';

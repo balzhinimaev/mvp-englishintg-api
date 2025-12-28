@@ -27,6 +27,9 @@ export class CourseModule {
   @Prop({ default: true })
   published?: boolean;
 
+  @Prop()
+  freeUntilOrder?: number; // Уроки с order <= freeUntilOrder доступны бесплатно
+
   @Prop({ default: 0 })
   order?: number;
 

@@ -38,7 +38,7 @@ export class AdminContentController {
   // Lessons
   @Post('lessons')
   async createLesson(@Body() body: CreateLessonDto) {
-    const errors = lintLessonTasks(body.lessonRef, body.tasks, body.moduleRef, body.published);
+    const errors = lintLessonTasks(body.lessonRef, body.tasks, body.moduleRef, body.published, body.order);
     if (errors.length) {
       throw new BadRequestException({ message: 'Lesson tasks validation failed', errors });
     }
@@ -56,16 +56,18 @@ export class AdminContentController {
   async updateLesson(@Param('lessonRef') lessonRef: string, @Body() body: UpdateLessonDto) {
     let tasksForLint = body.tasks;
     let moduleRefForLint = body.moduleRef;
+    let orderForLint = body.order;
 
     if (body.published === true) {
       const currentLesson = await this.content.getLessonByRef(lessonRef);
       if (currentLesson) {
         if (!tasksForLint) tasksForLint = currentLesson.tasks as any;
         if (!moduleRefForLint) moduleRefForLint = currentLesson.moduleRef;
+        if (orderForLint === undefined) orderForLint = currentLesson.order;
       }
     }
 
-    const errors = lintLessonTasks(lessonRef, tasksForLint, moduleRefForLint, body.published);
+    const errors = lintLessonTasks(lessonRef, tasksForLint, moduleRefForLint, body.published, orderForLint);
     if (errors.length) {
       throw new BadRequestException({ message: 'Lesson tasks validation failed', errors });
     }

@@ -30,6 +30,9 @@ export class Lesson {
   @Prop({ default: 0 })
   order?: number; // within module
 
+  @Prop({ default: false })
+  requiresPro?: boolean; // Явное требование PRO подписки для этого урока
+
   @Prop({ enum: ['conversation','vocabulary','grammar'], default: 'vocabulary' })
   type?: 'conversation'|'vocabulary'|'grammar';
 
@@ -53,6 +56,21 @@ export class Lesson {
 }
 
 export const LessonSchema = SchemaFactory.createForClass(Lesson);
+// Индекс для быстрого поиска уроков по модулю и порядку
 LessonSchema.index({ moduleRef: 1, order: 1 });
+// Уникальный индекс на lessonRef
 LessonSchema.index({ lessonRef: 1 }, { unique: true });
+// Уникальный индекс на комбинацию moduleRef + order для предотвращения дубликатов порядка
+// Partial index: применяется только к опубликованным урокам с order >= 1
+LessonSchema.index(
+  { moduleRef: 1, order: 1 }, 
+  { 
+    unique: true, 
+    partialFilterExpression: { 
+      published: true, 
+      order: { $gte: 1 } 
+    },
+    name: 'unique_module_order_published'
+  }
+);
 

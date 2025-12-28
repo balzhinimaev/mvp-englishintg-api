@@ -9,7 +9,8 @@ export function lintLessonTasks(
   lessonRef: string,
   tasks?: TaskDto[],
   moduleRef?: string,
-  published?: boolean
+  published?: boolean,
+  order?: number
 ): string[] {
   const errors: string[] = [];
   if (moduleRef) {
@@ -18,9 +19,15 @@ export function lintLessonTasks(
       errors.push(`lessonRef must match ${moduleRef}.NNN`);
     }
   }
-  if (published === true && (!tasks || tasks.length === 0)) {
-    errors.push('published lesson requires tasks');
-    return errors;
+  if (published === true) {
+    if (!tasks || tasks.length === 0) {
+      errors.push('published lesson requires tasks');
+      return errors;
+    }
+    // Проверка order для опубликованных уроков
+    if (order === undefined || order === null || order < 1) {
+      errors.push('published lesson requires order >= 1');
+    }
   }
   if (!tasks || tasks.length === 0) return errors;
   const seen = new Set<string>();
