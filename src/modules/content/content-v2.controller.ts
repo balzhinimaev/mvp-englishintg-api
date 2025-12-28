@@ -1,5 +1,5 @@
 // src/content/content-v2.controller.ts
-import { Controller, Get, Param, Query, UseGuards, Request, NotFoundException } from '@nestjs/common';
+import { BadRequestException, Controller, Get, Param, Query, UseGuards, Request, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { CourseModule, CourseModuleDocument } from '../common/schemas/course-module.schema';
@@ -118,6 +118,10 @@ export class ContentV2Controller {
       return { error: 'userId is required' };
     }
 
+    if (!/^[a-z0-9]+\.[a-z0-9_]+$/.test(moduleRef)) {
+      throw new BadRequestException('Invalid moduleRef format');
+    }
+
     const lessons = await this.lessonModel.find({ moduleRef, published: true }).sort({ order: 1 }).lean();
     const progresses = await this.progressModel.find({ userId: String(userId), moduleRef }).lean();
 
@@ -130,6 +134,10 @@ export class ContentV2Controller {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
       return { error: 'userId is required' };
+    }
+
+    if (!/^[a-z0-9]+\.[a-z0-9_]+\.\d{3}$/.test(lessonRef)) {
+      throw new BadRequestException('Invalid lessonRef format');
     }
 
     const l = await this.lessonModel.findOne({ lessonRef, published: true }).lean();
