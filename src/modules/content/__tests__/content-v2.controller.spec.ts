@@ -171,7 +171,7 @@ describe('ContentV2Controller', () => {
       });
 
       const response = await request(app.getHttpServer())
-        .get('/content/v2/lessons/missing.lesson?lang=ru')
+        .get('/content/v2/lessons/missing.module.001?lang=ru')
         .expect(404);
 
       expect(response.body).toEqual(

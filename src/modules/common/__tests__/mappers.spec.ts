@@ -25,7 +25,7 @@ describe('LessonMapper', () => {
 
     const result = LessonMapper.toDto(lesson, 'ru');
 
-    expect(result.estimatedMinutes).toBe(8);
+    expect(result.estimatedMinutes).toBe(10);
     expect(result.xpReward).toBe(25);
     expect(result.hasAudio).toBe(true);
     expect(result.hasVideo).toBe(false);

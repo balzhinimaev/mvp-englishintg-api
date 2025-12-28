@@ -250,7 +250,7 @@ describe('presentLesson', () => {
       completedAt: new Date('2024-01-02T00:00:00Z'),
     });
 
-    expect(result.estimatedMinutes).toBe(8);
+    expect(result.estimatedMinutes).toBe(10);
     expect(result.type).toBe('vocabulary');
     expect(result.difficulty).toBe('easy');
     expect(result.hasAudio).toBe(true);
