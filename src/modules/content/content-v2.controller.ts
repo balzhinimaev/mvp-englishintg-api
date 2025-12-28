@@ -10,6 +10,7 @@ import { LessonMapper } from '../common/utils/mappers';
 import { parseLanguage } from '../common/utils/i18n.util';
 import { presentLesson, presentModule } from './presenter';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { LessonPrerequisiteGuard } from './guards/lesson-prerequisite.guard';
 import { GetModulesDto } from './dto/get-content.dto';
 
 @Controller('content/v2')
@@ -135,6 +136,7 @@ export class ContentV2Controller {
   }
 
   @Get('lessons/:lessonRef')
+  @UseGuards(JwtAuthGuard, LessonPrerequisiteGuard)
   async getLesson(@Param('lessonRef') lessonRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
