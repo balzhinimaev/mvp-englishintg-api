@@ -18,8 +18,11 @@ export class SubmitAnswerDto {
   taskRef!: string;
 
   // 🔒 ФРОНТЕНД ОТПРАВЛЯЕТ ТОЛЬКО СВОЙ ОТВЕТ
+  // Примеры: "Hello", "2", "[\"apple\",\"banana\"]"
+  // Для order: "[\"What\",\"time\",\"is\",\"it\",\"?\"]"
+  // Для matching: "[[0,1],[1,0]]" или "[{\"left\":\"cat\",\"right\":\"кот\"}]"
   @IsString()
-  userAnswer!: string; // Например: "Hello", "2", "['apple','banana']"
+  userAnswer!: string;
 
   @IsOptional()
   @IsNumber()

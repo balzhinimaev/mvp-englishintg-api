@@ -80,6 +80,21 @@ describe('AnswerValidatorService', () => {
     expect(result.score).toBeGreaterThan(0);
   });
 
+  it('returns a detailed error for invalid order format', async () => {
+    mockLessonModel.findOne.mockReturnValue({
+      lean: jest.fn().mockResolvedValue({
+        lessonRef: 'a0.basics.001',
+        tasks: [
+          { ref: 't1', type: 'order', data: { tokens: ['What', 'time', 'is', 'it'] }, validationData: { tokens: ['What', 'time', 'is', 'it'] } },
+        ],
+      }),
+    });
+
+    await expect(service.validateAnswer('a0.basics.001', 't1', 'not-json')).rejects.toThrow(
+      'Неверный формат ответа для order: ожидается JSON-массив строк, например ["What","time","is","it","?"]',
+    );
+  });
+
   it('validates translate answers by similarity', async () => {
     mockLessonModel.findOne.mockReturnValue({
       lean: jest.fn().mockResolvedValue({
@@ -127,5 +142,25 @@ describe('AnswerValidatorService', () => {
 
     expect(listenResult.isCorrect).toBe(true);
     expect(speakResult.isCorrect).toBe(true);
+  });
+
+  it('returns a detailed error for invalid matching format', async () => {
+    mockLessonModel.findOne.mockReturnValue({
+      lean: jest.fn().mockResolvedValue({
+        lessonRef: 'a0.basics.001',
+        tasks: [
+          {
+            ref: 't1',
+            type: 'matching',
+            data: { pairs: [{ left: 'cat', right: 'кот' }] },
+            validationData: { pairs: [{ left: 'cat', right: 'кот' }] },
+          },
+        ],
+      }),
+    });
+
+    await expect(service.validateAnswer('a0.basics.001', 't1', '"not-an-array"')).rejects.toThrow(
+      'Неверный формат ответа для matching: ожидается JSON-массив пар или объектов с left/right.',
+    );
   });
 });

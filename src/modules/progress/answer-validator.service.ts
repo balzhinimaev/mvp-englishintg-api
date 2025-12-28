@@ -28,8 +28,8 @@ export class TaskNotFoundError extends Error {
 }
 
 export class InvalidAnswerFormatError extends Error {
-  constructor() {
-    super('Invalid answer format');
+  constructor(message = 'Неверный формат ответа') {
+    super(message);
     this.name = 'InvalidAnswerFormatError';
   }
 }
@@ -150,7 +150,7 @@ export class AnswerValidatorService {
         feedback: isCorrect ? 'Perfect!' : 'Check the word order'
       };
     } catch (e) {
-      throw new InvalidAnswerFormatError();
+      throw new InvalidAnswerFormatError('Неверный формат ответа для order: ожидается JSON-массив строк, например ["What","time","is","it","?"]');
     }
   }
 
@@ -206,11 +206,11 @@ export class AnswerValidatorService {
     try {
       parsedAnswer = JSON.parse(userAnswer);
     } catch (e) {
-      throw new InvalidAnswerFormatError();
+      throw new InvalidAnswerFormatError('Неверный формат ответа для matching: ожидается JSON-массив пар или объектов с left/right.');
     }
 
     if (!Array.isArray(parsedAnswer)) {
-      throw new InvalidAnswerFormatError();
+      throw new InvalidAnswerFormatError('Неверный формат ответа для matching: ожидается JSON-массив пар или объектов с left/right.');
     }
 
     const correctMap = new Map(pairs.map(pair => [pair.left, pair.right]));
