@@ -47,15 +47,27 @@ export default registerAs('app', (): AppConfig => {
     throw error;
   }
   
-  // If MongoDB is configured as replica set, ensure replicaSet parameter is present
-  const replicaSetName = process.env.MONGODB_REPLICA_SET || 'rs0';
-  const hasReplicaSet = mongoUri.includes('replicaSet=');
+  const nodeEnv = process.env.NODE_ENV || 'development';
+  const isDevelopment = nodeEnv === 'development';
   
-  if (!hasReplicaSet) {
-    // Add replicaSet parameter if not present
-    const separator = mongoUri.includes('?') ? '&' : '?';
-    mongoUri = `${mongoUri}${separator}replicaSet=${replicaSetName}`;
-    console.log(`🔧 Added replicaSet=${replicaSetName} parameter to MongoDB URI (required for replica set mode)`);
+  // В development режиме подключаемся без реплики
+  if (isDevelopment) {
+    // Удаляем параметр replicaSet, если он есть
+    mongoUri = mongoUri.replace(/[?&]replicaSet=[^&]*/g, '');
+    // Удаляем лишние ? или & в конце, если они остались
+    mongoUri = mongoUri.replace(/[?&]$/, '');
+    console.log(`🔧 Development mode: подключение к MongoDB без реплики`);
+  } else {
+    // В production/test режиме добавляем replicaSet, если его нет
+    const replicaSetName = process.env.MONGODB_REPLICA_SET || 'rs0';
+    const hasReplicaSet = mongoUri.includes('replicaSet=');
+    
+    if (!hasReplicaSet) {
+      // Add replicaSet parameter if not present
+      const separator = mongoUri.includes('?') ? '&' : '?';
+      mongoUri = `${mongoUri}${separator}replicaSet=${replicaSetName}`;
+      console.log(`🔧 Added replicaSet=${replicaSetName} parameter to MongoDB URI (required for replica set mode)`);
+    }
   }
   
   // Log connection info (without credentials)

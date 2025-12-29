@@ -7,9 +7,7 @@ import { ConfigService } from '@nestjs/config';
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule, { cors: true });
   const configService = app.get(ConfigService);
-  
-  // Set global prefix for all routes
-  // app.setGlobalPrefix('api/v2'); // Disabled - nginx strips the prefix
+  const port = configService.get<number>('app.port', 7777);
   
   app.useGlobalPipes(
     new ValidationPipe({
@@ -19,26 +17,23 @@ async function bootstrap(): Promise<void> {
     }),
   );
 
-  // Swagger (basic)
+  // Swagger документация
   try {
-    const moduleName = '@nestjs/swagger';
-    const dynamicImport: any = (eval('import'));
-    const swagger = await dynamicImport(moduleName);
-    const DocumentBuilder = (swagger as any).DocumentBuilder;
-    const SwaggerModule = (swagger as any).SwaggerModule;
+    const { DocumentBuilder, SwaggerModule } = await import('@nestjs/swagger');
     const swaggerConfig = new DocumentBuilder()
-      .setTitle('Burlive API')
+      .setTitle('English API')
       .setVersion('2.0')
       .addBearerAuth()
       .build();
     const document = SwaggerModule.createDocument(app, swaggerConfig);
     SwaggerModule.setup('docs', app, document);
+    console.log(`📚 Swagger документация доступна по адресу: http://localhost:${port}/docs`);
   } catch (e) {
-    // noop if swagger is not installed
+    console.warn('⚠️  Swagger не установлен или произошла ошибка при инициализации:', e);
   }
 
-  const port = configService.get<number>('app.port', 7777);
   await app.listen(port);
+  console.log(`🚀 Сервер запущен на порту ${port}`);
 }
 
 bootstrap();

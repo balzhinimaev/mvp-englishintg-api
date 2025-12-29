@@ -42,14 +42,21 @@ import configuration from './config/configuration';
           console.error('   Please set MONGODB_URI or MONGO_URI environment variable');
         }
         
+        const nodeEnv = configService.get<string>('app.nodeEnv') || 'development';
+        const isDevelopment = nodeEnv === 'development';
+        
         return {
           uri,
           dbName,
-          // Options for replica set support
-          serverSelectionTimeoutMS: 10000, // 10 seconds timeout for server selection
-          retryWrites: true, // Enable retryable writes (required for transactions)
-          retryReads: true, // Enable retryable reads
-          // Note: directConnection is automatically false when replicaSet is in URI
+          // В development режиме используем прямое подключение без реплики
+          ...(isDevelopment ? {
+            directConnection: true,
+          } : {
+            // Options for replica set support (production/test)
+            serverSelectionTimeoutMS: 10000, // 10 seconds timeout for server selection
+            retryWrites: true, // Enable retryable writes (required for transactions)
+            retryReads: true, // Enable retryable reads
+          }),
         };
       },
       inject: [ConfigService],
