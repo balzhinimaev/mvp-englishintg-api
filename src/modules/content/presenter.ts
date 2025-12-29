@@ -39,7 +39,9 @@ export function presentLesson(
     score: number; attempts: number; completedAt?: Date; timeSpent?: number;
   }>
 ): LessonItem {
-  const taskTypes: TaskType[] = (doc.tasks || []).map(t => t.type as TaskType);
+  const taskTypes: TaskType[] = (doc.taskTypes
+    ?? doc.tasks?.map(t => t.type as TaskType)
+    ?? []);
   const defaults = normalizeLessonDefaults(doc);
 
   return {
