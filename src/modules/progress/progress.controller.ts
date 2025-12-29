@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Headers, Param, Post, Query, UseGuards, BadRequestException, InternalServerErrorException, NotFoundException, Request } from '@nestjs/common';
+import { Body, Controller, Get, Headers, Param, Post, Query, UseGuards, BadRequestException, ForbiddenException, InternalServerErrorException, NotFoundException, Request } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { ApiBadRequestResponse, ApiInternalServerErrorResponse, ApiNotFoundResponse, ApiOkResponse, ApiOperation, ApiTags } from '@nestjs/swagger';
@@ -160,6 +160,10 @@ export class ProgressController {
         explanation: validation.explanation,
       };
     } catch (error) {
+      if (error instanceof ForbiddenException) {
+        throw error;
+      }
+
       if (error instanceof LessonNotFoundError || error instanceof TaskNotFoundError) {
         throw new NotFoundException(error.message);
       }
