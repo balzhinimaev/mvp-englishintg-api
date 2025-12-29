@@ -2,6 +2,7 @@
 import { BadRequestException, Controller, Get, Param, Query, UseGuards, Request, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
+import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger';
 import { CourseModule, CourseModuleDocument } from '../common/schemas/course-module.schema';
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
@@ -13,9 +14,11 @@ import { presentLesson, presentModule } from './presenter';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { LessonPrerequisiteGuard } from './guards/lesson-prerequisite.guard';
 import { GetModulesDto } from './dto/get-content.dto';
+import { LessonItemDto } from './dto/lesson-item.dto';
 
 @Controller('content/v2')
 @UseGuards(JwtAuthGuard)
+@ApiExtraModels(LessonItemDto)
 export class ContentV2Controller {
   constructor(
     @InjectModel(CourseModule.name) private moduleModel: Model<CourseModuleDocument>,
@@ -114,7 +117,16 @@ export class ContentV2Controller {
   }
 
   @Get('modules/:moduleRef/lessons')
-  async getLessons(@Param('moduleRef') moduleRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
+  @ApiOkResponse({
+    description: 'Список уроков модуля',
+    schema: {
+      type: 'object',
+      properties: {
+        lessons: { type: 'array', items: { $ref: getSchemaPath(LessonItemDto) } },
+      },
+    },
+  })
+  async getLessons(@Param('moduleRef') moduleRef: string, @Query('lang') lang = 'ru', @Request() req: any): Promise<{ lessons: LessonItemDto[] }> {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
       throw new BadRequestException('userId is required');
@@ -141,7 +153,16 @@ export class ContentV2Controller {
 
   @Get('lessons/:lessonRef')
   @UseGuards(JwtAuthGuard, LessonPrerequisiteGuard)
-  async getLesson(@Param('lessonRef') lessonRef: string, @Query('lang') lang = 'ru', @Request() req: any) {
+  @ApiOkResponse({
+    description: 'Детали урока',
+    schema: {
+      type: 'object',
+      properties: {
+        lesson: { $ref: getSchemaPath(LessonItemDto) },
+      },
+    },
+  })
+  async getLesson(@Param('lessonRef') lessonRef: string, @Query('lang') lang = 'ru', @Request() req: any): Promise<{ lesson: LessonItemDto }> {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
       throw new BadRequestException('userId is required');

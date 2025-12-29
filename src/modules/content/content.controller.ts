@@ -8,6 +8,7 @@ import {
   Request,
   UseGuards,
 } from '@nestjs/common';
+import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
@@ -22,11 +23,13 @@ import { getLocalizedText, parseLanguage } from '../common/utils/i18n.util';
 import { isValidLessonRef } from '../common/utils/lesson-ref';
 import { ModuleMapper, LessonMapper, LessonProgressMapper } from '../common/utils/mappers';
 import { GetModulesDto, GetLessonsDto, GetLessonDto } from './dto/get-content.dto';
+import { LessonItemDto } from './dto/lesson-item.dto';
 import { ContentService } from './content.service';
 import { VocabularyService } from './vocabulary.service';
 
 @Controller('content')
 @UseGuards(OptionalUserGuard)
+@ApiExtraModels(LessonItemDto)
 export class ContentController {
   constructor(
     @InjectModel(User.name) private readonly userModel: Model<UserDocument>,
@@ -102,7 +105,16 @@ export class ContentController {
 
   @Get('lessons')
   @UseGuards(JwtAuthGuard)
-  async getLessons(@Query() query: GetLessonsDto, @Request() req: any) {
+  @ApiOkResponse({
+    description: 'Список уроков',
+    schema: {
+      type: 'object',
+      properties: {
+        lessons: { type: 'array', items: { $ref: getSchemaPath(LessonItemDto) } },
+      },
+    },
+  })
+  async getLessons(@Query() query: GetLessonsDto, @Request() req: any): Promise<{ lessons: LessonItemDto[] }> {
     const { moduleRef, lang } = query;
     const userId = req.user?.userId; // Get userId from JWT token
     const language = parseLanguage(lang);
@@ -148,7 +160,16 @@ export class ContentController {
 
   @Get('lessons/:lessonRef')
   @UseGuards(JwtAuthGuard, LessonPrerequisiteGuard)
-  async getLesson(@Param('lessonRef') lessonRef: string, @Query() query: GetLessonDto, @Request() req: any) {
+  @ApiOkResponse({
+    description: 'Детали урока',
+    schema: {
+      type: 'object',
+      properties: {
+        lesson: { $ref: getSchemaPath(LessonItemDto) },
+      },
+    },
+  })
+  async getLesson(@Param('lessonRef') lessonRef: string, @Query() query: GetLessonDto, @Request() req: any): Promise<{ lesson: LessonItemDto }> {
     const { lang } = query;
     const userId = req.user?.userId; // Get userId from JWT token
     const language = parseLanguage(lang);
