@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.basics.001",
+    "title": {
+      "ru": "Алфавит и звуки",
+      "en": "Alphabet and Sounds"
+    },
+    "description": {
+      "ru": "Алфавит и звуки: базовые фразы и практика.",
+      "en": "Alphabet and Sounds: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Алфавит и звуки"
+  },
+  {
+    "lessonRef": "a0.basics.002",
+    "title": {
+      "ru": "Простые приветствия",
+      "en": "Simple Greetings"
+    },
+    "description": {
+      "ru": "Простые приветствия: базовые фразы и практика.",
+      "en": "Simple Greetings: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Простые приветствия"
+  },
+  {
+    "lessonRef": "a0.basics.003",
+    "title": {
+      "ru": "Прощания",
+      "en": "Goodbyes"
+    },
+    "description": {
+      "ru": "Прощания: базовые фразы и практика.",
+      "en": "Goodbyes: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Прощания"
+  },
+  {
+    "lessonRef": "a0.basics.004",
+    "title": {
+      "ru": "Да/нет и короткие ответы",
+      "en": "Yes/No and Short Answers"
+    },
+    "description": {
+      "ru": "Да/нет и короткие ответы: базовые фразы и практика.",
+      "en": "Yes/No and Short Answers: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Да/нет и короткие ответы"
+  },
+  {
+    "lessonRef": "a0.basics.005",
+    "title": {
+      "ru": "Базовые вопросы: кто/что",
+      "en": "Basic Questions: who/what"
+    },
+    "description": {
+      "ru": "Базовые вопросы: кто/что: базовые фразы и практика.",
+      "en": "Basic Questions: who/what: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Базовые вопросы: кто/что"
+  },
+  {
+    "lessonRef": "a0.basics.006",
+    "title": {
+      "ru": "Числа 1–10",
+      "en": "Numbers 1–10"
+    },
+    "description": {
+      "ru": "Числа 1–10: базовые фразы и практика.",
+      "en": "Numbers 1–10: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Числа 1–10"
+  },
+  {
+    "lessonRef": "a0.basics.007",
+    "title": {
+      "ru": "Цвета",
+      "en": "Colors"
+    },
+    "description": {
+      "ru": "Цвета: базовые фразы и практика.",
+      "en": "Colors: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Цвета"
+  },
+  {
+    "lessonRef": "a0.basics.008",
+    "title": {
+      "ru": "Предметы вокруг",
+      "en": "Objects Around You"
+    },
+    "description": {
+      "ru": "Предметы вокруг: базовые фразы и практика.",
+      "en": "Objects Around You: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Предметы вокруг"
+  },
+  {
+    "lessonRef": "a0.basics.009",
+    "title": {
+      "ru": "Глагол to be: I am",
+      "en": "Verb to be: I am"
+    },
+    "description": {
+      "ru": "Глагол to be: I am: базовые фразы и практика.",
+      "en": "Verb to be: I am: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Глагол to be: I am"
+  },
+  {
+    "lessonRef": "a0.basics.010",
+    "title": {
+      "ru": "Глагол to be: you are",
+      "en": "Verb to be: you are"
+    },
+    "description": {
+      "ru": "Глагол to be: you are: базовые фразы и практика.",
+      "en": "Verb to be: you are: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Глагол to be: you are"
+  },
+  {
+    "lessonRef": "a0.basics.011",
+    "title": {
+      "ru": "Местоимения I/you/we",
+      "en": "Pronouns I/you/we"
+    },
+    "description": {
+      "ru": "Местоимения I/you/we: базовые фразы и практика.",
+      "en": "Pronouns I/you/we: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Местоимения I/you/we"
+  },
+  {
+    "lessonRef": "a0.basics.012",
+    "title": {
+      "ru": "Простые команды",
+      "en": "Simple Commands"
+    },
+    "description": {
+      "ru": "Простые команды: базовые фразы и практика.",
+      "en": "Simple Commands: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Простые команды"
+  },
+  {
+    "lessonRef": "a0.basics.013",
+    "title": {
+      "ru": "Предлоги места",
+      "en": "Prepositions of Place"
+    },
+    "description": {
+      "ru": "Предлоги места: базовые фразы и практика.",
+      "en": "Prepositions of Place: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Предлоги места"
+  },
+  {
+    "lessonRef": "a0.basics.014",
+    "title": {
+      "ru": "Вопросы yes/no",
+      "en": "Yes/No Questions"
+    },
+    "description": {
+      "ru": "Вопросы yes/no: базовые фразы и практика.",
+      "en": "Yes/No Questions: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вопросы yes/no"
+  },
+  {
+    "lessonRef": "a0.basics.015",
+    "title": {
+      "ru": "Короткие диалоги",
+      "en": "Short Dialogues"
+    },
+    "description": {
+      "ru": "Короткие диалоги: базовые фразы и практика.",
+      "en": "Short Dialogues: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Короткие диалоги"
+  },
+  {
+    "lessonRef": "a0.basics.016",
+    "title": {
+      "ru": "Вежливые формулы",
+      "en": "Polite Phrases"
+    },
+    "description": {
+      "ru": "Вежливые формулы: базовые фразы и практика.",
+      "en": "Polite Phrases: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вежливые формулы"
+  },
+  {
+    "lessonRef": "a0.basics.017",
+    "title": {
+      "ru": "Повторение: базовые фразы",
+      "en": "Review: Basic Phrases"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы: базовые фразы и практика.",
+      "en": "Review: Basic Phrases: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение: базовые фразы"
+  },
+  {
+    "lessonRef": "a0.basics.018",
+    "title": {
+      "ru": "Мини-диалог: знакомство",
+      "en": "Mini Dialogue: Introductions"
+    },
+    "description": {
+      "ru": "Мини-диалог: знакомство: базовые фразы и практика.",
+      "en": "Mini Dialogue: Introductions: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-диалог: знакомство"
+  },
+  {
+    "lessonRef": "a0.basics.019",
+    "title": {
+      "ru": "Произношение трудных звуков",
+      "en": "Pronunciation of Tricky Sounds"
+    },
+    "description": {
+      "ru": "Произношение трудных звуков: базовые фразы и практика.",
+      "en": "Pronunciation of Tricky Sounds: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение трудных звуков"
+  },
+  {
+    "lessonRef": "a0.basics.020",
+    "title": {
+      "ru": "Итоговое повторение",
+      "en": "Final Review"
+    },
+    "description": {
+      "ru": "Итоговое повторение: базовые фразы и практика.",
+      "en": "Final Review: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "basics",
+      "communication",
+      "основы общения"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итоговое повторение"
+  }
+]

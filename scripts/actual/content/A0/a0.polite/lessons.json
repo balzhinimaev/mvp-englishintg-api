@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.polite.001",
+    "title": {
+      "ru": "Please и thank you",
+      "en": "Please and Thank You"
+    },
+    "description": {
+      "ru": "Please и thank you: базовые фразы и практика.",
+      "en": "Please and Thank You: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Please и thank you"
+  },
+  {
+    "lessonRef": "a0.polite.002",
+    "title": {
+      "ru": "Sorry и excuse me",
+      "en": "Sorry and Excuse me"
+    },
+    "description": {
+      "ru": "Sorry и excuse me: базовые фразы и практика.",
+      "en": "Sorry and Excuse me: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Sorry и excuse me"
+  },
+  {
+    "lessonRef": "a0.polite.003",
+    "title": {
+      "ru": "Could you...?",
+      "en": "Could you...?"
+    },
+    "description": {
+      "ru": "Could you...?: базовые фразы и практика.",
+      "en": "Could you...?: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Could you...?"
+  },
+  {
+    "lessonRef": "a0.polite.004",
+    "title": {
+      "ru": "Can you...?",
+      "en": "Can you...?"
+    },
+    "description": {
+      "ru": "Can you...?: базовые фразы и практика.",
+      "en": "Can you...?: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Can you...?"
+  },
+  {
+    "lessonRef": "a0.polite.005",
+    "title": {
+      "ru": "May I...?",
+      "en": "May I...?"
+    },
+    "description": {
+      "ru": "May I...?: базовые фразы и практика.",
+      "en": "May I...?: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "May I...?"
+  },
+  {
+    "lessonRef": "a0.polite.006",
+    "title": {
+      "ru": "Would you like...?",
+      "en": "Would you like...?"
+    },
+    "description": {
+      "ru": "Would you like...?: базовые фразы и практика.",
+      "en": "Would you like...?: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Would you like...?"
+  },
+  {
+    "lessonRef": "a0.polite.007",
+    "title": {
+      "ru": "Вот/пожалуйста",
+      "en": "Here you are"
+    },
+    "description": {
+      "ru": "Вот/пожалуйста: базовые фразы и практика.",
+      "en": "Here you are: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вот/пожалуйста"
+  },
+  {
+    "lessonRef": "a0.polite.008",
+    "title": {
+      "ru": "Извинения",
+      "en": "Apologies"
+    },
+    "description": {
+      "ru": "Извинения: базовые фразы и практика.",
+      "en": "Apologies: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Извинения"
+  },
+  {
+    "lessonRef": "a0.polite.009",
+    "title": {
+      "ru": "Просьбы в магазине",
+      "en": "Requests in a Shop"
+    },
+    "description": {
+      "ru": "Просьбы в магазине: базовые фразы и практика.",
+      "en": "Requests in a Shop: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Просьбы в магазине"
+  },
+  {
+    "lessonRef": "a0.polite.010",
+    "title": {
+      "ru": "Просьбы в кафе",
+      "en": "Requests in a Cafe"
+    },
+    "description": {
+      "ru": "Просьбы в кафе: базовые фразы и практика.",
+      "en": "Requests in a Cafe: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Просьбы в кафе"
+  },
+  {
+    "lessonRef": "a0.polite.011",
+    "title": {
+      "ru": "Просьбы на улице",
+      "en": "Requests in the Street"
+    },
+    "description": {
+      "ru": "Просьбы на улице: базовые фразы и практика.",
+      "en": "Requests in the Street: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Просьбы на улице"
+  },
+  {
+    "lessonRef": "a0.polite.012",
+    "title": {
+      "ru": "Вежливые ответы",
+      "en": "Polite Responses"
+    },
+    "description": {
+      "ru": "Вежливые ответы: базовые фразы и практика.",
+      "en": "Polite Responses: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вежливые ответы"
+  },
+  {
+    "lessonRef": "a0.polite.013",
+    "title": {
+      "ru": "Благодарность",
+      "en": "Gratitude"
+    },
+    "description": {
+      "ru": "Благодарность: базовые фразы и практика.",
+      "en": "Gratitude: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Благодарность"
+  },
+  {
+    "lessonRef": "a0.polite.014",
+    "title": {
+      "ru": "Отказ вежливо",
+      "en": "Polite Refusal"
+    },
+    "description": {
+      "ru": "Отказ вежливо: базовые фразы и практика.",
+      "en": "Polite Refusal: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Отказ вежливо"
+  },
+  {
+    "lessonRef": "a0.polite.015",
+    "title": {
+      "ru": "Формальная речь",
+      "en": "Formal Speech"
+    },
+    "description": {
+      "ru": "Формальная речь: базовые фразы и практика.",
+      "en": "Formal Speech: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Формальная речь"
+  },
+  {
+    "lessonRef": "a0.polite.016",
+    "title": {
+      "ru": "Неформальная речь",
+      "en": "Informal Speech"
+    },
+    "description": {
+      "ru": "Неформальная речь: базовые фразы и практика.",
+      "en": "Informal Speech: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Неформальная речь"
+  },
+  {
+    "lessonRef": "a0.polite.017",
+    "title": {
+      "ru": "Диалог: просьба помощи",
+      "en": "Dialogue: Asking for Help"
+    },
+    "description": {
+      "ru": "Диалог: просьба помощи: базовые фразы и практика.",
+      "en": "Dialogue: Asking for Help: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: просьба помощи"
+  },
+  {
+    "lessonRef": "a0.polite.018",
+    "title": {
+      "ru": "Диалог: благодарность",
+      "en": "Dialogue: Saying Thanks"
+    },
+    "description": {
+      "ru": "Диалог: благодарность: базовые фразы и практика.",
+      "en": "Dialogue: Saying Thanks: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: благодарность"
+  },
+  {
+    "lessonRef": "a0.polite.019",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.polite.020",
+    "title": {
+      "ru": "Итоговый сценарий",
+      "en": "Final Scenario"
+    },
+    "description": {
+      "ru": "Итоговый сценарий: базовые фразы и практика.",
+      "en": "Final Scenario: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "polite",
+      "phrases",
+      "вежливые слова"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итоговый сценарий"
+  }
+]

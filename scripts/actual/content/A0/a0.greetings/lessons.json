@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.greetings.001",
+    "title": {
+      "ru": "Hello и Hi: когда что",
+      "en": "Hello vs Hi"
+    },
+    "description": {
+      "ru": "Hello и Hi: когда что: базовые фразы и практика.",
+      "en": "Hello vs Hi: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Hello и Hi: когда что"
+  },
+  {
+    "lessonRef": "a0.greetings.002",
+    "title": {
+      "ru": "Good morning/afternoon/evening",
+      "en": "Good morning/afternoon/evening"
+    },
+    "description": {
+      "ru": "Good morning/afternoon/evening: базовые фразы и практика.",
+      "en": "Good morning/afternoon/evening: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Good morning/afternoon/evening"
+  },
+  {
+    "lessonRef": "a0.greetings.003",
+    "title": {
+      "ru": "Формальные приветствия",
+      "en": "Formal Greetings"
+    },
+    "description": {
+      "ru": "Формальные приветствия: базовые фразы и практика.",
+      "en": "Formal Greetings: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Формальные приветствия"
+  },
+  {
+    "lessonRef": "a0.greetings.004",
+    "title": {
+      "ru": "Неформальные приветствия",
+      "en": "Informal Greetings"
+    },
+    "description": {
+      "ru": "Неформальные приветствия: базовые фразы и практика.",
+      "en": "Informal Greetings: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Неформальные приветствия"
+  },
+  {
+    "lessonRef": "a0.greetings.005",
+    "title": {
+      "ru": "How are you? базовые ответы",
+      "en": "How are you? Basic Answers"
+    },
+    "description": {
+      "ru": "How are you? базовые ответы: базовые фразы и практика.",
+      "en": "How are you? Basic Answers: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "How are you? базовые ответы"
+  },
+  {
+    "lessonRef": "a0.greetings.006",
+    "title": {
+      "ru": "Nice to meet you",
+      "en": "Nice to meet you"
+    },
+    "description": {
+      "ru": "Nice to meet you: базовые фразы и практика.",
+      "en": "Nice to meet you: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Nice to meet you"
+  },
+  {
+    "lessonRef": "a0.greetings.007",
+    "title": {
+      "ru": "Представление себя",
+      "en": "Introducing Yourself"
+    },
+    "description": {
+      "ru": "Представление себя: базовые фразы и практика.",
+      "en": "Introducing Yourself: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Представление себя"
+  },
+  {
+    "lessonRef": "a0.greetings.008",
+    "title": {
+      "ru": "Представление другого",
+      "en": "Introducing Someone"
+    },
+    "description": {
+      "ru": "Представление другого: базовые фразы и практика.",
+      "en": "Introducing Someone: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Представление другого"
+  },
+  {
+    "lessonRef": "a0.greetings.009",
+    "title": {
+      "ru": "Small talk: погода",
+      "en": "Small Talk: Weather"
+    },
+    "description": {
+      "ru": "Small talk: погода: базовые фразы и практика.",
+      "en": "Small Talk: Weather: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Small talk: погода"
+  },
+  {
+    "lessonRef": "a0.greetings.010",
+    "title": {
+      "ru": "Small talk: время",
+      "en": "Small Talk: Time"
+    },
+    "description": {
+      "ru": "Small talk: время: базовые фразы и практика.",
+      "en": "Small Talk: Time: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Small talk: время"
+  },
+  {
+    "lessonRef": "a0.greetings.011",
+    "title": {
+      "ru": "Goodbye: See you/Take care",
+      "en": "Goodbye: See you/Take care"
+    },
+    "description": {
+      "ru": "Goodbye: See you/Take care: базовые фразы и практика.",
+      "en": "Goodbye: See you/Take care: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Goodbye: See you/Take care"
+  },
+  {
+    "lessonRef": "a0.greetings.012",
+    "title": {
+      "ru": "Прощания по телефону",
+      "en": "Goodbye on the Phone"
+    },
+    "description": {
+      "ru": "Прощания по телефону: базовые фразы и практика.",
+      "en": "Goodbye on the Phone: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Прощания по телефону"
+  },
+  {
+    "lessonRef": "a0.greetings.013",
+    "title": {
+      "ru": "Вежливые обращения",
+      "en": "Polite Address"
+    },
+    "description": {
+      "ru": "Вежливые обращения: базовые фразы и практика.",
+      "en": "Polite Address: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вежливые обращения"
+  },
+  {
+    "lessonRef": "a0.greetings.014",
+    "title": {
+      "ru": "Тренировка интонации",
+      "en": "Intonation Practice"
+    },
+    "description": {
+      "ru": "Тренировка интонации: базовые фразы и практика.",
+      "en": "Intonation Practice: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Тренировка интонации"
+  },
+  {
+    "lessonRef": "a0.greetings.015",
+    "title": {
+      "ru": "Диалог в магазине",
+      "en": "Dialogue in a Shop"
+    },
+    "description": {
+      "ru": "Диалог в магазине: базовые фразы и практика.",
+      "en": "Dialogue in a Shop: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог в магазине"
+  },
+  {
+    "lessonRef": "a0.greetings.016",
+    "title": {
+      "ru": "Диалог в кафе",
+      "en": "Dialogue in a Cafe"
+    },
+    "description": {
+      "ru": "Диалог в кафе: базовые фразы и практика.",
+      "en": "Dialogue in a Cafe: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог в кафе"
+  },
+  {
+    "lessonRef": "a0.greetings.017",
+    "title": {
+      "ru": "Диалог на улице",
+      "en": "Dialogue in the Street"
+    },
+    "description": {
+      "ru": "Диалог на улице: базовые фразы и практика.",
+      "en": "Dialogue in the Street: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог на улице"
+  },
+  {
+    "lessonRef": "a0.greetings.018",
+    "title": {
+      "ru": "Повторение: приветствия",
+      "en": "Review: Greetings"
+    },
+    "description": {
+      "ru": "Повторение: приветствия: базовые фразы и практика.",
+      "en": "Review: Greetings: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение: приветствия"
+  },
+  {
+    "lessonRef": "a0.greetings.019",
+    "title": {
+      "ru": "Повторение: прощания",
+      "en": "Review: Goodbyes"
+    },
+    "description": {
+      "ru": "Повторение: прощания: базовые фразы и практика.",
+      "en": "Review: Goodbyes: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение: прощания"
+  },
+  {
+    "lessonRef": "a0.greetings.020",
+    "title": {
+      "ru": "Итоговый диалог",
+      "en": "Final Dialogue"
+    },
+    "description": {
+      "ru": "Итоговый диалог: базовые фразы и практика.",
+      "en": "Final Dialogue: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "greetings",
+      "conversation",
+      "приветствия и прощания"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итоговый диалог"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.numbers.001",
+    "title": {
+      "ru": "Числа 1–5",
+      "en": "Numbers 1–5"
+    },
+    "description": {
+      "ru": "Числа 1–5: базовые фразы и практика.",
+      "en": "Numbers 1–5: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Числа 1–5"
+  },
+  {
+    "lessonRef": "a0.numbers.002",
+    "title": {
+      "ru": "Числа 6–10",
+      "en": "Numbers 6–10"
+    },
+    "description": {
+      "ru": "Числа 6–10: базовые фразы и практика.",
+      "en": "Numbers 6–10: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Числа 6–10"
+  },
+  {
+    "lessonRef": "a0.numbers.003",
+    "title": {
+      "ru": "Числа 11–15",
+      "en": "Numbers 11–15"
+    },
+    "description": {
+      "ru": "Числа 11–15: базовые фразы и практика.",
+      "en": "Numbers 11–15: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Числа 11–15"
+  },
+  {
+    "lessonRef": "a0.numbers.004",
+    "title": {
+      "ru": "Числа 16–20",
+      "en": "Numbers 16–20"
+    },
+    "description": {
+      "ru": "Числа 16–20: базовые фразы и практика.",
+      "en": "Numbers 16–20: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Числа 16–20"
+  },
+  {
+    "lessonRef": "a0.numbers.005",
+    "title": {
+      "ru": "Счёт предметов",
+      "en": "Counting Objects"
+    },
+    "description": {
+      "ru": "Счёт предметов: базовые фразы и практика.",
+      "en": "Counting Objects: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Счёт предметов"
+  },
+  {
+    "lessonRef": "a0.numbers.006",
+    "title": {
+      "ru": "Телефон",
+      "en": "Phone Number"
+    },
+    "description": {
+      "ru": "Телефон: базовые фразы и практика.",
+      "en": "Phone Number: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Телефон"
+  },
+  {
+    "lessonRef": "a0.numbers.007",
+    "title": {
+      "ru": "Возраст",
+      "en": "Age"
+    },
+    "description": {
+      "ru": "Возраст: базовые фразы и практика.",
+      "en": "Age: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Возраст"
+  },
+  {
+    "lessonRef": "a0.numbers.008",
+    "title": {
+      "ru": "Время: часы",
+      "en": "Time: Hours"
+    },
+    "description": {
+      "ru": "Время: часы: базовые фразы и практика.",
+      "en": "Time: Hours: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Время: часы"
+  },
+  {
+    "lessonRef": "a0.numbers.009",
+    "title": {
+      "ru": "Цена",
+      "en": "Price"
+    },
+    "description": {
+      "ru": "Цена: базовые фразы и практика.",
+      "en": "Price: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Цена"
+  },
+  {
+    "lessonRef": "a0.numbers.010",
+    "title": {
+      "ru": "Количество",
+      "en": "Quantity"
+    },
+    "description": {
+      "ru": "Количество: базовые фразы и практика.",
+      "en": "Quantity: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Количество"
+  },
+  {
+    "lessonRef": "a0.numbers.011",
+    "title": {
+      "ru": "Сколько это?",
+      "en": "How much is it?"
+    },
+    "description": {
+      "ru": "Сколько это?: базовые фразы и практика.",
+      "en": "How much is it?: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Сколько это?"
+  },
+  {
+    "lessonRef": "a0.numbers.012",
+    "title": {
+      "ru": "Сколько у тебя?",
+      "en": "How many do you have?"
+    },
+    "description": {
+      "ru": "Сколько у тебя?: базовые фразы и практика.",
+      "en": "How many do you have?: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Сколько у тебя?"
+  },
+  {
+    "lessonRef": "a0.numbers.013",
+    "title": {
+      "ru": "Диалог: покупка",
+      "en": "Dialogue: Purchase"
+    },
+    "description": {
+      "ru": "Диалог: покупка: базовые фразы и практика.",
+      "en": "Dialogue: Purchase: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: покупка"
+  },
+  {
+    "lessonRef": "a0.numbers.014",
+    "title": {
+      "ru": "Диалог: бронирование",
+      "en": "Dialogue: Booking"
+    },
+    "description": {
+      "ru": "Диалог: бронирование: базовые фразы и практика.",
+      "en": "Dialogue: Booking: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: бронирование"
+  },
+  {
+    "lessonRef": "a0.numbers.015",
+    "title": {
+      "ru": "Произношение чисел",
+      "en": "Number Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение чисел: базовые фразы и практика.",
+      "en": "Number Pronunciation: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение чисел"
+  },
+  {
+    "lessonRef": "a0.numbers.016",
+    "title": {
+      "ru": "Сложение",
+      "en": "Simple Addition"
+    },
+    "description": {
+      "ru": "Сложение: базовые фразы и практика.",
+      "en": "Simple Addition: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Сложение"
+  },
+  {
+    "lessonRef": "a0.numbers.017",
+    "title": {
+      "ru": "Вычитание",
+      "en": "Simple Subtraction"
+    },
+    "description": {
+      "ru": "Вычитание: базовые фразы и практика.",
+      "en": "Simple Subtraction: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вычитание"
+  },
+  {
+    "lessonRef": "a0.numbers.018",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.numbers.019",
+    "title": {
+      "ru": "Практика на слух",
+      "en": "Listening Practice"
+    },
+    "description": {
+      "ru": "Практика на слух: базовые фразы и практика.",
+      "en": "Listening Practice: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика на слух"
+  },
+  {
+    "lessonRef": "a0.numbers.020",
+    "title": {
+      "ru": "Итоговый тест",
+      "en": "Final Quiz"
+    },
+    "description": {
+      "ru": "Итоговый тест: базовые фразы и практика.",
+      "en": "Final Quiz: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "numbers",
+      "vocabulary",
+      "числа 1–20"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итоговый тест"
+  }
+]

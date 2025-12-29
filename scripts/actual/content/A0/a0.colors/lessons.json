@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.colors.001",
+    "title": {
+      "ru": "Основные цвета",
+      "en": "Basic Colors"
+    },
+    "description": {
+      "ru": "Основные цвета: базовые фразы и практика.",
+      "en": "Basic Colors: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Основные цвета"
+  },
+  {
+    "lessonRef": "a0.colors.002",
+    "title": {
+      "ru": "Светлый/тёмный",
+      "en": "Light/Dark"
+    },
+    "description": {
+      "ru": "Светлый/тёмный: базовые фразы и практика.",
+      "en": "Light/Dark: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Светлый/тёмный"
+  },
+  {
+    "lessonRef": "a0.colors.003",
+    "title": {
+      "ru": "Яркие цвета",
+      "en": "Bright Colors"
+    },
+    "description": {
+      "ru": "Яркие цвета: базовые фразы и практика.",
+      "en": "Bright Colors: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Яркие цвета"
+  },
+  {
+    "lessonRef": "a0.colors.004",
+    "title": {
+      "ru": "Смешанные цвета",
+      "en": "Mixed Colors"
+    },
+    "description": {
+      "ru": "Смешанные цвета: базовые фразы и практика.",
+      "en": "Mixed Colors: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Смешанные цвета"
+  },
+  {
+    "lessonRef": "a0.colors.005",
+    "title": {
+      "ru": "Цвета предметов",
+      "en": "Colors of Objects"
+    },
+    "description": {
+      "ru": "Цвета предметов: базовые фразы и практика.",
+      "en": "Colors of Objects: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Цвета предметов"
+  },
+  {
+    "lessonRef": "a0.colors.006",
+    "title": {
+      "ru": "Одежда и цвета",
+      "en": "Clothes and Colors"
+    },
+    "description": {
+      "ru": "Одежда и цвета: базовые фразы и практика.",
+      "en": "Clothes and Colors: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Одежда и цвета"
+  },
+  {
+    "lessonRef": "a0.colors.007",
+    "title": {
+      "ru": "Животные и цвета",
+      "en": "Animals and Colors"
+    },
+    "description": {
+      "ru": "Животные и цвета: базовые фразы и практика.",
+      "en": "Animals and Colors: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Животные и цвета"
+  },
+  {
+    "lessonRef": "a0.colors.008",
+    "title": {
+      "ru": "Любимый цвет",
+      "en": "Favorite Color"
+    },
+    "description": {
+      "ru": "Любимый цвет: базовые фразы и практика.",
+      "en": "Favorite Color: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Любимый цвет"
+  },
+  {
+    "lessonRef": "a0.colors.009",
+    "title": {
+      "ru": "Прилагательные",
+      "en": "Adjectives"
+    },
+    "description": {
+      "ru": "Прилагательные: базовые фразы и практика.",
+      "en": "Adjectives: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Прилагательные"
+  },
+  {
+    "lessonRef": "a0.colors.010",
+    "title": {
+      "ru": "Большой/маленький",
+      "en": "Big/Small"
+    },
+    "description": {
+      "ru": "Большой/маленький: базовые фразы и практика.",
+      "en": "Big/Small: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Большой/маленький"
+  },
+  {
+    "lessonRef": "a0.colors.011",
+    "title": {
+      "ru": "Форма",
+      "en": "Shape"
+    },
+    "description": {
+      "ru": "Форма: базовые фразы и практика.",
+      "en": "Shape: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Форма"
+  },
+  {
+    "lessonRef": "a0.colors.012",
+    "title": {
+      "ru": "Описание комнаты",
+      "en": "Describing a Room"
+    },
+    "description": {
+      "ru": "Описание комнаты: базовые фразы и практика.",
+      "en": "Describing a Room: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Описание комнаты"
+  },
+  {
+    "lessonRef": "a0.colors.013",
+    "title": {
+      "ru": "Описание предмета",
+      "en": "Describing an Object"
+    },
+    "description": {
+      "ru": "Описание предмета: базовые фразы и практика.",
+      "en": "Describing an Object: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Описание предмета"
+  },
+  {
+    "lessonRef": "a0.colors.014",
+    "title": {
+      "ru": "Диалог в магазине",
+      "en": "Dialogue in a Store"
+    },
+    "description": {
+      "ru": "Диалог в магазине: базовые фразы и практика.",
+      "en": "Dialogue in a Store: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог в магазине"
+  },
+  {
+    "lessonRef": "a0.colors.015",
+    "title": {
+      "ru": "Произношение цветов",
+      "en": "Color Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение цветов: базовые фразы и практика.",
+      "en": "Color Pronunciation: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение цветов"
+  },
+  {
+    "lessonRef": "a0.colors.016",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.colors.017",
+    "title": {
+      "ru": "Практика",
+      "en": "Practice"
+    },
+    "description": {
+      "ru": "Практика: базовые фразы и практика.",
+      "en": "Practice: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика"
+  },
+  {
+    "lessonRef": "a0.colors.018",
+    "title": {
+      "ru": "Мини-описание",
+      "en": "Mini Description"
+    },
+    "description": {
+      "ru": "Мини-описание: базовые фразы и практика.",
+      "en": "Mini Description: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-описание"
+  },
+  {
+    "lessonRef": "a0.colors.019",
+    "title": {
+      "ru": "Игра: угадай цвет",
+      "en": "Game: Guess the Color"
+    },
+    "description": {
+      "ru": "Игра: угадай цвет: базовые фразы и практика.",
+      "en": "Game: Guess the Color: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Игра: угадай цвет"
+  },
+  {
+    "lessonRef": "a0.colors.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "colors",
+      "adjectives",
+      "цвета и описание"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]
