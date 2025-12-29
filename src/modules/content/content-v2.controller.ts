@@ -126,7 +126,12 @@ export class ContentV2Controller {
       },
     },
   })
-  async getLessons(@Param('moduleRef') moduleRef: string, @Query('lang') lang = 'ru', @Request() req: any): Promise<{ lessons: LessonItemDto[] }> {
+  async getLessons(
+    @Param('moduleRef') moduleRef: string,
+    @Request() req: any,
+    @Query('lang') lang = 'ru',
+    @Query('published') publishedParam?: string
+  ): Promise<{ lessons: LessonItemDto[] }> {
     const userId = req.user?.userId; // Get userId from JWT token
     if (!userId) {
       throw new BadRequestException('userId is required');
@@ -136,8 +141,36 @@ export class ContentV2Controller {
       throw new BadRequestException('Invalid moduleRef format');
     }
 
+    // Получаем информацию о пользователе для проверки прав администратора
+    const user = await this.userModel.findOne({ userId: String(userId) }).lean();
+    const isAdmin = user?.isAdmin === true;
+
+    // Определяем, нужно ли фильтровать по published
+    // Если параметр передан явно, используем его значение
+    // Если пользователь админ и параметр не передан, показываем все уроки (не фильтруем по published)
+    // Если пользователь не админ, по умолчанию фильтруем по published: true
+    let publishedFilter: boolean | undefined;
+
+    if (!isAdmin) {
+      // 1. Если НЕ админ — принудительно показываем только опубликованные.
+      // Игнорируем всё, что он там передал в query.
+      publishedFilter = true;
+    } else {
+      // 2. Если админ — смотрим на его пожелания.
+      if (publishedParam !== undefined) {
+        publishedFilter = publishedParam === 'true' || publishedParam === '1';
+      }
+      // Если админ ничего не передал, publishedFilter остается undefined (показываем всё)
+    }
+
+    // Формируем фильтр для запроса
+    const filter: any = { moduleRef };
+    if (publishedFilter !== undefined) {
+      filter.published = publishedFilter;
+    }
+
     const lessons = await this.lessonModel
-      .find({ moduleRef, published: true }, { tasks: 0 })
+      .find(filter, { tasks: 0 })
       .sort({ order: 1 })
       .lean();
     const progresses = await this.progressModel
