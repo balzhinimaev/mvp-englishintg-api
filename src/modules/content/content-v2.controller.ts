@@ -124,7 +124,10 @@ export class ContentV2Controller {
       throw new BadRequestException('Invalid moduleRef format');
     }
 
-    const lessons = await this.lessonModel.find({ moduleRef, published: true }).sort({ order: 1 }).lean();
+    const lessons = await this.lessonModel
+      .find({ moduleRef, published: true }, { tasks: 0 })
+      .sort({ order: 1 })
+      .lean();
     const progresses = await this.progressModel
       .find({
         userId: String(userId),
