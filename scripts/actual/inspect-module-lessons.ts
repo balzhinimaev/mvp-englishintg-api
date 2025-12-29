@@ -2,83 +2,120 @@
 import 'dotenv/config';
 import mongoose from 'mongoose';
 
-// Импортируем схему урока из твоего проекта
+// Импортируем схему урока
 import { Lesson, LessonSchema } from '../../src/modules/common/schemas/lesson.schema';
 
 /**
- * Хелпер для безопасного получения текста (en приоритет, потом ru, иначе '-')
+ * Хелпер для безопасного получения текста
  */
 function pickText(textObj: any, lang: 'en' | 'ru' = 'en'): string {
   if (!textObj) return '-';
-  // Если это строка (на случай старых данных)
   if (typeof textObj === 'string') return textObj;
-
   return textObj[lang]?.trim() || textObj['en']?.trim() || textObj['ru']?.trim() || '-';
 }
 
-(async () => {
-  // 1. Получаем аргумент (moduleRef)
-  const moduleRefArg = process.argv[2];
+/**
+ * Хелпер для обрезки текста
+ */
+function truncate(str: string, maxLen: number): string {
+  if (!str) return '';
+  const oneline = str.replace(/[\r\n]+/g, ' ');
+  return oneline.length > maxLen ? oneline.slice(0, maxLen) + '...' : oneline;
+}
 
-  if (!moduleRefArg) {
-    console.error('❌ Ошибка: Не указан moduleRef.');
-    console.log('👉 Пример запуска: npx ts-node scripts/inspect-module-lessons.ts a0.basics');
+(async () => {
+  // 1. Получаем аргумент (a0 или a0.basics)
+  const arg = process.argv[2];
+
+  if (!arg) {
+    console.error('❌ Ошибка: Не указан уровень или модуль.');
+    console.log('👉 Пример (весь уровень): npx ts-node scripts/inspect-lessons.ts a0');
+    console.log('👉 Пример (один модуль): npx ts-node scripts/inspect-lessons.ts a0.basics');
     process.exit(1);
   }
 
-  // 2. Настройка подключения (как в твоем примере)
   const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/burlive';
-  const dbName = process.env.MONGODB_DB_NAME || 'englishintg'; // Или твой дефолтный
+  const dbName = process.env.MONGODB_DB_NAME || 'englishintg';
 
   try {
     await mongoose.connect(uri, { dbName });
-    console.log(`🔗 MongoDB подключен (db: ${dbName})`);
-
-    // 3. Создаем модель на основе существующей схемы
-    // Важно: имя коллекции 'lessons' должно совпадать с тем, что в декораторе @Schema
     const LessonModel = mongoose.model(Lesson.name, LessonSchema);
 
-    // 4. Ищем уроки конкретного модуля
-    const lessons = await LessonModel.find({ moduleRef: moduleRefArg })
-      .sort({ order: 1 }) // Сортируем по порядку прохождения
+    // 2. Определяем стратегию поиска
+    // Если аргумент содержит точку (a0.basics), ищем точное совпадение
+    // Если нет (a0), ищем все модули, начинающиеся с этого префикса
+    const isSpecificModule = arg.includes('.');
+    const filter = isSpecificModule
+      ? { moduleRef: arg }
+      : { moduleRef: { $regex: new RegExp(`^${arg}\\.`, 'i') } };
+
+    console.log(`🔍 Поиск уроков по фильтру: ${JSON.stringify(filter)}...\n`);
+
+    // 3. Загружаем уроки
+    const lessons = await LessonModel.find(filter)
+      .sort({ moduleRef: 1, order: 1 }) // Сортируем сначала по модулю, потом по порядку урока
       .lean();
 
     if (!lessons.length) {
-      console.log(`❗️ Уроки для модуля "${moduleRefArg}" не найдены.`);
+      console.log(`❗️ Уроки не найдены.`);
       await mongoose.disconnect();
       return;
     }
 
-    console.log(`📦 Найдено уроков: ${lessons.length} (модуль ${moduleRefArg})\n`);
+    // 4. Группируем по moduleRef
+    const groupedTasks: Record<string, typeof lessons> = {};
 
-    // 5. Вывод данных
-    // Формат: lessonRef | Title (en) | Tags | Description (en)
+    lessons.forEach((lesson) => {
+      const mRef = lesson.moduleRef;
+      if (!groupedTasks[mRef]) {
+        groupedTasks[mRef] = [];
+      }
+      groupedTasks[mRef].push(lesson);
+    });
 
-    // Заголовок таблицы
-    const header = `${'LESSON REF'.padEnd(20)} | ${'TITLE (EN)'.padEnd(30)} | ${'TAGS'.padEnd(20)} | DESCRIPTION (EN)`;
-    console.log(header);
-    console.log('-'.repeat(header.length + 20));
+    // 5. Выводим результаты по каждому модулю
+    const moduleKeys = Object.keys(groupedTasks).sort(); // Алфавитный порядок модулей
 
-    for (const lesson of lessons) {
-      const ref = lesson.lessonRef || '???';
-      const title = pickText(lesson.title, 'en');
-      const desc = pickText(lesson.description, 'en');
-      const tags = Array.isArray(lesson.tags) ? lesson.tags.join(', ') : '';
+    for (const modRef of moduleKeys) {
+      const modLessons = groupedTasks[modRef];
 
-      // Обрезаем слишком длинные строки для красивого вывода
-      const fRef = ref.padEnd(20);
-      const fTitle = (title.length > 27 ? title.slice(0, 27) + '...' : title).padEnd(30);
-      const fTags = (tags.length > 17 ? tags.slice(0, 17) + '...' : tags).padEnd(20);
+      // Заголовок модуля
+      console.log(`\n📦 MODULE: \x1b[36m${modRef}\x1b[0m (Уроков: ${modLessons.length})`);
 
-      // Если описание длинное, урезаем до одной строки
-      const fDesc = desc.replace(/[\r\n]+/g, ' ').slice(0, 50) + (desc.length > 50 ? '...' : '');
+      // Шапка таблицы
+      const colRef = 'LESSON REF'.padEnd(22);
+      const colTitle = 'TITLE (EN)'.padEnd(35);
+      const colTags = 'TAGS'.padEnd(20);
+      const colDesc = 'DESCRIPTION (EN)';
 
-      console.log(`${fRef} | ${fTitle} | ${fTags} | ${fDesc}`);
+      const header = `${colRef} | ${colTitle} | ${colTags} | ${colDesc}`;
+      console.log('\x1b[90m' + '-'.repeat(header.length + 20) + '\x1b[0m'); // Серый разделитель
+      console.log(header);
+      console.log('\x1b[90m' + '-'.repeat(header.length + 20) + '\x1b[0m');
+
+      // Строки таблицы
+      for (const lesson of modLessons) {
+        const ref = (lesson.lessonRef || '???').padEnd(22);
+        const title = truncate(pickText(lesson.title, 'en'), 32).padEnd(35);
+
+        const tagsRaw = Array.isArray(lesson.tags) ? lesson.tags.join(', ') : '';
+        const tags = truncate(tagsRaw, 17).padEnd(20);
+
+        const desc = truncate(pickText(lesson.description, 'en'), 60);
+
+        // Подсветка для опубликованных/неопубликованных (опционально)
+        const statusColor = lesson.published ? '' : '\x1b[33m'; // Желтый если скрыт
+        const reset = '\x1b[0m';
+
+        console.log(`${statusColor}${ref} | ${title} | ${tags} | ${desc}${reset}`);
+      }
+      console.log(''); // Пустая строка между модулями
     }
+
+    console.log(`✅ Всего найдено уроков: ${lessons.length}`);
   } catch (error) {
     console.error('❌ Ошибка:', error);
   } finally {
     await mongoose.disconnect();
-    // console.log('\n🔌 Отключено');
   }
 })();
