@@ -34,7 +34,9 @@
     "vocab:extract": "ts-node ./scripts/extract-vocabulary.ts --apply --all-modules",
     "vocab:extract:dry": "ts-node ./scripts/extract-vocabulary.ts --dry --all-modules",
     "vocab:extract:module": "ts-node ./scripts/extract-vocabulary.ts --apply --module",
-    "vocab:stats": "ts-node ./scripts/extract-vocabulary.ts --stats"
+    "vocab:stats": "ts-node ./scripts/extract-vocabulary.ts --stats",
+    "seed:lessons": "ts-node ./scripts/actual/seed-lessons.ts",
+    "seed:lessons:all": "ts-node ./scripts/actual/seed-all-lessons.ts"
   },
   "keywords": [],
   "author": "",
