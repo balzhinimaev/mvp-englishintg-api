@@ -39,6 +39,15 @@ export class UserTaskAttempt {
 
   @Prop()
   clientAttemptId?: string; // idempotency key from client
+
+  @Prop({ type: Object })
+  metadata?: Record<string, any>; // Дополнительная информация о попытке (для анализа)
+
+  @Prop()
+  userAnswer?: string; // Сырой ответ пользователя (для анализа типичных ошибок)
+
+  @Prop()
+  correctAnswer?: string; // Правильный ответ (для показа пользователю после проверки)
 }
 
 export const UserTaskAttemptSchema = SchemaFactory.createForClass(UserTaskAttempt);

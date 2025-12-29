@@ -1,10 +1,10 @@
-import { TaskType } from '../types/content';
+import { TaskTypeEnum } from '../enums/task-type.enum';
 import { AudioValidationData, ChoiceValidationData, FlashcardValidationData, GapValidationData, MatchingValidationData, OrderValidationData, TaskValidationData, TranslateValidationData } from '../types/validation-data';
 
 const toStringArray = (value: unknown): string[] | undefined =>
   Array.isArray(value) && value.every(item => typeof item === 'string') ? value : undefined;
 
-export const mapTaskDataToValidationData = (task: { type: TaskType; data?: Record<string, any> }): TaskValidationData | undefined => {
+export const mapTaskDataToValidationData = (task: { type: TaskTypeEnum | string; data?: Record<string, any> }): TaskValidationData | undefined => {
   const data = task.data;
   if (!data) return undefined;
 

@@ -1,5 +1,7 @@
 // src/common/types/content.ts
 import { MultilingualText, OptionalMultilingualText } from '../utils/i18n.util';
+import { TaskTypeEnum } from '../enums/task-type.enum';
+
 export type CEFR = 'A0'|'A1'|'A2'|'B1'|'B2'|'C1'|'C2';
 
 export interface ModuleProgress {
@@ -28,9 +30,9 @@ export interface ModuleItem {
 export type LessonStatus = 'completed' | 'in_progress' | 'not_started';
 export type LessonType = 'conversation' | 'vocabulary' | 'grammar';
 export type LessonDifficulty = 'easy' | 'medium' | 'hard';
-export type TaskType =
-  | 'choice' | 'gap' | 'match' | 'listen' | 'speak' | 'order' | 'translate'
-  | 'multiple_choice' | 'flashcard' | 'listening' | 'matching';
+
+// Используем enum как единый источник правды для типов задач
+export type TaskType = TaskTypeEnum;
 
 export interface LessonProgress {
   status: LessonStatus;

@@ -12,22 +12,10 @@ import {
   IsString,
   ValidateNested,
 } from 'class-validator';
+import { TASK_TYPES, TaskTypeEnum } from '../../common/enums/task-type.enum';
 
-// Единый источник правды для типов задач
-export const TASK_TYPES = [
-  'choice',
-  'gap',
-  'listen',
-  'speak',
-  'order',
-  'translate',
-  'match',
-  'multiple_choice',
-  'flashcard',
-  'listening',
-  'matching',
-] as const;
-export type TaskType = typeof TASK_TYPES[number];
+// Re-export для обратной совместимости
+export type TaskType = TaskTypeEnum;
 
 // --- DTO для каждого типа задач ---
 

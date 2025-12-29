@@ -1,6 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 import { MultilingualText, OptionalMultilingualText } from '../utils/i18n.util';
+import { mapTaskDataToValidationData } from '../utils/task-validation-data';
 
 export type LessonDocument = HydratedDocument<Lesson>;
 
@@ -59,6 +60,29 @@ export class Lesson {
 }
 
 export const LessonSchema = SchemaFactory.createForClass(Lesson);
+
+/**
+ * Pre-save hook: автоматически генерирует validationData для каждой задачи.
+ * Это гарантирует, что validationData всегда актуальна и синхронизирована с taskData.
+ * Предотвращает рассинхрон данных между data и validationData.
+ */
+LessonSchema.pre('save', function(next) {
+  if (this.tasks && Array.isArray(this.tasks)) {
+    this.tasks.forEach((task: any) => {
+      // Автоматически генерируем данные для валидации перед сохранением
+      const validationData = mapTaskDataToValidationData({
+        type: task.type as any,
+        data: task.data,
+      });
+      
+      if (validationData) {
+        task.validationData = validationData;
+      }
+    });
+  }
+  next();
+});
+
 // Индекс для быстрого поиска уроков по модулю и порядку
 LessonSchema.index({ moduleRef: 1, order: 1 });
 // Уникальный индекс на lessonRef

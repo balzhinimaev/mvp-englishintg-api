@@ -3,7 +3,7 @@ import { Lesson } from '../schemas/lesson.schema';
 import { UserLessonProgress } from '../schemas/user-lesson-progress.schema';
 
 describe('LessonMapper', () => {
-  it('should apply defaults and redact sensitive task data', () => {
+  it('should apply defaults and use Response DTO with white list', () => {
     const lesson = {
       lessonRef: 'a0.basics.001',
       moduleRef: 'a0.basics',
@@ -18,7 +18,7 @@ describe('LessonMapper', () => {
         {
           ref: 'a0.basics.001.t2',
           type: 'gap',
-          data: { text: 'Hello ____', answer: 'world', alternatives: ['earth'] },
+          data: { text: 'Hello ____', answer: 'world', alternatives: ['earth'], hint: 'a planet' },
         },
       ],
     } as Lesson;
@@ -32,8 +32,22 @@ describe('LessonMapper', () => {
     expect(result.hasAudio).toBe(true);
     expect(result.hasVideo).toBe(false);
     expect(result.order).toBe(0);
-    expect(result.tasks?.[0].data).toEqual({ options: ['a', 'b'], explanation: 'why' });
-    expect(result.tasks?.[1].data).toEqual({ text: 'Hello ____', alternatives: ['earth'] });
+
+    // Response DTO использует белый список (@Expose) - только безопасные поля
+    // choice task: options и explanation видны, correctIndex - НЕТ
+    expect(result.tasks?.[0].data).toMatchObject({ 
+      options: ['a', 'b'], 
+      explanation: 'why' 
+    });
+    expect(result.tasks?.[0].data).not.toHaveProperty('correctIndex');
+
+    // gap task: text и hint видны, answer и alternatives - НЕТ
+    expect(result.tasks?.[1].data).toMatchObject({ 
+      text: 'Hello ____',
+      hint: 'a planet'
+    });
+    expect(result.tasks?.[1].data).not.toHaveProperty('answer');
+    expect(result.tasks?.[1].data).not.toHaveProperty('alternatives');
   });
 });
 

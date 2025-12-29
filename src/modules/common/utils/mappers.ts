@@ -1,3 +1,4 @@
+import { plainToInstance } from 'class-transformer';
 import { CourseModule } from '../schemas/course-module.schema';
 import { Lesson } from '../schemas/lesson.schema';
 import { UserLessonProgress } from '../schemas/user-lesson-progress.schema';
@@ -5,15 +6,26 @@ import { VocabularyItem } from '../schemas/vocabulary.schema';
 import { UserVocabularyProgress } from '../schemas/user-vocabulary-progress.schema';
 import { User } from '../schemas/user.schema';
 import { ModuleItem, LessonItem, LessonProgress, VocabularyItem as VocabType, TaskType, UserVocabularyProgress as UserVocabularyProgressType, VocabularyProgressStats } from '../types/content';
+import { TaskTypeEnum } from '../enums/task-type.enum';
+import { TaskResponseDto } from '../../content/dto/task-response.dto';
 import { getLocalizedText, SupportedLanguage } from './i18n.util';
 import { normalizeLessonDefaults } from './lesson-defaults';
 
-const STRIP = new Set(['correct','isCorrect','correctIndex','correctIndexes','answer','answers','expected','expectedAnswers','target','targets','solution','solutions']);
-export const redact = (v: any): any =>
-  Array.isArray(v) ? v.map(redact)
-  : v && typeof v === 'object'
-    ? Object.fromEntries(Object.entries(v).filter(([k]) => !STRIP.has(k)).map(([k, val]) => [k, redact(val)]))
-    : v;
+/**
+ * Преобразует данные задачи в безопасный Response DTO.
+ * Использует белый список (@Expose) вместо черного списка (redact).
+ * Это гарантирует, что секретные данные (правильные ответы) не утекут клиенту.
+ */
+export const toTaskResponseDto = (task: { ref: string; type: string; data: any }): any => {
+  return plainToInstance(TaskResponseDto, {
+    ref: task.ref,
+    type: task.type as TaskTypeEnum,
+    data: task.data,
+  }, {
+    excludeExtraneousValues: true, // Игнорирует поля без @Expose()
+    enableImplicitConversion: true,
+  });
+};
 
 /**
  * Маппер для преобразования CourseModule схемы в ModuleItem DTO
@@ -71,7 +83,7 @@ export class LessonMapper {
       previewText: lesson.previewText,
       taskTypes: lessonTaskTypes,
       progress: progress,
-      tasks: lesson.tasks?.map(({ ref, type, data }) => ({ ref, type: type as TaskType, data: redact(data) }))
+      tasks: lesson.tasks?.map((task) => toTaskResponseDto(task))
     };
   }
 }

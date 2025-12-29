@@ -1,8 +1,16 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getModelToken } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { AnswerValidatorService } from '../answer-validator.service';
+import { AnswerValidatorService, ValidationDataError } from '../answer-validator.service';
 import { Lesson, LessonDocument } from '../../common/schemas/lesson.schema';
+// Импорты стратегий
+import { ChoiceValidationStrategy } from '../strategies/choice-validation.strategy';
+import { GapValidationStrategy } from '../strategies/gap-validation.strategy';
+import { OrderValidationStrategy } from '../strategies/order-validation.strategy';
+import { TranslateValidationStrategy } from '../strategies/translate-validation.strategy';
+import { AudioValidationStrategy } from '../strategies/audio-validation.strategy';
+import { MatchingValidationStrategy } from '../strategies/matching-validation.strategy';
+import { FlashcardValidationStrategy } from '../strategies/flashcard-validation.strategy';
 
 describe('AnswerValidatorService', () => {
   let service: AnswerValidatorService;
@@ -16,6 +24,14 @@ describe('AnswerValidatorService', () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [
         AnswerValidatorService,
+        // Добавляем все стратегии валидации
+        ChoiceValidationStrategy,
+        GapValidationStrategy,
+        OrderValidationStrategy,
+        TranslateValidationStrategy,
+        AudioValidationStrategy,
+        MatchingValidationStrategy,
+        FlashcardValidationStrategy,
         {
           provide: getModelToken(Lesson.name),
           useValue: mockLessonModel,
@@ -25,6 +41,9 @@ describe('AnswerValidatorService', () => {
 
     service = module.get<AnswerValidatorService>(AnswerValidatorService);
     lessonModel = module.get<Model<LessonDocument>>(getModelToken(Lesson.name));
+
+    // ВАЖНО: вызываем onModuleInit вручную, чтобы зарегистрировать стратегии
+    service.onModuleInit();
 
     jest.clearAllMocks();
   });
@@ -64,7 +83,7 @@ describe('AnswerValidatorService', () => {
     expect(result.score).toBe(1);
   });
 
-  it('validates order answers with partial score', async () => {
+  it('validates order answers correctly', async () => {
     mockLessonModel.findOne.mockReturnValue({
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
@@ -74,10 +93,15 @@ describe('AnswerValidatorService', () => {
       }),
     });
 
-    const result = await service.validateAnswer('a0.basics.001', 't1', JSON.stringify(['What', 'is', 'time', 'it']));
+    // Правильный порядок
+    const correctResult = await service.validateAnswer('a0.basics.001', 't1', JSON.stringify(['What', 'time', 'is', 'it']));
+    expect(correctResult.isCorrect).toBe(true);
+    expect(correctResult.score).toBe(1);
 
-    expect(result.isCorrect).toBe(false);
-    expect(result.score).toBeGreaterThan(0);
+    // Неправильный порядок
+    const wrongResult = await service.validateAnswer('a0.basics.001', 't1', JSON.stringify(['What', 'is', 'time', 'it']));
+    expect(wrongResult.isCorrect).toBe(false);
+    expect(wrongResult.score).toBe(0);
   });
 
   it('returns a detailed error for invalid order format', async () => {
@@ -90,9 +114,10 @@ describe('AnswerValidatorService', () => {
       }),
     });
 
-    await expect(service.validateAnswer('a0.basics.001', 't1', 'not-json')).rejects.toThrow(
-      'Неверный формат ответа для order: ожидается JSON-массив строк, например ["What","time","is","it","?"]',
-    );
+    const result = await service.validateAnswer('a0.basics.001', 't1', 'not-json');
+    
+    expect(result.isCorrect).toBe(false);
+    expect(result.feedback).toContain('Некорректный формат');
   });
 
   it('validates translate answers by similarity', async () => {
@@ -121,9 +146,7 @@ describe('AnswerValidatorService', () => {
       }),
     });
 
-    await expect(service.validateAnswer('a0.basics.001', 't1', 'Hello')).rejects.toThrow(
-      'Отсутствуют ожидаемые ответы для translate-задачи',
-    );
+    await expect(service.validateAnswer('a0.basics.001', 't1', 'Hello')).rejects.toThrow(ValidationDataError);
   });
 
   it('validates listen/speak answers with audio similarity', async () => {
@@ -159,8 +182,9 @@ describe('AnswerValidatorService', () => {
       }),
     });
 
-    await expect(service.validateAnswer('a0.basics.001', 't1', '"not-an-array"')).rejects.toThrow(
-      'Неверный формат ответа для matching: ожидается JSON-массив пар или объектов с left/right.',
-    );
+    const result = await service.validateAnswer('a0.basics.001', 't1', '"not-an-array"');
+    
+    expect(result.isCorrect).toBe(false);
+    expect(result.feedback).toContain('Некорректный формат');
   });
 });

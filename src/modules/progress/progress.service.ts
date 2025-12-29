@@ -189,6 +189,8 @@ export class ProgressService {
       sessionId: args.sessionId,
       clientAttemptId: args.clientAttemptId,
       source: 'lesson',
+      userAnswer: args.userAnswer, // Сохраняем ответ пользователя для анализа
+      correctAnswer: args.correctAnswer, // Сохраняем правильный ответ
     });
 
     // Инкременты для агрегатов

@@ -14,6 +14,14 @@ import { Lesson, LessonSchema } from '../common/schemas/lesson.schema';
 import { AuthModule } from '../auth/auth.module';
 import { SessionCleanupService } from './session-cleanup.service';
 import { ContentModule } from '../content/content.module';
+// Стратегии валидации
+import { ChoiceValidationStrategy } from './strategies/choice-validation.strategy';
+import { GapValidationStrategy } from './strategies/gap-validation.strategy';
+import { OrderValidationStrategy } from './strategies/order-validation.strategy';
+import { TranslateValidationStrategy } from './strategies/translate-validation.strategy';
+import { AudioValidationStrategy } from './strategies/audio-validation.strategy';
+import { MatchingValidationStrategy } from './strategies/matching-validation.strategy';
+import { FlashcardValidationStrategy } from './strategies/flashcard-validation.strategy';
 
 @Module({
   imports: [
@@ -31,7 +39,19 @@ import { ContentModule } from '../content/content.module';
     ]),
   ],
   controllers: [ProgressController],
-  providers: [ProgressService, AnswerValidatorService, SessionCleanupService],
+  providers: [
+    ProgressService,
+    AnswerValidatorService,
+    SessionCleanupService,
+    // Стратегии валидации (инжектируются в AnswerValidatorService)
+    ChoiceValidationStrategy,
+    GapValidationStrategy,
+    OrderValidationStrategy,
+    TranslateValidationStrategy,
+    AudioValidationStrategy,
+    MatchingValidationStrategy,
+    FlashcardValidationStrategy,
+  ],
   exports: [ProgressService],
 })
 export class ProgressModule {}
