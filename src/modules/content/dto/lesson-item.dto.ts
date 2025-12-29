@@ -19,13 +19,13 @@ const taskTypeValues = [
 
 export class LessonProgressDto {
   @ApiProperty({ description: 'Статус прохождения урока', enum: lessonStatusValues })
-  status: 'completed' | 'in_progress' | 'not_started';
+  status!: 'completed' | 'in_progress' | 'not_started';
 
   @ApiProperty({ description: 'Баллы за урок' })
-  score: number;
+  score!: number;
 
   @ApiProperty({ description: 'Количество попыток' })
-  attempts: number;
+  attempts!: number;
 
   @ApiPropertyOptional({ description: 'Время завершения урока в ISO-формате' })
   completedAt?: string;
@@ -36,33 +36,33 @@ export class LessonProgressDto {
 
 export class TaskDto {
   @ApiProperty({ description: 'Ссылка на задание' })
-  ref: string;
+  ref!: string;
 
   @ApiProperty({ description: 'Тип задания', enum: taskTypeValues })
-  type: typeof taskTypeValues[number];
+  type!: typeof taskTypeValues[number];
 
   @ApiProperty({ description: 'Данные задания' })
-  data: Record<string, any>;
+  data!: Record<string, any>;
 }
 
 export class LessonItemDto {
   @ApiProperty({ description: 'Ссылка на урок' })
-  lessonRef: string;
+  lessonRef!: string;
 
   @ApiProperty({ description: 'Ссылка на модуль' })
-  moduleRef: string;
+  moduleRef!: string;
 
   @ApiProperty({ description: 'Название урока' })
-  title: string;
+  title!: string;
 
   @ApiPropertyOptional({ description: 'Описание урока' })
   description?: string;
 
   @ApiProperty({ description: 'Оценка длительности в минутах' })
-  estimatedMinutes: number;
+  estimatedMinutes!: number;
 
   @ApiProperty({ description: 'Порядок урока в модуле' })
-  order: number;
+  order!: number;
 
   @ApiPropertyOptional({ description: 'Тип урока', enum: lessonTypeValues })
   type?: typeof lessonTypeValues[number];

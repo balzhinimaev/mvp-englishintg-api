@@ -195,24 +195,22 @@ describe('ContentV2Controller', () => {
           ]),
         }),
       });
-      mockProgressModel.find
-        .mockReturnValueOnce({
-          lean: jest.fn().mockResolvedValue([]),
-        })
-        .mockReturnValueOnce({
-          lean: jest.fn().mockResolvedValue([
-            { lessonRef: 'a0.basics.001', status: 'completed', attempts: 2 },
-          ]),
-        });
+      mockProgressModel.find.mockReturnValue({
+        lean: jest.fn().mockResolvedValue([
+          { lessonRef: 'a0.basics.001', status: 'completed', attempts: 2 },
+        ]),
+      });
 
       const response = await request(app.getHttpServer())
         .get('/content/v2/modules/a0.basics/lessons?lang=ru')
         .expect(200);
 
-      expect(mockProgressModel.find).toHaveBeenNthCalledWith(1, { userId: 'user-1', moduleRef: 'a0.basics' });
-      expect(mockProgressModel.find).toHaveBeenNthCalledWith(2, {
+      expect(mockProgressModel.find).toHaveBeenCalledWith({
         userId: 'user-1',
-        lessonRef: { $regex: '^a0.basics\\.' },
+        $or: [
+          { moduleRef: 'a0.basics' },
+          { lessonRef: { $regex: '^a0.basics\\.' } },
+        ],
       });
       expect(response.body).toEqual({
         lessons: [

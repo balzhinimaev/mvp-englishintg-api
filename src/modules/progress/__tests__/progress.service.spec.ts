@@ -11,6 +11,7 @@ import { LearningSession, LearningSessionDocument } from '../../common/schemas/l
 import { Achievement, AchievementDocument } from '../../common/schemas/achievement.schema';
 import { Lesson, LessonDocument } from '../../common/schemas/lesson.schema';
 import { BadRequestException } from '@nestjs/common';
+import { ContentService } from '../../content/content.service';
 
 describe('ProgressService.recordTaskAttempt', () => {
   let service: ProgressService;
@@ -58,6 +59,11 @@ describe('ProgressService.recordTaskAttempt', () => {
   const mockLessonModel = {
     findOne: jest.fn(),
   };
+  const mockContentService = {
+    getLessonByRef: jest.fn(),
+    getModulesByRefs: jest.fn(),
+    canStartLesson: jest.fn(),
+  };
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -71,6 +77,7 @@ describe('ProgressService.recordTaskAttempt', () => {
         { provide: getModelToken(LearningSession.name), useValue: mockSessionModel },
         { provide: getModelToken(Achievement.name), useValue: mockAchModel },
         { provide: getModelToken(Lesson.name), useValue: mockLessonModel },
+        { provide: ContentService, useValue: mockContentService },
       ],
     }).compile();
 
@@ -91,6 +98,10 @@ describe('ProgressService.recordTaskAttempt', () => {
     });
     mockLessonModel.findOne.mockReturnValue({
       lean: jest.fn().mockResolvedValue({ tasks: [{ ref: 'a0.basics.001.t1' }] }),
+    });
+    mockContentService.canStartLesson.mockResolvedValue({
+      canStart: true,
+      reason: null,
     });
   });
 
@@ -185,6 +196,6 @@ describe('ProgressService.recordTaskAttempt', () => {
     expect(attemptModel.create).not.toHaveBeenCalled();
     expect(ulpModel.updateOne).not.toHaveBeenCalled();
     expect(dailyModel.updateOne).not.toHaveBeenCalled();
-    expect(lessonModel.findOne).toHaveBeenCalledWith({ lessonRef: 'a0.basics.001' });
+    expect(lessonModel.findOne).toHaveBeenCalledWith({ lessonRef: 'a0.basics.001', published: true });
   });
 });
