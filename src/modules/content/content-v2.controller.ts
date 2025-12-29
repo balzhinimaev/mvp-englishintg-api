@@ -125,12 +125,12 @@ export class ContentV2Controller {
     }
 
     const lessons = await this.lessonModel.find({ moduleRef, published: true }).sort({ order: 1 }).lean();
-    let progresses = await this.progressModel.find({ userId: String(userId), moduleRef }).lean();
-    if (!progresses.length) {
-      progresses = await this.progressModel
-        .find({ userId: String(userId), lessonRef: { $regex: `^${moduleRef}\\.` } })
-        .lean();
-    }
+    const progresses = await this.progressModel
+      .find({
+        userId: String(userId),
+        $or: [{ moduleRef }, { lessonRef: { $regex: `^${moduleRef}\\.` } }],
+      })
+      .lean();
 
     const progressMap = new Map(progresses.map((p: any) => [p.lessonRef, p]));
     return { lessons: lessons.map(l => presentLesson(l as any, lang, progressMap.get(l.lessonRef))) };
