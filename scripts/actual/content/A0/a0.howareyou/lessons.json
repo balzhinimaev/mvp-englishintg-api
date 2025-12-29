@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.howareyou.001",
+    "title": {
+      "ru": "How are you?",
+      "en": "How are you?"
+    },
+    "description": {
+      "ru": "How are you?: базовые фразы и практика.",
+      "en": "How are you?: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "How are you?"
+  },
+  {
+    "lessonRef": "a0.howareyou.002",
+    "title": {
+      "ru": "I am fine",
+      "en": "I am fine"
+    },
+    "description": {
+      "ru": "I am fine: базовые фразы и практика.",
+      "en": "I am fine: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "I am fine"
+  },
+  {
+    "lessonRef": "a0.howareyou.003",
+    "title": {
+      "ru": "I am good/bad",
+      "en": "I am good/bad"
+    },
+    "description": {
+      "ru": "I am good/bad: базовые фразы и практика.",
+      "en": "I am good/bad: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "I am good/bad"
+  },
+  {
+    "lessonRef": "a0.howareyou.004",
+    "title": {
+      "ru": "Так себе: not so good",
+      "en": "Not so good"
+    },
+    "description": {
+      "ru": "Так себе: not so good: базовые фразы и практика.",
+      "en": "Not so good: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Так себе: not so good"
+  },
+  {
+    "lessonRef": "a0.howareyou.005",
+    "title": {
+      "ru": "Состояние здоровья",
+      "en": "Health"
+    },
+    "description": {
+      "ru": "Состояние здоровья: базовые фразы и практика.",
+      "en": "Health: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Состояние здоровья"
+  },
+  {
+    "lessonRef": "a0.howareyou.006",
+    "title": {
+      "ru": "Эмоции: happy/sad",
+      "en": "Feelings: happy/sad"
+    },
+    "description": {
+      "ru": "Эмоции: happy/sad: базовые фразы и практика.",
+      "en": "Feelings: happy/sad: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Эмоции: happy/sad"
+  },
+  {
+    "lessonRef": "a0.howareyou.007",
+    "title": {
+      "ru": "Устал/занят",
+      "en": "Tired/Busy"
+    },
+    "description": {
+      "ru": "Устал/занят: базовые фразы и практика.",
+      "en": "Tired/Busy: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Устал/занят"
+  },
+  {
+    "lessonRef": "a0.howareyou.008",
+    "title": {
+      "ru": "Очень хорошо",
+      "en": "Very well"
+    },
+    "description": {
+      "ru": "Очень хорошо: базовые фразы и практика.",
+      "en": "Very well: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Очень хорошо"
+  },
+  {
+    "lessonRef": "a0.howareyou.009",
+    "title": {
+      "ru": "Реакции: really?",
+      "en": "Reactions: really?"
+    },
+    "description": {
+      "ru": "Реакции: really?: базовые фразы и практика.",
+      "en": "Reactions: really?: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Реакции: really?"
+  },
+  {
+    "lessonRef": "a0.howareyou.010",
+    "title": {
+      "ru": "А ты?",
+      "en": "And you?"
+    },
+    "description": {
+      "ru": "А ты?: базовые фразы и практика.",
+      "en": "And you?: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "А ты?"
+  },
+  {
+    "lessonRef": "a0.howareyou.011",
+    "title": {
+      "ru": "Вопросы о самочувствии",
+      "en": "Asking About Well-being"
+    },
+    "description": {
+      "ru": "Вопросы о самочувствии: базовые фразы и практика.",
+      "en": "Asking About Well-being: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вопросы о самочувствии"
+  },
+  {
+    "lessonRef": "a0.howareyou.012",
+    "title": {
+      "ru": "Ответы по времени",
+      "en": "Time-based Answers"
+    },
+    "description": {
+      "ru": "Ответы по времени: базовые фразы и практика.",
+      "en": "Time-based Answers: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Ответы по времени"
+  },
+  {
+    "lessonRef": "a0.howareyou.013",
+    "title": {
+      "ru": "Диалог: коллеги",
+      "en": "Dialogue: Colleagues"
+    },
+    "description": {
+      "ru": "Диалог: коллеги: базовые фразы и практика.",
+      "en": "Dialogue: Colleagues: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: коллеги"
+  },
+  {
+    "lessonRef": "a0.howareyou.014",
+    "title": {
+      "ru": "Диалог: друзья",
+      "en": "Dialogue: Friends"
+    },
+    "description": {
+      "ru": "Диалог: друзья: базовые фразы и практика.",
+      "en": "Dialogue: Friends: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: друзья"
+  },
+  {
+    "lessonRef": "a0.howareyou.015",
+    "title": {
+      "ru": "Диалог: по телефону",
+      "en": "Dialogue: Phone"
+    },
+    "description": {
+      "ru": "Диалог: по телефону: базовые фразы и практика.",
+      "en": "Dialogue: Phone: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: по телефону"
+  },
+  {
+    "lessonRef": "a0.howareyou.016",
+    "title": {
+      "ru": "Мини-отчёт о дне",
+      "en": "Mini Daily Report"
+    },
+    "description": {
+      "ru": "Мини-отчёт о дне: базовые фразы и практика.",
+      "en": "Mini Daily Report: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-отчёт о дне"
+  },
+  {
+    "lessonRef": "a0.howareyou.017",
+    "title": {
+      "ru": "Словарь эмоций",
+      "en": "Feelings Vocabulary"
+    },
+    "description": {
+      "ru": "Словарь эмоций: базовые фразы и практика.",
+      "en": "Feelings Vocabulary: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Словарь эмоций"
+  },
+  {
+    "lessonRef": "a0.howareyou.018",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.howareyou.019",
+    "title": {
+      "ru": "Практика интонации",
+      "en": "Intonation Practice"
+    },
+    "description": {
+      "ru": "Практика интонации: базовые фразы и практика.",
+      "en": "Intonation Practice: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика интонации"
+  },
+  {
+    "lessonRef": "a0.howareyou.020",
+    "title": {
+      "ru": "Итог: как дела",
+      "en": "Final: How are you"
+    },
+    "description": {
+      "ru": "Итог: как дела: базовые фразы и практика.",
+      "en": "Final: How are you: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "feelings",
+      "conversation",
+      "как дела"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог: как дела"
+  }
+]

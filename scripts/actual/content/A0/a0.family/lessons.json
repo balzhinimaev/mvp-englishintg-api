@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.family.001",
+    "title": {
+      "ru": "Члены семьи",
+      "en": "Family Members"
+    },
+    "description": {
+      "ru": "Члены семьи: базовые фразы и практика.",
+      "en": "Family Members: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Члены семьи"
+  },
+  {
+    "lessonRef": "a0.family.002",
+    "title": {
+      "ru": "Мама/папа",
+      "en": "Mother/Father"
+    },
+    "description": {
+      "ru": "Мама/папа: базовые фразы и практика.",
+      "en": "Mother/Father: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мама/папа"
+  },
+  {
+    "lessonRef": "a0.family.003",
+    "title": {
+      "ru": "Брат/сестра",
+      "en": "Brother/Sister"
+    },
+    "description": {
+      "ru": "Брат/сестра: базовые фразы и практика.",
+      "en": "Brother/Sister: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Брат/сестра"
+  },
+  {
+    "lessonRef": "a0.family.004",
+    "title": {
+      "ru": "Бабушка/дедушка",
+      "en": "Grandparents"
+    },
+    "description": {
+      "ru": "Бабушка/дедушка: базовые фразы и практика.",
+      "en": "Grandparents: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Бабушка/дедушка"
+  },
+  {
+    "lessonRef": "a0.family.005",
+    "title": {
+      "ru": "Дети",
+      "en": "Children"
+    },
+    "description": {
+      "ru": "Дети: базовые фразы и практика.",
+      "en": "Children: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Дети"
+  },
+  {
+    "lessonRef": "a0.family.006",
+    "title": {
+      "ru": "Семейное древо",
+      "en": "Family Tree"
+    },
+    "description": {
+      "ru": "Семейное древо: базовые фразы и практика.",
+      "en": "Family Tree: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Семейное древо"
+  },
+  {
+    "lessonRef": "a0.family.007",
+    "title": {
+      "ru": "Возраст членов семьи",
+      "en": "Family Ages"
+    },
+    "description": {
+      "ru": "Возраст членов семьи: базовые фразы и практика.",
+      "en": "Family Ages: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Возраст членов семьи"
+  },
+  {
+    "lessonRef": "a0.family.008",
+    "title": {
+      "ru": "Профессии семьи",
+      "en": "Family Jobs"
+    },
+    "description": {
+      "ru": "Профессии семьи: базовые фразы и практика.",
+      "en": "Family Jobs: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Профессии семьи"
+  },
+  {
+    "lessonRef": "a0.family.009",
+    "title": {
+      "ru": "Хобби семьи",
+      "en": "Family Hobbies"
+    },
+    "description": {
+      "ru": "Хобби семьи: базовые фразы и практика.",
+      "en": "Family Hobbies: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Хобби семьи"
+  },
+  {
+    "lessonRef": "a0.family.010",
+    "title": {
+      "ru": "Мой дом",
+      "en": "My Home"
+    },
+    "description": {
+      "ru": "Мой дом: базовые фразы и практика.",
+      "en": "My Home: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мой дом"
+  },
+  {
+    "lessonRef": "a0.family.011",
+    "title": {
+      "ru": "Моя семья",
+      "en": "My Family"
+    },
+    "description": {
+      "ru": "Моя семья: базовые фразы и практика.",
+      "en": "My Family: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Моя семья"
+  },
+  {
+    "lessonRef": "a0.family.012",
+    "title": {
+      "ru": "Вопросы о семье",
+      "en": "Questions about Family"
+    },
+    "description": {
+      "ru": "Вопросы о семье: базовые фразы и практика.",
+      "en": "Questions about Family: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вопросы о семье"
+  },
+  {
+    "lessonRef": "a0.family.013",
+    "title": {
+      "ru": "Описание семьи",
+      "en": "Describing Family"
+    },
+    "description": {
+      "ru": "Описание семьи: базовые фразы и практика.",
+      "en": "Describing Family: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Описание семьи"
+  },
+  {
+    "lessonRef": "a0.family.014",
+    "title": {
+      "ru": "Фото семьи",
+      "en": "Family Photo"
+    },
+    "description": {
+      "ru": "Фото семьи: базовые фразы и практика.",
+      "en": "Family Photo: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Фото семьи"
+  },
+  {
+    "lessonRef": "a0.family.015",
+    "title": {
+      "ru": "Мини-диалог",
+      "en": "Mini Dialogue"
+    },
+    "description": {
+      "ru": "Мини-диалог: базовые фразы и практика.",
+      "en": "Mini Dialogue: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-диалог"
+  },
+  {
+    "lessonRef": "a0.family.016",
+    "title": {
+      "ru": "Произношение",
+      "en": "Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение: базовые фразы и практика.",
+      "en": "Pronunciation: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение"
+  },
+  {
+    "lessonRef": "a0.family.017",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.family.018",
+    "title": {
+      "ru": "Практика",
+      "en": "Practice"
+    },
+    "description": {
+      "ru": "Практика: базовые фразы и практика.",
+      "en": "Practice: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика"
+  },
+  {
+    "lessonRef": "a0.family.019",
+    "title": {
+      "ru": "Составь рассказ",
+      "en": "Make a Story"
+    },
+    "description": {
+      "ru": "Составь рассказ: базовые фразы и практика.",
+      "en": "Make a Story: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Составь рассказ"
+  },
+  {
+    "lessonRef": "a0.family.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "family",
+      "vocabulary",
+      "семья"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]

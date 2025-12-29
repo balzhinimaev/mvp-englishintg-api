@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.travel.001",
+    "title": {
+      "ru": "В аэропорту",
+      "en": "At the Airport"
+    },
+    "description": {
+      "ru": "В аэропорту: базовые фразы и практика.",
+      "en": "At the Airport: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В аэропорту"
+  },
+  {
+    "lessonRef": "a0.travel.002",
+    "title": {
+      "ru": "Регистрация",
+      "en": "Check-in"
+    },
+    "description": {
+      "ru": "Регистрация: базовые фразы и практика.",
+      "en": "Check-in: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Регистрация"
+  },
+  {
+    "lessonRef": "a0.travel.003",
+    "title": {
+      "ru": "Паспорт и билет",
+      "en": "Passport and Ticket"
+    },
+    "description": {
+      "ru": "Паспорт и билет: базовые фразы и практика.",
+      "en": "Passport and Ticket: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Паспорт и билет"
+  },
+  {
+    "lessonRef": "a0.travel.004",
+    "title": {
+      "ru": "Посадка",
+      "en": "Boarding"
+    },
+    "description": {
+      "ru": "Посадка: базовые фразы и практика.",
+      "en": "Boarding: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Посадка"
+  },
+  {
+    "lessonRef": "a0.travel.005",
+    "title": {
+      "ru": "В самолёте",
+      "en": "On the Plane"
+    },
+    "description": {
+      "ru": "В самолёте: базовые фразы и практика.",
+      "en": "On the Plane: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В самолёте"
+  },
+  {
+    "lessonRef": "a0.travel.006",
+    "title": {
+      "ru": "Багаж",
+      "en": "Baggage"
+    },
+    "description": {
+      "ru": "Багаж: базовые фразы и практика.",
+      "en": "Baggage: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Багаж"
+  },
+  {
+    "lessonRef": "a0.travel.007",
+    "title": {
+      "ru": "В отеле",
+      "en": "At the Hotel"
+    },
+    "description": {
+      "ru": "В отеле: базовые фразы и практика.",
+      "en": "At the Hotel: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В отеле"
+  },
+  {
+    "lessonRef": "a0.travel.008",
+    "title": {
+      "ru": "Бронирование",
+      "en": "Reservation"
+    },
+    "description": {
+      "ru": "Бронирование: базовые фразы и практика.",
+      "en": "Reservation: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Бронирование"
+  },
+  {
+    "lessonRef": "a0.travel.009",
+    "title": {
+      "ru": "Заселение",
+      "en": "Check-in at Hotel"
+    },
+    "description": {
+      "ru": "Заселение: базовые фразы и практика.",
+      "en": "Check-in at Hotel: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Заселение"
+  },
+  {
+    "lessonRef": "a0.travel.010",
+    "title": {
+      "ru": "Номер",
+      "en": "The Room"
+    },
+    "description": {
+      "ru": "Номер: базовые фразы и практика.",
+      "en": "The Room: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Номер"
+  },
+  {
+    "lessonRef": "a0.travel.011",
+    "title": {
+      "ru": "В городе",
+      "en": "In the City"
+    },
+    "description": {
+      "ru": "В городе: базовые фразы и практика.",
+      "en": "In the City: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В городе"
+  },
+  {
+    "lessonRef": "a0.travel.012",
+    "title": {
+      "ru": "Транспорт",
+      "en": "Transport"
+    },
+    "description": {
+      "ru": "Транспорт: базовые фразы и практика.",
+      "en": "Transport: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Транспорт"
+  },
+  {
+    "lessonRef": "a0.travel.013",
+    "title": {
+      "ru": "Такси",
+      "en": "Taxi"
+    },
+    "description": {
+      "ru": "Такси: базовые фразы и практика.",
+      "en": "Taxi: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Такси"
+  },
+  {
+    "lessonRef": "a0.travel.014",
+    "title": {
+      "ru": "Покупка билета",
+      "en": "Buying a Ticket"
+    },
+    "description": {
+      "ru": "Покупка билета: базовые фразы и практика.",
+      "en": "Buying a Ticket: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Покупка билета"
+  },
+  {
+    "lessonRef": "a0.travel.015",
+    "title": {
+      "ru": "Обмен валюты",
+      "en": "Currency Exchange"
+    },
+    "description": {
+      "ru": "Обмен валюты: базовые фразы и практика.",
+      "en": "Currency Exchange: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Обмен валюты"
+  },
+  {
+    "lessonRef": "a0.travel.016",
+    "title": {
+      "ru": "Проблемы в пути",
+      "en": "Travel Problems"
+    },
+    "description": {
+      "ru": "Проблемы в пути: базовые фразы и практика.",
+      "en": "Travel Problems: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Проблемы в пути"
+  },
+  {
+    "lessonRef": "a0.travel.017",
+    "title": {
+      "ru": "Диалог: помощь",
+      "en": "Dialogue: Help"
+    },
+    "description": {
+      "ru": "Диалог: помощь: базовые фразы и практика.",
+      "en": "Dialogue: Help: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: помощь"
+  },
+  {
+    "lessonRef": "a0.travel.018",
+    "title": {
+      "ru": "Произношение",
+      "en": "Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение: базовые фразы и практика.",
+      "en": "Pronunciation: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение"
+  },
+  {
+    "lessonRef": "a0.travel.019",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.travel.020",
+    "title": {
+      "ru": "Итог: мини-путешествие",
+      "en": "Final: Mini Trip"
+    },
+    "description": {
+      "ru": "Итог: мини-путешествие: базовые фразы и практика.",
+      "en": "Final: Mini Trip: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "travel",
+      "conversation",
+      "путешествия"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог: мини-путешествие"
+  }
+]

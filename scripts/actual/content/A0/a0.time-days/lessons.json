@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.time-days.001",
+    "title": {
+      "ru": "What time is it?",
+      "en": "What time is it?"
+    },
+    "description": {
+      "ru": "What time is it?: базовые фразы и практика.",
+      "en": "What time is it?: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "What time is it?"
+  },
+  {
+    "lessonRef": "a0.time-days.002",
+    "title": {
+      "ru": "Часы: o'clock",
+      "en": "Hours: o'clock"
+    },
+    "description": {
+      "ru": "Часы: o'clock: базовые фразы и практика.",
+      "en": "Hours: o'clock: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Часы: o'clock"
+  },
+  {
+    "lessonRef": "a0.time-days.003",
+    "title": {
+      "ru": "Минуты: quarter/half",
+      "en": "Minutes: quarter/half"
+    },
+    "description": {
+      "ru": "Минуты: quarter/half: базовые фразы и практика.",
+      "en": "Minutes: quarter/half: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Минуты: quarter/half"
+  },
+  {
+    "lessonRef": "a0.time-days.004",
+    "title": {
+      "ru": "AM/PM",
+      "en": "AM/PM"
+    },
+    "description": {
+      "ru": "AM/PM: базовые фразы и практика.",
+      "en": "AM/PM: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "AM/PM"
+  },
+  {
+    "lessonRef": "a0.time-days.005",
+    "title": {
+      "ru": "Дни недели",
+      "en": "Days of the Week"
+    },
+    "description": {
+      "ru": "Дни недели: базовые фразы и практика.",
+      "en": "Days of the Week: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Дни недели"
+  },
+  {
+    "lessonRef": "a0.time-days.006",
+    "title": {
+      "ru": "Сегодня/завтра/вчера",
+      "en": "Today/Tomorrow/Yesterday"
+    },
+    "description": {
+      "ru": "Сегодня/завтра/вчера: базовые фразы и практика.",
+      "en": "Today/Tomorrow/Yesterday: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Сегодня/завтра/вчера"
+  },
+  {
+    "lessonRef": "a0.time-days.007",
+    "title": {
+      "ru": "Утро/день/вечер/ночь",
+      "en": "Morning/Afternoon/Evening/Night"
+    },
+    "description": {
+      "ru": "Утро/день/вечер/ночь: базовые фразы и практика.",
+      "en": "Morning/Afternoon/Evening/Night: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Утро/день/вечер/ночь"
+  },
+  {
+    "lessonRef": "a0.time-days.008",
+    "title": {
+      "ru": "Расписание",
+      "en": "Schedule"
+    },
+    "description": {
+      "ru": "Расписание: базовые фразы и практика.",
+      "en": "Schedule: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Расписание"
+  },
+  {
+    "lessonRef": "a0.time-days.009",
+    "title": {
+      "ru": "Когда?",
+      "en": "When?"
+    },
+    "description": {
+      "ru": "Когда?: базовые фразы и практика.",
+      "en": "When?: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Когда?"
+  },
+  {
+    "lessonRef": "a0.time-days.010",
+    "title": {
+      "ru": "В какое время?",
+      "en": "At what time?"
+    },
+    "description": {
+      "ru": "В какое время?: базовые фразы и практика.",
+      "en": "At what time?: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В какое время?"
+  },
+  {
+    "lessonRef": "a0.time-days.011",
+    "title": {
+      "ru": "Частотность: always/never",
+      "en": "Frequency: always/never"
+    },
+    "description": {
+      "ru": "Частотность: always/never: базовые фразы и практика.",
+      "en": "Frequency: always/never: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Частотность: always/never"
+  },
+  {
+    "lessonRef": "a0.time-days.012",
+    "title": {
+      "ru": "Частотность: usually/sometimes",
+      "en": "Frequency: usually/sometimes"
+    },
+    "description": {
+      "ru": "Частотность: usually/sometimes: базовые фразы и практика.",
+      "en": "Frequency: usually/sometimes: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Частотность: usually/sometimes"
+  },
+  {
+    "lessonRef": "a0.time-days.013",
+    "title": {
+      "ru": "Диалог: встреча",
+      "en": "Dialogue: Meeting"
+    },
+    "description": {
+      "ru": "Диалог: встреча: базовые фразы и практика.",
+      "en": "Dialogue: Meeting: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: встреча"
+  },
+  {
+    "lessonRef": "a0.time-days.014",
+    "title": {
+      "ru": "Диалог: рабочий день",
+      "en": "Dialogue: Workday"
+    },
+    "description": {
+      "ru": "Диалог: рабочий день: базовые фразы и практика.",
+      "en": "Dialogue: Workday: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: рабочий день"
+  },
+  {
+    "lessonRef": "a0.time-days.015",
+    "title": {
+      "ru": "Диалог: планы",
+      "en": "Dialogue: Plans"
+    },
+    "description": {
+      "ru": "Диалог: планы: базовые фразы и практика.",
+      "en": "Dialogue: Plans: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: планы"
+  },
+  {
+    "lessonRef": "a0.time-days.016",
+    "title": {
+      "ru": "Произношение времени",
+      "en": "Time Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение времени: базовые фразы и практика.",
+      "en": "Time Pronunciation: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение времени"
+  },
+  {
+    "lessonRef": "a0.time-days.017",
+    "title": {
+      "ru": "Повторение дней",
+      "en": "Review: Days"
+    },
+    "description": {
+      "ru": "Повторение дней: базовые фразы и практика.",
+      "en": "Review: Days: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение дней"
+  },
+  {
+    "lessonRef": "a0.time-days.018",
+    "title": {
+      "ru": "Повторение времени",
+      "en": "Review: Time"
+    },
+    "description": {
+      "ru": "Повторение времени: базовые фразы и практика.",
+      "en": "Review: Time: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение времени"
+  },
+  {
+    "lessonRef": "a0.time-days.019",
+    "title": {
+      "ru": "Мини-расписание",
+      "en": "Mini Schedule"
+    },
+    "description": {
+      "ru": "Мини-расписание: базовые фразы и практика.",
+      "en": "Mini Schedule: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-расписание"
+  },
+  {
+    "lessonRef": "a0.time-days.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final Review"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final Review: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "time",
+      "days",
+      "время и дни"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]

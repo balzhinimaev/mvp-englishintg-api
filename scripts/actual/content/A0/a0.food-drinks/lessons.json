@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.food-drinks.001",
+    "title": {
+      "ru": "Фрукты",
+      "en": "Fruits"
+    },
+    "description": {
+      "ru": "Фрукты: базовые фразы и практика.",
+      "en": "Fruits: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Фрукты"
+  },
+  {
+    "lessonRef": "a0.food-drinks.002",
+    "title": {
+      "ru": "Овощи",
+      "en": "Vegetables"
+    },
+    "description": {
+      "ru": "Овощи: базовые фразы и практика.",
+      "en": "Vegetables: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Овощи"
+  },
+  {
+    "lessonRef": "a0.food-drinks.003",
+    "title": {
+      "ru": "Напитки",
+      "en": "Drinks"
+    },
+    "description": {
+      "ru": "Напитки: базовые фразы и практика.",
+      "en": "Drinks: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Напитки"
+  },
+  {
+    "lessonRef": "a0.food-drinks.004",
+    "title": {
+      "ru": "Завтрак",
+      "en": "Breakfast"
+    },
+    "description": {
+      "ru": "Завтрак: базовые фразы и практика.",
+      "en": "Breakfast: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Завтрак"
+  },
+  {
+    "lessonRef": "a0.food-drinks.005",
+    "title": {
+      "ru": "Обед",
+      "en": "Lunch"
+    },
+    "description": {
+      "ru": "Обед: базовые фразы и практика.",
+      "en": "Lunch: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Обед"
+  },
+  {
+    "lessonRef": "a0.food-drinks.006",
+    "title": {
+      "ru": "Ужин",
+      "en": "Dinner"
+    },
+    "description": {
+      "ru": "Ужин: базовые фразы и практика.",
+      "en": "Dinner: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Ужин"
+  },
+  {
+    "lessonRef": "a0.food-drinks.007",
+    "title": {
+      "ru": "Меню",
+      "en": "Menu"
+    },
+    "description": {
+      "ru": "Меню: базовые фразы и практика.",
+      "en": "Menu: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Меню"
+  },
+  {
+    "lessonRef": "a0.food-drinks.008",
+    "title": {
+      "ru": "Мне нравится",
+      "en": "I like"
+    },
+    "description": {
+      "ru": "Мне нравится: базовые фразы и практика.",
+      "en": "I like: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мне нравится"
+  },
+  {
+    "lessonRef": "a0.food-drinks.009",
+    "title": {
+      "ru": "Мне не нравится",
+      "en": "I don't like"
+    },
+    "description": {
+      "ru": "Мне не нравится: базовые фразы и практика.",
+      "en": "I don't like: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мне не нравится"
+  },
+  {
+    "lessonRef": "a0.food-drinks.010",
+    "title": {
+      "ru": "Аллергии",
+      "en": "Allergies"
+    },
+    "description": {
+      "ru": "Аллергии: базовые фразы и практика.",
+      "en": "Allergies: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Аллергии"
+  },
+  {
+    "lessonRef": "a0.food-drinks.011",
+    "title": {
+      "ru": "Сколько стоит?",
+      "en": "How much is it?"
+    },
+    "description": {
+      "ru": "Сколько стоит?: базовые фразы и практика.",
+      "en": "How much is it?: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Сколько стоит?"
+  },
+  {
+    "lessonRef": "a0.food-drinks.012",
+    "title": {
+      "ru": "Заказ в кафе",
+      "en": "Order in a Cafe"
+    },
+    "description": {
+      "ru": "Заказ в кафе: базовые фразы и практика.",
+      "en": "Order in a Cafe: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Заказ в кафе"
+  },
+  {
+    "lessonRef": "a0.food-drinks.013",
+    "title": {
+      "ru": "Просьбы",
+      "en": "Requests"
+    },
+    "description": {
+      "ru": "Просьбы: базовые фразы и практика.",
+      "en": "Requests: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Просьбы"
+  },
+  {
+    "lessonRef": "a0.food-drinks.014",
+    "title": {
+      "ru": "Диалог: в магазине",
+      "en": "Dialogue: In a Store"
+    },
+    "description": {
+      "ru": "Диалог: в магазине: базовые фразы и практика.",
+      "en": "Dialogue: In a Store: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: в магазине"
+  },
+  {
+    "lessonRef": "a0.food-drinks.015",
+    "title": {
+      "ru": "Диалог: в кафе",
+      "en": "Dialogue: In a Cafe"
+    },
+    "description": {
+      "ru": "Диалог: в кафе: базовые фразы и практика.",
+      "en": "Dialogue: In a Cafe: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: в кафе"
+  },
+  {
+    "lessonRef": "a0.food-drinks.016",
+    "title": {
+      "ru": "Произношение",
+      "en": "Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение: базовые фразы и практика.",
+      "en": "Pronunciation: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение"
+  },
+  {
+    "lessonRef": "a0.food-drinks.017",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.food-drinks.018",
+    "title": {
+      "ru": "Практика",
+      "en": "Practice"
+    },
+    "description": {
+      "ru": "Практика: базовые фразы и практика.",
+      "en": "Practice: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика"
+  },
+  {
+    "lessonRef": "a0.food-drinks.019",
+    "title": {
+      "ru": "Мини-меню",
+      "en": "Mini Menu"
+    },
+    "description": {
+      "ru": "Мини-меню: базовые фразы и практика.",
+      "en": "Mini Menu: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-меню"
+  },
+  {
+    "lessonRef": "a0.food-drinks.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "food",
+      "drinks",
+      "еда и напитки"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]

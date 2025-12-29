@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.pronouns.001",
+    "title": {
+      "ru": "I/you/he/she",
+      "en": "I/you/he/she"
+    },
+    "description": {
+      "ru": "I/you/he/she: базовые фразы и практика.",
+      "en": "I/you/he/she: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "I/you/he/she"
+  },
+  {
+    "lessonRef": "a0.pronouns.002",
+    "title": {
+      "ru": "We/they",
+      "en": "We/they"
+    },
+    "description": {
+      "ru": "We/they: базовые фразы и практика.",
+      "en": "We/they: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "We/they"
+  },
+  {
+    "lessonRef": "a0.pronouns.003",
+    "title": {
+      "ru": "My/your",
+      "en": "My/your"
+    },
+    "description": {
+      "ru": "My/your: базовые фразы и практика.",
+      "en": "My/your: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "My/your"
+  },
+  {
+    "lessonRef": "a0.pronouns.004",
+    "title": {
+      "ru": "His/her",
+      "en": "His/her"
+    },
+    "description": {
+      "ru": "His/her: базовые фразы и практика.",
+      "en": "His/her: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "His/her"
+  },
+  {
+    "lessonRef": "a0.pronouns.005",
+    "title": {
+      "ru": "Our/their",
+      "en": "Our/their"
+    },
+    "description": {
+      "ru": "Our/their: базовые фразы и практика.",
+      "en": "Our/their: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Our/their"
+  },
+  {
+    "lessonRef": "a0.pronouns.006",
+    "title": {
+      "ru": "This/that",
+      "en": "This/that"
+    },
+    "description": {
+      "ru": "This/that: базовые фразы и практика.",
+      "en": "This/that: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "This/that"
+  },
+  {
+    "lessonRef": "a0.pronouns.007",
+    "title": {
+      "ru": "These/those",
+      "en": "These/those"
+    },
+    "description": {
+      "ru": "These/those: базовые фразы и практика.",
+      "en": "These/those: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "These/those"
+  },
+  {
+    "lessonRef": "a0.pronouns.008",
+    "title": {
+      "ru": "Кто?",
+      "en": "Who?"
+    },
+    "description": {
+      "ru": "Кто?: базовые фразы и практика.",
+      "en": "Who?: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Кто?"
+  },
+  {
+    "lessonRef": "a0.pronouns.009",
+    "title": {
+      "ru": "Что?",
+      "en": "What?"
+    },
+    "description": {
+      "ru": "Что?: базовые фразы и практика.",
+      "en": "What?: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Что?"
+  },
+  {
+    "lessonRef": "a0.pronouns.010",
+    "title": {
+      "ru": "Указательные местоимения",
+      "en": "Demonstratives"
+    },
+    "description": {
+      "ru": "Указательные местоимения: базовые фразы и практика.",
+      "en": "Demonstratives: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Указательные местоимения"
+  },
+  {
+    "lessonRef": "a0.pronouns.011",
+    "title": {
+      "ru": "Местоимения в диалоге",
+      "en": "Pronouns in Dialogue"
+    },
+    "description": {
+      "ru": "Местоимения в диалоге: базовые фразы и практика.",
+      "en": "Pronouns in Dialogue: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Местоимения в диалоге"
+  },
+  {
+    "lessonRef": "a0.pronouns.012",
+    "title": {
+      "ru": "Семья и местоимения",
+      "en": "Family and Pronouns"
+    },
+    "description": {
+      "ru": "Семья и местоимения: базовые фразы и практика.",
+      "en": "Family and Pronouns: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Семья и местоимения"
+  },
+  {
+    "lessonRef": "a0.pronouns.013",
+    "title": {
+      "ru": "Мои вещи",
+      "en": "My Things"
+    },
+    "description": {
+      "ru": "Мои вещи: базовые фразы и практика.",
+      "en": "My Things: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мои вещи"
+  },
+  {
+    "lessonRef": "a0.pronouns.014",
+    "title": {
+      "ru": "Твои вещи",
+      "en": "Your Things"
+    },
+    "description": {
+      "ru": "Твои вещи: базовые фразы и практика.",
+      "en": "Your Things: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Твои вещи"
+  },
+  {
+    "lessonRef": "a0.pronouns.015",
+    "title": {
+      "ru": "Его/её вещи",
+      "en": "His/Her Things"
+    },
+    "description": {
+      "ru": "Его/её вещи: базовые фразы и практика.",
+      "en": "His/Her Things: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Его/её вещи"
+  },
+  {
+    "lessonRef": "a0.pronouns.016",
+    "title": {
+      "ru": "Мини-истории",
+      "en": "Mini Stories"
+    },
+    "description": {
+      "ru": "Мини-истории: базовые фразы и практика.",
+      "en": "Mini Stories: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-истории"
+  },
+  {
+    "lessonRef": "a0.pronouns.017",
+    "title": {
+      "ru": "Частые ошибки",
+      "en": "Common Mistakes"
+    },
+    "description": {
+      "ru": "Частые ошибки: базовые фразы и практика.",
+      "en": "Common Mistakes: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Частые ошибки"
+  },
+  {
+    "lessonRef": "a0.pronouns.018",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.pronouns.019",
+    "title": {
+      "ru": "Практика",
+      "en": "Practice"
+    },
+    "description": {
+      "ru": "Практика: базовые фразы и практика.",
+      "en": "Practice: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика"
+  },
+  {
+    "lessonRef": "a0.pronouns.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "pronouns",
+      "grammar",
+      "местоимения и притяжательные"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]

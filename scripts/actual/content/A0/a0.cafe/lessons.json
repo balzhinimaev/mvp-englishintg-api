@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.cafe.001",
+    "title": {
+      "ru": "Приветствие в кафе",
+      "en": "Greeting in a Cafe"
+    },
+    "description": {
+      "ru": "Приветствие в кафе: базовые фразы и практика.",
+      "en": "Greeting in a Cafe: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Приветствие в кафе"
+  },
+  {
+    "lessonRef": "a0.cafe.002",
+    "title": {
+      "ru": "Столик на двоих",
+      "en": "Table for Two"
+    },
+    "description": {
+      "ru": "Столик на двоих: базовые фразы и практика.",
+      "en": "Table for Two: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Столик на двоих"
+  },
+  {
+    "lessonRef": "a0.cafe.003",
+    "title": {
+      "ru": "Меню и блюда",
+      "en": "Menu and Dishes"
+    },
+    "description": {
+      "ru": "Меню и блюда: базовые фразы и практика.",
+      "en": "Menu and Dishes: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Меню и блюда"
+  },
+  {
+    "lessonRef": "a0.cafe.004",
+    "title": {
+      "ru": "Напитки",
+      "en": "Drinks"
+    },
+    "description": {
+      "ru": "Напитки: базовые фразы и практика.",
+      "en": "Drinks: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Напитки"
+  },
+  {
+    "lessonRef": "a0.cafe.005",
+    "title": {
+      "ru": "Заказ",
+      "en": "Ordering"
+    },
+    "description": {
+      "ru": "Заказ: базовые фразы и практика.",
+      "en": "Ordering: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Заказ"
+  },
+  {
+    "lessonRef": "a0.cafe.006",
+    "title": {
+      "ru": "Пожелания к блюду",
+      "en": "Special Requests"
+    },
+    "description": {
+      "ru": "Пожелания к блюду: базовые фразы и практика.",
+      "en": "Special Requests: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Пожелания к блюду"
+  },
+  {
+    "lessonRef": "a0.cafe.007",
+    "title": {
+      "ru": "Счёт",
+      "en": "The Bill"
+    },
+    "description": {
+      "ru": "Счёт: базовые фразы и практика.",
+      "en": "The Bill: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Счёт"
+  },
+  {
+    "lessonRef": "a0.cafe.008",
+    "title": {
+      "ru": "Оплата",
+      "en": "Payment"
+    },
+    "description": {
+      "ru": "Оплата: базовые фразы и практика.",
+      "en": "Payment: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Оплата"
+  },
+  {
+    "lessonRef": "a0.cafe.009",
+    "title": {
+      "ru": "Чаевые",
+      "en": "Tips"
+    },
+    "description": {
+      "ru": "Чаевые: базовые фразы и практика.",
+      "en": "Tips: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Чаевые"
+  },
+  {
+    "lessonRef": "a0.cafe.010",
+    "title": {
+      "ru": "Жалоба",
+      "en": "Complaint"
+    },
+    "description": {
+      "ru": "Жалоба: базовые фразы и практика.",
+      "en": "Complaint: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Жалоба"
+  },
+  {
+    "lessonRef": "a0.cafe.011",
+    "title": {
+      "ru": "Благодарность",
+      "en": "Thanking"
+    },
+    "description": {
+      "ru": "Благодарность: базовые фразы и практика.",
+      "en": "Thanking: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Благодарность"
+  },
+  {
+    "lessonRef": "a0.cafe.012",
+    "title": {
+      "ru": "Диалог: быстрый заказ",
+      "en": "Dialogue: Quick Order"
+    },
+    "description": {
+      "ru": "Диалог: быстрый заказ: базовые фразы и практика.",
+      "en": "Dialogue: Quick Order: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: быстрый заказ"
+  },
+  {
+    "lessonRef": "a0.cafe.013",
+    "title": {
+      "ru": "Диалог: уточнение",
+      "en": "Dialogue: уточнение"
+    },
+    "description": {
+      "ru": "Диалог: уточнение: базовые фразы и практика.",
+      "en": "Dialogue: уточнение: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: уточнение"
+  },
+  {
+    "lessonRef": "a0.cafe.014",
+    "title": {
+      "ru": "Диалог: нет блюда",
+      "en": "Dialogue: Item Unavailable"
+    },
+    "description": {
+      "ru": "Диалог: нет блюда: базовые фразы и практика.",
+      "en": "Dialogue: Item Unavailable: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: нет блюда"
+  },
+  {
+    "lessonRef": "a0.cafe.015",
+    "title": {
+      "ru": "Произношение",
+      "en": "Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение: базовые фразы и практика.",
+      "en": "Pronunciation: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение"
+  },
+  {
+    "lessonRef": "a0.cafe.016",
+    "title": {
+      "ru": "Словарь кафе",
+      "en": "Cafe Vocabulary"
+    },
+    "description": {
+      "ru": "Словарь кафе: базовые фразы и практика.",
+      "en": "Cafe Vocabulary: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Словарь кафе"
+  },
+  {
+    "lessonRef": "a0.cafe.017",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.cafe.018",
+    "title": {
+      "ru": "Практика",
+      "en": "Practice"
+    },
+    "description": {
+      "ru": "Практика: базовые фразы и практика.",
+      "en": "Practice: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика"
+  },
+  {
+    "lessonRef": "a0.cafe.019",
+    "title": {
+      "ru": "Мини-ролевая игра",
+      "en": "Mini Role-play"
+    },
+    "description": {
+      "ru": "Мини-ролевая игра: базовые фразы и практика.",
+      "en": "Mini Role-play: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-ролевая игра"
+  },
+  {
+    "lessonRef": "a0.cafe.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "cafe",
+      "conversation",
+      "в кафе"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]

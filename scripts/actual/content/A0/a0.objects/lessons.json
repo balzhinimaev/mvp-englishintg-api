@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.objects.001",
+    "title": {
+      "ru": "В комнате",
+      "en": "In the Room"
+    },
+    "description": {
+      "ru": "В комнате: базовые фразы и практика.",
+      "en": "In the Room: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В комнате"
+  },
+  {
+    "lessonRef": "a0.objects.002",
+    "title": {
+      "ru": "На кухне",
+      "en": "In the Kitchen"
+    },
+    "description": {
+      "ru": "На кухне: базовые фразы и практика.",
+      "en": "In the Kitchen: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "На кухне"
+  },
+  {
+    "lessonRef": "a0.objects.003",
+    "title": {
+      "ru": "В ванной",
+      "en": "In the Bathroom"
+    },
+    "description": {
+      "ru": "В ванной: базовые фразы и практика.",
+      "en": "In the Bathroom: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В ванной"
+  },
+  {
+    "lessonRef": "a0.objects.004",
+    "title": {
+      "ru": "В офисе",
+      "en": "In the Office"
+    },
+    "description": {
+      "ru": "В офисе: базовые фразы и практика.",
+      "en": "In the Office: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В офисе"
+  },
+  {
+    "lessonRef": "a0.objects.005",
+    "title": {
+      "ru": "В классе",
+      "en": "In the Classroom"
+    },
+    "description": {
+      "ru": "В классе: базовые фразы и практика.",
+      "en": "In the Classroom: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В классе"
+  },
+  {
+    "lessonRef": "a0.objects.006",
+    "title": {
+      "ru": "В сумке",
+      "en": "In the Bag"
+    },
+    "description": {
+      "ru": "В сумке: базовые фразы и практика.",
+      "en": "In the Bag: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "В сумке"
+  },
+  {
+    "lessonRef": "a0.objects.007",
+    "title": {
+      "ru": "На улице",
+      "en": "Outside"
+    },
+    "description": {
+      "ru": "На улице: базовые фразы и практика.",
+      "en": "Outside: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "На улице"
+  },
+  {
+    "lessonRef": "a0.objects.008",
+    "title": {
+      "ru": "Покупки",
+      "en": "Shopping Items"
+    },
+    "description": {
+      "ru": "Покупки: базовые фразы и практика.",
+      "en": "Shopping Items: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Покупки"
+  },
+  {
+    "lessonRef": "a0.objects.009",
+    "title": {
+      "ru": "Считаем предметы",
+      "en": "Counting Objects"
+    },
+    "description": {
+      "ru": "Считаем предметы: базовые фразы и практика.",
+      "en": "Counting Objects: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Считаем предметы"
+  },
+  {
+    "lessonRef": "a0.objects.010",
+    "title": {
+      "ru": "Этот/тот",
+      "en": "This/That"
+    },
+    "description": {
+      "ru": "Этот/тот: базовые фразы и практика.",
+      "en": "This/That: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Этот/тот"
+  },
+  {
+    "lessonRef": "a0.objects.011",
+    "title": {
+      "ru": "Где находится?",
+      "en": "Where is it?"
+    },
+    "description": {
+      "ru": "Где находится?: базовые фразы и практика.",
+      "en": "Where is it?: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Где находится?"
+  },
+  {
+    "lessonRef": "a0.objects.012",
+    "title": {
+      "ru": "Описание предмета",
+      "en": "Describing an Object"
+    },
+    "description": {
+      "ru": "Описание предмета: базовые фразы и практика.",
+      "en": "Describing an Object: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Описание предмета"
+  },
+  {
+    "lessonRef": "a0.objects.013",
+    "title": {
+      "ru": "Предлоги места",
+      "en": "Prepositions of Place"
+    },
+    "description": {
+      "ru": "Предлоги места: базовые фразы и практика.",
+      "en": "Prepositions of Place: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Предлоги места"
+  },
+  {
+    "lessonRef": "a0.objects.014",
+    "title": {
+      "ru": "Диалог: найти вещь",
+      "en": "Dialogue: Finding an Item"
+    },
+    "description": {
+      "ru": "Диалог: найти вещь: базовые фразы и практика.",
+      "en": "Dialogue: Finding an Item: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: найти вещь"
+  },
+  {
+    "lessonRef": "a0.objects.015",
+    "title": {
+      "ru": "Диалог: попросить",
+      "en": "Dialogue: Asking for It"
+    },
+    "description": {
+      "ru": "Диалог: попросить: базовые фразы и практика.",
+      "en": "Dialogue: Asking for It: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: попросить"
+  },
+  {
+    "lessonRef": "a0.objects.016",
+    "title": {
+      "ru": "Произношение",
+      "en": "Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение: базовые фразы и практика.",
+      "en": "Pronunciation: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение"
+  },
+  {
+    "lessonRef": "a0.objects.017",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.objects.018",
+    "title": {
+      "ru": "Практика",
+      "en": "Practice"
+    },
+    "description": {
+      "ru": "Практика: базовые фразы и практика.",
+      "en": "Practice: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика"
+  },
+  {
+    "lessonRef": "a0.objects.019",
+    "title": {
+      "ru": "Мини-квест",
+      "en": "Mini Quest"
+    },
+    "description": {
+      "ru": "Мини-квест: базовые фразы и практика.",
+      "en": "Mini Quest: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-квест"
+  },
+  {
+    "lessonRef": "a0.objects.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "objects",
+      "vocabulary",
+      "вещи вокруг"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]

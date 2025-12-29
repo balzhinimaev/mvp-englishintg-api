@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.introductions.001",
+    "title": {
+      "ru": "My name is...",
+      "en": "My name is..."
+    },
+    "description": {
+      "ru": "My name is...: базовые фразы и практика.",
+      "en": "My name is...: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "My name is..."
+  },
+  {
+    "lessonRef": "a0.introductions.002",
+    "title": {
+      "ru": "What is your name?",
+      "en": "What is your name?"
+    },
+    "description": {
+      "ru": "What is your name?: базовые фразы и практика.",
+      "en": "What is your name?: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "What is your name?"
+  },
+  {
+    "lessonRef": "a0.introductions.003",
+    "title": {
+      "ru": "Откуда ты?",
+      "en": "Where are you from?"
+    },
+    "description": {
+      "ru": "Откуда ты?: базовые фразы и практика.",
+      "en": "Where are you from?: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Откуда ты?"
+  },
+  {
+    "lessonRef": "a0.introductions.004",
+    "title": {
+      "ru": "Страна и город",
+      "en": "Country and City"
+    },
+    "description": {
+      "ru": "Страна и город: базовые фразы и практика.",
+      "en": "Country and City: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Страна и город"
+  },
+  {
+    "lessonRef": "a0.introductions.005",
+    "title": {
+      "ru": "Национальности",
+      "en": "Nationalities"
+    },
+    "description": {
+      "ru": "Национальности: базовые фразы и практика.",
+      "en": "Nationalities: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Национальности"
+  },
+  {
+    "lessonRef": "a0.introductions.006",
+    "title": {
+      "ru": "Языки",
+      "en": "Languages"
+    },
+    "description": {
+      "ru": "Языки: базовые фразы и практика.",
+      "en": "Languages: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Языки"
+  },
+  {
+    "lessonRef": "a0.introductions.007",
+    "title": {
+      "ru": "Возраст",
+      "en": "Age"
+    },
+    "description": {
+      "ru": "Возраст: базовые фразы и практика.",
+      "en": "Age: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Возраст"
+  },
+  {
+    "lessonRef": "a0.introductions.008",
+    "title": {
+      "ru": "Профессия",
+      "en": "Occupation"
+    },
+    "description": {
+      "ru": "Профессия: базовые фразы и практика.",
+      "en": "Occupation: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Профессия"
+  },
+  {
+    "lessonRef": "a0.introductions.009",
+    "title": {
+      "ru": "Семейное положение",
+      "en": "Marital Status"
+    },
+    "description": {
+      "ru": "Семейное положение: базовые фразы и практика.",
+      "en": "Marital Status: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Семейное положение"
+  },
+  {
+    "lessonRef": "a0.introductions.010",
+    "title": {
+      "ru": "Хобби",
+      "en": "Hobbies"
+    },
+    "description": {
+      "ru": "Хобби: базовые фразы и практика.",
+      "en": "Hobbies: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Хобби"
+  },
+  {
+    "lessonRef": "a0.introductions.011",
+    "title": {
+      "ru": "Любимые вещи",
+      "en": "Favorite Things"
+    },
+    "description": {
+      "ru": "Любимые вещи: базовые фразы и практика.",
+      "en": "Favorite Things: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Любимые вещи"
+  },
+  {
+    "lessonRef": "a0.introductions.012",
+    "title": {
+      "ru": "Tell me about you",
+      "en": "Tell me about you"
+    },
+    "description": {
+      "ru": "Tell me about you: базовые фразы и практика.",
+      "en": "Tell me about you: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Tell me about you"
+  },
+  {
+    "lessonRef": "a0.introductions.013",
+    "title": {
+      "ru": "Короткие анкеты",
+      "en": "Short Forms"
+    },
+    "description": {
+      "ru": "Короткие анкеты: базовые фразы и практика.",
+      "en": "Short Forms: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Короткие анкеты"
+  },
+  {
+    "lessonRef": "a0.introductions.014",
+    "title": {
+      "ru": "Вежливые вопросы",
+      "en": "Polite Questions"
+    },
+    "description": {
+      "ru": "Вежливые вопросы: базовые фразы и практика.",
+      "en": "Polite Questions: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Вежливые вопросы"
+  },
+  {
+    "lessonRef": "a0.introductions.015",
+    "title": {
+      "ru": "Диалог: первое знакомство",
+      "en": "Dialogue: First Meeting"
+    },
+    "description": {
+      "ru": "Диалог: первое знакомство: базовые фразы и практика.",
+      "en": "Dialogue: First Meeting: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: первое знакомство"
+  },
+  {
+    "lessonRef": "a0.introductions.016",
+    "title": {
+      "ru": "Диалог: коллеги",
+      "en": "Dialogue: Colleagues"
+    },
+    "description": {
+      "ru": "Диалог: коллеги: базовые фразы и практика.",
+      "en": "Dialogue: Colleagues: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: коллеги"
+  },
+  {
+    "lessonRef": "a0.introductions.017",
+    "title": {
+      "ru": "Диалог: соседи",
+      "en": "Dialogue: Neighbors"
+    },
+    "description": {
+      "ru": "Диалог: соседи: базовые фразы и практика.",
+      "en": "Dialogue: Neighbors: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: соседи"
+  },
+  {
+    "lessonRef": "a0.introductions.018",
+    "title": {
+      "ru": "Повторение ключевых фраз",
+      "en": "Review: Key Phrases"
+    },
+    "description": {
+      "ru": "Повторение ключевых фраз: базовые фразы и практика.",
+      "en": "Review: Key Phrases: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение ключевых фраз"
+  },
+  {
+    "lessonRef": "a0.introductions.019",
+    "title": {
+      "ru": "Произношение имён",
+      "en": "Name Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение имён: базовые фразы и практика.",
+      "en": "Name Pronunciation: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение имён"
+  },
+  {
+    "lessonRef": "a0.introductions.020",
+    "title": {
+      "ru": "Итог: познакомьтесь",
+      "en": "Final: Introduce Yourself"
+    },
+    "description": {
+      "ru": "Итог: познакомьтесь: базовые фразы и практика.",
+      "en": "Final: Introduce Yourself: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "introductions",
+      "conversation",
+      "знакомство"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог: познакомьтесь"
+  }
+]

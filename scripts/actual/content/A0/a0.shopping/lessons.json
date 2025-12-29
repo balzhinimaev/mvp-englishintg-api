@@ -1,0 +1,482 @@
+[
+  {
+    "lessonRef": "a0.shopping.001",
+    "title": {
+      "ru": "Магазин: приветствие",
+      "en": "Shopping: Greeting"
+    },
+    "description": {
+      "ru": "Магазин: приветствие: базовые фразы и практика.",
+      "en": "Shopping: Greeting: basic phrases and practice."
+    },
+    "order": 1,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Магазин: приветствие"
+  },
+  {
+    "lessonRef": "a0.shopping.002",
+    "title": {
+      "ru": "Поиск товара",
+      "en": "Finding an Item"
+    },
+    "description": {
+      "ru": "Поиск товара: базовые фразы и практика.",
+      "en": "Finding an Item: basic phrases and practice."
+    },
+    "order": 2,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Поиск товара"
+  },
+  {
+    "lessonRef": "a0.shopping.003",
+    "title": {
+      "ru": "Размеры",
+      "en": "Sizes"
+    },
+    "description": {
+      "ru": "Размеры: базовые фразы и практика.",
+      "en": "Sizes: basic phrases and practice."
+    },
+    "order": 3,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Размеры"
+  },
+  {
+    "lessonRef": "a0.shopping.004",
+    "title": {
+      "ru": "Цвета в покупках",
+      "en": "Colors in Shopping"
+    },
+    "description": {
+      "ru": "Цвета в покупках: базовые фразы и практика.",
+      "en": "Colors in Shopping: basic phrases and practice."
+    },
+    "order": 4,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Цвета в покупках"
+  },
+  {
+    "lessonRef": "a0.shopping.005",
+    "title": {
+      "ru": "Сколько стоит?",
+      "en": "How much is it?"
+    },
+    "description": {
+      "ru": "Сколько стоит?: базовые фразы и практика.",
+      "en": "How much is it?: basic phrases and practice."
+    },
+    "order": 5,
+    "estimatedMinutes": 12,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Сколько стоит?"
+  },
+  {
+    "lessonRef": "a0.shopping.006",
+    "title": {
+      "ru": "Скидка",
+      "en": "Discount"
+    },
+    "description": {
+      "ru": "Скидка: базовые фразы и практика.",
+      "en": "Discount: basic phrases and practice."
+    },
+    "order": 6,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Скидка"
+  },
+  {
+    "lessonRef": "a0.shopping.007",
+    "title": {
+      "ru": "Примерка",
+      "en": "Fitting"
+    },
+    "description": {
+      "ru": "Примерка: базовые фразы и практика.",
+      "en": "Fitting: basic phrases and practice."
+    },
+    "order": 7,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Примерка"
+  },
+  {
+    "lessonRef": "a0.shopping.008",
+    "title": {
+      "ru": "Касса",
+      "en": "Checkout"
+    },
+    "description": {
+      "ru": "Касса: базовые фразы и практика.",
+      "en": "Checkout: basic phrases and practice."
+    },
+    "order": 8,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Касса"
+  },
+  {
+    "lessonRef": "a0.shopping.009",
+    "title": {
+      "ru": "Оплата картой",
+      "en": "Paying by Card"
+    },
+    "description": {
+      "ru": "Оплата картой: базовые фразы и практика.",
+      "en": "Paying by Card: basic phrases and practice."
+    },
+    "order": 9,
+    "estimatedMinutes": 10,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Оплата картой"
+  },
+  {
+    "lessonRef": "a0.shopping.010",
+    "title": {
+      "ru": "Возврат",
+      "en": "Return"
+    },
+    "description": {
+      "ru": "Возврат: базовые фразы и практика.",
+      "en": "Return: basic phrases and practice."
+    },
+    "order": 10,
+    "estimatedMinutes": 11,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 30,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Возврат"
+  },
+  {
+    "lessonRef": "a0.shopping.011",
+    "title": {
+      "ru": "Диалог: покупка одежды",
+      "en": "Dialogue: Buying Clothes"
+    },
+    "description": {
+      "ru": "Диалог: покупка одежды: базовые фразы и практика.",
+      "en": "Dialogue: Buying Clothes: basic phrases and practice."
+    },
+    "order": 11,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 20,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: покупка одежды"
+  },
+  {
+    "lessonRef": "a0.shopping.012",
+    "title": {
+      "ru": "Диалог: сувениры",
+      "en": "Dialogue: Souvenirs"
+    },
+    "description": {
+      "ru": "Диалог: сувениры: базовые фразы и практика.",
+      "en": "Dialogue: Souvenirs: basic phrases and practice."
+    },
+    "order": 12,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 21,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: сувениры"
+  },
+  {
+    "lessonRef": "a0.shopping.013",
+    "title": {
+      "ru": "Диалог: цена",
+      "en": "Dialogue: Price"
+    },
+    "description": {
+      "ru": "Диалог: цена: базовые фразы и практика.",
+      "en": "Dialogue: Price: basic phrases and practice."
+    },
+    "order": 13,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 22,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Диалог: цена"
+  },
+  {
+    "lessonRef": "a0.shopping.014",
+    "title": {
+      "ru": "Произношение",
+      "en": "Pronunciation"
+    },
+    "description": {
+      "ru": "Произношение: базовые фразы и практика.",
+      "en": "Pronunciation: basic phrases and practice."
+    },
+    "order": 14,
+    "estimatedMinutes": 9,
+    "type": "vocabulary",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 23,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Произношение"
+  },
+  {
+    "lessonRef": "a0.shopping.015",
+    "title": {
+      "ru": "Словарь покупок",
+      "en": "Shopping Vocabulary"
+    },
+    "description": {
+      "ru": "Словарь покупок: базовые фразы и практика.",
+      "en": "Shopping Vocabulary: basic phrases and practice."
+    },
+    "order": 15,
+    "estimatedMinutes": 10,
+    "type": "conversation",
+    "difficulty": "easy",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 24,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Словарь покупок"
+  },
+  {
+    "lessonRef": "a0.shopping.016",
+    "title": {
+      "ru": "Повторение",
+      "en": "Review"
+    },
+    "description": {
+      "ru": "Повторение: базовые фразы и практика.",
+      "en": "Review: basic phrases and practice."
+    },
+    "order": 16,
+    "estimatedMinutes": 11,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 25,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Повторение"
+  },
+  {
+    "lessonRef": "a0.shopping.017",
+    "title": {
+      "ru": "Практика",
+      "en": "Practice"
+    },
+    "description": {
+      "ru": "Практика: базовые фразы и практика.",
+      "en": "Practice: basic phrases and practice."
+    },
+    "order": 17,
+    "estimatedMinutes": 12,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 26,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Практика"
+  },
+  {
+    "lessonRef": "a0.shopping.018",
+    "title": {
+      "ru": "Мини-список покупок",
+      "en": "Mini Shopping List"
+    },
+    "description": {
+      "ru": "Мини-список покупок: базовые фразы и практика.",
+      "en": "Mini Shopping List: basic phrases and practice."
+    },
+    "order": 18,
+    "estimatedMinutes": 7,
+    "type": "grammar",
+    "difficulty": "medium",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 27,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Мини-список покупок"
+  },
+  {
+    "lessonRef": "a0.shopping.019",
+    "title": {
+      "ru": "Ролевая игра",
+      "en": "Role-play"
+    },
+    "description": {
+      "ru": "Ролевая игра: базовые фразы и практика.",
+      "en": "Role-play: basic phrases and practice."
+    },
+    "order": 19,
+    "estimatedMinutes": 8,
+    "type": "vocabulary",
+    "difficulty": "medium",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 28,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Ролевая игра"
+  },
+  {
+    "lessonRef": "a0.shopping.020",
+    "title": {
+      "ru": "Итог",
+      "en": "Final"
+    },
+    "description": {
+      "ru": "Итог: базовые фразы и практика.",
+      "en": "Final: basic phrases and practice."
+    },
+    "order": 20,
+    "estimatedMinutes": 9,
+    "type": "conversation",
+    "difficulty": "medium",
+    "tags": [
+      "shopping",
+      "prices",
+      "покупки и цена"
+    ],
+    "xpReward": 29,
+    "hasAudio": true,
+    "hasVideo": false,
+    "previewText": "Итог"
+  }
+]
