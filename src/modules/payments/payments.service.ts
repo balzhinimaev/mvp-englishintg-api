@@ -471,8 +471,8 @@ export class PaymentsService {
         product: request.product,
         cohort: cohort
       },
-      // Explicitly set test: false to ensure production mode
-      test: false
+      // Use YooKassa test flag from env mode (YOOKASSA_MODE)
+      test: this.yookassaMode === 'test'
     };
 
     try {

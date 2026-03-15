@@ -1,0 +1,19 @@
+services:
+  app:
+    image: ghcr.io/balzhinimaev/mvp-englishintg-api:latest
+    container_name: english-api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=7777
+    ports:
+      - "3002:7777"
+    networks:
+      - mongo_net
+
+networks:
+  mongo_net:
+    external: true
+    name: mongodb-local_default
