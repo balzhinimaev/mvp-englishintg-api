@@ -96,6 +96,11 @@ jobs:
              echo "${{ secrets.GITHUB_TOKEN }}" | sudo docker login ghcr.io -u ${{ github.actor }} --password-stdin && \
              sudo docker network create db_default >/dev/null 2>&1 || true && \
              sudo docker network connect --alias mongodb db_default mongodb-local >/dev/null 2>&1 || true && \
+             if ! grep -q "^MONGO_URI=" .env || grep -q "^MONGO_URI=$" .env; then \
+               MONGODB_URI_VAL=$(grep "^MONGODB_URI=" .env | head -n1 | cut -d= -f2-); \
+               sed -i "/^MONGO_URI=/d" .env; \
+               echo "MONGO_URI=${MONGODB_URI_VAL}" >> .env; \
+             fi && \
              sudo docker compose -f docker-compose.prod.yml pull && \
              sudo docker rm -f english-api >/dev/null 2>&1 || true && \
              sudo docker compose -f docker-compose.prod.yml up -d --force-recreate && \
