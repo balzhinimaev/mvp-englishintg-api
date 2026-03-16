@@ -127,3 +127,36 @@ Input aliases are still accepted and normalized in backend:
   }
 }
 ```
+
+## `/progress/submit-answer` payload contract (`userAnswer`)
+
+`userAnswer` is a string field. Depending on task type it may contain plain text or JSON-encoded data.
+
+### Expected encoding by task type
+
+- `multiple_choice` / `choice`: stringified option index  
+  Examples: `"1"`, `"0"`
+- `gap`: plain text answer  
+  Example: `"morning"`
+- `order`: JSON array of tokens (in user order)  
+  Example: `"[\"What\",\"time\",\"is\",\"it\"]"`
+- `translate`: plain text translation  
+  Example: `"How much is it?"`
+- `listening` / `listen`:
+  - preferred: stringified option index (`"1"`)
+  - accepted: JSON/plain option text (`"\"B\""` or `"B"`)
+- `speak`: plain text transcript/target text  
+  Example: `"hello"`
+- `matching` / `match`:
+  - canonical: JSON array of pairs  
+    `"[{\"left\":\"cat\",\"right\":\"кот\"}]"`
+  - backward-compatible: JSON object map  
+    `"{\"cat\":\"кот\"}"`
+- `flashcard`: plain text answer (server-side comparison)
+
+## Contract tests
+
+Contract compatibility is enforced by tests:
+
+- `src/modules/progress/__tests__/submit-answer-contract.spec.ts`
+- `src/modules/progress/__tests__/answer-validator.service.spec.ts`
