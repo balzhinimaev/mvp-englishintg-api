@@ -149,22 +149,50 @@ describe('AnswerValidatorService', () => {
     await expect(service.validateAnswer('a0.basics.001', 't1', 'Hello')).rejects.toThrow(ValidationDataError);
   });
 
-  it('validates listen/speak answers with audio similarity', async () => {
+  it('validates listen answers with options/correctIndex and speak with target', async () => {
     mockLessonModel.findOne.mockReturnValue({
       lean: jest.fn().mockResolvedValue({
         lessonRef: 'a0.basics.001',
         tasks: [
-          { ref: 't1', type: 'listen', data: { audioKey: 'audio' }, validationData: { target: 'hello' } },
+          {
+            ref: 't1',
+            type: 'listen',
+            data: { audioKey: 'audio', options: ['A', 'B'] },
+            validationData: { options: ['A', 'B'], correctIndex: 1 }
+          },
           { ref: 't2', type: 'speak', data: { prompt: 'Say hello' }, validationData: { target: 'hello' } },
         ],
       }),
     });
 
-    const listenResult = await service.validateAnswer('a0.basics.001', 't1', 'hello');
+    const listenByIndex = await service.validateAnswer('a0.basics.001', 't1', '1');
+    const listenByText = await service.validateAnswer('a0.basics.001', 't1', '"B"');
     const speakResult = await service.validateAnswer('a0.basics.001', 't2', 'hello');
 
-    expect(listenResult.isCorrect).toBe(true);
+    expect(listenByIndex.isCorrect).toBe(true);
+    expect(listenByText.isCorrect).toBe(true);
     expect(speakResult.isCorrect).toBe(true);
+  });
+
+  it('accepts matching object-map format from frontend', async () => {
+    mockLessonModel.findOne.mockReturnValue({
+      lean: jest.fn().mockResolvedValue({
+        lessonRef: 'a0.basics.001',
+        tasks: [
+          {
+            ref: 't1',
+            type: 'matching',
+            data: { pairs: [{ left: 'cat', right: 'кот' }] },
+            validationData: { pairs: [{ left: 'cat', right: 'кот' }] },
+          },
+        ],
+      }),
+    });
+
+    const result = await service.validateAnswer('a0.basics.001', 't1', '{"cat":"кот"}');
+
+    expect(result.isCorrect).toBe(true);
+    expect(result.score).toBe(1);
   });
 
   it('returns a detailed error for invalid matching format', async () => {
@@ -183,7 +211,7 @@ describe('AnswerValidatorService', () => {
     });
 
     const result = await service.validateAnswer('a0.basics.001', 't1', '"not-an-array"');
-    
+
     expect(result.isCorrect).toBe(false);
     expect(result.feedback).toContain('Некорректный формат');
   });

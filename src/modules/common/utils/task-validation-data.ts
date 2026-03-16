@@ -38,8 +38,12 @@ export const mapTaskDataToValidationData = (task: { type: TaskTypeEnum | string;
     case 'listen':
     case 'listening':
     case 'speak': {
+      const options = toStringArray(data.options);
+      const correctIndex = typeof data.correctIndex === 'number' ? data.correctIndex : undefined;
       return {
         target: typeof data.target === 'string' ? data.target : undefined,
+        options,
+        correctIndex,
       } satisfies AudioValidationData;
     }
     case 'match':

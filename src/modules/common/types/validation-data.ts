@@ -18,6 +18,8 @@ export interface TranslateValidationData {
 
 export interface AudioValidationData {
   target?: string;
+  options?: string[];
+  correctIndex?: number;
 }
 
 export interface MatchingValidationData {
