@@ -1,10 +1,10 @@
 services:
   app:
-    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/mvp-englishintg-api:latest
+    image: ghcr.io/balzhinimaev/mvp-englishintg-api:latest
     container_name: english-api
     restart: unless-stopped
     ports:
-      - "7777:7777"
+      - "3002:7777"
     # Подключаемся к внешней сети db_default, где работает MongoDB
     networks:
       - db_default
