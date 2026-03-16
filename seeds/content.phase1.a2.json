@@ -8,12 +8,13 @@
         "en": "Workplace A2"
       },
       "description": {
-        "ru": "Рабочая коммуникация: планирование, статус, фидбек, риски",
-        "en": "Work communication: planning, status, feedback, risks"
+        "ru": "Планирование, отчётность, обратная связь, риски и эскалация",
+        "en": "Planning, reporting, feedback, risks and escalation"
       },
       "tags": [
-        "phase1-v2",
-        "work"
+        "phase1-v3",
+        "work",
+        "communication"
       ],
       "order": 1,
       "published": false
@@ -26,12 +27,13 @@
         "en": "Services & Daily Life A2"
       },
       "description": {
-        "ru": "Банк, доставка, поддержка, бытовые ситуации",
-        "en": "Banking, delivery, support, everyday situations"
+        "ru": "Банк, доставка, техподдержка, возвраты и разрешение кейсов",
+        "en": "Banking, delivery, support, returns and case resolution"
       },
       "tags": [
-        "phase1-v2",
-        "services"
+        "phase1-v3",
+        "services",
+        "daily"
       ],
       "order": 2,
       "published": false
@@ -43,15 +45,15 @@
       "lessonRef": "a2.work.001",
       "title": {
         "ru": "Планирование недели",
-        "en": "Weekly planning"
+        "en": "Weekly Planning"
       },
       "description": {
-        "ru": "Практика по теме: планирование недели",
-        "en": "Practice: Weekly planning"
+        "ru": "Приоритеты, загрузка и распределение задач",
+        "en": "Priorities, workload and task allocation"
       },
       "order": 1,
       "published": false,
-      "estimatedMinutes": 13,
+      "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
       "xpReward": 35,
@@ -61,30 +63,30 @@
           "ref": "a2.work.001.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как лучше начать планирование недели с командой?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "Let's review priorities for this week.",
+              "Do everything immediately.",
+              "No need to plan.",
+              "Skip the meeting."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Сначала согласуют приоритеты",
+            "explanation": "Review priorities помогает синхронизировать ожидания команды."
           }
         },
         {
           "ref": "a2.work.001.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "Let's ____ tasks by urgency and impact.",
+            "answer": "prioritize",
             "accept": [
-              "confirm",
-              "verify"
+              "prioritize",
+              "sort"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Глагол: расставить по приоритету",
+            "explanation": "prioritize/sort tasks — основа эффективного планирования.",
             "caseInsensitive": true
           }
         },
@@ -92,18 +94,18 @@
           "ref": "a2.work.001.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.work.001.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.work.001.t3.deadline",
+            "transcript": "The report must be ready by Wednesday.",
+            "translation": "Отчёт должен быть готов к среде.",
+            "question": "К какому дню нужен отчёт?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Tuesday",
+              "Wednesday",
+              "Friday"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай day-of-week",
+            "explanation": "В аудио указан Wednesday."
           }
         },
         {
@@ -112,20 +114,24 @@
           "data": {
             "pairs": [
               {
-                "left": "deadline",
-                "right": "срок"
+                "left": "priority",
+                "right": "приоритет"
               },
               {
-                "left": "blocker",
-                "right": "блокер"
+                "left": "workload",
+                "right": "нагрузка"
               },
               {
-                "left": "update",
-                "right": "обновление"
+                "left": "milestone",
+                "right": "контрольная точка"
+              },
+              {
+                "left": "calendar",
+                "right": "календарь"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Сопоставь слова из планирования",
+            "explanation": "Лексика для обсуждения недельного плана."
           }
         },
         {
@@ -135,9 +141,12 @@
             "tokens": [
               "Can",
               "we",
-              "review",
+              "move",
               "this",
-              "together",
+              "task",
+              "to",
+              "next",
+              "week",
               "?"
             ]
           }
@@ -146,23 +155,23 @@
           "ref": "a2.work.001.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Сначала закроем самые срочные задачи'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "Let's finish the most urgent tasks first",
+              "We'll complete the most urgent tasks first"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "most urgent + first",
+            "explanation": "Фраза для фиксации порядка выполнения работ."
           }
         },
         {
           "ref": "a2.work.001.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'I can take this task and update you tomorrow.'",
+            "target": "I can take this task and update you tomorrow.",
+            "hint": "take this task + update tomorrow",
+            "explanation": "Уверенное обещание ownership + срок апдейта."
           }
         }
       ]
@@ -171,12 +180,12 @@
       "moduleRef": "a2.work",
       "lessonRef": "a2.work.002",
       "title": {
-        "ru": "Постановка задач",
-        "en": "Task assignment"
+        "ru": "Ежедневный стендап",
+        "en": "Daily Standup"
       },
       "description": {
-        "ru": "Практика по теме: постановка задач",
-        "en": "Practice: Task assignment"
+        "ru": "Краткие апдейты, блокеры, план на день",
+        "en": "Short updates, blockers, plan for today"
       },
       "order": 2,
       "published": false,
@@ -190,30 +199,30 @@
           "ref": "a2.work.002.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как корректно сообщить о блокере на стендапе?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "I am blocked on API access.",
+              "Everything is terrible.",
+              "No comments.",
+              "Not my problem."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Нужна чёткая и нейтральная формулировка",
+            "explanation": "I am blocked on ... сразу даёт контекст и зону помощи."
           }
         },
         {
           "ref": "a2.work.002.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "Yesterday I ____ the login bug in production.",
+            "answer": "fixed",
             "accept": [
-              "confirm",
-              "verify"
+              "fixed",
+              "resolved"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Прошедшее время: исправил",
+            "explanation": "fixed/resolved — корректный отчёт о завершённой задаче.",
             "caseInsensitive": true
           }
         },
@@ -221,18 +230,18 @@
           "ref": "a2.work.002.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.work.002.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.work.002.t3.focus",
+            "transcript": "Today I will focus on testing and documentation.",
+            "translation": "Сегодня я сфокусируюсь на тестировании и документации.",
+            "question": "На чём сфокусируется человек сегодня?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Planning and design",
+              "Testing and documentation",
+              "Hiring and onboarding"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай два существительных после focus on",
+            "explanation": "В записи: testing and documentation."
           }
         },
         {
@@ -241,20 +250,24 @@
           "data": {
             "pairs": [
               {
-                "left": "deadline",
-                "right": "срок"
+                "left": "standup",
+                "right": "ежедневный митинг"
               },
               {
                 "left": "blocker",
                 "right": "блокер"
               },
               {
+                "left": "owner",
+                "right": "ответственный"
+              },
+              {
                 "left": "update",
-                "right": "обновление"
+                "right": "апдейт"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Словарь стендапа",
+            "explanation": "Эти термины встречаются в ежедневной синхронизации."
           }
         },
         {
@@ -262,12 +275,14 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
-              "this",
-              "together",
-              "?"
+              "I",
+              "am",
+              "waiting",
+              "for",
+              "approval",
+              "from",
+              "the",
+              "client"
             ]
           }
         },
@@ -275,23 +290,23 @@
           "ref": "a2.work.002.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Я закончу это к концу дня'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "I will finish this by the end of the day",
+              "I'll complete this by end of day"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "by the end of the day",
+            "explanation": "Классическая формула обещания по сроку в рамках дня."
           }
         },
         {
           "ref": "a2.work.002.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'I am blocked on API access and need help.'",
+            "target": "I am blocked on API access and need help.",
+            "hint": "blocked on + need help",
+            "explanation": "Прямая эскалация проблемы в рабочем формате."
           }
         }
       ]
@@ -300,12 +315,12 @@
       "moduleRef": "a2.work",
       "lessonRef": "a2.work.003",
       "title": {
-        "ru": "Статус и блокеры",
-        "en": "Status and blockers"
+        "ru": "Обратная связь и правки",
+        "en": "Feedback and Revisions"
       },
       "description": {
-        "ru": "Практика по теме: статус и блокеры",
-        "en": "Practice: Status and blockers"
+        "ru": "Как давать и принимать конструктивную обратную связь",
+        "en": "How to give and receive constructive feedback"
       },
       "order": 3,
       "published": false,
@@ -319,30 +334,30 @@
           "ref": "a2.work.003.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как вежливо попросить доработку?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "Could you simplify this section?",
+              "This is bad.",
+              "Delete everything.",
+              "No feedback."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Запрос должен быть конкретным и нейтральным",
+            "explanation": "Could you simplify ... даёт направление без агрессии."
           }
         },
         {
           "ref": "a2.work.003.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "Your draft is clear, but it ____ more examples.",
+            "answer": "needs",
             "accept": [
-              "confirm",
-              "verify"
+              "needs",
+              "requires"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "3-е лицо ед. числа",
+            "explanation": "it needs/requires — грамматически корректная форма.",
             "caseInsensitive": true
           }
         },
@@ -350,18 +365,18 @@
           "ref": "a2.work.003.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.work.003.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.work.003.t3.revision",
+            "transcript": "Please revise the introduction and the conclusion.",
+            "translation": "Пожалуйста, доработай вступление и заключение.",
+            "question": "Какие части нужно доработать?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Only introduction",
+              "Introduction and conclusion",
+              "Only conclusion"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай два элемента через and",
+            "explanation": "В аудио перечислены introduction и conclusion."
           }
         },
         {
@@ -370,20 +385,24 @@
           "data": {
             "pairs": [
               {
-                "left": "deadline",
-                "right": "срок"
+                "left": "feedback",
+                "right": "обратная связь"
               },
               {
-                "left": "blocker",
-                "right": "блокер"
+                "left": "revision",
+                "right": "доработка"
               },
               {
-                "left": "update",
-                "right": "обновление"
+                "left": "clarity",
+                "right": "ясность"
+              },
+              {
+                "left": "comment",
+                "right": "комментарий"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Лексика ревью",
+            "explanation": "Частые термины в peer review и code review."
           }
         },
         {
@@ -391,12 +410,15 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
-              "this",
-              "together",
-              "?"
+              "Thanks",
+              "for",
+              "the",
+              "feedback",
+              ",",
+              "I",
+              "will",
+              "revise",
+              "it"
             ]
           }
         },
@@ -404,23 +426,23 @@
           "ref": "a2.work.003.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Спасибо за комментарии, я внесу правки'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "Thanks for the comments, I will make revisions",
+              "Thank you for the feedback, I'll update it"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "thanks for + comments/feedback",
+            "explanation": "Вежливое подтверждение, что правки будут внесены."
           }
         },
         {
           "ref": "a2.work.003.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'I appreciate your feedback and will update the draft.'",
+            "target": "I appreciate your feedback and will update the draft.",
+            "hint": "appreciate + update the draft",
+            "explanation": "Профессиональная реакция на замечания."
           }
         }
       ]
@@ -429,49 +451,49 @@
       "moduleRef": "a2.work",
       "lessonRef": "a2.work.004",
       "title": {
-        "ru": "Обратная связь",
-        "en": "Feedback at work"
+        "ru": "Согласование сроков",
+        "en": "Deadline Negotiation"
       },
       "description": {
-        "ru": "Практика по теме: обратная связь",
-        "en": "Practice: Feedback at work"
+        "ru": "Обсуждение scope, зависимостей и переносов",
+        "en": "Discussing scope, dependencies and timeline shifts"
       },
       "order": 4,
       "published": false,
-      "estimatedMinutes": 12,
+      "estimatedMinutes": 13,
       "type": "conversation",
-      "difficulty": "medium",
-      "xpReward": 35,
+      "difficulty": "hard",
+      "xpReward": 40,
       "hasAudio": true,
       "tasks": [
         {
           "ref": "a2.work.004.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как корректно запросить перенос дедлайна?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "Can we extend the deadline by two days?",
+              "Deadline is impossible.",
+              "I quit this task.",
+              "No delivery."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Нужен конкретный срок и вежливая форма",
+            "explanation": "extend the deadline by ... — стандартная переговорная формула."
           }
         },
         {
           "ref": "a2.work.004.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "If we reduce scope, we can ____ on time.",
+            "answer": "deliver",
             "accept": [
-              "confirm",
-              "verify"
+              "deliver",
+              "finish"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Глагол: уложиться по поставке",
+            "explanation": "deliver/finish on time — фиксация реалистичного плана.",
             "caseInsensitive": true
           }
         },
@@ -479,18 +501,18 @@
           "ref": "a2.work.004.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.work.004.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.work.004.t3.vendor",
+            "transcript": "The vendor can ship components only on Friday.",
+            "translation": "Поставщик может отгрузить компоненты только в пятницу.",
+            "question": "Когда поставщик может отгрузить компоненты?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Wednesday",
+              "Thursday",
+              "Friday"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 2,
+            "hint": "Ключевое слово only",
+            "explanation": "В аудио чётко указан Friday."
           }
         },
         {
@@ -500,19 +522,23 @@
             "pairs": [
               {
                 "left": "deadline",
-                "right": "срок"
+                "right": "дедлайн"
               },
               {
-                "left": "blocker",
-                "right": "блокер"
+                "left": "extension",
+                "right": "продление"
               },
               {
-                "left": "update",
-                "right": "обновление"
+                "left": "dependency",
+                "right": "зависимость"
+              },
+              {
+                "left": "scope",
+                "right": "объём работ"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Термины переговоров по срокам",
+            "explanation": "Словарь для реалистичного обсуждения сроков и ограничений."
           }
         },
         {
@@ -520,12 +546,14 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
-              "this",
-              "together",
-              "?"
+              "We",
+              "need",
+              "two",
+              "extra",
+              "days",
+              "to",
+              "finish",
+              "testing"
             ]
           }
         },
@@ -533,23 +561,23 @@
           "ref": "a2.work.004.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Мы успеем, если уберём одну задачу из спринта'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "We can deliver on time if we remove one task from the sprint",
+              "We'll be on time if we drop one task from the sprint"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "remove/drop one task",
+            "explanation": "Ключевая идея — trade-off между сроком и объёмом."
           }
         },
         {
           "ref": "a2.work.004.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'If we cut scope, we can still meet the deadline.'",
+            "target": "If we cut scope, we can still meet the deadline.",
+            "hint": "if + cut scope + meet deadline",
+            "explanation": "Фраза для аргументированного компромисса."
           }
         }
       ]
@@ -558,49 +586,49 @@
       "moduleRef": "a2.work",
       "lessonRef": "a2.work.005",
       "title": {
-        "ru": "Риски и дедлайны",
-        "en": "Risks and deadlines"
+        "ru": "Риски и эскалация",
+        "en": "Risks and Escalation"
       },
       "description": {
-        "ru": "Практика по теме: риски и дедлайны",
-        "en": "Practice: Risks and deadlines"
+        "ru": "Критические инциденты, owner, план смягчения",
+        "en": "Critical incidents, ownership and mitigation plans"
       },
       "order": 5,
       "published": false,
-      "estimatedMinutes": 13,
+      "estimatedMinutes": 14,
       "type": "grammar",
-      "difficulty": "medium",
-      "xpReward": 35,
+      "difficulty": "hard",
+      "xpReward": 40,
       "hasAudio": true,
       "tasks": [
         {
           "ref": "a2.work.005.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как корректно инициировать эскалацию?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "This may impact release, let's escalate to the manager.",
+              "Ignore the risk.",
+              "Panic and stop everything.",
+              "Tell no one."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Нужно обозначить риск и действие",
+            "explanation": "impact + escalate — правильный формат сообщения о риске."
           }
         },
         {
           "ref": "a2.work.005.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "We should ____ this risk and assign an owner.",
+            "answer": "document",
             "accept": [
-              "confirm",
-              "verify"
+              "document",
+              "record"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Глагол: задокументировать",
+            "explanation": "document/record risk — базовый шаг risk management.",
             "caseInsensitive": true
           }
         },
@@ -608,18 +636,18 @@
           "ref": "a2.work.005.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.work.005.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.work.005.t3.incident",
+            "transcript": "The outage affected two key clients.",
+            "translation": "Сбой затронул двух ключевых клиентов.",
+            "question": "Кого затронул инцидент?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Only internal team",
+              "Two key clients",
+              "No one"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай affected + объект",
+            "explanation": "В записи: affected two key clients."
           }
         },
         {
@@ -628,20 +656,24 @@
           "data": {
             "pairs": [
               {
-                "left": "deadline",
-                "right": "срок"
+                "left": "risk",
+                "right": "риск"
               },
               {
-                "left": "blocker",
-                "right": "блокер"
+                "left": "mitigation",
+                "right": "смягчение"
               },
               {
-                "left": "update",
-                "right": "обновление"
+                "left": "escalation",
+                "right": "эскалация"
+              },
+              {
+                "left": "outage",
+                "right": "сбой"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Словарь incident management",
+            "explanation": "Термины для описания и управления инцидентом."
           }
         },
         {
@@ -649,12 +681,14 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
+              "Let's",
+              "escalate",
               "this",
-              "together",
-              "?"
+              "issue",
+              "to",
+              "the",
+              "project",
+              "manager"
             ]
           }
         },
@@ -662,23 +696,23 @@
           "ref": "a2.work.005.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Нужен план на случай, если это повторится'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "We need a plan in case this happens again",
+              "We need a fallback plan if this repeats"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "in case / fallback plan",
+            "explanation": "Фраза про превентивное планирование на повторный инцидент."
           }
         },
         {
           "ref": "a2.work.005.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'I recommend escalating this issue today.'",
+            "target": "I recommend escalating this issue today.",
+            "hint": "recommend + escalating",
+            "explanation": "Чёткая формулировка предложения к действию."
           }
         }
       ]
@@ -687,16 +721,16 @@
       "moduleRef": "a2.services",
       "lessonRef": "a2.services.001",
       "title": {
-        "ru": "В банке: операции",
-        "en": "At the bank: operations"
+        "ru": "Банк: операции и комиссии",
+        "en": "Banking Operations and Fees"
       },
       "description": {
-        "ru": "Практика по теме: в банке: операции",
-        "en": "Practice: At the bank: operations"
+        "ru": "Счёт, карта, переводы и банковские запросы",
+        "en": "Accounts, cards, transfers and banking requests"
       },
       "order": 1,
       "published": false,
-      "estimatedMinutes": 13,
+      "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
       "xpReward": 35,
@@ -706,30 +740,30 @@
           "ref": "a2.services.001.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как вежливо запросить выписку по счёту?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "I need a bank statement, please.",
+              "Give me all data now.",
+              "No account needed.",
+              "Cancel everything."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Ключевая фраза: bank statement",
+            "explanation": "bank statement — стандартный термин для выписки."
           }
         },
         {
           "ref": "a2.services.001.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "I want to ____ money to this account.",
+            "answer": "transfer",
             "accept": [
-              "confirm",
-              "verify"
+              "transfer",
+              "send"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Глагол: перевести",
+            "explanation": "transfer/send money — базовая банковская формулировка.",
             "caseInsensitive": true
           }
         },
@@ -737,18 +771,18 @@
           "ref": "a2.services.001.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.services.001.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.services.001.t3.fee",
+            "transcript": "There is a five-dollar transfer fee.",
+            "translation": "Комиссия за перевод — пять долларов.",
+            "question": "Какая комиссия за перевод?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Two dollars",
+              "Five dollars",
+              "Ten dollars"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай сумму перед dollar",
+            "explanation": "В аудио: five-dollar fee."
           }
         },
         {
@@ -757,20 +791,24 @@
           "data": {
             "pairs": [
               {
-                "left": "refund",
-                "right": "возврат"
+                "left": "account",
+                "right": "счёт"
               },
               {
-                "left": "request",
-                "right": "заявка"
+                "left": "statement",
+                "right": "выписка"
               },
               {
-                "left": "issue",
-                "right": "проблема"
+                "left": "transfer",
+                "right": "перевод"
+              },
+              {
+                "left": "fee",
+                "right": "комиссия"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Банковский словарь",
+            "explanation": "Ключевые слова для общения в отделении банка."
           }
         },
         {
@@ -778,11 +816,13 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
-              "this",
-              "together",
+              "Could",
+              "you",
+              "increase",
+              "my",
+              "card",
+              "limit",
+              "please",
               "?"
             ]
           }
@@ -791,23 +831,23 @@
           "ref": "a2.services.001.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Я хочу открыть новый счёт'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "I want to open a new account",
+              "I'd like to open a new account"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "open a new account",
+            "explanation": "Нейтральный запрос на открытие счёта."
           }
         },
         {
           "ref": "a2.services.001.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'My card was charged twice by mistake.'",
+            "target": "My card was charged twice by mistake.",
+            "hint": "charged twice + by mistake",
+            "explanation": "Сообщение о двойном списании."
           }
         }
       ]
@@ -816,12 +856,12 @@
       "moduleRef": "a2.services",
       "lessonRef": "a2.services.002",
       "title": {
-        "ru": "Доставка: задержки",
-        "en": "Delivery delays"
+        "ru": "Доставка: задержки и адрес",
+        "en": "Delivery Delays and Address Issues"
       },
       "description": {
-        "ru": "Практика по теме: доставка: задержки",
-        "en": "Practice: Delivery delays"
+        "ru": "Коммуникация с курьером и службой доставки",
+        "en": "Communicating with courier and delivery support"
       },
       "order": 2,
       "published": false,
@@ -835,30 +875,29 @@
           "ref": "a2.services.002.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как корректно сообщить о задержке заказа?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "The delivery is delayed, could you check the status?",
+              "Your service is useless.",
+              "I don't want anything.",
+              "Never mind."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Опиши проблему + запроси действие",
+            "explanation": "Формула delayed + check status помогает ускорить решение."
           }
         },
         {
           "ref": "a2.services.002.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "The package was sent to the wrong ____.",
+            "answer": "address",
             "accept": [
-              "confirm",
-              "verify"
+              "address"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Куда отправили посылку?",
+            "explanation": "wrong address — типичный сценарий ошибок доставки.",
             "caseInsensitive": true
           }
         },
@@ -866,18 +905,18 @@
           "ref": "a2.services.002.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.services.002.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.services.002.t3.arrival",
+            "transcript": "Your parcel will arrive tomorrow evening.",
+            "translation": "Ваша посылка прибудет завтра вечером.",
+            "question": "Когда прибудет посылка?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Today evening",
+              "Tomorrow evening",
+              "Next Monday"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай tomorrow",
+            "explanation": "В записи явно указан tomorrow evening."
           }
         },
         {
@@ -886,20 +925,24 @@
           "data": {
             "pairs": [
               {
-                "left": "refund",
-                "right": "возврат"
+                "left": "parcel",
+                "right": "посылка"
               },
               {
-                "left": "request",
-                "right": "заявка"
+                "left": "courier",
+                "right": "курьер"
               },
               {
-                "left": "issue",
-                "right": "проблема"
+                "left": "warehouse",
+                "right": "склад"
+              },
+              {
+                "left": "tracking",
+                "right": "отслеживание"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Лексика доставки",
+            "explanation": "Эти слова чаще всего нужны в support-диалогах по доставке."
           }
         },
         {
@@ -908,10 +951,12 @@
           "data": {
             "tokens": [
               "Can",
-              "we",
-              "review",
-              "this",
-              "together",
+              "you",
+              "update",
+              "the",
+              "delivery",
+              "address",
+              "today",
               "?"
             ]
           }
@@ -920,23 +965,23 @@
           "ref": "a2.services.002.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Пожалуйста, подтвердите новое время доставки'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "Please confirm the new delivery time",
+              "Please confirm the updated delivery slot"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "confirm + delivery time/slot",
+            "explanation": "Фраза для фиксации нового окна доставки."
           }
         },
         {
           "ref": "a2.services.002.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'I need this order before 6 p.m.'",
+            "target": "I need this order before 6 p.m.",
+            "hint": "before + time",
+            "explanation": "Краткое ограничение по времени доставки."
           }
         }
       ]
@@ -946,11 +991,11 @@
       "lessonRef": "a2.services.003",
       "title": {
         "ru": "Техподдержка: диагностика",
-        "en": "Support troubleshooting"
+        "en": "Support Troubleshooting"
       },
       "description": {
-        "ru": "Практика по теме: техподдержка: диагностика",
-        "en": "Practice: Support troubleshooting"
+        "ru": "Сбор данных, шаги воспроизведения, тикеты",
+        "en": "Collecting evidence, reproduction steps, tickets"
       },
       "order": 3,
       "published": false,
@@ -964,30 +1009,30 @@
           "ref": "a2.services.003.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Какой первый шаг обычно предлагает поддержка?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "Please restart the app and try again.",
+              "Delete your account.",
+              "Buy a new device.",
+              "Ignore the error."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Базовый troubleshooting step",
+            "explanation": "restart and try again — стандартный первый шаг диагностики."
           }
         },
         {
           "ref": "a2.services.003.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "Could you ____ a screenshot of the error?",
+            "answer": "share",
             "accept": [
-              "confirm",
-              "verify"
+              "share",
+              "send"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Что нужно сделать со скриншотом?",
+            "explanation": "share/send a screenshot помогает ускорить разбор инцидента.",
             "caseInsensitive": true
           }
         },
@@ -995,18 +1040,18 @@
           "ref": "a2.services.003.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.services.003.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.services.003.t3.link",
+            "transcript": "I reset your password and sent a recovery link.",
+            "translation": "Я сбросил пароль и отправил ссылку на восстановление.",
+            "question": "Что отправил специалист поддержки?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Invoice",
+              "Recovery link",
+              "New device"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай объект после sent",
+            "explanation": "В аудио сказано recovery link."
           }
         },
         {
@@ -1015,20 +1060,24 @@
           "data": {
             "pairs": [
               {
-                "left": "refund",
-                "right": "возврат"
+                "left": "ticket",
+                "right": "тикет"
               },
               {
-                "left": "request",
-                "right": "заявка"
+                "left": "log",
+                "right": "лог"
               },
               {
-                "left": "issue",
-                "right": "проблема"
+                "left": "bug",
+                "right": "ошибка"
+              },
+              {
+                "left": "workaround",
+                "right": "обходное решение"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Словарь техподдержки",
+            "explanation": "Нужные термины при общении с поддержкой."
           }
         },
         {
@@ -1036,12 +1085,15 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
-              "this",
-              "together",
-              "?"
+              "The",
+              "issue",
+              "happens",
+              "every",
+              "time",
+              "I",
+              "upload",
+              "a",
+              "file"
             ]
           }
         },
@@ -1049,23 +1101,23 @@
           "ref": "a2.services.003.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Ошибка появляется после обновления системы'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "The error appears after the system update",
+              "The issue started after the system update"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "after the system update",
+            "explanation": "Фраза для точного описания момента возникновения ошибки."
           }
         },
         {
           "ref": "a2.services.003.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'The issue happens every time I upload a file.'",
+            "target": "The issue happens every time I upload a file.",
+            "hint": "every time + action",
+            "explanation": "Ключевая формула для воспроизводимого бага."
           }
         }
       ]
@@ -1074,49 +1126,49 @@
       "moduleRef": "a2.services",
       "lessonRef": "a2.services.004",
       "title": {
-        "ru": "ЖКХ и сервисные заявки",
-        "en": "Utility service requests"
+        "ru": "Возвраты и претензии",
+        "en": "Returns and Claims"
       },
       "description": {
-        "ru": "Практика по теме: жкх и сервисные заявки",
-        "en": "Practice: Utility service requests"
+        "ru": "Брак, компенсация, доказательства и сроки",
+        "en": "Defects, compensation, evidence and timelines"
       },
       "order": 4,
       "published": false,
-      "estimatedMinutes": 12,
+      "estimatedMinutes": 13,
       "type": "conversation",
-      "difficulty": "medium",
-      "xpReward": 35,
+      "difficulty": "hard",
+      "xpReward": 40,
       "hasAudio": true,
       "tasks": [
         {
           "ref": "a2.services.004.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как лучше попросить возврат за бракованный товар?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "I would like a refund for this damaged item.",
+              "You must pay me now.",
+              "I don't need any support.",
+              "Forget this order."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "refund + damaged item",
+            "explanation": "Чёткая и корректная формулировка претензии."
           }
         },
         {
           "ref": "a2.services.004.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "Please ____ this claim within three business days.",
+            "answer": "process",
             "accept": [
-              "confirm",
-              "verify"
+              "process",
+              "handle"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Глагол: обработать",
+            "explanation": "process/handle a claim — стандарт в службе поддержки.",
             "caseInsensitive": true
           }
         },
@@ -1124,18 +1176,18 @@
           "ref": "a2.services.004.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.services.004.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.services.004.t3.options",
+            "transcript": "We can offer a replacement or a full refund.",
+            "translation": "Мы можем предложить замену или полный возврат.",
+            "question": "Какие варианты предложила компания?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Discount only",
+              "Replacement or full refund",
+              "No options"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай два варианта через or",
+            "explanation": "В записи: replacement or full refund."
           }
         },
         {
@@ -1145,19 +1197,23 @@
             "pairs": [
               {
                 "left": "refund",
-                "right": "возврат"
+                "right": "возврат средств"
               },
               {
-                "left": "request",
-                "right": "заявка"
+                "left": "replacement",
+                "right": "замена"
               },
               {
-                "left": "issue",
-                "right": "проблема"
+                "left": "receipt",
+                "right": "чек"
+              },
+              {
+                "left": "warranty",
+                "right": "гарантия"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Термины возвратов",
+            "explanation": "Словарь претензионных обращений."
           }
         },
         {
@@ -1165,12 +1221,15 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
-              "this",
-              "together",
-              "?"
+              "I",
+              "have",
+              "photos",
+              "of",
+              "the",
+              "damage",
+              "and",
+              "the",
+              "receipt"
             ]
           }
         },
@@ -1178,23 +1237,23 @@
           "ref": "a2.services.004.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Товар пришёл с браком, я хочу обмен'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "The item arrived defective, I want a replacement",
+              "The product is faulty, I would like an exchange"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "defective/faulty + replacement/exchange",
+            "explanation": "Обе конструкции подходят для официальной претензии."
           }
         },
         {
           "ref": "a2.services.004.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'Please refund to the original payment method.'",
+            "target": "Please refund to the original payment method.",
+            "hint": "refund + original payment method",
+            "explanation": "Уточнение способа возврата средств."
           }
         }
       ]
@@ -1203,49 +1262,49 @@
       "moduleRef": "a2.services",
       "lessonRef": "a2.services.005",
       "title": {
-        "ru": "Возвраты и претензии",
-        "en": "Returns and claims"
+        "ru": "Комплексный сервис-кейс",
+        "en": "Complex Service Case Resolution"
       },
       "description": {
-        "ru": "Практика по теме: возвраты и претензии",
-        "en": "Practice: Returns and claims"
+        "ru": "Интеграция: задержка, претензия, решение, follow-up",
+        "en": "Integrated case: delay, claim, resolution, follow-up"
       },
       "order": 5,
       "published": false,
-      "estimatedMinutes": 13,
+      "estimatedMinutes": 14,
       "type": "grammar",
-      "difficulty": "medium",
-      "xpReward": 35,
+      "difficulty": "hard",
+      "xpReward": 45,
       "hasAudio": true,
       "tasks": [
         {
           "ref": "a2.services.005.t1",
           "type": "choice",
           "data": {
-            "question": "Выбери самую уместную фразу",
+            "question": "Как лучше завершить сложный сервис-кейс?",
             "options": [
-              "Could you clarify this, please?",
-              "I don't care.",
-              "Skip it.",
-              "Not now."
+              "Thank you for your patience. The issue is now resolved.",
+              "Case closed. Bye.",
+              "Not our problem anymore.",
+              "No final update."
             ],
             "correctIndex": 0,
-            "hint": "Нужна вежливая нейтральная формулировка",
-            "explanation": "Could you clarify this, please? — корректный вежливый запрос на уточнение."
+            "hint": "Нужно подтверждение решения + вежливое завершение",
+            "explanation": "Фраза одновременно подтверждает решение и сохраняет тон сервиса."
           }
         },
         {
           "ref": "a2.services.005.t2",
           "type": "gap",
           "data": {
-            "text": "Please ____ the details before we continue.",
-            "answer": "confirm",
+            "text": "Let's ____ this case after final confirmation from the customer.",
+            "answer": "close",
             "accept": [
-              "confirm",
-              "verify"
+              "close",
+              "finalize"
             ],
-            "hint": "Глагол: подтвердить/проверить",
-            "explanation": "confirm/verify the details — стандартная деловая формула.",
+            "hint": "Какое действие после подтверждения?",
+            "explanation": "close/finalize the case — формальное завершение инцидента.",
             "caseInsensitive": true
           }
         },
@@ -1253,18 +1312,18 @@
           "ref": "a2.services.005.t3",
           "type": "listen",
           "data": {
-            "audioKey": "a2.services.005.t3.audio",
-            "transcript": "We need one more day.",
-            "translation": "Нам нужен ещё один день.",
-            "question": "Сколько дополнительного времени нужно?",
+            "audioKey": "a2.services.005.t3.approved",
+            "transcript": "Your claim has been approved and refunded.",
+            "translation": "Ваша претензия одобрена, возврат выполнен.",
+            "question": "Каков статус претензии?",
             "options": [
-              "one day",
-              "two days",
-              "three days"
+              "Rejected",
+              "Approved and refunded",
+              "Pending"
             ],
-            "correctIndex": 0,
-            "hint": "Слушай количество days",
-            "explanation": "В аудио: one more day."
+            "correctIndex": 1,
+            "hint": "Слушай approved/refunded",
+            "explanation": "Финальный статус: approved and refunded."
           }
         },
         {
@@ -1273,20 +1332,24 @@
           "data": {
             "pairs": [
               {
-                "left": "refund",
-                "right": "возврат"
+                "left": "claim",
+                "right": "претензия"
               },
               {
-                "left": "request",
-                "right": "заявка"
+                "left": "approval",
+                "right": "одобрение"
               },
               {
-                "left": "issue",
-                "right": "проблема"
+                "left": "resolution",
+                "right": "решение"
+              },
+              {
+                "left": "follow-up",
+                "right": "последующее сопровождение"
               }
             ],
-            "hint": "Сопоставь термины",
-            "explanation": "Ключевая лексика темы урока."
+            "hint": "Лексика полного кейса",
+            "explanation": "Термины финальной коммуникации после решения проблемы."
           }
         },
         {
@@ -1294,12 +1357,15 @@
           "type": "order",
           "data": {
             "tokens": [
-              "Can",
-              "we",
-              "review",
-              "this",
-              "together",
-              "?"
+              "If",
+              "the",
+              "issue",
+              "returns",
+              ",",
+              "please",
+              "contact",
+              "us",
+              "again"
             ]
           }
         },
@@ -1307,23 +1373,23 @@
           "ref": "a2.services.005.t6",
           "type": "translate",
           "data": {
-            "question": "Переведи: 'Давайте согласуем это сегодня'",
+            "question": "Переведи: 'Если проблема повторится, свяжитесь с нами снова'",
             "expected": [
-              "Let's finalize this today",
-              "Let's agree on this today"
+              "If the issue happens again, please contact us again",
+              "If this problem repeats, please reach out to us again"
             ],
-            "hint": "finalize / agree on",
-            "explanation": "Обе формулировки естественны в рабочем общении."
+            "hint": "if + happens again / repeats",
+            "explanation": "Фраза для корректного post-resolution follow-up."
           }
         },
         {
           "ref": "a2.services.005.t7",
           "type": "speak",
           "data": {
-            "prompt": "Скажи: 'I will send the final update today.'",
-            "target": "I will send the final update today.",
-            "hint": "future + final update",
-            "explanation": "Фраза для фиксации обещания по сроку."
+            "prompt": "Скажи: 'I confirm that the issue is fully resolved now.'",
+            "target": "I confirm that the issue is fully resolved now.",
+            "hint": "confirm + fully resolved",
+            "explanation": "Закрывающее подтверждение по кейсу."
           }
         }
       ]
