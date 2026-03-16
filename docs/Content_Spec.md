@@ -38,6 +38,8 @@ This document describes the A0 level content specification, seeding procedures, 
 
 ### Task Types
 
+> Canonical API contract and migration notes: `docs/task-contract-v2.1.md`
+
 #### 1. Flashcard (`flashcard`)
 ```typescript
 {

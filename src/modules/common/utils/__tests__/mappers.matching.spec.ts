@@ -1,6 +1,28 @@
 import { toTaskResponseDto } from '../mappers';
 
 describe('toTaskResponseDto matching payload normalization', () => {
+  it('emits canonical task type names for aliases', () => {
+    const dtoChoice = toTaskResponseDto({
+      ref: 'tc',
+      type: 'choice',
+      data: { question: 'Q', options: ['a', 'b'], correctIndex: 0 },
+    });
+    expect(dtoChoice.type).toBe('multiple_choice');
+
+    const dtoListen = toTaskResponseDto({
+      ref: 'tl',
+      type: 'listen',
+      data: { audioKey: 'k1', question: 'heard?' },
+    });
+    expect(dtoListen.type).toBe('listening');
+
+    const dtoMatch = toTaskResponseDto({
+      ref: 'tm',
+      type: 'match',
+      data: { pairs: [{ left: 'a', right: 'б' }] },
+    });
+    expect(dtoMatch.type).toBe('matching');
+  });
   it('keeps canonical left/right shape as-is', () => {
     const dto = toTaskResponseDto({
       ref: 't1',

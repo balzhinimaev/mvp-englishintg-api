@@ -6,7 +6,7 @@ import { VocabularyItem } from '../schemas/vocabulary.schema';
 import { UserVocabularyProgress } from '../schemas/user-vocabulary-progress.schema';
 import { User } from '../schemas/user.schema';
 import { ModuleItem, LessonItem, LessonProgress, VocabularyItem as VocabType, TaskType, UserVocabularyProgress as UserVocabularyProgressType, VocabularyProgressStats } from '../types/content';
-import { TaskTypeEnum } from '../enums/task-type.enum';
+import { canonicalizeTaskType, TaskTypeEnum } from '../enums/task-type.enum';
 import { TaskResponseDto } from '../../content/dto/task-response.dto';
 import { getLocalizedText, SupportedLanguage } from './i18n.util';
 import { normalizeLessonDefaults } from './lesson-defaults';
@@ -17,9 +17,10 @@ import { normalizeLessonDefaults } from './lesson-defaults';
  * Это гарантирует, что секретные данные (правильные ответы) не утекут клиенту.
  */
 export const toTaskResponseDto = (task: { ref: string; type: string; data: any }): any => {
+  const canonicalType = canonicalizeTaskType(task.type) || (task.type as TaskTypeEnum);
   return plainToInstance(TaskResponseDto, {
     ref: task.ref,
-    type: task.type as TaskTypeEnum,
+    type: canonicalType,
     data: task.data,
   }, {
     excludeExtraneousValues: true, // Игнорирует поля без @Expose()
