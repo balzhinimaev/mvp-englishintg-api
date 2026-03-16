@@ -83,9 +83,33 @@ Validates answer on server and records attempt.
 ```
 
 ### Error examples
-- `403 PREREQ_NOT_MET`
-- `400 invalid answer format`
-- `404 lesson/task not found`
+
+#### 403 PREREQ_NOT_MET
+```json
+{
+  "statusCode": 403,
+  "message": "PREREQ_NOT_MET",
+  "error": "Forbidden"
+}
+```
+
+#### 400 invalid answer format
+```json
+{
+  "statusCode": 400,
+  "message": "Неверный формат ответа для order: ожидается JSON-массив строк, например [\"What\",\"time\",\"is\",\"it\",\"?\"]",
+  "error": "Bad Request"
+}
+```
+
+#### 404 lesson/task not found
+```json
+{
+  "statusCode": 404,
+  "message": "Lesson not found",
+  "error": "Not Found"
+}
+```
 
 ---
 
