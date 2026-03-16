@@ -1,0 +1,592 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a2.work",
+      "level": "A2",
+      "title": {
+        "ru": "Работа A2",
+        "en": "Workplace A2"
+      },
+      "description": {
+        "ru": "Коммуникация на работе: встречи, задачи, дедлайны",
+        "en": "Work communication: meetings, tasks, deadlines"
+      },
+      "tags": ["work", "productivity"],
+      "order": 1,
+      "published": false
+    },
+    {
+      "moduleRef": "a2.services",
+      "level": "A2",
+      "title": {
+        "ru": "Сервисы и быт A2",
+        "en": "Services & Daily Life A2"
+      },
+      "description": {
+        "ru": "Банк, доставка, техподдержка, бытовые диалоги",
+        "en": "Banking, delivery, support, daily dialogues"
+      },
+      "tags": ["daily", "services"],
+      "order": 2,
+      "published": false
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a2.work",
+      "lessonRef": "a2.work.001",
+      "title": {
+        "ru": "Планируем встречу",
+        "en": "Scheduling a Meeting"
+      },
+      "description": {
+        "ru": "Назначение времени и согласование слотов",
+        "en": "Setting time and confirming slots"
+      },
+      "order": 1,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.work.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как лучше предложить время встречи?",
+            "options": [
+              "When can we meet?",
+              "Meet now.",
+              "You must join.",
+              "No meeting."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужна вежливая открытая формулировка",
+            "explanation": "When can we meet? — нейтральный и вежливый вопрос о времени."
+          }
+        },
+        {
+          "ref": "a2.work.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "Let's ____ the meeting for Tuesday.",
+            "answer": "schedule",
+            "accept": ["schedule", "set"],
+            "hint": "Глагол: назначить встречу",
+            "explanation": "schedule/set the meeting — назначить встречу.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.work.001.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.work.001.t3.slot",
+            "transcript": "I am available at 3 p.m.",
+            "translation": "Я свободен в 15:00.",
+            "question": "Во сколько человек свободен?",
+            "options": ["2 p.m.", "3 p.m.", "4 p.m."],
+            "correctIndex": 1,
+            "hint": "Слушай число перед p.m.",
+            "explanation": "В аудио звучит 3 p.m."
+          }
+        },
+        {
+          "ref": "a2.work.001.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Does", "Thursday", "work", "for", "you", "?"]
+          }
+        },
+        {
+          "ref": "a2.work.001.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Перенесём встречу на завтра'",
+            "expected": [
+              "Let's move the meeting to tomorrow",
+              "Let's reschedule the meeting to tomorrow"
+            ],
+            "hint": "Используй move/reschedule",
+            "explanation": "Оба варианта корректны для переноса встречи."
+          }
+        },
+        {
+          "ref": "a2.work.001.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I can join at 10 a.m.'",
+            "target": "I can join at 10 a.m.",
+            "hint": "Ключ: join + время",
+            "explanation": "Полная фраза для подтверждения времени участия."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.work",
+      "lessonRef": "a2.work.002",
+      "title": {
+        "ru": "Статус задач",
+        "en": "Task Status Updates"
+      },
+      "description": {
+        "ru": "Отчёт по прогрессу и блокерам",
+        "en": "Reporting progress and blockers"
+      },
+      "order": 2,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.work.002.t1",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "in progress", "right": "в процессе" },
+              { "left": "done", "right": "сделано" },
+              { "left": "blocked", "right": "заблокировано" },
+              { "left": "deadline", "right": "дедлайн" }
+            ],
+            "hint": "Сопоставь статусы",
+            "explanation": "Базовая лексика по статусу задач."
+          }
+        },
+        {
+          "ref": "a2.work.002.t2",
+          "type": "choice",
+          "data": {
+            "question": "Как корректно сообщить о блокере?",
+            "options": [
+              "I have a blocker.",
+              "Everything is perfect.",
+              "No update ever.",
+              "Task is sleeping."
+            ],
+            "correctIndex": 0,
+            "hint": "Прямая и профессиональная формулировка",
+            "explanation": "I have a blocker — стандартная фраза для статуса."
+          }
+        },
+        {
+          "ref": "a2.work.002.t3",
+          "type": "gap",
+          "data": {
+            "text": "The task is ____ track.",
+            "answer": "on",
+            "accept": ["on"],
+            "hint": "Фраза: on track",
+            "explanation": "on track = по плану.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.work.002.t4",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.work.002.t4.deadline",
+            "transcript": "We need two more days.",
+            "translation": "Нам нужно ещё два дня.",
+            "question": "Сколько времени нужно дополнительно?",
+            "options": ["one day", "two days", "three days"],
+            "correctIndex": 1,
+            "hint": "Слушай количество days",
+            "explanation": "В аудио: two more days."
+          }
+        },
+        {
+          "ref": "a2.work.002.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Задача почти завершена'",
+            "expected": ["The task is almost done"],
+            "hint": "almost + done",
+            "explanation": "almost done — почти завершено."
+          }
+        },
+        {
+          "ref": "a2.work.002.t6",
+          "type": "order",
+          "data": {
+            "tokens": ["I", "need", "help", "with", "this", "task"]
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.work",
+      "lessonRef": "a2.work.003",
+      "title": {
+        "ru": "Деловая переписка",
+        "en": "Business Email Basics"
+      },
+      "description": {
+        "ru": "Тема письма, запрос, вежливое закрытие",
+        "en": "Subject, request, polite closing"
+      },
+      "order": 3,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "writing",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": false,
+      "tasks": [
+        {
+          "ref": "a2.work.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как лучше начать деловое письмо?",
+            "options": [
+              "Hi team,",
+              "Yo guys,",
+              "Hey bro,",
+              "What's up"
+            ],
+            "correctIndex": 0,
+            "hint": "Нейтральный рабочий стиль",
+            "explanation": "Hi team, — приемлемое нейтральное обращение."
+          }
+        },
+        {
+          "ref": "a2.work.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you please ____ the document?",
+            "answer": "review",
+            "accept": ["review", "check"],
+            "hint": "Глагол: проверить",
+            "explanation": "review/check the document — проверить документ.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.work.003.t3",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Заранее спасибо за помощь'",
+            "expected": ["Thanks in advance for your help"],
+            "hint": "Thanks in advance",
+            "explanation": "Стандартная формула в деловой переписке."
+          }
+        },
+        {
+          "ref": "a2.work.003.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Please", "let", "me", "know", "if", "you", "agree"]
+          }
+        },
+        {
+          "ref": "a2.work.003.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the update by Friday.'",
+            "target": "I will send the update by Friday.",
+            "hint": "future + by Friday",
+            "explanation": "Чёткое обещание срока отправки обновления."
+          }
+        },
+        {
+          "ref": "a2.work.003.t6",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "Best regards", "right": "С уважением" },
+              { "left": "Attached", "right": "Во вложении" },
+              { "left": "Subject", "right": "Тема" }
+            ],
+            "hint": "Сопоставь элементы письма",
+            "explanation": "Ключевые элементы делового письма."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.services",
+      "lessonRef": "a2.services.001",
+      "title": {
+        "ru": "В банке",
+        "en": "At the Bank"
+      },
+      "description": {
+        "ru": "Счёт, карта, переводы",
+        "en": "Account, card, transfers"
+      },
+      "order": 1,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.services.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как запросить выписку по счёту?",
+            "options": [
+              "I need a bank statement.",
+              "Give me all money.",
+              "Close everything now.",
+              "No account."
+            ],
+            "correctIndex": 0,
+            "hint": "Ключевое слово statement",
+            "explanation": "bank statement — выписка по счёту."
+          }
+        },
+        {
+          "ref": "a2.services.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "I want to ____ money to this account.",
+            "answer": "transfer",
+            "accept": ["transfer", "send"],
+            "hint": "Глагол: перевести",
+            "explanation": "transfer money — перевести деньги.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.services.001.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.services.001.t3.fee",
+            "transcript": "There is a five-dollar fee.",
+            "translation": "Есть комиссия 5 долларов.",
+            "question": "Какая комиссия?",
+            "options": ["2 dollars", "5 dollars", "10 dollars"],
+            "correctIndex": 1,
+            "hint": "Слушай сумму",
+            "explanation": "В аудио: five-dollar fee."
+          }
+        },
+        {
+          "ref": "a2.services.001.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Я хочу открыть новый счёт'",
+            "expected": ["I want to open a new account"],
+            "hint": "open + account",
+            "explanation": "open a new account — открыть новый счёт."
+          }
+        },
+        {
+          "ref": "a2.services.001.t5",
+          "type": "order",
+          "data": {
+            "tokens": ["Could", "you", "block", "my", "card", "please", "?"]
+          }
+        },
+        {
+          "ref": "a2.services.001.t6",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "balance", "right": "баланс" },
+              { "left": "transfer", "right": "перевод" },
+              { "left": "fee", "right": "комиссия" }
+            ],
+            "hint": "Банковская лексика",
+            "explanation": "Базовые слова для общения в банке."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.services",
+      "lessonRef": "a2.services.002",
+      "title": {
+        "ru": "Доставка",
+        "en": "Delivery Issues"
+      },
+      "description": {
+        "ru": "Задержка, адрес, возврат",
+        "en": "Delay, address, return"
+      },
+      "order": 2,
+      "published": false,
+      "estimatedMinutes": 11,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.services.002.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как сообщить, что заказ задерживается?",
+            "options": [
+              "The delivery is delayed.",
+              "No package exists.",
+              "Everything is ruined.",
+              "I hate shipping."
+            ],
+            "correctIndex": 0,
+            "hint": "Ключевое слово delayed",
+            "explanation": "The delivery is delayed — стандартная формулировка."
+          }
+        },
+        {
+          "ref": "a2.services.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "Please ____ the delivery address.",
+            "answer": "confirm",
+            "accept": ["confirm", "check"],
+            "hint": "Подтвердить данные",
+            "explanation": "confirm/check the address — подтвердить адрес.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.services.002.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.services.002.t3.tomorrow",
+            "transcript": "Your order will arrive tomorrow.",
+            "translation": "Ваш заказ придёт завтра.",
+            "question": "Когда придёт заказ?",
+            "options": ["today", "tomorrow", "next week"],
+            "correctIndex": 1,
+            "hint": "Слушай when",
+            "explanation": "В аудио звучит tomorrow."
+          }
+        },
+        {
+          "ref": "a2.services.002.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Я хочу оформить возврат'",
+            "expected": ["I want to request a refund", "I want to make a return"],
+            "hint": "refund/return",
+            "explanation": "Оба варианта используют в поддержке и маркетплейсах."
+          }
+        },
+        {
+          "ref": "a2.services.002.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'My order number is 4587.'",
+            "target": "My order number is 4587.",
+            "hint": "order number + digits",
+            "explanation": "Фраза для идентификации заказа."
+          }
+        },
+        {
+          "ref": "a2.services.002.t6",
+          "type": "order",
+          "data": {
+            "tokens": ["Can", "you", "update", "the", "delivery", "status", "?"]
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.services",
+      "lessonRef": "a2.services.003",
+      "title": {
+        "ru": "Техподдержка",
+        "en": "Customer Support"
+      },
+      "description": {
+        "ru": "Проблема, шаги решения, эскалация",
+        "en": "Issue report, troubleshooting, escalation"
+      },
+      "order": 3,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.services.003.t1",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "issue", "right": "проблема" },
+              { "left": "solution", "right": "решение" },
+              { "left": "restart", "right": "перезапустить" },
+              { "left": "escalate", "right": "эскалировать" }
+            ],
+            "hint": "Лексика поддержки",
+            "explanation": "Ключевые слова для общения с поддержкой."
+          }
+        },
+        {
+          "ref": "a2.services.003.t2",
+          "type": "choice",
+          "data": {
+            "question": "Как вежливо описать проблему?",
+            "options": [
+              "I am experiencing an issue.",
+              "Everything is broken forever.",
+              "Fix it now!",
+              "No words."
+            ],
+            "correctIndex": 0,
+            "hint": "Нейтральная формулировка",
+            "explanation": "I am experiencing an issue — профессиональный тон."
+          }
+        },
+        {
+          "ref": "a2.services.003.t3",
+          "type": "gap",
+          "data": {
+            "text": "Please ____ the app and try again.",
+            "answer": "restart",
+            "accept": ["restart", "reopen"],
+            "hint": "Первый стандартный шаг",
+            "explanation": "restart/reopen the app — типичная рекомендация поддержки.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.services.003.t4",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.services.003.t4.ticket",
+            "transcript": "Your ticket number is 2134.",
+            "translation": "Номер вашего тикета 2134.",
+            "question": "Какой номер тикета?",
+            "options": ["1234", "2134", "2314"],
+            "correctIndex": 1,
+            "hint": "Слушай последовательность цифр",
+            "explanation": "В аудио: 2134."
+          }
+        },
+        {
+          "ref": "a2.services.003.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Спасибо за быстрый ответ'",
+            "expected": ["Thank you for the quick response", "Thanks for the quick response"],
+            "hint": "quick response",
+            "explanation": "Обе формулировки корректны и вежливы."
+          }
+        },
+        {
+          "ref": "a2.services.003.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'Could you escalate this issue?'",
+            "target": "Could you escalate this issue?",
+            "hint": "Could you + escalate",
+            "explanation": "Фраза для передачи инцидента на следующий уровень."
+          }
+        }
+      ]
+    }
+  ]
+}
