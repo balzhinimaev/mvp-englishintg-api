@@ -1,4 +1,4 @@
-import { Expose, Type } from 'class-transformer';
+import { Expose, Transform, Type } from 'class-transformer';
 import { TaskTypeEnum } from '../../common/enums/task-type.enum';
 
 /**
@@ -120,9 +120,11 @@ export class FlashcardTaskResponseDto {
  */
 export class MatchingPairResponseDto {
   @Expose()
+  @Transform(({ value, obj }) => value ?? obj?.english ?? '', { toClassOnly: true })
   left!: string;
 
   @Expose()
+  @Transform(({ value, obj }) => value ?? obj?.russian ?? '', { toClassOnly: true })
   right!: string;
 
   @Expose()
@@ -134,6 +136,7 @@ export class MatchingPairResponseDto {
  */
 export class MatchingTaskResponseDto {
   @Expose()
+  @Transform(({ value, obj }) => value ?? obj?.instructions, { toClassOnly: true })
   instruction?: string;
 
   @Expose()
