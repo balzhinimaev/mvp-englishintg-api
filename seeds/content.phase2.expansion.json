@@ -1,0 +1,3174 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a2.travelplus",
+      "level": "A2",
+      "title": {
+        "ru": "Продвинутые путешествия A2",
+        "en": "Advanced Travel A2"
+      },
+      "description": {
+        "ru": "Диалоги в аэропорту, отеле и на транспорте",
+        "en": "Airport, hotel and transport dialogs"
+      },
+      "tags": [
+        "phase2",
+        "a2"
+      ],
+      "order": 1,
+      "published": false
+    },
+    {
+      "moduleRef": "a2.health",
+      "level": "A2",
+      "title": {
+        "ru": "Здоровье и медицина A2",
+        "en": "Health & Medical A2"
+      },
+      "description": {
+        "ru": "Аптека, визит к врачу, симптомы",
+        "en": "Pharmacy, doctor visits, symptoms"
+      },
+      "tags": [
+        "phase2",
+        "a2"
+      ],
+      "order": 1,
+      "published": false
+    },
+    {
+      "moduleRef": "b1.work",
+      "level": "B1",
+      "title": {
+        "ru": "Работа и карьера B1",
+        "en": "Work & Career B1"
+      },
+      "description": {
+        "ru": "Переговоры, фидбек, отчётность",
+        "en": "Negotiation, feedback, reporting"
+      },
+      "tags": [
+        "phase2",
+        "b1"
+      ],
+      "order": 1,
+      "published": false
+    },
+    {
+      "moduleRef": "b1.social",
+      "level": "B1",
+      "title": {
+        "ru": "Социальное общение B1",
+        "en": "Social Communication B1"
+      },
+      "description": {
+        "ru": "Small talk, конфликты, договорённости",
+        "en": "Small talk, conflicts, agreements"
+      },
+      "tags": [
+        "phase2",
+        "b1"
+      ],
+      "order": 1,
+      "published": false
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a2.travelplus",
+      "lessonRef": "a2.travelplus.001",
+      "title": {
+        "ru": "Регистрация на рейс",
+        "en": "Lesson 1"
+      },
+      "description": {
+        "ru": "Практика: регистрация на рейс",
+        "en": "Practice: Регистрация на рейс"
+      },
+      "order": 1,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.travelplus.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.travelplus.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.travelplus.001.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.travel_plus.001.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.travelplus.001.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.travelplus.001.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.travelplus.001.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.travelplus.001.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.travelplus",
+      "lessonRef": "a2.travelplus.002",
+      "title": {
+        "ru": "Заселение в отель",
+        "en": "Lesson 2"
+      },
+      "description": {
+        "ru": "Практика: заселение в отель",
+        "en": "Practice: Заселение в отель"
+      },
+      "order": 2,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.travelplus.002.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.travelplus.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.travelplus.002.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.travel_plus.002.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.travelplus.002.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.travelplus.002.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.travelplus.002.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.travelplus.002.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.travelplus",
+      "lessonRef": "a2.travelplus.003",
+      "title": {
+        "ru": "Жалоба в отеле",
+        "en": "Lesson 3"
+      },
+      "description": {
+        "ru": "Практика: жалоба в отеле",
+        "en": "Practice: Жалоба в отеле"
+      },
+      "order": 3,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.travelplus.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.travelplus.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.travelplus.003.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.travel_plus.003.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.travelplus.003.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.travelplus.003.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.travelplus.003.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.travelplus.003.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.travelplus",
+      "lessonRef": "a2.travelplus.004",
+      "title": {
+        "ru": "Аренда авто",
+        "en": "Lesson 4"
+      },
+      "description": {
+        "ru": "Практика: аренда авто",
+        "en": "Practice: Аренда авто"
+      },
+      "order": 4,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.travelplus.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.travelplus.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.travelplus.004.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.travel_plus.004.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.travelplus.004.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.travelplus.004.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.travelplus.004.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.travelplus.004.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.travelplus",
+      "lessonRef": "a2.travelplus.005",
+      "title": {
+        "ru": "Проблемы с маршрутом",
+        "en": "Lesson 5"
+      },
+      "description": {
+        "ru": "Практика: проблемы с маршрутом",
+        "en": "Practice: Проблемы с маршрутом"
+      },
+      "order": 5,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.travelplus.005.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.travelplus.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.travelplus.005.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.travel_plus.005.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.travelplus.005.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.travelplus.005.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.travelplus.005.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.travelplus.005.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.travelplus",
+      "lessonRef": "a2.travelplus.006",
+      "title": {
+        "ru": "Экстренные ситуации",
+        "en": "Lesson 6"
+      },
+      "description": {
+        "ru": "Практика: экстренные ситуации",
+        "en": "Practice: Экстренные ситуации"
+      },
+      "order": 6,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.travelplus.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.travelplus.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.travelplus.006.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.travel_plus.006.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.travelplus.006.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.travelplus.006.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.travelplus.006.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.travelplus.006.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.health",
+      "lessonRef": "a2.health.001",
+      "title": {
+        "ru": "В аптеке",
+        "en": "Lesson 1"
+      },
+      "description": {
+        "ru": "Практика: в аптеке",
+        "en": "Practice: В аптеке"
+      },
+      "order": 1,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.health.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.health.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.health.001.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.health.001.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.health.001.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.health.001.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.health.001.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.health.001.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.health",
+      "lessonRef": "a2.health.002",
+      "title": {
+        "ru": "Запись к врачу",
+        "en": "Lesson 2"
+      },
+      "description": {
+        "ru": "Практика: запись к врачу",
+        "en": "Practice: Запись к врачу"
+      },
+      "order": 2,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.health.002.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.health.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.health.002.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.health.002.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.health.002.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.health.002.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.health.002.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.health.002.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.health",
+      "lessonRef": "a2.health.003",
+      "title": {
+        "ru": "Описание симптомов",
+        "en": "Lesson 3"
+      },
+      "description": {
+        "ru": "Практика: описание симптомов",
+        "en": "Practice: Описание симптомов"
+      },
+      "order": 3,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.health.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.health.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.health.003.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.health.003.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.health.003.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.health.003.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.health.003.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.health.003.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.health",
+      "lessonRef": "a2.health.004",
+      "title": {
+        "ru": "Рекомендации врача",
+        "en": "Lesson 4"
+      },
+      "description": {
+        "ru": "Практика: рекомендации врача",
+        "en": "Practice: Рекомендации врача"
+      },
+      "order": 4,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.health.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.health.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.health.004.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.health.004.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.health.004.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.health.004.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.health.004.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.health.004.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.health",
+      "lessonRef": "a2.health.005",
+      "title": {
+        "ru": "Страховка и документы",
+        "en": "Lesson 5"
+      },
+      "description": {
+        "ru": "Практика: страховка и документы",
+        "en": "Practice: Страховка и документы"
+      },
+      "order": 5,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.health.005.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.health.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.health.005.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.health.005.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.health.005.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.health.005.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.health.005.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.health.005.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a2.health",
+      "lessonRef": "a2.health.006",
+      "title": {
+        "ru": "Реабилитация и контроль",
+        "en": "Lesson 6"
+      },
+      "description": {
+        "ru": "Практика: реабилитация и контроль",
+        "en": "Practice: Реабилитация и контроль"
+      },
+      "order": 6,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a2.health.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "a2.health.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a2.health.006.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a2.health.006.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "a2.health.006.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "a2.health.006.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a2.health.006.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "a2.health.006.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.work",
+      "lessonRef": "b1.work.001",
+      "title": {
+        "ru": "Постановка задач",
+        "en": "Lesson 1"
+      },
+      "description": {
+        "ru": "Практика: постановка задач",
+        "en": "Practice: Постановка задач"
+      },
+      "order": 1,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.work.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.work.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.work.001.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.work.001.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.work.001.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.work.001.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.work.001.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.work.001.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.work",
+      "lessonRef": "b1.work.002",
+      "title": {
+        "ru": "Статус-митинг",
+        "en": "Lesson 2"
+      },
+      "description": {
+        "ru": "Практика: статус-митинг",
+        "en": "Practice: Статус-митинг"
+      },
+      "order": 2,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.work.002.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.work.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.work.002.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.work.002.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.work.002.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.work.002.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.work.002.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.work.002.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.work",
+      "lessonRef": "b1.work.003",
+      "title": {
+        "ru": "Обратная связь",
+        "en": "Lesson 3"
+      },
+      "description": {
+        "ru": "Практика: обратная связь",
+        "en": "Practice: Обратная связь"
+      },
+      "order": 3,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.work.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.work.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.work.003.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.work.003.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.work.003.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.work.003.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.work.003.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.work.003.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.work",
+      "lessonRef": "b1.work.004",
+      "title": {
+        "ru": "Согласование сроков",
+        "en": "Lesson 4"
+      },
+      "description": {
+        "ru": "Практика: согласование сроков",
+        "en": "Practice: Согласование сроков"
+      },
+      "order": 4,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.work.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.work.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.work.004.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.work.004.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.work.004.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.work.004.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.work.004.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.work.004.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.work",
+      "lessonRef": "b1.work.005",
+      "title": {
+        "ru": "Презентация результатов",
+        "en": "Lesson 5"
+      },
+      "description": {
+        "ru": "Практика: презентация результатов",
+        "en": "Practice: Презентация результатов"
+      },
+      "order": 5,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.work.005.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.work.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.work.005.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.work.005.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.work.005.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.work.005.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.work.005.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.work.005.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.work",
+      "lessonRef": "b1.work.006",
+      "title": {
+        "ru": "Управление рисками",
+        "en": "Lesson 6"
+      },
+      "description": {
+        "ru": "Практика: управление рисками",
+        "en": "Practice: Управление рисками"
+      },
+      "order": 6,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.work.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.work.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.work.006.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.work.006.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.work.006.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.work.006.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.work.006.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.work.006.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.social",
+      "lessonRef": "b1.social.001",
+      "title": {
+        "ru": "Знакомство в сообществе",
+        "en": "Lesson 1"
+      },
+      "description": {
+        "ru": "Практика: знакомство в сообществе",
+        "en": "Practice: Знакомство в сообществе"
+      },
+      "order": 1,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.social.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.social.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.social.001.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.social.001.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.social.001.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.social.001.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.social.001.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.social.001.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.social",
+      "lessonRef": "b1.social.002",
+      "title": {
+        "ru": "Обсуждение планов",
+        "en": "Lesson 2"
+      },
+      "description": {
+        "ru": "Практика: обсуждение планов",
+        "en": "Practice: Обсуждение планов"
+      },
+      "order": 2,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.social.002.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.social.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.social.002.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.social.002.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.social.002.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.social.002.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.social.002.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.social.002.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.social",
+      "lessonRef": "b1.social.003",
+      "title": {
+        "ru": "Решение конфликта",
+        "en": "Lesson 3"
+      },
+      "description": {
+        "ru": "Практика: решение конфликта",
+        "en": "Practice: Решение конфликта"
+      },
+      "order": 3,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.social.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.social.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.social.003.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.social.003.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.social.003.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.social.003.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.social.003.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.social.003.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.social",
+      "lessonRef": "b1.social.004",
+      "title": {
+        "ru": "Вежливый отказ",
+        "en": "Lesson 4"
+      },
+      "description": {
+        "ru": "Практика: вежливый отказ",
+        "en": "Practice: Вежливый отказ"
+      },
+      "order": 4,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.social.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.social.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.social.004.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.social.004.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.social.004.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.social.004.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.social.004.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.social.004.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.social",
+      "lessonRef": "b1.social.005",
+      "title": {
+        "ru": "Совместные решения",
+        "en": "Lesson 5"
+      },
+      "description": {
+        "ru": "Практика: совместные решения",
+        "en": "Practice: Совместные решения"
+      },
+      "order": 5,
+      "published": false,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.social.005.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.social.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.social.005.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.social.005.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.social.005.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.social.005.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.social.005.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.social.005.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "b1.social",
+      "lessonRef": "b1.social.006",
+      "title": {
+        "ru": "Подведение итогов",
+        "en": "Lesson 6"
+      },
+      "description": {
+        "ru": "Практика: подведение итогов",
+        "en": "Practice: Подведение итогов"
+      },
+      "order": 6,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 45,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "b1.social.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери наиболее уместную фразу в ситуации",
+            "options": [
+              "Could you clarify that, please?",
+              "No idea.",
+              "Whatever.",
+              "Skip."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен вежливый и нейтральный тон",
+            "explanation": "Вежливый запрос на уточнение лучше всего подходит в рабочих и бытовых диалогах."
+          }
+        },
+        {
+          "ref": "b1.social.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ the details, please?",
+            "answer": "confirm",
+            "accept": [
+              "confirm",
+              "verify"
+            ],
+            "hint": "Глагол: подтвердить",
+            "explanation": "confirm/verify details — стандартная вежливая конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "b1.social.006.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "b1.social.006.listen",
+            "transcript": "The update will be ready by Friday.",
+            "translation": "Обновление будет готово к пятнице.",
+            "question": "К какому сроку будет готово обновление?",
+            "options": [
+              "By Tuesday",
+              "By Friday",
+              "By Sunday"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай день недели",
+            "explanation": "В аудио сказано by Friday."
+          }
+        },
+        {
+          "ref": "b1.social.006.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "deadline",
+                "right": "срок"
+              },
+              {
+                "left": "request",
+                "right": "запрос"
+              },
+              {
+                "left": "update",
+                "right": "обновление"
+              }
+            ],
+            "hint": "Сопоставь термины с переводом",
+            "explanation": "Это базовые термины для практических диалогов."
+          }
+        },
+        {
+          "ref": "b1.social.006.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "we",
+              "review",
+              "this",
+              "together",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "b1.social.006.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: 'Давайте уточним детали до встречи'",
+            "expected": [
+              "Let's clarify the details before the meeting",
+              "Let's confirm details before the meeting"
+            ],
+            "hint": "clarify/confirm + details",
+            "explanation": "Обе формулировки корректны и употребимы."
+          }
+        },
+        {
+          "ref": "b1.social.006.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: 'I will send the final version today.'",
+            "target": "I will send the final version today.",
+            "hint": "future + final version",
+            "explanation": "Фраза для подтверждения обязательства по срокам."
+          }
+        }
+      ]
+    }
+  ]
+}
