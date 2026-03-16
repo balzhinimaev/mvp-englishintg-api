@@ -175,7 +175,7 @@ Each lesson requires completion of the previous lesson in the same module.
 ### Implementation
 - **Field:** `UserLessonProgress.status` must be `"completed"`
 - **Guard:** `LessonPrerequisiteGuard` enforces prerequisites
-- **API:** `GET /content/lessons/:lessonRef/can-start` checks access
+- **API:** `GET /content/lessons/:lessonRef/check-prerequisite` checks access
 - **Exception:** First lesson in module (`order: 1`) is always accessible
 
 ### Error Response
@@ -246,12 +246,13 @@ npm run test:e2e test/a0-content-api.e2e-spec.ts
 ### New Endpoints
 The following endpoints support A0 content:
 
-- `GET /content/modules` - Returns A0 modules
-- `GET /content/modules/a0.basics/lessons` - A0 basics lessons
-- `GET /content/modules/a0.travel/lessons` - A0 travel lessons
-- `GET /content/lessons/{lessonRef}` - Lesson details with tasks
-- `GET /content/lessons/{lessonRef}/can-start` - Check prerequisites
-- `POST /progress/tasks/{taskRef}/attempt` - Submit task answer
+- `GET /content/v2/modules` - Returns published modules with availability/progress
+- `GET /content/v2/modules/{moduleRef}/lessons` - Lessons list for module
+- `GET /content/v2/lessons/{lessonRef}` - Lesson details with tasks
+- `GET /content/lessons/{lessonRef}/check-prerequisite` - Check prerequisites
+- `POST /progress/sessions/start` - Start learning session
+- `POST /progress/submit-answer` - Submit and validate task answer
+- `POST /progress/sessions/{sessionId}/end` - End learning session
 
 ### Enhanced DTOs
 New task types are fully supported:

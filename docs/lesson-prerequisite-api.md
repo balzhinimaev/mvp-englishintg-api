@@ -10,7 +10,7 @@ This API implements server-side validation to ensure users cannot start a lesson
 
 **Parameters:**
 - `lessonRef` (path): Lesson reference (e.g., a0.basics.001)
-- `userId` (query): User ID (required)
+- JWT user is resolved from `Authorization: Bearer <token>`
 - `lang` (query): Language code (optional, default: ru)
 
 **Responses:**
@@ -36,7 +36,7 @@ This API implements server-side validation to ensure users cannot start a lesson
 }
 ```
 
-**400 Bad Request - Invalid lessonRef format or missing userId**
+**400 Bad Request - Invalid lessonRef format**
 ```json
 {
   "error": "Invalid lessonRef format"
@@ -55,7 +55,7 @@ This API implements server-side validation to ensure users cannot start a lesson
 
 **Parameters:**
 - `lessonRef` (path): Lesson reference (e.g., a0.basics.001)
-- `userId` (query): User ID (required)
+- JWT user is resolved from `Authorization: Bearer <token>`
 
 **Responses:**
 
@@ -69,10 +69,11 @@ This API implements server-side validation to ensure users cannot start a lesson
 }
 ```
 
-**400 Bad Request - Missing userId**
+**401 Unauthorized - Missing/invalid JWT**
 ```json
 {
-  "error": "userId is required"
+  "statusCode": 401,
+  "message": "Unauthorized"
 }
 ```
 
@@ -94,19 +95,22 @@ This API implements server-side validation to ensure users cannot start a lesson
 
 ### Successful Access to First Lesson
 ```bash
-GET /content/lessons/a0.basics.001?userId=123456
+GET /content/lessons/a0.basics.001
+Authorization: Bearer <token>
 # Returns: 200 OK with lesson details
 ```
 
 ### Blocked Access to Second Lesson
 ```bash
-GET /content/lessons/a0.basics.002?userId=123456
+GET /content/lessons/a0.basics.002
+Authorization: Bearer <token>
 # Returns: 403 Forbidden with PREREQ_NOT_MET error
 ```
 
 ### Check Prerequisites
 ```bash
-GET /content/lessons/a0.basics.002/check-prerequisite?userId=123456
+GET /content/lessons/a0.basics.002/check-prerequisite
+Authorization: Bearer <token>
 # Returns: 200 OK with canStart: false
 ```
 
