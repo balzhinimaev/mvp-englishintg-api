@@ -1,0 +1,27 @@
+{
+  "positive": [
+    {"id":"A1-INTRO-001-CHOICE","taskRef":"a1.intro.001.t1","type":"choice","userAnswer":"0","expectedIsCorrect":true},
+    {"id":"A1-INTRO-002-MATCH","taskRef":"a1.intro.002.t4","type":"match","userAnswer":"[{\"left\":\"name\",\"right\":\"имя\"},{\"left\":\"country\",\"right\":\"страна\"},{\"left\":\"job\",\"right\":\"работа\"},{\"left\":\"team\",\"right\":\"команда\"}]","expectedIsCorrect":true},
+    {"id":"A1-INTRO-003-LISTEN","taskRef":"a1.intro.003.t3","type":"listen","userAnswer":"1","expectedIsCorrect":true},
+    {"id":"A1-INTRO-004-TRANSLATE","taskRef":"a1.intro.004.t5","type":"translate","userAnswer":"Do you have plans for the weekend?","expectedIsCorrect":true},
+    {"id":"A1-INTRO-006-SPEAK","taskRef":"a1.intro.006.t6","type":"speak","userAnswer":"It was nice talking to you, let's keep in touch.","expectedIsCorrect":true},
+
+    {"id":"A1-FOOD-001-GAP","taskRef":"a1.food.001.t2","type":"gap","userAnswer":"tea","expectedIsCorrect":true},
+    {"id":"A1-FOOD-002-TRANSLATE","taskRef":"a1.food.002.t5","type":"translate","userAnswer":"I'll have chicken with rice","expectedIsCorrect":true},
+    {"id":"A1-FOOD-003-ORDER","taskRef":"a1.food.003.t4","type":"order","userAnswer":"[\"I\",\"am\",\"allergic\",\"to\",\"nuts\"]","expectedIsCorrect":true},
+    {"id":"A1-FOOD-004-LISTEN","taskRef":"a1.food.004.t3","type":"listen","userAnswer":"1","expectedIsCorrect":true},
+    {"id":"A1-FOOD-005-SPEAK","taskRef":"a1.food.005.t6","type":"speak","userAnswer":"I need the order before 8 p.m.","expectedIsCorrect":true},
+
+    {"id":"A1-DIR-001-SPEAK","taskRef":"a1.directions.001.t6","type":"speak","userAnswer":"Excuse me, could you show me on the map?","expectedIsCorrect":true},
+    {"id":"A1-DIR-002-GAP","taskRef":"a1.directions.002.t2","type":"gap","userAnswer":"straight","expectedIsCorrect":true},
+    {"id":"A1-DIR-003-LISTEN","taskRef":"a1.directions.003.t3","type":"listen","userAnswer":"1","expectedIsCorrect":true},
+    {"id":"A1-DIR-006-MATCH","taskRef":"a1.directions.006.t4","type":"match","userAnswer":"[{\"left\":\"stop\",\"right\":\"остановка\"},{\"left\":\"station\",\"right\":\"станция\"},{\"left\":\"transfer\",\"right\":\"пересадка\"},{\"left\":\"route\",\"right\":\"маршрут\"}]","expectedIsCorrect":true},
+
+    {"id":"A1-ROUTINE-006-CHOICE","taskRef":"a1.routines.006.t1","type":"choice","userAnswer":"0","expectedIsCorrect":true}
+  ],
+  "negative": [
+    {"id":"A1-MATCH-BAD-FORMAT","taskRef":"a1.intro.002.t4","userAnswer":"not-json","expectedIsCorrect":false},
+    {"id":"A1-LISTEN-WRONG-INDEX","taskRef":"a1.directions.003.t3","userAnswer":"0","expectedIsCorrect":false},
+    {"id":"A1-ORDER-WRONG-ORDER","taskRef":"a1.food.003.t4","userAnswer":"[\"I\",\"allergic\",\"am\",\"to\",\"nuts\"]","expectedIsCorrect":false}
+  ]
+}
