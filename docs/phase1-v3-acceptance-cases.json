@@ -1,0 +1,24 @@
+{
+  "positive": [
+    {"id":"WORK-001-CHOICE","taskRef":"a2.work.001.t1","type":"choice","userAnswer":"0","expectedIsCorrect":true},
+    {"id":"WORK-001-ORDER","taskRef":"a2.work.001.t5","type":"order","userAnswer":"[\"Can\",\"we\",\"move\",\"this\",\"task\",\"to\",\"next\",\"week\",\"?\"]","expectedIsCorrect":true},
+    {"id":"WORK-002-LISTEN","taskRef":"a2.work.002.t3","type":"listen","userAnswer":"1","expectedIsCorrect":true},
+    {"id":"WORK-002-SPEAK","taskRef":"a2.work.002.t7","type":"speak","userAnswer":"I am blocked on API access and need help.","expectedIsCorrect":true},
+    {"id":"WORK-003-GAP","taskRef":"a2.work.003.t2","type":"gap","userAnswer":"needs","expectedIsCorrect":true},
+    {"id":"WORK-003-TRANSLATE","taskRef":"a2.work.003.t6","type":"translate","userAnswer":"Thanks for the comments, I will make revisions","expectedIsCorrect":true},
+    {"id":"WORK-004-MATCH","taskRef":"a2.work.004.t4","type":"match","userAnswer":"[{\"left\":\"deadline\",\"right\":\"дедлайн\"},{\"left\":\"extension\",\"right\":\"продление\"},{\"left\":\"dependency\",\"right\":\"зависимость\"},{\"left\":\"scope\",\"right\":\"объём работ\"}]","expectedIsCorrect":true},
+    {"id":"WORK-004-CHOICE","taskRef":"a2.work.004.t1","type":"choice","userAnswer":"0","expectedIsCorrect":true},
+    {"id":"WORK-005-LISTEN","taskRef":"a2.work.005.t3","type":"listen","userAnswer":"1","expectedIsCorrect":true},
+    {"id":"WORK-005-ORDER","taskRef":"a2.work.005.t5","type":"order","userAnswer":"[\"Let's\",\"escalate\",\"this\",\"issue\",\"to\",\"the\",\"project\",\"manager\"]","expectedIsCorrect":true},
+    {"id":"SERV-001-GAP","taskRef":"a2.services.001.t2","type":"gap","userAnswer":"transfer","expectedIsCorrect":true},
+    {"id":"SERV-001-TRANSLATE","taskRef":"a2.services.001.t6","type":"translate","userAnswer":"I want to open a new account","expectedIsCorrect":true},
+    {"id":"SERV-002-LISTEN","taskRef":"a2.services.002.t3","type":"listen","userAnswer":"1","expectedIsCorrect":true},
+    {"id":"SERV-003-ORDER","taskRef":"a2.services.003.t5","type":"order","userAnswer":"[\"The\",\"issue\",\"happens\",\"every\",\"time\",\"I\",\"upload\",\"a\",\"file\"]","expectedIsCorrect":true},
+    {"id":"SERV-005-SPEAK","taskRef":"a2.services.005.t7","type":"speak","userAnswer":"I confirm that the issue is fully resolved now.","expectedIsCorrect":true}
+  ],
+  "negative": [
+    {"id":"MATCH-BAD-FORMAT","taskRef":"a2.work.004.t4","userAnswer":"not-json","expectedIsCorrect":false},
+    {"id":"LISTEN-WRONG-INDEX","taskRef":"a2.services.002.t3","userAnswer":"0","expectedIsCorrect":false},
+    {"id":"ORDER-WRONG-ORDER","taskRef":"a2.work.001.t5","userAnswer":"[\"Can\",\"move\",\"we\",\"this\",\"task\",\"to\",\"next\",\"week\",\"?\"]","expectedIsCorrect":false}
+  ]
+}
