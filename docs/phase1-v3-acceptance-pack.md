@@ -132,6 +132,21 @@ C) **ORDER-WRONG-ORDER**
 
 ---
 
+## Automated runner
+
+```bash
+# Local API example
+BASE_URL=http://127.0.0.1:7788 \
+API_PREFIX='' \
+MONGODB_URI='mongodb://admin:***@127.0.0.1:27017/englishintg?authSource=admin&directConnection=true' \
+ACCEPTANCE_FORCE_PUBLISH=true \
+npm run accept:phase1:v3
+```
+
+Notes:
+- `ACCEPTANCE_FORCE_PUBLISH=true` временно выставляет `published=true` для `a2.work/a2.services` на время прогона и затем возвращает исходные значения.
+- Можно передать `JWT_TOKEN`, тогда тестовый пользователь не создаётся.
+
 ## Release gate (Phase1 v3)
 
 Go/No-Go критерии:
