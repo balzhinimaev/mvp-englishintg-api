@@ -12912,6 +12912,1094 @@
           }
         }
       ]
+    },
+    {
+      "moduleRef": "a1.intro",
+      "lessonRef": "a1.intro.009",
+      "title": {
+        "ru": "Поддержать диалог",
+        "en": "Keep a Conversation Going"
+      },
+      "description": {
+        "ru": "Уточняющие вопросы и естественные ответы",
+        "en": "Follow-up questions and natural replies"
+      },
+      "order": 9,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 38,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.intro.009.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: поддержать диалог?",
+            "options": [
+              "Could you help me continue this dialogue, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.intro.009.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to continue this dialogue ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.intro.009.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.intro.009.t3.audio",
+            "transcript": "I will continue the dialogue after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.intro.009.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "greeting",
+                "right": "приветствие"
+              },
+              {
+                "left": "question",
+                "right": "вопрос"
+              },
+              {
+                "left": "answer",
+                "right": "ответ"
+              },
+              {
+                "left": "plan",
+                "right": "план"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.intro.009.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "continue",
+              "this",
+              "dialogue",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.intro.009.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу continue это сегодня»",
+            "expected": [
+              "I can continue this today",
+              "I can continue it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.intro.009.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will continue this dialogue today.\"",
+            "target": "I will continue this dialogue today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.intro",
+      "lessonRef": "a1.intro.010",
+      "title": {
+        "ru": "Финальный checkpoint: знакомство",
+        "en": "Final Checkpoint: Introductions"
+      },
+      "description": {
+        "ru": "Итоговый сценарий знакомства и договорённостей",
+        "en": "Final scenario: introductions and making plans"
+      },
+      "order": 10,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.intro.010.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: финальный checkpoint: знакомство?",
+            "options": [
+              "Could you help me confirm this meeting, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.intro.010.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to confirm this meeting ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.intro.010.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.intro.010.t3.audio",
+            "transcript": "I will confirm the meeting after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.intro.010.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "greeting",
+                "right": "приветствие"
+              },
+              {
+                "left": "question",
+                "right": "вопрос"
+              },
+              {
+                "left": "answer",
+                "right": "ответ"
+              },
+              {
+                "left": "plan",
+                "right": "план"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.intro.010.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "confirm",
+              "this",
+              "meeting",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.intro.010.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу confirm это сегодня»",
+            "expected": [
+              "I can confirm this today",
+              "I can confirm it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.intro.010.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will confirm this meeting today.\"",
+            "target": "I will confirm this meeting today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.food",
+      "lessonRef": "a1.food.009",
+      "title": {
+        "ru": "Кейс: неверный заказ",
+        "en": "Case: Wrong Order"
+      },
+      "description": {
+        "ru": "Спокойно описать проблему и получить решение",
+        "en": "Describe issue calmly and get a resolution"
+      },
+      "order": 9,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 38,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.food.009.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: кейс: неверный заказ?",
+            "options": [
+              "Could you help me replace this order, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.food.009.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to replace this order ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.food.009.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.food.009.t3.audio",
+            "transcript": "I will replace the order after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.food.009.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "order",
+                "right": "заказ"
+              },
+              {
+                "left": "replacement",
+                "right": "замена"
+              },
+              {
+                "left": "bill",
+                "right": "счёт"
+              },
+              {
+                "left": "payment",
+                "right": "оплата"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.food.009.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "replace",
+              "this",
+              "order",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.food.009.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу replace это сегодня»",
+            "expected": [
+              "I can replace this today",
+              "I can replace it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.food.009.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will replace this order today.\"",
+            "target": "I will replace this order today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.food",
+      "lessonRef": "a1.food.010",
+      "title": {
+        "ru": "Финальный checkpoint: ресторан",
+        "en": "Final Checkpoint: Restaurant"
+      },
+      "description": {
+        "ru": "Полный диалог от заказа до оплаты",
+        "en": "Complete flow from ordering to payment"
+      },
+      "order": 10,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.food.010.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: финальный checkpoint: ресторан?",
+            "options": [
+              "Could you help me pay this bill, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.food.010.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to pay this bill ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.food.010.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.food.010.t3.audio",
+            "transcript": "I will pay the bill after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.food.010.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "order",
+                "right": "заказ"
+              },
+              {
+                "left": "replacement",
+                "right": "замена"
+              },
+              {
+                "left": "bill",
+                "right": "счёт"
+              },
+              {
+                "left": "payment",
+                "right": "оплата"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.food.010.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "pay",
+              "this",
+              "bill",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.food.010.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу pay это сегодня»",
+            "expected": [
+              "I can pay this today",
+              "I can pay it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.food.010.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will pay this bill today.\"",
+            "target": "I will pay this bill today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.directions",
+      "lessonRef": "a1.directions.009",
+      "title": {
+        "ru": "Сложный маршрут",
+        "en": "Complex Route"
+      },
+      "description": {
+        "ru": "Пересадки и уточнение времени прибытия",
+        "en": "Transfers and ETA clarification"
+      },
+      "order": 9,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 38,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.directions.009.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: сложный маршрут?",
+            "options": [
+              "Could you help me reach this destination, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.directions.009.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to reach this destination ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.directions.009.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.directions.009.t3.audio",
+            "transcript": "I will reach the destination after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.directions.009.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "route",
+                "right": "маршрут"
+              },
+              {
+                "left": "transfer",
+                "right": "пересадка"
+              },
+              {
+                "left": "arrival",
+                "right": "прибытие"
+              },
+              {
+                "left": "platform",
+                "right": "платформа"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.directions.009.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "reach",
+              "this",
+              "destination",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.directions.009.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу reach это сегодня»",
+            "expected": [
+              "I can reach this today",
+              "I can reach it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.directions.009.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will reach this destination today.\"",
+            "target": "I will reach this destination today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.directions",
+      "lessonRef": "a1.directions.010",
+      "title": {
+        "ru": "Финальный checkpoint: дорога",
+        "en": "Final Checkpoint: Directions"
+      },
+      "description": {
+        "ru": "Полный маршрут с пересадкой и прибытием",
+        "en": "Full route with transfer and arrival"
+      },
+      "order": 10,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.directions.010.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: финальный checkpoint: дорога?",
+            "options": [
+              "Could you help me confirm this route, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.directions.010.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to confirm this route ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.directions.010.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.directions.010.t3.audio",
+            "transcript": "I will confirm the route after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.directions.010.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "route",
+                "right": "маршрут"
+              },
+              {
+                "left": "transfer",
+                "right": "пересадка"
+              },
+              {
+                "left": "arrival",
+                "right": "прибытие"
+              },
+              {
+                "left": "platform",
+                "right": "платформа"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.directions.010.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "confirm",
+              "this",
+              "route",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.directions.010.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу confirm это сегодня»",
+            "expected": [
+              "I can confirm this today",
+              "I can confirm it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.directions.010.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will confirm this route today.\"",
+            "target": "I will confirm this route today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.routines",
+      "lessonRef": "a1.routines.009",
+      "title": {
+        "ru": "План на неделю",
+        "en": "Weekly Plan"
+      },
+      "description": {
+        "ru": "Распорядок, обязанности и встречи",
+        "en": "Routine, chores and appointments"
+      },
+      "order": 9,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 38,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.routines.009.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: план на неделю?",
+            "options": [
+              "Could you help me plan this week, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.routines.009.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to plan this week ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.routines.009.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.routines.009.t3.audio",
+            "transcript": "I will plan the week after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.routines.009.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "routine",
+                "right": "распорядок"
+              },
+              {
+                "left": "schedule",
+                "right": "расписание"
+              },
+              {
+                "left": "habit",
+                "right": "привычка"
+              },
+              {
+                "left": "task",
+                "right": "задача"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.routines.009.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "plan",
+              "this",
+              "week",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.routines.009.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу plan это сегодня»",
+            "expected": [
+              "I can plan this today",
+              "I can plan it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.routines.009.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will plan this week today.\"",
+            "target": "I will plan this week today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.routines",
+      "lessonRef": "a1.routines.010",
+      "title": {
+        "ru": "Финальный checkpoint: день и неделя",
+        "en": "Final Checkpoint: Day & Week"
+      },
+      "description": {
+        "ru": "Итоговый сценарий daily routine",
+        "en": "Final daily routine scenario"
+      },
+      "order": 10,
+      "published": false,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.routines.010.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая фраза лучше подходит для темы: финальный checkpoint: день и неделя?",
+            "options": [
+              "Could you help me manage this schedule, please?",
+              "No idea.",
+              "Skip this.",
+              "Maybe later."
+            ],
+            "correctIndex": 0,
+            "hint": "Выбери вежливую и понятную фразу",
+            "explanation": "На A1 важны простые и вежливые конструкции."
+          }
+        },
+        {
+          "ref": "a1.routines.010.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need to manage this schedule ____ today.",
+            "answer": "properly",
+            "accept": [
+              "properly",
+              "right"
+            ],
+            "hint": "Наречие качества действия",
+            "explanation": "properly/right делает фразу естественной и понятной.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.routines.010.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.routines.010.t3.audio",
+            "transcript": "I will manage the schedule after work.",
+            "translation": "Я сделаю это после работы.",
+            "question": "Когда человек выполнит действие?",
+            "options": [
+              "In the morning",
+              "After work",
+              "Next week"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай временной маркер",
+            "explanation": "В аудио звучит after work."
+          }
+        },
+        {
+          "ref": "a1.routines.010.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "routine",
+                "right": "распорядок"
+              },
+              {
+                "left": "schedule",
+                "right": "расписание"
+              },
+              {
+                "left": "habit",
+                "right": "привычка"
+              },
+              {
+                "left": "task",
+                "right": "задача"
+              }
+            ],
+            "hint": "Сопоставь лексику темы",
+            "explanation": "Повтор ключевых слов помогает закреплению."
+          }
+        },
+        {
+          "ref": "a1.routines.010.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "you",
+              "help",
+              "me",
+              "manage",
+              "this",
+              "schedule",
+              "?"
+            ],
+            "hint": "Собери вопрос в правильном порядке"
+          }
+        },
+        {
+          "ref": "a1.routines.010.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я могу manage это сегодня»",
+            "expected": [
+              "I can manage this today",
+              "I can manage it today"
+            ],
+            "hint": "Используй can + verb + today",
+            "explanation": "Базовый шаблон намерения на сегодня."
+          }
+        },
+        {
+          "ref": "a1.routines.010.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I will manage this schedule today.\"",
+            "target": "I will manage this schedule today.",
+            "hint": "Короткая уверенная фраза",
+            "explanation": "Практика произношения в прикладном контексте."
+          }
+        }
+      ]
     }
   ]
 }
