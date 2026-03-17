@@ -536,7 +536,7 @@
         "ru": "Сумки, жидкости, сканеры",
         "en": "Bags, liquids, scanners"
       },
-      "order": 3,
+      "order": 1,
       "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
@@ -652,7 +652,7 @@
         "ru": "Вопросы паспортного контроля",
         "en": "Passport control questions"
       },
-      "order": 4,
+      "order": 2,
       "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
@@ -767,7 +767,7 @@
         "ru": "Получение, утерянный багаж, таможня",
         "en": "Claim, lost luggage, customs"
       },
-      "order": 5,
+      "order": 3,
       "published": true,
       "estimatedMinutes": 14,
       "type": "conversation",
