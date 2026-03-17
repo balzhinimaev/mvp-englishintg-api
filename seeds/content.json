@@ -50,7 +50,7 @@
         "social"
       ],
       "order": 1,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.food",
@@ -68,7 +68,7 @@
         "daily"
       ],
       "order": 2,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.directions",
@@ -86,7 +86,7 @@
         "transport"
       ],
       "order": 3,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.routines",
@@ -104,7 +104,7 @@
         "routine"
       ],
       "order": 4,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.workplace",
@@ -123,7 +123,7 @@
         "office"
       ],
       "order": 5,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.shopping",
@@ -142,7 +142,7 @@
         "money"
       ],
       "order": 6,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.health",
@@ -161,7 +161,7 @@
         "daily"
       ],
       "order": 7,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.travel",
@@ -180,7 +180,7 @@
         "transport"
       ],
       "order": 8,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.communication",
@@ -199,7 +199,7 @@
         "social"
       ],
       "order": 9,
-      "published": false
+      "published": true
     },
     {
       "moduleRef": "a1.digital",
@@ -218,7 +218,7 @@
         "tech"
       ],
       "order": 10,
-      "published": false
+      "published": true
     }
   ],
   "lessons": [
@@ -994,7 +994,7 @@
         "en": "Formal and informal greetings"
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -1098,7 +1098,7 @@
         "en": "Name, country, profession"
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "easy",
@@ -1215,7 +1215,7 @@
         "en": "City, work, interests follow-up"
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "conversation",
       "difficulty": "medium",
@@ -1323,7 +1323,7 @@
         "en": "Weather, weekend plans, light topics"
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -1442,7 +1442,7 @@
         "en": "Inviting and responding politely"
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "medium",
@@ -1551,7 +1551,7 @@
         "en": "Integrating greeting, small talk and invitation"
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -1668,7 +1668,7 @@
         "en": "Menu, drinks, polite requests"
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "easy",
@@ -1776,7 +1776,7 @@
         "en": "Choosing a dish and checking ingredients"
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "easy",
@@ -1895,7 +1895,7 @@
         "en": "How to communicate food restrictions"
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -2000,7 +2000,7 @@
         "en": "Bill, payment methods, thank-you"
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -2118,7 +2118,7 @@
         "en": "Address, timing, delivery issues"
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -2225,7 +2225,7 @@
         "en": "Full flow: order, request, payment"
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -2344,7 +2344,7 @@
         "en": "Finding a place in an unfamiliar area"
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "easy",
@@ -2450,7 +2450,7 @@
         "en": "Turns, landmarks and sequence"
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "easy",
@@ -2568,7 +2568,7 @@
         "en": "Buying tickets and choosing lines"
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "conversation",
       "difficulty": "medium",
@@ -2675,7 +2675,7 @@
         "en": "Pickup point, route and payment"
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -2793,7 +2793,7 @@
         "en": "Platforms, transfer, departure time"
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "medium",
@@ -2902,7 +2902,7 @@
         "en": "From asking directions to arrival"
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -3020,7 +3020,7 @@
         "en": "Simple morning actions and sequence"
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -3126,7 +3126,7 @@
         "en": "Meeting times and daily tasks"
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "easy",
@@ -3244,7 +3244,7 @@
         "en": "Shopping list, quantities, price"
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "conversation",
       "difficulty": "medium",
@@ -3351,7 +3351,7 @@
         "en": "Basic symptoms and medicine request"
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -3468,7 +3468,7 @@
         "en": "Daily household tasks"
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "medium",
@@ -3575,7 +3575,7 @@
         "en": "Integrating routines, shopping and service tasks"
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -3694,7 +3694,7 @@
         "en": "Consolidation of introductions, follow-up questions and invitations"
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "medium",
@@ -3828,7 +3828,7 @@
         "en": "Checkpoint of complete first-contact scenario"
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "hard",
@@ -3960,7 +3960,7 @@
         "en": "Consolidation of full cafe flow: order, clarification, bill"
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "medium",
@@ -4092,7 +4092,7 @@
         "en": "Checkpoint: wrong order and polite resolution request"
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "hard",
@@ -4227,7 +4227,7 @@
         "en": "Consolidation of route requests, platforms and transfers"
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "medium",
@@ -4359,7 +4359,7 @@
         "en": "Checkpoint case: from asking directions to arrival"
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "hard",
@@ -4494,7 +4494,7 @@
         "en": "Consolidation of workday, shopping and home routine"
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "medium",
@@ -4628,7 +4628,7 @@
         "en": "Checkpoint lesson covering the whole day from morning to evening"
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "grammar",
       "difficulty": "hard",
@@ -4765,7 +4765,7 @@
         "en": "Lesson topic: Office greetings. Practice basic phrases."
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -4901,7 +4901,7 @@
         "en": "Lesson topic: Introduce your role. Practice basic phrases."
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -5037,7 +5037,7 @@
         "en": "Lesson topic: Workspace and tools. Practice basic phrases."
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "easy",
@@ -5173,7 +5173,7 @@
         "en": "Lesson topic: Meeting schedule. Practice basic phrases."
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -5309,7 +5309,7 @@
         "en": "Lesson topic: Daily tasks. Practice basic phrases."
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -5445,7 +5445,7 @@
         "en": "Lesson topic: Office messages. Practice basic phrases."
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -5581,7 +5581,7 @@
         "en": "Lesson topic: Asking for help. Practice basic phrases."
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -5717,7 +5717,7 @@
         "en": "Lesson topic: Work status update. Practice basic phrases."
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -5853,7 +5853,7 @@
         "en": "Lesson topic: Review: office day. Practice basic phrases."
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "hard",
@@ -5989,7 +5989,7 @@
         "en": "Lesson topic: Checkpoint: office dialogue. Practice basic phrases."
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -6125,7 +6125,7 @@
         "en": "Lesson topic: Finding an item. Practice basic phrases."
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -6261,7 +6261,7 @@
         "en": "Lesson topic: Asking the price. Practice basic phrases."
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -6397,7 +6397,7 @@
         "en": "Lesson topic: Size and color. Practice basic phrases."
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "easy",
@@ -6533,7 +6533,7 @@
         "en": "Lesson topic: Paying at checkout. Practice basic phrases."
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -6669,7 +6669,7 @@
         "en": "Lesson topic: Discounts and offers. Practice basic phrases."
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -6805,7 +6805,7 @@
         "en": "Lesson topic: Returning an item. Practice basic phrases."
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -6941,7 +6941,7 @@
         "en": "Lesson topic: Online order basics. Practice basic phrases."
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -7077,7 +7077,7 @@
         "en": "Lesson topic: Delivery status. Practice basic phrases."
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -7213,7 +7213,7 @@
         "en": "Lesson topic: Review: shopping flow. Practice basic phrases."
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "hard",
@@ -7349,7 +7349,7 @@
         "en": "Lesson topic: Checkpoint: issue resolution. Practice basic phrases."
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -7485,7 +7485,7 @@
         "en": "Lesson topic: Describing how you feel. Practice basic phrases."
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -7621,7 +7621,7 @@
         "en": "Lesson topic: Booking a doctor visit. Practice basic phrases."
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -7757,7 +7757,7 @@
         "en": "Lesson topic: At the doctor. Practice basic phrases."
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "easy",
@@ -7893,7 +7893,7 @@
         "en": "Lesson topic: At the pharmacy. Practice basic phrases."
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -8029,7 +8029,7 @@
         "en": "Lesson topic: Dosage instructions. Practice basic phrases."
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -8165,7 +8165,7 @@
         "en": "Lesson topic: Cold and fever. Practice basic phrases."
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -8301,7 +8301,7 @@
         "en": "Lesson topic: Pain and discomfort. Practice basic phrases."
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -8437,7 +8437,7 @@
         "en": "Lesson topic: Doctor advice. Practice basic phrases."
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -8573,7 +8573,7 @@
         "en": "Lesson topic: Review: health routine. Practice basic phrases."
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "hard",
@@ -8709,7 +8709,7 @@
         "en": "Lesson topic: Checkpoint: doctor dialogue. Practice basic phrases."
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -8845,7 +8845,7 @@
         "en": "Lesson topic: At the airport. Practice basic phrases."
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -8981,7 +8981,7 @@
         "en": "Lesson topic: Check-in basics. Practice basic phrases."
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -9117,7 +9117,7 @@
         "en": "Lesson topic: Security check. Practice basic phrases."
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "easy",
@@ -9253,7 +9253,7 @@
         "en": "Lesson topic: Boarding process. Practice basic phrases."
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -9389,7 +9389,7 @@
         "en": "Lesson topic: At the hotel. Practice basic phrases."
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -9525,7 +9525,7 @@
         "en": "Lesson topic: Public transport. Practice basic phrases."
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -9661,7 +9661,7 @@
         "en": "Lesson topic: Asking directions. Practice basic phrases."
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -9797,7 +9797,7 @@
         "en": "Lesson topic: Travel problem. Practice basic phrases."
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -9933,7 +9933,7 @@
         "en": "Lesson topic: Review: travel day. Practice basic phrases."
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "hard",
@@ -10069,7 +10069,7 @@
         "en": "Lesson topic: Checkpoint: full route. Practice basic phrases."
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -10205,7 +10205,7 @@
         "en": "Lesson topic: Starting a conversation. Practice basic phrases."
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -10341,7 +10341,7 @@
         "en": "Lesson topic: Weekend plans. Practice basic phrases."
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -10477,7 +10477,7 @@
         "en": "Lesson topic: Invitations and replies. Practice basic phrases."
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "easy",
@@ -10613,7 +10613,7 @@
         "en": "Lesson topic: Polite requests. Practice basic phrases."
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -10749,7 +10749,7 @@
         "en": "Lesson topic: Agreeing on time. Practice basic phrases."
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -10885,7 +10885,7 @@
         "en": "Lesson topic: Phone call basics. Practice basic phrases."
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -11021,7 +11021,7 @@
         "en": "Lesson topic: Messaging basics. Practice basic phrases."
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -11157,7 +11157,7 @@
         "en": "Lesson topic: Clarifying misunderstanding. Practice basic phrases."
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -11293,7 +11293,7 @@
         "en": "Lesson topic: Review: communication flow. Practice basic phrases."
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "hard",
@@ -11429,7 +11429,7 @@
         "en": "Lesson topic: Checkpoint: social dialogue. Practice basic phrases."
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -11565,7 +11565,7 @@
         "en": "Lesson topic: Creating an account. Practice basic phrases."
       },
       "order": 1,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -11701,7 +11701,7 @@
         "en": "Lesson topic: Logging in. Practice basic phrases."
       },
       "order": 2,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "vocabulary",
       "difficulty": "easy",
@@ -11837,7 +11837,7 @@
         "en": "Lesson topic: App settings. Practice basic phrases."
       },
       "order": 3,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "easy",
@@ -11973,7 +11973,7 @@
         "en": "Lesson topic: Notifications. Practice basic phrases."
       },
       "order": 4,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -12109,7 +12109,7 @@
         "en": "Lesson topic: Updating the app. Practice basic phrases."
       },
       "order": 5,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -12245,7 +12245,7 @@
         "en": "Lesson topic: Login issue. Practice basic phrases."
       },
       "order": 6,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "medium",
@@ -12381,7 +12381,7 @@
         "en": "Lesson topic: Contacting support. Practice basic phrases."
       },
       "order": 7,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "medium",
@@ -12517,7 +12517,7 @@
         "en": "Lesson topic: Online safety basics. Practice basic phrases."
       },
       "order": 8,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 13,
       "type": "conversation",
       "difficulty": "medium",
@@ -12653,7 +12653,7 @@
         "en": "Lesson topic: Review: digital routine. Practice basic phrases."
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 11,
       "type": "grammar",
       "difficulty": "hard",
@@ -12789,7 +12789,7 @@
         "en": "Lesson topic: Checkpoint: support dialogue. Practice basic phrases."
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -12925,7 +12925,7 @@
         "en": "Follow-up questions and natural replies"
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "hard",
@@ -13061,7 +13061,7 @@
         "en": "Final scenario: introductions and making plans"
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -13197,7 +13197,7 @@
         "en": "Describe issue calmly and get a resolution"
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "hard",
@@ -13333,7 +13333,7 @@
         "en": "Complete flow from ordering to payment"
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -13469,7 +13469,7 @@
         "en": "Transfers and ETA clarification"
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "hard",
@@ -13605,7 +13605,7 @@
         "en": "Full route with transfer and arrival"
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
@@ -13741,7 +13741,7 @@
         "en": "Routine, chores and appointments"
       },
       "order": 9,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "conversation",
       "difficulty": "hard",
@@ -13877,7 +13877,7 @@
         "en": "Final daily routine scenario"
       },
       "order": 10,
-      "published": false,
+      "published": true,
       "estimatedMinutes": 12,
       "type": "grammar",
       "difficulty": "hard",
