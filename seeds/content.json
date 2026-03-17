@@ -3567,6 +3567,1077 @@
           }
         }
       ]
+    },
+    {
+      "moduleRef": "a1.intro",
+      "lessonRef": "a1.intro.007",
+      "title": {
+        "ru": "Review: знакомства и small talk",
+        "en": "Review: Introductions & Small Talk"
+      },
+      "description": {
+        "ru": "Повтор ключевых паттернов знакомства, вопросов и приглашений",
+        "en": "Consolidation of introductions, follow-up questions and invitations"
+      },
+      "order": 7,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.intro.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "Какая реплика лучше всего продолжает знакомство после приветствия?",
+            "options": [
+              "What do you do?",
+              "Goodbye now.",
+              "No questions.",
+              "Who are you exactly?"
+            ],
+            "correctIndex": 0,
+            "hint": "После приветствия обычно задают нейтральный вопрос",
+            "explanation": "What do you do? — естественный шаг после короткого представления."
+          }
+        },
+        {
+          "ref": "a1.intro.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "Nice to meet you, let's ____ in touch.",
+            "answer": "keep",
+            "accept": [
+              "keep"
+            ],
+            "hint": "Фраза завершения контакта",
+            "explanation": "keep in touch — классический вежливый финал знакомства.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.intro.007.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.intro.007.t3.review",
+            "transcript": "Hi, I am Kate. I work in design and live in Prague.",
+            "translation": "Привет, я Кейт. Я работаю в дизайне и живу в Праге.",
+            "question": "Где живёт Кейт?",
+            "options": [
+              "Berlin",
+              "Prague",
+              "Warsaw"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай город после live in",
+            "explanation": "В записи указан Prague."
+          }
+        },
+        {
+          "ref": "a1.intro.007.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "greeting",
+                "right": "приветствие"
+              },
+              {
+                "left": "introduce",
+                "right": "представиться"
+              },
+              {
+                "left": "invite",
+                "right": "пригласить"
+              },
+              {
+                "left": "reply",
+                "right": "ответить"
+              }
+            ],
+            "hint": "Ключевые действия диалога",
+            "explanation": "Сопоставь действия базового social flow."
+          }
+        },
+        {
+          "ref": "a1.intro.007.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Would",
+              "you",
+              "like",
+              "to",
+              "grab",
+              "coffee",
+              "after",
+              "work",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a1.intro.007.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Рад знакомству, увидимся в пятницу»",
+            "expected": [
+              "Nice to meet you, see you on Friday"
+            ],
+            "hint": "nice to meet you + see you on Friday",
+            "explanation": "Связка приветствия и договорённости о следующем контакте."
+          }
+        },
+        {
+          "ref": "a1.intro.007.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Hi, I am Alex. Nice to meet you.\"",
+            "target": "Hi, I am Alex. Nice to meet you.",
+            "hint": "name + nice to meet you",
+            "explanation": "Короткая и полная самопрезентация для A1."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.intro",
+      "lessonRef": "a1.intro.008",
+      "title": {
+        "ru": "Checkpoint: первый контакт",
+        "en": "Checkpoint: First Contact"
+      },
+      "description": {
+        "ru": "Контрольный урок по полному сценарию первого общения",
+        "en": "Checkpoint of complete first-contact scenario"
+      },
+      "order": 8,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.intro.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "Что лучше сделать перед приглашением на встречу?",
+            "options": [
+              "Уточнить контекст и интересы собеседника",
+              "Сразу назначить время без вопросов",
+              "Завершить разговор",
+              "Не отвечать"
+            ],
+            "correctIndex": 0,
+            "hint": "Сначала контекст, потом предложение",
+            "explanation": "Small talk и уточнения повышают вероятность позитивного ответа."
+          }
+        },
+        {
+          "ref": "a1.intro.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you ____ yourself briefly?",
+            "answer": "introduce",
+            "accept": [
+              "introduce"
+            ],
+            "hint": "Глагол: представить",
+            "explanation": "introduce yourself — стандартная просьба в знакомстве.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.intro.008.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.intro.008.t3.checkpoint",
+            "transcript": "Thanks for inviting me, I can join at seven.",
+            "translation": "Спасибо за приглашение, я смогу присоединиться в семь.",
+            "question": "Во сколько человек может присоединиться?",
+            "options": [
+              "At six",
+              "At seven",
+              "At eight"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай время после can join",
+            "explanation": "В записи: at seven."
+          }
+        },
+        {
+          "ref": "a1.intro.008.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "small talk",
+                "right": "неформальная беседа"
+              },
+              {
+                "left": "interest",
+                "right": "интерес"
+              },
+              {
+                "left": "weekend",
+                "right": "выходные"
+              },
+              {
+                "left": "meetup",
+                "right": "встреча"
+              }
+            ],
+            "hint": "Термины первого общения",
+            "explanation": "Слова, которые часто встречаются в диалоге знакомства."
+          }
+        },
+        {
+          "ref": "a1.intro.008.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "It",
+              "was",
+              "nice",
+              "talking",
+              "to",
+              "you"
+            ]
+          }
+        },
+        {
+          "ref": "a1.intro.008.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Спасибо за приглашение, я приду в семь»",
+            "expected": [
+              "Thanks for the invitation, I will come at seven",
+              "Thanks for inviting me, I can come at seven"
+            ],
+            "hint": "thanks + come at seven",
+            "explanation": "Вежливое подтверждение участия с временем."
+          }
+        },
+        {
+          "ref": "a1.intro.008.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"It was nice talking to you, see you soon.\"",
+            "target": "It was nice talking to you, see you soon.",
+            "hint": "nice talking + see you soon",
+            "explanation": "Финальный вежливый выход из диалога."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.food",
+      "lessonRef": "a1.food.007",
+      "title": {
+        "ru": "Review: заказ и оплата",
+        "en": "Review: Ordering and Payment"
+      },
+      "description": {
+        "ru": "Повтор полного сценария кафе: заказ, уточнение, счёт",
+        "en": "Consolidation of full cafe flow: order, clarification, bill"
+      },
+      "order": 7,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.food.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как лучше попросить счёт в конце ужина?",
+            "options": [
+              "Could we have the bill, please?",
+              "Bill now quickly.",
+              "No bill needed.",
+              "You pay."
+            ],
+            "correctIndex": 0,
+            "hint": "Вежливая формула",
+            "explanation": "Could we have the bill, please? — стандарт в ресторане."
+          }
+        },
+        {
+          "ref": "a1.food.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "Could you make it ____ spicy, please?",
+            "answer": "less",
+            "accept": [
+              "less"
+            ],
+            "hint": "Слово для смягчения вкуса",
+            "explanation": "less spicy — частый запрос по блюду.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.food.007.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.food.007.t3.review",
+            "transcript": "The soup is great, but I asked for no onions.",
+            "translation": "Суп отличный, но я просил без лука.",
+            "question": "Что не должно быть в блюде?",
+            "options": [
+              "Cheese",
+              "Onions",
+              "Pepper"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай no ...",
+            "explanation": "В записи: no onions."
+          }
+        },
+        {
+          "ref": "a1.food.007.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "menu",
+                "right": "меню"
+              },
+              {
+                "left": "bill",
+                "right": "счёт"
+              },
+              {
+                "left": "tip",
+                "right": "чаевые"
+              },
+              {
+                "left": "allergy",
+                "right": "аллергия"
+              }
+            ],
+            "hint": "Ключевые понятия ресторана",
+            "explanation": "Словарь полного ресторанного сценария."
+          }
+        },
+        {
+          "ref": "a1.food.007.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Can",
+              "I",
+              "pay",
+              "by",
+              "card",
+              "?"
+            ]
+          }
+        },
+        {
+          "ref": "a1.food.007.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Можно без сахара и соус отдельно?»",
+            "expected": [
+              "Could I have no sugar and sauce on the side?",
+              "No sugar and sauce on the side, please"
+            ],
+            "hint": "no sugar + on the side",
+            "explanation": "Сочетание двух типичных уточнений к заказу."
+          }
+        },
+        {
+          "ref": "a1.food.007.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Everything was delicious, thank you for the service.\"",
+            "target": "Everything was delicious, thank you for the service.",
+            "hint": "delicious + thank you",
+            "explanation": "Позитивная финальная реплика после ужина."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.food",
+      "lessonRef": "a1.food.008",
+      "title": {
+        "ru": "Checkpoint: сервисный кейс",
+        "en": "Checkpoint: Food Service Case"
+      },
+      "description": {
+        "ru": "Контрольный кейс: ошибка в заказе, корректный запрос решения",
+        "en": "Checkpoint: wrong order and polite resolution request"
+      },
+      "order": 8,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.food.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "Что сделать первым при неверном заказе?",
+            "options": [
+              "Спокойно описать проблему",
+              "Повысить голос",
+              "Уйти молча",
+              "Игнорировать ошибку"
+            ],
+            "correctIndex": 0,
+            "hint": "Сначала факт, потом запрос",
+            "explanation": "Нейтральное описание проблемы ускоряет решение."
+          }
+        },
+        {
+          "ref": "a1.food.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "My order is ____, I asked for chicken, not fish.",
+            "answer": "wrong",
+            "accept": [
+              "wrong",
+              "incorrect"
+            ],
+            "hint": "Прилагательное про ошибку",
+            "explanation": "wrong/incorrect order — ясная формулировка проблемы.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.food.008.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.food.008.t3.checkpoint",
+            "transcript": "We can replace your dish in ten minutes.",
+            "translation": "Мы можем заменить ваше блюдо через 10 минут.",
+            "question": "Что предлагает ресторан?",
+            "options": [
+              "Refund only",
+              "Replace dish in ten minutes",
+              "No solution"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай replace + time",
+            "explanation": "В записи: replace your dish in ten minutes."
+          }
+        },
+        {
+          "ref": "a1.food.008.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "replace",
+                "right": "заменить"
+              },
+              {
+                "left": "refund",
+                "right": "возврат"
+              },
+              {
+                "left": "receipt",
+                "right": "чек"
+              },
+              {
+                "left": "delay",
+                "right": "задержка"
+              }
+            ],
+            "hint": "Слова для решения проблемы",
+            "explanation": "Термины обработки претензии в сервисе."
+          }
+        },
+        {
+          "ref": "a1.food.008.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "I",
+              "am",
+              "sorry",
+              ",",
+              "there",
+              "was",
+              "a",
+              "mistake"
+            ]
+          }
+        },
+        {
+          "ref": "a1.food.008.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Спасибо, замена подойдёт»",
+            "expected": [
+              "Thank you, a replacement is fine",
+              "Thanks, replacement works for me"
+            ],
+            "hint": "replacement is fine",
+            "explanation": "Короткий и вежливый ответ на предложенное решение."
+          }
+        },
+        {
+          "ref": "a1.food.008.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Could you please replace this order?\"",
+            "target": "Could you please replace this order?",
+            "hint": "please replace this order",
+            "explanation": "Ясная просьба о замене заказа."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.directions",
+      "lessonRef": "a1.directions.007",
+      "title": {
+        "ru": "Review: маршрут и пересадки",
+        "en": "Review: Route and Transfers"
+      },
+      "description": {
+        "ru": "Повтор запроса маршрута, платформ и пересадок",
+        "en": "Consolidation of route requests, platforms and transfers"
+      },
+      "order": 7,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.directions.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как лучше уточнить нужную платформу?",
+            "options": [
+              "Which platform does the train leave from?",
+              "Platform maybe?",
+              "No platform.",
+              "Any train is fine."
+            ],
+            "correctIndex": 0,
+            "hint": "Полная формула вопроса",
+            "explanation": "Which platform ... leave from? — точный транспортный вопрос."
+          }
+        },
+        {
+          "ref": "a1.directions.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "You need to ____ at the next station.",
+            "answer": "change",
+            "accept": [
+              "change",
+              "transfer"
+            ],
+            "hint": "Глагол пересадки",
+            "explanation": "change/transfer at ... — стандартная транспортная конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.directions.007.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.directions.007.t3.review",
+            "transcript": "Take bus twelve, then walk for three minutes.",
+            "translation": "Сядьте на автобус 12, затем идите три минуты.",
+            "question": "Что делать после автобуса?",
+            "options": [
+              "Take taxi",
+              "Walk for three minutes",
+              "Wait at stop"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай then ...",
+            "explanation": "В записи: then walk for three minutes."
+          }
+        },
+        {
+          "ref": "a1.directions.007.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "platform",
+                "right": "платформа"
+              },
+              {
+                "left": "transfer",
+                "right": "пересадка"
+              },
+              {
+                "left": "stop",
+                "right": "остановка"
+              },
+              {
+                "left": "landmark",
+                "right": "ориентир"
+              }
+            ],
+            "hint": "Термины навигации",
+            "explanation": "Ключевые слова для объяснения маршрутов."
+          }
+        },
+        {
+          "ref": "a1.directions.007.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Turn",
+              "right",
+              "after",
+              "the",
+              "bank"
+            ]
+          }
+        },
+        {
+          "ref": "a1.directions.007.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Это правильная линия до аэропорта?»",
+            "expected": [
+              "Is this the right line to the airport?",
+              "Does this line go to the airport?"
+            ],
+            "hint": "right line / go to airport",
+            "explanation": "Обе формулировки уместны при уточнении маршрута."
+          }
+        },
+        {
+          "ref": "a1.directions.007.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Excuse me, how do I get to Central Station?\"",
+            "target": "Excuse me, how do I get to Central Station?",
+            "hint": "how do I get to",
+            "explanation": "Базовый и вежливый старт диалога о маршруте."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.directions",
+      "lessonRef": "a1.directions.008",
+      "title": {
+        "ru": "Checkpoint: добраться до точки",
+        "en": "Checkpoint: Reach the Destination"
+      },
+      "description": {
+        "ru": "Контрольный кейс: от запроса дороги до прибытия",
+        "en": "Checkpoint case: from asking directions to arrival"
+      },
+      "order": 8,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.directions.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как проверить, что вы выходите на нужной остановке?",
+            "options": [
+              "Is this my stop?",
+              "Where am I?",
+              "No stop now.",
+              "Never stop."
+            ],
+            "correctIndex": 0,
+            "hint": "Короткий проверочный вопрос",
+            "explanation": "Is this my stop? — самый полезный quick-check в транспорте."
+          }
+        },
+        {
+          "ref": "a1.directions.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "Please show me the route ____ the map.",
+            "answer": "on",
+            "accept": [
+              "on"
+            ],
+            "hint": "Предлог с map",
+            "explanation": "on the map — устойчивое выражение.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.directions.008.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.directions.008.t3.checkpoint",
+            "transcript": "Get off here and walk straight for five minutes.",
+            "translation": "Выйдите здесь и идите прямо пять минут.",
+            "question": "Сколько нужно идти пешком?",
+            "options": [
+              "Three minutes",
+              "Five minutes",
+              "Ten minutes"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай число minutes",
+            "explanation": "В записи: five minutes."
+          }
+        },
+        {
+          "ref": "a1.directions.008.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "left",
+                "right": "налево"
+              },
+              {
+                "left": "right",
+                "right": "направо"
+              },
+              {
+                "left": "straight",
+                "right": "прямо"
+              },
+              {
+                "left": "across",
+                "right": "через"
+              }
+            ],
+            "hint": "Базовые ориентиры направления",
+            "explanation": "Команды движения для коротких маршрутов."
+          }
+        },
+        {
+          "ref": "a1.directions.008.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "Go",
+              "straight",
+              ",",
+              "then",
+              "turn",
+              "left",
+              "at",
+              "the",
+              "lights"
+            ]
+          }
+        },
+        {
+          "ref": "a1.directions.008.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Спасибо, я уже почти на месте»",
+            "expected": [
+              "Thanks, I am almost there",
+              "Thank you, I am almost there"
+            ],
+            "hint": "almost there",
+            "explanation": "Естественная реплика при завершении маршрута."
+          }
+        },
+        {
+          "ref": "a1.directions.008.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Thank you, your directions were very helpful.\"",
+            "target": "Thank you, your directions were very helpful.",
+            "hint": "directions were helpful",
+            "explanation": "Вежливое завершение диалога о дороге."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.routines",
+      "lessonRef": "a1.routines.007",
+      "title": {
+        "ru": "Review: распорядок и покупки",
+        "en": "Review: Routines and Errands"
+      },
+      "description": {
+        "ru": "Повтор действий дня: работа, покупки, дом",
+        "en": "Consolidation of workday, shopping and home routine"
+      },
+      "order": 7,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.routines.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как лучше описать ежедневную привычку?",
+            "options": [
+              "I usually check emails in the morning.",
+              "I maybe email.",
+              "No routine.",
+              "Morning random."
+            ],
+            "correctIndex": 0,
+            "hint": "usually + действие + время",
+            "explanation": "Present Simple с usually — базовый паттерн привычек."
+          }
+        },
+        {
+          "ref": "a1.routines.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "After work I ____ groceries and cook dinner.",
+            "answer": "buy",
+            "accept": [
+              "buy",
+              "get"
+            ],
+            "hint": "Действие после работы",
+            "explanation": "buy/get groceries — естественная бытовая формула.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.routines.007.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.routines.007.t3.review",
+            "transcript": "I finish work at six and clean the kitchen at seven.",
+            "translation": "Я заканчиваю работу в шесть и убираю кухню в семь.",
+            "question": "Во сколько человек убирает кухню?",
+            "options": [
+              "At six",
+              "At seven",
+              "At eight"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай второе время",
+            "explanation": "В записи: clean the kitchen at seven."
+          }
+        },
+        {
+          "ref": "a1.routines.007.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "routine",
+                "right": "распорядок"
+              },
+              {
+                "left": "chore",
+                "right": "бытовая задача"
+              },
+              {
+                "left": "groceries",
+                "right": "продукты"
+              },
+              {
+                "left": "schedule",
+                "right": "расписание"
+              }
+            ],
+            "hint": "Лексика повседневной жизни",
+            "explanation": "Слова для описания бытовых и рабочих привычек."
+          }
+        },
+        {
+          "ref": "a1.routines.007.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "I",
+              "usually",
+              "go",
+              "to",
+              "bed",
+              "at",
+              "eleven"
+            ]
+          }
+        },
+        {
+          "ref": "a1.routines.007.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «После работы я иду в магазин»",
+            "expected": [
+              "After work I go to the store",
+              "I go to the store after work"
+            ],
+            "hint": "after work + go to store",
+            "explanation": "Базовая фраза повседневного сценария."
+          }
+        },
+        {
+          "ref": "a1.routines.007.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I have a busy schedule, but I plan my day.\"",
+            "target": "I have a busy schedule, but I plan my day.",
+            "hint": "busy schedule + plan my day",
+            "explanation": "Фраза об управлении временем на ежедневной основе."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.routines",
+      "lessonRef": "a1.routines.008",
+      "title": {
+        "ru": "Checkpoint: полный день",
+        "en": "Checkpoint: Full-Day Flow"
+      },
+      "description": {
+        "ru": "Контрольный урок по целому дню от утра до вечера",
+        "en": "Checkpoint lesson covering the whole day from morning to evening"
+      },
+      "order": 8,
+      "published": false,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 40,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.routines.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "Что делает рассказ о дне понятным?",
+            "options": [
+              "Чёткая последовательность по времени",
+              "Случайные фразы",
+              "Только одно действие",
+              "Без времени"
+            ],
+            "correctIndex": 0,
+            "hint": "Используй time markers",
+            "explanation": "Time markers помогают слушателю следить за логикой дня."
+          }
+        },
+        {
+          "ref": "a1.routines.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "In the evening I ____ dinner and read a book.",
+            "answer": "cook",
+            "accept": [
+              "cook",
+              "make"
+            ],
+            "hint": "Вечернее действие",
+            "explanation": "cook/make dinner — корректная A1 конструкция.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.routines.008.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.routines.008.t3.checkpoint",
+            "transcript": "I wake up at seven, work from nine to six, and relax after dinner.",
+            "translation": "Я встаю в семь, работаю с девяти до шести и отдыхаю после ужина.",
+            "question": "Когда человек отдыхает?",
+            "options": [
+              "Before work",
+              "After dinner",
+              "At lunchtime"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай after ...",
+            "explanation": "В записи: relax after dinner."
+          }
+        },
+        {
+          "ref": "a1.routines.008.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              {
+                "left": "wake up",
+                "right": "просыпаться"
+              },
+              {
+                "left": "workday",
+                "right": "рабочий день"
+              },
+              {
+                "left": "dinner",
+                "right": "ужин"
+              },
+              {
+                "left": "relax",
+                "right": "отдыхать"
+              }
+            ],
+            "hint": "Ключевые глаголы и существительные дня",
+            "explanation": "Слова полного цикла daily routine."
+          }
+        },
+        {
+          "ref": "a1.routines.008.t5",
+          "type": "order",
+          "data": {
+            "tokens": [
+              "I",
+              "wake",
+              "up",
+              "at",
+              "seven",
+              "and",
+              "leave",
+              "home",
+              "at",
+              "eight"
+            ]
+          }
+        },
+        {
+          "ref": "a1.routines.008.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я заканчиваю день чтением и сном по расписанию»",
+            "expected": [
+              "I finish my day by reading and going to bed on schedule",
+              "I end my day reading and going to bed on time"
+            ],
+            "hint": "finish/end my day",
+            "explanation": "Итоговая фраза о структуре дня и дисциплине."
+          }
+        },
+        {
+          "ref": "a1.routines.008.t7",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I manage my time well and follow my routine.\"",
+            "target": "I manage my time well and follow my routine.",
+            "hint": "manage time + follow routine",
+            "explanation": "Финальная фраза self-assessment по daily routine."
+          }
+        }
+      ]
     }
   ]
 }

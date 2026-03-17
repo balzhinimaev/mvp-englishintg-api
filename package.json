@@ -39,7 +39,8 @@
     "seed:lessons:all": "ts-node ./scripts/actual/seed-all-lessons.ts",
     "smoke:e2e": "bash ./scripts/smoke-e2e.sh",
     "accept:phase1:v3": "ts-node ./scripts/run-phase1-v3-acceptance.ts",
-    "accept:a1:v2": "CASES_PATH=docs/a1-v2-acceptance-cases.json LESSON_SEED_PATH=seeds/content.json ACCEPTANCE_FORCE_PUBLISH=true ACCEPTANCE_MODULE_REFS=a1.intro,a1.food,a1.directions,a1.routines ts-node ./scripts/run-phase1-v3-acceptance.ts"
+    "accept:a1:v2": "CASES_PATH=docs/a1-v2-acceptance-cases.json LESSON_SEED_PATH=seeds/content.json ACCEPTANCE_FORCE_PUBLISH=true ACCEPTANCE_MODULE_REFS=a1.intro,a1.food,a1.directions,a1.routines ts-node ./scripts/run-phase1-v3-acceptance.ts",
+    "accept:a1:retention": "CASES_PATH=docs/a1-retention-v1-acceptance-cases.json LESSON_SEED_PATH=seeds/content.json ACCEPTANCE_FORCE_PUBLISH=true ACCEPTANCE_MODULE_REFS=a1.intro,a1.food,a1.directions,a1.routines ts-node ./scripts/run-phase1-v3-acceptance.ts"
   },
   "keywords": [],
   "author": "",

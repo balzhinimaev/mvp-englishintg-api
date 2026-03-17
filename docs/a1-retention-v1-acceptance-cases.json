@@ -1,0 +1,17 @@
+{
+  "positive": [
+    {"id":"RET-INTRO-007-CHOICE","taskRef":"a1.intro.007.t1","type":"choice","userAnswer":"0","expectedIsCorrect":true},
+    {"id":"RET-INTRO-008-LISTEN","taskRef":"a1.intro.008.t3","type":"listen","userAnswer":"1","expectedIsCorrect":true},
+    {"id":"RET-FOOD-007-GAP","taskRef":"a1.food.007.t2","type":"gap","userAnswer":"less","expectedIsCorrect":true},
+    {"id":"RET-FOOD-008-MATCH","taskRef":"a1.food.008.t4","type":"match","userAnswer":"[{\"left\":\"replace\",\"right\":\"заменить\"},{\"left\":\"refund\",\"right\":\"возврат\"},{\"left\":\"receipt\",\"right\":\"чек\"},{\"left\":\"delay\",\"right\":\"задержка\"}]","expectedIsCorrect":true},
+    {"id":"RET-DIR-007-ORDER","taskRef":"a1.directions.007.t5","type":"order","userAnswer":"[\"Turn\",\"right\",\"after\",\"the\",\"bank\"]","expectedIsCorrect":true},
+    {"id":"RET-DIR-008-SPEAK","taskRef":"a1.directions.008.t7","type":"speak","userAnswer":"Thank you, your directions were very helpful.","expectedIsCorrect":true},
+    {"id":"RET-ROUTINE-007-TRANSLATE","taskRef":"a1.routines.007.t6","type":"translate","userAnswer":"After work I go to the store","expectedIsCorrect":true},
+    {"id":"RET-ROUTINE-008-SPEAK","taskRef":"a1.routines.008.t7","type":"speak","userAnswer":"I manage my time well and follow my routine.","expectedIsCorrect":true}
+  ],
+  "negative": [
+    {"id":"RET-MATCH-BAD-FORMAT","taskRef":"a1.food.008.t4","userAnswer":"not-json","expectedIsCorrect":false},
+    {"id":"RET-LISTEN-WRONG-INDEX","taskRef":"a1.intro.008.t3","userAnswer":"0","expectedIsCorrect":false},
+    {"id":"RET-ORDER-WRONG-ORDER","taskRef":"a1.directions.007.t5","userAnswer":"[\"Right\",\"turn\",\"after\",\"the\",\"bank\"]","expectedIsCorrect":false}
+  ]
+}
