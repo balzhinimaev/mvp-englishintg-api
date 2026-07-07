@@ -1,8 +1,13 @@
-import { Injectable, CanActivate, ExecutionContext, ForbiddenException, BadRequestException } from '@nestjs/common';
+import { Injectable, CanActivate, ExecutionContext, UnauthorizedException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User, UserDocument } from '../common/schemas/user.schema';
 
+/**
+ * Помечает запрос флагами onboardingRequired/onboardingCompleted.
+ * userId берётся ТОЛЬКО из req.user (JWT) — query/body/params не являются
+ * доверенным источником идентичности. Guard должен стоять ПОСЛЕ JwtAuthGuard.
+ */
 @Injectable()
 export class OnboardingGuard implements CanActivate {
   constructor(
@@ -11,11 +16,11 @@ export class OnboardingGuard implements CanActivate {
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest();
-    const userId = request.query?.userId || request.body?.userId || request.params?.userId;
+    const userId = request.user?.userId;
 
     if (!userId) {
-      // Для защищенных endpoints userId обязателен
-      throw new BadRequestException('userId is required');
+      // Guard применён без JwtAuthGuard — это ошибка конфигурации, не пропускаем
+      throw new UnauthorizedException('Authentication required');
     }
 
     const user = await this.userModel.findOne({ userId: String(userId) }).lean();

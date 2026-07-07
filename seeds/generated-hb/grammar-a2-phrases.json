@@ -1,0 +1,701 @@
+{
+  "articles": [
+    {
+      "ref": "grammar.comparatives",
+      "category": "grammar",
+      "title": {
+        "ru": "Сравнительная и превосходная степень",
+        "en": "Comparatives & superlatives"
+      },
+      "summary": "Как сравнивать вещи: -er/more и the -est/the most.",
+      "level": "A2",
+      "icon": "compare",
+      "order": 15,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Когда мы сравниваем два предмета, используем сравнительную степень (comparative). Когда выделяем один из группы — превосходную (superlative)."
+        },
+        {
+          "type": "heading",
+          "text": "Короткие прилагательные (1 слог)"
+        },
+        {
+          "type": "rule",
+          "text": "Сравнительная: прилагательное + -er + than. Превосходная: the + прилагательное + -est."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "My car is faster than yours.",
+              "ru": "Моя машина быстрее твоей."
+            },
+            {
+              "en": "This is the cheapest phone in the shop.",
+              "ru": "Это самый дешёвый телефон в магазине."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Длинные прилагательные (2+ слога)"
+        },
+        {
+          "type": "rule",
+          "text": "Сравнительная: more + прилагательное + than. Превосходная: the most + прилагательное."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "This book is more interesting than that one.",
+              "ru": "Эта книга интереснее, чем та."
+            },
+            {
+              "en": "She is the most careful driver I know.",
+              "ru": "Она самый аккуратный водитель, которого я знаю."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Образование степеней",
+          "headers": ["Прилагательное", "Сравнительная", "Превосходная"],
+          "rows": [
+            ["cheap", "cheaper", "the cheapest"],
+            ["big", "bigger", "the biggest"],
+            ["happy", "happier", "the happiest"],
+            ["expensive", "more expensive", "the most expensive"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Особые формы"
+        },
+        {
+          "type": "table",
+          "title": "Исключения",
+          "headers": ["Прилагательное", "Сравнительная", "Превосходная"],
+          "rows": [
+            ["good", "better", "the best"],
+            ["bad", "worse", "the worst"],
+            ["far", "further", "the furthest"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Слова big, hot, thin удваивают последнюю согласную: bigger, hotter, thinner. В словах на -y меняем y на i: happy → happier."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: «more cheaper» или «the most best». Нельзя соединять два способа сразу. Правильно: cheaper, the best."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.some-any",
+      "category": "grammar",
+      "title": {
+        "ru": "Some / any / much / many",
+        "en": "Some/any/much/many"
+      },
+      "summary": "Как говорить о количестве с исчисляемыми и неисчисляемыми словами.",
+      "level": "A2",
+      "icon": "list",
+      "order": 16,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Эти слова показывают количество. Выбор зависит от того, утверждение это, вопрос или отрицание, и от того, можно ли предмет посчитать."
+        },
+        {
+          "type": "heading",
+          "text": "Some и any"
+        },
+        {
+          "type": "rule",
+          "text": "Some — в утверждениях. Any — в вопросах и отрицаниях."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I have some questions.",
+              "ru": "У меня есть несколько вопросов."
+            },
+            {
+              "en": "Do you have any water?",
+              "ru": "У тебя есть вода?"
+            },
+            {
+              "en": "There isn't any milk in the fridge.",
+              "ru": "В холодильнике нет молока."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В вежливых просьбах и предложениях используем some, а не any: «Would you like some tea?» (Хотите чаю?)."
+        },
+        {
+          "type": "heading",
+          "text": "Much и many"
+        },
+        {
+          "type": "rule",
+          "text": "Many — с исчисляемыми (many books). Much — с неисчисляемыми (much time). A lot of — с обоими."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "How many people were there?",
+              "ru": "Сколько там было людей?"
+            },
+            {
+              "en": "I don't have much money.",
+              "ru": "У меня немного денег."
+            },
+            {
+              "en": "We have a lot of friends here.",
+              "ru": "У нас здесь много друзей."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Выбор слова",
+          "headers": ["Тип слова", "Утверждение", "Вопрос / отрицание"],
+          "rows": [
+            ["Исчисляемые (apples)", "some / a lot of", "any / many"],
+            ["Неисчисляемые (water)", "some / a lot of", "any / much"]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: «I have much friends». Friends — исчисляемое, нужно many или a lot of: «I have a lot of friends»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.adverbs-frequency",
+      "category": "grammar",
+      "title": {
+        "ru": "Наречия частоты (always, often…)",
+        "en": "Adverbs of frequency"
+      },
+      "summary": "Как часто происходит действие и где ставить эти наречия.",
+      "level": "A2",
+      "icon": "clock",
+      "order": 17,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Наречия частоты отвечают на вопрос «как часто?» и показывают регулярность действия."
+        },
+        {
+          "type": "table",
+          "title": "Шкала частоты",
+          "headers": ["Наречие", "Перевод", "Частота"],
+          "rows": [
+            ["always", "всегда", "100%"],
+            ["usually", "обычно", "90%"],
+            ["often", "часто", "70%"],
+            ["sometimes", "иногда", "50%"],
+            ["rarely", "редко", "10%"],
+            ["never", "никогда", "0%"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Место в предложении"
+        },
+        {
+          "type": "rule",
+          "text": "Наречие частоты ставится перед основным глаголом, но после глагола to be."
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I always drink coffee in the morning.",
+              "ru": "Я всегда пью кофе утром."
+            },
+            {
+              "en": "She is often late for work.",
+              "ru": "Она часто опаздывает на работу."
+            },
+            {
+              "en": "We sometimes watch films on Fridays.",
+              "ru": "Мы иногда смотрим фильмы по пятницам."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Sometimes и usually можно поставить и в начало предложения для акцента: «Sometimes I work from home»."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: двойное отрицание. Never уже отрицательное, поэтому «I don't never» неверно. Правильно: «I never eat meat»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.modals-detail",
+      "category": "grammar",
+      "title": {
+        "ru": "Модальные: can, must, should",
+        "en": "Modals: can/must/should"
+      },
+      "summary": "Возможность, необходимость и совет: can, must, should.",
+      "level": "A2",
+      "icon": "modal",
+      "order": 18,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Модальные глаголы выражают отношение к действию: способность, разрешение, обязанность или совет. После них всегда идёт глагол без to."
+        },
+        {
+          "type": "heading",
+          "text": "Can — умение и разрешение"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I can swim, but I can't drive.",
+              "ru": "Я умею плавать, но не умею водить машину."
+            },
+            {
+              "en": "Can I open the window?",
+              "ru": "Можно я открою окно?"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Must — необходимость и запрет"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "You must wear a seatbelt.",
+              "ru": "Ты должен пристегнуть ремень."
+            },
+            {
+              "en": "You mustn't smoke here.",
+              "ru": "Здесь нельзя курить."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Should — совет"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "You should see a doctor.",
+              "ru": "Тебе стоит сходить к врачу."
+            },
+            {
+              "en": "You shouldn't eat so much sugar.",
+              "ru": "Тебе не стоит есть так много сахара."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Значение модальных",
+          "headers": ["Глагол", "Значение", "Отрицание"],
+          "rows": [
+            ["can", "могу / умею / можно", "can't — не могу"],
+            ["must", "должен (обязан)", "mustn't — нельзя"],
+            ["should", "стоит (совет)", "shouldn't — не стоит"]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "Модальные глаголы не меняются по лицам: he can, she must (без -s). После них — инфинитив без to."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: «She can to swim» или «He musts go». Правильно: «She can swim», «He must go»."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.greetings",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: приветствия и знакомство",
+        "en": "Phrasebook: greetings"
+      },
+      "summary": "Готовые фразы, чтобы поздороваться и познакомиться.",
+      "level": "A0",
+      "icon": "chat",
+      "order": 1,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "С этих фраз начинается любой разговор. Выучите их наизусть — они пригодятся в первую же минуту общения."
+        },
+        {
+          "type": "heading",
+          "text": "Приветствие"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Hello! / Hi!",
+              "ru": "Здравствуйте! / Привет!"
+            },
+            {
+              "en": "Good morning.",
+              "ru": "Доброе утро."
+            },
+            {
+              "en": "How are you?",
+              "ru": "Как дела?"
+            },
+            {
+              "en": "I'm fine, thanks. And you?",
+              "ru": "Хорошо, спасибо. А у вас?"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Знакомство"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "What's your name?",
+              "ru": "Как вас зовут?"
+            },
+            {
+              "en": "My name is Anna.",
+              "ru": "Меня зовут Анна."
+            },
+            {
+              "en": "Nice to meet you.",
+              "ru": "Приятно познакомиться."
+            },
+            {
+              "en": "Where are you from?",
+              "ru": "Откуда вы?"
+            },
+            {
+              "en": "I'm from Russia.",
+              "ru": "Я из России."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Прощание"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Goodbye! / Bye!",
+              "ru": "До свидания! / Пока!"
+            },
+            {
+              "en": "See you later.",
+              "ru": "Увидимся позже."
+            },
+            {
+              "en": "Have a nice day!",
+              "ru": "Хорошего дня!"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В ответ на «Nice to meet you» вежливо сказать «Nice to meet you, too». А «How are you?» часто говорят просто из вежливости — короткого «Fine, thanks» достаточно."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.cafe",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: в кафе",
+        "en": "Phrasebook: at a café"
+      },
+      "summary": "Фразы, чтобы сделать заказ и оплатить в кафе.",
+      "level": "A1",
+      "icon": "chat",
+      "order": 2,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Эти фразы помогут заказать еду и напитки, попросить счёт и вежливо пообщаться с официантом."
+        },
+        {
+          "type": "heading",
+          "text": "Заказ"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "A table for two, please.",
+              "ru": "Столик на двоих, пожалуйста."
+            },
+            {
+              "en": "Can I see the menu, please?",
+              "ru": "Можно меню, пожалуйста?"
+            },
+            {
+              "en": "I'd like a coffee and a sandwich.",
+              "ru": "Я бы хотел кофе и сэндвич."
+            },
+            {
+              "en": "What do you recommend?",
+              "ru": "Что вы посоветуете?"
+            },
+            {
+              "en": "I'll have the same, please.",
+              "ru": "Мне то же самое, пожалуйста."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Во время еды"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Excuse me, could I have some water?",
+              "ru": "Извините, можно воды?"
+            },
+            {
+              "en": "This is delicious!",
+              "ru": "Это очень вкусно!"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Оплата"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Can I have the bill, please?",
+              "ru": "Счёт, пожалуйста."
+            },
+            {
+              "en": "Can I pay by card?",
+              "ru": "Можно оплатить картой?"
+            },
+            {
+              "en": "Keep the change.",
+              "ru": "Сдачи не надо."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В Британии «bill», в США «check». В большинстве кафе принято оставлять чаевые около 10%, а слово «please» делает любую просьбу вежливой."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.shopping",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: покупки",
+        "en": "Phrasebook: shopping"
+      },
+      "summary": "Фразы для магазина: цена, размер, оплата.",
+      "level": "A1",
+      "icon": "chat",
+      "order": 3,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "С этими фразами вы легко спросите цену, примерите одежду и расплатитесь в любом магазине."
+        },
+        {
+          "type": "heading",
+          "text": "Поиск товара"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Excuse me, do you have this in blue?",
+              "ru": "Извините, у вас есть это в синем цвете?"
+            },
+            {
+              "en": "I'm just looking, thanks.",
+              "ru": "Я просто смотрю, спасибо."
+            },
+            {
+              "en": "Do you have a bigger size?",
+              "ru": "У вас есть размер побольше?"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Цена и примерка"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "How much is this?",
+              "ru": "Сколько это стоит?"
+            },
+            {
+              "en": "That's too expensive.",
+              "ru": "Это слишком дорого."
+            },
+            {
+              "en": "Can I try it on?",
+              "ru": "Можно примерить?"
+            },
+            {
+              "en": "Where are the fitting rooms?",
+              "ru": "Где примерочные?"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Оплата"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "I'll take it.",
+              "ru": "Я возьму это."
+            },
+            {
+              "en": "Do you accept cards?",
+              "ru": "Вы принимаете карты?"
+            },
+            {
+              "en": "Can I have a receipt, please?",
+              "ru": "Можно чек, пожалуйста?"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Если продавец предлагает помощь, а вы просто осматриваетесь, вежливо ответить «I'm just looking, thank you» — это нормально и не обидно."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.directions",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: как пройти",
+        "en": "Phrasebook: directions"
+      },
+      "summary": "Фразы, чтобы спросить дорогу и понять ответ.",
+      "level": "A2",
+      "icon": "chat",
+      "order": 4,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Эти фразы помогут спросить дорогу к нужному месту и понять, что вам ответят прохожие."
+        },
+        {
+          "type": "heading",
+          "text": "Спросить дорогу"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Excuse me, how do I get to the station?",
+              "ru": "Извините, как пройти к вокзалу?"
+            },
+            {
+              "en": "Is there a pharmacy near here?",
+              "ru": "Есть ли поблизости аптека?"
+            },
+            {
+              "en": "Where is the nearest metro?",
+              "ru": "Где ближайшее метро?"
+            },
+            {
+              "en": "Is it far from here?",
+              "ru": "Это далеко отсюда?"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Понять ответ"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Go straight ahead.",
+              "ru": "Идите прямо."
+            },
+            {
+              "en": "Turn left at the traffic lights.",
+              "ru": "Поверните налево у светофора."
+            },
+            {
+              "en": "It's on your right.",
+              "ru": "Это справа от вас."
+            },
+            {
+              "en": "It's next to the bank.",
+              "ru": "Это рядом с банком."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Если не поняли"
+        },
+        {
+          "type": "examples",
+          "items": [
+            {
+              "en": "Sorry, could you repeat that?",
+              "ru": "Извините, можете повторить?"
+            },
+            {
+              "en": "Can you speak more slowly, please?",
+              "ru": "Говорите помедленнее, пожалуйста."
+            },
+            {
+              "en": "Could you show me on the map?",
+              "ru": "Можете показать на карте?"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Начинайте вопрос с «Excuse me» — так вы вежливо привлекаете внимание. Если не расслышали, не стесняйтесь попросить повторить: это совершенно нормально."
+        }
+      ]
+    }
+  ]
+}

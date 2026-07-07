@@ -1,9 +1,0 @@
-docs/lesson-prerequisite-api.md
-src/modules/content/content.controller.ts
-src/modules/content/content.module.ts
-src/modules/content/content.service.spec.ts
-src/modules/content/content.service.ts
-src/modules/content/guards/lesson-prerequisite.guard.spec.ts
-src/modules/content/guards/lesson-prerequisite.guard.ts
-test/content-prerequisite.e2e-spec.ts
-tsconfig.build.tsbuildinfo

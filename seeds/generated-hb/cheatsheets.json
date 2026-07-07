@@ -1,0 +1,511 @@
+{
+  "articles": [
+    {
+      "ref": "cheatsheet.irregular-verbs",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Неправильные глаголы",
+        "en": "Irregular verbs"
+      },
+      "summary": "Таблица форм самых частых неправильных глаголов английского языка.",
+      "level": "A2",
+      "icon": "verb",
+      "order": 1,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Неправильные глаголы"
+        },
+        {
+          "type": "text",
+          "text": "У неправильных глаголов вторая (Past Simple) и третья (Past Participle) формы образуются не по правилу «+ed», а особым образом. Их нужно просто выучить. Ниже — 40 самых частых глаголов."
+        },
+        {
+          "type": "table",
+          "title": "Три формы глагола",
+          "headers": ["Инфинитив", "Past Simple", "Past Participle", "Перевод"],
+          "rows": [
+            ["be", "was / were", "been", "быть"],
+            ["have", "had", "had", "иметь"],
+            ["do", "did", "done", "делать"],
+            ["say", "said", "said", "говорить, сказать"],
+            ["go", "went", "gone", "идти, ехать"],
+            ["get", "got", "got / gotten", "получать, становиться"],
+            ["make", "made", "made", "делать, создавать"],
+            ["know", "knew", "known", "знать"],
+            ["think", "thought", "thought", "думать"],
+            ["take", "took", "taken", "брать"],
+            ["see", "saw", "seen", "видеть"],
+            ["come", "came", "come", "приходить"],
+            ["give", "gave", "given", "давать"],
+            ["find", "found", "found", "находить"],
+            ["tell", "told", "told", "рассказывать"],
+            ["become", "became", "become", "становиться"],
+            ["show", "showed", "shown", "показывать"],
+            ["leave", "left", "left", "покидать, уходить"],
+            ["feel", "felt", "felt", "чувствовать"],
+            ["put", "put", "put", "класть, ставить"],
+            ["bring", "brought", "brought", "приносить"],
+            ["begin", "began", "begun", "начинать"],
+            ["keep", "kept", "kept", "хранить, продолжать"],
+            ["hold", "held", "held", "держать"],
+            ["write", "wrote", "written", "писать"],
+            ["stand", "stood", "stood", "стоять"],
+            ["hear", "heard", "heard", "слышать"],
+            ["let", "let", "let", "позволять"],
+            ["mean", "meant", "meant", "значить, иметь в виду"],
+            ["set", "set", "set", "устанавливать"],
+            ["meet", "met", "met", "встречать"],
+            ["pay", "paid", "paid", "платить"],
+            ["sit", "sat", "sat", "сидеть"],
+            ["speak", "spoke", "spoken", "говорить, разговаривать"],
+            ["lie", "lay", "lain", "лежать"],
+            ["lead", "led", "led", "вести, возглавлять"],
+            ["read", "read", "read", "читать"],
+            ["grow", "grew", "grown", "расти, выращивать"],
+            ["lose", "lost", "lost", "терять, проигрывать"],
+            ["fall", "fell", "fallen", "падать"],
+            ["send", "sent", "sent", "отправлять"],
+            ["build", "built", "built", "строить"],
+            ["understand", "understood", "understood", "понимать"],
+            ["draw", "drew", "drawn", "рисовать, тянуть"],
+            ["break", "broke", "broken", "ломать"],
+            ["spend", "spent", "spent", "тратить, проводить"],
+            ["buy", "bought", "bought", "покупать"],
+            ["eat", "ate", "eaten", "есть, кушать"],
+            ["drink", "drank", "drunk", "пить"],
+            ["drive", "drove", "driven", "водить, ехать"],
+            ["run", "ran", "run", "бежать"]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "I went to London last year.",
+          "ru": "Я ездил в Лондон в прошлом году."
+        },
+        {
+          "type": "example",
+          "en": "She has written three books.",
+          "ru": "Она написала три книги."
+        },
+        {
+          "type": "tip",
+          "text": "Форма read всегда пишется одинаково, но в прошедшем времени читается как «ред» [red], а не «рид»."
+        },
+        {
+          "type": "note",
+          "text": "Past Participle (третья форма) нужна для Present Perfect (have done) и пассивного залога (was made)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.pronouns",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Местоимения (таблица)",
+        "en": "Pronouns table"
+      },
+      "summary": "Полная таблица личных и притяжательных местоимений английского языка.",
+      "level": "A1",
+      "icon": "pronoun",
+      "order": 2,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Местоимения"
+        },
+        {
+          "type": "text",
+          "text": "Личные местоимения меняют форму в зависимости от роли в предложении. Подлежащее (кто?), дополнение (кого/кому?), притяжательное прилагательное (чей? + существительное) и притяжательное местоимение (чей? без существительного)."
+        },
+        {
+          "type": "table",
+          "title": "Формы местоимений",
+          "headers": ["Подлежащее", "Дополнение", "Притяж. прил.", "Притяж. мест."],
+          "rows": [
+            ["I", "me", "my", "mine"],
+            ["you", "you", "your", "yours"],
+            ["he", "him", "his", "his"],
+            ["she", "her", "her", "hers"],
+            ["it", "it", "its", "—"],
+            ["we", "us", "our", "ours"],
+            ["they", "them", "their", "theirs"]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "This is my book. The book is mine.",
+          "ru": "Это моя книга. Книга — моя."
+        },
+        {
+          "type": "example",
+          "en": "She gave him her number.",
+          "ru": "Она дала ему свой номер."
+        },
+        {
+          "type": "tip",
+          "text": "Не путайте its (притяжательное, «его/её» о предмете) и it's (сокращение от it is)."
+        },
+        {
+          "type": "note",
+          "text": "После притяжательного прилагательного всегда идёт существительное (my car), а притяжательное местоимение стоит само по себе (mine)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.articles",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Артикли: когда какой",
+        "en": "Articles cheat sheet"
+      },
+      "summary": "Когда ставить a/an, когда the, а когда артикль не нужен.",
+      "level": "A1",
+      "icon": "article",
+      "order": 3,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Артикли: a / an / the / —"
+        },
+        {
+          "type": "text",
+          "text": "Артикль показывает, о каком предмете идёт речь: о любом (a/an), о конкретном (the) или об общем понятии (без артикля). Ниже — основные случаи."
+        },
+        {
+          "type": "table",
+          "title": "Какой артикль выбрать",
+          "headers": ["Случай", "Артикль", "Пример"],
+          "rows": [
+            ["Предмет впервые, один из многих", "a / an", "I bought a car."],
+            ["Перед гласным звуком", "an", "an apple, an hour"],
+            ["Уже упоминали или он единственный", "the", "The car is red."],
+            ["Уникальные объекты", "the", "the sun, the moon"],
+            ["Названия рек, морей, океанов", "the", "the Thames, the Pacific"],
+            ["Множественное число в общем смысле", "—", "Cats are cute."],
+            ["Неисчисляемое в общем смысле", "—", "Water is life."],
+            ["Имена, города, большинство стран", "—", "John lives in Paris."]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "I saw a dog. The dog was very big.",
+          "ru": "Я увидел собаку. Собака была очень большая."
+        },
+        {
+          "type": "example",
+          "en": "She is an engineer.",
+          "ru": "Она инженер."
+        },
+        {
+          "type": "tip",
+          "text": "Выбор a или an зависит от звука, а не от буквы: a university (звук «ю»), an hour (h не читается)."
+        },
+        {
+          "type": "note",
+          "text": "The произносится [ðə] перед согласным звуком и [ðiː] перед гласным (the apple)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.prepositions-time",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Предлоги времени: in / on / at",
+        "en": "Prepositions of time"
+      },
+      "summary": "Когда использовать in, on и at при указании времени.",
+      "level": "A2",
+      "icon": "clock",
+      "order": 4,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Предлоги времени"
+        },
+        {
+          "type": "text",
+          "text": "Три главных предлога времени: at — для точного времени, on — для дней и дат, in — для длинных периодов. Правило простое: от точного к общему."
+        },
+        {
+          "type": "table",
+          "title": "in / on / at во времени",
+          "headers": ["Предлог", "Когда используем", "Примеры"],
+          "rows": [
+            ["at", "точное время", "at 7 o'clock, at noon"],
+            ["at", "устойчивые выражения", "at night, at the weekend"],
+            ["on", "дни недели", "on Monday, on Friday"],
+            ["on", "даты и особые дни", "on May 5th, on my birthday"],
+            ["in", "месяцы, годы, века", "in July, in 2026"],
+            ["in", "части суток", "in the morning, in the evening"],
+            ["in", "времена года", "in summer, in winter"]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "The meeting is at 9 on Monday in September.",
+          "ru": "Встреча в 9 часов в понедельник в сентябре."
+        },
+        {
+          "type": "example",
+          "en": "I was born in 1998.",
+          "ru": "Я родился в 1998 году."
+        },
+        {
+          "type": "tip",
+          "text": "Запомните исключение: at night, но in the morning / in the afternoon / in the evening."
+        },
+        {
+          "type": "note",
+          "text": "Со словами this, last, next, every предлог не нужен: see you next week (без in)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.prepositions-place",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Предлоги места",
+        "en": "Prepositions of place"
+      },
+      "summary": "Основные предлоги, которые показывают, где находится предмет.",
+      "level": "A2",
+      "icon": "pin",
+      "order": 5,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Предлоги места"
+        },
+        {
+          "type": "text",
+          "text": "Предлоги места отвечают на вопрос «где?». Ниже — самые нужные с их значением и примером."
+        },
+        {
+          "type": "table",
+          "title": "Где находится предмет",
+          "headers": ["Предлог", "Значение", "Пример"],
+          "rows": [
+            ["in", "внутри", "The keys are in the bag."],
+            ["on", "на поверхности", "The book is on the table."],
+            ["at", "в точке / у места", "She is at the door."],
+            ["under", "под", "The cat is under the chair."],
+            ["over / above", "над", "A lamp is above the desk."],
+            ["next to / beside", "рядом с", "Sit next to me."],
+            ["between", "между (двумя)", "The bank is between the shops."],
+            ["among", "среди (многих)", "He stood among the trees."],
+            ["behind", "позади", "The garden is behind the house."],
+            ["in front of", "перед", "A car is in front of the house."],
+            ["near", "около, близко", "The shop is near the station."],
+            ["opposite", "напротив", "The café is opposite the bank."]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "The dog is under the table, next to the box.",
+          "ru": "Собака под столом, рядом с коробкой."
+        },
+        {
+          "type": "example",
+          "en": "There is a picture on the wall.",
+          "ru": "На стене есть картина."
+        },
+        {
+          "type": "tip",
+          "text": "between — между двумя объектами, among — среди трёх и более."
+        },
+        {
+          "type": "note",
+          "text": "in — внутри объёма (in the room), on — на поверхности (on the floor), at — точка в пространстве (at the bus stop)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.numbers",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Числа: количественные и порядковые",
+        "en": "Numbers"
+      },
+      "summary": "Таблица количественных (one) и порядковых (first) числительных.",
+      "level": "A1",
+      "icon": "number",
+      "order": 6,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Числа"
+        },
+        {
+          "type": "text",
+          "text": "Количественные числительные (cardinal) отвечают на вопрос «сколько?», а порядковые (ordinal) — «какой по счёту?». Большинство порядковых образуется добавлением -th."
+        },
+        {
+          "type": "table",
+          "title": "Cardinal и Ordinal",
+          "headers": ["Цифра", "Количественное (cardinal)", "Порядковое (ordinal)"],
+          "rows": [
+            ["1", "one", "first"],
+            ["2", "two", "second"],
+            ["3", "three", "third"],
+            ["4", "four", "fourth"],
+            ["5", "five", "fifth"],
+            ["6", "six", "sixth"],
+            ["7", "seven", "seventh"],
+            ["8", "eight", "eighth"],
+            ["9", "nine", "ninth"],
+            ["10", "ten", "tenth"],
+            ["11", "eleven", "eleventh"],
+            ["12", "twelve", "twelfth"],
+            ["13", "thirteen", "thirteenth"],
+            ["14", "fourteen", "fourteenth"],
+            ["15", "fifteen", "fifteenth"],
+            ["16", "sixteen", "sixteenth"],
+            ["17", "seventeen", "seventeenth"],
+            ["18", "eighteen", "eighteenth"],
+            ["19", "nineteen", "nineteenth"],
+            ["20", "twenty", "twentieth"],
+            ["30", "thirty", "thirtieth"],
+            ["40", "forty", "fortieth"],
+            ["50", "fifty", "fiftieth"],
+            ["60", "sixty", "sixtieth"],
+            ["70", "seventy", "seventieth"],
+            ["80", "eighty", "eightieth"],
+            ["90", "ninety", "ninetieth"],
+            ["100", "one hundred", "hundredth"],
+            ["1000", "one thousand", "thousandth"]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "This is my first time in Paris.",
+          "ru": "Это мой первый раз в Париже."
+        },
+        {
+          "type": "example",
+          "en": "There are twenty-one students in the class.",
+          "ru": "В классе двадцать один ученик."
+        },
+        {
+          "type": "tip",
+          "text": "Обратите внимание на нестандартные формы: first, second, third, а также fifth, eighth, ninth, twelfth."
+        },
+        {
+          "type": "note",
+          "text": "У десятков -ty меняется на -tieth: twenty → twentieth, forty → fortieth (без u!)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.question-words",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Вопросительные слова",
+        "en": "Question words"
+      },
+      "summary": "Слова, с которых начинаются специальные вопросы: what, where, when и другие.",
+      "level": "A1",
+      "icon": "question",
+      "order": 7,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Вопросительные слова"
+        },
+        {
+          "type": "text",
+          "text": "Специальные вопросы начинаются с вопросительного слова. Оно определяет, какую информацию мы хотим узнать."
+        },
+        {
+          "type": "table",
+          "title": "Wh-слова",
+          "headers": ["Слово", "Значение", "Пример"],
+          "rows": [
+            ["What", "что, какой", "What is your name?"],
+            ["Where", "где, куда", "Where do you live?"],
+            ["When", "когда", "When does it start?"],
+            ["Who", "кто", "Who is that man?"],
+            ["Why", "почему", "Why are you late?"],
+            ["How", "как", "How do you feel?"],
+            ["Which", "который (из)", "Which colour do you like?"],
+            ["Whose", "чей", "Whose bag is this?"]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "Where are you from?",
+          "ru": "Откуда ты?"
+        },
+        {
+          "type": "example",
+          "en": "How much does it cost?",
+          "ru": "Сколько это стоит?"
+        },
+        {
+          "type": "tip",
+          "text": "Со словом how образуются полезные пары: how much (сколько, неисчисляемое), how many (сколько, исчисляемое), how old (сколько лет), how long (как долго)."
+        },
+        {
+          "type": "note",
+          "text": "Which используем, когда выбор ограничен (which of these?), а what — когда выбор открыт."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.modals",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Модальные глаголы",
+        "en": "Modal verbs"
+      },
+      "summary": "Что выражают can, could, must, should, may и have to.",
+      "level": "A2",
+      "icon": "modal",
+      "order": 8,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Модальные глаголы"
+        },
+        {
+          "type": "text",
+          "text": "Модальные глаголы показывают отношение к действию: возможность, необходимость, разрешение или совет. После них идёт глагол без to (кроме have to)."
+        },
+        {
+          "type": "table",
+          "title": "Значения модальных глаголов",
+          "headers": ["Глагол", "Значение", "Пример"],
+          "rows": [
+            ["can", "умение, возможность", "I can swim."],
+            ["can", "разрешение (неформ.)", "Can I sit here?"],
+            ["could", "прошлое умение, вежливость", "Could you help me?"],
+            ["must", "обязанность, уверенность", "You must stop here."],
+            ["mustn't", "запрет", "You mustn't smoke."],
+            ["should", "совет", "You should rest."],
+            ["may", "разрешение, вероятность", "It may rain today."],
+            ["might", "малая вероятность", "She might come later."],
+            ["have to", "внешняя необходимость", "I have to work tomorrow."]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "You should see a doctor.",
+          "ru": "Тебе следует показаться врачу."
+        },
+        {
+          "type": "example",
+          "en": "I can't come to the party.",
+          "ru": "Я не могу прийти на вечеринку."
+        },
+        {
+          "type": "tip",
+          "text": "Модальные глаголы не меняются по лицам: he can (без -s), she must (без -s)."
+        },
+        {
+          "type": "note",
+          "text": "mustn't — это строгий запрет («нельзя»), а don't have to — отсутствие необходимости («не обязательно»). Не путайте!"
+        }
+      ]
+    }
+  ]
+}

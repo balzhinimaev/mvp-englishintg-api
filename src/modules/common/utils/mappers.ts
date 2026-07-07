@@ -1,4 +1,5 @@
 import { plainToInstance } from 'class-transformer';
+import * as crypto from 'crypto';
 import { CourseModule } from '../schemas/course-module.schema';
 import { Lesson } from '../schemas/lesson.schema';
 import { UserLessonProgress } from '../schemas/user-lesson-progress.schema';
@@ -18,10 +19,16 @@ import { normalizeLessonDefaults } from './lesson-defaults';
  */
 export const toTaskResponseDto = (task: { ref: string; type: string; data: any }): any => {
   const canonicalType = canonicalizeTaskType(task.type) || (task.type as TaskTypeEnum);
+  let data = task.data;
+  // Для speak добавляем audioUrl (модель произношения) из target — сам target наружу не уходит.
+  if (canonicalType === 'speak' && data?.target) {
+    const h = crypto.createHash('sha1').update(String(data.target), 'utf8').digest('hex').slice(0, 16);
+    data = { ...data, audioUrl: `/audio/speak/${h}.mp3` };
+  }
   return plainToInstance(TaskResponseDto, {
     ref: task.ref,
     type: canonicalType,
-    data: task.data,
+    data,
   }, {
     excludeExtraneousValues: true, // Игнорирует поля без @Expose()
     enableImplicitConversion: true,

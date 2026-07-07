@@ -1,0 +1,3810 @@
+{
+ "modules": [
+  {
+   "moduleRef": "a0.family",
+   "level": "A0",
+   "title": {
+    "ru": "Семья и люди",
+    "en": "Family & People"
+   },
+   "description": {
+    "ru": "Учимся называть членов семьи и людей вокруг нас: мама, папа, брат, сестра, муж, жена. Осваиваем притяжательные местоимения my, your, his, her и простые фразы «Это мой…», «Он/Она…».",
+    "en": "Learn to name family members and people: mother, father, brother, sister, husband, wife. Practice the possessives my, your, his, her and simple sentences like 'This is my...' and 'He is / She is...'."
+   },
+   "tags": [
+    "family",
+    "basics"
+   ],
+   "order": 12,
+   "published": true
+  },
+  {
+   "moduleRef": "a0.food",
+   "level": "A0",
+   "title": {
+    "ru": "Еда и напитки",
+    "en": "Food & Drinks"
+   },
+   "description": {
+    "ru": "Базовые слова и фразы о еде и напитках: как назвать продукты, сказать, что любишь, попросить и заказать в кафе.",
+    "en": "Core words and phrases about food and drinks: naming products, saying what you like, asking for things and ordering in a cafe."
+   },
+   "tags": [
+    "food",
+    "basics"
+   ],
+   "order": 13,
+   "published": true
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "level": "A0",
+   "title": {
+    "ru": "Приветствия и знакомство",
+    "en": "Greetings & Introductions"
+   },
+   "description": {
+    "ru": "Самые нужные фразы для первого контакта: как поздороваться, представиться, спросить имя и откуда человек, попрощаться и быть вежливым.",
+    "en": "The most useful phrases for a first contact: say hello, introduce yourself, ask a name and where someone is from, say goodbye and be polite."
+   },
+   "tags": [
+    "greetings",
+    "basics"
+   ],
+   "order": 10,
+   "published": true
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "level": "A0",
+   "title": {
+    "ru": "Числа, возраст, цена",
+    "en": "Numbers, Age & Prices"
+   },
+   "description": {
+    "ru": "Учимся считать от 0 до 100, называть возраст, номер телефона и спрашивать цену — самые нужные числа в быту.",
+    "en": "Learn to count from 0 to 100, say your age and phone number, and ask about prices — the most useful everyday numbers."
+   },
+   "tags": [
+    "numbers",
+    "basics"
+   ],
+   "order": 11,
+   "published": true
+  }
+ ],
+ "lessons": [
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.001",
+   "title": {
+    "ru": "Мама, папа, родители",
+    "en": "Mother, father, parents"
+   },
+   "description": {
+    "ru": "Первые слова о семье: mother (мама), father (папа) и parents (родители).",
+    "en": "First family words: mother, father and parents."
+   },
+   "order": 1,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "match",
+     "ref": "a0.family.001.t1",
+     "data": {
+      "pairs": [
+       {
+        "left": "mother",
+        "right": "мама"
+       },
+       {
+        "left": "father",
+        "right": "папа"
+       },
+       {
+        "left": "parents",
+        "right": "родители"
+       },
+       {
+        "left": "family",
+        "right": "семья"
+       }
+      ],
+      "hint": "Соедини английское слово с его переводом.",
+      "explanation": "mother — мама, father — папа, parents — родители, family — семья."
+     }
+    },
+    {
+     "type": "listen",
+     "ref": "a0.family.001.t2",
+     "data": {
+      "audioKey": "a0.family.001.t2.this-is-my-mother",
+      "transcript": "This is my mother.",
+      "translation": "Это моя мама.",
+      "question": "What did you hear?",
+      "options": [
+       "This is my mother.",
+       "This is my father.",
+       "This is my sister.",
+       "This is my family."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай последнее слово — кто это в семье.",
+      "explanation": "Ты услышал «This is my mother» — «Это моя мама»."
+     }
+    },
+    {
+     "type": "choice",
+     "ref": "a0.family.001.t3",
+     "data": {
+      "question": "Как по-английски «папа, отец»?",
+      "options": [
+       "father",
+       "mother",
+       "parents",
+       "brother"
+      ],
+      "correctIndex": 0,
+      "hint": "Это слово начинается со звука «ф».",
+      "explanation": "«Отец, папа» по-английски — father."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.001.t4",
+     "data": {
+      "prompt": "Say: 'This is my father.'",
+      "target": "This is my father.",
+      "audioKey": "a0.family.001.t4.this-is-my-father",
+      "hint": "Произнеси спокойно: This — is — my — father.",
+      "explanation": "«This is my father» значит «Это мой папа»."
+     }
+    },
+    {
+     "type": "gap",
+     "ref": "a0.family.001.t5",
+     "data": {
+      "text": "My mother and my father are my _____.",
+      "answer": "parents",
+      "hint": "Мама и папа вместе — это одно общее слово.",
+      "explanation": "Мама и папа вместе — это parents (родители).",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "type": "translate",
+     "ref": "a0.family.001.t6",
+     "data": {
+      "question": "Переведи: 'мама'",
+      "expected": [
+       "mother",
+       "mom"
+      ],
+      "hint": "Самое частое слово начинается с «mo...».",
+      "explanation": "«Мама» — mother (или разговорно mom)."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.002",
+   "title": {
+    "ru": "Брат и сестра",
+    "en": "Brother, sister"
+   },
+   "description": {
+    "ru": "Учим слова brother (брат) и sister (сестра) и простую фразу «У меня есть…».",
+    "en": "Learn brother and sister and the simple phrase 'I have a...'."
+   },
+   "order": 2,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "choice",
+     "ref": "a0.family.002.t1",
+     "data": {
+      "question": "Как по-английски «брат»?",
+      "options": [
+       "brother",
+       "sister",
+       "mother",
+       "father"
+      ],
+      "correctIndex": 0,
+      "hint": "Слово похоже на слово «brother» из фильмов.",
+      "explanation": "«Брат» — brother."
+     }
+    },
+    {
+     "type": "match",
+     "ref": "a0.family.002.t2",
+     "data": {
+      "pairs": [
+       {
+        "left": "brother",
+        "right": "брат"
+       },
+       {
+        "left": "sister",
+        "right": "сестра"
+       },
+       {
+        "left": "mother",
+        "right": "мама"
+       },
+       {
+        "left": "father",
+        "right": "папа"
+       }
+      ],
+      "hint": "Соедини пары слово — перевод.",
+      "explanation": "brother — брат, sister — сестра, mother — мама, father — папа."
+     }
+    },
+    {
+     "type": "listen",
+     "ref": "a0.family.002.t3",
+     "data": {
+      "audioKey": "a0.family.002.t3.i-have-a-brother",
+      "transcript": "I have a brother.",
+      "translation": "У меня есть брат.",
+      "question": "What did you hear?",
+      "options": [
+       "I have a brother.",
+       "I have a sister.",
+       "I have a mother.",
+       "This is my brother."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай, кто есть у говорящего.",
+      "explanation": "Фраза «I have a brother» — «У меня есть брат»."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.002.t4",
+     "data": {
+      "prompt": "Say: 'I have a sister.'",
+      "target": "I have a sister.",
+      "audioKey": "a0.family.002.t4.i-have-a-sister",
+      "hint": "Скажи: I — have — a — sister.",
+      "explanation": "«I have a sister» значит «У меня есть сестра»."
+     }
+    },
+    {
+     "type": "gap",
+     "ref": "a0.family.002.t5",
+     "data": {
+      "text": "My _____ is a girl. Her name is Anna.",
+      "answer": "sister",
+      "hint": "Девочка в семье — это она.",
+      "explanation": "Девочка в семье — sister (сестра)."
+     }
+    },
+    {
+     "type": "order",
+     "ref": "a0.family.002.t6",
+     "data": {
+      "tokens": [
+       "I",
+       "have",
+       "a",
+       "brother",
+       "."
+      ],
+      "hint": "Начни с «I», в конце поставь точку.",
+      "explanation": "Правильный порядок: «I have a brother.» — «У меня есть брат»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.003",
+   "title": {
+    "ru": "Это мой… (my)",
+    "en": "This is my..."
+   },
+   "description": {
+    "ru": "Учимся представлять людей фразой «This is my…» с притяжательным my (мой/моя).",
+    "en": "Introduce people with 'This is my...' using the possessive my."
+   },
+   "order": 3,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "order",
+     "ref": "a0.family.003.t1",
+     "data": {
+      "tokens": [
+       "This",
+       "is",
+       "my",
+       "mother",
+       "."
+      ],
+      "hint": "Начни со слова This.",
+      "explanation": "Правильно: «This is my mother.» — «Это моя мама»."
+     }
+    },
+    {
+     "type": "choice",
+     "ref": "a0.family.003.t2",
+     "data": {
+      "question": "Какое слово значит «мой/моя»?",
+      "options": [
+       "my",
+       "is",
+       "this",
+       "he"
+      ],
+      "correctIndex": 0,
+      "hint": "Это короткое слово из двух букв.",
+      "explanation": "«Мой, моя» — это my."
+     }
+    },
+    {
+     "type": "listen",
+     "ref": "a0.family.003.t3",
+     "data": {
+      "audioKey": "a0.family.003.t3.this-is-my-brother",
+      "transcript": "This is my brother.",
+      "translation": "Это мой брат.",
+      "question": "What did you hear?",
+      "options": [
+       "This is my brother.",
+       "This is my sister.",
+       "This is my father.",
+       "This is my mother."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай последнее слово фразы.",
+      "explanation": "«This is my brother» — «Это мой брат»."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.003.t4",
+     "data": {
+      "prompt": "Say: 'This is my sister.'",
+      "target": "This is my sister.",
+      "audioKey": "a0.family.003.t4.this-is-my-sister",
+      "hint": "Скажи по словам: This — is — my — sister.",
+      "explanation": "«This is my sister» значит «Это моя сестра»."
+     }
+    },
+    {
+     "type": "gap",
+     "ref": "a0.family.003.t5",
+     "data": {
+      "text": "This is _____ father. His name is Tom.",
+      "answer": "my",
+      "hint": "Нужно слово «мой».",
+      "explanation": "«Это мой папа» — This is my father."
+     }
+    },
+    {
+     "type": "translate",
+     "ref": "a0.family.003.t6",
+     "data": {
+      "question": "Переведи: 'Это моя мама'",
+      "expected": [
+       "This is my mother.",
+       "This is my mother"
+      ],
+      "hint": "Начни с «This is my...».",
+      "explanation": "«Это моя мама» — This is my mother."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.004",
+   "title": {
+    "ru": "Он / Она (He is / She is)",
+    "en": "He is / She is"
+   },
+   "description": {
+    "ru": "Учимся говорить о людях: He is (он), She is (она).",
+    "en": "Talk about people: He is (он) and She is (она)."
+   },
+   "order": 4,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "choice",
+     "ref": "a0.family.004.t1",
+     "data": {
+      "question": "Как сказать «она»?",
+      "options": [
+       "she",
+       "he",
+       "my",
+       "this"
+      ],
+      "correctIndex": 0,
+      "hint": "О девочке или женщине говорят этим словом.",
+      "explanation": "«Она» — she. «Он» — he."
+     }
+    },
+    {
+     "type": "listen",
+     "ref": "a0.family.004.t2",
+     "data": {
+      "audioKey": "a0.family.004.t2.she-is-my-sister",
+      "transcript": "She is my sister.",
+      "translation": "Она моя сестра.",
+      "question": "What did you hear?",
+      "options": [
+       "She is my sister.",
+       "He is my brother.",
+       "She is my mother.",
+       "He is my father."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай первое слово: он или она.",
+      "explanation": "«She is my sister» — «Она моя сестра»."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.004.t3",
+     "data": {
+      "prompt": "Say: 'He is my brother.'",
+      "target": "He is my brother.",
+      "audioKey": "a0.family.004.t3.he-is-my-brother",
+      "hint": "Скажи: He — is — my — brother.",
+      "explanation": "«He is my brother» значит «Он мой брат»."
+     }
+    },
+    {
+     "type": "gap",
+     "ref": "a0.family.004.t4",
+     "data": {
+      "text": "_____ is my father. He is a good man.",
+      "answer": "He",
+      "hint": "Говорим про папу — мужчину.",
+      "explanation": "О папе говорим He (он): «He is my father»."
+     }
+    },
+    {
+     "type": "order",
+     "ref": "a0.family.004.t5",
+     "data": {
+      "tokens": [
+       "She",
+       "is",
+       "my",
+       "mother",
+       "."
+      ],
+      "hint": "Начни со слова She.",
+      "explanation": "Правильно: «She is my mother.» — «Она моя мама»."
+     }
+    },
+    {
+     "type": "match",
+     "ref": "a0.family.004.t6",
+     "data": {
+      "pairs": [
+       {
+        "left": "he",
+        "right": "он"
+       },
+       {
+        "left": "she",
+        "right": "она"
+       },
+       {
+        "left": "brother",
+        "right": "брат"
+       },
+       {
+        "left": "sister",
+        "right": "сестра"
+       }
+      ],
+      "hint": "Соедини слово и перевод.",
+      "explanation": "he — он, she — она, brother — брат, sister — сестра."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.005",
+   "title": {
+    "ru": "Твой, его, её (your / his / her)",
+    "en": "your / his / her"
+   },
+   "description": {
+    "ru": "Притяжательные местоимения: your (твой), his (его), her (её).",
+    "en": "Possessives: your, his, her."
+   },
+   "order": 5,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "match",
+     "ref": "a0.family.005.t1",
+     "data": {
+      "pairs": [
+       {
+        "left": "my",
+        "right": "мой"
+       },
+       {
+        "left": "your",
+        "right": "твой"
+       },
+       {
+        "left": "his",
+        "right": "его"
+       },
+       {
+        "left": "her",
+        "right": "её"
+       }
+      ],
+      "hint": "Соедини местоимение с переводом.",
+      "explanation": "my — мой, your — твой, his — его, her — её."
+     }
+    },
+    {
+     "type": "choice",
+     "ref": "a0.family.005.t2",
+     "data": {
+      "question": "Какое слово значит «её»?",
+      "options": [
+       "her",
+       "his",
+       "your",
+       "my"
+      ],
+      "correctIndex": 0,
+      "hint": "Это слово используют, когда говорят о вещах девочки.",
+      "explanation": "«Её» — her. «Его» — his."
+     }
+    },
+    {
+     "type": "listen",
+     "ref": "a0.family.005.t3",
+     "data": {
+      "audioKey": "a0.family.005.t3.this-is-her-mother",
+      "transcript": "This is her mother.",
+      "translation": "Это её мама.",
+      "question": "What did you hear?",
+      "options": [
+       "This is her mother.",
+       "This is his mother.",
+       "This is your mother.",
+       "This is my mother."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай слово перед «mother».",
+      "explanation": "«This is her mother» — «Это её мама»."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.005.t4",
+     "data": {
+      "prompt": "Say: 'This is his father.'",
+      "target": "This is his father.",
+      "audioKey": "a0.family.005.t4.this-is-his-father",
+      "hint": "Скажи: This — is — his — father.",
+      "explanation": "«This is his father» значит «Это его папа»."
+     }
+    },
+    {
+     "type": "gap",
+     "ref": "a0.family.005.t5",
+     "data": {
+      "text": "Tom is a boy. This is _____ sister.",
+      "answer": "his",
+      "hint": "Речь о сестре мальчика Тома.",
+      "explanation": "О мальчике говорим his (его): «This is his sister»."
+     }
+    },
+    {
+     "type": "translate",
+     "ref": "a0.family.005.t6",
+     "data": {
+      "question": "Переведи: 'Это твой брат'",
+      "expected": [
+       "This is your brother.",
+       "This is your brother"
+      ],
+      "hint": "«Твой» — your.",
+      "explanation": "«Это твой брат» — This is your brother."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.006",
+   "title": {
+    "ru": "Муж, жена, сын, дочь",
+    "en": "Husband, wife, son, daughter"
+   },
+   "description": {
+    "ru": "Новые слова о семье: husband (муж), wife (жена), son (сын), daughter (дочь).",
+    "en": "More family words: husband, wife, son, daughter."
+   },
+   "order": 6,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "match",
+     "ref": "a0.family.006.t1",
+     "data": {
+      "pairs": [
+       {
+        "left": "husband",
+        "right": "муж"
+       },
+       {
+        "left": "wife",
+        "right": "жена"
+       },
+       {
+        "left": "son",
+        "right": "сын"
+       },
+       {
+        "left": "daughter",
+        "right": "дочь"
+       }
+      ],
+      "hint": "Соедини слово с переводом.",
+      "explanation": "husband — муж, wife — жена, son — сын, daughter — дочь."
+     }
+    },
+    {
+     "type": "choice",
+     "ref": "a0.family.006.t2",
+     "data": {
+      "question": "Как по-английски «жена»?",
+      "options": [
+       "wife",
+       "husband",
+       "son",
+       "daughter"
+      ],
+      "correctIndex": 0,
+      "hint": "Короткое слово из четырёх букв.",
+      "explanation": "«Жена» — wife. «Муж» — husband."
+     }
+    },
+    {
+     "type": "listen",
+     "ref": "a0.family.006.t3",
+     "data": {
+      "audioKey": "a0.family.006.t3.this-is-my-son",
+      "transcript": "This is my son.",
+      "translation": "Это мой сын.",
+      "question": "What did you hear?",
+      "options": [
+       "This is my son.",
+       "This is my daughter.",
+       "This is my wife.",
+       "This is my husband."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай последнее слово фразы.",
+      "explanation": "«This is my son» — «Это мой сын»."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.006.t4",
+     "data": {
+      "prompt": "Say: 'This is my daughter.'",
+      "target": "This is my daughter.",
+      "audioKey": "a0.family.006.t4.this-is-my-daughter",
+      "hint": "Скажи: This — is — my — daughter.",
+      "explanation": "«This is my daughter» значит «Это моя дочь»."
+     }
+    },
+    {
+     "type": "gap",
+     "ref": "a0.family.006.t5",
+     "data": {
+      "text": "He is my husband. She is my _____.",
+      "answer": "wife",
+      "hint": "Если он муж, то она — ...",
+      "explanation": "Если он husband (муж), то она — wife (жена)."
+     }
+    },
+    {
+     "type": "order",
+     "ref": "a0.family.006.t6",
+     "data": {
+      "tokens": [
+       "This",
+       "is",
+       "my",
+       "daughter",
+       "."
+      ],
+      "hint": "Начни со слова This.",
+      "explanation": "Правильно: «This is my daughter.» — «Это моя дочь»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.007",
+   "title": {
+    "ru": "Описание людей",
+    "en": "Describing people"
+   },
+   "description": {
+    "ru": "Простые прилагательные: young (молодой), old (старый), tall (высокий), short (низкий).",
+    "en": "Simple adjectives: young, old, tall, short."
+   },
+   "order": 7,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "match",
+     "ref": "a0.family.007.t1",
+     "data": {
+      "pairs": [
+       {
+        "left": "young",
+        "right": "молодой"
+       },
+       {
+        "left": "old",
+        "right": "старый"
+       },
+       {
+        "left": "tall",
+        "right": "высокий"
+       },
+       {
+        "left": "short",
+        "right": "низкий"
+       }
+      ],
+      "hint": "Соедини прилагательное с переводом.",
+      "explanation": "young — молодой, old — старый, tall — высокий, short — низкий."
+     }
+    },
+    {
+     "type": "choice",
+     "ref": "a0.family.007.t2",
+     "data": {
+      "question": "Как по-английски «высокий»?",
+      "options": [
+       "tall",
+       "short",
+       "old",
+       "young"
+      ],
+      "correctIndex": 0,
+      "hint": "Слово из четырёх букв, начинается на «t».",
+      "explanation": "«Высокий» — tall. «Низкий» — short."
+     }
+    },
+    {
+     "type": "listen",
+     "ref": "a0.family.007.t3",
+     "data": {
+      "audioKey": "a0.family.007.t3.my-father-is-tall",
+      "transcript": "My father is tall.",
+      "translation": "Мой папа высокий.",
+      "question": "What did you hear?",
+      "options": [
+       "My father is tall.",
+       "My father is short.",
+       "My mother is tall.",
+       "My father is old."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай последнее слово — какой папа.",
+      "explanation": "«My father is tall» — «Мой папа высокий»."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.007.t4",
+     "data": {
+      "prompt": "Say: 'My sister is young.'",
+      "target": "My sister is young.",
+      "audioKey": "a0.family.007.t4.my-sister-is-young",
+      "hint": "Скажи: My — sister — is — young.",
+      "explanation": "«My sister is young» значит «Моя сестра молодая»."
+     }
+    },
+    {
+     "type": "gap",
+     "ref": "a0.family.007.t5",
+     "data": {
+      "text": "My grandfather is not young. He is _____.",
+      "answer": "old",
+      "hint": "Слово, противоположное «young».",
+      "explanation": "Противоположность young (молодой) — old (старый)."
+     }
+    },
+    {
+     "type": "translate",
+     "ref": "a0.family.007.t6",
+     "data": {
+      "question": "Переведи: 'Она молодая'",
+      "expected": [
+       "She is young.",
+       "She is young"
+      ],
+      "hint": "Начни со слова She.",
+      "explanation": "«Она молодая» — She is young."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.family",
+   "lessonRef": "a0.family.008",
+   "title": {
+    "ru": "Повторение: моя семья",
+    "en": "Review: my family"
+   },
+   "description": {
+    "ru": "Повторяем всё о семье и учимся коротко рассказать о своих близких.",
+    "en": "Review family words and learn to talk about your family."
+   },
+   "order": 8,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "type": "listen",
+     "ref": "a0.family.008.t1",
+     "data": {
+      "audioKey": "a0.family.008.t1.this-is-my-family",
+      "transcript": "This is my family.",
+      "translation": "Это моя семья.",
+      "question": "What did you hear?",
+      "options": [
+       "This is my family.",
+       "This is my father.",
+       "This is my mother.",
+       "This is my sister."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай последнее слово — оно про всех вместе.",
+      "explanation": "«This is my family» — «Это моя семья»."
+     }
+    },
+    {
+     "type": "choice",
+     "ref": "a0.family.008.t2",
+     "data": {
+      "question": "Как сказать «Он мой брат»?",
+      "options": [
+       "He is my brother.",
+       "She is my brother.",
+       "He is my sister.",
+       "He is my father."
+      ],
+      "correctIndex": 0,
+      "hint": "«Он» — he, «брат» — brother.",
+      "explanation": "«Он мой брат» — He is my brother."
+     }
+    },
+    {
+     "type": "speak",
+     "ref": "a0.family.008.t3",
+     "data": {
+      "prompt": "Say: 'I love my family.'",
+      "target": "I love my family.",
+      "audioKey": "a0.family.008.t3.i-love-my-family",
+      "hint": "Скажи: I — love — my — family.",
+      "explanation": "«I love my family» значит «Я люблю свою семью»."
+     }
+    },
+    {
+     "type": "match",
+     "ref": "a0.family.008.t4",
+     "data": {
+      "pairs": [
+       {
+        "left": "mother",
+        "right": "мама"
+       },
+       {
+        "left": "brother",
+        "right": "брат"
+       },
+       {
+        "left": "son",
+        "right": "сын"
+       },
+       {
+        "left": "wife",
+        "right": "жена"
+       },
+       {
+        "left": "daughter",
+        "right": "дочь"
+       }
+      ],
+      "hint": "Соедини слова с переводами.",
+      "explanation": "mother — мама, brother — брат, son — сын, wife — жена, daughter — дочь."
+     }
+    },
+    {
+     "type": "order",
+     "ref": "a0.family.008.t5",
+     "data": {
+      "tokens": [
+       "She",
+       "is",
+       "my",
+       "daughter",
+       "."
+      ],
+      "hint": "Начни со слова She.",
+      "explanation": "Правильно: «She is my daughter.» — «Она моя дочь»."
+     }
+    },
+    {
+     "type": "translate",
+     "ref": "a0.family.008.t6",
+     "data": {
+      "question": "Переведи: 'Это моя семья'",
+      "expected": [
+       "This is my family.",
+       "This is my family"
+      ],
+      "hint": "Начни с «This is my...».",
+      "explanation": "«Это моя семья» — This is my family."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.001",
+   "title": {
+    "ru": "Напитки",
+    "en": "Drinks"
+   },
+   "description": {
+    "ru": "water, tea, coffee, milk",
+    "en": "water, tea, coffee, milk"
+   },
+   "order": 1,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.001.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.001.t1.water",
+      "transcript": "Water",
+      "translation": "Вода",
+      "question": "What did you hear?",
+      "options": [
+       "Water",
+       "Waiter",
+       "Winter",
+       "Wander"
+      ],
+      "correctIndex": 0,
+      "hint": "Прозрачный напиток без цвета и вкуса",
+      "explanation": "Water — вода. Waiter — официант, Winter — зима, Wander — бродить."
+     }
+    },
+    {
+     "ref": "a0.food.001.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'A cup of tea'",
+      "target": "A cup of tea",
+      "audioKey": "a0.food.001.t2.tea",
+      "hint": "Повторите за образцом: «чашка чая»",
+      "explanation": "A cup of tea [ə kʌp əv tiː] — чашка чая."
+     }
+    },
+    {
+     "ref": "a0.food.001.t3",
+     "type": "choice",
+     "data": {
+      "question": "Как по-английски «кофе»?",
+      "options": [
+       "Milk",
+       "Coffee",
+       "Water",
+       "Tea"
+      ],
+      "correctIndex": 1,
+      "hint": "Бодрящий тёмный напиток по утрам",
+      "explanation": "Coffee — кофе. Milk — молоко, Water — вода, Tea — чай."
+     }
+    },
+    {
+     "ref": "a0.food.001.t4",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "water",
+        "right": "вода"
+       },
+       {
+        "left": "tea",
+        "right": "чай"
+       },
+       {
+        "left": "coffee",
+        "right": "кофе"
+       },
+       {
+        "left": "milk",
+        "right": "молоко"
+       }
+      ],
+      "hint": "Соедините напиток с его переводом",
+      "explanation": "water — вода, tea — чай, coffee — кофе, milk — молоко."
+     }
+    },
+    {
+     "ref": "a0.food.001.t5",
+     "type": "gap",
+     "data": {
+      "text": "I drink _____ every morning. (кофе)",
+      "answer": "coffee",
+      "hint": "Тёмный бодрящий напиток",
+      "explanation": "Coffee — кофе. I drink coffee — я пью кофе.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.food.001.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Молоко'",
+      "expected": [
+       "Milk",
+       "milk"
+      ],
+      "hint": "Белый напиток от коровы",
+      "explanation": "Milk — молоко."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.002",
+   "title": {
+    "ru": "Еда",
+    "en": "Food"
+   },
+   "description": {
+    "ru": "bread, egg, rice, soup",
+    "en": "bread, egg, rice, soup"
+   },
+   "order": 2,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.002.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.002.t1.bread",
+      "transcript": "Bread",
+      "translation": "Хлеб",
+      "question": "What did you hear?",
+      "options": [
+       "Bread",
+       "Bird",
+       "Board",
+       "Broad"
+      ],
+      "correctIndex": 0,
+      "hint": "Его пекут из муки",
+      "explanation": "Bread — хлеб. Bird — птица, Board — доска, Broad — широкий."
+     }
+    },
+    {
+     "ref": "a0.food.002.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I eat rice'",
+      "target": "I eat rice",
+      "audioKey": "a0.food.002.t2.rice",
+      "hint": "Скажите: «я ем рис»",
+      "explanation": "I eat rice — я ем рис."
+     }
+    },
+    {
+     "ref": "a0.food.002.t3",
+     "type": "choice",
+     "data": {
+      "question": "Как по-английски «яйцо»?",
+      "options": [
+       "Soup",
+       "Rice",
+       "Egg",
+       "Bread"
+      ],
+      "correctIndex": 2,
+      "hint": "Его несёт курица",
+      "explanation": "Egg — яйцо. Soup — суп, Rice — рис, Bread — хлеб."
+     }
+    },
+    {
+     "ref": "a0.food.002.t4",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "I",
+       "like",
+       "bread",
+       "."
+      ],
+      "hint": "Соберите фразу: «Я люблю хлеб»",
+      "explanation": "I like bread — я люблю хлеб. Порядок: подлежащее + глагол + слово."
+     }
+    },
+    {
+     "ref": "a0.food.002.t5",
+     "type": "gap",
+     "data": {
+      "text": "Rice and _____ for lunch. (суп)",
+      "answer": "soup",
+      "hint": "Горячее жидкое блюдо",
+      "explanation": "Soup — суп. Rice and soup — рис и суп.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.food.002.t6",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "bread",
+        "right": "хлеб"
+       },
+       {
+        "left": "egg",
+        "right": "яйцо"
+       },
+       {
+        "left": "rice",
+        "right": "рис"
+       },
+       {
+        "left": "soup",
+        "right": "суп"
+       }
+      ],
+      "hint": "Соедините еду с её переводом",
+      "explanation": "bread — хлеб, egg — яйцо, rice — рис, soup — суп."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.003",
+   "title": {
+    "ru": "Фрукты и овощи",
+    "en": "Fruits & Vegetables"
+   },
+   "description": {
+    "ru": "apple, banana, tomato и другие",
+    "en": "apple, banana, tomato and more"
+   },
+   "order": 3,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.003.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.003.t1.apple",
+      "transcript": "Apple",
+      "translation": "Яблоко",
+      "question": "What did you hear?",
+      "options": [
+       "Apple",
+       "Able",
+       "Apron",
+       "Ample"
+      ],
+      "correctIndex": 0,
+      "hint": "Красный или зелёный фрукт",
+      "explanation": "Apple — яблоко. Able — способный, Apron — фартук, Ample — обильный."
+     }
+    },
+    {
+     "ref": "a0.food.003.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I like bananas'",
+      "target": "I like bananas",
+      "audioKey": "a0.food.003.t2.banana",
+      "hint": "Скажите: «я люблю бананы»",
+      "explanation": "I like bananas — я люблю бананы."
+     }
+    },
+    {
+     "ref": "a0.food.003.t3",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "apple",
+        "right": "яблоко"
+       },
+       {
+        "left": "banana",
+        "right": "банан"
+       },
+       {
+        "left": "tomato",
+        "right": "помидор"
+       },
+       {
+        "left": "orange",
+        "right": "апельсин"
+       },
+       {
+        "left": "carrot",
+        "right": "морковь"
+       }
+      ],
+      "hint": "Соедините слово с переводом",
+      "explanation": "apple — яблоко, banana — банан, tomato — помидор, orange — апельсин, carrot — морковь."
+     }
+    },
+    {
+     "ref": "a0.food.003.t4",
+     "type": "choice",
+     "data": {
+      "question": "Какое слово — овощ, а не фрукт?",
+      "options": [
+       "Apple",
+       "Banana",
+       "Tomato",
+       "Orange"
+      ],
+      "correctIndex": 2,
+      "hint": "Красный, часто кладут в салат",
+      "explanation": "Tomato — помидор, это овощ. Apple, banana, orange — фрукты."
+     }
+    },
+    {
+     "ref": "a0.food.003.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Банан'",
+      "expected": [
+       "Banana",
+       "a banana"
+      ],
+      "hint": "Жёлтый длинный фрукт",
+      "explanation": "Banana — банан. С артиклем: a banana."
+     }
+    },
+    {
+     "ref": "a0.food.003.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "Do",
+       "you",
+       "like",
+       "apples",
+       "?"
+      ],
+      "hint": "Соберите вопрос: «Ты любишь яблоки?»",
+      "explanation": "Do you like apples? — Ты любишь яблоки? Вопрос начинается с Do."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.004",
+   "title": {
+    "ru": "Я люблю / Я не люблю",
+    "en": "I like / I don't like"
+   },
+   "description": {
+    "ru": "Как сказать о вкусах",
+    "en": "Talking about likes and dislikes"
+   },
+   "order": 4,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.004.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.004.t1.like_tea",
+      "transcript": "I like tea",
+      "translation": "Я люблю чай",
+      "question": "What did you hear?",
+      "options": [
+       "I like tea",
+       "I like coffee",
+       "I don't like tea",
+       "I like three"
+      ],
+      "correctIndex": 0,
+      "hint": "Слушайте: нравится или нет, и что именно",
+      "explanation": "I like tea — я люблю чай. Здесь нет don't, значит нравится."
+     }
+    },
+    {
+     "ref": "a0.food.004.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I don't like coffee'",
+      "target": "I don't like coffee",
+      "audioKey": "a0.food.004.t2.dont_like",
+      "hint": "Скажите: «я не люблю кофе»",
+      "explanation": "I don't like coffee — я не люблю кофе. don't = do not."
+     }
+    },
+    {
+     "ref": "a0.food.004.t3",
+     "type": "choice",
+     "data": {
+      "question": "Как сказать «Я не люблю молоко»?",
+      "options": [
+       "I like milk",
+       "I don't like milk",
+       "I likes milk",
+       "I not like milk"
+      ],
+      "correctIndex": 1,
+      "hint": "Отрицание строится с don't",
+      "explanation": "I don't like milk — правильно. I likes и I not like — грамматические ошибки."
+     }
+    },
+    {
+     "ref": "a0.food.004.t4",
+     "type": "gap",
+     "data": {
+      "text": "I _____ like soup. (отрицание)",
+      "answer": "don't",
+      "hint": "Короткая отрицательная форма do not",
+      "explanation": "I don't like soup — я не люблю суп. don't = do not.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.food.004.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "I",
+       "like",
+       "apples",
+       "."
+      ],
+      "hint": "Соберите фразу: «Я люблю яблоки»",
+      "explanation": "I like apples — я люблю яблоки."
+     }
+    },
+    {
+     "ref": "a0.food.004.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Я люблю чай'",
+      "expected": [
+       "I like tea"
+      ],
+      "hint": "«люблю / нравится» = like",
+      "explanation": "I like tea — я люблю чай."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.005",
+   "title": {
+    "ru": "Я хочу / Я бы хотел",
+    "en": "I want / I'd like"
+   },
+   "description": {
+    "ru": "Как попросить то, что хочешь",
+    "en": "Asking for what you want"
+   },
+   "order": 5,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.005.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.005.t1.want_water",
+      "transcript": "I want water",
+      "translation": "Я хочу воды",
+      "question": "What did you hear?",
+      "options": [
+       "I want water",
+       "I want coffee",
+       "I want milk",
+       "I want tea"
+      ],
+      "correctIndex": 0,
+      "hint": "Слушайте, какой напиток называют",
+      "explanation": "I want water — я хочу воды."
+     }
+    },
+    {
+     "ref": "a0.food.005.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I'd like a coffee'",
+      "target": "I'd like a coffee",
+      "audioKey": "a0.food.005.t2.idlike",
+      "hint": "Вежливо: «я бы хотел кофе»",
+      "explanation": "I'd like a coffee — я бы хотел кофе. I'd = I would, это вежливая форма."
+     }
+    },
+    {
+     "ref": "a0.food.005.t3",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Я хочу чай'",
+      "expected": [
+       "I want tea",
+       "I want some tea"
+      ],
+      "hint": "«хочу» = want",
+      "explanation": "I want tea — я хочу чай."
+     }
+    },
+    {
+     "ref": "a0.food.005.t4",
+     "type": "choice",
+     "data": {
+      "question": "Как вежливо сказать «Я бы хотел воды»?",
+      "options": [
+       "I want water",
+       "I'd like some water",
+       "I like water",
+       "Give water"
+      ],
+      "correctIndex": 1,
+      "hint": "Вежливая форма начинается с I'd like",
+      "explanation": "I'd like some water — вежливо. I want — прямее, I like — «люблю»."
+     }
+    },
+    {
+     "ref": "a0.food.005.t5",
+     "type": "gap",
+     "data": {
+      "text": "I'd _____ a cup of tea, please. (хотел бы)",
+      "answer": "like",
+      "hint": "После I'd в вежливой просьбе идёт этот глагол",
+      "explanation": "I'd like — я бы хотел. I'd like a cup of tea — вежливая просьба.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.food.005.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "I",
+       "want",
+       "some",
+       "bread",
+       "."
+      ],
+      "hint": "Соберите фразу: «Я хочу немного хлеба»",
+      "explanation": "I want some bread — я хочу немного хлеба. some — «немного»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.006",
+   "title": {
+    "ru": "У вас есть...?",
+    "en": "Do you have...?"
+   },
+   "description": {
+    "ru": "Вопросы в магазине",
+    "en": "Asking in a shop"
+   },
+   "order": 6,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.006.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.006.t1.have_milk",
+      "transcript": "Do you have milk?",
+      "translation": "У вас есть молоко?",
+      "question": "What did you hear?",
+      "options": [
+       "Do you have milk?",
+       "Do you have bread?",
+       "Do you have tea?",
+       "Do you like milk?"
+      ],
+      "correctIndex": 0,
+      "hint": "Вопрос покупателя в магазине",
+      "explanation": "Do you have milk? — У вас есть молоко?"
+     }
+    },
+    {
+     "ref": "a0.food.006.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'Do you have bread?'",
+      "target": "Do you have bread?",
+      "audioKey": "a0.food.006.t2.have_bread",
+      "hint": "Спросите: «У вас есть хлеб?»",
+      "explanation": "Do you have bread? — У вас есть хлеб?"
+     }
+    },
+    {
+     "ref": "a0.food.006.t3",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "Do",
+       "you",
+       "have",
+       "apples",
+       "?"
+      ],
+      "hint": "Соберите вопрос: «У вас есть яблоки?»",
+      "explanation": "Do you have apples? — У вас есть яблоки?"
+     }
+    },
+    {
+     "ref": "a0.food.006.t4",
+     "type": "choice",
+     "data": {
+      "question": "Как спросить «У вас есть кофе?»",
+      "options": [
+       "You have coffee?",
+       "Do you have coffee?",
+       "Have you coffee?",
+       "Do you like coffee?"
+      ],
+      "correctIndex": 1,
+      "hint": "Вопрос строится с Do you have",
+      "explanation": "Do you have coffee? — правильный вопрос. Do you like coffee? — «нравится ли вам кофе»."
+     }
+    },
+    {
+     "ref": "a0.food.006.t5",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "Do you have...?",
+        "right": "У вас есть...?"
+       },
+       {
+        "left": "How much is it?",
+        "right": "Сколько это стоит?"
+       },
+       {
+        "left": "Yes, we do.",
+        "right": "Да, есть."
+       },
+       {
+        "left": "No, we don't.",
+        "right": "Нет, нету."
+       },
+       {
+        "left": "Thank you",
+        "right": "Спасибо"
+       }
+      ],
+      "hint": "Соедините фразы из магазина с переводом",
+      "explanation": "Полезные фразы для покупок: вопрос, цена, «да/нет», благодарность."
+     }
+    },
+    {
+     "ref": "a0.food.006.t6",
+     "type": "gap",
+     "data": {
+      "text": "_____ you have any eggs? (вспомогательный глагол)",
+      "answer": "Do",
+      "hint": "С него начинается общий вопрос в Present Simple",
+      "explanation": "Do you have any eggs? — У вас есть яйца? Вопрос начинается с Do.",
+      "caseInsensitive": true
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.007",
+   "title": {
+    "ru": "В кафе: заказ",
+    "en": "In a cafe: ordering"
+   },
+   "description": {
+    "ru": "Как сделать заказ",
+    "en": "How to place an order"
+   },
+   "order": 7,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.007.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.007.t1.tea_please",
+      "transcript": "A tea, please",
+      "translation": "Чай, пожалуйста",
+      "question": "What did you hear?",
+      "options": [
+       "A tea, please",
+       "A coffee, please",
+       "A cake, please",
+       "Tea and milk"
+      ],
+      "correctIndex": 0,
+      "hint": "Короткий заказ в кафе",
+      "explanation": "A tea, please — Чай, пожалуйста."
+     }
+    },
+    {
+     "ref": "a0.food.007.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'Can I have a coffee, please?'",
+      "target": "Can I have a coffee, please?",
+      "audioKey": "a0.food.007.t2.can_i_have",
+      "hint": "Закажите кофе вежливо",
+      "explanation": "Can I have a coffee, please? — Можно мне кофе, пожалуйста?"
+     }
+    },
+    {
+     "ref": "a0.food.007.t3",
+     "type": "choice",
+     "data": {
+      "question": "Как попросить счёт в кафе?",
+      "options": [
+       "The bill, please.",
+       "The menu, please.",
+       "A table, please.",
+       "The door, please."
+      ],
+      "correctIndex": 0,
+      "hint": "Вы поели и хотите заплатить",
+      "explanation": "The bill, please — Счёт, пожалуйста. The menu — меню, a table — столик."
+     }
+    },
+    {
+     "ref": "a0.food.007.t4",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Кофе, пожалуйста'",
+      "expected": [
+       "A coffee, please",
+       "Coffee, please"
+      ],
+      "hint": "Напиток + вежливое слово please",
+      "explanation": "A coffee, please — Кофе, пожалуйста."
+     }
+    },
+    {
+     "ref": "a0.food.007.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "Can",
+       "I",
+       "have",
+       "the",
+       "menu",
+       "?"
+      ],
+      "hint": "Соберите вопрос: «Можно мне меню?»",
+      "explanation": "Can I have the menu? — Можно мне меню?"
+     }
+    },
+    {
+     "ref": "a0.food.007.t6",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "menu",
+        "right": "меню"
+       },
+       {
+        "left": "bill",
+        "right": "счёт"
+       },
+       {
+        "left": "waiter",
+        "right": "официант"
+       },
+       {
+        "left": "table",
+        "right": "столик"
+       },
+       {
+        "left": "order",
+        "right": "заказ"
+       }
+      ],
+      "hint": "Соедините слова из кафе с переводом",
+      "explanation": "menu — меню, bill — счёт, waiter — официант, table — столик, order — заказ."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.food",
+   "lessonRef": "a0.food.008",
+   "title": {
+    "ru": "a / an / some",
+    "en": "a / an / some"
+   },
+   "description": {
+    "ru": "Артикли и «немного»",
+    "en": "Articles and 'some'"
+   },
+   "order": 8,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.food.008.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.food.008.t1.an_apple",
+      "transcript": "an apple",
+      "translation": "яблоко",
+      "question": "What did you hear?",
+      "options": [
+       "an apple",
+       "a apple",
+       "an apples",
+       "a napple"
+      ],
+      "correctIndex": 0,
+      "hint": "Артикль перед гласным звуком",
+      "explanation": "an apple — перед словом на гласный звук ставим an."
+     }
+    },
+    {
+     "ref": "a0.food.008.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'some water'",
+      "target": "some water",
+      "audioKey": "a0.food.008.t2.some_water",
+      "hint": "Скажите: «немного воды»",
+      "explanation": "some water — немного воды. some ставим с неисчисляемыми словами."
+     }
+    },
+    {
+     "ref": "a0.food.008.t3",
+     "type": "gap",
+     "data": {
+      "text": "I want _____ egg. (артикль перед гласной)",
+      "answer": "an",
+      "hint": "Слово egg начинается с гласного звука",
+      "explanation": "an egg — перед гласным звуком (e) ставим an, а не a.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.food.008.t4",
+     "type": "choice",
+     "data": {
+      "question": "Выбери правильный артикль: «___ banana»",
+      "options": [
+       "an",
+       "a",
+       "some",
+       "the"
+      ],
+      "correctIndex": 1,
+      "hint": "Слово banana начинается с согласного звука",
+      "explanation": "a banana — перед согласным звуком (b) ставим a."
+     }
+    },
+    {
+     "ref": "a0.food.008.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "I",
+       "have",
+       "some",
+       "rice",
+       "."
+      ],
+      "hint": "Соберите фразу: «У меня есть немного риса»",
+      "explanation": "I have some rice — some используем с неисчисляемым rice."
+     }
+    },
+    {
+     "ref": "a0.food.008.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'яблоко' (с артиклем)",
+      "expected": [
+       "an apple"
+      ],
+      "hint": "Гласный звук в начале → артикль an",
+      "explanation": "an apple — перед гласным звуком используем an."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.001",
+   "title": {
+    "ru": "Hello и Hi — Привет",
+    "en": "Hello & Hi"
+   },
+   "description": {
+    "ru": "Учимся здороваться: формальное Hello и неформальное Hi.",
+    "en": "Learn to greet people: formal Hello and informal Hi."
+   },
+   "order": 1,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.001.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как сказать «Привет / Здравствуйте»?",
+      "options": [
+       "Hello",
+       "Table",
+       "Water",
+       "Book"
+      ],
+      "correctIndex": 0,
+      "hint": "Это самое частое приветствие в английском.",
+      "explanation": "«Hello» переводится как «Привет» или «Здравствуйте». Остальные слова — предметы: стол, вода, книга."
+     }
+    },
+    {
+     "ref": "a0.greetings.001.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.001.t2.hi",
+      "transcript": "Hi!",
+      "translation": "Привет!",
+      "question": "What did you hear?",
+      "options": [
+       "Hi!",
+       "Bye!",
+       "No!",
+       "Go!"
+      ],
+      "correctIndex": 0,
+      "hint": "Короткое неформальное приветствие из двух букв.",
+      "explanation": "«Hi!» — это неформальное «Привет!». «Bye» — пока, «No» — нет, «Go» — иди."
+     }
+    },
+    {
+     "ref": "a0.greetings.001.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'Hello!'",
+      "target": "Hello!",
+      "audioKey": "a0.greetings.001.t3.hello",
+      "hint": "Произнеси уверенно и с улыбкой.",
+      "explanation": "«Hello!» — универсальное приветствие, подходит для любой ситуации."
+     }
+    },
+    {
+     "ref": "a0.greetings.001.t4",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "Hello",
+        "right": "Здравствуйте"
+       },
+       {
+        "left": "Hi",
+        "right": "Привет"
+       },
+       {
+        "left": "Hey",
+        "right": "Эй / Приветик"
+       },
+       {
+        "left": "Welcome",
+        "right": "Добро пожаловать"
+       }
+      ],
+      "hint": "Соедини английское приветствие с его русским значением.",
+      "explanation": "Hello — здравствуйте, Hi — привет, Hey — неформальное «эй/приветик», Welcome — добро пожаловать."
+     }
+    },
+    {
+     "ref": "a0.greetings.001.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Привет!'",
+      "expected": [
+       "Hi!",
+       "Hello!"
+      ],
+      "hint": "Подойдёт как формальный, так и неформальный вариант.",
+      "explanation": "«Привет!» можно перевести как «Hi!» (неформально) или «Hello!» (нейтрально)."
+     }
+    },
+    {
+     "ref": "a0.greetings.001.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "Hello",
+       "there",
+       "!"
+      ],
+      "hint": "Дружеское приветствие из двух слов и восклицательного знака.",
+      "explanation": "«Hello there!» — тёплое «Привет!» / «Здравствуй!», когда рад видеть человека."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.002",
+   "title": {
+    "ru": "Goodbye и Bye — Прощание",
+    "en": "Goodbye & Bye"
+   },
+   "description": {
+    "ru": "Учимся прощаться: Goodbye, Bye и See you later.",
+    "en": "Learn to say goodbye: Goodbye, Bye and See you later."
+   },
+   "order": 2,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.002.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.002.t1.goodbye",
+      "transcript": "Goodbye!",
+      "translation": "До свидания!",
+      "question": "What did you hear?",
+      "options": [
+       "Goodbye!",
+       "Good boy!",
+       "Good day!",
+       "Go away!"
+      ],
+      "correctIndex": 0,
+      "hint": "Формальное прощание, звучит как «гуд-бай».",
+      "explanation": "«Goodbye!» — «До свидания!». Похожие по звучанию фразы имеют другое значение."
+     }
+    },
+    {
+     "ref": "a0.greetings.002.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'Goodbye!'",
+      "target": "Goodbye!",
+      "audioKey": "a0.greetings.002.t2.goodbye",
+      "hint": "Ударение на второй части: good-BYE.",
+      "explanation": "«Goodbye!» — вежливое «До свидания!», подходит для формальных ситуаций."
+     }
+    },
+    {
+     "ref": "a0.greetings.002.t3",
+     "type": "gap",
+     "data": {
+      "text": "See you _____!",
+      "answer": "later",
+      "hint": "«позже» по-английски.",
+      "explanation": "«See you later!» — «Увидимся позже!». Слово «later» значит «позже».",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.greetings.002.t4",
+     "type": "choice",
+     "data": {
+      "question": "Как неформально сказать «Пока»?",
+      "options": [
+       "Bye!",
+       "Hello!",
+       "Please!",
+       "Thanks!"
+      ],
+      "correctIndex": 0,
+      "hint": "Короткое дружеское прощание.",
+      "explanation": "«Bye!» — неформальное «Пока!». Hello — привет, Please — пожалуйста, Thanks — спасибо."
+     }
+    },
+    {
+     "ref": "a0.greetings.002.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'До свидания!'",
+      "expected": [
+       "Goodbye!",
+       "Bye!"
+      ],
+      "hint": "Есть формальный и короткий вариант.",
+      "explanation": "«До свидания!» — «Goodbye!» (формально) или «Bye!» (неформально)."
+     }
+    },
+    {
+     "ref": "a0.greetings.002.t6",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "Goodbye",
+        "right": "До свидания"
+       },
+       {
+        "left": "Bye",
+        "right": "Пока"
+       },
+       {
+        "left": "See you",
+        "right": "Увидимся"
+       },
+       {
+        "left": "See you later",
+        "right": "Увидимся позже"
+       }
+      ],
+      "hint": "Соедини прощание с переводом.",
+      "explanation": "Goodbye — до свидания, Bye — пока, See you — увидимся, See you later — увидимся позже."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.003",
+   "title": {
+    "ru": "Как тебя зовут? / Меня зовут…",
+    "en": "What's your name? / My name is…"
+   },
+   "description": {
+    "ru": "Учимся спрашивать имя и называть своё.",
+    "en": "Learn to ask someone's name and give your own."
+   },
+   "order": 3,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.003.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как спросить «Как тебя зовут?»",
+      "options": [
+       "What's your name?",
+       "Where are you?",
+       "How are you?",
+       "What time is it?"
+      ],
+      "correctIndex": 0,
+      "hint": "Ищи слово «name» (имя).",
+      "explanation": "«What's your name?» — «Как тебя зовут?». Другие вопросы про место, состояние и время."
+     }
+    },
+    {
+     "ref": "a0.greetings.003.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.003.t2.myname",
+      "transcript": "My name is Anna.",
+      "translation": "Меня зовут Анна.",
+      "question": "What did you hear?",
+      "options": [
+       "My name is Anna.",
+       "My game is Anna.",
+       "My name is Anya.",
+       "My name is Emma."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай имя и слово перед ним.",
+      "explanation": "«My name is Anna.» — «Меня зовут Анна.». Обрати внимание на слово «name», а не «game»."
+     }
+    },
+    {
+     "ref": "a0.greetings.003.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'My name is Tom.'",
+      "target": "My name is Tom.",
+      "audioKey": "a0.greetings.003.t3.myname",
+      "hint": "Назови своё имя после «My name is».",
+      "explanation": "«My name is Tom.» — «Меня зовут Том.». После «My name is» ставим имя."
+     }
+    },
+    {
+     "ref": "a0.greetings.003.t4",
+     "type": "gap",
+     "data": {
+      "text": "What's your _____?",
+      "answer": "name",
+      "hint": "По-английски «имя».",
+      "explanation": "«What's your name?» — «Как тебя зовут?». Пропущено слово «name» (имя).",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.greetings.003.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "What's",
+       "your",
+       "name",
+       "?"
+      ],
+      "hint": "Начни со слова «What's».",
+      "explanation": "Правильный порядок: «What's your name?» — «Как тебя зовут?»."
+     }
+    },
+    {
+     "ref": "a0.greetings.003.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Меня зовут Иван.'",
+      "expected": [
+       "My name is Ivan.",
+       "I'm Ivan."
+      ],
+      "hint": "Используй конструкцию «My name is …».",
+      "explanation": "«Меня зовут Иван.» — «My name is Ivan.» или короче «I'm Ivan.»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.004",
+   "title": {
+    "ru": "Приятно познакомиться / Это…",
+    "en": "Nice to meet you / This is…"
+   },
+   "description": {
+    "ru": "Учимся реагировать на знакомство и представлять других людей.",
+    "en": "Learn to react to introductions and introduce other people."
+   },
+   "order": 4,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.004.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.004.t1.nicetomeetyou",
+      "transcript": "Nice to meet you!",
+      "translation": "Приятно познакомиться!",
+      "question": "What did you hear?",
+      "options": [
+       "Nice to meet you!",
+       "Nice to see you!",
+       "Nice to eat you!",
+       "Nine to meet you!"
+      ],
+      "correctIndex": 0,
+      "hint": "Фраза про знакомство, слушай слово «meet».",
+      "explanation": "«Nice to meet you!» — «Приятно познакомиться!». «Meet» значит «познакомиться»."
+     }
+    },
+    {
+     "ref": "a0.greetings.004.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'Nice to meet you!'",
+      "target": "Nice to meet you!",
+      "audioKey": "a0.greetings.004.t2.nicetomeetyou",
+      "hint": "Говори приветливо, это вежливая фраза.",
+      "explanation": "«Nice to meet you!» говорят при первом знакомстве — «Приятно познакомиться!»."
+     }
+    },
+    {
+     "ref": "a0.greetings.004.t3",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "Nice to meet you",
+        "right": "Приятно познакомиться"
+       },
+       {
+        "left": "This is Anna",
+        "right": "Это Анна"
+       },
+       {
+        "left": "My friend",
+        "right": "Мой друг"
+       },
+       {
+        "left": "You too",
+        "right": "Взаимно / И тебе"
+       }
+      ],
+      "hint": "Соедини фразу знакомства с переводом.",
+      "explanation": "Nice to meet you — приятно познакомиться, This is Anna — это Анна, My friend — мой друг, You too — взаимно."
+     }
+    },
+    {
+     "ref": "a0.greetings.004.t4",
+     "type": "choice",
+     "data": {
+      "question": "Как представить друга: «Это Анна»?",
+      "options": [
+       "This is Anna.",
+       "There is Anna.",
+       "This Anna is.",
+       "These Anna."
+      ],
+      "correctIndex": 0,
+      "hint": "Представляя человека, начинают с «This is…».",
+      "explanation": "«This is Anna.» — «Это Анна.». Так представляют людей. Остальные варианты грамматически неверны."
+     }
+    },
+    {
+     "ref": "a0.greetings.004.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Приятно познакомиться!'",
+      "expected": [
+       "Nice to meet you!"
+      ],
+      "hint": "Стандартная вежливая фраза при знакомстве.",
+      "explanation": "«Приятно познакомиться!» — «Nice to meet you!»."
+     }
+    },
+    {
+     "ref": "a0.greetings.004.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "This",
+       "is",
+       "my",
+       "friend",
+       "."
+      ],
+      "hint": "Начни с указательного слова «This».",
+      "explanation": "Правильный порядок: «This is my friend.» — «Это мой друг.»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.005",
+   "title": {
+    "ru": "Как дела? / У меня всё хорошо",
+    "en": "How are you? / I'm fine, thanks"
+   },
+   "description": {
+    "ru": "Учимся спрашивать о делах и вежливо отвечать.",
+    "en": "Learn to ask how someone is and answer politely."
+   },
+   "order": 5,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.005.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как спросить «Как дела?»",
+      "options": [
+       "How are you?",
+       "Who are you?",
+       "How old are you?",
+       "Where are you?"
+      ],
+      "correctIndex": 0,
+      "hint": "Вопрос начинается с «How» (как).",
+      "explanation": "«How are you?» — «Как дела?». Who — кто, How old — сколько лет, Where — где."
+     }
+    },
+    {
+     "ref": "a0.greetings.005.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.005.t2.imfine",
+      "transcript": "I'm fine, thanks.",
+      "translation": "У меня всё хорошо, спасибо.",
+      "question": "What did you hear?",
+      "options": [
+       "I'm fine, thanks.",
+       "I'm five, thanks.",
+       "I find thanks.",
+       "I'm fine, thank."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай слово «fine» (хорошо).",
+      "explanation": "«I'm fine, thanks.» — «У меня всё хорошо, спасибо.». Не путай «fine» и «five» (пять)."
+     }
+    },
+    {
+     "ref": "a0.greetings.005.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I'm fine, thank you.'",
+      "target": "I'm fine, thank you.",
+      "audioKey": "a0.greetings.005.t3.imfine",
+      "hint": "Ответ на вопрос «How are you?».",
+      "explanation": "«I'm fine, thank you.» — вежливый ответ «У меня всё хорошо, спасибо.»."
+     }
+    },
+    {
+     "ref": "a0.greetings.005.t4",
+     "type": "gap",
+     "data": {
+      "text": "How _____ you?",
+      "answer": "are",
+      "hint": "Форма глагола «to be» для «you».",
+      "explanation": "«How are you?» — «Как дела?». С «you» используется форма «are».",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.greetings.005.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Как дела?'",
+      "expected": [
+       "How are you?"
+      ],
+      "hint": "Начни с вопросительного слова «How».",
+      "explanation": "«Как дела?» — «How are you?»."
+     }
+    },
+    {
+     "ref": "a0.greetings.005.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "How",
+       "are",
+       "you",
+       "?"
+      ],
+      "hint": "Вопрос начинается с «How».",
+      "explanation": "Правильный порядок: «How are you?» — «Как дела?»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.006",
+   "title": {
+    "ru": "Доброе утро / день / вечер / ночь",
+    "en": "Good morning / afternoon / evening / night"
+   },
+   "description": {
+    "ru": "Учимся здороваться в зависимости от времени суток.",
+    "en": "Learn to greet people depending on the time of day."
+   },
+   "order": 6,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.006.t1",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "Good morning",
+        "right": "Доброе утро"
+       },
+       {
+        "left": "Good afternoon",
+        "right": "Добрый день"
+       },
+       {
+        "left": "Good evening",
+        "right": "Добрый вечер"
+       },
+       {
+        "left": "Good night",
+        "right": "Спокойной ночи"
+       }
+      ],
+      "hint": "Соедини приветствие со временем суток.",
+      "explanation": "Good morning — утро, Good afternoon — день, Good evening — вечер, Good night — спокойной ночи (говорят перед сном)."
+     }
+    },
+    {
+     "ref": "a0.greetings.006.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.006.t2.goodmorning",
+      "transcript": "Good morning!",
+      "translation": "Доброе утро!",
+      "question": "What did you hear?",
+      "options": [
+       "Good morning!",
+       "Good evening!",
+       "Good night!",
+       "Good afternoon!"
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай второе слово — время суток.",
+      "explanation": "«Good morning!» — «Доброе утро!». «Morning» значит «утро»."
+     }
+    },
+    {
+     "ref": "a0.greetings.006.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'Good evening!'",
+      "target": "Good evening!",
+      "audioKey": "a0.greetings.006.t3.goodevening",
+      "hint": "Так здороваются вечером.",
+      "explanation": "«Good evening!» — «Добрый вечер!». Говорят после захода солнца."
+     }
+    },
+    {
+     "ref": "a0.greetings.006.t4",
+     "type": "choice",
+     "data": {
+      "question": "Что говорят перед сном?",
+      "options": [
+       "Good night!",
+       "Good morning!",
+       "Good afternoon!",
+       "Hello!"
+      ],
+      "correctIndex": 0,
+      "hint": "Пожелание на ночь.",
+      "explanation": "«Good night!» — «Спокойной ночи!». Это прощание перед сном, а не приветствие."
+     }
+    },
+    {
+     "ref": "a0.greetings.006.t5",
+     "type": "gap",
+     "data": {
+      "text": "Good _____! It's 8 a.m.",
+      "answer": "morning",
+      "hint": "8 утра — какое это время суток?",
+      "explanation": "В 8 утра говорят «Good morning!» — «Доброе утро!».",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.greetings.006.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Добрый вечер!'",
+      "expected": [
+       "Good evening!"
+      ],
+      "hint": "Вечернее приветствие.",
+      "explanation": "«Добрый вечер!» — «Good evening!»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.007",
+   "title": {
+    "ru": "Откуда ты? / Я из…",
+    "en": "Where are you from? / I'm from…"
+   },
+   "description": {
+    "ru": "Учимся спрашивать и говорить, откуда человек родом.",
+    "en": "Learn to ask and say where someone is from."
+   },
+   "order": 7,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.007.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как спросить «Откуда ты?»",
+      "options": [
+       "Where are you from?",
+       "Who are you from?",
+       "When are you from?",
+       "Where are you go?"
+      ],
+      "correctIndex": 0,
+      "hint": "Ищи «Where» (где/откуда) и «from» (из).",
+      "explanation": "«Where are you from?» — «Откуда ты?». Остальные варианты грамматически неверны."
+     }
+    },
+    {
+     "ref": "a0.greetings.007.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.007.t2.imfrom",
+      "transcript": "I'm from Russia.",
+      "translation": "Я из России.",
+      "question": "What did you hear?",
+      "options": [
+       "I'm from Russia.",
+       "I'm for Russia.",
+       "I'm from Russha.",
+       "I am in Russia."
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай маленькое слово «from» (из).",
+      "explanation": "«I'm from Russia.» — «Я из России.». «From» значит «из»."
+     }
+    },
+    {
+     "ref": "a0.greetings.007.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I'm from Moscow.'",
+      "target": "I'm from Moscow.",
+      "audioKey": "a0.greetings.007.t3.imfrom",
+      "hint": "После «I'm from» назови город.",
+      "explanation": "«I'm from Moscow.» — «Я из Москвы.». После «from» ставим город или страну."
+     }
+    },
+    {
+     "ref": "a0.greetings.007.t4",
+     "type": "gap",
+     "data": {
+      "text": "I'm _____ Russia.",
+      "answer": "from",
+      "hint": "Маленькое слово «из».",
+      "explanation": "«I'm from Russia.» — «Я из России.». Пропущено слово «from» (из).",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.greetings.007.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "Where",
+       "are",
+       "you",
+       "from",
+       "?"
+      ],
+      "hint": "Начни с «Where», закончи словом «from».",
+      "explanation": "Правильный порядок: «Where are you from?» — «Откуда ты?»."
+     }
+    },
+    {
+     "ref": "a0.greetings.007.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Я из России.'",
+      "expected": [
+       "I'm from Russia.",
+       "I am from Russia."
+      ],
+      "hint": "Используй конструкцию «I'm from …».",
+      "explanation": "«Я из России.» — «I'm from Russia.» (полная форма «I am from Russia.»)."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.greetings",
+   "lessonRef": "a0.greetings.008",
+   "title": {
+    "ru": "Пожалуйста / Спасибо / Извините",
+    "en": "Please / Thank you / Sorry / Excuse me"
+   },
+   "description": {
+    "ru": "Учим главные вежливые слова для общения.",
+    "en": "Learn the key polite words for everyday communication."
+   },
+   "order": 8,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.greetings.008.t1",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.greetings.008.t1.thankyou",
+      "transcript": "Thank you!",
+      "translation": "Спасибо!",
+      "question": "What did you hear?",
+      "options": [
+       "Thank you!",
+       "Think you!",
+       "Thank we!",
+       "Thanks two!"
+      ],
+      "correctIndex": 0,
+      "hint": "Слушай слово «thank» (благодарить).",
+      "explanation": "«Thank you!» — «Спасибо!». Не путай «thank» и «think» (думать)."
+     }
+    },
+    {
+     "ref": "a0.greetings.008.t2",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'Thank you very much!'",
+      "target": "Thank you very much!",
+      "audioKey": "a0.greetings.008.t2.thankyou",
+      "hint": "«very much» усиливает благодарность.",
+      "explanation": "«Thank you very much!» — «Спасибо большое!». Так благодарят особенно тепло."
+     }
+    },
+    {
+     "ref": "a0.greetings.008.t3",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "Please",
+        "right": "Пожалуйста (просьба)"
+       },
+       {
+        "left": "Thank you",
+        "right": "Спасибо"
+       },
+       {
+        "left": "Sorry",
+        "right": "Извини"
+       },
+       {
+        "left": "Excuse me",
+        "right": "Извините (обратиться)"
+       }
+      ],
+      "hint": "Соедини вежливое слово с переводом.",
+      "explanation": "Please — пожалуйста при просьбе, Thank you — спасибо, Sorry — извини (за ошибку), Excuse me — извините (чтобы обратиться)."
+     }
+    },
+    {
+     "ref": "a0.greetings.008.t4",
+     "type": "choice",
+     "data": {
+      "question": "Что сказать, чтобы вежливо привлечь внимание: «Извините…»?",
+      "options": [
+       "Excuse me!",
+       "Thank you!",
+       "Goodbye!",
+       "Good night!"
+      ],
+      "correctIndex": 0,
+      "hint": "Так обращаются к незнакомому человеку.",
+      "explanation": "«Excuse me!» — «Извините!», когда хотят обратиться или пройти. «Sorry» же говорят, когда виноваты."
+     }
+    },
+    {
+     "ref": "a0.greetings.008.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Спасибо большое!'",
+      "expected": [
+       "Thank you very much!",
+       "Thanks a lot!"
+      ],
+      "hint": "Усиль обычное «Thank you».",
+      "explanation": "«Спасибо большое!» — «Thank you very much!» или «Thanks a lot!»."
+     }
+    },
+    {
+     "ref": "a0.greetings.008.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "Thank",
+       "you",
+       "very",
+       "much",
+       "!"
+      ],
+      "hint": "Начни со слова «Thank».",
+      "explanation": "Правильный порядок: «Thank you very much!» — «Спасибо большое!»."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.001",
+   "title": {
+    "ru": "Числа 0–10",
+    "en": "Numbers 0–10"
+   },
+   "description": {
+    "ru": "Первые числа: от нуля до десяти. Слушаем, произносим и запоминаем.",
+    "en": "The first numbers: from zero to ten. Listen, say and remember them."
+   },
+   "order": 1,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.001.t1",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "zero",
+        "right": "ноль"
+       },
+       {
+        "left": "one",
+        "right": "один"
+       },
+       {
+        "left": "three",
+        "right": "три"
+       },
+       {
+        "left": "five",
+        "right": "пять"
+       },
+       {
+        "left": "eight",
+        "right": "восемь"
+       },
+       {
+        "left": "ten",
+        "right": "десять"
+       }
+      ],
+      "hint": "Соедини английское число с русским переводом.",
+      "explanation": "zero — ноль, one — один, three — три, five — пять, eight — восемь, ten — десять."
+     }
+    },
+    {
+     "ref": "a0.numbers.001.t2",
+     "type": "choice",
+     "data": {
+      "question": "Как сказать «пять»?",
+      "options": [
+       "five",
+       "four",
+       "nine",
+       "fifteen"
+      ],
+      "correctIndex": 0,
+      "hint": "Число между четыре и шесть.",
+      "explanation": "«Пять» по-английски — five. Four — четыре, nine — девять, fifteen — пятнадцать."
+     }
+    },
+    {
+     "ref": "a0.numbers.001.t3",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.001.t3.seven",
+      "transcript": "It is seven.",
+      "translation": "Это семь.",
+      "question": "What did you hear?",
+      "options": [
+       "seven",
+       "eleven",
+       "seventy",
+       "seventeen"
+      ],
+      "correctIndex": 0,
+      "hint": "Число между шесть и восемь.",
+      "explanation": "Ты услышал seven — семь. Eleven — одиннадцать, seventy — семьдесят, seventeen — семнадцать."
+     }
+    },
+    {
+     "ref": "a0.numbers.001.t4",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'one, two, three'",
+      "target": "one, two, three",
+      "audioKey": "a0.numbers.001.t4.one-two-three",
+      "hint": "Считай вслух: один, два, три.",
+      "explanation": "one — один, two — два, three — три. Считаем по порядку."
+     }
+    },
+    {
+     "ref": "a0.numbers.001.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "How",
+       "many",
+       "apples",
+       "?"
+      ],
+      "hint": "Вопрос «Сколько яблок?».",
+      "explanation": "Правильный порядок: How many apples? — Сколько яблок?"
+     }
+    },
+    {
+     "ref": "a0.numbers.001.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'восемь'",
+      "expected": [
+       "eight"
+      ],
+      "hint": "Число между семь и девять.",
+      "explanation": "«Восемь» по-английски — eight."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.002",
+   "title": {
+    "ru": "Числа 11–20",
+    "en": "Numbers 11–20"
+   },
+   "description": {
+    "ru": "Числа от одиннадцати до двадцати. Обрати внимание на окончание -teen.",
+    "en": "Numbers from eleven to twenty. Notice the -teen ending."
+   },
+   "order": 2,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.002.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как сказать «тринадцать»?",
+      "options": [
+       "thirteen",
+       "thirty",
+       "fourteen",
+       "three"
+      ],
+      "correctIndex": 0,
+      "hint": "Число между двенадцать и четырнадцать.",
+      "explanation": "«Тринадцать» — thirteen. Thirty — тридцать, fourteen — четырнадцать, three — три."
+     }
+    },
+    {
+     "ref": "a0.numbers.002.t2",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "eleven",
+        "right": "одиннадцать"
+       },
+       {
+        "left": "twelve",
+        "right": "двенадцать"
+       },
+       {
+        "left": "fifteen",
+        "right": "пятнадцать"
+       },
+       {
+        "left": "seventeen",
+        "right": "семнадцать"
+       },
+       {
+        "left": "nineteen",
+        "right": "девятнадцать"
+       },
+       {
+        "left": "twenty",
+        "right": "двадцать"
+       }
+      ],
+      "hint": "Соедини число с переводом. Окончание -teen — это «-надцать».",
+      "explanation": "eleven — одиннадцать, twelve — двенадцать, fifteen — пятнадцать, seventeen — семнадцать, nineteen — девятнадцать, twenty — двадцать."
+     }
+    },
+    {
+     "ref": "a0.numbers.002.t3",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.002.t3.fourteen",
+      "transcript": "It is fourteen.",
+      "translation": "Это четырнадцать.",
+      "question": "What did you hear?",
+      "options": [
+       "fourteen",
+       "forty",
+       "four",
+       "forty-one"
+      ],
+      "correctIndex": 0,
+      "hint": "Число между тринадцать и пятнадцать.",
+      "explanation": "Ты услышал fourteen — четырнадцать. Forty — сорок, four — четыре, forty-one — сорок один."
+     }
+    },
+    {
+     "ref": "a0.numbers.002.t4",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'eleven, twelve, thirteen'",
+      "target": "eleven, twelve, thirteen",
+      "audioKey": "a0.numbers.002.t4.eleven-twelve-thirteen",
+      "hint": "Считай вслух: одиннадцать, двенадцать, тринадцать.",
+      "explanation": "eleven — одиннадцать, twelve — двенадцать, thirteen — тринадцать."
+     }
+    },
+    {
+     "ref": "a0.numbers.002.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "There",
+       "are",
+       "twenty",
+       "books"
+      ],
+      "hint": "Предложение «Здесь двадцать книг».",
+      "explanation": "Правильный порядок: There are twenty books. — Здесь двадцать книг."
+     }
+    },
+    {
+     "ref": "a0.numbers.002.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'семнадцать'",
+      "expected": [
+       "seventeen"
+      ],
+      "hint": "Число между шестнадцать и восемнадцать.",
+      "explanation": "«Семнадцать» по-английски — seventeen."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.003",
+   "title": {
+    "ru": "Десятки: 20/30/…/100",
+    "en": "Tens: 20/30/…/100"
+   },
+   "description": {
+    "ru": "Круглые числа: двадцать, тридцать, сорок … сто. Учимся считать десятками.",
+    "en": "Round numbers: twenty, thirty, forty … one hundred. Count in tens."
+   },
+   "order": 3,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.003.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как сказать «пятьдесят»?",
+      "options": [
+       "fifty",
+       "fifteen",
+       "five",
+       "forty"
+      ],
+      "correctIndex": 0,
+      "hint": "Это круглое число, пять десятков.",
+      "explanation": "«Пятьдесят» — fifty. Fifteen — пятнадцать, five — пять, forty — сорок."
+     }
+    },
+    {
+     "ref": "a0.numbers.003.t2",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "twenty",
+        "right": "двадцать"
+       },
+       {
+        "left": "thirty",
+        "right": "тридцать"
+       },
+       {
+        "left": "forty",
+        "right": "сорок"
+       },
+       {
+        "left": "sixty",
+        "right": "шестьдесят"
+       },
+       {
+        "left": "eighty",
+        "right": "восемьдесят"
+       },
+       {
+        "left": "a hundred",
+        "right": "сто"
+       }
+      ],
+      "hint": "Соедини круглое число с переводом.",
+      "explanation": "twenty — двадцать, thirty — тридцать, forty — сорок, sixty — шестьдесят, eighty — восемьдесят, a hundred — сто."
+     }
+    },
+    {
+     "ref": "a0.numbers.003.t3",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.003.t3.ninety",
+      "transcript": "It is ninety.",
+      "translation": "Это девяносто.",
+      "question": "What did you hear?",
+      "options": [
+       "ninety",
+       "nineteen",
+       "nine",
+       "ninety-nine"
+      ],
+      "correctIndex": 0,
+      "hint": "Круглое число перед сотней.",
+      "explanation": "Ты услышал ninety — девяносто. Nineteen — девятнадцать, nine — девять, ninety-nine — девяносто девять."
+     }
+    },
+    {
+     "ref": "a0.numbers.003.t4",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'ten, twenty, thirty'",
+      "target": "ten, twenty, thirty",
+      "audioKey": "a0.numbers.003.t4.ten-twenty-thirty",
+      "hint": "Считай десятками: десять, двадцать, тридцать.",
+      "explanation": "ten — десять, twenty — двадцать, thirty — тридцать. Считаем десятками."
+     }
+    },
+    {
+     "ref": "a0.numbers.003.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "There",
+       "are",
+       "fifty",
+       "people"
+      ],
+      "hint": "Предложение «Здесь пятьдесят человек».",
+      "explanation": "Правильный порядок: There are fifty people. — Здесь пятьдесят человек."
+     }
+    },
+    {
+     "ref": "a0.numbers.003.t6",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'сто'",
+      "expected": [
+       "one hundred",
+       "a hundred",
+       "hundred"
+      ],
+      "hint": "Число после девяноста девяти.",
+      "explanation": "«Сто» по-английски — one hundred или a hundred."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.004",
+   "title": {
+    "ru": "Сколько тебе лет?",
+    "en": "How old are you?"
+   },
+   "description": {
+    "ru": "Как спросить возраст и сказать, сколько тебе лет: I'm … years old.",
+    "en": "Ask about age and say how old you are: I'm … years old."
+   },
+   "order": 4,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.004.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как спросить возраст?",
+      "options": [
+       "How old are you?",
+       "How are you?",
+       "How much is it?",
+       "What is your name?"
+      ],
+      "correctIndex": 0,
+      "hint": "В вопросе есть слово old (старый / возраст).",
+      "explanation": "«Сколько тебе лет?» — How old are you? Дословно «Насколько ты стар?»."
+     }
+    },
+    {
+     "ref": "a0.numbers.004.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.004.t2.ten-years",
+      "transcript": "I am ten years old.",
+      "translation": "Мне десять лет.",
+      "question": "What did you hear?",
+      "options": [
+       "I am ten years old.",
+       "I am twenty years old.",
+       "I am nine years old.",
+       "I am eleven years old."
+      ],
+      "correctIndex": 0,
+      "hint": "Возраст — число ten.",
+      "explanation": "Ты услышал I am ten years old. — Мне десять лет."
+     }
+    },
+    {
+     "ref": "a0.numbers.004.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I am seven years old.'",
+      "target": "I am seven years old.",
+      "audioKey": "a0.numbers.004.t3.seven-years-old",
+      "hint": "Скажи свой возраст: мне семь лет.",
+      "explanation": "I am seven years old. — Мне семь лет. Схема: I am + число + years old."
+     }
+    },
+    {
+     "ref": "a0.numbers.004.t4",
+     "type": "gap",
+     "data": {
+      "text": "How _____ are you?",
+      "answer": "old",
+      "hint": "Слово о возрасте, «старый».",
+      "explanation": "How old are you? — Сколько тебе лет? Пропущено слово old.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.numbers.004.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Мне восемь лет.'",
+      "expected": [
+       "I am eight years old.",
+       "I'm eight years old."
+      ],
+      "hint": "Схема: I am + число + years old.",
+      "explanation": "«Мне восемь лет» — I am eight years old."
+     }
+    },
+    {
+     "ref": "a0.numbers.004.t6",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "How old are you?",
+        "right": "Сколько тебе лет?"
+       },
+       {
+        "left": "I am five years old.",
+        "right": "Мне пять лет."
+       },
+       {
+        "left": "years old",
+        "right": "лет (о возрасте)"
+       },
+       {
+        "left": "She is six.",
+        "right": "Ей шесть."
+       },
+       {
+        "left": "old",
+        "right": "старый / возраст"
+       }
+      ],
+      "hint": "Соедини фразу о возрасте с переводом.",
+      "explanation": "How old are you? — Сколько тебе лет? years old — лет; She is six. — Ей шесть."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.005",
+   "title": {
+    "ru": "Номер телефона",
+    "en": "Phone numbers"
+   },
+   "description": {
+    "ru": "Как спросить и назвать номер телефона по цифрам.",
+    "en": "Ask for and say a phone number digit by digit."
+   },
+   "order": 5,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.005.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как спросить номер телефона?",
+      "options": [
+       "What is your phone number?",
+       "How old are you?",
+       "How much is it?",
+       "What is the time?"
+      ],
+      "correctIndex": 0,
+      "hint": "В вопросе есть слова phone number.",
+      "explanation": "«Какой у тебя номер телефона?» — What is your phone number?"
+     }
+    },
+    {
+     "ref": "a0.numbers.005.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.005.t2.five-five-five",
+      "transcript": "My number is five, five, five.",
+      "translation": "Мой номер — пять, пять, пять.",
+      "question": "What did you hear?",
+      "options": [
+       "five, five, five",
+       "nine, nine, nine",
+       "five, five, nine",
+       "one, five, five"
+      ],
+      "correctIndex": 0,
+      "hint": "Три одинаковые цифры.",
+      "explanation": "Ты услышал five, five, five — пять, пять, пять. Номера обычно называют по одной цифре."
+     }
+    },
+    {
+     "ref": "a0.numbers.005.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'My phone number is seven, eight, nine.'",
+      "target": "My phone number is seven, eight, nine.",
+      "audioKey": "a0.numbers.005.t3.seven-eight-nine",
+      "hint": "Назови цифры по одной: семь, восемь, девять.",
+      "explanation": "My phone number is seven, eight, nine. — Мой номер телефона: семь, восемь, девять."
+     }
+    },
+    {
+     "ref": "a0.numbers.005.t4",
+     "type": "gap",
+     "data": {
+      "text": "What is your phone _____?",
+      "answer": "number",
+      "hint": "Слово «номер».",
+      "explanation": "phone number — номер телефона. Пропущено слово number.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.numbers.005.t5",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "What",
+       "is",
+       "your",
+       "number",
+       "?"
+      ],
+      "hint": "Вопрос «Какой у тебя номер?».",
+      "explanation": "Правильный порядок: What is your number? — Какой у тебя номер?"
+     }
+    },
+    {
+     "ref": "a0.numbers.005.t6",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "phone",
+        "right": "телефон"
+       },
+       {
+        "left": "number",
+        "right": "номер"
+       },
+       {
+        "left": "phone number",
+        "right": "номер телефона"
+       },
+       {
+        "left": "Call me.",
+        "right": "Позвони мне."
+       },
+       {
+        "left": "zero",
+        "right": "ноль"
+       },
+       {
+        "left": "What is your number?",
+        "right": "Какой у тебя номер?"
+       }
+      ],
+      "hint": "Соедини слово с переводом.",
+      "explanation": "phone — телефон, number — номер, phone number — номер телефона, Call me. — Позвони мне."
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.006",
+   "title": {
+    "ru": "Сколько это стоит?",
+    "en": "How much is it?"
+   },
+   "description": {
+    "ru": "Как спросить цену в магазине и понять ответ.",
+    "en": "Ask about a price in a shop and understand the answer."
+   },
+   "order": 6,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "conversation",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.006.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как спросить цену?",
+      "options": [
+       "How much is it?",
+       "How old are you?",
+       "What is your name?",
+       "How are you?"
+      ],
+      "correctIndex": 0,
+      "hint": "В вопросе есть слово much (много / сколько).",
+      "explanation": "«Сколько это стоит?» — How much is it?"
+     }
+    },
+    {
+     "ref": "a0.numbers.006.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.006.t2.five-dollars",
+      "transcript": "It is five dollars.",
+      "translation": "Это пять долларов.",
+      "question": "What did you hear?",
+      "options": [
+       "five dollars",
+       "nine dollars",
+       "fifty dollars",
+       "five euros"
+      ],
+      "correctIndex": 0,
+      "hint": "Число five и валюта dollars.",
+      "explanation": "Ты услышал five dollars — пять долларов."
+     }
+    },
+    {
+     "ref": "a0.numbers.006.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'How much is it?'",
+      "target": "How much is it?",
+      "audioKey": "a0.numbers.006.t3.how-much-is-it",
+      "hint": "Спроси цену.",
+      "explanation": "How much is it? — Сколько это стоит?"
+     }
+    },
+    {
+     "ref": "a0.numbers.006.t4",
+     "type": "gap",
+     "data": {
+      "text": "How _____ is it?",
+      "answer": "much",
+      "hint": "Слово «сколько» о цене.",
+      "explanation": "How much is it? — Сколько это стоит? Пропущено слово much.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.numbers.006.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Это десять долларов.'",
+      "expected": [
+       "It is ten dollars.",
+       "It's ten dollars."
+      ],
+      "hint": "Схема: It is + число + dollars.",
+      "explanation": "«Это десять долларов» — It is ten dollars."
+     }
+    },
+    {
+     "ref": "a0.numbers.006.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "How",
+       "much",
+       "is",
+       "this",
+       "?"
+      ],
+      "hint": "Вопрос «Сколько это стоит?» (про этот предмет).",
+      "explanation": "Правильный порядок: How much is this? — Сколько это стоит?"
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.007",
+   "title": {
+    "ru": "There is / There are",
+    "en": "There is / There are"
+   },
+   "description": {
+    "ru": "Как сказать, сколько предметов: there is (один) и there are (много).",
+    "en": "Say how many things there are: there is (one) and there are (many)."
+   },
+   "order": 7,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "grammar",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.007.t1",
+     "type": "choice",
+     "data": {
+      "question": "Как сказать «Здесь три книги»?",
+      "options": [
+       "There are three books.",
+       "There is three books.",
+       "There have three books.",
+       "It is three books."
+      ],
+      "correctIndex": 0,
+      "hint": "Много предметов — нужен are.",
+      "explanation": "С множественным числом: There are three books. — Здесь три книги."
+     }
+    },
+    {
+     "ref": "a0.numbers.007.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.007.t2.five-cats",
+      "transcript": "There are five cats.",
+      "translation": "Здесь пять кошек.",
+      "question": "What did you hear?",
+      "options": [
+       "There are five cats.",
+       "There is five cats.",
+       "There are nine cats.",
+       "There are five cars."
+      ],
+      "correctIndex": 0,
+      "hint": "Число five и слово cats.",
+      "explanation": "Ты услышал There are five cats. — Здесь пять кошек."
+     }
+    },
+    {
+     "ref": "a0.numbers.007.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'There is one apple.'",
+      "target": "There is one apple.",
+      "audioKey": "a0.numbers.007.t3.one-apple",
+      "hint": "Один предмет — there is.",
+      "explanation": "There is one apple. — Здесь одно яблоко. С одним предметом — is."
+     }
+    },
+    {
+     "ref": "a0.numbers.007.t4",
+     "type": "gap",
+     "data": {
+      "text": "There _____ ten students.",
+      "answer": "are",
+      "hint": "Много предметов — форма are.",
+      "explanation": "С множественным числом: There are ten students. — Здесь десять учеников.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.numbers.007.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Здесь две собаки.'",
+      "expected": [
+       "There are two dogs."
+      ],
+      "hint": "Много — there are + число + существительное.",
+      "explanation": "«Здесь две собаки» — There are two dogs."
+     }
+    },
+    {
+     "ref": "a0.numbers.007.t6",
+     "type": "match",
+     "data": {
+      "pairs": [
+       {
+        "left": "There is",
+        "right": "есть (один)"
+       },
+       {
+        "left": "There are",
+        "right": "есть (много)"
+       },
+       {
+        "left": "one book",
+        "right": "одна книга"
+       },
+       {
+        "left": "two books",
+        "right": "две книги"
+       },
+       {
+        "left": "How many?",
+        "right": "Сколько?"
+       },
+       {
+        "left": "There is a cat.",
+        "right": "Здесь кошка."
+       }
+      ],
+      "hint": "Соедини выражение с переводом.",
+      "explanation": "There is — для одного, There are — для многих; How many? — Сколько?"
+     }
+    }
+   ]
+  },
+  {
+   "moduleRef": "a0.numbers",
+   "lessonRef": "a0.numbers.008",
+   "title": {
+    "ru": "Повторение: числа в быту",
+    "en": "Review: numbers in daily life"
+   },
+   "description": {
+    "ru": "Повторяем всё: возраст, цену, количество и телефон в реальных ситуациях.",
+    "en": "Review everything: age, prices, quantity and phone numbers in real situations."
+   },
+   "order": 8,
+   "published": true,
+   "estimatedMinutes": 10,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "xpReward": 20,
+   "hasAudio": true,
+   "tasks": [
+    {
+     "ref": "a0.numbers.008.t1",
+     "type": "choice",
+     "data": {
+      "question": "«Сколько это стоит?» — это…",
+      "options": [
+       "How much is it?",
+       "How old are you?",
+       "What is your number?",
+       "How many?"
+      ],
+      "correctIndex": 0,
+      "hint": "Вопрос о цене.",
+      "explanation": "«Сколько это стоит?» — How much is it?"
+     }
+    },
+    {
+     "ref": "a0.numbers.008.t2",
+     "type": "listen",
+     "data": {
+      "audioKey": "a0.numbers.008.t2.three-apples",
+      "transcript": "I have three apples.",
+      "translation": "У меня три яблока.",
+      "question": "What did you hear?",
+      "options": [
+       "three apples",
+       "two apples",
+       "thirteen apples",
+       "three oranges"
+      ],
+      "correctIndex": 0,
+      "hint": "Число three и слово apples.",
+      "explanation": "Ты услышал three apples — три яблока."
+     }
+    },
+    {
+     "ref": "a0.numbers.008.t3",
+     "type": "speak",
+     "data": {
+      "prompt": "Say: 'I have two brothers.'",
+      "target": "I have two brothers.",
+      "audioKey": "a0.numbers.008.t3.two-brothers",
+      "hint": "Скажи, сколько у тебя братьев: два.",
+      "explanation": "I have two brothers. — У меня два брата."
+     }
+    },
+    {
+     "ref": "a0.numbers.008.t4",
+     "type": "gap",
+     "data": {
+      "text": "How _____ apples do you have?",
+      "answer": "many",
+      "hint": "Слово «сколько» для счётных предметов.",
+      "explanation": "How many apples do you have? — Сколько у тебя яблок? Пропущено слово many.",
+      "caseInsensitive": true
+     }
+    },
+    {
+     "ref": "a0.numbers.008.t5",
+     "type": "translate",
+     "data": {
+      "question": "Переведи: 'Мне двадцать лет.'",
+      "expected": [
+       "I am twenty years old.",
+       "I'm twenty years old."
+      ],
+      "hint": "Схема: I am + число + years old.",
+      "explanation": "«Мне двадцать лет» — I am twenty years old."
+     }
+    },
+    {
+     "ref": "a0.numbers.008.t6",
+     "type": "order",
+     "data": {
+      "tokens": [
+       "How",
+       "much",
+       "is",
+       "it",
+       "?"
+      ],
+      "hint": "Вопрос о цене.",
+      "explanation": "Правильный порядок: How much is it? — Сколько это стоит?"
+     }
+    }
+   ]
+  }
+ ]
+}

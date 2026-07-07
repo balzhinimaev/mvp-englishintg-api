@@ -1,4 +1,4 @@
-import { Controller, Get, UseGuards, Request, Param } from '@nestjs/common';
+import { Controller, Get, UseGuards, Request, Param, ForbiddenException } from '@nestjs/common';
 import { EntitlementsService } from './entitlements.service';
 import { OnboardingGuard } from '../auth/onboarding.guard';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
@@ -23,7 +23,15 @@ export class EntitlementsController {
   }
 
   @Get(':userId')
-  async getByUserId(@Param('userId') userId: string): Promise<EntitlementResponse | null> {
+  @UseGuards(JwtAuthGuard)
+  async getByUserId(
+    @Param('userId') userId: string,
+    @Request() req: any,
+  ): Promise<EntitlementResponse | null> {
+    // Нельзя смотреть чужую подписку: userId из пути должен совпадать с токеном
+    if (String(req.user?.userId) !== String(userId)) {
+      throw new ForbiddenException('Forbidden');
+    }
     const entitlement = await this.entitlementsService.getEntitlementByUserId(userId);
     
     if (!entitlement) {

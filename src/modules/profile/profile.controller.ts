@@ -1,23 +1,13 @@
-import { Body, Controller, Get, Param, Patch, Post, BadRequestException, UseGuards, Request } from '@nestjs/common';
+import { Body, Controller, Get, Patch, Post, UseGuards, Request } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User, UserDocument } from '../common/schemas/user.schema';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-
-// Allowed values are defined at module scope to avoid referencing `this` in type annotations
-const ALLOWED_GOALS = [
-  'work_career',
-  'study_exams',
-  'travel',
-  'communication',
-  'entertainment',
-  'relocation',
-  'curiosity',
-] as const;
-type AllowedGoal = (typeof ALLOWED_GOALS)[number];
-
-const ALLOWED_REMINDER_TIMES = ['morning', 'afternoon', 'evening'] as const;
-type ReminderTime = (typeof ALLOWED_REMINDER_TIMES)[number];
+import { UpdateProfileDto } from './dto/update-profile.dto';
+import { CompleteOnboardingDto } from './dto/complete-onboarding.dto';
+import { SaveLearningGoalsDto } from './dto/learning-goals.dto';
+import { SaveDailyGoalDto } from './dto/daily-goal.dto';
+import { SaveReminderSettingsDto } from './dto/reminder-settings.dto';
 
 @Controller('profile')
 @UseGuards(JwtAuthGuard)
@@ -32,34 +22,27 @@ export class ProfileController {
   }
 
   @Patch()
-  async update(
-    @Body()
-    body: {
-      firstName?: string;
-      lastName?: string;
-      username?: string;
-      languageCode?: string;
-      photoUrl?: string;
-    },
-    @Request() req: any,
-  ) {
+  async update(@Body() body: UpdateProfileDto, @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
-    await this.userModel.updateOne({ userId }, { $set: body }, { upsert: true });
+    // Whitelist задан DTO (глобальный ValidationPipe с whitelist+forbidNonWhitelisted):
+    // mass assignment (isAdmin, pro, xpTotal...) исключён.
+    const set: Record<string, any> = {};
+    const allowed = ['firstName', 'lastName', 'username', 'languageCode', 'photoUrl'] as const;
+    for (const key of allowed) {
+      const value = (body as Record<string, unknown>)[key];
+      if (typeof value === 'string') set[key] = value;
+    }
+    if (Object.keys(set).length === 0) {
+      return { ok: true, updated: false };
+    }
+    await this.userModel.updateOne({ userId }, { $set: set }, { upsert: true });
     return { ok: true };
   }
 
+  // Фронт шлёт PATCH (useCompleteOnboarding → apiClient.patch) — метод должен совпадать.
   @Patch('onboarding/complete')
-  async completeOnboarding(
-    @Body()
-    body: {
-      // Backward compatibility: keep englishLevel, but also accept new proficiencyLevel
-      englishLevel?: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
-      proficiencyLevel?: 'beginner' | 'intermediate' | 'advanced';
-      learningGoals?: string[];
-    },
-    @Request() req: any,
-  ) {
-    const userId = req.user?.userId; // Get userId from JWT token
+  async completeOnboarding(@Body() body: CompleteOnboardingDto, @Request() req: any) {
+    const userId = req.user?.userId; // Get userId from JWT token (body.userId игнорируем)
     const { englishLevel, proficiencyLevel, learningGoals } = body;
 
     // Prepare $set object idempotently
@@ -77,58 +60,25 @@ export class ProfileController {
     return { ok: true };
   }
 
-  // Allowed values for onboarding settings. Keep here to avoid scattering magic strings.
-  // These should mirror the frontend contract and can be centralized later.
-  private readonly allowedGoals = ALLOWED_GOALS;
-
-  private readonly allowedReminderTimes = ALLOWED_REMINDER_TIMES;
-
-  private isValidDailyGoal(value: number): value is 5 | 10 | 15 | 20 {
-    return [5, 10, 15, 20].includes(value);
-  }
-
   @Post('learning-goals')
-  async saveLearningGoals(
-    @Body()
-    body: {
-      goals: AllowedGoal[];
-    },
-    @Request() req: any,
-  ) {
-    const userId = req.user?.userId; // Get userId from JWT token
-    const { goals } = body;
-    if (!Array.isArray(goals) || goals.length === 0) {
-      throw new BadRequestException('goals must be a non-empty array');
-    }
-    const invalid = goals.filter((g) => !this.allowedGoals.includes(g as any));
-    if (invalid.length) {
-      throw new BadRequestException(`Invalid goals: ${invalid.join(', ')}`);
-    }
+  async saveLearningGoals(@Body() body: SaveLearningGoalsDto, @Request() req: any) {
+    const userId = req.user?.userId; // Get userId from JWT token (body.userId игнорируем)
     await this.userModel.updateOne(
       { userId },
-      { $set: { learningGoals: goals } },
+      { $set: { learningGoals: body.goals } },
       { upsert: true },
     );
     return { ok: true };
   }
 
   @Post('daily-goal')
-  async saveDailyGoal(
-    @Body()
-    body: {
-      dailyGoalMinutes: 5 | 10 | 15 | 20;
-      allowsNotifications?: boolean;
-    },
-    @Request() req: any,
-  ) {
-    const userId = req.user?.userId; // Get userId from JWT token
-    const { dailyGoalMinutes, allowsNotifications } = body;
-    if (!this.isValidDailyGoal(dailyGoalMinutes)) {
-      throw new BadRequestException('dailyGoalMinutes must be one of 5, 10, 15, 20');
-    }
-    const set: Record<string, any> = { dailyGoalMinutes };
-    if (typeof allowsNotifications === 'boolean') {
-      set.notificationsAllowed = allowsNotifications;
+  async saveDailyGoal(@Body() body: SaveDailyGoalDto, @Request() req: any) {
+    const userId = req.user?.userId; // Get userId from JWT token (body.userId игнорируем)
+    const set: Record<string, any> = { dailyGoalMinutes: body.dailyGoalMinutes };
+    // Принимаем оба имени поля (фронт шлёт notificationsAllowed, старый контракт — allowsNotifications)
+    const notifications = body.allowsNotifications ?? body.notificationsAllowed;
+    if (typeof notifications === 'boolean') {
+      set.notificationsAllowed = notifications;
     }
     await this.userModel.updateOne(
       { userId },
@@ -139,35 +89,17 @@ export class ProfileController {
   }
 
   @Post('reminder-settings')
-  async saveReminderSettings(
-    @Body()
-    body: {
-      reminderSettings: {
-        enabled: boolean;
-        time: 'morning' | 'afternoon' | 'evening';
-        allowsNotifications?: boolean;
-      };
-    },
-    @Request() req: any,
-  ) {
-    const userId = req.user?.userId; // Get userId from JWT token
-    const { reminderSettings } = body;
-    if (!reminderSettings || typeof reminderSettings !== 'object') {
-      throw new BadRequestException('reminderSettings is required');
-    }
-    const { enabled, time, allowsNotifications } = reminderSettings;
-    if (typeof enabled !== 'boolean') {
-      throw new BadRequestException('reminderSettings.enabled must be boolean');
-    }
-    if (!this.allowedReminderTimes.includes(time as any)) {
-      throw new BadRequestException("reminderSettings.time must be 'morning' | 'afternoon' | 'evening'");
-    }
+  async saveReminderSettings(@Body() body: SaveReminderSettingsDto, @Request() req: any) {
+    const userId = req.user?.userId; // Get userId from JWT token (body.userId игнорируем)
+    const { enabled, time, allowsNotifications } = body.reminderSettings;
 
     const set: Record<string, any> = {
       reminderSettings: { enabled, time },
     };
-    if (typeof allowsNotifications === 'boolean') {
-      set.notificationsAllowed = allowsNotifications;
+    // Принимаем оба варианта: вложенный allowsNotifications и top-level notificationsAllowed (фронт)
+    const notifications = allowsNotifications ?? body.notificationsAllowed;
+    if (typeof notifications === 'boolean') {
+      set.notificationsAllowed = notifications;
     }
     await this.userModel.updateOne(
       { userId },
@@ -177,5 +109,3 @@ export class ProfileController {
     return { ok: true };
   }
 }
-
-

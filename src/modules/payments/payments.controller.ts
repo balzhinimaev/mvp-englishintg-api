@@ -1,13 +1,37 @@
-import { Body, Controller, Headers, HttpCode, Post, Get, Query, UseGuards, Request, Logger } from '@nestjs/common';
+import { Body, Controller, Headers, HttpCode, Post, Get, Query, UseGuards, Request, Req, Logger } from '@nestjs/common';
 import { ApiBody, ApiOperation, ApiTags, ApiQuery } from '@nestjs/swagger';
-import { IsString, IsOptional, IsIn } from 'class-validator';
+import { IsString, IsOptional, IsIn, IsObject } from 'class-validator';
 import { PaymentsService } from './payments.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import * as ipaddr from 'ipaddr.js';
 
+/**
+ * Уведомление YooKassa: { type: 'notification', event: 'payment.succeeded', object: {...} }.
+ * Также поддерживается «direct»-формат (тесты/совместимость): { providerId, status?, event? }.
+ * Намеренно НЕ строже: сервис берёт только providerId+eventType, деньги/статус
+ * перепроверяются напрямую в YooKassa API.
+ */
 class YooKassaWebhookDto {
-  event!: string; // e.g., 'payment.succeeded'
-  object!: any;  // full YooKassa payment object
+  @IsOptional()
+  @IsString()
+  type?: string; // 'notification'
+
+  @IsOptional()
+  @IsString()
+  event?: string; // e.g., 'payment.succeeded'
+
+  @IsOptional()
+  @IsObject()
+  object?: Record<string, any>; // full YooKassa payment object
+
+  // «direct»-формат
+  @IsOptional()
+  @IsString()
+  providerId?: string;
+
+  @IsOptional()
+  @IsString()
+  status?: string;
 }
 
 class CreatePaymentDto {
@@ -102,12 +126,23 @@ export class PaymentsController {
     return this.paymentsService.createPayment({ ...createPaymentDto, userId });
   }
 
-  // Get payment status
+  // Get payment status (только владелец платежа)
   @Get('status')
+  @UseGuards(JwtAuthGuard)
   @ApiOperation({ summary: 'Get payment status' })
   @ApiQuery({ name: 'paymentId', description: 'YooKassa payment ID' })
-  async getPaymentStatus(@Query('paymentId') paymentId: string) {
-    return this.paymentsService.getPaymentStatus(paymentId);
+  async getPaymentStatus(@Query('paymentId') paymentId: string, @Request() req: any) {
+    return this.paymentsService.getPaymentStatus(paymentId, req.user?.userId);
+  }
+
+  // Сверка платежа с YooKassa и выдача доступа, если оплачен (клиентский поллинг).
+  // Не зависит от вебхука; идемпотентно; только владелец платежа.
+  @Post('reconcile')
+  @HttpCode(200)
+  @UseGuards(JwtAuthGuard)
+  @ApiOperation({ summary: 'Verify payment with YooKassa and grant access if paid' })
+  async reconcile(@Body() body: { paymentId: string }, @Request() req: any) {
+    return this.paymentsService.reconcilePayment(req.user?.userId, body?.paymentId);
   }
 
   // Generic webhook endpoint; in MVP we trust provider authenticity via shared secret or IP allowlist (to add later)
@@ -115,65 +150,39 @@ export class PaymentsController {
   @HttpCode(200)
   @ApiOperation({ summary: 'YooKassa webhook endpoint' })
   async yookassaWebhook(
-    @Headers() headers: Record<string, string>,
-    @Body() payload: any, // Accept ANY body structure
+    @Headers('idempotence-key') idempotenceKeyHeader: string | undefined,
+    @Body() payload: YooKassaWebhookDto,
+    @Req() req: any,
   ): Promise<{ ok: boolean }> {
-    const idempotenceKeyHeader = headers['idempotence-key'] || headers['Idempotence-Key'];
-    const signature = headers['signature'];
-    
-    // Log incoming webhook request details
-    this.logger.log(`🌐 YooKassa Webhook HTTP Request:`);
-    this.logger.log(`Headers: ${JSON.stringify(headers, null, 2)}`);
-    this.logger.log(`Idempotence Key: ${idempotenceKeyHeader || 'not provided'}`);
-    this.logger.log(`Signature: ${signature || 'not provided'}`);
-    this.logger.log(`Body: ${JSON.stringify(payload, null, 2)}`);
-    this.logger.log(`Body Type: ${typeof payload}`);
-    this.logger.log(`Body Keys: ${Object.keys(payload || {}).join(', ')}`);
-    
-    // Security checks according to YooKassa documentation
-    const clientIP = headers['x-real-ip'] || headers['x-forwarded-for'] || 'unknown';
-    this.logger.log(`🌐 Client IP: ${clientIP}`);
-    
-    // Determine IP type using ipaddr.js
-    try {
-      const cleanIP = clientIP.split(',')[0].trim();
-      if (cleanIP !== 'unknown') {
-        const addr = ipaddr.process(cleanIP);
-        this.logger.log(`🔍 IP Type: ${addr.kind()}`);
-      } else {
-        this.logger.log(`🔍 IP Type: unknown`);
-      }
-    } catch (error: any) {
-      this.logger.log(`🔍 IP Type: invalid (${error.message})`);
-    }
-    
+    // PII-минимизация: НЕ логируем headers/body целиком — только тип события и id платежа
+    const eventType = payload?.event || 'unknown';
+    const objectId = payload?.object?.id || payload?.providerId || 'unknown';
+
+    // req.ip — реальный IP клиента (в main.ts включён trust proxy за nginx);
+    // заголовкам x-real-ip/x-forwarded-for из тела запроса напрямую не доверяем.
+    const clientIP: string = req?.ip || 'unknown';
+
     // Check IP whitelist (YooKassa official IPs)
     const yookassaIPs = [
       '185.71.76.0/27',
-      '185.71.77.0/27', 
+      '185.71.77.0/27',
       '77.75.153.0/25',
       '77.75.156.11',
       '77.75.156.35',
       '77.75.154.128/25',
       '2a02:5180::/32'
     ];
-    
+
     const isIPAllowed = this.isIPAllowed(clientIP, yookassaIPs);
-    this.logger.log(`🔒 IP Check: ${isIPAllowed ? '✅ ALLOWED' : '❌ BLOCKED'}`);
-    
+    this.logger.log(
+      `YooKassa webhook: event=${eventType}, object.id=${objectId}, ip=${clientIP}, ipAllowed=${isIPAllowed}`,
+    );
+
     if (!isIPAllowed) {
       this.logger.error(`🚨 BLOCKED: Webhook from unauthorized IP: ${clientIP}`);
       return { ok: false };
     }
-    
-    // Log signature status
-    if (signature) {
-      this.logger.log(`🔐 Webhook signature present: ${signature}`);
-      this.logger.log(`⚠️  Signature verification not implemented yet`);
-    } else {
-      this.logger.warn(`⚠️  No signature provided - webhook may be from untrusted source`);
-    }
-    
+
     return this.paymentsService.processYooKassaWebhook(payload, idempotenceKeyHeader);
   }
 }

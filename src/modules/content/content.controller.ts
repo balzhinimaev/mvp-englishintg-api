@@ -12,12 +12,10 @@ import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-import { OptionalUserGuard } from '../common/guards/optional-user.guard';
 import { PublicGuard } from '../common/guards/public.guard';
 import { LessonPrerequisiteGuard } from './guards/lesson-prerequisite.guard';
 import { CourseModule, CourseModuleDocument } from '../common/schemas/course-module.schema';
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
-import { User, UserDocument } from '../common/schemas/user.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
 import { getLocalizedText, parseLanguage } from '../common/utils/i18n.util';
 import { isValidLessonRef } from '../common/utils/lesson-ref';
@@ -28,11 +26,9 @@ import { ContentService } from './content.service';
 import { VocabularyService } from './vocabulary.service';
 
 @Controller('content')
-@UseGuards(OptionalUserGuard)
 @ApiExtraModels(LessonItemDto)
 export class ContentController {
   constructor(
-    @InjectModel(User.name) private readonly userModel: Model<UserDocument>,
     @InjectModel(CourseModule.name) private readonly moduleModel: Model<CourseModuleDocument>,
     @InjectModel(Lesson.name) private readonly lessonModel: Model<LessonDocument>,
     @InjectModel(UserLessonProgress.name) private readonly ulpModel: Model<UserLessonProgressDocument>,
@@ -48,21 +44,15 @@ export class ContentController {
     const filter: any = { published: true };
     if (level) filter.level = level;
 
-    // 🔒 ДОПОЛНИТЕЛЬНАЯ ВАЛИДАЦИЯ moduleRef (если есть)
-    if (level && !['A0', 'A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(level)) {
-      return { error: 'Invalid level' };
-    }
-    
     const modules = await this.moduleModel
       .find(filter)
       .sort({ level: 1, order: 1 })
       .lean();
 
-    // Enrich with progress and access rights if userId provided
+    // Enrich with progress if userId provided.
+    // Доступ к урокам решает ContentService.canStartLesson по entitlement.endsAt —
+    // здесь права не вычисляем.
     if (userId) {
-      const user = await this.userModel.findOne({ userId: String(userId) }).lean();
-      const hasProAccess = user?.pro?.active === true;
-      
       const progressMap = new Map();
       const progress = await this.ulpModel
         .find({ userId: String(userId) })
@@ -81,25 +71,13 @@ export class ContentController {
       }
 
       return {
-        modules: modules.map((m: any) => {
-          const order = m.order || 0;
-          const requiresPro = m.requiresPro || order > 1; // Use schema field or business rule
-          const isAvailable = m.isAvailable ?? (!requiresPro || hasProAccess);
-
-          return ModuleMapper.toDto(m, progressMap.get(m.moduleRef));
-        }),
+        modules: modules.map((m: any) => ModuleMapper.toDto(m, progressMap.get(m.moduleRef))),
       };
     }
 
     // Fallback for anonymous access
     return {
-      modules: modules.map((m: any) => {
-        const order = m.order || 0;
-        const requiresPro = m.requiresPro || order > 1;
-        const isAvailable = m.isAvailable ?? !requiresPro; // Anonymous user never has pro access
-        
-        return ModuleMapper.toDto(m);
-      }),
+      modules: modules.map((m: any) => ModuleMapper.toDto(m)),
     };
   }
 
@@ -242,86 +220,6 @@ export class ContentController {
     return { 
       title: getLocalizedText(content.title, language), 
       description: getLocalizedText(content.description, language) 
-    };
-  }
-
-  @Get('lesson1')
-  @UseGuards(JwtAuthGuard)
-  lesson1(@Query('lang') lang?: string) {
-    const language = parseLanguage(lang);
-    const content = {
-      title: {
-        ru: 'Приветствие и знакомство',
-        en: 'Hello & Greetings'
-      }
-    };
-
-    return { 
-      id: 1, 
-      title: getLocalizedText(content.title, language), 
-      level: 'A1',
-      skillType: 'vocabulary',
-      durationMin: 8,
-      content: {
-        vocabulary: ['Hello', 'Hi', 'Good morning', 'Good evening', 'How are you?', 'Nice to meet you'],
-        phrases: [
-          { english: 'Hello, how are you?', translation: 'Привет, как дела?' },
-          { english: 'Nice to meet you', translation: 'Приятно познакомиться' },
-          { english: 'Good morning', translation: 'Доброе утро' }
-        ]
-      }
-    };
-  }
-
-  @Get('paywall')
-  @UseGuards(JwtAuthGuard)
-  paywall(@Query('lang') lang?: string) {
-    const language = parseLanguage(lang);
-    const content = {
-      title: {
-        ru: 'Откройте полный курс английского',
-        en: 'Unlock Full English Course'
-      },
-      description: {
-        ru: 'Получите доступ ко всем урокам, упражнениям и расширенным функциям',
-        en: 'Get access to all lessons, exercises, and advanced features'
-      },
-      products: [
-        {
-          id: 'monthly',
-          name: {
-            ru: 'Месячный план',
-            en: 'Monthly Plan'
-          },
-          features: {
-            ru: ['Все уроки A1-C2', 'Разговорная практика', 'Упражнения по грамматике', 'Отслеживание прогресса'],
-            en: ['All lessons A1-C2', 'Speaking practice', 'Grammar exercises', 'Progress tracking']
-          }
-        },
-        {
-          id: 'quarterly',
-          name: {
-            ru: 'Квартальный план',
-            en: 'Quarterly Plan'
-          },
-          features: {
-            ru: ['Все уроки A1-C2', 'Разговорная практика', 'Упражнения по грамматике', 'Отслеживание прогресса', 'Скидка 15%'],
-            en: ['All lessons A1-C2', 'Speaking practice', 'Grammar exercises', 'Progress tracking', '15% discount']
-          }
-        }
-      ]
-    };
-
-    return {
-      title: getLocalizedText(content.title, language),
-      description: getLocalizedText(content.description, language),
-      products: content.products.map(product => ({
-        id: product.id,
-        name: getLocalizedText(product.name, language),
-        priceRub: product.id === 'monthly' ? 99 : 249,
-        durationDays: product.id === 'monthly' ? 30 : 90,
-        features: (product.features as any)[language] || (product.features as any).en || []
-      }))
     };
   }
 

@@ -5,6 +5,7 @@ import { CourseModule, CourseModuleDocument } from '../common/schemas/course-mod
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { User, UserDocument } from '../common/schemas/user.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
+import { Entitlement, EntitlementDocument } from '../common/schemas/entitlement.schema';
 import { MultilingualText, OptionalMultilingualText } from '../common/utils/i18n.util';
 import { mapTaskDataToValidationData } from '../common/utils/task-validation-data';
 import { TaskValidationData } from '../common/types/validation-data';
@@ -27,7 +28,19 @@ export class ContentService {
     @InjectModel(Lesson.name) private readonly lessonModel: Model<LessonDocument>,
     @InjectModel(User.name) private readonly userModel: Model<UserDocument>,
     @InjectModel(UserLessonProgress.name) private readonly progressModel: Model<UserLessonProgressDocument>,
+    @InjectModel(Entitlement.name) private readonly entitlementModel: Model<EntitlementDocument>,
   ) {}
+
+  /**
+   * PRO-доступ определяется НАЛИЧИЕМ активной подписки (endsAt > now),
+   * а не флагом user.pro.active (который раньше выставлялся навсегда и не сбрасывался).
+   */
+  private async hasActivePro(userId: string): Promise<boolean> {
+    const active = await this.entitlementModel
+      .findOne({ userId: String(userId), endsAt: { $gt: new Date() } })
+      .lean();
+    return !!active;
+  }
 
   // Modules
   async createModule(body: { moduleRef: string; level: CourseModule['level']; title: MultilingualText; description?: OptionalMultilingualText; tags?: string[]; order?: number; published?: boolean; author?: CourseModule['author'] }) {
@@ -108,10 +121,9 @@ export class ContentService {
       return { canStart: false, reason: 'Lesson not found' };
     }
 
-    // 2) Проверяем PRO-статус пользователя
-    const user = await this.userModel.findOne({ userId: String(userId) }).lean();
-    const hasProAccess = user?.pro?.active === true;
-    
+    // 2) Проверяем PRO-статус пользователя по активной подписке (endsAt > now)
+    const hasProAccess = await this.hasActivePro(userId);
+
     if (hasProAccess) {
       // PRO пользователи имеют доступ ко всем опубликованным урокам
       return { canStart: true };

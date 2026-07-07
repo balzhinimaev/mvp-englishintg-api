@@ -1,12 +1,14 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, UseGuards, Request } from '@nestjs/common';
 import { PricingService } from './pricing.service';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User, UserDocument } from '../common/schemas/user.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
 import { Entitlement, EntitlementDocument } from '../common/schemas/entitlement.schema';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
 @Controller('paywall')
+@UseGuards(JwtAuthGuard)
 export class PaywallController {
   constructor(
     private readonly pricingService: PricingService,
@@ -16,7 +18,9 @@ export class PaywallController {
   ) {}
 
   @Get()
-  async getPaywall(@Query('userId') userId: string) {
+  async getPaywall(@Request() req: any) {
+    // userId всегда из JWT — нельзя запросить чужую когорту/цены по чужому userId
+    const userId = String(req.user?.userId || '');
     if (!userId) {
       return { error: 'userId is required' };
     }

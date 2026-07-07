@@ -1,153 +1,25 @@
-# 🔒 Рекомендации по безопасности
+# 🔒 Состояние безопасности API
 
-## ✅ **Уже реализовано:**
+Актуализировано 2026-07-06 (после аудита). Исторический документ про «JWT не используется» устарел и заменён — JWT активирован на всех защищённых эндпоинтах.
 
-1. **Устранена утечка ответов**: Рекурсивное удаление полей с ответами из API
-2. **Базовая валидация**: DTO с проверкой формата входных данных
-3. **Проверка пользователей**: TelegramAuthGuard проверяет существование userId
-4. **Логирование**: Запись подозрительной активности
-5. **Валидация контента**: Скрипт проверки seeds/content.json
-6. **JWT инфраструктура**: Полностью реализована JWT аутентификация с стратегией и guard'ами
-7. **Генерация JWT токенов**: В AuthService после верификации Telegram данных
+## ✅ Реализовано
 
-## 🚨 **Текущие уязвимости:**
+1. **JWT везде**: все content/progress/profile/entitlements/payments-эндпоинты под `JwtAuthGuard`; публичные эндпоинты помечены `PublicGuard` осознанно.
+2. **Telegram initData**: HMAC по спецификации (`HMAC_SHA256("WebAppData", bot_token)`), `timingSafeEqual`, TTL 24ч по `auth_date`; JWT-секрет принудительно ≥32 символов.
+3. **Legacy-guard'ы удалены** (2026-07-06): `TelegramAuthGuard` и `OptionalUserGuard` (доверяли `userId` из query/body — IDOR-механика) удалены из кодовой базы. Мёртвые эндпоинты с захардкоженными ценами (`GET /content/lesson1`, `GET /content/paywall`) удалены.
+4. **Гейтинг PRO** — по активному entitlement (`endsAt > now`) в `ContentService.hasActivePro`; денормализованный `user.pro.active` в выдаче доступа не участвует.
+5. **Платежи**: вебхук YooKassa берёт из тела только providerId+eventType, статус/сумма перепроверяются напрямую в YooKassa API, идемпотентная транзакционная выдача; nginx-allowlist по IP YooKassa на location вебхука; reconcile-эндпоинт под JWT с проверкой владельца.
+6. **Rate limiting**: @nestjs/throttler 300/60с глобально, 8–10/мин на register/login; `trust proxy 1`.
+7. **CORS** — whitelist доменов в проде; Swagger в проде выключен; ответы заданий (correctIndex/answer/expected) срезаются презентером.
+8. Глобальный `ValidationPipe({ whitelist, forbidNonWhitelisted, transform })` + строгие DTO в content/progress/auth.
 
-### 1. **IDOR (критическая) - JWT НЕ ИСПОЛЬЗУЕТСЯ**
-**Проблема:** JWT реализован, но все эндпоинты используют TelegramAuthGuard вместо JwtAuthGuard
-```bash
-# Злоумышленник может получить данные любого пользователя:
-GET /content/modules?userId=123456&level=A1
-```
+## ⚠️ Известные остатки (Фаза 2 роадмапа аудита 2026-07-06)
 
-**Решение:** Переключить все защищенные эндпоинты на JwtAuthGuard
-
-## 🚀 **Конкретные шаги для активации JWT:**
-
-### Шаг 1: Обновить контроллеры
-```typescript
-// В каждом контроллере заменить:
-import { JwtAuthGuard } from '../auth/jwt-auth.guard';
-
-@UseGuards(TelegramAuthGuard)  // ❌ Удалить
-@UseGuards(JwtAuthGuard)       // ✅ Добавить
-```
-
-### Шаг 2: Обновить AuthController
-```typescript
-// AuthController.verify() уже возвращает accessToken
-// Нужно убедиться, что фронтенд его использует
-```
-
-### Шаг 3: Обновить фронтенд
-```typescript
-// После /auth/verify сохранить токен:
-const { accessToken } = await authService.verify(telegramData);
-
-// Использовать в запросах:
-headers: { Authorization: `Bearer ${accessToken}` }
-```
-
-### 2. **Отсутствие rate limiting**
-**Проблема:** Возможны DDoS-атаки и злоупотребления API
-**Решение:** Nginx rate limiting или Redis-based middleware
-
-### 3. **Слабая проверка Telegram данных**
-**Проблема:** userId проверяется только на существование, но не на принадлежность
-**Решение:** Связать сессию с проверенными Telegram-данными
-
-## 🎯 **План улучшений (по приоритету):**
-
-### **Этап 1: Активация JWT-аутентификации (КРИТИЧНО)**
-```typescript
-// ✅ JWT уже генерируется в AuthService.verifyTelegramInitData()
-// ✅ JwtStrategy и JwtAuthGuard уже реализованы
-// ❌ НО: все контроллеры используют TelegramAuthGuard
-
-// Нужно заменить в контроллерах:
-@UseGuards(TelegramAuthGuard)  // ❌ Старый способ
-@UseGuards(JwtAuthGuard)       // ✅ Новый способ
-
-// Фронтенд должен использовать:
-GET /content/modules
-Headers: Authorization: Bearer jwt-token
-```
-
-### **Этап 2: Rate Limiting**
-```nginx
-# В nginx.conf
-limit_req_zone $binary_remote_addr zone=api:10m rate=30r/m;
-location /api/ {
-    limit_req zone=api burst=10 nodelay;
-}
-```
-
-### **Этап 3: Мониторинг**
-```typescript
-// Логирование подозрительной активности
-- Частые запросы с разными userId с одного IP
-- Доступ к контенту высокого уровня без прогресса
-- Попытки перебора userId
-```
-
-### **Этап 4: Дополнительные улучшения**
-- CORS настройки для Telegram Mini App
-- Валидация Telegram WebApp данных по времени
-- Кэширование часто запрашиваемых данных
-- Pagination для больших списков
-
-## 🔧 **Быстрые исправления:**
-
-### 1. Активировать JWT (требует изменений фронтенда):
-```typescript
-// В контроллерах заменить:
-@UseGuards(TelegramAuthGuard)  // ❌
-@UseGuards(JwtAuthGuard)       // ✅
-
-// Фронтенд должен отправлять JWT токен:
-Headers: { Authorization: 'Bearer ' + token }
-```
-
-### 2. Временная защита от IDOR (если JWT пока не активирован):
-```typescript
-// В TelegramAuthGuard добавить проверку IP/сессии
-if (requestedUserId !== sessionUserId && !isAdmin) {
-  // Логировать подозрительную активность
-  return { error: 'Access denied' };
-}
-```
-
-### 3. Обновить AuthController для возврата JWT:
-```typescript
-// AuthController.verify() уже возвращает accessToken
-// Фронтенд должен его использовать для последующих запросов
-```
-
-## 📊 **Мониторинг безопасности:**
-
-### Метрики для отслеживания:
-- Количество запросов с одного IP
-- Частота смены userId в запросах
-- Попытки доступа к несуществующим ресурсам
-- Аномальные паттерны использования (например, доступ к урокам без прогресса)
-
-### Алерты:
-- Более 100 запросов/мин с одного IP
-- Доступ к данным >5 разных пользователей с одного IP
-- Попытки доступа к неопубликованному контенту
-
-## 🎯 **Рекомендации по внедрению:**
-
-**Быстро (1-2 дня):**
-- ✅ JWT уже реализован, нужно только активировать
-- Заменить TelegramAuthGuard на JwtAuthGuard в контроллерах
-- Добавить nginx rate limiting
-
-**Средний срок (1 неделя):**
-- Обновить фронтенд для использования JWT токенов
-- Добавить Redis для rate limiting
-- Улучшить логирование подозрительной активности
-
-**Долгосрочно (1 месяц):**
-- Полный мониторинг безопасности
-- Автоматические блокировки подозрительных IP
-- Refresh токены для продления сессий
+1. **Inline-типы вместо DTO-классов** — ValidationPipe не срабатывает: `POST /leads/bot_start` (публичный, анонимный upsert лида по любому userId), `POST /events`, `POST /progress/sessions/*` (клиентский `extraXp`), `POST /promo/redeem`, `PATCH /profile/*` (whitelist руками, но элементы `learningGoals` не проверяются), `YooKassaWebhookDto` без декораторов. → Конвертировать в классы с class-validator.
+2. **`GET /auth/verify` принимает initData в query** — hash/user оседают в access-логах nginx. → Перевести на POST с телом.
+3. **`GET /auth/onboarding/status/:userId` публичен** — уровень/цели перечислимы по Telegram ID. → Закрыть JWT или убрать.
+4. **PII в логах**: вебхук логирует полные headers+body, `createPayment` — paymentData с email, лог успеха — имя/фамилию. → Вычистить/маскировать.
+5. **Подпись вебхука YooKassa не проверяется** (компенсировано перепроверкой через API + nginx IP-allowlist); IP-проверка в коде опирается на `x-forwarded-for`. → Использовать `req.ip`.
+6. **`OnboardingGuard`** читает userId из query/body, а не из `req.user` — противоречит JWT-модели.
+7. Нет глобального exception filter — часть эндпоинтов отвечает `200 {error}` вместо HTTP-ошибок.
+8. Чек 54-ФЗ уходит на фейковый email `user_<id>@burlive.ru` при отсутствии реального.

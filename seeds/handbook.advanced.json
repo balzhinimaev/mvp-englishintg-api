@@ -1,0 +1,2227 @@
+{
+ "articles": [
+  {
+   "ref": "grammar.used-to",
+   "category": "grammar",
+   "title": {
+    "ru": "Used to: прошлые привычки",
+    "en": "Used to"
+   },
+   "summary": "Used to описывает привычки и состояния в прошлом, которых больше нет.",
+   "level": "B1",
+   "icon": "clock",
+   "order": 40,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Конструкция used to + инфинитив описывает то, что регулярно происходило или было правдой в прошлом, но сейчас уже не так. Это может быть привычка (I used to smoke — раньше курил, а теперь нет) или длительное состояние (We used to live in Moscow — раньше жили в Москве)."
+    },
+    {
+     "type": "rule",
+     "text": "Утверждение: подлежащее + used to + инфинитив. Форма used to не меняется по лицам и относится только к прошлому — настоящего варианта у неё нет."
+    },
+    {
+     "type": "table",
+     "title": "Формы used to",
+     "headers": [
+      "Форма",
+      "Схема",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "+",
+       "used to + инфинитив",
+       "I used to play football."
+      ],
+      [
+       "−",
+       "didn't use to + инфинитив",
+       "He didn't use to like tea."
+      ],
+      [
+       "?",
+       "Did + подл. + use to + инфинитив",
+       "Did you use to live here?"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "В вопросе и отрицании пишем use to (без -d), потому что прошедшее время уже выражено вспомогательным did."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I used to be afraid of dogs when I was a child.",
+       "ru": "В детстве я боялся собак."
+      },
+      {
+       "en": "She didn't use to drink coffee, but now she loves it.",
+       "ru": "Раньше она не пила кофе, а теперь обожает его."
+      },
+      {
+       "en": "Did you use to have long hair?",
+       "ru": "У тебя раньше были длинные волосы?"
+      },
+      {
+       "en": "We used to go camping every summer.",
+       "ru": "Раньше мы каждое лето ездили в походы."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "used to или would?"
+    },
+    {
+     "type": "text",
+     "text": "Would тоже описывает повторяющиеся действия в прошлом, но только действия, а не состояния. С глаголами состояния (be, have, like, know) would не используется — там нужен used to."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Every winter we would build a snowman. (действие — ок)",
+       "ru": "Каждую зиму мы лепили снеговика."
+      },
+      {
+       "en": "I used to have a bike. (НЕ I would have a bike)",
+       "ru": "Раньше у меня был велосипед."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "used to или be used to?"
+    },
+    {
+     "type": "rule",
+     "text": "Не путайте! used to + инфинитив = прошлая привычка. be used to + существительное/-ing = привыкнуть, быть привычным к чему-то (сейчас)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I used to get up early. (раньше вставал рано)",
+       "ru": "Раньше я вставал рано."
+      },
+      {
+       "en": "I am used to getting up early. (привык вставать рано)",
+       "ru": "Я привык вставать рано."
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Проверка: если после used to стоит инфинитив без to — это привычка в прошлом. Если стоит be/get + used to + существительное или -ing — это про привыкание."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.relative-clauses",
+   "category": "grammar",
+   "title": {
+    "ru": "Относительные придаточные",
+    "en": "Relative Clauses"
+   },
+   "summary": "Придаточные с who, which, that, where, whose: как описать существительное подробнее.",
+   "level": "B1",
+   "icon": "list",
+   "order": 41,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Относительное придаточное добавляет информацию к существительному. Оно присоединяется словами who, which, that, where, whose и позволяет соединить два предложения в одно: The man is my teacher. + He is talking. = The man who is talking is my teacher."
+    },
+    {
+     "type": "table",
+     "title": "Относительные местоимения",
+     "headers": [
+      "Слово",
+      "Для чего",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "who",
+       "люди",
+       "the girl who called me"
+      ],
+      [
+       "which",
+       "предметы, животные",
+       "the book which I read"
+      ],
+      [
+       "that",
+       "люди и предметы",
+       "the film that we saw"
+      ],
+      [
+       "where",
+       "места",
+       "the town where I grew up"
+      ],
+      [
+       "whose",
+       "принадлежность",
+       "the man whose car broke down"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "This is the woman who lives next door.",
+       "ru": "Это женщина, которая живёт по соседству."
+      },
+      {
+       "en": "I found the keys that I lost yesterday.",
+       "ru": "Я нашёл ключи, которые вчера потерял."
+      },
+      {
+       "en": "That's the hotel where we stayed last year.",
+       "ru": "Вот отель, где мы останавливались в прошлом году."
+      },
+      {
+       "en": "She's the writer whose books I love.",
+       "ru": "Это писательница, чьи книги я люблю."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Defining и non-defining"
+    },
+    {
+     "type": "rule",
+     "text": "Defining (определяющее) придаточное несёт важную информацию: без него смысл теряется — запятыми НЕ выделяется. Non-defining (уточняющее) добавляет необязательную деталь — выделяется запятыми, и в нём нельзя использовать that."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "The students who studied hard passed the exam. (defining — именно те, кто учился)",
+       "ru": "Студенты, которые усердно учились, сдали экзамен."
+      },
+      {
+       "en": "My brother, who lives in Paris, is a chef. (non-defining — доп. деталь)",
+       "ru": "Мой брат, который живёт в Париже, — повар."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "В non-defining придаточных запятые обязательны с обеих сторон, а that запрещено — только who/which."
+    },
+    {
+     "type": "heading",
+     "text": "Опущение местоимения"
+    },
+    {
+     "type": "rule",
+     "text": "Если относительное местоимение является дополнением (после него идёт своё подлежащее), в defining придаточных его можно опустить."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "The film (that) we watched was boring.",
+       "ru": "Фильм, который мы посмотрели, был скучным."
+      },
+      {
+       "en": "The man (who) I met is a doctor.",
+       "ru": "Мужчина, которого я встретил, — врач."
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Нельзя опускать местоимение, если оно — подлежащее придаточного: The man who called me (who опустить нельзя, за ним сразу идёт глагол)."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.wish-if-only",
+   "category": "grammar",
+   "title": {
+    "ru": "Wish / If only: сожаления и желания",
+    "en": "Wish / If only"
+   },
+   "summary": "Как выразить сожаление о настоящем и прошлом и недовольство ситуацией.",
+   "level": "B2",
+   "icon": "star",
+   "order": 42,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Конструкции I wish и If only выражают сожаление о том, что реальность не такая, как хотелось бы. If only — более эмоциональный вариант с тем же смыслом. Ключевое правило: время глагола после wish сдвигается на шаг в прошлое."
+    },
+    {
+     "type": "table",
+     "title": "Три схемы",
+     "headers": [
+      "Схема",
+      "О чём",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "wish + Past Simple",
+       "сожаление о настоящем",
+       "I wish I knew the answer."
+      ],
+      [
+       "wish + Past Perfect",
+       "сожаление о прошлом",
+       "I wish I had studied more."
+      ],
+      [
+       "wish + would",
+       "раздражение, просьба о перемене",
+       "I wish it would stop raining."
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Сожаление о настоящем"
+    },
+    {
+     "type": "rule",
+     "text": "wish + Past Simple: жалеем, что что-то в настоящем не так, как хотелось бы. Глагол be часто становится were для всех лиц."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I wish I had more free time.",
+       "ru": "Жаль, что у меня мало свободного времени."
+      },
+      {
+       "en": "She wishes she were taller.",
+       "ru": "Она хотела бы быть выше."
+      },
+      {
+       "en": "If only I lived closer to the office.",
+       "ru": "Вот бы я жил ближе к офису."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Сожаление о прошлом"
+    },
+    {
+     "type": "rule",
+     "text": "wish + Past Perfect: жалеем о том, что уже случилось или не случилось и изменить нельзя."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I wish I hadn't said that.",
+       "ru": "Жаль, что я это сказал."
+      },
+      {
+       "en": "If only we had booked the tickets earlier.",
+       "ru": "Вот бы мы заказали билеты раньше."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Раздражение: wish + would"
+    },
+    {
+     "type": "rule",
+     "text": "wish + would используем, когда чужое (или внешнее) поведение раздражает и мы хотим, чтобы оно изменилось. С самим собой (I wish I would) обычно не используется."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I wish you would listen to me.",
+       "ru": "Как бы я хотел, чтобы ты меня слушал."
+      },
+      {
+       "en": "I wish the neighbours would be quieter.",
+       "ru": "Хоть бы соседи вели себя потише."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "После wish форма прошедшего времени не означает прошлое — это условное наклонение. I wish I knew относится к настоящему."
+    },
+    {
+     "type": "tip",
+     "text": "Запомните логику: настоящее сожаление — шаг назад в Past Simple; прошлое сожаление — ещё шаг назад в Past Perfect."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.causative",
+   "category": "grammar",
+   "title": {
+    "ru": "Каузатив: have/get something done",
+    "en": "Causative"
+   },
+   "summary": "Как сказать, что действие выполняет для вас кто-то другой: I had my car repaired.",
+   "level": "B2",
+   "icon": "check",
+   "order": 43,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Каузативная конструкция have/get something done показывает, что мы не делаем действие сами, а поручаем его другому человеку (мастеру, парикмахеру, специалисту). Важен результат, а не исполнитель. Сравните: I painted the house (сам покрасил) и I had the house painted (мне покрасили)."
+    },
+    {
+     "type": "rule",
+     "text": "Схема: подлежащее + have/get + объект + причастие прошедшего времени (V3). Объект — вещь, над которой совершают действие; V3 — само действие."
+    },
+    {
+     "type": "table",
+     "title": "Времена каузатива",
+     "headers": [
+      "Время",
+      "Пример",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "Present",
+       "I have my hair cut every month.",
+       "Мне стригут волосы каждый месяц."
+      ],
+      [
+       "Past",
+       "She had her photo taken.",
+       "Ей сделали фото."
+      ],
+      [
+       "Future",
+       "We'll have the roof fixed.",
+       "Нам починят крышу."
+      ],
+      [
+       "Present Perfect",
+       "They've had their kitchen redone.",
+       "Им переделали кухню."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I had my car repaired last week.",
+       "ru": "На прошлой неделе мне отремонтировали машину."
+      },
+      {
+       "en": "You should get your eyes tested.",
+       "ru": "Тебе стоит проверить зрение (у врача)."
+      },
+      {
+       "en": "We're having a new bathroom installed.",
+       "ru": "Нам устанавливают новую ванную."
+      },
+      {
+       "en": "He got his suit dry-cleaned for the wedding.",
+       "ru": "Он отдал костюм в химчистку к свадьбе."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "have или get?"
+    },
+    {
+     "type": "rule",
+     "text": "have и get в этой конструкции почти взаимозаменяемы. Get звучит более разговорно и неформально; have — нейтрально. Смысл одинаковый."
+    },
+    {
+     "type": "note",
+     "text": "У каузатива есть второе значение — неприятное событие, которое с нами произошло: I had my bag stolen (у меня украли сумку). Здесь мы ничего не поручали, но пострадали от действия."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "They had their flight cancelled.",
+       "ru": "Им отменили рейс."
+      },
+      {
+       "en": "She had her phone stolen on the bus.",
+       "ru": "У неё украли телефон в автобусе."
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Порядок слов ключевой: сначала объект, потом V3. I had repaired my car — это Past Perfect (я сам починил). I had my car repaired — каузатив (мне починили)."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.participle-clauses",
+   "category": "grammar",
+   "title": {
+    "ru": "Причастные обороты",
+    "en": "Participle Clauses"
+   },
+   "summary": "Как сократить придаточное с помощью причастий -ing, V3 и Having done.",
+   "level": "B2",
+   "icon": "pencil",
+   "order": 44,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Причастный оборот — это способ сделать речь короче и более письменной, заменяя целое придаточное причастием. Вместо While I was walking home, I met Tom говорят Walking home, I met Tom. Подлежащее у оборота и главного предложения должно совпадать."
+    },
+    {
+     "type": "table",
+     "title": "Три типа причастий",
+     "headers": [
+      "Тип",
+      "Форма",
+      "Значение"
+     ],
+     "rows": [
+      [
+       "Present participle",
+       "V-ing",
+       "активное действие, одновременность/причина"
+      ],
+      [
+       "Past participle",
+       "V3",
+       "пассивное значение (что-то делают с объектом)"
+      ],
+      [
+       "Perfect participle",
+       "Having + V3",
+       "действие завершилось раньше главного"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Present participle (-ing)"
+    },
+    {
+     "type": "rule",
+     "text": "Оборот с -ing заменяет активное придаточное. Выражает одновременное действие, причину или последовательность событий."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Feeling tired, she went to bed early.",
+       "ru": "Чувствуя усталость, она рано легла спать."
+      },
+      {
+       "en": "The man standing by the door is my boss.",
+       "ru": "Мужчина, стоящий у двери, — мой начальник."
+      },
+      {
+       "en": "Opening the box, he found a letter.",
+       "ru": "Открыв коробку, он нашёл письмо."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Past participle (V3)"
+    },
+    {
+     "type": "rule",
+     "text": "Оборот с причастием V3 имеет пассивное значение — над подлежащим совершается действие. Заменяет придаточное со страдательным залогом."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Built in 1850, the house is now a museum.",
+       "ru": "Построенный в 1850 году, дом теперь музей."
+      },
+      {
+       "en": "Shocked by the news, they said nothing.",
+       "ru": "Потрясённые новостью, они молчали."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Perfect participle (Having done)"
+    },
+    {
+     "type": "rule",
+     "text": "Having + V3 подчёркивает, что действие оборота полностью завершилось до действия главного предложения."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Having finished the report, she went home.",
+       "ru": "Закончив отчёт, она пошла домой."
+      },
+      {
+       "en": "Having lived abroad, he speaks three languages.",
+       "ru": "Пожив за границей, он говорит на трёх языках."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Следите за подлежащим: у оборота и главного предложения оно должно быть одним и тем же. Иначе получится ошибка: Walking home, the rain started (звучит, будто дождь шёл домой)."
+    },
+    {
+     "type": "tip",
+     "text": "Причастные обороты характерны для письменной и формальной речи — в разговоре чаще оставляют полное придаточное."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.cleft-sentences",
+   "category": "grammar",
+   "title": {
+    "ru": "Расщеплённые предложения (эмфаза)",
+    "en": "Cleft Sentences"
+   },
+   "summary": "Как выделить важную часть предложения конструкциями It was... that и What... is.",
+   "level": "B2",
+   "icon": "star",
+   "order": 45,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Расщеплённое предложение (cleft) делит обычную фразу на две части, чтобы подчеркнуть важную информацию — эквивалент русского выделения интонацией или словом «именно». Простое Tom broke the window можно усилить: It was Tom who broke the window (именно Том разбил окно)."
+    },
+    {
+     "type": "table",
+     "title": "Основные модели",
+     "headers": [
+      "Модель",
+      "Что выделяет",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "It is/was ... that/who",
+       "любой член предложения",
+       "It was John who called."
+      ],
+      [
+       "What ... is/was",
+       "действие или объект",
+       "What I need is a break."
+      ],
+      [
+       "The reason (why) ... is",
+       "причину",
+       "The reason I left is that I was tired."
+      ],
+      [
+       "The person/place/thing ...",
+       "лицо, место, предмет",
+       "The place we met was a café."
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "It-cleft: It was... that..."
+    },
+    {
+     "type": "rule",
+     "text": "It + be + выделяемое слово + that/who + остальное предложение. Для людей можно who, для остального — that. Так подчёркивают, ЧТО или КТО именно."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "It was in Paris that they first met.",
+       "ru": "Именно в Париже они впервые встретились."
+      },
+      {
+       "en": "It was my sister who paid for dinner.",
+       "ru": "Именно моя сестра оплатила ужин."
+      },
+      {
+       "en": "It wasn't the price that worried me.",
+       "ru": "Не цена меня беспокоила."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Wh-cleft: What... is..."
+    },
+    {
+     "type": "rule",
+     "text": "What + придаточное + be + выделяемая часть. Часто начинают с What, чтобы подчеркнуть, что именно нужно, нравится или раздражает."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "What I really want is a cup of tea.",
+       "ru": "Чего я по-настоящему хочу — так это чашку чая."
+      },
+      {
+       "en": "What annoys me is his constant lateness.",
+       "ru": "Что меня раздражает, так это его вечные опоздания."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "The reason / The person / The place"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "The reason why I called is to say sorry.",
+       "ru": "Причина, по которой я позвонил, — извиниться."
+      },
+      {
+       "en": "The person who helped me was a stranger.",
+       "ru": "Человек, который мне помог, был незнакомцем."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Cleft-конструкции звучат выразительно, но их не стоит применять в каждой фразе — они нужны именно для контраста и акцента."
+    },
+    {
+     "type": "tip",
+     "text": "Быстрый способ построить It-cleft: возьмите слово, которое хотите выделить, поставьте It was ... в начало и продолжите that + остаток предложения."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.inversion",
+   "category": "grammar",
+   "title": {
+    "ru": "Инверсия для эмфазы",
+    "en": "Inversion for Emphasis"
+   },
+   "summary": "Обратный порядок слов после отрицательных и ограничительных наречий для усиления высказывания.",
+   "level": "C1",
+   "icon": "star",
+   "order": 50,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Инверсия — это обратный порядок слов, когда вспомогательный глагол ставится перед подлежащим, как в вопросе. В утвердительном предложении инверсия придаёт речи выразительность и звучит формально и литературно. Чаще всего она запускается, когда в начало предложения выносится отрицательное или ограничительное наречие."
+    },
+    {
+     "type": "rule",
+     "text": "После наречной фразы с отрицательным/ограничительным значением в начале предложения — обратный порядок: наречие + вспомогательный глагол + подлежащее + смысловой глагол. Если своего вспомогательного нет, добавляем do/does/did."
+    },
+    {
+     "type": "heading",
+     "text": "Основные конструкции"
+    },
+    {
+     "type": "table",
+     "title": "Триггеры инверсии",
+     "headers": [
+      "Триггер",
+      "Пример",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "Never",
+       "Never have I seen such chaos.",
+       "Никогда я не видел такого хаоса."
+      ],
+      [
+       "Not only… but also",
+       "Not only did he lie, but he also stole.",
+       "Он не только солгал, но и украл."
+      ],
+      [
+       "Hardly… when",
+       "Hardly had I sat down when the phone rang.",
+       "Едва я сел, как зазвонил телефон."
+      ],
+      [
+       "No sooner… than",
+       "No sooner had we left than it started to rain.",
+       "Не успели мы уйти, как пошёл дождь."
+      ],
+      [
+       "Only then",
+       "Only then did she realise the truth.",
+       "Лишь тогда она осознала правду."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Under no circumstances should you open this door.",
+       "ru": "Ни при каких обстоятельствах не открывайте эту дверь."
+      },
+      {
+       "en": "Little did she know that her life was about to change.",
+       "ru": "Она и не подозревала, что её жизнь вот-вот изменится."
+      },
+      {
+       "en": "Not until much later did we understand the risk.",
+       "ru": "Лишь много позже мы поняли опасность."
+      },
+      {
+       "en": "Rarely do we encounter such generosity.",
+       "ru": "Редко мы встречаем такую щедрость."
+      },
+      {
+       "en": "Seldom had the team faced a tougher opponent.",
+       "ru": "Редко команда сталкивалась с более сильным соперником."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "В связках Hardly… when и No sooner… than первое действие ставится в Past Perfect, а второе — в Past Simple. Именно поэтому вспомогательный глагол — had."
+    },
+    {
+     "type": "tip",
+     "text": "Инверсия уместна в письменной речи, речах и драматичных высказываниях. В обычном разговоре она может звучать напыщенно — используйте её осознанно и дозированно."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.nominalisation",
+   "category": "grammar",
+   "title": {
+    "ru": "Номинализация (академический стиль)",
+    "en": "Nominalisation"
+   },
+   "summary": "Превращение глаголов и прилагательных в существительные для более формального и плотного письменного стиля.",
+   "level": "C1",
+   "icon": "pencil",
+   "order": 51,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Номинализация — это превращение действия или качества, выраженного глаголом или прилагательным, в существительное. Вместо «они решили» (they decided) пишут «их решение» (their decision). Такой приём делает текст более плотным, объективным и безличным — именно это ценится в академическом и деловом стиле."
+    },
+    {
+     "type": "rule",
+     "text": "Глагол или прилагательное заменяется однокоренным существительным, а исходное действие переносится из сказуемого в подлежащее или дополнение. Часто добавляются суффиксы -tion, -ment, -ance, -ity, -sis, -al."
+    },
+    {
+     "type": "table",
+     "title": "Слово → существительное",
+     "headers": [
+      "Глагол/прилаг.",
+      "Существительное",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "analyse",
+       "analysis",
+       "анализ"
+      ],
+      [
+       "decide",
+       "decision",
+       "решение"
+      ],
+      [
+       "move",
+       "movement",
+       "движение"
+      ],
+      [
+       "fail",
+       "failure",
+       "провал"
+      ],
+      [
+       "important",
+       "importance",
+       "важность"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как меняется предложение"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "We analysed the data. → The analysis of the data revealed a trend.",
+       "ru": "Мы проанализировали данные. → Анализ данных выявил тенденцию."
+      },
+      {
+       "en": "The company grew rapidly. → The rapid growth of the company was notable.",
+       "ru": "Компания быстро росла. → Быстрый рост компании был заметен."
+      },
+      {
+       "en": "Prices increased sharply. → There was a sharp increase in prices.",
+       "ru": "Цены резко выросли. → Произошёл резкий рост цен."
+      },
+      {
+       "en": "They failed to comply. → Their failure to comply led to fines.",
+       "ru": "Они не выполнили требования. → Их невыполнение требований привело к штрафам."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Номинализация обезличивает текст: акцент смещается с того, кто действует, на само явление. Это полезно в науке, но злоупотребление делает текст тяжёлым и бюрократичным."
+    },
+    {
+     "type": "tip",
+     "text": "В формальном письме — номинализируйте; в устной речи и простых объяснениях — оставляйте глаголы, так живее и понятнее. Ищите баланс."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.hedging",
+   "category": "grammar",
+   "title": {
+    "ru": "Смягчение (hedging)",
+    "en": "Hedging"
+   },
+   "summary": "Языковые средства осторожности: как высказывать мнение вежливо, не звучать категорично и дистанцироваться от утверждения.",
+   "level": "C1",
+   "icon": "chat",
+   "order": 52,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Hedging — это смягчение утверждений, чтобы не звучать слишком категорично. Носители языка редко говорят «это плохо» напрямую; они добавляют слова осторожности: «пожалуй, это не совсем удачно». Смягчение делает речь вежливой, показывает уважение к собеседнику и защищает автора от обвинений в излишней уверенности."
+    },
+    {
+     "type": "rule",
+     "text": "Категоричное утверждение смягчается вводными словами (it would seem, arguably), глаголами оценки (tend to, appear to), наречиями степени (to some extent, largely) и словами дистанцирования (apparently, reportedly), которые снимают с автора ответственность за источник."
+    },
+    {
+     "type": "table",
+     "title": "Средства смягчения",
+     "headers": [
+      "Средство",
+      "Функция",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "it would seem",
+       "осторожный вывод",
+       "It would seem that costs are rising."
+      ],
+      [
+       "tend to",
+       "склонность, не факт",
+       "Users tend to prefer simplicity."
+      ],
+      [
+       "arguably",
+       "спорно, но обоснованно",
+       "This is arguably the best option."
+      ],
+      [
+       "to some extent",
+       "частичное согласие",
+       "That is true to some extent."
+      ],
+      [
+       "apparently / reportedly",
+       "дистанцирование от источника",
+       "The deal has reportedly collapsed."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "The results suggest a possible link, rather than proving one.",
+       "ru": "Результаты скорее указывают на возможную связь, чем доказывают её."
+      },
+      {
+       "en": "It could be argued that the policy was premature.",
+       "ru": "Можно утверждать, что политика была преждевременной."
+      },
+      {
+       "en": "This approach may not always be effective.",
+       "ru": "Такой подход, возможно, не всегда эффективен."
+      },
+      {
+       "en": "Apparently, the meeting was cancelled at the last minute.",
+       "ru": "По-видимому, встречу отменили в последнюю минуту."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Слова apparently и reportedly сигнализируют, что информация получена со стороны и автор за неё не ручается. Это ключевой приём журналистики и академического письма."
+    },
+    {
+     "type": "tip",
+     "text": "Не перегружайте предложение смягчителями — одного-двух достаточно. «It would perhaps possibly seem that…» звучит неуверенно и комично."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.perfect-modals",
+   "category": "grammar",
+   "title": {
+    "ru": "Совершенные модальные",
+    "en": "Perfect Modals"
+   },
+   "summary": "Модальные глаголы + have done: дедукция о прошлом и сожаления о том, что было или не было сделано.",
+   "level": "C1",
+   "icon": "clock",
+   "order": 53,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Совершенные модальные — это конструкция «модальный глагол + have + причастие прошедшего времени». Она позволяет строить догадки о прошлом (что, вероятно, произошло) и выражать сожаление или упрёк о том, что было или не было сделано. Форма have done не меняется по лицам."
+    },
+    {
+     "type": "rule",
+     "text": "Схема: modal + have + V3 (past participle). Смысл зависит от модального глагола: уверенность, невозможность, предположение, упрёк или ненужное действие."
+    },
+    {
+     "type": "table",
+     "title": "Значения",
+     "headers": [
+      "Форма",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "must have done",
+       "уверенная дедукция (наверняка было)",
+       "She must have left; the lights are off."
+      ],
+      [
+       "can't have done",
+       "уверенность в невозможности",
+       "He can't have known; nobody told him."
+      ],
+      [
+       "might/could have done",
+       "предположение (возможно, было)",
+       "They might have missed the train."
+      ],
+      [
+       "should have done",
+       "упрёк/сожаление (надо было)",
+       "You should have called me."
+      ],
+      [
+       "needn't have done",
+       "сделано зря (не нужно было)",
+       "You needn't have paid; it was free."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I must have left my keys at the office.",
+       "ru": "Должно быть, я оставил ключи в офисе."
+      },
+      {
+       "en": "You can't have finished already — it's only been ten minutes!",
+       "ru": "Не может быть, что ты уже закончил — прошло всего десять минут!"
+      },
+      {
+       "en": "We should have booked earlier; now everything is full.",
+       "ru": "Нам надо было забронировать раньше; теперь всё занято."
+      },
+      {
+       "en": "She could have told us, but she chose to stay silent.",
+       "ru": "Она могла бы сказать нам, но предпочла промолчать."
+      },
+      {
+       "en": "You needn't have cooked so much — we weren't that hungry.",
+       "ru": "Не стоило готовить так много — мы были не настолько голодны."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Различайте needn't have done (действие было выполнено, но напрасно) и didn't need to do (действие могло вообще не выполняться). Первое — про сделанное зря, второе — про отсутствие необходимости."
+    },
+    {
+     "type": "tip",
+     "text": "Should have done — универсальный способ выразить сожаление и мягкий упрёк. Разговорная стяжённая форма: «You should've called» звучит как /ʃʊdəv/."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.ellipsis-substitution",
+   "category": "grammar",
+   "title": {
+    "ru": "Эллипсис и субституция",
+    "en": "Ellipsis and Substitution"
+   },
+   "summary": "Опущение известных слов и замена их на so, one, do so, neither — для экономии языка и естественного звучания.",
+   "level": "C1",
+   "icon": "list",
+   "order": 54,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Эллипсис — это опущение слов, которые и так понятны из контекста, чтобы не повторяться. Субституция — замена уже сказанного коротким словом-заместителем (so, one, do so, neither). Оба приёма экономят язык и делают речь беглой и естественной; их отсутствие делает текст громоздким и повторяющимся."
+    },
+    {
+     "type": "rule",
+     "text": "Эллипсис: убираем повторяющиеся слова, если смысл восстанавливается из контекста. Субституция: повторяемое существительное заменяем на one/ones, глагольную группу — на do/do so, целое высказывание — на so/not, а отрицательное согласие — на neither/nor."
+    },
+    {
+     "type": "table",
+     "title": "Заместители",
+     "headers": [
+      "Слово",
+      "Что заменяет",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "one / ones",
+       "исчисляемое существительное",
+       "I'll take the red one."
+      ],
+      [
+       "do / do so",
+       "глагольную группу",
+       "She promised to help and she did."
+      ],
+      [
+       "so",
+       "целое придаточное/утверждение",
+       "Is it raining? I think so."
+      ],
+      [
+       "neither / nor",
+       "отрицательное согласие",
+       "I don't smoke. — Neither do I."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "She can play the violin, and he can too. (…can play the violin)",
+       "ru": "Она умеет играть на скрипке, и он тоже (умеет)."
+      },
+      {
+       "en": "I wanted to call you but didn't have time to. (…to call you)",
+       "ru": "Я хотел тебе позвонить, но не было времени (позвонить)."
+      },
+      {
+       "en": "You were asked to wait, so please do so.",
+       "ru": "Вас попросили подождать, так что, пожалуйста, сделайте это."
+      },
+      {
+       "en": "Will they win? — I hope so. / I'm afraid not.",
+       "ru": "Они победят? — Надеюсь, да. / Боюсь, что нет."
+      },
+      {
+       "en": "I haven't seen the film. — Neither have I.",
+       "ru": "Я не видел этот фильм. — Я тоже (не видел)."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "После вспомогательных и модальных глаголов смысловой глагол часто опускается целиком: «I can swim, and she can too». Это самый частый вид эллипсиса."
+    },
+    {
+     "type": "tip",
+     "text": "So I do / So do I — разные вещи! «So do I» = я тоже (согласие). «So I do» = и правда, так и есть (подтверждение с удивлением). Не путайте порядок слов."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.mixed-conditionals",
+   "category": "grammar",
+   "title": {
+    "ru": "Смешанные и инвертированные условные",
+    "en": "Mixed and Inverted Conditionals"
+   },
+   "summary": "Условные с разными временами в частях и формальная инверсия без if: Had I known…, Were it not for…, Should you need…",
+   "level": "C1",
+   "icon": "check",
+   "order": 55,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Смешанные условные объединяют разные типы: условие относится к одному времени, а результат — к другому. Инвертированные условные — это формальный способ построить условие без if: вместо него используется инверсия (обратный порядок слов). Оба варианта нужны для точного и стилистически зрелого выражения гипотез."
+    },
+    {
+     "type": "heading",
+     "text": "Смешанные условные"
+    },
+    {
+     "type": "rule",
+     "text": "Прошлое условие → настоящий результат: If + Past Perfect, … would + инфинитив. Настоящее условие → прошлый результат: If + Past Simple, … would have + V3."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "If I had studied medicine, I would be a doctor now.",
+       "ru": "Если бы я выучился на медика (тогда), я был бы врачом сейчас."
+      },
+      {
+       "en": "If she weren't so shy, she would have spoken up at the meeting.",
+       "ru": "Если бы она не была такой застенчивой (вообще), она высказалась бы на собрании (тогда)."
+      },
+      {
+       "en": "If they had saved money, they wouldn't be struggling today.",
+       "ru": "Если бы они копили деньги, они не бедствовали бы сегодня."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Инвертированные условные"
+    },
+    {
+     "type": "rule",
+     "text": "Убираем if и выносим вспомогательный глагол вперёд: Had + подлежащее (вместо if… had), Were + подлежащее (вместо if… were), Should + подлежащее (вместо if… should = если вдруг)."
+    },
+    {
+     "type": "table",
+     "title": "Инверсия без if",
+     "headers": [
+      "С if",
+      "Инверсия",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "If I had known",
+       "Had I known",
+       "Если бы я знал"
+      ],
+      [
+       "If it were not for",
+       "Were it not for",
+       "Если бы не"
+      ],
+      [
+       "If you should need",
+       "Should you need",
+       "Если вам вдруг понадобится"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Had I known you were coming, I would have prepared dinner.",
+       "ru": "Знай я, что ты придёшь, я бы приготовил ужин."
+      },
+      {
+       "en": "Were it not for your help, we would have failed.",
+       "ru": "Если бы не твоя помощь, мы бы провалились."
+      },
+      {
+       "en": "Should you need assistance, please contact reception.",
+       "ru": "Если вам вдруг понадобится помощь, обратитесь на ресепшн."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "В инвертированных условных отрицание НЕ стягивается: правильно «Had it not been for…», а не «Hadn't it been for…». Not ставится после подлежащего."
+    },
+    {
+     "type": "tip",
+     "text": "Инвертированные условные звучат формально и элегантно — идеальны для деловых писем и эссе. «Should you have any questions…» — стандартная вежливая формула."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.discourse-markers",
+   "category": "grammar",
+   "title": {
+    "ru": "Дискурсивные маркеры",
+    "en": "Discourse Markers"
+   },
+   "summary": "Связки-организаторы речи: как вводить контраст, добавление, уточнение и смену темы в письме и речи.",
+   "level": "C1",
+   "icon": "globe",
+   "order": 56,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что это"
+    },
+    {
+     "type": "text",
+     "text": "Дискурсивные маркеры — это слова и фразы, которые организуют речь: показывают, как связаны идеи, вводят контраст, добавляют аргумент, уточняют или меняют тему. Они не несут собственного лексического содержания, но управляют логикой текста и помогают слушателю следить за мыслью. Владение ими — признак зрелого стиля."
+    },
+    {
+     "type": "rule",
+     "text": "Маркер обычно стоит в начале предложения или части и отделяется запятой. Выбирайте маркер по функции: контраст, добавление, уточнение, ограничение темы или перефразирование."
+    },
+    {
+     "type": "table",
+     "title": "Функции маркеров",
+     "headers": [
+      "Маркер",
+      "Функция",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "having said that",
+       "уступка/смягчение контраста",
+       "тем не менее, при этом"
+      ],
+      [
+       "on the other hand",
+       "противопоставление",
+       "с другой стороны"
+      ],
+      [
+       "as far as … is concerned",
+       "ограничение темы",
+       "что касается…"
+      ],
+      [
+       "to put it another way",
+       "перефразирование",
+       "иными словами"
+      ],
+      [
+       "moreover / nevertheless",
+       "добавление / несмотря на",
+       "более того / тем не менее"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "The plan is risky. Having said that, it could pay off enormously.",
+       "ru": "План рискованный. Тем не менее, он может окупиться сполна."
+      },
+      {
+       "en": "As far as budget is concerned, we are on track.",
+       "ru": "Что касается бюджета, мы укладываемся."
+      },
+      {
+       "en": "The design is elegant; moreover, it is cheap to produce.",
+       "ru": "Дизайн элегантный; более того, его дёшево производить."
+      },
+      {
+       "en": "He never replied. Nevertheless, we proceeded.",
+       "ru": "Он так и не ответил. Тем не менее, мы продолжили."
+      },
+      {
+       "en": "To put it another way, we simply cannot afford it.",
+       "ru": "Иными словами, мы просто не можем себе этого позволить."
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Различайте регистры: moreover, nevertheless, furthermore — формальные (эссе, отчёты); besides, anyway, mind you — разговорные. Смешивать их в одном тексте не стоит."
+    },
+    {
+     "type": "tip",
+     "text": "Having said that — отличный способ вежливо ввести возражение, признав правоту собеседника. В речи его часто говорят перед тем, как мягко не согласиться."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.register",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Формальный ↔ неформальный",
+    "en": "Formal vs Informal Register"
+   },
+   "summary": "Пары синонимов повседневного и формального регистра и когда какой уместен.",
+   "level": "C1",
+   "icon": "list",
+   "order": 50,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что такое регистр"
+    },
+    {
+     "type": "text",
+     "text": "Регистр — это степень формальности речи. Одно и то же можно сказать нейтрально/разговорно или официально. Продвинутый уровень — это умение переключать регистр под ситуацию: письмо коллеге, договор, разговор с другом."
+    },
+    {
+     "type": "table",
+     "title": "Нейтральный ↔ формальный",
+     "headers": [
+      "Нейтральный (informal)",
+      "Формальный (formal)",
+      "Значение"
+     ],
+     "rows": [
+      [
+       "buy",
+       "purchase",
+       "покупать"
+      ],
+      [
+       "need",
+       "require",
+       "нуждаться, требоваться"
+      ],
+      [
+       "ask",
+       "enquire / inquire",
+       "спрашивать, наводить справки"
+      ],
+      [
+       "help",
+       "assist",
+       "помогать"
+      ],
+      [
+       "get",
+       "obtain / receive",
+       "получать"
+      ],
+      [
+       "about",
+       "regarding / concerning",
+       "относительно, по поводу"
+      ],
+      [
+       "get in touch",
+       "contact",
+       "связаться"
+      ],
+      [
+       "show",
+       "demonstrate / indicate",
+       "показывать"
+      ],
+      [
+       "start",
+       "commence",
+       "начинать"
+      ],
+      [
+       "end",
+       "terminate / conclude",
+       "заканчивать"
+      ],
+      [
+       "enough",
+       "sufficient",
+       "достаточный"
+      ],
+      [
+       "find out",
+       "ascertain",
+       "выяснить"
+      ],
+      [
+       "let",
+       "permit / allow",
+       "позволять"
+      ],
+      [
+       "book",
+       "reserve",
+       "бронировать"
+      ],
+      [
+       "give back",
+       "return",
+       "возвращать"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как это звучит в предложениях"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Can I get a receipt?",
+       "ru": "Можно чек? (разговорно)"
+      },
+      {
+       "en": "May I obtain a copy of the receipt, please?",
+       "ru": "Могу ли я получить копию чека? (формально)"
+      },
+      {
+       "en": "I'm writing to ask about the vacancy.",
+       "ru": "Пишу, чтобы спросить о вакансии. (нейтрально)"
+      },
+      {
+       "en": "I am writing to enquire regarding the vacancy.",
+       "ru": "Пишу, чтобы навести справки относительно вакансии. (формально)"
+      },
+      {
+       "en": "We need more time.",
+       "ru": "Нам нужно больше времени."
+      },
+      {
+       "en": "We require additional time to complete the review.",
+       "ru": "Нам требуется дополнительное время для завершения проверки."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Когда какой регистр"
+    },
+    {
+     "type": "rule",
+     "text": "Формальный: договоры, официальные письма и e-mail незнакомым, заявки, отчёты, академические тексты. Неформальный: чаты, письма друзьям и близким коллегам, устная речь."
+    },
+    {
+     "type": "tip",
+     "text": "Совет: фразовые глаголы (find out, get in touch, put off) звучат разговорно; их латинские эквиваленты (ascertain, contact, postpone) — формально. В деловом письме предпочитайте вторые."
+    },
+    {
+     "type": "note",
+     "text": "Важно: не переусердствуйте. Сплошь формальная речь в дружеской переписке звучит холодно и высокомерно — регистр должен соответствовать отношениям, а не только «правильности»."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.idioms-common",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Частые идиомы",
+    "en": "Common Idioms"
+   },
+   "summary": "15+ полезных английских идиом с значением и примером употребления.",
+   "level": "C1",
+   "icon": "star",
+   "order": 51,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Зачем нужны идиомы"
+    },
+    {
+     "type": "text",
+     "text": "Идиома — устойчивое выражение, значение которого не выводится из отдельных слов. Носители используют их постоянно; уместная идиома делает речь живой и естественной."
+    },
+    {
+     "type": "table",
+     "title": "Идиома — значение — пример",
+     "headers": [
+      "Идиома",
+      "Значение (ru)",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "a blessing in disguise",
+       "нет худа без добра",
+       "Losing that job was a blessing in disguise."
+      ],
+      [
+       "hit the nail on the head",
+       "попасть в точку",
+       "You hit the nail on the head with that comment."
+      ],
+      [
+       "cut to the chase",
+       "перейти к сути",
+       "Let's cut to the chase — what's the budget?"
+      ],
+      [
+       "the ball is in your court",
+       "теперь решать вам",
+       "I've made my offer; the ball is in your court."
+      ],
+      [
+       "once in a blue moon",
+       "крайне редко",
+       "We only meet once in a blue moon these days."
+      ],
+      [
+       "a piece of cake",
+       "проще простого",
+       "The exam was a piece of cake."
+      ],
+      [
+       "under the weather",
+       "неважно себя чувствовать",
+       "I'm a bit under the weather today."
+      ],
+      [
+       "bite the bullet",
+       "стиснуть зубы и сделать",
+       "I finally bit the bullet and booked the dentist."
+      ],
+      [
+       "break the ice",
+       "растопить лёд, разрядить обстановку",
+       "A joke helped break the ice at the meeting."
+      ],
+      [
+       "on the same page",
+       "быть заодно, понимать одинаково",
+       "Let's make sure we're on the same page."
+      ],
+      [
+       "cost an arm and a leg",
+       "стоить целое состояние",
+       "That car cost an arm and a leg."
+      ],
+      [
+       "get cold feet",
+       "струсить в последний момент",
+       "He got cold feet before the wedding."
+      ],
+      [
+       "let the cat out of the bag",
+       "проболтаться, выдать секрет",
+       "She let the cat out of the bag about the party."
+      ],
+      [
+       "pull someone's leg",
+       "разыгрывать, подшучивать",
+       "Relax, I'm just pulling your leg."
+      ],
+      [
+       "the last straw",
+       "последняя капля",
+       "His rudeness was the last straw."
+      ],
+      [
+       "speak of the devil",
+       "лёгок на помине",
+       "Speak of the devil — here she is!"
+      ],
+      [
+       "beat around the bush",
+       "ходить вокруг да около",
+       "Stop beating around the bush and tell me."
+      ],
+      [
+       "call it a day",
+       "закончить на сегодня",
+       "We've done enough; let's call it a day."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I know it's a long report, but let me cut to the chase.",
+       "ru": "Знаю, отчёт длинный, но перейду к сути."
+      },
+      {
+       "en": "Missing that train was a blessing in disguise — I met an old friend.",
+       "ru": "То, что я опоздал на поезд, обернулось к лучшему — встретил старого друга."
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Совет: учите идиому целиком вместе с типичным предложением. Изменять слова внутри нельзя — говорят 'the ball is in your court', а не 'the ball is in your field'."
+    },
+    {
+     "type": "note",
+     "text": "Важно: идиомы почти всегда неформальны. В официальном отчёте или договоре они неуместны — приберегите их для разговора и живой переписки."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.figurative-language",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Образный язык",
+    "en": "Figurative Language"
+   },
+   "summary": "Метафора, сравнение, олицетворение, метонимия, гипербола, преуменьшение и ирония с примерами.",
+   "level": "C2",
+   "icon": "pencil",
+   "order": 52,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что такое образный язык"
+    },
+    {
+     "type": "text",
+     "text": "Образный язык (figurative language) — это слова, употреблённые не в прямом, а в переносном смысле для выразительности. Понимание тропов важно для чтения литературы, публицистики и тонкого юмора."
+    },
+    {
+     "type": "table",
+     "title": "Тропы: определение и пример",
+     "headers": [
+      "Приём",
+      "Определение",
+      "Пример (en → ru)"
+     ],
+     "rows": [
+      [
+       "Metaphor (метафора)",
+       "Прямое отождествление без «как»",
+       "Time is money. — Время — деньги."
+      ],
+      [
+       "Simile (сравнение)",
+       "Сравнение через like/as",
+       "She's as brave as a lion. — Она храбра как лев."
+      ],
+      [
+       "Personification (олицетворение)",
+       "Неживому приписывают человеческие черты",
+       "The wind whispered through the trees. — Ветер шептал в деревьях."
+      ],
+      [
+       "Metonymy (метонимия)",
+       "Замена по смежности",
+       "The White House issued a statement. — Белый дом (= администрация) сделал заявление."
+      ],
+      [
+       "Hyperbole (гипербола)",
+       "Преувеличение для эффекта",
+       "I've told you a million times. — Я говорил тебе миллион раз."
+      ],
+      [
+       "Understatement (преуменьшение)",
+       "Намеренное занижение",
+       "It's just a scratch (о серьёзной поломке). — Так, царапина."
+      ],
+      [
+       "Irony (ирония)",
+       "Смысл противоположен сказанному",
+       "Lovely weather! (в ливень) — Чудесная погодка!"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Примеры в контексте"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "His words were a knife to her heart.",
+       "ru": "Его слова были ножом в её сердце. (метафора)"
+      },
+      {
+       "en": "The classroom was as quiet as a graveyard.",
+       "ru": "В классе было тихо как на кладбище. (сравнение)"
+      },
+      {
+       "en": "Opportunity knocked, and he opened the door.",
+       "ru": "Возможность постучала, и он открыл дверь. (олицетворение)"
+      },
+      {
+       "en": "Downing Street declined to comment.",
+       "ru": "Даунинг-стрит (= правительство) отказалась от комментариев. (метонимия)"
+      },
+      {
+       "en": "This bag weighs a ton.",
+       "ru": "Эта сумка весит тонну. (гипербола)"
+      },
+      {
+       "en": "\"Not bad\" — he said about the Michelin-starred meal.",
+       "ru": "«Неплохо» — сказал он о блюде со звездой Мишлен. (understatement)"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Совет: не путайте метафору и сравнение. Есть like/as — это simile ('brave as a lion'); нет — metaphor ('a lion of a man')."
+    },
+    {
+     "type": "note",
+     "text": "Важно: понимание иронии и understatement — ключ к британскому юмору. Часто смысл прямо противоположен буквальному, и распознаётся лишь по контексту и интонации."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.connectors-advanced",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Продвинутые связки",
+    "en": "Advanced Connectors"
+   },
+   "summary": "Связки уровня C1 по функциям: контраст, причина-следствие, добавление, уступка.",
+   "level": "C1",
+   "icon": "list",
+   "order": 53,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Зачем продвинутые связки"
+    },
+    {
+     "type": "text",
+     "text": "Связки (linking words) склеивают предложения и абзацы в логичный текст. На C1 недостаточно but/and/so — нужны точные средства связи, которые показывают оттенок отношения между мыслями и звучат зрело в письме."
+    },
+    {
+     "type": "table",
+     "title": "Связки по функциям",
+     "headers": [
+      "Функция",
+      "Связки",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Контраст",
+       "whereas, nevertheless, albeit, conversely",
+       "Sales rose in Asia, whereas Europe declined."
+      ],
+      [
+       "Причина / следствие",
+       "consequently, thereby, hence, as a result",
+       "Costs fell; consequently, profits grew."
+      ],
+      [
+       "Добавление",
+       "moreover, furthermore, in addition, what is more",
+       "The plan is costly; moreover, it is risky."
+      ],
+      [
+       "Уступка",
+       "notwithstanding, despite, in spite of, although",
+       "Notwithstanding the delay, we met the deadline."
+      ],
+      [
+       "Пояснение / итог",
+       "namely, in other words, that is to say, to sum up",
+       "One issue remains, namely funding."
+      ],
+      [
+       "Условие / оговорка",
+       "provided that, unless, insofar as",
+       "We'll proceed provided that funds arrive."
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Тонкости употребления"
+    },
+    {
+     "type": "rule",
+     "text": "despite / in spite of + существительное или -ing (despite the rain). although / though + подлежащее и сказуемое (although it rained). Их нельзя менять местами."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Despite the criticism, the policy remained in place.",
+       "ru": "Несмотря на критику, политика осталась в силе."
+      },
+      {
+       "en": "Although the criticism was fierce, the policy remained.",
+       "ru": "Хотя критика была жёсткой, политика осталась."
+      },
+      {
+       "en": "The evidence was thin; nevertheless, they pressed charges.",
+       "ru": "Доказательств было мало; тем не менее, обвинение выдвинули."
+      },
+      {
+       "en": "He accepted the offer, albeit reluctantly.",
+       "ru": "Он принял предложение, хоть и неохотно."
+      },
+      {
+       "en": "The two systems were merged, thereby cutting costs.",
+       "ru": "Две системы объединили, тем самым сократив издержки."
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Совет: albeit и notwithstanding — очень формальны и книжны. Хороши в эссе и отчётах, но в разговоре звучат вычурно — там уместнее though и even so."
+    },
+    {
+     "type": "note",
+     "text": "Важно: however, moreover, consequently в начале предложения отделяются запятой (However, ...). Внутри предложения обычно ставятся между точкой с запятой и запятой: ...; however, ...."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.opinions",
+   "category": "phrases",
+   "title": {
+    "ru": "Выражение мнения и согласия",
+    "en": "Opinions and Agreement"
+   },
+   "summary": "Клише для того, чтобы высказать мнение, согласиться и вежливо не согласиться.",
+   "level": "B2",
+   "icon": "chat",
+   "order": 54,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Как высказать мнение"
+    },
+    {
+     "type": "text",
+     "text": "Готовые обороты помогают звучать уверенно и вежливо в дискуссии. Ниже — рабочие фразы для мнения, согласия и мягкого несогласия."
+    },
+    {
+     "type": "table",
+     "title": "Высказать мнение",
+     "headers": [
+      "Фраза",
+      "Перевод / оттенок"
+     ],
+     "rows": [
+      [
+       "In my view, …",
+       "На мой взгляд, … (нейтрально)"
+      ],
+      [
+       "I'd argue that …",
+       "Я бы сказал, что … (аргументированно)"
+      ],
+      [
+       "As far as I'm concerned, …",
+       "Что касается меня, …"
+      ],
+      [
+       "It seems to me that …",
+       "Мне кажется, что … (осторожно)"
+      ],
+      [
+       "If you ask me, …",
+       "По-моему, … (разговорно)"
+      ],
+      [
+       "To be honest, …",
+       "Честно говоря, …"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Согласие"
+    },
+    {
+     "type": "table",
+     "title": "Выразить согласие",
+     "headers": [
+      "Фраза",
+      "Перевод / сила"
+     ],
+     "rows": [
+      [
+       "I couldn't agree more.",
+       "Полностью согласен. (максимум)"
+      ],
+      [
+       "Absolutely / Exactly.",
+       "Именно так."
+      ],
+      [
+       "That's a fair point.",
+       "Справедливое замечание."
+      ],
+      [
+       "To some extent, yes.",
+       "Отчасти да. (частичное)"
+      ],
+      [
+       "I see where you're coming from.",
+       "Понимаю вашу позицию."
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Вежливое несогласие"
+    },
+    {
+     "type": "table",
+     "title": "Не согласиться мягко",
+     "headers": [
+      "Фраза",
+      "Перевод / оттенок"
+     ],
+     "rows": [
+      [
+       "I see your point, but …",
+       "Понимаю вас, но … (смягчение)"
+      ],
+      [
+       "I'm not so sure about that.",
+       "Я не совсем уверен в этом."
+      ],
+      [
+       "That may be true, however …",
+       "Возможно, но …"
+      ],
+      [
+       "I take your point, yet …",
+       "Принимаю, и всё же …"
+      ],
+      [
+       "I'm afraid I disagree.",
+       "Боюсь, я не согласен. (вежливо-прямо)"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "In my view, remote work boosts productivity.",
+       "ru": "На мой взгляд, удалёнка повышает продуктивность."
+      },
+      {
+       "en": "I see your point, but the data suggests otherwise.",
+       "ru": "Понимаю вас, но данные говорят об обратном."
+      },
+      {
+       "en": "To some extent, I agree — though not entirely.",
+       "ru": "Отчасти согласен — хотя и не полностью."
+      },
+      {
+       "en": "I couldn't agree more with your last remark.",
+       "ru": "Полностью согласен с вашим последним замечанием."
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Совет: начинайте несогласие с признания (I see your point / That's a fair point), а затем ставьте but/however. Так возражение звучит уважительно, а не резко."
+    },
+    {
+     "type": "note",
+     "text": "Важно: I'm afraid — маркер вежливости, а не страха. 'I'm afraid I disagree' = «вынужден не согласиться», это самый корректный способ возразить."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.presentations",
+   "category": "phrases",
+   "title": {
+    "ru": "Язык презентаций и встреч",
+    "en": "Presentations and Meetings"
+   },
+   "summary": "Signposting-фразы для структурирования презентации и ведения деловой встречи.",
+   "level": "C1",
+   "icon": "globe",
+   "order": 55,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Signposting: указатели в презентации"
+    },
+    {
+     "type": "text",
+     "text": "Signposting — это фразы-указатели, которые помогают слушателю следить за структурой выступления: начало, переходы, акценты, итог. Они делают речь профессиональной и лёгкой для восприятия."
+    },
+    {
+     "type": "table",
+     "title": "Структура выступления",
+     "headers": [
+      "Этап",
+      "Фраза",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "Начало",
+       "Let me start by outlining…",
+       "Позвольте начать с обзора…"
+      ],
+      [
+       "Начало",
+       "Today I'd like to talk about…",
+       "Сегодня я хотел бы рассказать о…"
+      ],
+      [
+       "Переход",
+       "Moving on to the next point…",
+       "Переходя к следующему пункту…"
+      ],
+      [
+       "Переход",
+       "That brings me to…",
+       "Это подводит меня к…"
+      ],
+      [
+       "Акцент",
+       "I'd like to draw your attention to…",
+       "Хочу обратить ваше внимание на…"
+      ],
+      [
+       "Акцент",
+       "The key takeaway here is…",
+       "Главный вывод здесь —…"
+      ],
+      [
+       "Пример",
+       "To illustrate this…",
+       "Чтобы проиллюстрировать это…"
+      ],
+      [
+       "Итог",
+       "To sum up…",
+       "Подводя итог…"
+      ],
+      [
+       "Итог",
+       "In conclusion…",
+       "В заключение…"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Ведение встречи"
+    },
+    {
+     "type": "table",
+     "title": "Управление встречей",
+     "headers": [
+      "Функция",
+      "Фраза",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "Открыть",
+       "Shall we get started?",
+       "Начнём?"
+      ],
+      [
+       "Дать слово",
+       "I'd like to hand over to…",
+       "Передаю слово…"
+      ],
+      [
+       "Вернуть к теме",
+       "Let's get back on track.",
+       "Давайте вернёмся к теме."
+      ],
+      [
+       "Уточнить",
+       "Could you elaborate on that?",
+       "Не могли бы вы пояснить подробнее?"
+      ],
+      [
+       "Отложить вопрос",
+       "Let's take that offline.",
+       "Обсудим это отдельно / позже."
+      ],
+      [
+       "Резюмировать",
+       "Let me recap the action points.",
+       "Позвольте резюмировать задачи."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Let me start by giving you a brief overview of the results.",
+       "ru": "Позвольте начать с краткого обзора результатов."
+      },
+      {
+       "en": "Moving on to costs, you'll see a clear downward trend.",
+       "ru": "Переходя к затратам, вы видите явную тенденцию к снижению."
+      },
+      {
+       "en": "I'd like to draw your attention to the figure on slide four.",
+       "ru": "Хочу обратить ваше внимание на цифру на четвёртом слайде."
+      },
+      {
+       "en": "To sum up, the project is on schedule and within budget.",
+       "ru": "Подводя итог: проект идёт по графику и в рамках бюджета."
+      },
+      {
+       "en": "That's a great question — let's take it offline after the call.",
+       "ru": "Отличный вопрос — обсудим его отдельно после звонка."
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Совет: перед каждым переходом делайте короткую паузу и произносите signpost. Аудитория теряет нить не из-за сложных слов, а из-за отсутствия указателей."
+    },
+    {
+     "type": "note",
+     "text": "Важно: 'take it offline' на деловом жаргоне значит «обсудить не сейчас, а отдельно», даже если все находятся онлайн. Это стандартный способ вежливо отложить частный вопрос."
+    }
+   ]
+  }
+ ]
+}

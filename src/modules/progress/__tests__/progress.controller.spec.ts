@@ -64,7 +64,7 @@ describe('ProgressController', () => {
       }),
     );
 
-    const end = await controller.endSession('session-1', { extraXp: 0 });
+    const end = await controller.endSession('session-1', { extraXp: 0 }, { user: { userId: 'user-1' } });
     expect(end).toEqual({ ok: true });
   });
 

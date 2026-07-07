@@ -1,0 +1,618 @@
+{
+  "articles": [
+    {
+      "ref": "grammar.past-perfect",
+      "category": "grammar",
+      "title": {
+        "ru": "Past Perfect (had done)",
+        "en": "Past Perfect"
+      },
+      "summary": "«Прошедшее до прошедшего»: действие, которое случилось раньше другого действия в прошлом.",
+      "level": "B1",
+      "icon": "clock",
+      "order": 27,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Past Perfect показывает действие, которое произошло раньше другого действия или момента в прошлом. Это «прошедшее до прошедшего»: сначала случилось одно (Past Perfect), потом другое (Past Simple)."
+        },
+        {
+          "type": "rule",
+          "text": "Используем Past Perfect, когда: 1) одно прошлое действие завершилось до другого прошлого действия (When I arrived, the train had already left); 2) нужно подчеркнуть причину или результат к моменту в прошлом (She was tired because she had worked all day)."
+        },
+        {
+          "type": "example",
+          "en": "When we got to the cinema, the film had already started.",
+          "ru": "Когда мы добрались до кино, фильм уже начался.",
+          "note": "«Начался» (had started) — раньше, «добрались» (got) — позже."
+        },
+        {
+          "type": "heading",
+          "text": "Как строится"
+        },
+        {
+          "type": "table",
+          "title": "had + 3-я форма глагола (одинаково для всех лиц)",
+          "headers": ["Форма", "Схема", "Пример"],
+          "rows": [
+            ["+", "had + V3", "She had finished the report."],
+            ["−", "had not (hadn't) + V3", "They hadn't met before."],
+            ["?", "Had + подлежащее + V3", "Had you seen him before?"]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "had одинаковый для всех лиц: I had, you had, he had, we had. В речи почти всегда сокращается: I'd, she'd, we'd."
+        },
+        {
+          "type": "heading",
+          "text": "Примеры"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "The house was empty; everyone had gone out.", "ru": "Дом был пуст: все уже ушли." },
+            { "en": "I couldn't get in because I had lost my key.", "ru": "Я не мог войти, потому что потерял ключ." },
+            { "en": "By 2010 she had already written three books.", "ru": "К 2010 году она уже написала три книги." },
+            { "en": "He told me he had never been abroad.", "ru": "Он сказал мне, что никогда не был за границей." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Слова-маркеры"
+        },
+        {
+          "type": "table",
+          "title": "Частые сигналы Past Perfect",
+          "headers": ["Слово", "Значение", "Пример"],
+          "rows": [
+            ["already", "уже", "The shop had already closed."],
+            ["just", "только что", "She had just left when I called."],
+            ["never / ever", "никогда / когда-либо", "It was the best film I had ever seen."],
+            ["by (the time)", "к (моменту)", "By 6 o'clock they had finished."],
+            ["after / before", "после / до того как", "After he had eaten, he went out."]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Если оба действия идут по порядку одно за другим, Past Perfect часто не нужен — хватает Past Simple: I got up, washed and had breakfast."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: ставить Past Perfect везде в прошлом. Он нужен только когда важно показать, что одно действие было раньше другого. Неверно: «Yesterday I had gone to work». Верно: «Yesterday I went to work»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.present-perfect-continuous",
+      "category": "grammar",
+      "title": {
+        "ru": "Present Perfect Continuous",
+        "en": "Present Perfect Continuous"
+      },
+      "summary": "Действие длилось от прошлого до сейчас: has been doing, for / since.",
+      "level": "B1",
+      "icon": "clock",
+      "order": 28,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Present Perfect Continuous показывает действие, которое началось в прошлом и продолжается до сих пор (или только что закончилось). Главное здесь — длительность процесса и его связь с настоящим."
+        },
+        {
+          "type": "rule",
+          "text": "Используем Present Perfect Continuous, когда: 1) действие длится до сейчас, и мы называем период (I've been waiting for an hour); 2) процесс только что закончился, а его результат виден сейчас (Your eyes are red — have you been crying?)."
+        },
+        {
+          "type": "example",
+          "en": "I've been learning English for three years.",
+          "ru": "Я учу английский уже три года.",
+          "note": "Начал три года назад и учу до сих пор."
+        },
+        {
+          "type": "heading",
+          "text": "Как строится"
+        },
+        {
+          "type": "table",
+          "title": "have/has been + глагол с -ing",
+          "headers": ["Форма", "Схема", "Пример"],
+          "rows": [
+            ["+", "have/has been + V-ing", "She has been working since morning."],
+            ["−", "haven't/hasn't been + V-ing", "They haven't been sleeping well."],
+            ["?", "Have/Has + подлеж. + been + V-ing", "Have you been waiting long?"]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "has been — только с he, she, it. Со всеми остальными (I, you, we, they) — have been."
+        },
+        {
+          "type": "heading",
+          "text": "for и since"
+        },
+        {
+          "type": "table",
+          "title": "Как указать длительность",
+          "headers": ["Слово", "Значение", "Пример"],
+          "rows": [
+            ["for", "в течение (отрезок времени)", "for two hours, for a week"],
+            ["since", "с (точка отсчёта)", "since Monday, since 2020"],
+            ["how long", "как долго (вопрос)", "How long have you been living here?"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "It has been raining since morning.", "ru": "Дождь идёт с самого утра." },
+            { "en": "We've been driving for six hours.", "ru": "Мы едем уже шесть часов." },
+            { "en": "She's tired because she has been running.", "ru": "Она устала, потому что бегала." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Continuous или Perfect?"
+        },
+        {
+          "type": "table",
+          "title": "Сравнение",
+          "headers": ["Present Perfect Continuous", "Present Perfect"],
+          "rows": [
+            ["Важен процесс и его длительность", "Важен результат / факт"],
+            ["I've been reading this book.", "I've read this book."],
+            ["(читаю, ещё не дочитал)", "(прочитал, закончил)"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Глаголы состояния (know, love, want, be, have «иметь») почти не используют в Continuous. Говорим I've known her for years, а не «I've been knowing»."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: пропускать been. Неверно: «I have waiting». Верно: «I have been waiting»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.reported-speech",
+      "category": "grammar",
+      "title": {
+        "ru": "Косвенная речь",
+        "en": "Reported speech"
+      },
+      "summary": "Как пересказать чужие слова: сдвиг времён, местоимений и слов-указателей.",
+      "level": "B1",
+      "icon": "chat",
+      "order": 29,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Косвенная речь (reported speech) — это когда мы пересказываем чужие слова своими, без кавычек. Прямая речь: He said, «I am busy». Косвенная: He said (that) he was busy."
+        },
+        {
+          "type": "rule",
+          "text": "Если вводный глагол в прошедшем (said, told), время в пересказе обычно сдвигается на шаг назад, местоимения меняются по смыслу (I → he/she), а слова-указатели времени и места — на «дальние» (this → that, now → then)."
+        },
+        {
+          "type": "heading",
+          "text": "Сдвиг времён"
+        },
+        {
+          "type": "table",
+          "title": "Прямая речь → косвенная речь",
+          "headers": ["Прямая речь", "Косвенная речь", "Пример"],
+          "rows": [
+            ["Present Simple (do)", "Past Simple (did)", "«I work» → he said he worked"],
+            ["Present Continuous (am doing)", "Past Continuous (was doing)", "«I'm reading» → she said she was reading"],
+            ["Past Simple (did)", "Past Perfect (had done)", "«I saw it» → he said he had seen it"],
+            ["Present Perfect (have done)", "Past Perfect (had done)", "«I've finished» → she said she had finished"],
+            ["will", "would", "«I will call» → he said he would call"],
+            ["can", "could", "«I can swim» → she said she could swim"],
+            ["must / have to", "had to", "«I must go» → he said he had to go"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Слова-указатели"
+        },
+        {
+          "type": "table",
+          "title": "Что ещё меняется",
+          "headers": ["Прямая речь", "Косвенная речь"],
+          "rows": [
+            ["this / these", "that / those"],
+            ["here", "there"],
+            ["now", "then"],
+            ["today", "that day"],
+            ["tomorrow", "the next day"],
+            ["yesterday", "the day before"],
+            ["ago", "before"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "say или tell?"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "He said (that) he was tired.", "ru": "Он сказал, что устал." },
+            { "en": "He told me (that) he was tired.", "ru": "Он сказал мне, что устал." }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "tell требует адресата (tell me, tell her), а say — нет. Верно: He told me… / He said… Неверно: «He said me…» или «He told that…»."
+        },
+        {
+          "type": "heading",
+          "text": "Вопросы в косвенной речи"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "«Where do you live?» → She asked where I lived.", "ru": "«Где ты живёшь?» → Она спросила, где я живу." },
+            { "en": "«Are you ready?» → He asked if I was ready.", "ru": "«Ты готов?» → Он спросил, готов ли я." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В косвенном вопросе порядок слов прямой (как в утверждении), без do/did и без знака вопроса. Общие вопросы (да/нет) вводим через if или whether."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: сохранять порядок вопроса. Неверно: «She asked where did I live». Верно: «She asked where I lived»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.dates-time",
+      "category": "grammar",
+      "title": {
+        "ru": "Даты и время: как говорить",
+        "en": "Dates & time"
+      },
+      "summary": "Как читать даты, называть время, дни недели и месяцы по-английски.",
+      "level": "A1",
+      "icon": "clock",
+      "order": 30,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "В английском даты и время говорят не так, как пишут. Важно знать порядковые числительные (the fifth, the twelfth) и пару шаблонов для времени. Разберём по порядку."
+        },
+        {
+          "type": "heading",
+          "text": "Как читать даты"
+        },
+        {
+          "type": "rule",
+          "text": "Число всегда читается как порядковое (the 1st → the first). Есть два варианта: британский «the 5th of May» и американский «May 5th». Год 1999 читаем nineteen ninety-nine, а 2007 — two thousand (and) seven."
+        },
+        {
+          "type": "table",
+          "title": "Один и тот же день — два способа",
+          "headers": ["Запись", "Британский вариант", "Американский вариант"],
+          "rows": [
+            ["5 May", "the fifth of May", "May (the) fifth"],
+            ["1 January", "the first of January", "January (the) first"],
+            ["22 June", "the twenty-second of June", "June (the) twenty-second"]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Осторожно с записью цифрами: 03/04 в Британии — 3 апреля, а в США — 4 марта. Чтобы не путать, месяц лучше писать словом."
+        },
+        {
+          "type": "heading",
+          "text": "Как называть время"
+        },
+        {
+          "type": "table",
+          "title": "Разговорный способ (стрелки часов)",
+          "headers": ["Время", "Как сказать", "Дословно"],
+          "rows": [
+            ["6:00", "six o'clock", "ровно шесть"],
+            ["6:15", "quarter past six", "четверть после шести"],
+            ["6:30", "half past six", "половина после шести (полседьмого)"],
+            ["6:45", "quarter to seven", "без четверти семь"],
+            ["6:10", "ten past six", "десять минут после шести"],
+            ["6:50", "ten to seven", "без десяти семь"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "past — «после» (до половины), to — «до/без» (после половины). Простой способ без правил: просто называть цифры — 7:45 → seven forty-five, 6:30 → six thirty."
+        },
+        {
+          "type": "heading",
+          "text": "Дни недели и месяцы"
+        },
+        {
+          "type": "table",
+          "title": "Пишутся всегда с большой буквы",
+          "headers": ["Дни недели", "Месяцы (1-6)", "Месяцы (7-12)"],
+          "rows": [
+            ["Monday, Tuesday", "January, February", "July, August"],
+            ["Wednesday, Thursday", "March, April", "September, October"],
+            ["Friday, Saturday, Sunday", "May, June", "November, December"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Предлоги времени"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "at 7 o'clock, at night", "ru": "at — с точным временем и «ночью»" },
+            { "en": "on Monday, on 5 May", "ru": "on — с днями и датами" },
+            { "en": "in May, in 2025, in the morning", "ru": "in — с месяцами, годами, частями дня" }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: «in Monday» или «on morning». Верно: on Monday, in the morning. И запомните: at the weekend (BrE) / on the weekend (AmE)."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.travel",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: аэропорт и путешествие",
+        "en": "Airport & travel"
+      },
+      "summary": "Готовые фразы для регистрации, досмотра и посадки в аэропорту.",
+      "level": "A2",
+      "icon": "chat",
+      "order": 5,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Эти фразы помогут пройти регистрацию, сдать багаж, разобраться с посадкой и не растеряться в аэропорту. Выучите ключевые слова: check-in (регистрация), boarding pass (посадочный талон), gate (выход на посадку)."
+        },
+        {
+          "type": "heading",
+          "text": "Регистрация и багаж"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Where is the check-in desk for this flight?", "ru": "Где стойка регистрации на этот рейс?" },
+            { "en": "Here is my passport and booking.", "ru": "Вот мой паспорт и бронь." },
+            { "en": "I'd like a window seat, please.", "ru": "Дайте, пожалуйста, место у окна." },
+            { "en": "Where is the bag drop?", "ru": "Где сдать багаж?" },
+            { "en": "I have one suitcase to check in.", "ru": "У меня один чемодан для сдачи в багаж." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Досмотр и посадка"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Which gate is the flight to London?", "ru": "С какого выхода рейс в Лондон?" },
+            { "en": "What time does boarding start?", "ru": "Во сколько начинается посадка?" },
+            { "en": "Is the flight on time?", "ru": "Рейс вылетает вовремя?" },
+            { "en": "Here is my boarding pass.", "ru": "Вот мой посадочный талон." },
+            { "en": "Excuse me, I think this is my seat.", "ru": "Извините, кажется, это моё место." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Если что-то пошло не так"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I've missed my connecting flight.", "ru": "Я опоздал на стыковочный рейс." },
+            { "en": "My luggage hasn't arrived.", "ru": "Мой багаж не прибыл." },
+            { "en": "Can you help me, please?", "ru": "Вы можете мне помочь?" }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "На стойке принято сначала поздороваться: «Hello» или «Good morning». Просьбу вежливо оформлять через «Could I…?» или «I'd like…», а в конце сказать «Thank you»."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.hotel",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: в отеле",
+        "en": "At the hotel"
+      },
+      "summary": "Фразы, чтобы забронировать номер, заселиться и решить вопросы на ресепшене.",
+      "level": "A2",
+      "icon": "chat",
+      "order": 6,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "С этими фразами вы легко заселитесь в отель, зададите вопросы на ресепшене (reception) и выселитесь. Ключевые слова: check-in (заселение), check-out (выселение), booking / reservation (бронь)."
+        },
+        {
+          "type": "heading",
+          "text": "Бронирование и заселение"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I'd like to book a room for two nights.", "ru": "Я хотел бы забронировать номер на две ночи." },
+            { "en": "I have a reservation under the name Petrov.", "ru": "У меня бронь на имя Петров." },
+            { "en": "Do you have any rooms available?", "ru": "У вас есть свободные номера?" },
+            { "en": "How much is it per night?", "ru": "Сколько стоит за ночь?" },
+            { "en": "Is breakfast included?", "ru": "Завтрак включён?" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Вопросы на ресепшене"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "What time is check-out?", "ru": "Во сколько выселение?" },
+            { "en": "Is there Wi-Fi in the room? What's the password?", "ru": "В номере есть Wi-Fi? Какой пароль?" },
+            { "en": "Could I have a wake-up call at seven?", "ru": "Можно разбудить меня звонком в семь?" },
+            { "en": "Where can I have breakfast?", "ru": "Где можно позавтракать?" },
+            { "en": "Can I leave my luggage here after check-out?", "ru": "Можно оставить багаж здесь после выселения?" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Проблемы и просьбы"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "The air conditioning isn't working.", "ru": "Кондиционер не работает." },
+            { "en": "Could I have some more towels, please?", "ru": "Можно ещё полотенец?" },
+            { "en": "The room next door is very noisy.", "ru": "В соседнем номере очень шумно." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Чаевые горничной обычно оставляют на тумбочке. За помощь с багажом или вызов такси на ресепшене принято поблагодарить: «Thank you very much»."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.doctor",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: у врача",
+        "en": "At the doctor"
+      },
+      "summary": "Как описать симптомы, попросить помощь и понять врача.",
+      "level": "A2",
+      "icon": "chat",
+      "order": 7,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Эти фразы помогут записаться к врачу, объяснить, что болит, и понять назначения. Универсальное начало жалобы — «I have a…» и «My … hurts» (у меня болит…)."
+        },
+        {
+          "type": "heading",
+          "text": "Запись и начало приёма"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I'd like to make an appointment with a doctor.", "ru": "Я хотел бы записаться к врачу." },
+            { "en": "I don't feel well.", "ru": "Мне нехорошо." },
+            { "en": "It started two days ago.", "ru": "Это началось два дня назад." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Симптомы"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I have a headache.", "ru": "У меня болит голова." },
+            { "en": "I have a sore throat and a cough.", "ru": "У меня болит горло и есть кашель." },
+            { "en": "I have a temperature / a fever.", "ru": "У меня температура." },
+            { "en": "My stomach hurts.", "ru": "У меня болит живот." },
+            { "en": "I feel dizzy and tired.", "ru": "У меня кружится голова, и я чувствую слабость." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Лекарства и вопросы"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Do I need a prescription?", "ru": "Мне нужен рецепт?" },
+            { "en": "How often should I take this medicine?", "ru": "Как часто принимать это лекарство?" },
+            { "en": "I'm allergic to penicillin.", "ru": "У меня аллергия на пенициллин." },
+            { "en": "Where is the nearest pharmacy?", "ru": "Где ближайшая аптека?" }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В экстренной ситуации в Британии звонят 999, в США — 911, в Европе — 112. Ключевая фраза: «I need a doctor» или «Call an ambulance!» (Вызовите скорую!)."
+        }
+      ]
+    },
+    {
+      "ref": "phrases.phone",
+      "category": "phrases",
+      "title": {
+        "ru": "Разговорник: телефон и смолток",
+        "en": "Phone & small talk"
+      },
+      "summary": "Как начать и вести телефонный разговор и лёгкую беседу ни о чём.",
+      "level": "B1",
+      "icon": "chat",
+      "order": 8,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "По телефону собеседника не видно, поэтому в английском есть свои устойчивые фразы — начать разговор, попросить подождать, переспросить. А small talk (лёгкая беседа о погоде, выходных, планах) помогает наладить контакт."
+        },
+        {
+          "type": "heading",
+          "text": "Начало телефонного разговора"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Hello, this is Anna speaking.", "ru": "Здравствуйте, это Анна." },
+            { "en": "Could I speak to Mr Brown, please?", "ru": "Можно поговорить с мистером Брауном?" },
+            { "en": "Who's calling, please?", "ru": "Кто звонит?" },
+            { "en": "Hold on a moment, please.", "ru": "Подождите минутку, пожалуйста." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Если плохо слышно или не туда попали"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Sorry, I didn't catch that. Could you repeat it?", "ru": "Извините, я не расслышал. Повторите, пожалуйста." },
+            { "en": "Could you speak up a little?", "ru": "Можете говорить немного громче?" },
+            { "en": "I think you've got the wrong number.", "ru": "Кажется, вы ошиблись номером." },
+            { "en": "Can I take a message?", "ru": "Что-нибудь передать?" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Смолток (беседа ни о чём)"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "How's it going?", "ru": "Как дела?" },
+            { "en": "Lovely weather today, isn't it?", "ru": "Хорошая сегодня погода, правда?" },
+            { "en": "Did you have a good weekend?", "ru": "Как прошли выходные?" },
+            { "en": "Any plans for the holidays?", "ru": "Есть планы на праздники?" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Как вежливо закончить"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "It was nice talking to you.", "ru": "Было приятно поговорить." },
+            { "en": "I'd better go now. Talk to you soon.", "ru": "Мне пора. Ещё созвонимся." },
+            { "en": "Thanks for calling. Bye!", "ru": "Спасибо за звонок. Пока!" }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Хорошие темы для small talk: погода, выходные, дорога, спорт. Избегайте вопросов о зарплате, возрасте и политике — в англоязычной культуре это считается слишком личным."
+        }
+      ]
+    }
+  ]
+}

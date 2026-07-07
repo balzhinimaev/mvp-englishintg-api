@@ -1,10 +1,12 @@
 import * as crypto from 'crypto';
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import * as bcrypt from 'bcrypt';
+import { Injectable, UnauthorizedException, ConflictException, BadRequestException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { JwtService } from '@nestjs/jwt';
 import { User, UserDocument } from '../common/schemas/user.schema';
 import { AppEvent, EventDocument } from '../common/schemas/event.schema';
+import { MailService } from '../mail/mail.service';
 
 export interface TelegramInitData {
   query_id?: string;
@@ -20,6 +22,7 @@ export class AuthService {
     @InjectModel(User.name) private readonly userModel: Model<UserDocument>,
     @InjectModel(AppEvent.name) private readonly eventModel: Model<EventDocument>,
     private readonly jwtService: JwtService,
+    private readonly mailService: MailService,
   ) {}
   async verifyTelegramInitData(
     initData: URLSearchParams,
@@ -42,8 +45,24 @@ export class AuthService {
     const token = process.env.TELEGRAM_BOT_TOKEN || '';
     const secretKey = crypto.createHmac('sha256', 'WebAppData').update(token).digest();
     const computedHash = crypto.createHmac('sha256', secretKey).update(dataCheckString).digest('hex');
-    if (computedHash !== hash) {
+    // Timing-safe сравнение хэшей (буферы одинаковой длины, иначе сразу отказ)
+    const hashBuf = Buffer.from(hash, 'hex');
+    const computedBuf = Buffer.from(computedHash, 'hex');
+    if (
+      hashBuf.length !== computedBuf.length ||
+      !crypto.timingSafeEqual(hashBuf, computedBuf)
+    ) {
       throw new UnauthorizedException('Invalid Telegram init data signature');
+    }
+
+    // Проверка свежести initData: отклоняем перехваченные/устаревшие данные.
+    // auth_date — unix-время (секунды) выдачи initData Telegram-клиентом.
+    const authDateRaw = initData.get('auth_date');
+    const authDate = authDateRaw ? parseInt(authDateRaw, 10) : NaN;
+    const MAX_AGE_SECONDS = 24 * 60 * 60; // 24 часа
+    const nowSeconds = Math.floor(Date.now() / 1000);
+    if (!Number.isFinite(authDate) || nowSeconds - authDate > MAX_AGE_SECONDS) {
+      throw new UnauthorizedException('Telegram init data expired');
     }
 
     const userParam = initData.get('user');
@@ -120,6 +139,164 @@ export class AuthService {
       learningGoals,
       accessToken,
     };
+  }
+
+  private issueToken(userId: string): string {
+    return this.jwtService.sign({ userId }, { expiresIn: '24h' });
+  }
+
+  /** Регистрация по email/паролю (веб-версия). */
+  async registerEmail(email: string, password: string, firstName?: string) {
+    const normEmail = String(email).trim().toLowerCase();
+    const existing = await this.userModel.findOne({ email: normEmail, authProvider: 'email' }).lean();
+    if (existing) {
+      throw new ConflictException('Пользователь с таким email уже существует');
+    }
+    const passwordHash = await bcrypt.hash(password, 10);
+    const userId = 'em_' + crypto.randomUUID();
+    try {
+      await this.userModel.create({
+        userId,
+        email: normEmail,
+        passwordHash,
+        authProvider: 'email',
+        firstName: firstName?.trim() || undefined,
+        firstUtm: {},
+      });
+    } catch (e: any) {
+      if (e?.code === 11000) throw new ConflictException('Пользователь с таким email уже существует');
+      throw e;
+    }
+    await this.eventModel.create({ userId, name: 'open_app', ts: new Date(), properties: { source: 'email_register' } });
+
+    // Письмо с подтверждением — best-effort, регистрацию не блокирует
+    this.issueEmailVerification(userId, normEmail).catch(() => {});
+
+    return {
+      userId,
+      email: normEmail,
+      firstName: firstName?.trim(),
+      isFirstOpen: true,
+      onboardingCompleted: false,
+      englishLevel: undefined as string | undefined,
+      learningGoals: [] as string[],
+      accessToken: this.issueToken(userId),
+    };
+  }
+
+  /** Вход по email/паролю. */
+  async loginEmail(email: string, password: string) {
+    const normEmail = String(email).trim().toLowerCase();
+    const user = await this.userModel
+      .findOne({ email: normEmail, authProvider: 'email' })
+      .select('+passwordHash')
+      .lean();
+    // bcrypt.compare даже при отсутствии юзера — чтобы не палить существование email по времени
+    const hash = user?.passwordHash || '$2b$10$invalidinvalidinvalidinvalidinvalidinvalidinvalidinva';
+    const ok = await bcrypt.compare(password, hash);
+    if (!user || !user.passwordHash || !ok) {
+      throw new UnauthorizedException('Неверный email или пароль');
+    }
+    return {
+      userId: user.userId,
+      email: user.email,
+      firstName: user.firstName,
+      isFirstOpen: false,
+      onboardingCompleted: Boolean(user.onboardingCompletedAt),
+      englishLevel: user.englishLevel,
+      learningGoals: user.learningGoals || [],
+      accessToken: this.issueToken(user.userId),
+    };
+  }
+
+  // ---------- Email-верификация и сброс пароля ----------
+
+  private hashToken(raw: string): string {
+    return crypto.createHash('sha256').update(raw).digest('hex');
+  }
+
+  /** Генерирует токен, сохраняет sha256-хэш и шлёт письмо. Возвращает false, если письмо не ушло. */
+  async issueEmailVerification(userId: string, email: string): Promise<boolean> {
+    const raw = crypto.randomBytes(32).toString('hex');
+    await this.userModel.updateOne(
+      { userId },
+      {
+        emailVerificationToken: this.hashToken(raw),
+        emailVerificationExpires: new Date(Date.now() + 24 * 60 * 60 * 1000),
+      },
+    );
+    return this.mailService.sendEmailVerification(email, raw);
+  }
+
+  /** Повторная отправка письма подтверждения (по JWT). */
+  async resendVerification(userId: string): Promise<{ sent: boolean }> {
+    const user = await this.userModel.findOne({ userId, authProvider: 'email' }).lean();
+    if (!user || !user.email) throw new UnauthorizedException('Аккаунт не найден');
+    if (user.emailVerified) return { sent: false };
+    const sent = await this.issueEmailVerification(userId, user.email);
+    return { sent };
+  }
+
+  async verifyEmail(rawToken: string): Promise<{ verified: boolean }> {
+    const user = await this.userModel
+      .findOne({
+        emailVerificationToken: this.hashToken(rawToken),
+        emailVerificationExpires: { $gt: new Date() },
+      })
+      .lean();
+    if (!user) throw new BadRequestException('Ссылка недействительна или устарела');
+    await this.userModel.updateOne(
+      { userId: user.userId },
+      {
+        emailVerified: true,
+        $unset: { emailVerificationToken: 1, emailVerificationExpires: 1 },
+      },
+    );
+    return { verified: true };
+  }
+
+  /** Всегда отвечает ok — не палим существование email (анти-enumeration). */
+  async forgotPassword(email: string): Promise<{ ok: true }> {
+    const normEmail = String(email).trim().toLowerCase();
+    const user = await this.userModel.findOne({ email: normEmail, authProvider: 'email' }).lean();
+    if (user) {
+      const raw = crypto.randomBytes(32).toString('hex');
+      await this.userModel.updateOne(
+        { userId: user.userId },
+        {
+          passwordResetToken: this.hashToken(raw),
+          passwordResetExpires: new Date(Date.now() + 60 * 60 * 1000),
+        },
+      );
+      this.mailService.sendPasswordReset(normEmail, raw).catch(() => {});
+    }
+    return { ok: true };
+  }
+
+  async resetPassword(rawToken: string, password: string): Promise<{ ok: true }> {
+    const user = await this.userModel
+      .findOne({
+        passwordResetToken: this.hashToken(rawToken),
+        passwordResetExpires: { $gt: new Date() },
+      })
+      .lean();
+    if (!user) throw new BadRequestException('Ссылка недействительна или устарела');
+    const passwordHash = await bcrypt.hash(password, 10);
+    await this.userModel.updateOne(
+      { userId: user.userId },
+      {
+        passwordHash,
+        // Успешный сброс по письму = доказательство владения адресом
+        emailVerified: true,
+        $unset: {
+          passwordResetToken: 1,
+          passwordResetExpires: 1,
+          emailVerificationToken: 1,
+          emailVerificationExpires: 1,
+        },
+      },
+    );
+    return { ok: true };
   }
 }
 

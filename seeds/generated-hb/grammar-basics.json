@@ -1,0 +1,168 @@
+{
+  "articles": [
+    {
+      "ref": "grammar.to-be",
+      "category": "grammar",
+      "title": { "ru": "Глагол to be (am/is/are)", "en": "The verb to be" },
+      "summary": "Как использовать am, is и are — основу английских предложений.",
+      "level": "A0",
+      "icon": "verb",
+      "order": 1,
+      "blocks": [
+        { "type": "text", "text": "Глагол to be — самый важный глагол в английском. Он переводится как «быть, являться, находиться», но в русском часто вообще не звучит. Например, «Я студент» — по-английски обязательно нужен глагол: I am a student." },
+        { "type": "rule", "text": "У глагола to be три формы в настоящем времени: I — am, he/she/it — is, we/you/they — are." },
+        { "type": "table", "title": "Спряжение to be", "headers": ["Местоимение", "Форма", "Пример"], "rows": [["I", "am", "I am tired."], ["He / She / It", "is", "She is here."], ["We / You / They", "are", "They are ready."]] },
+        { "type": "examples", "items": [{ "en": "I am from Russia.", "ru": "Я из России." }, { "en": "He is a doctor.", "ru": "Он врач." }, { "en": "We are friends.", "ru": "Мы друзья." }, { "en": "The coffee is hot.", "ru": "Кофе горячий." }] },
+        { "type": "heading", "text": "Короткие формы" },
+        { "type": "text", "text": "В разговорной речи глагол to be почти всегда сокращают. Это звучит естественно и по-английски." },
+        { "type": "examples", "items": [{ "en": "I'm happy.", "ru": "Я счастлив." }, { "en": "She's at home.", "ru": "Она дома." }, { "en": "You're right.", "ru": "Ты прав." }] },
+        { "type": "heading", "text": "Отрицание и вопрос" },
+        { "type": "rule", "text": "Отрицание: добавь not (I am not, he is not, we are not). Вопрос: поставь глагол на первое место (Are you ready?)." },
+        { "type": "examples", "items": [{ "en": "I am not tired.", "ru": "Я не устал." }, { "en": "She isn't a teacher.", "ru": "Она не учитель." }, { "en": "Are you okay?", "ru": "Ты в порядке?" }, { "en": "Is he here?", "ru": "Он здесь?" }] },
+        { "type": "note", "text": "Типичная ошибка новичков — пропускать to be: не «I student», а I am a student. Помни: в английском предложении почти всегда есть глагол." }
+      ]
+    },
+    {
+      "ref": "grammar.pronouns",
+      "category": "grammar",
+      "title": { "ru": "Личные местоимения", "en": "Personal pronouns" },
+      "summary": "I, you, he, she — кто выполняет действие и кого оно касается.",
+      "level": "A0",
+      "icon": "pronoun",
+      "order": 2,
+      "blocks": [
+        { "type": "text", "text": "Местоимения заменяют существительные, чтобы не повторять их. Вместо «Анна» мы говорим «она», вместо «книга» — «оно» (в английском it)." },
+        { "type": "rule", "text": "Личные местоимения-подлежащие: I (я), you (ты/вы), he (он), she (она), it (оно), we (мы), they (они)." },
+        { "type": "table", "title": "Подлежащее и дополнение", "headers": ["Подлежащее", "Дополнение", "Перевод"], "rows": [["I", "me", "я / меня"], ["you", "you", "ты / тебя"], ["he", "him", "он / его"], ["she", "her", "она / её"], ["it", "it", "оно / его"], ["we", "us", "мы / нас"], ["they", "them", "они / их"]] },
+        { "type": "text", "text": "Форма-подлежащее стоит перед глаголом (кто делает), а форма-дополнение — после глагола или предлога (на кого направлено действие)." },
+        { "type": "examples", "items": [{ "en": "I love her.", "ru": "Я люблю её." }, { "en": "She knows me.", "ru": "Она знает меня." }, { "en": "We can help you.", "ru": "Мы можем помочь тебе." }, { "en": "Give it to them.", "ru": "Отдай это им." }] },
+        { "type": "heading", "text": "Местоимение it" },
+        { "type": "rule", "text": "It заменяет предметы, животных и понятия. Ещё it используют для времени, погоды и расстояния." },
+        { "type": "examples", "items": [{ "en": "It is a nice car.", "ru": "Это хорошая машина." }, { "en": "It is raining.", "ru": "Идёт дождь." }, { "en": "It is five o'clock.", "ru": "Сейчас пять часов." }] },
+        { "type": "tip", "text": "Местоимение I всегда пишется с большой буквы — где бы оно ни стояло в предложении." },
+        { "type": "note", "text": "Частая ошибка — путать she и he. He — только для мужчин, she — только для женщин. Для вещей и животных — it." }
+      ]
+    },
+    {
+      "ref": "grammar.articles",
+      "category": "grammar",
+      "title": { "ru": "Артикли a / an / the", "en": "Articles a/an/the" },
+      "summary": "Когда ставить a, an или the перед существительным.",
+      "level": "A1",
+      "icon": "article",
+      "order": 3,
+      "blocks": [
+        { "type": "text", "text": "Артикли — короткие слова перед существительным. В русском их нет, поэтому они кажутся сложными, но правило простое: a/an — «какой-то один», the — «тот самый, конкретный»." },
+        { "type": "rule", "text": "a/an ставят перед исчисляемым предметом в единственном числе, когда он упоминается впервые или неважно какой именно. the — когда предмет уже известен собеседнику." },
+        { "type": "examples", "items": [{ "en": "I have a dog.", "ru": "У меня есть собака (какая-то)." }, { "en": "The dog is big.", "ru": "Эта собака большая (та самая)." }, { "en": "She is a teacher.", "ru": "Она учитель." }] },
+        { "type": "heading", "text": "a или an?" },
+        { "type": "rule", "text": "a — перед согласным звуком (a car, a house). an — перед гласным звуком (an apple, an hour). Важен звук, а не буква." },
+        { "type": "table", "title": "a или an", "headers": ["Артикль", "Слово", "Почему"], "rows": [["a", "a book", "согласный звук [b]"], ["an", "an egg", "гласный звук [e]"], ["a", "a university", "звук [ju], как «ю»"], ["an", "an hour", "буква h не читается"]] },
+        { "type": "heading", "text": "Когда the" },
+        { "type": "examples", "items": [{ "en": "Close the door, please.", "ru": "Закрой дверь, пожалуйста (конкретную)." }, { "en": "The sun is bright.", "ru": "Солнце яркое (оно одно)." }, { "en": "I like the film you sent.", "ru": "Мне нравится фильм, что ты прислал." }] },
+        { "type": "note", "text": "Артикль a/an не ставят перед множественным числом и неисчисляемыми словами: не «a books», а books; не «a water», а water." },
+        { "type": "tip", "text": "Имена, города и страны обычно идут без артикля: Anna, London, France. Но: the USA, the UK — из-за слов United/Kingdom." }
+      ]
+    },
+    {
+      "ref": "grammar.plural",
+      "category": "grammar",
+      "title": { "ru": "Множественное число", "en": "Plural nouns" },
+      "summary": "Как образовать множественное число: -s, -es и исключения.",
+      "level": "A1",
+      "icon": "plural",
+      "order": 4,
+      "blocks": [
+        { "type": "text", "text": "Чтобы сказать о нескольких предметах, к существительному добавляют окончание. В большинстве случаев это простое -s." },
+        { "type": "rule", "text": "Обычно во множественном числе к слову добавляется -s: cat → cats, book → books." },
+        { "type": "examples", "items": [{ "en": "one dog, two dogs", "ru": "одна собака, две собаки" }, { "en": "a car, five cars", "ru": "машина, пять машин" }, { "en": "one day, seven days", "ru": "один день, семь дней" }] },
+        { "type": "heading", "text": "Когда добавляют -es" },
+        { "type": "rule", "text": "-es добавляют после букв s, ss, sh, ch, x, o: bus → buses, box → boxes, tomato → tomatoes." },
+        { "type": "text", "text": "Если слово оканчивается на согласную + y, то y меняется на -ies: city → cities, baby → babies. Но если перед y стоит гласная — просто -s: boy → boys, key → keys." },
+        { "type": "table", "title": "Правила окончаний", "headers": ["Окончание слова", "Что делать", "Пример"], "rows": [["обычное", "+ s", "table → tables"], ["s, sh, ch, x, o", "+ es", "watch → watches"], ["согласная + y", "y → ies", "story → stories"], ["гласная + y", "+ s", "day → days"]] },
+        { "type": "heading", "text": "Особые формы" },
+        { "type": "note", "text": "Некоторые слова образуют множественное число не по правилам — их нужно запомнить." },
+        { "type": "table", "title": "Исключения", "headers": ["Единственное", "Множественное", "Перевод"], "rows": [["man", "men", "мужчина → мужчины"], ["woman", "women", "женщина → женщины"], ["child", "children", "ребёнок → дети"], ["foot", "feet", "нога → ноги"], ["tooth", "teeth", "зуб → зубы"], ["person", "people", "человек → люди"]] },
+        { "type": "tip", "text": "Слова fish, sheep и information не меняются во множественном числе: two fish, ten sheep." }
+      ]
+    },
+    {
+      "ref": "grammar.this-that",
+      "category": "grammar",
+      "title": { "ru": "This / That / These / Those", "en": "This/That/These/Those" },
+      "summary": "Указательные слова: этот и тот, близко и далеко.",
+      "level": "A1",
+      "icon": "pin",
+      "order": 5,
+      "blocks": [
+        { "type": "text", "text": "Эти слова указывают на предметы: какой из них — этот (рядом) или тот (подальше), один или несколько." },
+        { "type": "rule", "text": "this — этот (один, рядом); that — тот (один, далеко); these — эти (много, рядом); those — те (много, далеко)." },
+        { "type": "table", "title": "Указательные слова", "headers": ["Слово", "Число", "Расстояние"], "rows": [["this", "один", "рядом"], ["that", "один", "далеко"], ["these", "много", "рядом"], ["those", "много", "далеко"]] },
+        { "type": "examples", "items": [{ "en": "This is my phone.", "ru": "Это мой телефон (в руке)." }, { "en": "That is your car.", "ru": "То — твоя машина (вон там)." }, { "en": "These are my keys.", "ru": "Это мои ключи (здесь)." }, { "en": "Those are birds.", "ru": "То — птицы (вдалеке)." }] },
+        { "type": "heading", "text": "Перед существительным" },
+        { "type": "text", "text": "Эти слова могут стоять сами по себе или прямо перед существительным. Число слова и существительного должно совпадать." },
+        { "type": "examples", "items": [{ "en": "This book is good.", "ru": "Эта книга хорошая." }, { "en": "I like these shoes.", "ru": "Мне нравятся эти туфли." }, { "en": "Look at those clouds.", "ru": "Посмотри на те облака." }] },
+        { "type": "tip", "text": "По телефону англичане говорят This is Anna (это Анна) о себе и Who is that? (кто это?) о собеседнике." },
+        { "type": "note", "text": "Не путай единственное и множественное: this book (одна книга), но these books (несколько книг). Слово this не может стоять перед множественным числом." }
+      ]
+    },
+    {
+      "ref": "grammar.possessives",
+      "category": "grammar",
+      "title": { "ru": "Притяжательные местоимения", "en": "Possessive adjectives" },
+      "summary": "my, your, his, her — как сказать, чьё это.",
+      "level": "A1",
+      "icon": "pronoun",
+      "order": 6,
+      "blocks": [
+        { "type": "text", "text": "Притяжательные местоимения показывают принадлежность — чей это предмет. В русском это «мой, твой, его, её»." },
+        { "type": "rule", "text": "Каждому личному местоимению соответствует притяжательное: I → my, you → your, he → his, she → her, it → its, we → our, they → their." },
+        { "type": "table", "title": "Формы принадлежности", "headers": ["Местоимение", "Притяжательное", "Перевод"], "rows": [["I", "my", "мой"], ["you", "your", "твой / ваш"], ["he", "his", "его"], ["she", "her", "её"], ["it", "its", "его / её (предмета)"], ["we", "our", "наш"], ["they", "their", "их"]] },
+        { "type": "text", "text": "Притяжательное местоимение всегда стоит перед существительным и не меняется от числа: my book (моя книга), my books (мои книги)." },
+        { "type": "examples", "items": [{ "en": "This is my house.", "ru": "Это мой дом." }, { "en": "What is your name?", "ru": "Как тебя зовут? (буквально: какое твоё имя)" }, { "en": "Her car is new.", "ru": "Её машина новая." }, { "en": "The dog wags its tail.", "ru": "Собака виляет своим хвостом." }] },
+        { "type": "note", "text": "Не путай its и it's. its — притяжательное (его/её), а it's — это сокращение от it is (это есть)." },
+        { "type": "tip", "text": "В английском о частях тела и вещах говорят с притяжательным местоимением: I wash my hands (я мою руки), а не «мою the hands»." }
+      ]
+    },
+    {
+      "ref": "grammar.there-is",
+      "category": "grammar",
+      "title": { "ru": "There is / There are", "en": "There is / There are" },
+      "summary": "Как сказать, что где-то что-то есть или находится.",
+      "level": "A1",
+      "icon": "list",
+      "order": 7,
+      "blocks": [
+        { "type": "text", "text": "Конструкция there is / there are сообщает, что где-то что-то есть или находится. По-русски это «есть», «имеется», «находится»." },
+        { "type": "rule", "text": "there is — с одним предметом (единственное число); there are — с несколькими (множественное число)." },
+        { "type": "examples", "items": [{ "en": "There is a book on the table.", "ru": "На столе (есть) книга." }, { "en": "There are two windows in the room.", "ru": "В комнате два окна." }, { "en": "There is some milk in the fridge.", "ru": "В холодильнике есть молоко." }] },
+        { "type": "heading", "text": "Отрицание и вопрос" },
+        { "type": "rule", "text": "Отрицание: there is not (isn't) / there are not (aren't). Вопрос: Is there...? / Are there...?" },
+        { "type": "table", "title": "Формы", "headers": ["Тип", "Единственное", "Множественное"], "rows": [["Утверждение", "There is a car.", "There are cars."], ["Отрицание", "There isn't a car.", "There aren't cars."], ["Вопрос", "Is there a car?", "Are there cars?"]] },
+        { "type": "examples", "items": [{ "en": "Is there a shop near here?", "ru": "Здесь рядом есть магазин?" }, { "en": "There aren't any free seats.", "ru": "Свободных мест нет." }, { "en": "Are there any questions?", "ru": "Есть какие-нибудь вопросы?" }] },
+        { "type": "tip", "text": "В коротких ответах используй: Yes, there is. / No, there aren't." },
+        { "type": "note", "text": "Форму выбирают по первому предмету в списке: There is a pen and two books — потому что сразу после there идёт a pen (единственное число)." }
+      ]
+    },
+    {
+      "ref": "grammar.have-got",
+      "category": "grammar",
+      "title": { "ru": "Have / Have got", "en": "Have / Have got" },
+      "summary": "Два способа сказать «у меня есть» и как их использовать.",
+      "level": "A1",
+      "icon": "verb",
+      "order": 8,
+      "blocks": [
+        { "type": "text", "text": "Чтобы сказать, что у тебя что-то есть, в английском используют have или have got. Значение одинаковое — «иметь, обладать»." },
+        { "type": "rule", "text": "have got чаще в британской и разговорной речи; have (без got) более универсально. У he/she/it: has и has got." },
+        { "type": "table", "title": "Спряжение", "headers": ["Местоимение", "have", "have got"], "rows": [["I / you / we / they", "have", "have got"], ["he / she / it", "has", "has got"]] },
+        { "type": "examples", "items": [{ "en": "I have a sister.", "ru": "У меня есть сестра." }, { "en": "I have got a sister.", "ru": "У меня есть сестра (то же самое)." }, { "en": "She has a new phone.", "ru": "У неё новый телефон." }, { "en": "They have got two cats.", "ru": "У них две кошки." }] },
+        { "type": "heading", "text": "Отрицание и вопрос" },
+        { "type": "rule", "text": "С have got: haven't got / hasn't got, вопрос Have you got...? С have: используем do/does — I don't have, Do you have...?" },
+        { "type": "examples", "items": [{ "en": "I haven't got a car.", "ru": "У меня нет машины." }, { "en": "I don't have a car.", "ru": "У меня нет машины (то же самое)." }, { "en": "Have you got a pen?", "ru": "У тебя есть ручка?" }, { "en": "Do you have a pen?", "ru": "У тебя есть ручка? (то же самое)" }] },
+        { "type": "note", "text": "Не смешивай формы: нельзя сказать «Do you have got?». Либо Have you got a pen?, либо Do you have a pen?" },
+        { "type": "tip", "text": "Have got обычно сокращают: I've got, she's got, we've got. Так звучит естественнее в речи." }
+      ]
+    }
+  ]
+}

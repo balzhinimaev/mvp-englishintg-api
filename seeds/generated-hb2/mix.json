@@ -1,0 +1,399 @@
+{
+  "articles": [
+    {
+      "ref": "grammar.word-order",
+      "category": "grammar",
+      "title": {
+        "ru": "Порядок слов в предложении",
+        "en": "Word order"
+      },
+      "summary": "В английском порядок слов фиксированный: подлежащее, сказуемое, дополнение.",
+      "level": "A2",
+      "icon": "list",
+      "order": 23,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Порядок слов в предложении"
+        },
+        {
+          "type": "text",
+          "text": "В русском языке слова можно переставлять почти свободно: «Я люблю кофе» и «Кофе я люблю» — оба варианта понятны. В английском так нельзя. Порядок слов фиксированный, и именно он показывает, кто что делает."
+        },
+        {
+          "type": "rule",
+          "text": "Базовая схема: Подлежащее + Сказуемое + Дополнение (Subject + Verb + Object)."
+        },
+        {
+          "type": "example",
+          "en": "I love coffee.",
+          "ru": "Я люблю кофе.",
+          "note": "I — подлежащее, love — сказуемое, coffee — дополнение."
+        },
+        {
+          "type": "example",
+          "en": "The cat caught a mouse.",
+          "ru": "Кошка поймала мышь.",
+          "note": "Поменяешь местами cat и mouse — изменится смысл."
+        },
+        {
+          "type": "text",
+          "text": "Обстоятельства времени и места обычно ставятся в конце. Если их два, то сначала место, потом время."
+        },
+        {
+          "type": "table",
+          "title": "Позиции в предложении",
+          "headers": ["Кто", "Действие", "Что / Кого", "Где", "Когда"],
+          "rows": [
+            ["I", "read", "a book", "at home", "every evening"],
+            ["She", "bought", "a dress", "in London", "last week"],
+            ["We", "watched", "a film", "at the cinema", "yesterday"]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "Обстоятельства частотности (always, often, usually, never) ставятся перед смысловым глаголом, но после глагола to be."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "He always drinks tea in the morning.", "ru": "Он всегда пьёт чай по утрам." },
+            { "en": "She is never late.", "ru": "Она никогда не опаздывает." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Прилагательное ставится перед существительным: a red car, а не «a car red»."
+        },
+        {
+          "type": "note",
+          "text": "В вопросах порядок меняется: на первое место выходит вспомогательный глагол (Do you like coffee?), но об этом — в темах про вопросы."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.question-tags",
+      "category": "grammar",
+      "title": {
+        "ru": "Разделительные вопросы (…, isn't it?)",
+        "en": "Question tags"
+      },
+      "summary": "Короткий «хвостик» в конце фразы, чтобы уточнить или получить согласие.",
+      "level": "B1",
+      "icon": "question",
+      "order": 24,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Разделительные вопросы (question tags)"
+        },
+        {
+          "type": "text",
+          "text": "Разделительный вопрос — это короткий «хвостик» в конце предложения: «…, не так ли?». По-английски он звучит как isn't it?, don't you?, right? и добавляется, когда мы хотим уточнить или получить подтверждение."
+        },
+        {
+          "type": "rule",
+          "text": "Главное правило: утвердительное предложение — отрицательный хвостик; отрицательное предложение — утвердительный хвостик."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "You are tired, aren't you?", "ru": "Ты устал, не так ли?" },
+            { "en": "You aren't tired, are you?", "ru": "Ты не устал, да?" }
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "В хвостике повторяется вспомогательный глагол основной части (или to be), а подлежащее заменяется местоимением."
+        },
+        {
+          "type": "table",
+          "title": "Как выбрать хвостик",
+          "headers": ["Предложение", "Хвостик", "Перевод"],
+          "rows": [
+            ["She is a teacher,", "isn't she?", "Она учительница, не так ли?"],
+            ["They live here,", "don't they?", "Они здесь живут, да?"],
+            ["He can swim,", "can't he?", "Он умеет плавать, верно?"],
+            ["You went home,", "didn't you?", "Ты пошёл домой, да?"],
+            ["It won't rain,", "will it?", "Дождя не будет, правда?"],
+            ["We haven't met,", "have we?", "Мы не встречались, да?"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Есть особые случаи: у «I am» хвостик — aren't I? (Am late, aren't I?). После let's — shall we? После повелительного наклонения — will you? (Sit down, will you?)."
+        },
+        {
+          "type": "note",
+          "text": "Интонация важна: если голос идёт вниз — вы просто ждёте согласия; если вверх — действительно спрашиваете и не уверены в ответе."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.passive",
+      "category": "grammar",
+      "title": {
+        "ru": "Пассивный залог (is made)",
+        "en": "Passive voice"
+      },
+      "summary": "Когда важно само действие, а не тот, кто его совершает.",
+      "level": "B1",
+      "icon": "verb",
+      "order": 25,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Пассивный залог (passive voice)"
+        },
+        {
+          "type": "text",
+          "text": "Пассивный залог используют, когда важно само действие или его объект, а не тот, кто это сделал. Сравните: «Кто-то построил этот дом» (активный) и «Этот дом был построен» (пассивный). Часто исполнитель неизвестен или не важен."
+        },
+        {
+          "type": "rule",
+          "text": "Формула пассива: to be (в нужном времени) + третья форма глагола (Past Participle)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Cheese is made from milk.", "ru": "Сыр делают из молока." },
+            { "en": "The letter was written yesterday.", "ru": "Письмо было написано вчера." },
+            { "en": "The house is being built now.", "ru": "Дом сейчас строится." }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Пассив в разных временах",
+          "headers": ["Время", "Форма to be", "Пример"],
+          "rows": [
+            ["Present Simple", "is / are", "English is spoken here."],
+            ["Past Simple", "was / were", "The car was repaired."],
+            ["Present Continuous", "is / are being", "The road is being repaired."],
+            ["Present Perfect", "has / have been", "The work has been done."],
+            ["Future Simple", "will be", "The results will be announced."],
+            ["Modal (can)", "can be", "It can be fixed easily."]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "Если нужно указать исполнителя действия, используйте предлог by."
+        },
+        {
+          "type": "example",
+          "en": "This book was written by a famous author.",
+          "ru": "Эта книга была написана известным автором.",
+          "note": "by показывает, кем совершено действие."
+        },
+        {
+          "type": "tip",
+          "text": "Чтобы построить пассив из активного предложения, дополнение становится подлежащим: They cleaned the room. → The room was cleaned."
+        },
+        {
+          "type": "note",
+          "text": "Не путайте: в пассиве всегда стоит форма to be. «Is made» — пассив, а «makes» — активный залог."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.phrasal-verbs",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Фразовые глаголы (частые)",
+        "en": "Common phrasal verbs"
+      },
+      "summary": "Частые фразовые глаголы с переводом и примерами.",
+      "level": "B1",
+      "icon": "verb",
+      "order": 9,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Фразовые глаголы (частые)"
+        },
+        {
+          "type": "text",
+          "text": "Фразовый глагол — это глагол с предлогом или наречием, которые вместе получают новое значение. Например, look означает «смотреть», а look after — «заботиться». Их не переведёшь по частям, поэтому лучше запоминать целиком. Ниже — самые частые."
+        },
+        {
+          "type": "table",
+          "title": "Частые фразовые глаголы",
+          "headers": ["Фразовый глагол", "Значение", "Пример"],
+          "rows": [
+            ["get up", "вставать (с постели)", "I get up at seven."],
+            ["wake up", "просыпаться", "I woke up early today."],
+            ["turn on", "включать", "Turn on the light, please."],
+            ["turn off", "выключать", "Please turn off the TV."],
+            ["look for", "искать", "I'm looking for my keys."],
+            ["look after", "заботиться, присматривать", "She looks after her sister."],
+            ["give up", "сдаваться, бросать", "Don't give up!"],
+            ["put on", "надевать", "Put on your coat, it's cold."],
+            ["take off", "снимать; взлетать", "He took off his shoes."],
+            ["find out", "выяснять, узнавать", "I want to find out the truth."],
+            ["come back", "возвращаться", "Come back soon!"],
+            ["go on", "продолжать", "Please go on with your story."],
+            ["pick up", "поднимать; забирать", "I'll pick you up at eight."],
+            ["set up", "создавать, устанавливать", "They set up a new company."],
+            ["grow up", "взрослеть", "She grew up in Moscow."],
+            ["break down", "ломаться (о технике)", "My car broke down again."],
+            ["run out", "заканчиваться (о запасе)", "We ran out of milk."],
+            ["check in", "регистрироваться (заезд)", "We checked in at the hotel."],
+            ["check out", "выезжать; проверять", "We check out at noon."],
+            ["fill in", "заполнять (бланк)", "Fill in this form, please."],
+            ["hang on", "подождать (разг.)", "Hang on a second!"],
+            ["hold on", "подождать; держаться", "Hold on, I'm coming."],
+            ["calm down", "успокаиваться", "Calm down and breathe."],
+            ["sit down", "садиться", "Please sit down."],
+            ["stand up", "вставать", "Everyone stood up."],
+            ["get on", "садиться (в транспорт)", "Get on the bus quickly."],
+            ["get off", "выходить (из транспорта)", "We got off at the station."]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "Can you turn off the light and pick up the book?",
+          "ru": "Можешь выключить свет и поднять книгу?"
+        },
+        {
+          "type": "example",
+          "en": "I grew up in a small town, but I never gave up my dreams.",
+          "ru": "Я вырос в маленьком городе, но никогда не бросал свои мечты."
+        },
+        {
+          "type": "tip",
+          "text": "С местоимением-дополнением слова разделяются: put it on (а не «put on it»), turn it off."
+        },
+        {
+          "type": "note",
+          "text": "Один и тот же глагол с разными предлогами меняет смысл: take off (снимать / взлетать), take up (браться за что-то), take back (возвращать)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.irregular-plurals",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Неправильное множественное число",
+        "en": "Irregular plurals"
+      },
+      "summary": "Существительные, которые образуют множественное число не по правилу «+s».",
+      "level": "A2",
+      "icon": "plural",
+      "order": 10,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Неправильное множественное число"
+        },
+        {
+          "type": "text",
+          "text": "Обычно множественное число образуется прибавлением -s: cat → cats. Но у части существительных форма меняется по-особому, и её нужно запомнить. Есть и такие слова, которые вообще не меняются. Ниже — самые частые."
+        },
+        {
+          "type": "table",
+          "title": "Особые формы множественного числа",
+          "headers": ["Единственное", "Множественное", "Перевод"],
+          "rows": [
+            ["man", "men", "мужчина"],
+            ["woman", "women", "женщина"],
+            ["child", "children", "ребёнок"],
+            ["foot", "feet", "нога (ступня)"],
+            ["tooth", "teeth", "зуб"],
+            ["person", "people", "человек"],
+            ["mouse", "mice", "мышь"],
+            ["fish", "fish", "рыба"],
+            ["sheep", "sheep", "овца"],
+            ["goose", "geese", "гусь"],
+            ["life", "lives", "жизнь"],
+            ["knife", "knives", "нож"],
+            ["leaf", "leaves", "лист"],
+            ["wife", "wives", "жена"],
+            ["half", "halves", "половина"],
+            ["city", "cities", "город"],
+            ["baby", "babies", "малыш"]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "There are three children and two women here.",
+          "ru": "Здесь трое детей и две женщины."
+        },
+        {
+          "type": "example",
+          "en": "The mice ran under the leaves.",
+          "ru": "Мыши пробежали под листьями."
+        },
+        {
+          "type": "tip",
+          "text": "У слов на -f / -fe часто -f меняется на -ves: knife → knives, leaf → leaves. У слов на согласную + y: -y меняется на -ies (city → cities)."
+        },
+        {
+          "type": "note",
+          "text": "Fish, sheep, deer не меняются во множественном числе. А people — это множественное число от person (два person — это two people)."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.contractions",
+      "category": "cheatsheet",
+      "title": {
+        "ru": "Сокращения (I'm, don't, won't)",
+        "en": "Contractions"
+      },
+      "summary": "Короткие формы глаголов, которые постоянно звучат в живой речи.",
+      "level": "A1",
+      "icon": "list",
+      "order": 11,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Сокращения (contractions)"
+        },
+        {
+          "type": "text",
+          "text": "В разговорной речи англичане почти всегда сокращают вспомогательные глаголы: вместо I am говорят I'm, вместо do not — don't. Апостроф (') показывает, что буква пропущена. Понимать эти формы важно, ведь именно так звучит живая речь."
+        },
+        {
+          "type": "table",
+          "title": "Частые сокращения",
+          "headers": ["Полная форма", "Сокращение", "Пример"],
+          "rows": [
+            ["I am", "I'm", "I'm ready."],
+            ["you are", "you're", "You're right."],
+            ["he is", "he's", "He's at home."],
+            ["we are", "we're", "We're friends."],
+            ["they are", "they're", "They're here."],
+            ["is not", "isn't", "It isn't easy."],
+            ["are not", "aren't", "They aren't ready."],
+            ["do not", "don't", "I don't know."],
+            ["does not", "doesn't", "She doesn't care."],
+            ["did not", "didn't", "He didn't come."],
+            ["cannot", "can't", "I can't swim."],
+            ["will not", "won't", "I won't be late."],
+            ["I would", "I'd", "I'd like some tea."],
+            ["I have", "I've", "I've finished."],
+            ["she has", "she's", "She's gone home."],
+            ["I will", "I'll", "I'll call you."]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "I'm sure they're coming, but he isn't.",
+          "ru": "Я уверен, что они придут, а он — нет."
+        },
+        {
+          "type": "example",
+          "en": "I won't go if you don't want me to.",
+          "ru": "Я не пойду, если ты не хочешь."
+        },
+        {
+          "type": "tip",
+          "text": "Осторожно: won't — это сокращение от will not (не «wont»), а can't — от cannot. Их форма особенная."
+        },
+        {
+          "type": "note",
+          "text": "'s может значить и is, и has: He's tired (= is), He's gone (= has). А 'd — это would или had. Понять помогает контекст и форма глагола рядом."
+        }
+      ]
+    }
+  ]
+}

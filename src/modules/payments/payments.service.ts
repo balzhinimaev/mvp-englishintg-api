@@ -1,4 +1,5 @@
-import { Injectable, Logger, BadRequestException } from '@nestjs/common';
+import { Injectable, Logger, BadRequestException, ForbiddenException } from '@nestjs/common';
+import { randomUUID } from 'crypto';
 import { ConfigService } from '@nestjs/config';
 import { InjectConnection, InjectModel } from '@nestjs/mongoose';
 import { Connection, Model } from 'mongoose';
@@ -142,100 +143,133 @@ export class PaymentsService {
     return `Инглиш в ТГ - ${productName} подписка (${duration}) • ${price} ₽`;
   }
 
-  async processWebhook(payload: WebhookPayload): Promise<{ ok: boolean }> {
-    // Update existing payment record instead of creating new one
+  /**
+   * Запрашивает АВТОРИТЕТНЫЕ данные платежа напрямую из YooKassa API.
+   * Никогда не доверяем деньгам/статусу из тела вебхука — только этому источнику.
+   */
+  private async fetchYooKassaPayment(
+    providerId: string,
+  ): Promise<{ status: string; paid: boolean; amount: number | null; metadata: Record<string, any> } | null> {
+    if (!this.shopId || !this.secretKey) {
+      this.logger.error('YooKassa credentials not configured — cannot verify webhook');
+      return null;
+    }
+    try {
+      const resp = await fetch(`${this.yookassaApiUrl}/payments/${encodeURIComponent(providerId)}`, {
+        method: 'GET',
+        headers: {
+          Authorization: `Basic ${Buffer.from(`${this.shopId}:${this.secretKey}`).toString('base64')}`,
+        },
+      });
+      if (!resp.ok) {
+        this.logger.error(`YooKassa verify failed for ${providerId}: HTTP ${resp.status}`);
+        return null;
+      }
+      const p = (await resp.json()) as YooKassaPaymentResponse;
+      const amount = p?.amount?.value ? Math.round(parseFloat(p.amount.value) * 100) : null;
+      return { status: p.status, paid: (p as any).paid === true, amount, metadata: p.metadata || {} };
+    } catch (e: any) {
+      this.logger.error(`YooKassa verify error for ${providerId}: ${e.message}`);
+      return null;
+    }
+  }
+
+  /**
+   * Подтверждает оплату и идемпотентно выдаёт доступ. Доверяет ТОЛЬКО:
+   *  - наличию платежа с таким providerId в нашей БД,
+   *  - авторитетному статусу/сумме из YooKassa API (не из тела вебхука).
+   * Доступ выдаётся по СОХРАНЁННОМУ product/amount, переход статуса атомарен.
+   */
+  private async confirmPaymentAndGrant(providerId: string): Promise<{ ok: boolean }> {
+    // 1) Наш ли это платёж?
+    const payment = await this.paymentModel.findOne({ providerId }).lean();
+    if (!payment) {
+      this.logger.warn(`Webhook: платёж ${providerId} не найден в БД — игнорируем`);
+      return { ok: true };
+    }
+    if (payment.status === 'succeeded') {
+      this.logger.log(`Webhook: платёж ${providerId} уже succeeded — идемпотентно ок`);
+      return { ok: true };
+    }
+
+    // 2) Сверяемся с YooKassa (авторитетный источник)
+    const verified = await this.fetchYooKassaPayment(providerId);
+    if (!verified) {
+      return { ok: false };
+    }
+    if (!(verified.status === 'succeeded' && verified.paid === true)) {
+      this.logger.warn(`Webhook: платёж ${providerId} в YooKassa не оплачен (status=${verified.status}, paid=${verified.paid})`);
+      return { ok: true };
+    }
+    // 3) Сумма из YooKassa должна совпадать с сохранённой у нас
+    if (typeof verified.amount === 'number' && verified.amount !== payment.amount) {
+      this.logger.error(`Webhook: сумма ${providerId} расходится (YooKassa=${verified.amount}, БД=${payment.amount}) — отказ`);
+      return { ok: false };
+    }
+
+    const product = payment.product as 'monthly' | 'quarterly' | 'yearly';
+    const userId = payment.userId;
+    const durationDays = product === 'yearly' ? 365 : product === 'quarterly' ? 90 : 30;
+
     const session = await this.connection.startSession();
     try {
       await session.withTransaction(async () => {
-        // Find existing payment by providerId and update its status
-        const existingPayment = await this.paymentModel.findOne({ 
-          providerId: payload.providerId 
-        }).session(session);
-
-        if (!existingPayment) {
-          this.logger.warn(`Payment not found for providerId: ${payload.providerId}`);
+        // 4) Атомарный переход pending→succeeded; 0 изменений = уже обработан (идемпотентность)
+        const transition = await this.paymentModel.updateOne(
+          { providerId, status: { $ne: 'succeeded' } },
+          { $set: { status: 'succeeded', updatedAt: new Date() } },
+          { session },
+        );
+        if (transition.modifiedCount === 0) {
+          this.logger.warn(`Webhook: платёж ${providerId} обработан параллельно — пропуск выдачи`);
           return;
         }
 
-        // Update payment status
-        await this.paymentModel.updateOne(
-          { providerId: payload.providerId },
-          { 
-            $set: { 
-              status: payload.status,
-              updatedAt: new Date()
-            }
-          },
-          { session }
+        const now = new Date();
+        const existing = await this.entitlementModel.findOne({ userId, product }).session(session);
+        const base = existing?.endsAt && existing.endsAt > now ? existing.endsAt : now;
+        const newEndsAt = new Date(base.getTime() + durationDays * 24 * 60 * 60 * 1000);
+        const startsAt = existing?.startsAt || now;
+
+        await this.entitlementModel.updateOne(
+          { userId, product },
+          { $setOnInsert: { startsAt }, $set: { endsAt: newEndsAt } },
+          { upsert: true, session },
         );
 
-        if (payload.status === 'succeeded') {
-          const durationDays = payload.product === 'yearly' ? 365 : payload.product === 'monthly' ? 30 : 90;
-          const now = new Date();
+        // pro.* — денормализованный кэш; авторитетный источник доступа — entitlement.endsAt
+        await this.userModel.updateOne(
+          { userId },
+          { $set: { 'pro.active': true, 'pro.since': startsAt, 'pro.plan': product } },
+          { session },
+        );
 
-          // Fetch existing entitlement to extend from current endsAt if in the future
-          const existing = await this.entitlementModel.findOne({ userId: payload.userId, product: payload.product }).session(session);
-          const base = existing?.endsAt && existing.endsAt > now ? existing.endsAt : now;
-          const newEndsAt = new Date(base.getTime() + durationDays * 24 * 60 * 60 * 1000);
-
-          const startsAt = existing?.startsAt || now;
-          await this.entitlementModel.updateOne(
-            { userId: payload.userId, product: payload.product },
+        const user = await this.userModel.findOne({ userId }).lean();
+        await this.eventModel.create(
+          [
             {
-              $setOnInsert: { startsAt },
-              $set: { endsAt: newEndsAt },
-            },
-            { upsert: true, session },
-          );
-
-          // Update user.pro to reflect active premium subscription
-          await this.userModel.updateOne(
-            { userId: payload.userId },
-            {
-              $set: {
-                'pro.active': true,
-                'pro.since': startsAt,
-                'pro.plan': payload.product,
-              },
-            },
-            { session },
-          );
-
-          const user = await this.userModel.findOne({ userId: payload.userId }).lean();
-          await this.eventModel.create([
-            {
-              userId: payload.userId,
+              userId,
               name: 'purchase_success',
               ts: new Date(),
               properties: {
-                provider: payload.provider,
-                providerId: payload.providerId,
-                product: payload.product,
-                amount: payload.amount,
-                currency: payload.currency,
+                provider: 'yookassa',
+                providerId,
+                product,
+                amount: payment.amount,
+                currency: payment.currency,
                 ...(user?.firstUtm ? { utm: user.firstUtm } : {}),
               },
             },
-          ], { session });
+          ],
+          { session },
+        );
 
-          // Log successful payment to bot API
-          const registrationTime = user?.createdAt ? new Date(user.createdAt).toISOString() : new Date().toISOString();
-          const paymentTime = new Date().toISOString();
-          await this.logPaymentSuccess(
-            payload.userId,
-            payload.providerId,
-            payload.amount,
-            registrationTime,
-            paymentTime,
-            payload.product,
-            user
-          );
-        }
+        const registrationTime = user?.createdAt ? new Date(user.createdAt).toISOString() : new Date().toISOString();
+        await this.logPaymentSuccess(userId, providerId, payment.amount, registrationTime, new Date().toISOString(), product, user);
       });
-
       return { ok: true };
     } catch (err: any) {
-      this.logger.error(`Error processing webhook: ${err.message}`);
+      this.logger.error(`Webhook: ошибка обработки ${providerId}: ${err.message}`);
       throw err;
     } finally {
       await session.endSession();
@@ -248,102 +282,34 @@ export class PaymentsService {
    */
   async processYooKassaWebhook(
     payload: any, // Accept ANY payload structure
-    idempotenceKeyHeader?: string,
+    _idempotenceKeyHeader?: string,
   ): Promise<{ ok: boolean }> {
-    // Log full webhook payload from YooKassa
-    this.logger.log(`🔔 YooKassa Webhook Received:`);
-    this.logger.log(`Full Payload: ${JSON.stringify(payload, null, 2)}`);
-    this.logger.log(`Idempotence Key Header: ${idempotenceKeyHeader || 'not provided'}`);
-    this.logger.log(`Payload Type: ${typeof payload}`);
-    this.logger.log(`Payload Keys: ${Object.keys(payload || {}).join(', ')}`);
+    // Извлекаем ТОЛЬКО идентификатор платежа и тип события.
+    // Денежные поля (сумма/статус/product) НЕ берём из тела — только из YooKassa API.
+    let providerId: string | undefined;
+    let eventType: string | undefined;
 
-    // Determine payload format and extract data accordingly
-    let provider: string;
-    let providerId: string;
-    let amountValue: number;
-    let currency: string;
-    let userId: string;
-    let product: 'monthly' | 'quarterly' | 'yearly';
-    let status: 'succeeded' | 'pending' | 'failed';
-
-    // Check if it's YooKassa format (has event and object)
     if (payload?.event && payload?.object) {
-      this.logger.log(`📋 Detected YooKassa format`);
-      const eventType = payload.event;
-      const paymentObj = payload.object;
-
-      provider = 'yookassa';
-      providerId = paymentObj?.id || 'unknown';
-      amountValue = Math.round(parseFloat(paymentObj?.amount?.value || '0') * 100);
-      currency = paymentObj?.amount?.currency || 'RUB';
-      const metadata = paymentObj?.metadata || {};
-
-      const userIdRaw = metadata.userId;
-      const productRaw = metadata.product;
-      userId = typeof userIdRaw === 'string' ? userIdRaw : String(userIdRaw || '');
-
-      const statusMap: Record<string, 'succeeded' | 'pending' | 'failed'> = {
-        'payment.succeeded': 'succeeded',
-        'payment.waiting_for_capture': 'pending',
-        'payment.canceled': 'failed',
-        'refund.succeeded': 'succeeded',
-      };
-      status = statusMap[eventType] || 'pending';
-      product = (productRaw as any) || 'monthly';
-
+      eventType = payload.event;
+      providerId = payload.object?.id;
     } else {
-      // Check if it's test format (direct fields)
-      this.logger.log(`📋 Detected test/direct format`);
-      
-      provider = payload?.provider || 'yookassa';
-      providerId = payload?.providerId || 'unknown';
-      amountValue = payload?.amount || 0;
-      currency = payload?.currency || 'RUB';
-      userId = String(payload?.userId || '');
-      product = (payload?.product as any) || 'monthly';
-      status = (payload?.status as any) || 'pending';
+      // «direct»-формат (наши тесты/совместимость): providerId обязателен
+      providerId = payload?.providerId;
+      eventType = payload?.event || (payload?.status === 'succeeded' ? 'payment.succeeded' : undefined);
     }
 
-    this.logger.log(`📊 Parsed Webhook Data:`);
-    this.logger.log(`Provider: ${provider}`);
-    this.logger.log(`Provider ID: ${providerId}`);
-    this.logger.log(`Amount: ${amountValue} kopecks (${(amountValue/100).toFixed(2)} ₽)`);
-    this.logger.log(`Currency: ${currency}`);
-    this.logger.log(`User ID: ${userId}`);
-    this.logger.log(`Product: ${product}`);
-    this.logger.log(`Status: ${status}`);
-
-    this.logger.log(`🔄 Processing Webhook:`);
-
-    // Verify payment status according to YooKassa documentation
-    // Check if payment exists in our database and verify status
-    if (status === 'succeeded') {
-      const existingPayment = await this.paymentModel.findOne({ providerId }).lean();
-      if (existingPayment) {
-        this.logger.log(`✅ Payment found in database: ${existingPayment.status}`);
-        if (existingPayment.status === 'succeeded') {
-          this.logger.warn(`⚠️  Payment already processed as succeeded - skipping duplicate`);
-          return { ok: true };
-        }
-      } else {
-        this.logger.warn(`⚠️  Payment not found in database - may be invalid webhook`);
-      }
+    if (!providerId) {
+      this.logger.warn('Webhook без providerId — игнорируем');
+      return { ok: true };
     }
 
-    // Reuse existing logic with normalized payload
-    const result = await this.processWebhook({
-      provider,
-      providerId,
-      idempotencyKey: idempotenceKeyHeader || providerId,
-      userId,
-      product: product === 'yearly' ? 'yearly' : product,
-      amount: amountValue,
-      currency,
-      status,
-    });
+    // Действуем только на успешную оплату; сумму/статус подтвердит confirmPaymentAndGrant через YooKassa API
+    if (eventType === 'payment.succeeded') {
+      return this.confirmPaymentAndGrant(providerId);
+    }
 
-    this.logger.log(`✅ Webhook Processing Result: ${JSON.stringify(result, null, 2)}`);
-    return result;
+    this.logger.log(`Webhook event ${eventType || 'unknown'} для ${providerId} — без действия`);
+    return { ok: true };
   }
 
   /**
@@ -373,6 +339,16 @@ export class PaymentsService {
     const user = await this.userModel.findOne({ userId: request.userId }).lean();
     if (!user) {
       throw new BadRequestException('User not found');
+    }
+
+    // Email-аккаунт должен подтвердить почту перед оплатой — иначе чек 54-ФЗ уйдёт
+    // на непроверенный адрес. Telegram-пользователей (authProvider !== 'email') не касается.
+    if (user.authProvider === 'email' && user.emailVerified !== true) {
+      throw new ForbiddenException({
+        statusCode: 403,
+        code: 'EMAIL_NOT_VERIFIED',
+        message: 'Подтвердите email перед оплатой — мы отправили письмо на вашу почту.',
+      });
     }
 
     // 🔒 Rate limiting: Check for too many pending payments
@@ -431,8 +407,10 @@ export class PaymentsService {
         throw new BadRequestException('Invalid product type');
     }
 
-    // Generate idempotency key
-    const idempotencyKey = `payment_${request.userId}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    // Idempotence-Key для YooKassa — ограничение 64 символа. С длинным строковым
+    // userId (em_<uuid> у веб-аккаунтов) старый формат payment_<userId>_<ts>_<rand>
+    // превышал лимит и ломал оплату. UUID (36 символов) уникален и всегда влезает.
+    const idempotencyKey = randomUUID();
 
     // Prepare payment data for YooKassa
     const paymentData = {
@@ -485,8 +463,8 @@ export class PaymentsService {
       if (cohort === 'test_payment') {
         this.logger.warn(`🧪 TEST PAYMENT: User ${request.userId} - ${amount} kopecks (${(amount/100).toFixed(2)} ₽)`);
       }
-      
-      this.logger.log(`Payment data: ${JSON.stringify(paymentData, null, 2)}`);
+
+      // PII-минимизация: полное тело paymentData НЕ логируем (receipt.customer содержит email)
 
       // Make request to YooKassa API
       const response = await fetch(`${this.yookassaApiUrl}/payments`, {
@@ -568,9 +546,54 @@ export class PaymentsService {
   /**
    * Get payment status from YooKassa
    */
-  async getPaymentStatus(paymentId: string): Promise<{ status: string; paid: boolean }> {
+  /**
+   * Сверяет платёж с YooKassa и, если он оплачен, идемпотентно выдаёт доступ.
+   * Клиентский поллинг вызывает это после оплаты — так доступ выдаётся даже без
+   * настроенного вебхука. Только владелец платежа.
+   */
+  async reconcilePayment(userId: string, providerId: string): Promise<{ granted: boolean; entitlement: any }> {
+    if (!providerId) throw new BadRequestException('paymentId is required');
+    const payment = await this.paymentModel.findOne({ providerId }).lean();
+    if (!payment || String(payment.userId) !== String(userId)) {
+      throw new ForbiddenException('Payment not found');
+    }
+
+    await this.confirmPaymentAndGrant(providerId);
+
+    const now = new Date();
+    const ent = await this.entitlementModel
+      .findOne({ userId: String(userId), endsAt: { $gt: now } })
+      .sort({ endsAt: -1 })
+      .lean();
+    const productIdMap: Record<string, string> = {
+      monthly: 'monthly_subscription',
+      quarterly: 'quarterly_subscription',
+      yearly: 'yearly_subscription',
+    };
+    return {
+      granted: !!ent,
+      entitlement: ent
+        ? {
+            userId: Number(userId),
+            endsAt: new Date(ent.endsAt).toISOString(),
+            productId: productIdMap[ent.product] || ent.product,
+            status: 'active' as const,
+          }
+        : null,
+    };
+  }
+
+  async getPaymentStatus(paymentId: string, userId?: string): Promise<{ status: string; paid: boolean }> {
     if (!this.shopId || !this.secretKey) {
       throw new BadRequestException('YooKassa credentials not configured');
+    }
+
+    // Проверка владельца: нельзя смотреть статус чужого платежа
+    if (userId) {
+      const owned = await this.paymentModel.findOne({ providerId: paymentId }).select('userId').lean();
+      if (!owned || String(owned.userId) !== String(userId)) {
+        throw new ForbiddenException('Payment not found');
+      }
     }
 
     try {
@@ -682,13 +705,14 @@ export class PaymentsService {
       };
 
       const url = `${this.botApiUrl}/payment-log`;
+      // PII-минимизация: тело logData (имя/фамилия/username) НЕ выводим в логи —
+      // оно уходит только в Bot API (это функционал уведомлений)
       this.logger.log(`📤 Sending payment success notification to Bot API:`);
       this.logger.log(`   URL: ${url}`);
       this.logger.log(`   UserId: ${userId}`);
       this.logger.log(`   PaymentId: ${paymentId}`);
       this.logger.log(`   Product: ${product} (${tariffNames[product]})`);
       this.logger.log(`   Amount: ${logData.amount} ${logData.currency}`);
-      this.logger.log(`   Request data: ${JSON.stringify(logData, null, 2)}`);
 
       const response = await fetch(url, {
         method: 'POST',

@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Body, Param, Query, UseGuards, Request, BadRequestException } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { AdminGuard } from '../auth/admin.guard';
 import { VocabularyService } from './vocabulary.service';
 import { 
   GetModuleVocabularyDto, 
@@ -171,6 +172,7 @@ export class VocabularyController {
    * POST /api/v2/vocabulary/sync
    */
   @Post('sync')
+  @UseGuards(AdminGuard)
   async syncModuleVocabulary(
     @Body() body: SyncModuleVocabularyDto
   ): Promise<SyncVocabularyResponseDto> {
@@ -188,6 +190,7 @@ export class VocabularyController {
    * GET /api/v2/vocabulary/modules/{moduleRef}/extract
    */
   @Get('modules/:moduleRef/extract')
+  @UseGuards(AdminGuard)
   async extractWordsFromModule(
     @Param('moduleRef') moduleRef: string
   ): Promise<{ words: any[]; count: number }> {

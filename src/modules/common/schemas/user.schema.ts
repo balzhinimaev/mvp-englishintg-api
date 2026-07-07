@@ -26,6 +26,29 @@ export class User {
   @Prop()
   email?: string;
 
+  // Email-аутентификация (веб-версия). Для Telegram-пользователей пусто.
+  @Prop({ select: false })
+  passwordHash?: string;
+
+  @Prop({ enum: ['telegram', 'email'], default: 'telegram' })
+  authProvider?: 'telegram' | 'email';
+
+  @Prop()
+  emailVerified?: boolean;
+
+  // Токены ниже хранятся как sha256-хэши: утечка БД не даёт рабочих ссылок
+  @Prop({ select: false })
+  emailVerificationToken?: string;
+
+  @Prop({ select: false })
+  emailVerificationExpires?: Date;
+
+  @Prop({ select: false })
+  passwordResetToken?: string;
+
+  @Prop({ select: false })
+  passwordResetExpires?: Date;
+
   @Prop()
   languageCode?: string;
 
@@ -84,5 +107,13 @@ export class User {
 
 export const UserSchema = SchemaFactory.createForClass(User);
 UserSchema.index({ userId: 1 }, { unique: true });
+// Email уникален только среди email-аккаунтов (у Telegram-юзеров email из чеков не мешает)
+UserSchema.index(
+  { email: 1 },
+  { unique: true, partialFilterExpression: { authProvider: 'email' } },
+);
+// Поиск по одноразовым токенам (sparse — поля есть только у email-аккаунтов в процессе флоу)
+UserSchema.index({ emailVerificationToken: 1 }, { sparse: true });
+UserSchema.index({ passwordResetToken: 1 }, { sparse: true });
 
 

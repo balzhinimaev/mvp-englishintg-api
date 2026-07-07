@@ -1,6 +1,7 @@
 import { Body, Controller, Post, UseGuards, Request } from '@nestjs/common';
 import { EventsService } from './events.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { TrackEventDto } from './dto/track-event.dto';
 
 @Controller('events')
 export class EventsController {
@@ -8,18 +9,9 @@ export class EventsController {
 
   @Post()
   @UseGuards(JwtAuthGuard)
-  async ingest(
-    @Body()
-    body: { 
-      name: 'open_app' | 'start_lesson' | 'complete_lesson' | 'vocabulary_learned' | 'grammar_practiced' | 'speaking_completed' | 'listening_completed' | 'paywall_view' | 'purchase_success'; 
-      properties?: Record<string, any> 
-    },
-    @Request() req: any,
-  ) {
-    const userId = req.user?.userId; // Get userId from JWT token
+  async ingest(@Body() body: TrackEventDto, @Request() req: any) {
+    const userId = req.user?.userId; // userId — только из JWT, поле в теле игнорируем
     await this.eventsService.track(userId, body.name, body.properties);
     return { ok: true };
   }
 }
-
-

@@ -25,6 +25,16 @@ export interface BotApiConfig {
   key?: string;
 }
 
+export interface MailConfig {
+  host?: string;
+  port: number;
+  secure: boolean;
+  user?: string;
+  pass?: string;
+  from?: string;
+  webappUrl: string;
+}
+
 export interface AppConfig {
   port: number;
   nodeEnv: string;
@@ -32,6 +42,7 @@ export interface AppConfig {
   auth: AuthConfig;
   payment: PaymentConfig;
   botApi: BotApiConfig;
+  mail: MailConfig;
 }
 
 export default registerAs('app', (): AppConfig => {
@@ -58,15 +69,22 @@ export default registerAs('app', (): AppConfig => {
     mongoUri = mongoUri.replace(/[?&]$/, '');
     console.log(`🔧 Development mode: подключение к MongoDB без реплики`);
   } else {
-    // В production/test режиме добавляем replicaSet, если его нет
-    const replicaSetName = process.env.MONGODB_REPLICA_SET || 'rs0';
-    const hasReplicaSet = mongoUri.includes('replicaSet=');
-    
-    if (!hasReplicaSet) {
-      // Add replicaSet parameter if not present
-      const separator = mongoUri.includes('?') ? '&' : '?';
-      mongoUri = `${mongoUri}${separator}replicaSet=${replicaSetName}`;
-      console.log(`🔧 Added replicaSet=${replicaSetName} parameter to MongoDB URI (required for replica set mode)`);
+    // directConnection=true (single-node RS) несовместим с параметром replicaSet —
+    // при directConnection драйвер и так поддерживает транзакции, реплику не добавляем.
+    const hasDirectConnection = /[?&]directConnection=true/i.test(mongoUri);
+    if (hasDirectConnection) {
+      console.log('🔧 directConnection=true: single-node replica set, параметр replicaSet не добавляем');
+    } else {
+      // В production/test режиме добавляем replicaSet, если его нет
+      const replicaSetName = process.env.MONGODB_REPLICA_SET || 'rs0';
+      const hasReplicaSet = mongoUri.includes('replicaSet=');
+
+      if (!hasReplicaSet) {
+        // Add replicaSet parameter if not present
+        const separator = mongoUri.includes('?') ? '&' : '?';
+        mongoUri = `${mongoUri}${separator}replicaSet=${replicaSetName}`;
+        console.log(`🔧 Added replicaSet=${replicaSetName} parameter to MongoDB URI (required for replica set mode)`);
+      }
     }
   }
   
@@ -97,6 +115,15 @@ export default registerAs('app', (): AppConfig => {
     botApi: {
       url: process.env.BOT_API_URL,
       key: process.env.BOT_API_KEY,
+    },
+    mail: {
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT || '465', 10),
+      secure: process.env.SMTP_SECURE !== 'false',
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+      from: process.env.MAIL_FROM,
+      webappUrl: process.env.WEBAPP_URL || 'https://englishintg.ru/webapp/',
     },
   };
 });

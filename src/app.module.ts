@@ -1,6 +1,9 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ScheduleModule } from '@nestjs/schedule';
+import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
+import { APP_GUARD } from '@nestjs/core';
 import { HealthController } from './health.controller';
 import { AuthModule } from './modules/auth/auth.module';
 import { PaymentsModule } from './modules/payments/payments.module';
@@ -13,6 +16,8 @@ import { ProfileModule } from './modules/profile/profile.module';
 import { LeadsModule } from './modules/leads/leads.module';
 import { ProgressModule } from './modules/progress/progress.module';
 import { PaywallModule } from './modules/paywall/paywall.module';
+import { HandbookModule } from './modules/handbook/handbook.module';
+import { NotificationsModule } from './modules/notifications/notifications.module';
 import { validationSchema } from './config/validation.schema';
 import configuration from './config/configuration';
 
@@ -27,6 +32,10 @@ import configuration from './config/configuration';
         abortEarly: false,
       },
     }),
+    // Глобальный rate limiting: 300 запросов за 60с на IP (ключ по реальному IP —
+    // в main.ts включён trust proxy, чтобы за nginx считать per-user, а не общий 127.0.0.1).
+    ThrottlerModule.forRoot([{ ttl: 60000, limit: 300 }]),
+    ScheduleModule.forRoot(),
     MongooseModule.forRootAsync({
       useFactory: (configService: ConfigService) => {
         const uri = configService.get<string>('app.database.uri');
@@ -72,8 +81,11 @@ import configuration from './config/configuration';
     LeadsModule,
     ProgressModule,
     PaywallModule,
+    HandbookModule,
+    NotificationsModule,
   ],
   controllers: [HealthController],
+  providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
 })
 export class AppModule {}
 

@@ -1,0 +1,482 @@
+{
+  "articles": [
+    {
+      "ref": "grammar.present-simple",
+      "category": "grammar",
+      "title": {
+        "ru": "Present Simple (настоящее простое)",
+        "en": "Present Simple"
+      },
+      "summary": "Время для привычек, расписаний и общих фактов; не забывайте -s в he/she/it.",
+      "level": "A1",
+      "icon": "clock",
+      "order": 9,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Когда используется"
+        },
+        {
+          "type": "rule",
+          "text": "Present Simple описывает регулярные действия, привычки, расписания и общие факты — то, что происходит вообще, а не прямо сейчас."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I work in an office.", "ru": "Я работаю в офисе." },
+            { "en": "She drinks coffee every morning.", "ru": "Она пьёт кофе каждое утро." },
+            { "en": "Water boils at 100 degrees.", "ru": "Вода кипит при 100 градусах." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Как строится"
+        },
+        {
+          "type": "text",
+          "text": "В утверждении к глаголу для he, she, it добавляется окончание -s. Отрицание и вопрос строятся со вспомогательным do (для he/she/it — does)."
+        },
+        {
+          "type": "table",
+          "title": "I / you / we / they",
+          "headers": ["Форма", "Пример"],
+          "rows": [
+            ["Утверждение (+)", "I play tennis."],
+            ["Отрицание (−)", "I don't play tennis."],
+            ["Вопрос (?)", "Do you play tennis?"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "he / she / it",
+          "headers": ["Форма", "Пример"],
+          "rows": [
+            ["Утверждение (+)", "He plays tennis."],
+            ["Отрицание (−)", "He doesn't play tennis."],
+            ["Вопрос (?)", "Does he play tennis?"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Маркеры времени"
+        },
+        {
+          "type": "text",
+          "text": "Часто используются слова частоты: always (всегда), usually (обычно), often (часто), sometimes (иногда), never (никогда), every day (каждый день)."
+        },
+        {
+          "type": "example",
+          "en": "We often go to the cinema on Fridays.",
+          "ru": "Мы часто ходим в кино по пятницам.",
+          "note": "Слово often стоит перед основным глаголом."
+        },
+        {
+          "type": "tip",
+          "text": "В вопросе и отрицании с does сам глагол теряет -s: правильно «Does she work?», а не «Does she works?»."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: забыть -s в третьем лице. Правильно «He goes», «She watches», «It rains», а не «He go»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.present-continuous",
+      "category": "grammar",
+      "title": {
+        "ru": "Present Continuous (настоящее длительное)",
+        "en": "Present Continuous"
+      },
+      "summary": "Действие происходит прямо сейчас или в текущий период; форма am/is/are + глагол с -ing.",
+      "level": "A1",
+      "icon": "clock",
+      "order": 10,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Когда используется"
+        },
+        {
+          "type": "rule",
+          "text": "Present Continuous описывает действие, которое происходит прямо сейчас, в момент речи, или в текущий период времени."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I am reading a book now.", "ru": "Я сейчас читаю книгу." },
+            { "en": "She is working from home this week.", "ru": "На этой неделе она работает из дома." },
+            { "en": "Look! It is raining.", "ru": "Смотри! Идёт дождь." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Как строится"
+        },
+        {
+          "type": "text",
+          "text": "Форма состоит из глагола to be (am / is / are) и основного глагола с окончанием -ing."
+        },
+        {
+          "type": "table",
+          "headers": ["Форма", "Пример"],
+          "rows": [
+            ["Утверждение (+)", "She is cooking dinner."],
+            ["Отрицание (−)", "She isn't cooking dinner."],
+            ["Вопрос (?)", "Is she cooking dinner?"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Формы to be",
+          "headers": ["Местоимение", "to be"],
+          "rows": [
+            ["I", "am"],
+            ["he / she / it", "is"],
+            ["you / we / they", "are"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Маркеры времени"
+        },
+        {
+          "type": "text",
+          "text": "Указывают на текущий момент: now (сейчас), right now (прямо сейчас), at the moment (в данный момент), today (сегодня), this week (на этой неделе), Look! / Listen! (Смотри! / Слушай!)."
+        },
+        {
+          "type": "example",
+          "en": "At the moment they are watching TV.",
+          "ru": "В данный момент они смотрят телевизор."
+        },
+        {
+          "type": "tip",
+          "text": "Если глагол заканчивается на -e, она отбрасывается: make → making, write → writing. В коротких словах согласная удваивается: run → running, sit → sitting."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: пропускать глагол be. Правильно «I am working», а не «I working». Также глаголы состояния (know, like, want) обычно не ставят в Continuous: «I want», а не «I am wanting»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.past-simple",
+      "category": "grammar",
+      "title": {
+        "ru": "Past Simple (прошедшее простое)",
+        "en": "Past Simple"
+      },
+      "summary": "Завершённые действия в прошлом; -ed у правильных глаголов, особые формы у неправильных.",
+      "level": "A2",
+      "icon": "clock",
+      "order": 11,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Когда используется"
+        },
+        {
+          "type": "rule",
+          "text": "Past Simple описывает завершённые действия в прошлом — то, что случилось в конкретный момент и уже закончилось."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I visited my grandmother yesterday.", "ru": "Вчера я навестил бабушку." },
+            { "en": "They lived in Paris in 2010.", "ru": "В 2010 году они жили в Париже." },
+            { "en": "We watched a film last night.", "ru": "Вчера вечером мы посмотрели фильм." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Как строится"
+        },
+        {
+          "type": "text",
+          "text": "У правильных глаголов в утверждении добавляется -ed. Отрицание и вопрос строятся со вспомогательным did, а основной глагол возвращается в начальную форму (инфинитив)."
+        },
+        {
+          "type": "table",
+          "headers": ["Форма", "Пример"],
+          "rows": [
+            ["Утверждение (+)", "She played tennis."],
+            ["Отрицание (−)", "She didn't play tennis."],
+            ["Вопрос (?)", "Did she play tennis?"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Неправильные глаголы"
+        },
+        {
+          "type": "text",
+          "text": "Многие частые глаголы образуют прошедшее время особым образом — их формы нужно запомнить."
+        },
+        {
+          "type": "table",
+          "title": "Частые неправильные глаголы",
+          "headers": ["Инфинитив", "Past Simple", "Перевод"],
+          "rows": [
+            ["go", "went", "идти"],
+            ["have", "had", "иметь"],
+            ["make", "made", "делать"],
+            ["see", "saw", "видеть"],
+            ["take", "took", "брать"],
+            ["come", "came", "приходить"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Маркеры времени"
+        },
+        {
+          "type": "text",
+          "text": "yesterday (вчера), last week / last year (на прошлой неделе / в прошлом году), ago (назад), in 2010, when I was a child (когда я был ребёнком)."
+        },
+        {
+          "type": "example",
+          "en": "Two years ago we bought a new car.",
+          "ru": "Два года назад мы купили новую машину."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: ставить глагол в прошедшее время после did. Правильно «Did you go?» и «I didn't go», а не «Did you went» или «I didn't went»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.future",
+      "category": "grammar",
+      "title": {
+        "ru": "Будущее: will и be going to",
+        "en": "Future: will / be going to"
+      },
+      "summary": "will — для решений и предсказаний, be going to — для планов и намерений.",
+      "level": "A2",
+      "icon": "clock",
+      "order": 12,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Два способа говорить о будущем"
+        },
+        {
+          "type": "rule",
+          "text": "will используют для спонтанных решений, обещаний и предсказаний. be going to используют для заранее запланированных действий и намерений."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "It's cold. I will close the window.", "ru": "Холодно. Я закрою окно. (решение сейчас)" },
+            { "en": "I am going to study medicine.", "ru": "Я собираюсь изучать медицину. (план)" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Как строится will"
+        },
+        {
+          "type": "table",
+          "headers": ["Форма", "Пример"],
+          "rows": [
+            ["Утверждение (+)", "I will call you."],
+            ["Отрицание (−)", "I won't call you."],
+            ["Вопрос (?)", "Will you call me?"]
+          ]
+        },
+        {
+          "type": "text",
+          "text": "После will всегда идёт глагол в начальной форме, без -s и без to. Сокращения: I will → I'll, will not → won't."
+        },
+        {
+          "type": "heading",
+          "text": "Как строится be going to"
+        },
+        {
+          "type": "table",
+          "headers": ["Форма", "Пример"],
+          "rows": [
+            ["Утверждение (+)", "She is going to travel."],
+            ["Отрицание (−)", "She isn't going to travel."],
+            ["Вопрос (?)", "Is she going to travel?"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Маркеры времени"
+        },
+        {
+          "type": "text",
+          "text": "tomorrow (завтра), next week / next year (на следующей неделе / в следующем году), soon (скоро), in an hour (через час), in the future (в будущем)."
+        },
+        {
+          "type": "example",
+          "en": "Look at those clouds! It's going to rain.",
+          "ru": "Посмотри на тучи! Сейчас пойдёт дождь.",
+          "note": "be going to также для предсказаний, основанных на том, что видно сейчас."
+        },
+        {
+          "type": "tip",
+          "text": "will часто идёт с I think, maybe, probably: «I think he will win» — «Думаю, он победит»."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: добавлять -s или to после will. Правильно «She will come», а не «She wills come» или «She will to come»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.questions",
+      "category": "grammar",
+      "title": {
+        "ru": "Вопросы и отрицания",
+        "en": "Questions and negatives"
+      },
+      "summary": "Вопрос и отрицание строятся со вспомогательным глаголом: do/does/did или be.",
+      "level": "A1",
+      "icon": "question",
+      "order": 13,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Главный принцип"
+        },
+        {
+          "type": "rule",
+          "text": "В английском вопрос и отрицание почти всегда строятся со вспомогательным глаголом. С обычными глаголами это do / does / did, а с to be и модальными — сами эти глаголы."
+        },
+        {
+          "type": "heading",
+          "text": "С обычными глаголами: do / does / did"
+        },
+        {
+          "type": "text",
+          "text": "Чтобы задать вопрос, вспомогательный глагол ставится в начало. Для отрицания к нему добавляется not (обычно в сокращении: don't, doesn't, didn't)."
+        },
+        {
+          "type": "table",
+          "headers": ["Время", "Отрицание (−)", "Вопрос (?)"],
+          "rows": [
+            ["Present (I/you/we/they)", "I don't work.", "Do you work?"],
+            ["Present (he/she/it)", "He doesn't work.", "Does he work?"],
+            ["Past", "I didn't work.", "Did you work?"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "С глаголом to be"
+        },
+        {
+          "type": "text",
+          "text": "Глагол be (am / is / are / was / were) не нуждается в do. Для вопроса он просто выходит вперёд, для отрицания к нему добавляется not."
+        },
+        {
+          "type": "table",
+          "headers": ["Форма", "Пример"],
+          "rows": [
+            ["Утверждение (+)", "She is a doctor."],
+            ["Отрицание (−)", "She isn't a doctor."],
+            ["Вопрос (?)", "Is she a doctor?"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Короткие ответы"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Do you like tea? — Yes, I do. / No, I don't.", "ru": "Ты любишь чай? — Да. / Нет." },
+            { "en": "Is he at home? — Yes, he is. / No, he isn't.", "ru": "Он дома? — Да. / Нет." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В коротком ответе повторяется тот же вспомогательный глагол, что и в вопросе: Did you...? — Yes, I did."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: строить вопрос без вспомогательного глагола. Неправильно «You like coffee?» — нужно «Do you like coffee?». И не удваивайте прошедшее: «Did you see?», а не «Did you saw?»."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.wh-questions",
+      "category": "grammar",
+      "title": {
+        "ru": "Вопросительные слова (What, Where…)",
+        "en": "Wh- questions"
+      },
+      "summary": "Специальные вопросы начинаются с вопросительного слова: What, Where, When, Why, Who, How.",
+      "level": "A1",
+      "icon": "question",
+      "order": 14,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Что такое Wh- вопросы"
+        },
+        {
+          "type": "rule",
+          "text": "Специальные (Wh-) вопросы начинаются с вопросительного слова и требуют развёрнутого ответа, а не «да/нет»."
+        },
+        {
+          "type": "table",
+          "title": "Основные вопросительные слова",
+          "headers": ["Слово", "Перевод", "Пример"],
+          "rows": [
+            ["What", "что / какой", "What is your name?"],
+            ["Where", "где / куда", "Where do you live?"],
+            ["When", "когда", "When did you arrive?"],
+            ["Why", "почему", "Why are you late?"],
+            ["Who", "кто", "Who is that man?"],
+            ["How", "как", "How do you feel?"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Порядок слов"
+        },
+        {
+          "type": "rule",
+          "text": "Схема: вопросительное слово + вспомогательный глагол + подлежащее + основной глагол."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Where do you work?", "ru": "Где ты работаешь?" },
+            { "en": "What does she want?", "ru": "Чего она хочет?" },
+            { "en": "When did they leave?", "ru": "Когда они ушли?" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Полезные сочетания"
+        },
+        {
+          "type": "table",
+          "headers": ["Сочетание", "Перевод", "Пример"],
+          "rows": [
+            ["How much", "сколько (неисчисл.)", "How much is it?"],
+            ["How many", "сколько (исчисл.)", "How many books do you have?"],
+            ["How old", "сколько лет", "How old are you?"],
+            ["What time", "во сколько", "What time is it?"]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "Who lives here?",
+          "ru": "Кто здесь живёт?",
+          "note": "Если Who (или What) само является подлежащим, вспомогательный do не нужен: «Who lives here?», а не «Who does live here?»."
+        },
+        {
+          "type": "tip",
+          "text": "С глаголом to be вспомогательный do тоже не нужен: «Where are you?», «What is this?»."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: прямой порядок слов, как в утверждении. Неправильно «Where you live?» — нужно «Where do you live?» со вспомогательным глаголом."
+        }
+      ]
+    }
+  ]
+}

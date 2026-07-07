@@ -70,8 +70,11 @@ export class ProgressService {
     return session;
   }
 
-  async endSession(sessionId: string, extraXp = 0) {
-    const session = await this.sessionModel.findById(sessionId);
+  async endSession(sessionId: string, extraXp = 0, userId?: string) {
+    // Фильтруем по владельцу: нельзя закрыть/начислить XP в чужую сессию (IDOR)
+    const query: Record<string, any> = { _id: sessionId };
+    if (userId) query.userId = userId;
+    const session = await this.sessionModel.findOne(query);
     if (!session) return null;
     session.endedAt = new Date();
     if (extraXp) session.xpEarned = (session.xpEarned || 0) + extraXp;
@@ -102,26 +105,36 @@ export class ProgressService {
       throw new BadRequestException('Lesson not found');
     }
 
-    const canStartResult = await this.contentService.canStartLesson(args.userId, args.lessonRef);
-    if (!canStartResult.canStart) {
-      if (canStartResult.reason === 'Lesson not found') {
-        throw new BadRequestException('Lesson not found');
-      }
+    // Предусловие (последовательность уроков / PRO) важно только ПРИ СТАРТЕ урока.
+    // Если у пользователя уже есть прогресс по этому уроку — гейт уже был пройден
+    // (ULP создаётся ниже только после успешной проверки), поэтому на последующих
+    // ответах пропускаем тяжёлый canStartLesson (~5 запросов в Mongo).
+    const startedUlp = await this.ulpModel
+      .findOne({ userId: args.userId, lessonRef: args.lessonRef })
+      .select('_id')
+      .lean();
+    if (!startedUlp) {
+      const canStartResult = await this.contentService.canStartLesson(args.userId, args.lessonRef);
+      if (!canStartResult.canStart) {
+        if (canStartResult.reason === 'Lesson not found') {
+          throw new BadRequestException('Lesson not found');
+        }
 
-      if (canStartResult.requiredLesson) {
+        if (canStartResult.requiredLesson) {
+          throw new ForbiddenException({
+            error: 'PREREQ_NOT_MET',
+            message: canStartResult.reason,
+            requiredLesson: canStartResult.requiredLesson,
+            currentLesson: args.lessonRef,
+          });
+        }
+
         throw new ForbiddenException({
           error: 'PREREQ_NOT_MET',
-          message: canStartResult.reason,
-          requiredLesson: canStartResult.requiredLesson,
+          message: canStartResult.reason || `Previous lesson must be completed before starting ${args.lessonRef}`,
           currentLesson: args.lessonRef,
         });
       }
-
-      throw new ForbiddenException({
-        error: 'PREREQ_NOT_MET',
-        message: canStartResult.reason || `Previous lesson must be completed before starting ${args.lessonRef}`,
-        currentLesson: args.lessonRef,
-      });
     }
 
     // Ensure ULP exists with moduleRef denormalization

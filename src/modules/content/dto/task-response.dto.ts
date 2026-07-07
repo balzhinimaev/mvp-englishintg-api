@@ -70,7 +70,10 @@ export class SpeakTaskResponseDto {
   @Expose()
   prompt!: string;
 
-  // target (правильный текст) НЕ экспортируется
+  // Модель произношения (озвучка target через TTS). Сам target не экспортируется —
+  // audioUrl вычисляется маппером из target и безопасен для клиента.
+  @Expose()
+  audioUrl?: string;
 }
 
 /**

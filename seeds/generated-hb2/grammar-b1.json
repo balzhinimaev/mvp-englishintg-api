@@ -1,0 +1,339 @@
+{
+  "articles": [
+    {
+      "ref": "grammar.present-perfect",
+      "category": "grammar",
+      "title": {
+        "ru": "Present Perfect (have done)",
+        "en": "Present Perfect"
+      },
+      "summary": "Связь прошлого с настоящим: результат, опыт и незаконченный период.",
+      "level": "B1",
+      "icon": "clock",
+      "order": 19,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Present Perfect связывает прошлое с настоящим. Мы называем действие, которое уже случилось, но его результат или значение важны сейчас. Точное время при этом обычно неважно и не указывается."
+        },
+        {
+          "type": "rule",
+          "text": "Используем Present Perfect, когда: 1) есть результат в настоящем (I've lost my keys — ключей нет сейчас); 2) говорим об опыте за всю жизнь (Have you ever been to London?); 3) описываем период, который ещё не закончился (I've worked here for five years)."
+        },
+        {
+          "type": "heading",
+          "text": "Как строится"
+        },
+        {
+          "type": "table",
+          "title": "have/has + 3-я форма глагола",
+          "headers": ["Форма", "Схема", "Пример"],
+          "rows": [
+            ["+", "have/has + V3", "She has finished her homework."],
+            ["−", "haven't/hasn't + V3", "They haven't arrived yet."],
+            ["?", "Have/Has + подлежащее + V3", "Have you seen this film?"]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "has — только с he, she, it. Со всеми остальными (I, you, we, they) — have."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I have just finished lunch.", "ru": "Я только что закончил обедать." },
+            { "en": "We have known each other since 2015.", "ru": "Мы знаем друг друга с 2015 года." },
+            { "en": "He hasn't called me back.", "ru": "Он мне так и не перезвонил." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Слова-маркеры"
+        },
+        {
+          "type": "table",
+          "title": "Частые сигналы Present Perfect",
+          "headers": ["Слово", "Значение", "Пример"],
+          "rows": [
+            ["already", "уже (раньше ожидаемого)", "I've already eaten."],
+            ["yet", "ещё (в вопросах и отрицаниях)", "Have you finished yet?"],
+            ["just", "только что", "She has just left."],
+            ["ever", "когда-либо (в вопросах)", "Have you ever tried sushi?"],
+            ["never", "никогда", "I have never been to Japan."],
+            ["for", "в течение (период)", "We've lived here for ten years."],
+            ["since", "с (момент в прошлом)", "I've known him since 2010."]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "for + отрезок времени (for two days, for a week), since + точка отсчёта (since Monday, since 9 o'clock, since I was a child)."
+        },
+        {
+          "type": "heading",
+          "text": "Present Perfect или Past Simple?"
+        },
+        {
+          "type": "table",
+          "title": "Сравнение",
+          "headers": ["Present Perfect", "Past Simple"],
+          "rows": [
+            ["Время не важно / не названо", "Есть точное время в прошлом"],
+            ["I have seen that film.", "I saw that film yesterday."],
+            ["Период до сих пор длится", "Период завершён"],
+            ["She has lived here for years.", "She lived there in 2010."]
+          ]
+        },
+        {
+          "type": "example",
+          "en": "I have visited Paris three times.",
+          "ru": "Я был(а) в Париже три раза.",
+          "note": "Опыт за жизнь, без конкретной даты — Present Perfect."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: со словами yesterday, last week, in 2020, ago нельзя использовать Present Perfect. Правильно: I saw him yesterday (НЕ I have seen him yesterday)."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.past-continuous",
+      "category": "grammar",
+      "title": {
+        "ru": "Past Continuous (was doing)",
+        "en": "Past Continuous"
+      },
+      "summary": "Действие в процессе в определённый момент прошлого.",
+      "level": "A2",
+      "icon": "clock",
+      "order": 20,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Past Continuous описывает действие, которое было в процессе в конкретный момент в прошлом. Мы как будто смотрим на действие изнутри, когда оно ещё продолжалось."
+        },
+        {
+          "type": "rule",
+          "text": "Используем Past Continuous, когда: 1) действие длилось в определённый момент (At 8 p.m. I was watching TV); 2) длинное действие прервано коротким (I was cooking when the phone rang); 3) два действия шли одновременно (She was reading while he was cooking)."
+        },
+        {
+          "type": "heading",
+          "text": "Как строится"
+        },
+        {
+          "type": "table",
+          "title": "was/were + глагол с -ing",
+          "headers": ["Форма", "Схема", "Пример"],
+          "rows": [
+            ["+", "was/were + V-ing", "I was working at 9 a.m."],
+            ["−", "wasn't/weren't + V-ing", "They weren't sleeping."],
+            ["?", "Was/Were + подлежащее + V-ing", "Were you waiting for me?"]
+          ]
+        },
+        {
+          "type": "note",
+          "text": "was — с I, he, she, it. were — с you, we, they."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "It was raining all morning.", "ru": "Всё утро шёл дождь." },
+            { "en": "We were having dinner at eight.", "ru": "В восемь мы ужинали." },
+            { "en": "What were you doing yesterday evening?", "ru": "Что ты делал вчера вечером?" }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Past Continuous и Past Simple вместе"
+        },
+        {
+          "type": "text",
+          "text": "Часто длинное фоновое действие (Past Continuous) прерывается коротким действием (Past Simple). Их связывают слова when (когда) и while (пока, в то время как)."
+        },
+        {
+          "type": "example",
+          "en": "I was walking home when it started to rain.",
+          "ru": "Я шёл домой, когда начался дождь.",
+          "note": "Длинное действие — was walking; короткое, прервавшее его, — started."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "While she was cooking, the doorbell rang.", "ru": "Пока она готовила, зазвонил дверной звонок." },
+            { "en": "They were talking when the teacher came in.", "ru": "Они разговаривали, когда вошёл учитель." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Глаголы состояния (know, want, like, love, understand, need) обычно не ставят в Continuous. Говорим I knew the answer, а не I was knowing."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: не путайте времена. Короткое, завершённое действие — Past Simple (the phone rang), а не Past Continuous (the phone was ringing описывает длящийся звонок как фон)."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.conditionals",
+      "category": "grammar",
+      "title": {
+        "ru": "Условные предложения (0, 1, 2)",
+        "en": "Conditionals"
+      },
+      "summary": "Как говорить об условиях: факты, реальное будущее и нереальное настоящее.",
+      "level": "B1",
+      "icon": "compare",
+      "order": 21,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Условные предложения (conditionals) состоят из двух частей: условие с if (если...) и результат (то...). Порядок частей свободный; если предложение начинается с if, между частями ставится запятая."
+        },
+        {
+          "type": "heading",
+          "text": "Три основных типа"
+        },
+        {
+          "type": "table",
+          "title": "Zero, First и Second Conditional",
+          "headers": ["Тип", "if-часть", "Главная часть", "Смысл"],
+          "rows": [
+            ["Zero (0)", "if + Present Simple", "Present Simple", "Всегда истинно, факт, закон природы"],
+            ["First (1)", "if + Present Simple", "will + инфинитив", "Реальное, вероятное будущее"],
+            ["Second (2)", "if + Past Simple", "would + инфинитив", "Нереальное или маловероятное настоящее"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Zero Conditional — факты"
+        },
+        {
+          "type": "rule",
+          "text": "Используем для того, что всегда верно: законы природы, привычки, инструкции. Здесь if можно заменить на when без потери смысла."
+        },
+        {
+          "type": "example",
+          "en": "If you heat water to 100 °C, it boils.",
+          "ru": "Если нагреть воду до 100 °C, она закипает.",
+          "note": "Обе части — Present Simple: это всегда правда."
+        },
+        {
+          "type": "heading",
+          "text": "First Conditional — реальное будущее"
+        },
+        {
+          "type": "rule",
+          "text": "Используем для реальных, вполне возможных ситуаций в будущем. После if — Present Simple, в главной части — will."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "If it rains tomorrow, we will stay at home.", "ru": "Если завтра пойдёт дождь, мы останемся дома." },
+            { "en": "She will pass the exam if she studies hard.", "ru": "Она сдаст экзамен, если будет усердно заниматься." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Second Conditional — нереальное настоящее"
+        },
+        {
+          "type": "rule",
+          "text": "Используем для воображаемых, маловероятных или невозможных ситуаций сейчас. После if — Past Simple, в главной части — would."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "If I had more money, I would travel the world.", "ru": "Если бы у меня было больше денег, я бы объездил весь мир." },
+            { "en": "If I were you, I would apologise.", "ru": "На твоём месте я бы извинился." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В Second Conditional с глаголом be для всех лиц часто используют were: If I were rich..., If he were here... Это считается более правильным, чем was."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: после if в 1-м типе НЕ ставим will. Правильно: If it rains, we will stay home (НЕ If it will rain). Во 2-м типе НЕ ставим would после if: If I had time, I would help (НЕ If I would have time)."
+        }
+      ]
+    },
+    {
+      "ref": "grammar.gerund-infinitive",
+      "category": "grammar",
+      "title": {
+        "ru": "Герундий и инфинитив (-ing / to)",
+        "en": "Gerund & infinitive"
+      },
+      "summary": "Когда после глагола нужна форма -ing, а когда to + глагол.",
+      "level": "B1",
+      "icon": "verb",
+      "order": 22,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Когда после одного глагола идёт другой, второй нередко превращается в герундий (глагол + -ing) или в инфинитив (to + глагол). Выбор зависит от первого глагола, и часто его нужно просто запомнить."
+        },
+        {
+          "type": "rule",
+          "text": "Герундий (-ing) используем: после enjoy, finish, avoid, mind, suggest, keep, practise; после предлогов (good at cooking, interested in learning); как подлежащее (Swimming is fun)."
+        },
+        {
+          "type": "table",
+          "title": "Глаголы, после которых идёт -ing",
+          "headers": ["Глагол", "Пример", "Перевод"],
+          "rows": [
+            ["enjoy", "I enjoy reading.", "Мне нравится читать."],
+            ["finish", "She finished working.", "Она закончила работать."],
+            ["avoid", "He avoids eating late.", "Он избегает есть поздно."],
+            ["mind", "Do you mind waiting?", "Вы не против подождать?"],
+            ["suggest", "They suggested going out.", "Они предложили сходить куда-нибудь."]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "Инфинитив (to + глагол) используем: после want, need, decide, hope, promise, plan, learn, would like; чтобы выразить цель (I went out to buy bread)."
+        },
+        {
+          "type": "table",
+          "title": "Глаголы, после которых идёт to + глагол",
+          "headers": ["Глагол", "Пример", "Перевод"],
+          "rows": [
+            ["want", "I want to go home.", "Я хочу пойти домой."],
+            ["decide", "We decided to stay.", "Мы решили остаться."],
+            ["hope", "She hopes to win.", "Она надеется победить."],
+            ["need", "You need to rest.", "Тебе нужно отдохнуть."],
+            ["would like", "I'd like to help.", "Я бы хотел помочь."]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "После like, love, hate, start"
+        },
+        {
+          "type": "text",
+          "text": "После глаголов like, love, hate, prefer, start, begin можно использовать обе формы почти без разницы в значении."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I like cooking. / I like to cook.", "ru": "Мне нравится готовить." },
+            { "en": "She started running. / She started to run.", "ru": "Она начала бегать." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "После модальных глаголов (can, must, should, will) и после make/let идёт голый инфинитив без to: I can swim, She let me go, They made him wait."
+        },
+        {
+          "type": "example",
+          "en": "I want to learn English, and I enjoy watching films in English.",
+          "ru": "Я хочу выучить английский и люблю смотреть фильмы на английском.",
+          "note": "want to learn — инфинитив; enjoy watching — герундий."
+        },
+        {
+          "type": "note",
+          "text": "Типичная ошибка: после enjoy, finish, avoid НЕ ставим инфинитив. Правильно: I enjoy dancing (НЕ I enjoy to dance). И наоборот: I want to eat (НЕ I want eating)."
+        }
+      ]
+    }
+  ]
+}

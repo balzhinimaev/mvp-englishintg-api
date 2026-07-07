@@ -5,6 +5,8 @@ import { ApiBadRequestResponse, ApiInternalServerErrorResponse, ApiNotFoundRespo
 import { ProgressService } from './progress.service';
 import { AnswerValidatorService, InvalidAnswerFormatError, LessonNotFoundError, TaskNotFoundError, ValidationDataError } from './answer-validator.service';
 import { SubmitAnswerDto } from './dto/submit-answer.dto';
+import { StartSessionDto } from './dto/start-session.dto';
+import { EndSessionDto } from './dto/end-session.dto';
 import { DailyStat, DailyStatDocument } from '../common/schemas/daily-stat.schema';
 import { XpTransaction, XpTransactionDocument } from '../common/schemas/xp-transaction.schema';
 import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
@@ -51,18 +53,20 @@ export class ProgressController {
   ) {}
 
   @Post('sessions/start')
-  async startSession(
-    @Body() body: { moduleRef?: string; lessonRef?: string; source?: 'reminder' | 'home' | 'deeplink' | 'unknown' },
-    @Request() req: any,
-  ) {
+  async startSession(@Body() body: StartSessionDto, @Request() req: any) {
     const userId = req.user?.userId; // Get userId from JWT token
     const session = await this.progress.startSession(userId, { moduleRef: body.moduleRef, lessonRef: body.lessonRef, source: body.source });
     return { sessionId: (session as any)._id };
   }
 
   @Post('sessions/:sessionId/end')
-  async endSession(@Param('sessionId') sessionId: string, @Body() body: { extraXp?: number }) {
-    const session = await this.progress.endSession(sessionId, body?.extraXp || 0);
+  async endSession(
+    @Param('sessionId') sessionId: string,
+    @Body() body: EndSessionDto,
+    @Request() req: any,
+  ) {
+    const userId = req.user?.userId; // Get userId from JWT token
+    const session = await this.progress.endSession(sessionId, body?.extraXp || 0, String(userId));
     return { ok: Boolean(session) };
   }
 

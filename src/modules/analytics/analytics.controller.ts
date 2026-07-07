@@ -1,10 +1,13 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, Query, UseGuards } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { AppEvent, EventDocument } from '../common/schemas/event.schema';
 import { Payment, PaymentDocument } from '../common/schemas/payment.schema';
+import { JwtAuthGuard } from '../auth/jwt-auth.guard';
+import { AdminGuard } from '../auth/admin.guard';
 
 @Controller('admin/analytics')
+@UseGuards(JwtAuthGuard, AdminGuard)
 export class AnalyticsController {
   constructor(
     @InjectModel(AppEvent.name) private readonly eventModel: Model<EventDocument>,

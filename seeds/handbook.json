@@ -1,0 +1,7567 @@
+{
+ "articles": [
+  {
+   "ref": "cheatsheet.irregular-verbs",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Неправильные глаголы",
+    "en": "Irregular verbs"
+   },
+   "summary": "Таблица форм самых частых неправильных глаголов английского языка.",
+   "level": "A2",
+   "icon": "verb",
+   "order": 1,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Неправильные глаголы"
+    },
+    {
+     "type": "text",
+     "text": "У неправильных глаголов вторая (Past Simple) и третья (Past Participle) формы образуются не по правилу «+ed», а особым образом. Их нужно просто выучить. Ниже — 40 самых частых глаголов."
+    },
+    {
+     "type": "table",
+     "title": "Три формы глагола",
+     "headers": [
+      "Инфинитив",
+      "Past Simple",
+      "Past Participle",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "be",
+       "was / were",
+       "been",
+       "быть"
+      ],
+      [
+       "have",
+       "had",
+       "had",
+       "иметь"
+      ],
+      [
+       "do",
+       "did",
+       "done",
+       "делать"
+      ],
+      [
+       "say",
+       "said",
+       "said",
+       "говорить, сказать"
+      ],
+      [
+       "go",
+       "went",
+       "gone",
+       "идти, ехать"
+      ],
+      [
+       "get",
+       "got",
+       "got / gotten",
+       "получать, становиться"
+      ],
+      [
+       "make",
+       "made",
+       "made",
+       "делать, создавать"
+      ],
+      [
+       "know",
+       "knew",
+       "known",
+       "знать"
+      ],
+      [
+       "think",
+       "thought",
+       "thought",
+       "думать"
+      ],
+      [
+       "take",
+       "took",
+       "taken",
+       "брать"
+      ],
+      [
+       "see",
+       "saw",
+       "seen",
+       "видеть"
+      ],
+      [
+       "come",
+       "came",
+       "come",
+       "приходить"
+      ],
+      [
+       "give",
+       "gave",
+       "given",
+       "давать"
+      ],
+      [
+       "find",
+       "found",
+       "found",
+       "находить"
+      ],
+      [
+       "tell",
+       "told",
+       "told",
+       "рассказывать"
+      ],
+      [
+       "become",
+       "became",
+       "become",
+       "становиться"
+      ],
+      [
+       "show",
+       "showed",
+       "shown",
+       "показывать"
+      ],
+      [
+       "leave",
+       "left",
+       "left",
+       "покидать, уходить"
+      ],
+      [
+       "feel",
+       "felt",
+       "felt",
+       "чувствовать"
+      ],
+      [
+       "put",
+       "put",
+       "put",
+       "класть, ставить"
+      ],
+      [
+       "bring",
+       "brought",
+       "brought",
+       "приносить"
+      ],
+      [
+       "begin",
+       "began",
+       "begun",
+       "начинать"
+      ],
+      [
+       "keep",
+       "kept",
+       "kept",
+       "хранить, продолжать"
+      ],
+      [
+       "hold",
+       "held",
+       "held",
+       "держать"
+      ],
+      [
+       "write",
+       "wrote",
+       "written",
+       "писать"
+      ],
+      [
+       "stand",
+       "stood",
+       "stood",
+       "стоять"
+      ],
+      [
+       "hear",
+       "heard",
+       "heard",
+       "слышать"
+      ],
+      [
+       "let",
+       "let",
+       "let",
+       "позволять"
+      ],
+      [
+       "mean",
+       "meant",
+       "meant",
+       "значить, иметь в виду"
+      ],
+      [
+       "set",
+       "set",
+       "set",
+       "устанавливать"
+      ],
+      [
+       "meet",
+       "met",
+       "met",
+       "встречать"
+      ],
+      [
+       "pay",
+       "paid",
+       "paid",
+       "платить"
+      ],
+      [
+       "sit",
+       "sat",
+       "sat",
+       "сидеть"
+      ],
+      [
+       "speak",
+       "spoke",
+       "spoken",
+       "говорить, разговаривать"
+      ],
+      [
+       "lie",
+       "lay",
+       "lain",
+       "лежать"
+      ],
+      [
+       "lead",
+       "led",
+       "led",
+       "вести, возглавлять"
+      ],
+      [
+       "read",
+       "read",
+       "read",
+       "читать"
+      ],
+      [
+       "grow",
+       "grew",
+       "grown",
+       "расти, выращивать"
+      ],
+      [
+       "lose",
+       "lost",
+       "lost",
+       "терять, проигрывать"
+      ],
+      [
+       "fall",
+       "fell",
+       "fallen",
+       "падать"
+      ],
+      [
+       "send",
+       "sent",
+       "sent",
+       "отправлять"
+      ],
+      [
+       "build",
+       "built",
+       "built",
+       "строить"
+      ],
+      [
+       "understand",
+       "understood",
+       "understood",
+       "понимать"
+      ],
+      [
+       "draw",
+       "drew",
+       "drawn",
+       "рисовать, тянуть"
+      ],
+      [
+       "break",
+       "broke",
+       "broken",
+       "ломать"
+      ],
+      [
+       "spend",
+       "spent",
+       "spent",
+       "тратить, проводить"
+      ],
+      [
+       "buy",
+       "bought",
+       "bought",
+       "покупать"
+      ],
+      [
+       "eat",
+       "ate",
+       "eaten",
+       "есть, кушать"
+      ],
+      [
+       "drink",
+       "drank",
+       "drunk",
+       "пить"
+      ],
+      [
+       "drive",
+       "drove",
+       "driven",
+       "водить, ехать"
+      ],
+      [
+       "run",
+       "ran",
+       "run",
+       "бежать"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "I went to London last year.",
+     "ru": "Я ездил в Лондон в прошлом году.",
+     "audioUrl": "/audio/hb/8914f0e6eebc4e31.mp3"
+    },
+    {
+     "type": "example",
+     "en": "She has written three books.",
+     "ru": "Она написала три книги.",
+     "audioUrl": "/audio/hb/546ed9d68ab2254a.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Форма read всегда пишется одинаково, но в прошедшем времени читается как «ред» [red], а не «рид»."
+    },
+    {
+     "type": "note",
+     "text": "Past Participle (третья форма) нужна для Present Perfect (have done) и пассивного залога (was made)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.pronouns",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Местоимения (таблица)",
+    "en": "Pronouns table"
+   },
+   "summary": "Полная таблица личных и притяжательных местоимений английского языка.",
+   "level": "A1",
+   "icon": "pronoun",
+   "order": 2,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Местоимения"
+    },
+    {
+     "type": "text",
+     "text": "Личные местоимения меняют форму в зависимости от роли в предложении. Подлежащее (кто?), дополнение (кого/кому?), притяжательное прилагательное (чей? + существительное) и притяжательное местоимение (чей? без существительного)."
+    },
+    {
+     "type": "table",
+     "title": "Формы местоимений",
+     "headers": [
+      "Подлежащее",
+      "Дополнение",
+      "Притяж. прил.",
+      "Притяж. мест."
+     ],
+     "rows": [
+      [
+       "I",
+       "me",
+       "my",
+       "mine"
+      ],
+      [
+       "you",
+       "you",
+       "your",
+       "yours"
+      ],
+      [
+       "he",
+       "him",
+       "his",
+       "his"
+      ],
+      [
+       "she",
+       "her",
+       "her",
+       "hers"
+      ],
+      [
+       "it",
+       "it",
+       "its",
+       "—"
+      ],
+      [
+       "we",
+       "us",
+       "our",
+       "ours"
+      ],
+      [
+       "they",
+       "them",
+       "their",
+       "theirs"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "This is my book. The book is mine.",
+     "ru": "Это моя книга. Книга — моя.",
+     "audioUrl": "/audio/hb/ede94d40514d0d5f.mp3"
+    },
+    {
+     "type": "example",
+     "en": "She gave him her number.",
+     "ru": "Она дала ему свой номер.",
+     "audioUrl": "/audio/hb/6eaff9203b5a92ad.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Не путайте its (притяжательное, «его/её» о предмете) и it's (сокращение от it is)."
+    },
+    {
+     "type": "note",
+     "text": "После притяжательного прилагательного всегда идёт существительное (my car), а притяжательное местоимение стоит само по себе (mine)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.articles",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Артикли: когда какой",
+    "en": "Articles cheat sheet"
+   },
+   "summary": "Когда ставить a/an, когда the, а когда артикль не нужен.",
+   "level": "A1",
+   "icon": "article",
+   "order": 3,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Артикли: a / an / the / —"
+    },
+    {
+     "type": "text",
+     "text": "Артикль показывает, о каком предмете идёт речь: о любом (a/an), о конкретном (the) или об общем понятии (без артикля). Ниже — основные случаи."
+    },
+    {
+     "type": "table",
+     "title": "Какой артикль выбрать",
+     "headers": [
+      "Случай",
+      "Артикль",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Предмет впервые, один из многих",
+       "a / an",
+       "I bought a car."
+      ],
+      [
+       "Перед гласным звуком",
+       "an",
+       "an apple, an hour"
+      ],
+      [
+       "Уже упоминали или он единственный",
+       "the",
+       "The car is red."
+      ],
+      [
+       "Уникальные объекты",
+       "the",
+       "the sun, the moon"
+      ],
+      [
+       "Названия рек, морей, океанов",
+       "the",
+       "the Thames, the Pacific"
+      ],
+      [
+       "Множественное число в общем смысле",
+       "—",
+       "Cats are cute."
+      ],
+      [
+       "Неисчисляемое в общем смысле",
+       "—",
+       "Water is life."
+      ],
+      [
+       "Имена, города, большинство стран",
+       "—",
+       "John lives in Paris."
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "I saw a dog. The dog was very big.",
+     "ru": "Я увидел собаку. Собака была очень большая.",
+     "audioUrl": "/audio/hb/93450ad899cd4e3c.mp3"
+    },
+    {
+     "type": "example",
+     "en": "She is an engineer.",
+     "ru": "Она инженер.",
+     "audioUrl": "/audio/hb/97bcc5e2ea08ca52.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Выбор a или an зависит от звука, а не от буквы: a university (звук «ю»), an hour (h не читается)."
+    },
+    {
+     "type": "note",
+     "text": "The произносится [ðə] перед согласным звуком и [ðiː] перед гласным (the apple)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.prepositions-time",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Предлоги времени: in / on / at",
+    "en": "Prepositions of time"
+   },
+   "summary": "Когда использовать in, on и at при указании времени.",
+   "level": "A2",
+   "icon": "clock",
+   "order": 4,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Предлоги времени"
+    },
+    {
+     "type": "text",
+     "text": "Три главных предлога времени: at — для точного времени, on — для дней и дат, in — для длинных периодов. Правило простое: от точного к общему."
+    },
+    {
+     "type": "table",
+     "title": "in / on / at во времени",
+     "headers": [
+      "Предлог",
+      "Когда используем",
+      "Примеры"
+     ],
+     "rows": [
+      [
+       "at",
+       "точное время",
+       "at 7 o'clock, at noon"
+      ],
+      [
+       "at",
+       "устойчивые выражения",
+       "at night, at the weekend"
+      ],
+      [
+       "on",
+       "дни недели",
+       "on Monday, on Friday"
+      ],
+      [
+       "on",
+       "даты и особые дни",
+       "on May 5th, on my birthday"
+      ],
+      [
+       "in",
+       "месяцы, годы, века",
+       "in July, in 2026"
+      ],
+      [
+       "in",
+       "части суток",
+       "in the morning, in the evening"
+      ],
+      [
+       "in",
+       "времена года",
+       "in summer, in winter"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "The meeting is at 9 on Monday in September.",
+     "ru": "Встреча в 9 часов в понедельник в сентябре.",
+     "audioUrl": "/audio/hb/78df498692efc51d.mp3"
+    },
+    {
+     "type": "example",
+     "en": "I was born in 1998.",
+     "ru": "Я родился в 1998 году.",
+     "audioUrl": "/audio/hb/55e45d812a79a32d.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Запомните исключение: at night, но in the morning / in the afternoon / in the evening."
+    },
+    {
+     "type": "note",
+     "text": "Со словами this, last, next, every предлог не нужен: see you next week (без in)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.prepositions-place",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Предлоги места",
+    "en": "Prepositions of place"
+   },
+   "summary": "Основные предлоги, которые показывают, где находится предмет.",
+   "level": "A2",
+   "icon": "pin",
+   "order": 5,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Предлоги места"
+    },
+    {
+     "type": "text",
+     "text": "Предлоги места отвечают на вопрос «где?». Ниже — самые нужные с их значением и примером."
+    },
+    {
+     "type": "table",
+     "title": "Где находится предмет",
+     "headers": [
+      "Предлог",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "in",
+       "внутри",
+       "The keys are in the bag."
+      ],
+      [
+       "on",
+       "на поверхности",
+       "The book is on the table."
+      ],
+      [
+       "at",
+       "в точке / у места",
+       "She is at the door."
+      ],
+      [
+       "under",
+       "под",
+       "The cat is under the chair."
+      ],
+      [
+       "over / above",
+       "над",
+       "A lamp is above the desk."
+      ],
+      [
+       "next to / beside",
+       "рядом с",
+       "Sit next to me."
+      ],
+      [
+       "between",
+       "между (двумя)",
+       "The bank is between the shops."
+      ],
+      [
+       "among",
+       "среди (многих)",
+       "He stood among the trees."
+      ],
+      [
+       "behind",
+       "позади",
+       "The garden is behind the house."
+      ],
+      [
+       "in front of",
+       "перед",
+       "A car is in front of the house."
+      ],
+      [
+       "near",
+       "около, близко",
+       "The shop is near the station."
+      ],
+      [
+       "opposite",
+       "напротив",
+       "The café is opposite the bank."
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "The dog is under the table, next to the box.",
+     "ru": "Собака под столом, рядом с коробкой.",
+     "audioUrl": "/audio/hb/a03ac9da9830ddbb.mp3"
+    },
+    {
+     "type": "example",
+     "en": "There is a picture on the wall.",
+     "ru": "На стене есть картина.",
+     "audioUrl": "/audio/hb/a22ecab8e9efb151.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "between — между двумя объектами, among — среди трёх и более."
+    },
+    {
+     "type": "note",
+     "text": "in — внутри объёма (in the room), on — на поверхности (on the floor), at — точка в пространстве (at the bus stop)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.numbers",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Числа: количественные и порядковые",
+    "en": "Numbers"
+   },
+   "summary": "Таблица количественных (one) и порядковых (first) числительных.",
+   "level": "A1",
+   "icon": "number",
+   "order": 6,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Числа"
+    },
+    {
+     "type": "text",
+     "text": "Количественные числительные (cardinal) отвечают на вопрос «сколько?», а порядковые (ordinal) — «какой по счёту?». Большинство порядковых образуется добавлением -th."
+    },
+    {
+     "type": "table",
+     "title": "Cardinal и Ordinal",
+     "headers": [
+      "Цифра",
+      "Количественное (cardinal)",
+      "Порядковое (ordinal)"
+     ],
+     "rows": [
+      [
+       "1",
+       "one",
+       "first"
+      ],
+      [
+       "2",
+       "two",
+       "second"
+      ],
+      [
+       "3",
+       "three",
+       "third"
+      ],
+      [
+       "4",
+       "four",
+       "fourth"
+      ],
+      [
+       "5",
+       "five",
+       "fifth"
+      ],
+      [
+       "6",
+       "six",
+       "sixth"
+      ],
+      [
+       "7",
+       "seven",
+       "seventh"
+      ],
+      [
+       "8",
+       "eight",
+       "eighth"
+      ],
+      [
+       "9",
+       "nine",
+       "ninth"
+      ],
+      [
+       "10",
+       "ten",
+       "tenth"
+      ],
+      [
+       "11",
+       "eleven",
+       "eleventh"
+      ],
+      [
+       "12",
+       "twelve",
+       "twelfth"
+      ],
+      [
+       "13",
+       "thirteen",
+       "thirteenth"
+      ],
+      [
+       "14",
+       "fourteen",
+       "fourteenth"
+      ],
+      [
+       "15",
+       "fifteen",
+       "fifteenth"
+      ],
+      [
+       "16",
+       "sixteen",
+       "sixteenth"
+      ],
+      [
+       "17",
+       "seventeen",
+       "seventeenth"
+      ],
+      [
+       "18",
+       "eighteen",
+       "eighteenth"
+      ],
+      [
+       "19",
+       "nineteen",
+       "nineteenth"
+      ],
+      [
+       "20",
+       "twenty",
+       "twentieth"
+      ],
+      [
+       "30",
+       "thirty",
+       "thirtieth"
+      ],
+      [
+       "40",
+       "forty",
+       "fortieth"
+      ],
+      [
+       "50",
+       "fifty",
+       "fiftieth"
+      ],
+      [
+       "60",
+       "sixty",
+       "sixtieth"
+      ],
+      [
+       "70",
+       "seventy",
+       "seventieth"
+      ],
+      [
+       "80",
+       "eighty",
+       "eightieth"
+      ],
+      [
+       "90",
+       "ninety",
+       "ninetieth"
+      ],
+      [
+       "100",
+       "one hundred",
+       "hundredth"
+      ],
+      [
+       "1000",
+       "one thousand",
+       "thousandth"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "This is my first time in Paris.",
+     "ru": "Это мой первый раз в Париже.",
+     "audioUrl": "/audio/hb/44c0869038505239.mp3"
+    },
+    {
+     "type": "example",
+     "en": "There are twenty-one students in the class.",
+     "ru": "В классе двадцать один ученик.",
+     "audioUrl": "/audio/hb/0786aeedcf3e4a61.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Обратите внимание на нестандартные формы: first, second, third, а также fifth, eighth, ninth, twelfth."
+    },
+    {
+     "type": "note",
+     "text": "У десятков -ty меняется на -tieth: twenty → twentieth, forty → fortieth (без u!)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.question-words",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Вопросительные слова",
+    "en": "Question words"
+   },
+   "summary": "Слова, с которых начинаются специальные вопросы: what, where, when и другие.",
+   "level": "A1",
+   "icon": "question",
+   "order": 7,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Вопросительные слова"
+    },
+    {
+     "type": "text",
+     "text": "Специальные вопросы начинаются с вопросительного слова. Оно определяет, какую информацию мы хотим узнать."
+    },
+    {
+     "type": "table",
+     "title": "Wh-слова",
+     "headers": [
+      "Слово",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "What",
+       "что, какой",
+       "What is your name?"
+      ],
+      [
+       "Where",
+       "где, куда",
+       "Where do you live?"
+      ],
+      [
+       "When",
+       "когда",
+       "When does it start?"
+      ],
+      [
+       "Who",
+       "кто",
+       "Who is that man?"
+      ],
+      [
+       "Why",
+       "почему",
+       "Why are you late?"
+      ],
+      [
+       "How",
+       "как",
+       "How do you feel?"
+      ],
+      [
+       "Which",
+       "который (из)",
+       "Which colour do you like?"
+      ],
+      [
+       "Whose",
+       "чей",
+       "Whose bag is this?"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "Where are you from?",
+     "ru": "Откуда ты?",
+     "audioUrl": "/audio/hb/7bc5e7f6b5915a1e.mp3"
+    },
+    {
+     "type": "example",
+     "en": "How much does it cost?",
+     "ru": "Сколько это стоит?",
+     "audioUrl": "/audio/hb/937807866f029dca.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Со словом how образуются полезные пары: how much (сколько, неисчисляемое), how many (сколько, исчисляемое), how old (сколько лет), how long (как долго)."
+    },
+    {
+     "type": "note",
+     "text": "Which используем, когда выбор ограничен (which of these?), а what — когда выбор открыт."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.modals",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Модальные глаголы",
+    "en": "Modal verbs"
+   },
+   "summary": "Что выражают can, could, must, should, may и have to.",
+   "level": "A2",
+   "icon": "modal",
+   "order": 8,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Модальные глаголы"
+    },
+    {
+     "type": "text",
+     "text": "Модальные глаголы показывают отношение к действию: возможность, необходимость, разрешение или совет. После них идёт глагол без to (кроме have to)."
+    },
+    {
+     "type": "table",
+     "title": "Значения модальных глаголов",
+     "headers": [
+      "Глагол",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "can",
+       "умение, возможность",
+       "I can swim."
+      ],
+      [
+       "can",
+       "разрешение (неформ.)",
+       "Can I sit here?"
+      ],
+      [
+       "could",
+       "прошлое умение, вежливость",
+       "Could you help me?"
+      ],
+      [
+       "must",
+       "обязанность, уверенность",
+       "You must stop here."
+      ],
+      [
+       "mustn't",
+       "запрет",
+       "You mustn't smoke."
+      ],
+      [
+       "should",
+       "совет",
+       "You should rest."
+      ],
+      [
+       "may",
+       "разрешение, вероятность",
+       "It may rain today."
+      ],
+      [
+       "might",
+       "малая вероятность",
+       "She might come later."
+      ],
+      [
+       "have to",
+       "внешняя необходимость",
+       "I have to work tomorrow."
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "You should see a doctor.",
+     "ru": "Тебе следует показаться врачу.",
+     "audioUrl": "/audio/hb/c2b1d1b4cd95859e.mp3"
+    },
+    {
+     "type": "example",
+     "en": "I can't come to the party.",
+     "ru": "Я не могу прийти на вечеринку.",
+     "audioUrl": "/audio/hb/5465668803ca45b6.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Модальные глаголы не меняются по лицам: he can (без -s), she must (без -s)."
+    },
+    {
+     "type": "note",
+     "text": "mustn't — это строгий запрет («нельзя»), а don't have to — отсутствие необходимости («не обязательно»). Не путайте!"
+    }
+   ]
+  },
+  {
+   "ref": "grammar.comparatives",
+   "category": "grammar",
+   "title": {
+    "ru": "Сравнительная и превосходная степень",
+    "en": "Comparatives & superlatives"
+   },
+   "summary": "Как сравнивать вещи: -er/more и the -est/the most.",
+   "level": "A2",
+   "icon": "compare",
+   "order": 15,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Когда мы сравниваем два предмета, используем сравнительную степень (comparative). Когда выделяем один из группы — превосходную (superlative)."
+    },
+    {
+     "type": "heading",
+     "text": "Короткие прилагательные (1 слог)"
+    },
+    {
+     "type": "rule",
+     "text": "Сравнительная: прилагательное + -er + than. Превосходная: the + прилагательное + -est."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "My car is faster than yours.",
+       "ru": "Моя машина быстрее твоей.",
+       "audioUrl": "/audio/hb/1fa7e4d62c6d7b17.mp3"
+      },
+      {
+       "en": "This is the cheapest phone in the shop.",
+       "ru": "Это самый дешёвый телефон в магазине.",
+       "audioUrl": "/audio/hb/6742b6a953c6980c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Длинные прилагательные (2+ слога)"
+    },
+    {
+     "type": "rule",
+     "text": "Сравнительная: more + прилагательное + than. Превосходная: the most + прилагательное."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "This book is more interesting than that one.",
+       "ru": "Эта книга интереснее, чем та.",
+       "audioUrl": "/audio/hb/8446f8ab025fc988.mp3"
+      },
+      {
+       "en": "She is the most careful driver I know.",
+       "ru": "Она самый аккуратный водитель, которого я знаю.",
+       "audioUrl": "/audio/hb/aa08d89cf8a4850a.mp3"
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Образование степеней",
+     "headers": [
+      "Прилагательное",
+      "Сравнительная",
+      "Превосходная"
+     ],
+     "rows": [
+      [
+       "cheap",
+       "cheaper",
+       "the cheapest"
+      ],
+      [
+       "big",
+       "bigger",
+       "the biggest"
+      ],
+      [
+       "happy",
+       "happier",
+       "the happiest"
+      ],
+      [
+       "expensive",
+       "more expensive",
+       "the most expensive"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Особые формы"
+    },
+    {
+     "type": "table",
+     "title": "Исключения",
+     "headers": [
+      "Прилагательное",
+      "Сравнительная",
+      "Превосходная"
+     ],
+     "rows": [
+      [
+       "good",
+       "better",
+       "the best"
+      ],
+      [
+       "bad",
+       "worse",
+       "the worst"
+      ],
+      [
+       "far",
+       "further",
+       "the furthest"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Слова big, hot, thin удваивают последнюю согласную: bigger, hotter, thinner. В словах на -y меняем y на i: happy → happier."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: «more cheaper» или «the most best». Нельзя соединять два способа сразу. Правильно: cheaper, the best."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.some-any",
+   "category": "grammar",
+   "title": {
+    "ru": "Some / any / much / many",
+    "en": "Some/any/much/many"
+   },
+   "summary": "Как говорить о количестве с исчисляемыми и неисчисляемыми словами.",
+   "level": "A2",
+   "icon": "list",
+   "order": 16,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Эти слова показывают количество. Выбор зависит от того, утверждение это, вопрос или отрицание, и от того, можно ли предмет посчитать."
+    },
+    {
+     "type": "heading",
+     "text": "Some и any"
+    },
+    {
+     "type": "rule",
+     "text": "Some — в утверждениях. Any — в вопросах и отрицаниях."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I have some questions.",
+       "ru": "У меня есть несколько вопросов.",
+       "audioUrl": "/audio/hb/eb7b778a6ea424cc.mp3"
+      },
+      {
+       "en": "Do you have any water?",
+       "ru": "У тебя есть вода?",
+       "audioUrl": "/audio/hb/27afcc01265aaa67.mp3"
+      },
+      {
+       "en": "There isn't any milk in the fridge.",
+       "ru": "В холодильнике нет молока.",
+       "audioUrl": "/audio/hb/09eed4a903a86a5f.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В вежливых просьбах и предложениях используем some, а не any: «Would you like some tea?» (Хотите чаю?)."
+    },
+    {
+     "type": "heading",
+     "text": "Much и many"
+    },
+    {
+     "type": "rule",
+     "text": "Many — с исчисляемыми (many books). Much — с неисчисляемыми (much time). A lot of — с обоими."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "How many people were there?",
+       "ru": "Сколько там было людей?",
+       "audioUrl": "/audio/hb/d3b71863f4759d20.mp3"
+      },
+      {
+       "en": "I don't have much money.",
+       "ru": "У меня немного денег.",
+       "audioUrl": "/audio/hb/1ba48029b8069f1d.mp3"
+      },
+      {
+       "en": "We have a lot of friends here.",
+       "ru": "У нас здесь много друзей.",
+       "audioUrl": "/audio/hb/56556ece29611a15.mp3"
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Выбор слова",
+     "headers": [
+      "Тип слова",
+      "Утверждение",
+      "Вопрос / отрицание"
+     ],
+     "rows": [
+      [
+       "Исчисляемые (apples)",
+       "some / a lot of",
+       "any / many"
+      ],
+      [
+       "Неисчисляемые (water)",
+       "some / a lot of",
+       "any / much"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: «I have much friends». Friends — исчисляемое, нужно many или a lot of: «I have a lot of friends»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.adverbs-frequency",
+   "category": "grammar",
+   "title": {
+    "ru": "Наречия частоты (always, often…)",
+    "en": "Adverbs of frequency"
+   },
+   "summary": "Как часто происходит действие и где ставить эти наречия.",
+   "level": "A2",
+   "icon": "clock",
+   "order": 17,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Наречия частоты отвечают на вопрос «как часто?» и показывают регулярность действия."
+    },
+    {
+     "type": "table",
+     "title": "Шкала частоты",
+     "headers": [
+      "Наречие",
+      "Перевод",
+      "Частота"
+     ],
+     "rows": [
+      [
+       "always",
+       "всегда",
+       "100%"
+      ],
+      [
+       "usually",
+       "обычно",
+       "90%"
+      ],
+      [
+       "often",
+       "часто",
+       "70%"
+      ],
+      [
+       "sometimes",
+       "иногда",
+       "50%"
+      ],
+      [
+       "rarely",
+       "редко",
+       "10%"
+      ],
+      [
+       "never",
+       "никогда",
+       "0%"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Место в предложении"
+    },
+    {
+     "type": "rule",
+     "text": "Наречие частоты ставится перед основным глаголом, но после глагола to be."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I always drink coffee in the morning.",
+       "ru": "Я всегда пью кофе утром.",
+       "audioUrl": "/audio/hb/64b9823e77e270cb.mp3"
+      },
+      {
+       "en": "She is often late for work.",
+       "ru": "Она часто опаздывает на работу.",
+       "audioUrl": "/audio/hb/444587ddceb0a1c2.mp3"
+      },
+      {
+       "en": "We sometimes watch films on Fridays.",
+       "ru": "Мы иногда смотрим фильмы по пятницам.",
+       "audioUrl": "/audio/hb/affb1f2cd688f424.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Sometimes и usually можно поставить и в начало предложения для акцента: «Sometimes I work from home»."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: двойное отрицание. Never уже отрицательное, поэтому «I don't never» неверно. Правильно: «I never eat meat»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.modals-detail",
+   "category": "grammar",
+   "title": {
+    "ru": "Модальные: can, must, should",
+    "en": "Modals: can/must/should"
+   },
+   "summary": "Возможность, необходимость и совет: can, must, should.",
+   "level": "A2",
+   "icon": "modal",
+   "order": 18,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Модальные глаголы выражают отношение к действию: способность, разрешение, обязанность или совет. После них всегда идёт глагол без to."
+    },
+    {
+     "type": "heading",
+     "text": "Can — умение и разрешение"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I can swim, but I can't drive.",
+       "ru": "Я умею плавать, но не умею водить машину.",
+       "audioUrl": "/audio/hb/dafd7d9505096016.mp3"
+      },
+      {
+       "en": "Can I open the window?",
+       "ru": "Можно я открою окно?",
+       "audioUrl": "/audio/hb/df0a1263b9ebaab1.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Must — необходимость и запрет"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "You must wear a seatbelt.",
+       "ru": "Ты должен пристегнуть ремень.",
+       "audioUrl": "/audio/hb/0d635c6ebd417530.mp3"
+      },
+      {
+       "en": "You mustn't smoke here.",
+       "ru": "Здесь нельзя курить.",
+       "audioUrl": "/audio/hb/d33b6152e069e39d.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Should — совет"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "You should see a doctor.",
+       "ru": "Тебе стоит сходить к врачу.",
+       "audioUrl": "/audio/hb/c2b1d1b4cd95859e.mp3"
+      },
+      {
+       "en": "You shouldn't eat so much sugar.",
+       "ru": "Тебе не стоит есть так много сахара.",
+       "audioUrl": "/audio/hb/5e894149c7a35636.mp3"
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Значение модальных",
+     "headers": [
+      "Глагол",
+      "Значение",
+      "Отрицание"
+     ],
+     "rows": [
+      [
+       "can",
+       "могу / умею / можно",
+       "can't — не могу"
+      ],
+      [
+       "must",
+       "должен (обязан)",
+       "mustn't — нельзя"
+      ],
+      [
+       "should",
+       "стоит (совет)",
+       "shouldn't — не стоит"
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "Модальные глаголы не меняются по лицам: he can, she must (без -s). После них — инфинитив без to."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: «She can to swim» или «He musts go». Правильно: «She can swim», «He must go»."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.greetings",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: приветствия и знакомство",
+    "en": "Phrasebook: greetings"
+   },
+   "summary": "Готовые фразы, чтобы поздороваться и познакомиться.",
+   "level": "A0",
+   "icon": "chat",
+   "order": 1,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "С этих фраз начинается любой разговор. Выучите их наизусть — они пригодятся в первую же минуту общения."
+    },
+    {
+     "type": "heading",
+     "text": "Приветствие"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Hello! / Hi!",
+       "ru": "Здравствуйте! / Привет!",
+       "audioUrl": "/audio/hb/bcef2d724ce15530.mp3"
+      },
+      {
+       "en": "Good morning.",
+       "ru": "Доброе утро.",
+       "audioUrl": "/audio/hb/5c3e9f7ad0c9c2b8.mp3"
+      },
+      {
+       "en": "How are you?",
+       "ru": "Как дела?",
+       "audioUrl": "/audio/hb/3031897e28216759.mp3"
+      },
+      {
+       "en": "I'm fine, thanks. And you?",
+       "ru": "Хорошо, спасибо. А у вас?",
+       "audioUrl": "/audio/hb/186cfd9ffc3e7143.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Знакомство"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "What's your name?",
+       "ru": "Как вас зовут?",
+       "audioUrl": "/audio/hb/c88dda5d6ced0121.mp3"
+      },
+      {
+       "en": "My name is Anna.",
+       "ru": "Меня зовут Анна.",
+       "audioUrl": "/audio/hb/8d931e242f85a212.mp3"
+      },
+      {
+       "en": "Nice to meet you.",
+       "ru": "Приятно познакомиться.",
+       "audioUrl": "/audio/hb/64753c6fe019c4da.mp3"
+      },
+      {
+       "en": "Where are you from?",
+       "ru": "Откуда вы?",
+       "audioUrl": "/audio/hb/7bc5e7f6b5915a1e.mp3"
+      },
+      {
+       "en": "I'm from Russia.",
+       "ru": "Я из России.",
+       "audioUrl": "/audio/hb/2270eade92ede77c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Прощание"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Goodbye! / Bye!",
+       "ru": "До свидания! / Пока!",
+       "audioUrl": "/audio/hb/2e88519bb28bb08e.mp3"
+      },
+      {
+       "en": "See you later.",
+       "ru": "Увидимся позже.",
+       "audioUrl": "/audio/hb/d94b6f2de7c7ba8c.mp3"
+      },
+      {
+       "en": "Have a nice day!",
+       "ru": "Хорошего дня!",
+       "audioUrl": "/audio/hb/56cb5d30886e7715.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В ответ на «Nice to meet you» вежливо сказать «Nice to meet you, too». А «How are you?» часто говорят просто из вежливости — короткого «Fine, thanks» достаточно."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.cafe",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: в кафе",
+    "en": "Phrasebook: at a café"
+   },
+   "summary": "Фразы, чтобы сделать заказ и оплатить в кафе.",
+   "level": "A1",
+   "icon": "chat",
+   "order": 2,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Эти фразы помогут заказать еду и напитки, попросить счёт и вежливо пообщаться с официантом."
+    },
+    {
+     "type": "heading",
+     "text": "Заказ"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "A table for two, please.",
+       "ru": "Столик на двоих, пожалуйста.",
+       "audioUrl": "/audio/hb/3c8a54db96aec197.mp3"
+      },
+      {
+       "en": "Can I see the menu, please?",
+       "ru": "Можно меню, пожалуйста?",
+       "audioUrl": "/audio/hb/912c7f341544c48e.mp3"
+      },
+      {
+       "en": "I'd like a coffee and a sandwich.",
+       "ru": "Я бы хотел кофе и сэндвич.",
+       "audioUrl": "/audio/hb/65db214f49b31c74.mp3"
+      },
+      {
+       "en": "What do you recommend?",
+       "ru": "Что вы посоветуете?",
+       "audioUrl": "/audio/hb/c458ddd7fcf41d9f.mp3"
+      },
+      {
+       "en": "I'll have the same, please.",
+       "ru": "Мне то же самое, пожалуйста.",
+       "audioUrl": "/audio/hb/61d3365ceb8af1b9.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Во время еды"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Excuse me, could I have some water?",
+       "ru": "Извините, можно воды?",
+       "audioUrl": "/audio/hb/6f3a1a86852a0d9e.mp3"
+      },
+      {
+       "en": "This is delicious!",
+       "ru": "Это очень вкусно!",
+       "audioUrl": "/audio/hb/a794b4d12b082c3c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Оплата"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Can I have the bill, please?",
+       "ru": "Счёт, пожалуйста.",
+       "audioUrl": "/audio/hb/f04323cc8a26af5f.mp3"
+      },
+      {
+       "en": "Can I pay by card?",
+       "ru": "Можно оплатить картой?",
+       "audioUrl": "/audio/hb/164caa75f64e855d.mp3"
+      },
+      {
+       "en": "Keep the change.",
+       "ru": "Сдачи не надо.",
+       "audioUrl": "/audio/hb/427f0c2b8dc48eb2.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В Британии «bill», в США «check». В большинстве кафе принято оставлять чаевые около 10%, а слово «please» делает любую просьбу вежливой."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.shopping",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: покупки",
+    "en": "Phrasebook: shopping"
+   },
+   "summary": "Фразы для магазина: цена, размер, оплата.",
+   "level": "A1",
+   "icon": "chat",
+   "order": 3,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "С этими фразами вы легко спросите цену, примерите одежду и расплатитесь в любом магазине."
+    },
+    {
+     "type": "heading",
+     "text": "Поиск товара"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Excuse me, do you have this in blue?",
+       "ru": "Извините, у вас есть это в синем цвете?",
+       "audioUrl": "/audio/hb/75ae0cb2c9cf059c.mp3"
+      },
+      {
+       "en": "I'm just looking, thanks.",
+       "ru": "Я просто смотрю, спасибо.",
+       "audioUrl": "/audio/hb/41ba6b09001a928c.mp3"
+      },
+      {
+       "en": "Do you have a bigger size?",
+       "ru": "У вас есть размер побольше?",
+       "audioUrl": "/audio/hb/8ede89f5abdd186c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Цена и примерка"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "How much is this?",
+       "ru": "Сколько это стоит?",
+       "audioUrl": "/audio/hb/12f611cc0f3247f4.mp3"
+      },
+      {
+       "en": "That's too expensive.",
+       "ru": "Это слишком дорого.",
+       "audioUrl": "/audio/hb/7b0af1944d8f5c61.mp3"
+      },
+      {
+       "en": "Can I try it on?",
+       "ru": "Можно примерить?",
+       "audioUrl": "/audio/hb/4daffa60a9199735.mp3"
+      },
+      {
+       "en": "Where are the fitting rooms?",
+       "ru": "Где примерочные?",
+       "audioUrl": "/audio/hb/fb1275f9b47adb77.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Оплата"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I'll take it.",
+       "ru": "Я возьму это.",
+       "audioUrl": "/audio/hb/e84fc94c149a8592.mp3"
+      },
+      {
+       "en": "Do you accept cards?",
+       "ru": "Вы принимаете карты?",
+       "audioUrl": "/audio/hb/dfddb71c28f4fac1.mp3"
+      },
+      {
+       "en": "Can I have a receipt, please?",
+       "ru": "Можно чек, пожалуйста?",
+       "audioUrl": "/audio/hb/e4a9bd8a1fe4b83c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Если продавец предлагает помощь, а вы просто осматриваетесь, вежливо ответить «I'm just looking, thank you» — это нормально и не обидно."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.directions",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: как пройти",
+    "en": "Phrasebook: directions"
+   },
+   "summary": "Фразы, чтобы спросить дорогу и понять ответ.",
+   "level": "A2",
+   "icon": "chat",
+   "order": 4,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Эти фразы помогут спросить дорогу к нужному месту и понять, что вам ответят прохожие."
+    },
+    {
+     "type": "heading",
+     "text": "Спросить дорогу"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Excuse me, how do I get to the station?",
+       "ru": "Извините, как пройти к вокзалу?",
+       "audioUrl": "/audio/hb/ee6a3289cec744ff.mp3"
+      },
+      {
+       "en": "Is there a pharmacy near here?",
+       "ru": "Есть ли поблизости аптека?",
+       "audioUrl": "/audio/hb/b84aba2d76683689.mp3"
+      },
+      {
+       "en": "Where is the nearest metro?",
+       "ru": "Где ближайшее метро?",
+       "audioUrl": "/audio/hb/c544f128a9c066c8.mp3"
+      },
+      {
+       "en": "Is it far from here?",
+       "ru": "Это далеко отсюда?",
+       "audioUrl": "/audio/hb/be50ee3723864ddc.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Понять ответ"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Go straight ahead.",
+       "ru": "Идите прямо.",
+       "audioUrl": "/audio/hb/7e59c2cb66b53ec6.mp3"
+      },
+      {
+       "en": "Turn left at the traffic lights.",
+       "ru": "Поверните налево у светофора.",
+       "audioUrl": "/audio/hb/63f9faf6666a2695.mp3"
+      },
+      {
+       "en": "It's on your right.",
+       "ru": "Это справа от вас.",
+       "audioUrl": "/audio/hb/a0362f454cc686d8.mp3"
+      },
+      {
+       "en": "It's next to the bank.",
+       "ru": "Это рядом с банком.",
+       "audioUrl": "/audio/hb/b736d594158bdde6.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Если не поняли"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Sorry, could you repeat that?",
+       "ru": "Извините, можете повторить?",
+       "audioUrl": "/audio/hb/53b279a7872d3e19.mp3"
+      },
+      {
+       "en": "Can you speak more slowly, please?",
+       "ru": "Говорите помедленнее, пожалуйста.",
+       "audioUrl": "/audio/hb/ef135946d14a4f67.mp3"
+      },
+      {
+       "en": "Could you show me on the map?",
+       "ru": "Можете показать на карте?",
+       "audioUrl": "/audio/hb/eacc37fa55a284ea.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Начинайте вопрос с «Excuse me» — так вы вежливо привлекаете внимание. Если не расслышали, не стесняйтесь попросить повторить: это совершенно нормально."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.to-be",
+   "category": "grammar",
+   "title": {
+    "ru": "Глагол to be (am/is/are)",
+    "en": "The verb to be"
+   },
+   "summary": "Как использовать am, is и are — основу английских предложений.",
+   "level": "A0",
+   "icon": "verb",
+   "order": 1,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Глагол to be — самый важный глагол в английском. Он переводится как «быть, являться, находиться», но в русском часто вообще не звучит. Например, «Я студент» — по-английски обязательно нужен глагол: I am a student."
+    },
+    {
+     "type": "rule",
+     "text": "У глагола to be три формы в настоящем времени: I — am, he/she/it — is, we/you/they — are."
+    },
+    {
+     "type": "table",
+     "title": "Спряжение to be",
+     "headers": [
+      "Местоимение",
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "I",
+       "am",
+       "I am tired."
+      ],
+      [
+       "He / She / It",
+       "is",
+       "She is here."
+      ],
+      [
+       "We / You / They",
+       "are",
+       "They are ready."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I am from Russia.",
+       "ru": "Я из России.",
+       "audioUrl": "/audio/hb/7055020143c15650.mp3"
+      },
+      {
+       "en": "He is a doctor.",
+       "ru": "Он врач.",
+       "audioUrl": "/audio/hb/dd95436c0e68b343.mp3"
+      },
+      {
+       "en": "We are friends.",
+       "ru": "Мы друзья.",
+       "audioUrl": "/audio/hb/441784b25b441e56.mp3"
+      },
+      {
+       "en": "The coffee is hot.",
+       "ru": "Кофе горячий.",
+       "audioUrl": "/audio/hb/11e1380c8b6a3097.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Короткие формы"
+    },
+    {
+     "type": "text",
+     "text": "В разговорной речи глагол to be почти всегда сокращают. Это звучит естественно и по-английски."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I'm happy.",
+       "ru": "Я счастлив.",
+       "audioUrl": "/audio/hb/ad16e53f589db3d0.mp3"
+      },
+      {
+       "en": "She's at home.",
+       "ru": "Она дома.",
+       "audioUrl": "/audio/hb/2eebc74c05a1cd8a.mp3"
+      },
+      {
+       "en": "You're right.",
+       "ru": "Ты прав.",
+       "audioUrl": "/audio/hb/75ef0233eccb78bf.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Отрицание и вопрос"
+    },
+    {
+     "type": "rule",
+     "text": "Отрицание: добавь not (I am not, he is not, we are not). Вопрос: поставь глагол на первое место (Are you ready?)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I am not tired.",
+       "ru": "Я не устал.",
+       "audioUrl": "/audio/hb/47ce2109b0dfcc47.mp3"
+      },
+      {
+       "en": "She isn't a teacher.",
+       "ru": "Она не учитель.",
+       "audioUrl": "/audio/hb/97ed477568d3fa2e.mp3"
+      },
+      {
+       "en": "Are you okay?",
+       "ru": "Ты в порядке?",
+       "audioUrl": "/audio/hb/08b0c73156fce956.mp3"
+      },
+      {
+       "en": "Is he here?",
+       "ru": "Он здесь?",
+       "audioUrl": "/audio/hb/a439f93063787f1d.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка новичков — пропускать to be: не «I student», а I am a student. Помни: в английском предложении почти всегда есть глагол."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.pronouns",
+   "category": "grammar",
+   "title": {
+    "ru": "Личные местоимения",
+    "en": "Personal pronouns"
+   },
+   "summary": "I, you, he, she — кто выполняет действие и кого оно касается.",
+   "level": "A0",
+   "icon": "pronoun",
+   "order": 2,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Местоимения заменяют существительные, чтобы не повторять их. Вместо «Анна» мы говорим «она», вместо «книга» — «оно» (в английском it)."
+    },
+    {
+     "type": "rule",
+     "text": "Личные местоимения-подлежащие: I (я), you (ты/вы), he (он), she (она), it (оно), we (мы), they (они)."
+    },
+    {
+     "type": "table",
+     "title": "Подлежащее и дополнение",
+     "headers": [
+      "Подлежащее",
+      "Дополнение",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "I",
+       "me",
+       "я / меня"
+      ],
+      [
+       "you",
+       "you",
+       "ты / тебя"
+      ],
+      [
+       "he",
+       "him",
+       "он / его"
+      ],
+      [
+       "she",
+       "her",
+       "она / её"
+      ],
+      [
+       "it",
+       "it",
+       "оно / его"
+      ],
+      [
+       "we",
+       "us",
+       "мы / нас"
+      ],
+      [
+       "they",
+       "them",
+       "они / их"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Форма-подлежащее стоит перед глаголом (кто делает), а форма-дополнение — после глагола или предлога (на кого направлено действие)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I love her.",
+       "ru": "Я люблю её.",
+       "audioUrl": "/audio/hb/34a186059c2de320.mp3"
+      },
+      {
+       "en": "She knows me.",
+       "ru": "Она знает меня.",
+       "audioUrl": "/audio/hb/43091ce68054e1e3.mp3"
+      },
+      {
+       "en": "We can help you.",
+       "ru": "Мы можем помочь тебе.",
+       "audioUrl": "/audio/hb/556091bf5fe8e79e.mp3"
+      },
+      {
+       "en": "Give it to them.",
+       "ru": "Отдай это им.",
+       "audioUrl": "/audio/hb/5c6c0a99172f8a4b.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Местоимение it"
+    },
+    {
+     "type": "rule",
+     "text": "It заменяет предметы, животных и понятия. Ещё it используют для времени, погоды и расстояния."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "It is a nice car.",
+       "ru": "Это хорошая машина.",
+       "audioUrl": "/audio/hb/4b26f1db0b153765.mp3"
+      },
+      {
+       "en": "It is raining.",
+       "ru": "Идёт дождь.",
+       "audioUrl": "/audio/hb/d5184258085bb05a.mp3"
+      },
+      {
+       "en": "It is five o'clock.",
+       "ru": "Сейчас пять часов.",
+       "audioUrl": "/audio/hb/c3b4de81bd53629b.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Местоимение I всегда пишется с большой буквы — где бы оно ни стояло в предложении."
+    },
+    {
+     "type": "note",
+     "text": "Частая ошибка — путать she и he. He — только для мужчин, she — только для женщин. Для вещей и животных — it."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.articles",
+   "category": "grammar",
+   "title": {
+    "ru": "Артикли a / an / the",
+    "en": "Articles a/an/the"
+   },
+   "summary": "Когда ставить a, an или the перед существительным.",
+   "level": "A1",
+   "icon": "article",
+   "order": 3,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Артикли — короткие слова перед существительным. В русском их нет, поэтому они кажутся сложными, но правило простое: a/an — «какой-то один», the — «тот самый, конкретный»."
+    },
+    {
+     "type": "rule",
+     "text": "a/an ставят перед исчисляемым предметом в единственном числе, когда он упоминается впервые или неважно какой именно. the — когда предмет уже известен собеседнику."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I have a dog.",
+       "ru": "У меня есть собака (какая-то).",
+       "audioUrl": "/audio/hb/a19acfb9b8cb77db.mp3"
+      },
+      {
+       "en": "The dog is big.",
+       "ru": "Эта собака большая (та самая).",
+       "audioUrl": "/audio/hb/74ae68d59c301be6.mp3"
+      },
+      {
+       "en": "She is a teacher.",
+       "ru": "Она учитель.",
+       "audioUrl": "/audio/hb/5c4c66afb8e6cadf.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "a или an?"
+    },
+    {
+     "type": "rule",
+     "text": "a — перед согласным звуком (a car, a house). an — перед гласным звуком (an apple, an hour). Важен звук, а не буква."
+    },
+    {
+     "type": "table",
+     "title": "a или an",
+     "headers": [
+      "Артикль",
+      "Слово",
+      "Почему"
+     ],
+     "rows": [
+      [
+       "a",
+       "a book",
+       "согласный звук [b]"
+      ],
+      [
+       "an",
+       "an egg",
+       "гласный звук [e]"
+      ],
+      [
+       "a",
+       "a university",
+       "звук [ju], как «ю»"
+      ],
+      [
+       "an",
+       "an hour",
+       "буква h не читается"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Когда the"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Close the door, please.",
+       "ru": "Закрой дверь, пожалуйста (конкретную).",
+       "audioUrl": "/audio/hb/f1ad0f919ec1b25d.mp3"
+      },
+      {
+       "en": "The sun is bright.",
+       "ru": "Солнце яркое (оно одно).",
+       "audioUrl": "/audio/hb/9d4197581cfd26be.mp3"
+      },
+      {
+       "en": "I like the film you sent.",
+       "ru": "Мне нравится фильм, что ты прислал.",
+       "audioUrl": "/audio/hb/82ec018ccd46ce4c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Артикль a/an не ставят перед множественным числом и неисчисляемыми словами: не «a books», а books; не «a water», а water."
+    },
+    {
+     "type": "tip",
+     "text": "Имена, города и страны обычно идут без артикля: Anna, London, France. Но: the USA, the UK — из-за слов United/Kingdom."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.plural",
+   "category": "grammar",
+   "title": {
+    "ru": "Множественное число",
+    "en": "Plural nouns"
+   },
+   "summary": "Как образовать множественное число: -s, -es и исключения.",
+   "level": "A1",
+   "icon": "plural",
+   "order": 4,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Чтобы сказать о нескольких предметах, к существительному добавляют окончание. В большинстве случаев это простое -s."
+    },
+    {
+     "type": "rule",
+     "text": "Обычно во множественном числе к слову добавляется -s: cat → cats, book → books."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "one dog, two dogs",
+       "ru": "одна собака, две собаки",
+       "audioUrl": "/audio/hb/dc0ea872876b2cb1.mp3"
+      },
+      {
+       "en": "a car, five cars",
+       "ru": "машина, пять машин",
+       "audioUrl": "/audio/hb/5380b2ade8782633.mp3"
+      },
+      {
+       "en": "one day, seven days",
+       "ru": "один день, семь дней",
+       "audioUrl": "/audio/hb/6c840aa9b31dd9be.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Когда добавляют -es"
+    },
+    {
+     "type": "rule",
+     "text": "-es добавляют после букв s, ss, sh, ch, x, o: bus → buses, box → boxes, tomato → tomatoes."
+    },
+    {
+     "type": "text",
+     "text": "Если слово оканчивается на согласную + y, то y меняется на -ies: city → cities, baby → babies. Но если перед y стоит гласная — просто -s: boy → boys, key → keys."
+    },
+    {
+     "type": "table",
+     "title": "Правила окончаний",
+     "headers": [
+      "Окончание слова",
+      "Что делать",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "обычное",
+       "+ s",
+       "table → tables"
+      ],
+      [
+       "s, sh, ch, x, o",
+       "+ es",
+       "watch → watches"
+      ],
+      [
+       "согласная + y",
+       "y → ies",
+       "story → stories"
+      ],
+      [
+       "гласная + y",
+       "+ s",
+       "day → days"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Особые формы"
+    },
+    {
+     "type": "note",
+     "text": "Некоторые слова образуют множественное число не по правилам — их нужно запомнить."
+    },
+    {
+     "type": "table",
+     "title": "Исключения",
+     "headers": [
+      "Единственное",
+      "Множественное",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "man",
+       "men",
+       "мужчина → мужчины"
+      ],
+      [
+       "woman",
+       "women",
+       "женщина → женщины"
+      ],
+      [
+       "child",
+       "children",
+       "ребёнок → дети"
+      ],
+      [
+       "foot",
+       "feet",
+       "нога → ноги"
+      ],
+      [
+       "tooth",
+       "teeth",
+       "зуб → зубы"
+      ],
+      [
+       "person",
+       "people",
+       "человек → люди"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Слова fish, sheep и information не меняются во множественном числе: two fish, ten sheep."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.this-that",
+   "category": "grammar",
+   "title": {
+    "ru": "This / That / These / Those",
+    "en": "This/That/These/Those"
+   },
+   "summary": "Указательные слова: этот и тот, близко и далеко.",
+   "level": "A1",
+   "icon": "pin",
+   "order": 5,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Эти слова указывают на предметы: какой из них — этот (рядом) или тот (подальше), один или несколько."
+    },
+    {
+     "type": "rule",
+     "text": "this — этот (один, рядом); that — тот (один, далеко); these — эти (много, рядом); those — те (много, далеко)."
+    },
+    {
+     "type": "table",
+     "title": "Указательные слова",
+     "headers": [
+      "Слово",
+      "Число",
+      "Расстояние"
+     ],
+     "rows": [
+      [
+       "this",
+       "один",
+       "рядом"
+      ],
+      [
+       "that",
+       "один",
+       "далеко"
+      ],
+      [
+       "these",
+       "много",
+       "рядом"
+      ],
+      [
+       "those",
+       "много",
+       "далеко"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "This is my phone.",
+       "ru": "Это мой телефон (в руке).",
+       "audioUrl": "/audio/hb/ad62cfd9325a75f7.mp3"
+      },
+      {
+       "en": "That is your car.",
+       "ru": "То — твоя машина (вон там).",
+       "audioUrl": "/audio/hb/7901265b6d53d365.mp3"
+      },
+      {
+       "en": "These are my keys.",
+       "ru": "Это мои ключи (здесь).",
+       "audioUrl": "/audio/hb/b14f7bb7c344a3fc.mp3"
+      },
+      {
+       "en": "Those are birds.",
+       "ru": "То — птицы (вдалеке).",
+       "audioUrl": "/audio/hb/00f0ca0fe4d3b866.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Перед существительным"
+    },
+    {
+     "type": "text",
+     "text": "Эти слова могут стоять сами по себе или прямо перед существительным. Число слова и существительного должно совпадать."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "This book is good.",
+       "ru": "Эта книга хорошая.",
+       "audioUrl": "/audio/hb/4b6bc1fd40510550.mp3"
+      },
+      {
+       "en": "I like these shoes.",
+       "ru": "Мне нравятся эти туфли.",
+       "audioUrl": "/audio/hb/29cb3327cf00881e.mp3"
+      },
+      {
+       "en": "Look at those clouds.",
+       "ru": "Посмотри на те облака.",
+       "audioUrl": "/audio/hb/3fd44b1f241ad878.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "По телефону англичане говорят This is Anna (это Анна) о себе и Who is that? (кто это?) о собеседнике."
+    },
+    {
+     "type": "note",
+     "text": "Не путай единственное и множественное: this book (одна книга), но these books (несколько книг). Слово this не может стоять перед множественным числом."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.possessives",
+   "category": "grammar",
+   "title": {
+    "ru": "Притяжательные местоимения",
+    "en": "Possessive adjectives"
+   },
+   "summary": "my, your, his, her — как сказать, чьё это.",
+   "level": "A1",
+   "icon": "pronoun",
+   "order": 6,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Притяжательные местоимения показывают принадлежность — чей это предмет. В русском это «мой, твой, его, её»."
+    },
+    {
+     "type": "rule",
+     "text": "Каждому личному местоимению соответствует притяжательное: I → my, you → your, he → his, she → her, it → its, we → our, they → their."
+    },
+    {
+     "type": "table",
+     "title": "Формы принадлежности",
+     "headers": [
+      "Местоимение",
+      "Притяжательное",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "I",
+       "my",
+       "мой"
+      ],
+      [
+       "you",
+       "your",
+       "твой / ваш"
+      ],
+      [
+       "he",
+       "his",
+       "его"
+      ],
+      [
+       "she",
+       "her",
+       "её"
+      ],
+      [
+       "it",
+       "its",
+       "его / её (предмета)"
+      ],
+      [
+       "we",
+       "our",
+       "наш"
+      ],
+      [
+       "they",
+       "their",
+       "их"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "text": "Притяжательное местоимение всегда стоит перед существительным и не меняется от числа: my book (моя книга), my books (мои книги)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "This is my house.",
+       "ru": "Это мой дом.",
+       "audioUrl": "/audio/hb/d675345b8699a93f.mp3"
+      },
+      {
+       "en": "What is your name?",
+       "ru": "Как тебя зовут? (буквально: какое твоё имя)",
+       "audioUrl": "/audio/hb/21eb497b66eb1a1a.mp3"
+      },
+      {
+       "en": "Her car is new.",
+       "ru": "Её машина новая.",
+       "audioUrl": "/audio/hb/17b8d1c65ef5d8e8.mp3"
+      },
+      {
+       "en": "The dog wags its tail.",
+       "ru": "Собака виляет своим хвостом.",
+       "audioUrl": "/audio/hb/ce5477c545afc319.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Не путай its и it's. its — притяжательное (его/её), а it's — это сокращение от it is (это есть)."
+    },
+    {
+     "type": "tip",
+     "text": "В английском о частях тела и вещах говорят с притяжательным местоимением: I wash my hands (я мою руки), а не «мою the hands»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.there-is",
+   "category": "grammar",
+   "title": {
+    "ru": "There is / There are",
+    "en": "There is / There are"
+   },
+   "summary": "Как сказать, что где-то что-то есть или находится.",
+   "level": "A1",
+   "icon": "list",
+   "order": 7,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Конструкция there is / there are сообщает, что где-то что-то есть или находится. По-русски это «есть», «имеется», «находится»."
+    },
+    {
+     "type": "rule",
+     "text": "there is — с одним предметом (единственное число); there are — с несколькими (множественное число)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "There is a book on the table.",
+       "ru": "На столе (есть) книга.",
+       "audioUrl": "/audio/hb/62b118a0edf227af.mp3"
+      },
+      {
+       "en": "There are two windows in the room.",
+       "ru": "В комнате два окна.",
+       "audioUrl": "/audio/hb/a79494310d5e8dd6.mp3"
+      },
+      {
+       "en": "There is some milk in the fridge.",
+       "ru": "В холодильнике есть молоко.",
+       "audioUrl": "/audio/hb/5eed272ad25f18b9.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Отрицание и вопрос"
+    },
+    {
+     "type": "rule",
+     "text": "Отрицание: there is not (isn't) / there are not (aren't). Вопрос: Is there...? / Are there...?"
+    },
+    {
+     "type": "table",
+     "title": "Формы",
+     "headers": [
+      "Тип",
+      "Единственное",
+      "Множественное"
+     ],
+     "rows": [
+      [
+       "Утверждение",
+       "There is a car.",
+       "There are cars."
+      ],
+      [
+       "Отрицание",
+       "There isn't a car.",
+       "There aren't cars."
+      ],
+      [
+       "Вопрос",
+       "Is there a car?",
+       "Are there cars?"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Is there a shop near here?",
+       "ru": "Здесь рядом есть магазин?",
+       "audioUrl": "/audio/hb/99af6e1a5dff3b21.mp3"
+      },
+      {
+       "en": "There aren't any free seats.",
+       "ru": "Свободных мест нет.",
+       "audioUrl": "/audio/hb/0b0c4a7ff5b7d3f8.mp3"
+      },
+      {
+       "en": "Are there any questions?",
+       "ru": "Есть какие-нибудь вопросы?",
+       "audioUrl": "/audio/hb/4317e14f5681d73a.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В коротких ответах используй: Yes, there is. / No, there aren't."
+    },
+    {
+     "type": "note",
+     "text": "Форму выбирают по первому предмету в списке: There is a pen and two books — потому что сразу после there идёт a pen (единственное число)."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.have-got",
+   "category": "grammar",
+   "title": {
+    "ru": "Have / Have got",
+    "en": "Have / Have got"
+   },
+   "summary": "Два способа сказать «у меня есть» и как их использовать.",
+   "level": "A1",
+   "icon": "verb",
+   "order": 8,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Чтобы сказать, что у тебя что-то есть, в английском используют have или have got. Значение одинаковое — «иметь, обладать»."
+    },
+    {
+     "type": "rule",
+     "text": "have got чаще в британской и разговорной речи; have (без got) более универсально. У he/she/it: has и has got."
+    },
+    {
+     "type": "table",
+     "title": "Спряжение",
+     "headers": [
+      "Местоимение",
+      "have",
+      "have got"
+     ],
+     "rows": [
+      [
+       "I / you / we / they",
+       "have",
+       "have got"
+      ],
+      [
+       "he / she / it",
+       "has",
+       "has got"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I have a sister.",
+       "ru": "У меня есть сестра.",
+       "audioUrl": "/audio/hb/6616efcaa55260d0.mp3"
+      },
+      {
+       "en": "I have got a sister.",
+       "ru": "У меня есть сестра (то же самое).",
+       "audioUrl": "/audio/hb/bbe42048b15a9801.mp3"
+      },
+      {
+       "en": "She has a new phone.",
+       "ru": "У неё новый телефон.",
+       "audioUrl": "/audio/hb/ab97b186791ad393.mp3"
+      },
+      {
+       "en": "They have got two cats.",
+       "ru": "У них две кошки.",
+       "audioUrl": "/audio/hb/a7eeca225db8b79d.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Отрицание и вопрос"
+    },
+    {
+     "type": "rule",
+     "text": "С have got: haven't got / hasn't got, вопрос Have you got...? С have: используем do/does — I don't have, Do you have...?"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I haven't got a car.",
+       "ru": "У меня нет машины.",
+       "audioUrl": "/audio/hb/7b5352869f502df6.mp3"
+      },
+      {
+       "en": "I don't have a car.",
+       "ru": "У меня нет машины (то же самое).",
+       "audioUrl": "/audio/hb/8a11bf3275627855.mp3"
+      },
+      {
+       "en": "Have you got a pen?",
+       "ru": "У тебя есть ручка?",
+       "audioUrl": "/audio/hb/ec54cecec5828072.mp3"
+      },
+      {
+       "en": "Do you have a pen?",
+       "ru": "У тебя есть ручка? (то же самое)",
+       "audioUrl": "/audio/hb/528dbe2aa8ce9586.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Не смешивай формы: нельзя сказать «Do you have got?». Либо Have you got a pen?, либо Do you have a pen?"
+    },
+    {
+     "type": "tip",
+     "text": "Have got обычно сокращают: I've got, she's got, we've got. Так звучит естественнее в речи."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.present-simple",
+   "category": "grammar",
+   "title": {
+    "ru": "Present Simple (настоящее простое)",
+    "en": "Present Simple"
+   },
+   "summary": "Время для привычек, расписаний и общих фактов; не забывайте -s в he/she/it.",
+   "level": "A1",
+   "icon": "clock",
+   "order": 9,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Когда используется"
+    },
+    {
+     "type": "rule",
+     "text": "Present Simple описывает регулярные действия, привычки, расписания и общие факты — то, что происходит вообще, а не прямо сейчас."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I work in an office.",
+       "ru": "Я работаю в офисе.",
+       "audioUrl": "/audio/hb/624a9f82b4796bf2.mp3"
+      },
+      {
+       "en": "She drinks coffee every morning.",
+       "ru": "Она пьёт кофе каждое утро.",
+       "audioUrl": "/audio/hb/426134b2eb29e4f6.mp3"
+      },
+      {
+       "en": "Water boils at 100 degrees.",
+       "ru": "Вода кипит при 100 градусах.",
+       "audioUrl": "/audio/hb/84aa4d0c51faac38.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как строится"
+    },
+    {
+     "type": "text",
+     "text": "В утверждении к глаголу для he, she, it добавляется окончание -s. Отрицание и вопрос строятся со вспомогательным do (для he/she/it — does)."
+    },
+    {
+     "type": "table",
+     "title": "I / you / we / they",
+     "headers": [
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Утверждение (+)",
+       "I play tennis."
+      ],
+      [
+       "Отрицание (−)",
+       "I don't play tennis."
+      ],
+      [
+       "Вопрос (?)",
+       "Do you play tennis?"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "he / she / it",
+     "headers": [
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Утверждение (+)",
+       "He plays tennis."
+      ],
+      [
+       "Отрицание (−)",
+       "He doesn't play tennis."
+      ],
+      [
+       "Вопрос (?)",
+       "Does he play tennis?"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Маркеры времени"
+    },
+    {
+     "type": "text",
+     "text": "Часто используются слова частоты: always (всегда), usually (обычно), often (часто), sometimes (иногда), never (никогда), every day (каждый день)."
+    },
+    {
+     "type": "example",
+     "en": "We often go to the cinema on Fridays.",
+     "ru": "Мы часто ходим в кино по пятницам.",
+     "note": "Слово often стоит перед основным глаголом.",
+     "audioUrl": "/audio/hb/8ce1c98575eb3069.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "В вопросе и отрицании с does сам глагол теряет -s: правильно «Does she work?», а не «Does she works?»."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: забыть -s в третьем лице. Правильно «He goes», «She watches», «It rains», а не «He go»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.present-continuous",
+   "category": "grammar",
+   "title": {
+    "ru": "Present Continuous (настоящее длительное)",
+    "en": "Present Continuous"
+   },
+   "summary": "Действие происходит прямо сейчас или в текущий период; форма am/is/are + глагол с -ing.",
+   "level": "A1",
+   "icon": "clock",
+   "order": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Когда используется"
+    },
+    {
+     "type": "rule",
+     "text": "Present Continuous описывает действие, которое происходит прямо сейчас, в момент речи, или в текущий период времени."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I am reading a book now.",
+       "ru": "Я сейчас читаю книгу.",
+       "audioUrl": "/audio/hb/d346e054e745765c.mp3"
+      },
+      {
+       "en": "She is working from home this week.",
+       "ru": "На этой неделе она работает из дома.",
+       "audioUrl": "/audio/hb/7622aa802b7f0d79.mp3"
+      },
+      {
+       "en": "Look! It is raining.",
+       "ru": "Смотри! Идёт дождь.",
+       "audioUrl": "/audio/hb/d18d3a7e0e0bff02.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как строится"
+    },
+    {
+     "type": "text",
+     "text": "Форма состоит из глагола to be (am / is / are) и основного глагола с окончанием -ing."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Утверждение (+)",
+       "She is cooking dinner."
+      ],
+      [
+       "Отрицание (−)",
+       "She isn't cooking dinner."
+      ],
+      [
+       "Вопрос (?)",
+       "Is she cooking dinner?"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Формы to be",
+     "headers": [
+      "Местоимение",
+      "to be"
+     ],
+     "rows": [
+      [
+       "I",
+       "am"
+      ],
+      [
+       "he / she / it",
+       "is"
+      ],
+      [
+       "you / we / they",
+       "are"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Маркеры времени"
+    },
+    {
+     "type": "text",
+     "text": "Указывают на текущий момент: now (сейчас), right now (прямо сейчас), at the moment (в данный момент), today (сегодня), this week (на этой неделе), Look! / Listen! (Смотри! / Слушай!)."
+    },
+    {
+     "type": "example",
+     "en": "At the moment they are watching TV.",
+     "ru": "В данный момент они смотрят телевизор.",
+     "audioUrl": "/audio/hb/048398aa7ed17fb2.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Если глагол заканчивается на -e, она отбрасывается: make → making, write → writing. В коротких словах согласная удваивается: run → running, sit → sitting."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: пропускать глагол be. Правильно «I am working», а не «I working». Также глаголы состояния (know, like, want) обычно не ставят в Continuous: «I want», а не «I am wanting»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.past-simple",
+   "category": "grammar",
+   "title": {
+    "ru": "Past Simple (прошедшее простое)",
+    "en": "Past Simple"
+   },
+   "summary": "Завершённые действия в прошлом; -ed у правильных глаголов, особые формы у неправильных.",
+   "level": "A2",
+   "icon": "clock",
+   "order": 11,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Когда используется"
+    },
+    {
+     "type": "rule",
+     "text": "Past Simple описывает завершённые действия в прошлом — то, что случилось в конкретный момент и уже закончилось."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I visited my grandmother yesterday.",
+       "ru": "Вчера я навестил бабушку.",
+       "audioUrl": "/audio/hb/420bc8c484d55f3e.mp3"
+      },
+      {
+       "en": "They lived in Paris in 2010.",
+       "ru": "В 2010 году они жили в Париже.",
+       "audioUrl": "/audio/hb/4afb3ae839206dce.mp3"
+      },
+      {
+       "en": "We watched a film last night.",
+       "ru": "Вчера вечером мы посмотрели фильм.",
+       "audioUrl": "/audio/hb/22c8d2f845f75dcd.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как строится"
+    },
+    {
+     "type": "text",
+     "text": "У правильных глаголов в утверждении добавляется -ed. Отрицание и вопрос строятся со вспомогательным did, а основной глагол возвращается в начальную форму (инфинитив)."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Утверждение (+)",
+       "She played tennis."
+      ],
+      [
+       "Отрицание (−)",
+       "She didn't play tennis."
+      ],
+      [
+       "Вопрос (?)",
+       "Did she play tennis?"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Неправильные глаголы"
+    },
+    {
+     "type": "text",
+     "text": "Многие частые глаголы образуют прошедшее время особым образом — их формы нужно запомнить."
+    },
+    {
+     "type": "table",
+     "title": "Частые неправильные глаголы",
+     "headers": [
+      "Инфинитив",
+      "Past Simple",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "go",
+       "went",
+       "идти"
+      ],
+      [
+       "have",
+       "had",
+       "иметь"
+      ],
+      [
+       "make",
+       "made",
+       "делать"
+      ],
+      [
+       "see",
+       "saw",
+       "видеть"
+      ],
+      [
+       "take",
+       "took",
+       "брать"
+      ],
+      [
+       "come",
+       "came",
+       "приходить"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Маркеры времени"
+    },
+    {
+     "type": "text",
+     "text": "yesterday (вчера), last week / last year (на прошлой неделе / в прошлом году), ago (назад), in 2010, when I was a child (когда я был ребёнком)."
+    },
+    {
+     "type": "example",
+     "en": "Two years ago we bought a new car.",
+     "ru": "Два года назад мы купили новую машину.",
+     "audioUrl": "/audio/hb/40a85fbcf69ca96b.mp3"
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: ставить глагол в прошедшее время после did. Правильно «Did you go?» и «I didn't go», а не «Did you went» или «I didn't went»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.future",
+   "category": "grammar",
+   "title": {
+    "ru": "Будущее: will и be going to",
+    "en": "Future: will / be going to"
+   },
+   "summary": "will — для решений и предсказаний, be going to — для планов и намерений.",
+   "level": "A2",
+   "icon": "clock",
+   "order": 12,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Два способа говорить о будущем"
+    },
+    {
+     "type": "rule",
+     "text": "will используют для спонтанных решений, обещаний и предсказаний. be going to используют для заранее запланированных действий и намерений."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "It's cold. I will close the window.",
+       "ru": "Холодно. Я закрою окно. (решение сейчас)",
+       "audioUrl": "/audio/hb/5d53cf55ea778867.mp3"
+      },
+      {
+       "en": "I am going to study medicine.",
+       "ru": "Я собираюсь изучать медицину. (план)",
+       "audioUrl": "/audio/hb/c3cb737dc8b6dda0.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как строится will"
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Утверждение (+)",
+       "I will call you."
+      ],
+      [
+       "Отрицание (−)",
+       "I won't call you."
+      ],
+      [
+       "Вопрос (?)",
+       "Will you call me?"
+      ]
+     ]
+    },
+    {
+     "type": "text",
+     "text": "После will всегда идёт глагол в начальной форме, без -s и без to. Сокращения: I will → I'll, will not → won't."
+    },
+    {
+     "type": "heading",
+     "text": "Как строится be going to"
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Утверждение (+)",
+       "She is going to travel."
+      ],
+      [
+       "Отрицание (−)",
+       "She isn't going to travel."
+      ],
+      [
+       "Вопрос (?)",
+       "Is she going to travel?"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Маркеры времени"
+    },
+    {
+     "type": "text",
+     "text": "tomorrow (завтра), next week / next year (на следующей неделе / в следующем году), soon (скоро), in an hour (через час), in the future (в будущем)."
+    },
+    {
+     "type": "example",
+     "en": "Look at those clouds! It's going to rain.",
+     "ru": "Посмотри на тучи! Сейчас пойдёт дождь.",
+     "note": "be going to также для предсказаний, основанных на том, что видно сейчас.",
+     "audioUrl": "/audio/hb/f521a89a38dc0b67.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "will часто идёт с I think, maybe, probably: «I think he will win» — «Думаю, он победит»."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: добавлять -s или to после will. Правильно «She will come», а не «She wills come» или «She will to come»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.questions",
+   "category": "grammar",
+   "title": {
+    "ru": "Вопросы и отрицания",
+    "en": "Questions and negatives"
+   },
+   "summary": "Вопрос и отрицание строятся со вспомогательным глаголом: do/does/did или be.",
+   "level": "A1",
+   "icon": "question",
+   "order": 13,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Главный принцип"
+    },
+    {
+     "type": "rule",
+     "text": "В английском вопрос и отрицание почти всегда строятся со вспомогательным глаголом. С обычными глаголами это do / does / did, а с to be и модальными — сами эти глаголы."
+    },
+    {
+     "type": "heading",
+     "text": "С обычными глаголами: do / does / did"
+    },
+    {
+     "type": "text",
+     "text": "Чтобы задать вопрос, вспомогательный глагол ставится в начало. Для отрицания к нему добавляется not (обычно в сокращении: don't, doesn't, didn't)."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Время",
+      "Отрицание (−)",
+      "Вопрос (?)"
+     ],
+     "rows": [
+      [
+       "Present (I/you/we/they)",
+       "I don't work.",
+       "Do you work?"
+      ],
+      [
+       "Present (he/she/it)",
+       "He doesn't work.",
+       "Does he work?"
+      ],
+      [
+       "Past",
+       "I didn't work.",
+       "Did you work?"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "С глаголом to be"
+    },
+    {
+     "type": "text",
+     "text": "Глагол be (am / is / are / was / were) не нуждается в do. Для вопроса он просто выходит вперёд, для отрицания к нему добавляется not."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Форма",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Утверждение (+)",
+       "She is a doctor."
+      ],
+      [
+       "Отрицание (−)",
+       "She isn't a doctor."
+      ],
+      [
+       "Вопрос (?)",
+       "Is she a doctor?"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Короткие ответы"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Do you like tea? — Yes, I do. / No, I don't.",
+       "ru": "Ты любишь чай? — Да. / Нет.",
+       "audioUrl": "/audio/hb/b1ea7a0bdce17817.mp3"
+      },
+      {
+       "en": "Is he at home? — Yes, he is. / No, he isn't.",
+       "ru": "Он дома? — Да. / Нет.",
+       "audioUrl": "/audio/hb/c69df6f38939851c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В коротком ответе повторяется тот же вспомогательный глагол, что и в вопросе: Did you...? — Yes, I did."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: строить вопрос без вспомогательного глагола. Неправильно «You like coffee?» — нужно «Do you like coffee?». И не удваивайте прошедшее: «Did you see?», а не «Did you saw?»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.wh-questions",
+   "category": "grammar",
+   "title": {
+    "ru": "Вопросительные слова (What, Where…)",
+    "en": "Wh- questions"
+   },
+   "summary": "Специальные вопросы начинаются с вопросительного слова: What, Where, When, Why, Who, How.",
+   "level": "A1",
+   "icon": "question",
+   "order": 14,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Что такое Wh- вопросы"
+    },
+    {
+     "type": "rule",
+     "text": "Специальные (Wh-) вопросы начинаются с вопросительного слова и требуют развёрнутого ответа, а не «да/нет»."
+    },
+    {
+     "type": "table",
+     "title": "Основные вопросительные слова",
+     "headers": [
+      "Слово",
+      "Перевод",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "What",
+       "что / какой",
+       "What is your name?"
+      ],
+      [
+       "Where",
+       "где / куда",
+       "Where do you live?"
+      ],
+      [
+       "When",
+       "когда",
+       "When did you arrive?"
+      ],
+      [
+       "Why",
+       "почему",
+       "Why are you late?"
+      ],
+      [
+       "Who",
+       "кто",
+       "Who is that man?"
+      ],
+      [
+       "How",
+       "как",
+       "How do you feel?"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Порядок слов"
+    },
+    {
+     "type": "rule",
+     "text": "Схема: вопросительное слово + вспомогательный глагол + подлежащее + основной глагол."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Where do you work?",
+       "ru": "Где ты работаешь?",
+       "audioUrl": "/audio/hb/56bca30477e3bfeb.mp3"
+      },
+      {
+       "en": "What does she want?",
+       "ru": "Чего она хочет?",
+       "audioUrl": "/audio/hb/e115feb1c65966ab.mp3"
+      },
+      {
+       "en": "When did they leave?",
+       "ru": "Когда они ушли?",
+       "audioUrl": "/audio/hb/c772a3637769fbf6.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Полезные сочетания"
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Сочетание",
+      "Перевод",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "How much",
+       "сколько (неисчисл.)",
+       "How much is it?"
+      ],
+      [
+       "How many",
+       "сколько (исчисл.)",
+       "How many books do you have?"
+      ],
+      [
+       "How old",
+       "сколько лет",
+       "How old are you?"
+      ],
+      [
+       "What time",
+       "во сколько",
+       "What time is it?"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "Who lives here?",
+     "ru": "Кто здесь живёт?",
+     "note": "Если Who (или What) само является подлежащим, вспомогательный do не нужен: «Who lives here?», а не «Who does live here?».",
+     "audioUrl": "/audio/hb/ae27aad581f03d66.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "С глаголом to be вспомогательный do тоже не нужен: «Where are you?», «What is this?»."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: прямой порядок слов, как в утверждении. Неправильно «Where you live?» — нужно «Where do you live?» со вспомогательным глаголом."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.present-perfect",
+   "category": "grammar",
+   "title": {
+    "ru": "Present Perfect (have done)",
+    "en": "Present Perfect"
+   },
+   "summary": "Связь прошлого с настоящим: результат, опыт и незаконченный период.",
+   "level": "B1",
+   "icon": "clock",
+   "order": 19,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Present Perfect связывает прошлое с настоящим. Мы называем действие, которое уже случилось, но его результат или значение важны сейчас. Точное время при этом обычно неважно и не указывается."
+    },
+    {
+     "type": "rule",
+     "text": "Используем Present Perfect, когда: 1) есть результат в настоящем (I've lost my keys — ключей нет сейчас); 2) говорим об опыте за всю жизнь (Have you ever been to London?); 3) описываем период, который ещё не закончился (I've worked here for five years)."
+    },
+    {
+     "type": "heading",
+     "text": "Как строится"
+    },
+    {
+     "type": "table",
+     "title": "have/has + 3-я форма глагола",
+     "headers": [
+      "Форма",
+      "Схема",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "+",
+       "have/has + V3",
+       "She has finished her homework."
+      ],
+      [
+       "−",
+       "haven't/hasn't + V3",
+       "They haven't arrived yet."
+      ],
+      [
+       "?",
+       "Have/Has + подлежащее + V3",
+       "Have you seen this film?"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "has — только с he, she, it. Со всеми остальными (I, you, we, they) — have."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I have just finished lunch.",
+       "ru": "Я только что закончил обедать.",
+       "audioUrl": "/audio/hb/02b5ed1b2bb56406.mp3"
+      },
+      {
+       "en": "We have known each other since 2015.",
+       "ru": "Мы знаем друг друга с 2015 года.",
+       "audioUrl": "/audio/hb/1e82c578ead444cc.mp3"
+      },
+      {
+       "en": "He hasn't called me back.",
+       "ru": "Он мне так и не перезвонил.",
+       "audioUrl": "/audio/hb/bdfe73137b6192cc.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Слова-маркеры"
+    },
+    {
+     "type": "table",
+     "title": "Частые сигналы Present Perfect",
+     "headers": [
+      "Слово",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "already",
+       "уже (раньше ожидаемого)",
+       "I've already eaten."
+      ],
+      [
+       "yet",
+       "ещё (в вопросах и отрицаниях)",
+       "Have you finished yet?"
+      ],
+      [
+       "just",
+       "только что",
+       "She has just left."
+      ],
+      [
+       "ever",
+       "когда-либо (в вопросах)",
+       "Have you ever tried sushi?"
+      ],
+      [
+       "never",
+       "никогда",
+       "I have never been to Japan."
+      ],
+      [
+       "for",
+       "в течение (период)",
+       "We've lived here for ten years."
+      ],
+      [
+       "since",
+       "с (момент в прошлом)",
+       "I've known him since 2010."
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "for + отрезок времени (for two days, for a week), since + точка отсчёта (since Monday, since 9 o'clock, since I was a child)."
+    },
+    {
+     "type": "heading",
+     "text": "Present Perfect или Past Simple?"
+    },
+    {
+     "type": "table",
+     "title": "Сравнение",
+     "headers": [
+      "Present Perfect",
+      "Past Simple"
+     ],
+     "rows": [
+      [
+       "Время не важно / не названо",
+       "Есть точное время в прошлом"
+      ],
+      [
+       "I have seen that film.",
+       "I saw that film yesterday."
+      ],
+      [
+       "Период до сих пор длится",
+       "Период завершён"
+      ],
+      [
+       "She has lived here for years.",
+       "She lived there in 2010."
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "I have visited Paris three times.",
+     "ru": "Я был(а) в Париже три раза.",
+     "note": "Опыт за жизнь, без конкретной даты — Present Perfect.",
+     "audioUrl": "/audio/hb/2035ca65fd7ce122.mp3"
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: со словами yesterday, last week, in 2020, ago нельзя использовать Present Perfect. Правильно: I saw him yesterday (НЕ I have seen him yesterday)."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.past-continuous",
+   "category": "grammar",
+   "title": {
+    "ru": "Past Continuous (was doing)",
+    "en": "Past Continuous"
+   },
+   "summary": "Действие в процессе в определённый момент прошлого.",
+   "level": "A2",
+   "icon": "clock",
+   "order": 20,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Past Continuous описывает действие, которое было в процессе в конкретный момент в прошлом. Мы как будто смотрим на действие изнутри, когда оно ещё продолжалось."
+    },
+    {
+     "type": "rule",
+     "text": "Используем Past Continuous, когда: 1) действие длилось в определённый момент (At 8 p.m. I was watching TV); 2) длинное действие прервано коротким (I was cooking when the phone rang); 3) два действия шли одновременно (She was reading while he was cooking)."
+    },
+    {
+     "type": "heading",
+     "text": "Как строится"
+    },
+    {
+     "type": "table",
+     "title": "was/were + глагол с -ing",
+     "headers": [
+      "Форма",
+      "Схема",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "+",
+       "was/were + V-ing",
+       "I was working at 9 a.m."
+      ],
+      [
+       "−",
+       "wasn't/weren't + V-ing",
+       "They weren't sleeping."
+      ],
+      [
+       "?",
+       "Was/Were + подлежащее + V-ing",
+       "Were you waiting for me?"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "was — с I, he, she, it. were — с you, we, they."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "It was raining all morning.",
+       "ru": "Всё утро шёл дождь.",
+       "audioUrl": "/audio/hb/5f7bdbf39ee826c4.mp3"
+      },
+      {
+       "en": "We were having dinner at eight.",
+       "ru": "В восемь мы ужинали.",
+       "audioUrl": "/audio/hb/c00c1955f5f06902.mp3"
+      },
+      {
+       "en": "What were you doing yesterday evening?",
+       "ru": "Что ты делал вчера вечером?",
+       "audioUrl": "/audio/hb/90be6c913884e018.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Past Continuous и Past Simple вместе"
+    },
+    {
+     "type": "text",
+     "text": "Часто длинное фоновое действие (Past Continuous) прерывается коротким действием (Past Simple). Их связывают слова when (когда) и while (пока, в то время как)."
+    },
+    {
+     "type": "example",
+     "en": "I was walking home when it started to rain.",
+     "ru": "Я шёл домой, когда начался дождь.",
+     "note": "Длинное действие — was walking; короткое, прервавшее его, — started.",
+     "audioUrl": "/audio/hb/58898c994b619ce7.mp3"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "While she was cooking, the doorbell rang.",
+       "ru": "Пока она готовила, зазвонил дверной звонок.",
+       "audioUrl": "/audio/hb/123ce9d243924c61.mp3"
+      },
+      {
+       "en": "They were talking when the teacher came in.",
+       "ru": "Они разговаривали, когда вошёл учитель.",
+       "audioUrl": "/audio/hb/1b37f0a7d9fe66c5.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Глаголы состояния (know, want, like, love, understand, need) обычно не ставят в Continuous. Говорим I knew the answer, а не I was knowing."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: не путайте времена. Короткое, завершённое действие — Past Simple (the phone rang), а не Past Continuous (the phone was ringing описывает длящийся звонок как фон)."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.conditionals",
+   "category": "grammar",
+   "title": {
+    "ru": "Условные предложения (0, 1, 2)",
+    "en": "Conditionals"
+   },
+   "summary": "Как говорить об условиях: факты, реальное будущее и нереальное настоящее.",
+   "level": "B1",
+   "icon": "compare",
+   "order": 21,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Условные предложения (conditionals) состоят из двух частей: условие с if (если...) и результат (то...). Порядок частей свободный; если предложение начинается с if, между частями ставится запятая."
+    },
+    {
+     "type": "heading",
+     "text": "Три основных типа"
+    },
+    {
+     "type": "table",
+     "title": "Zero, First и Second Conditional",
+     "headers": [
+      "Тип",
+      "if-часть",
+      "Главная часть",
+      "Смысл"
+     ],
+     "rows": [
+      [
+       "Zero (0)",
+       "if + Present Simple",
+       "Present Simple",
+       "Всегда истинно, факт, закон природы"
+      ],
+      [
+       "First (1)",
+       "if + Present Simple",
+       "will + инфинитив",
+       "Реальное, вероятное будущее"
+      ],
+      [
+       "Second (2)",
+       "if + Past Simple",
+       "would + инфинитив",
+       "Нереальное или маловероятное настоящее"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Zero Conditional — факты"
+    },
+    {
+     "type": "rule",
+     "text": "Используем для того, что всегда верно: законы природы, привычки, инструкции. Здесь if можно заменить на when без потери смысла."
+    },
+    {
+     "type": "example",
+     "en": "If you heat water to 100 °C, it boils.",
+     "ru": "Если нагреть воду до 100 °C, она закипает.",
+     "note": "Обе части — Present Simple: это всегда правда.",
+     "audioUrl": "/audio/hb/bf242a83daefe878.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "First Conditional — реальное будущее"
+    },
+    {
+     "type": "rule",
+     "text": "Используем для реальных, вполне возможных ситуаций в будущем. После if — Present Simple, в главной части — will."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "If it rains tomorrow, we will stay at home.",
+       "ru": "Если завтра пойдёт дождь, мы останемся дома.",
+       "audioUrl": "/audio/hb/5f4f578271705ba9.mp3"
+      },
+      {
+       "en": "She will pass the exam if she studies hard.",
+       "ru": "Она сдаст экзамен, если будет усердно заниматься.",
+       "audioUrl": "/audio/hb/4e78489475b6be88.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Second Conditional — нереальное настоящее"
+    },
+    {
+     "type": "rule",
+     "text": "Используем для воображаемых, маловероятных или невозможных ситуаций сейчас. После if — Past Simple, в главной части — would."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "If I had more money, I would travel the world.",
+       "ru": "Если бы у меня было больше денег, я бы объездил весь мир.",
+       "audioUrl": "/audio/hb/b22fbfa346db1831.mp3"
+      },
+      {
+       "en": "If I were you, I would apologise.",
+       "ru": "На твоём месте я бы извинился.",
+       "audioUrl": "/audio/hb/e3fe119803db7d38.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В Second Conditional с глаголом be для всех лиц часто используют were: If I were rich..., If he were here... Это считается более правильным, чем was."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: после if в 1-м типе НЕ ставим will. Правильно: If it rains, we will stay home (НЕ If it will rain). Во 2-м типе НЕ ставим would после if: If I had time, I would help (НЕ If I would have time)."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.gerund-infinitive",
+   "category": "grammar",
+   "title": {
+    "ru": "Герундий и инфинитив (-ing / to)",
+    "en": "Gerund & infinitive"
+   },
+   "summary": "Когда после глагола нужна форма -ing, а когда to + глагол.",
+   "level": "B1",
+   "icon": "verb",
+   "order": 22,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Когда после одного глагола идёт другой, второй нередко превращается в герундий (глагол + -ing) или в инфинитив (to + глагол). Выбор зависит от первого глагола, и часто его нужно просто запомнить."
+    },
+    {
+     "type": "rule",
+     "text": "Герундий (-ing) используем: после enjoy, finish, avoid, mind, suggest, keep, practise; после предлогов (good at cooking, interested in learning); как подлежащее (Swimming is fun)."
+    },
+    {
+     "type": "table",
+     "title": "Глаголы, после которых идёт -ing",
+     "headers": [
+      "Глагол",
+      "Пример",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "enjoy",
+       "I enjoy reading.",
+       "Мне нравится читать."
+      ],
+      [
+       "finish",
+       "She finished working.",
+       "Она закончила работать."
+      ],
+      [
+       "avoid",
+       "He avoids eating late.",
+       "Он избегает есть поздно."
+      ],
+      [
+       "mind",
+       "Do you mind waiting?",
+       "Вы не против подождать?"
+      ],
+      [
+       "suggest",
+       "They suggested going out.",
+       "Они предложили сходить куда-нибудь."
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "Инфинитив (to + глагол) используем: после want, need, decide, hope, promise, plan, learn, would like; чтобы выразить цель (I went out to buy bread)."
+    },
+    {
+     "type": "table",
+     "title": "Глаголы, после которых идёт to + глагол",
+     "headers": [
+      "Глагол",
+      "Пример",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "want",
+       "I want to go home.",
+       "Я хочу пойти домой."
+      ],
+      [
+       "decide",
+       "We decided to stay.",
+       "Мы решили остаться."
+      ],
+      [
+       "hope",
+       "She hopes to win.",
+       "Она надеется победить."
+      ],
+      [
+       "need",
+       "You need to rest.",
+       "Тебе нужно отдохнуть."
+      ],
+      [
+       "would like",
+       "I'd like to help.",
+       "Я бы хотел помочь."
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "После like, love, hate, start"
+    },
+    {
+     "type": "text",
+     "text": "После глаголов like, love, hate, prefer, start, begin можно использовать обе формы почти без разницы в значении."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I like cooking. / I like to cook.",
+       "ru": "Мне нравится готовить.",
+       "audioUrl": "/audio/hb/f9f40f2d9d032638.mp3"
+      },
+      {
+       "en": "She started running. / She started to run.",
+       "ru": "Она начала бегать.",
+       "audioUrl": "/audio/hb/ec47f6c275e9e8f1.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "После модальных глаголов (can, must, should, will) и после make/let идёт голый инфинитив без to: I can swim, She let me go, They made him wait."
+    },
+    {
+     "type": "example",
+     "en": "I want to learn English, and I enjoy watching films in English.",
+     "ru": "Я хочу выучить английский и люблю смотреть фильмы на английском.",
+     "note": "want to learn — инфинитив; enjoy watching — герундий.",
+     "audioUrl": "/audio/hb/c1c53c20205b1257.mp3"
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: после enjoy, finish, avoid НЕ ставим инфинитив. Правильно: I enjoy dancing (НЕ I enjoy to dance). И наоборот: I want to eat (НЕ I want eating)."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.word-order",
+   "category": "grammar",
+   "title": {
+    "ru": "Порядок слов в предложении",
+    "en": "Word order"
+   },
+   "summary": "В английском порядок слов фиксированный: подлежащее, сказуемое, дополнение.",
+   "level": "A2",
+   "icon": "list",
+   "order": 23,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Порядок слов в предложении"
+    },
+    {
+     "type": "text",
+     "text": "В русском языке слова можно переставлять почти свободно: «Я люблю кофе» и «Кофе я люблю» — оба варианта понятны. В английском так нельзя. Порядок слов фиксированный, и именно он показывает, кто что делает."
+    },
+    {
+     "type": "rule",
+     "text": "Базовая схема: Подлежащее + Сказуемое + Дополнение (Subject + Verb + Object)."
+    },
+    {
+     "type": "example",
+     "en": "I love coffee.",
+     "ru": "Я люблю кофе.",
+     "note": "I — подлежащее, love — сказуемое, coffee — дополнение.",
+     "audioUrl": "/audio/hb/ecfa91774105088c.mp3"
+    },
+    {
+     "type": "example",
+     "en": "The cat caught a mouse.",
+     "ru": "Кошка поймала мышь.",
+     "note": "Поменяешь местами cat и mouse — изменится смысл.",
+     "audioUrl": "/audio/hb/8297597713a0f42c.mp3"
+    },
+    {
+     "type": "text",
+     "text": "Обстоятельства времени и места обычно ставятся в конце. Если их два, то сначала место, потом время."
+    },
+    {
+     "type": "table",
+     "title": "Позиции в предложении",
+     "headers": [
+      "Кто",
+      "Действие",
+      "Что / Кого",
+      "Где",
+      "Когда"
+     ],
+     "rows": [
+      [
+       "I",
+       "read",
+       "a book",
+       "at home",
+       "every evening"
+      ],
+      [
+       "She",
+       "bought",
+       "a dress",
+       "in London",
+       "last week"
+      ],
+      [
+       "We",
+       "watched",
+       "a film",
+       "at the cinema",
+       "yesterday"
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "Обстоятельства частотности (always, often, usually, never) ставятся перед смысловым глаголом, но после глагола to be."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "He always drinks tea in the morning.",
+       "ru": "Он всегда пьёт чай по утрам.",
+       "audioUrl": "/audio/hb/f6db3186d6a20eb3.mp3"
+      },
+      {
+       "en": "She is never late.",
+       "ru": "Она никогда не опаздывает.",
+       "audioUrl": "/audio/hb/93e9399b0cb9f144.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Прилагательное ставится перед существительным: a red car, а не «a car red»."
+    },
+    {
+     "type": "note",
+     "text": "В вопросах порядок меняется: на первое место выходит вспомогательный глагол (Do you like coffee?), но об этом — в темах про вопросы."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.question-tags",
+   "category": "grammar",
+   "title": {
+    "ru": "Разделительные вопросы (…, isn't it?)",
+    "en": "Question tags"
+   },
+   "summary": "Короткий «хвостик» в конце фразы, чтобы уточнить или получить согласие.",
+   "level": "B1",
+   "icon": "question",
+   "order": 24,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Разделительные вопросы (question tags)"
+    },
+    {
+     "type": "text",
+     "text": "Разделительный вопрос — это короткий «хвостик» в конце предложения: «…, не так ли?». По-английски он звучит как isn't it?, don't you?, right? и добавляется, когда мы хотим уточнить или получить подтверждение."
+    },
+    {
+     "type": "rule",
+     "text": "Главное правило: утвердительное предложение — отрицательный хвостик; отрицательное предложение — утвердительный хвостик."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "You are tired, aren't you?",
+       "ru": "Ты устал, не так ли?",
+       "audioUrl": "/audio/hb/046a005463ac9dcb.mp3"
+      },
+      {
+       "en": "You aren't tired, are you?",
+       "ru": "Ты не устал, да?",
+       "audioUrl": "/audio/hb/72be448c7eea70fb.mp3"
+      }
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "В хвостике повторяется вспомогательный глагол основной части (или to be), а подлежащее заменяется местоимением."
+    },
+    {
+     "type": "table",
+     "title": "Как выбрать хвостик",
+     "headers": [
+      "Предложение",
+      "Хвостик",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "She is a teacher,",
+       "isn't she?",
+       "Она учительница, не так ли?"
+      ],
+      [
+       "They live here,",
+       "don't they?",
+       "Они здесь живут, да?"
+      ],
+      [
+       "He can swim,",
+       "can't he?",
+       "Он умеет плавать, верно?"
+      ],
+      [
+       "You went home,",
+       "didn't you?",
+       "Ты пошёл домой, да?"
+      ],
+      [
+       "It won't rain,",
+       "will it?",
+       "Дождя не будет, правда?"
+      ],
+      [
+       "We haven't met,",
+       "have we?",
+       "Мы не встречались, да?"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Есть особые случаи: у «I am» хвостик — aren't I? (Am late, aren't I?). После let's — shall we? После повелительного наклонения — will you? (Sit down, will you?)."
+    },
+    {
+     "type": "note",
+     "text": "Интонация важна: если голос идёт вниз — вы просто ждёте согласия; если вверх — действительно спрашиваете и не уверены в ответе."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.passive",
+   "category": "grammar",
+   "title": {
+    "ru": "Пассивный залог (is made)",
+    "en": "Passive voice"
+   },
+   "summary": "Когда важно само действие, а не тот, кто его совершает.",
+   "level": "B1",
+   "icon": "verb",
+   "order": 25,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Пассивный залог (passive voice)"
+    },
+    {
+     "type": "text",
+     "text": "Пассивный залог используют, когда важно само действие или его объект, а не тот, кто это сделал. Сравните: «Кто-то построил этот дом» (активный) и «Этот дом был построен» (пассивный). Часто исполнитель неизвестен или не важен."
+    },
+    {
+     "type": "rule",
+     "text": "Формула пассива: to be (в нужном времени) + третья форма глагола (Past Participle)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Cheese is made from milk.",
+       "ru": "Сыр делают из молока.",
+       "audioUrl": "/audio/hb/27a953f67c9406de.mp3"
+      },
+      {
+       "en": "The letter was written yesterday.",
+       "ru": "Письмо было написано вчера.",
+       "audioUrl": "/audio/hb/d88b8397889573f5.mp3"
+      },
+      {
+       "en": "The house is being built now.",
+       "ru": "Дом сейчас строится.",
+       "audioUrl": "/audio/hb/a9de468152a60dc0.mp3"
+      }
+     ]
+    },
+    {
+     "type": "table",
+     "title": "Пассив в разных временах",
+     "headers": [
+      "Время",
+      "Форма to be",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Present Simple",
+       "is / are",
+       "English is spoken here."
+      ],
+      [
+       "Past Simple",
+       "was / were",
+       "The car was repaired."
+      ],
+      [
+       "Present Continuous",
+       "is / are being",
+       "The road is being repaired."
+      ],
+      [
+       "Present Perfect",
+       "has / have been",
+       "The work has been done."
+      ],
+      [
+       "Future Simple",
+       "will be",
+       "The results will be announced."
+      ],
+      [
+       "Modal (can)",
+       "can be",
+       "It can be fixed easily."
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "Если нужно указать исполнителя действия, используйте предлог by."
+    },
+    {
+     "type": "example",
+     "en": "This book was written by a famous author.",
+     "ru": "Эта книга была написана известным автором.",
+     "note": "by показывает, кем совершено действие.",
+     "audioUrl": "/audio/hb/a20233062b065538.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Чтобы построить пассив из активного предложения, дополнение становится подлежащим: They cleaned the room. → The room was cleaned."
+    },
+    {
+     "type": "note",
+     "text": "Не путайте: в пассиве всегда стоит форма to be. «Is made» — пассив, а «makes» — активный залог."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.phrasal-verbs",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Фразовые глаголы (частые)",
+    "en": "Common phrasal verbs"
+   },
+   "summary": "Частые фразовые глаголы с переводом и примерами.",
+   "level": "B1",
+   "icon": "verb",
+   "order": 9,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Фразовые глаголы (частые)"
+    },
+    {
+     "type": "text",
+     "text": "Фразовый глагол — это глагол с предлогом или наречием, которые вместе получают новое значение. Например, look означает «смотреть», а look after — «заботиться». Их не переведёшь по частям, поэтому лучше запоминать целиком. Ниже — самые частые."
+    },
+    {
+     "type": "table",
+     "title": "Частые фразовые глаголы",
+     "headers": [
+      "Фразовый глагол",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "get up",
+       "вставать (с постели)",
+       "I get up at seven."
+      ],
+      [
+       "wake up",
+       "просыпаться",
+       "I woke up early today."
+      ],
+      [
+       "turn on",
+       "включать",
+       "Turn on the light, please."
+      ],
+      [
+       "turn off",
+       "выключать",
+       "Please turn off the TV."
+      ],
+      [
+       "look for",
+       "искать",
+       "I'm looking for my keys."
+      ],
+      [
+       "look after",
+       "заботиться, присматривать",
+       "She looks after her sister."
+      ],
+      [
+       "give up",
+       "сдаваться, бросать",
+       "Don't give up!"
+      ],
+      [
+       "put on",
+       "надевать",
+       "Put on your coat, it's cold."
+      ],
+      [
+       "take off",
+       "снимать; взлетать",
+       "He took off his shoes."
+      ],
+      [
+       "find out",
+       "выяснять, узнавать",
+       "I want to find out the truth."
+      ],
+      [
+       "come back",
+       "возвращаться",
+       "Come back soon!"
+      ],
+      [
+       "go on",
+       "продолжать",
+       "Please go on with your story."
+      ],
+      [
+       "pick up",
+       "поднимать; забирать",
+       "I'll pick you up at eight."
+      ],
+      [
+       "set up",
+       "создавать, устанавливать",
+       "They set up a new company."
+      ],
+      [
+       "grow up",
+       "взрослеть",
+       "She grew up in Moscow."
+      ],
+      [
+       "break down",
+       "ломаться (о технике)",
+       "My car broke down again."
+      ],
+      [
+       "run out",
+       "заканчиваться (о запасе)",
+       "We ran out of milk."
+      ],
+      [
+       "check in",
+       "регистрироваться (заезд)",
+       "We checked in at the hotel."
+      ],
+      [
+       "check out",
+       "выезжать; проверять",
+       "We check out at noon."
+      ],
+      [
+       "fill in",
+       "заполнять (бланк)",
+       "Fill in this form, please."
+      ],
+      [
+       "hang on",
+       "подождать (разг.)",
+       "Hang on a second!"
+      ],
+      [
+       "hold on",
+       "подождать; держаться",
+       "Hold on, I'm coming."
+      ],
+      [
+       "calm down",
+       "успокаиваться",
+       "Calm down and breathe."
+      ],
+      [
+       "sit down",
+       "садиться",
+       "Please sit down."
+      ],
+      [
+       "stand up",
+       "вставать",
+       "Everyone stood up."
+      ],
+      [
+       "get on",
+       "садиться (в транспорт)",
+       "Get on the bus quickly."
+      ],
+      [
+       "get off",
+       "выходить (из транспорта)",
+       "We got off at the station."
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "Can you turn off the light and pick up the book?",
+     "ru": "Можешь выключить свет и поднять книгу?",
+     "audioUrl": "/audio/hb/9369a488f8ebbd39.mp3"
+    },
+    {
+     "type": "example",
+     "en": "I grew up in a small town, but I never gave up my dreams.",
+     "ru": "Я вырос в маленьком городе, но никогда не бросал свои мечты.",
+     "audioUrl": "/audio/hb/58fd52b090682164.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "С местоимением-дополнением слова разделяются: put it on (а не «put on it»), turn it off."
+    },
+    {
+     "type": "note",
+     "text": "Один и тот же глагол с разными предлогами меняет смысл: take off (снимать / взлетать), take up (браться за что-то), take back (возвращать)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.irregular-plurals",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Неправильное множественное число",
+    "en": "Irregular plurals"
+   },
+   "summary": "Существительные, которые образуют множественное число не по правилу «+s».",
+   "level": "A2",
+   "icon": "plural",
+   "order": 10,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Неправильное множественное число"
+    },
+    {
+     "type": "text",
+     "text": "Обычно множественное число образуется прибавлением -s: cat → cats. Но у части существительных форма меняется по-особому, и её нужно запомнить. Есть и такие слова, которые вообще не меняются. Ниже — самые частые."
+    },
+    {
+     "type": "table",
+     "title": "Особые формы множественного числа",
+     "headers": [
+      "Единственное",
+      "Множественное",
+      "Перевод"
+     ],
+     "rows": [
+      [
+       "man",
+       "men",
+       "мужчина"
+      ],
+      [
+       "woman",
+       "women",
+       "женщина"
+      ],
+      [
+       "child",
+       "children",
+       "ребёнок"
+      ],
+      [
+       "foot",
+       "feet",
+       "нога (ступня)"
+      ],
+      [
+       "tooth",
+       "teeth",
+       "зуб"
+      ],
+      [
+       "person",
+       "people",
+       "человек"
+      ],
+      [
+       "mouse",
+       "mice",
+       "мышь"
+      ],
+      [
+       "fish",
+       "fish",
+       "рыба"
+      ],
+      [
+       "sheep",
+       "sheep",
+       "овца"
+      ],
+      [
+       "goose",
+       "geese",
+       "гусь"
+      ],
+      [
+       "life",
+       "lives",
+       "жизнь"
+      ],
+      [
+       "knife",
+       "knives",
+       "нож"
+      ],
+      [
+       "leaf",
+       "leaves",
+       "лист"
+      ],
+      [
+       "wife",
+       "wives",
+       "жена"
+      ],
+      [
+       "half",
+       "halves",
+       "половина"
+      ],
+      [
+       "city",
+       "cities",
+       "город"
+      ],
+      [
+       "baby",
+       "babies",
+       "малыш"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "There are three children and two women here.",
+     "ru": "Здесь трое детей и две женщины.",
+     "audioUrl": "/audio/hb/6de6bf7a8f7f8e4b.mp3"
+    },
+    {
+     "type": "example",
+     "en": "The mice ran under the leaves.",
+     "ru": "Мыши пробежали под листьями.",
+     "audioUrl": "/audio/hb/66621f13bbabfc51.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "У слов на -f / -fe часто -f меняется на -ves: knife → knives, leaf → leaves. У слов на согласную + y: -y меняется на -ies (city → cities)."
+    },
+    {
+     "type": "note",
+     "text": "Fish, sheep, deer не меняются во множественном числе. А people — это множественное число от person (два person — это two people)."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.contractions",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Сокращения (I'm, don't, won't)",
+    "en": "Contractions"
+   },
+   "summary": "Короткие формы глаголов, которые постоянно звучат в живой речи.",
+   "level": "A1",
+   "icon": "list",
+   "order": 11,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "Сокращения (contractions)"
+    },
+    {
+     "type": "text",
+     "text": "В разговорной речи англичане почти всегда сокращают вспомогательные глаголы: вместо I am говорят I'm, вместо do not — don't. Апостроф (') показывает, что буква пропущена. Понимать эти формы важно, ведь именно так звучит живая речь."
+    },
+    {
+     "type": "table",
+     "title": "Частые сокращения",
+     "headers": [
+      "Полная форма",
+      "Сокращение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "I am",
+       "I'm",
+       "I'm ready."
+      ],
+      [
+       "you are",
+       "you're",
+       "You're right."
+      ],
+      [
+       "he is",
+       "he's",
+       "He's at home."
+      ],
+      [
+       "we are",
+       "we're",
+       "We're friends."
+      ],
+      [
+       "they are",
+       "they're",
+       "They're here."
+      ],
+      [
+       "is not",
+       "isn't",
+       "It isn't easy."
+      ],
+      [
+       "are not",
+       "aren't",
+       "They aren't ready."
+      ],
+      [
+       "do not",
+       "don't",
+       "I don't know."
+      ],
+      [
+       "does not",
+       "doesn't",
+       "She doesn't care."
+      ],
+      [
+       "did not",
+       "didn't",
+       "He didn't come."
+      ],
+      [
+       "cannot",
+       "can't",
+       "I can't swim."
+      ],
+      [
+       "will not",
+       "won't",
+       "I won't be late."
+      ],
+      [
+       "I would",
+       "I'd",
+       "I'd like some tea."
+      ],
+      [
+       "I have",
+       "I've",
+       "I've finished."
+      ],
+      [
+       "she has",
+       "she's",
+       "She's gone home."
+      ],
+      [
+       "I will",
+       "I'll",
+       "I'll call you."
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "I'm sure they're coming, but he isn't.",
+     "ru": "Я уверен, что они придут, а он — нет.",
+     "audioUrl": "/audio/hb/d5789554d54790ca.mp3"
+    },
+    {
+     "type": "example",
+     "en": "I won't go if you don't want me to.",
+     "ru": "Я не пойду, если ты не хочешь.",
+     "audioUrl": "/audio/hb/36b2d297f23c30dc.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Осторожно: won't — это сокращение от will not (не «wont»), а can't — от cannot. Их форма особенная."
+    },
+    {
+     "type": "note",
+     "text": "'s может значить и is, и has: He's tired (= is), He's gone (= has). А 'd — это would или had. Понять помогает контекст и форма глагола рядом."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.past-perfect",
+   "category": "grammar",
+   "title": {
+    "ru": "Past Perfect (had done)",
+    "en": "Past Perfect"
+   },
+   "summary": "«Прошедшее до прошедшего»: действие, которое случилось раньше другого действия в прошлом.",
+   "level": "B1",
+   "icon": "clock",
+   "order": 27,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Past Perfect показывает действие, которое произошло раньше другого действия или момента в прошлом. Это «прошедшее до прошедшего»: сначала случилось одно (Past Perfect), потом другое (Past Simple)."
+    },
+    {
+     "type": "rule",
+     "text": "Используем Past Perfect, когда: 1) одно прошлое действие завершилось до другого прошлого действия (When I arrived, the train had already left); 2) нужно подчеркнуть причину или результат к моменту в прошлом (She was tired because she had worked all day)."
+    },
+    {
+     "type": "example",
+     "en": "When we got to the cinema, the film had already started.",
+     "ru": "Когда мы добрались до кино, фильм уже начался.",
+     "note": "«Начался» (had started) — раньше, «добрались» (got) — позже.",
+     "audioUrl": "/audio/hb/1173fdc6419b7fa7.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "Как строится"
+    },
+    {
+     "type": "table",
+     "title": "had + 3-я форма глагола (одинаково для всех лиц)",
+     "headers": [
+      "Форма",
+      "Схема",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "+",
+       "had + V3",
+       "She had finished the report."
+      ],
+      [
+       "−",
+       "had not (hadn't) + V3",
+       "They hadn't met before."
+      ],
+      [
+       "?",
+       "Had + подлежащее + V3",
+       "Had you seen him before?"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "had одинаковый для всех лиц: I had, you had, he had, we had. В речи почти всегда сокращается: I'd, she'd, we'd."
+    },
+    {
+     "type": "heading",
+     "text": "Примеры"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "The house was empty; everyone had gone out.",
+       "ru": "Дом был пуст: все уже ушли.",
+       "audioUrl": "/audio/hb/0d4e917e1e6f3651.mp3"
+      },
+      {
+       "en": "I couldn't get in because I had lost my key.",
+       "ru": "Я не мог войти, потому что потерял ключ.",
+       "audioUrl": "/audio/hb/7dc5f2c93dd94eb8.mp3"
+      },
+      {
+       "en": "By 2010 she had already written three books.",
+       "ru": "К 2010 году она уже написала три книги.",
+       "audioUrl": "/audio/hb/bc5c3259eecc3be3.mp3"
+      },
+      {
+       "en": "He told me he had never been abroad.",
+       "ru": "Он сказал мне, что никогда не был за границей.",
+       "audioUrl": "/audio/hb/c5a444c8458a77fe.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Слова-маркеры"
+    },
+    {
+     "type": "table",
+     "title": "Частые сигналы Past Perfect",
+     "headers": [
+      "Слово",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "already",
+       "уже",
+       "The shop had already closed."
+      ],
+      [
+       "just",
+       "только что",
+       "She had just left when I called."
+      ],
+      [
+       "never / ever",
+       "никогда / когда-либо",
+       "It was the best film I had ever seen."
+      ],
+      [
+       "by (the time)",
+       "к (моменту)",
+       "By 6 o'clock they had finished."
+      ],
+      [
+       "after / before",
+       "после / до того как",
+       "After he had eaten, he went out."
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Если оба действия идут по порядку одно за другим, Past Perfect часто не нужен — хватает Past Simple: I got up, washed and had breakfast."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: ставить Past Perfect везде в прошлом. Он нужен только когда важно показать, что одно действие было раньше другого. Неверно: «Yesterday I had gone to work». Верно: «Yesterday I went to work»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.present-perfect-continuous",
+   "category": "grammar",
+   "title": {
+    "ru": "Present Perfect Continuous",
+    "en": "Present Perfect Continuous"
+   },
+   "summary": "Действие длилось от прошлого до сейчас: has been doing, for / since.",
+   "level": "B1",
+   "icon": "clock",
+   "order": 28,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Present Perfect Continuous показывает действие, которое началось в прошлом и продолжается до сих пор (или только что закончилось). Главное здесь — длительность процесса и его связь с настоящим."
+    },
+    {
+     "type": "rule",
+     "text": "Используем Present Perfect Continuous, когда: 1) действие длится до сейчас, и мы называем период (I've been waiting for an hour); 2) процесс только что закончился, а его результат виден сейчас (Your eyes are red — have you been crying?)."
+    },
+    {
+     "type": "example",
+     "en": "I've been learning English for three years.",
+     "ru": "Я учу английский уже три года.",
+     "note": "Начал три года назад и учу до сих пор.",
+     "audioUrl": "/audio/hb/02da18d6a4f6115c.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "Как строится"
+    },
+    {
+     "type": "table",
+     "title": "have/has been + глагол с -ing",
+     "headers": [
+      "Форма",
+      "Схема",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "+",
+       "have/has been + V-ing",
+       "She has been working since morning."
+      ],
+      [
+       "−",
+       "haven't/hasn't been + V-ing",
+       "They haven't been sleeping well."
+      ],
+      [
+       "?",
+       "Have/Has + подлеж. + been + V-ing",
+       "Have you been waiting long?"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "has been — только с he, she, it. Со всеми остальными (I, you, we, they) — have been."
+    },
+    {
+     "type": "heading",
+     "text": "for и since"
+    },
+    {
+     "type": "table",
+     "title": "Как указать длительность",
+     "headers": [
+      "Слово",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "for",
+       "в течение (отрезок времени)",
+       "for two hours, for a week"
+      ],
+      [
+       "since",
+       "с (точка отсчёта)",
+       "since Monday, since 2020"
+      ],
+      [
+       "how long",
+       "как долго (вопрос)",
+       "How long have you been living here?"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "It has been raining since morning.",
+       "ru": "Дождь идёт с самого утра.",
+       "audioUrl": "/audio/hb/25910e3635f477d4.mp3"
+      },
+      {
+       "en": "We've been driving for six hours.",
+       "ru": "Мы едем уже шесть часов.",
+       "audioUrl": "/audio/hb/707d7e30728b05f1.mp3"
+      },
+      {
+       "en": "She's tired because she has been running.",
+       "ru": "Она устала, потому что бегала.",
+       "audioUrl": "/audio/hb/1e40c124ae1ecdd2.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Continuous или Perfect?"
+    },
+    {
+     "type": "table",
+     "title": "Сравнение",
+     "headers": [
+      "Present Perfect Continuous",
+      "Present Perfect"
+     ],
+     "rows": [
+      [
+       "Важен процесс и его длительность",
+       "Важен результат / факт"
+      ],
+      [
+       "I've been reading this book.",
+       "I've read this book."
+      ],
+      [
+       "(читаю, ещё не дочитал)",
+       "(прочитал, закончил)"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Глаголы состояния (know, love, want, be, have «иметь») почти не используют в Continuous. Говорим I've known her for years, а не «I've been knowing»."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: пропускать been. Неверно: «I have waiting». Верно: «I have been waiting»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.reported-speech",
+   "category": "grammar",
+   "title": {
+    "ru": "Косвенная речь",
+    "en": "Reported speech"
+   },
+   "summary": "Как пересказать чужие слова: сдвиг времён, местоимений и слов-указателей.",
+   "level": "B1",
+   "icon": "chat",
+   "order": 29,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Косвенная речь (reported speech) — это когда мы пересказываем чужие слова своими, без кавычек. Прямая речь: He said, «I am busy». Косвенная: He said (that) he was busy."
+    },
+    {
+     "type": "rule",
+     "text": "Если вводный глагол в прошедшем (said, told), время в пересказе обычно сдвигается на шаг назад, местоимения меняются по смыслу (I → he/she), а слова-указатели времени и места — на «дальние» (this → that, now → then)."
+    },
+    {
+     "type": "heading",
+     "text": "Сдвиг времён"
+    },
+    {
+     "type": "table",
+     "title": "Прямая речь → косвенная речь",
+     "headers": [
+      "Прямая речь",
+      "Косвенная речь",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "Present Simple (do)",
+       "Past Simple (did)",
+       "«I work» → he said he worked"
+      ],
+      [
+       "Present Continuous (am doing)",
+       "Past Continuous (was doing)",
+       "«I'm reading» → she said she was reading"
+      ],
+      [
+       "Past Simple (did)",
+       "Past Perfect (had done)",
+       "«I saw it» → he said he had seen it"
+      ],
+      [
+       "Present Perfect (have done)",
+       "Past Perfect (had done)",
+       "«I've finished» → she said she had finished"
+      ],
+      [
+       "will",
+       "would",
+       "«I will call» → he said he would call"
+      ],
+      [
+       "can",
+       "could",
+       "«I can swim» → she said she could swim"
+      ],
+      [
+       "must / have to",
+       "had to",
+       "«I must go» → he said he had to go"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Слова-указатели"
+    },
+    {
+     "type": "table",
+     "title": "Что ещё меняется",
+     "headers": [
+      "Прямая речь",
+      "Косвенная речь"
+     ],
+     "rows": [
+      [
+       "this / these",
+       "that / those"
+      ],
+      [
+       "here",
+       "there"
+      ],
+      [
+       "now",
+       "then"
+      ],
+      [
+       "today",
+       "that day"
+      ],
+      [
+       "tomorrow",
+       "the next day"
+      ],
+      [
+       "yesterday",
+       "the day before"
+      ],
+      [
+       "ago",
+       "before"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "say или tell?"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "He said (that) he was tired.",
+       "ru": "Он сказал, что устал.",
+       "audioUrl": "/audio/hb/317f3550cf68cbfd.mp3"
+      },
+      {
+       "en": "He told me (that) he was tired.",
+       "ru": "Он сказал мне, что устал.",
+       "audioUrl": "/audio/hb/05c5cc2b31b4d124.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "tell требует адресата (tell me, tell her), а say — нет. Верно: He told me… / He said… Неверно: «He said me…» или «He told that…»."
+    },
+    {
+     "type": "heading",
+     "text": "Вопросы в косвенной речи"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "«Where do you live?» → She asked where I lived.",
+       "ru": "«Где ты живёшь?» → Она спросила, где я живу.",
+       "audioUrl": "/audio/hb/837c063d1bc6565f.mp3"
+      },
+      {
+       "en": "«Are you ready?» → He asked if I was ready.",
+       "ru": "«Ты готов?» → Он спросил, готов ли я.",
+       "audioUrl": "/audio/hb/f3ad7e9cb064cddd.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В косвенном вопросе порядок слов прямой (как в утверждении), без do/did и без знака вопроса. Общие вопросы (да/нет) вводим через if или whether."
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: сохранять порядок вопроса. Неверно: «She asked where did I live». Верно: «She asked where I lived»."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.dates-time",
+   "category": "grammar",
+   "title": {
+    "ru": "Даты и время: как говорить",
+    "en": "Dates & time"
+   },
+   "summary": "Как читать даты, называть время, дни недели и месяцы по-английски.",
+   "level": "A1",
+   "icon": "clock",
+   "order": 30,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "В английском даты и время говорят не так, как пишут. Важно знать порядковые числительные (the fifth, the twelfth) и пару шаблонов для времени. Разберём по порядку."
+    },
+    {
+     "type": "heading",
+     "text": "Как читать даты"
+    },
+    {
+     "type": "rule",
+     "text": "Число всегда читается как порядковое (the 1st → the first). Есть два варианта: британский «the 5th of May» и американский «May 5th». Год 1999 читаем nineteen ninety-nine, а 2007 — two thousand (and) seven."
+    },
+    {
+     "type": "table",
+     "title": "Один и тот же день — два способа",
+     "headers": [
+      "Запись",
+      "Британский вариант",
+      "Американский вариант"
+     ],
+     "rows": [
+      [
+       "5 May",
+       "the fifth of May",
+       "May (the) fifth"
+      ],
+      [
+       "1 January",
+       "the first of January",
+       "January (the) first"
+      ],
+      [
+       "22 June",
+       "the twenty-second of June",
+       "June (the) twenty-second"
+      ]
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Осторожно с записью цифрами: 03/04 в Британии — 3 апреля, а в США — 4 марта. Чтобы не путать, месяц лучше писать словом."
+    },
+    {
+     "type": "heading",
+     "text": "Как называть время"
+    },
+    {
+     "type": "table",
+     "title": "Разговорный способ (стрелки часов)",
+     "headers": [
+      "Время",
+      "Как сказать",
+      "Дословно"
+     ],
+     "rows": [
+      [
+       "6:00",
+       "six o'clock",
+       "ровно шесть"
+      ],
+      [
+       "6:15",
+       "quarter past six",
+       "четверть после шести"
+      ],
+      [
+       "6:30",
+       "half past six",
+       "половина после шести (полседьмого)"
+      ],
+      [
+       "6:45",
+       "quarter to seven",
+       "без четверти семь"
+      ],
+      [
+       "6:10",
+       "ten past six",
+       "десять минут после шести"
+      ],
+      [
+       "6:50",
+       "ten to seven",
+       "без десяти семь"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "past — «после» (до половины), to — «до/без» (после половины). Простой способ без правил: просто называть цифры — 7:45 → seven forty-five, 6:30 → six thirty."
+    },
+    {
+     "type": "heading",
+     "text": "Дни недели и месяцы"
+    },
+    {
+     "type": "table",
+     "title": "Пишутся всегда с большой буквы",
+     "headers": [
+      "Дни недели",
+      "Месяцы (1-6)",
+      "Месяцы (7-12)"
+     ],
+     "rows": [
+      [
+       "Monday, Tuesday",
+       "January, February",
+       "July, August"
+      ],
+      [
+       "Wednesday, Thursday",
+       "March, April",
+       "September, October"
+      ],
+      [
+       "Friday, Saturday, Sunday",
+       "May, June",
+       "November, December"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Предлоги времени"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "at 7 o'clock, at night",
+       "ru": "at — с точным временем и «ночью»",
+       "audioUrl": "/audio/hb/2fc1737adb9c842a.mp3"
+      },
+      {
+       "en": "on Monday, on 5 May",
+       "ru": "on — с днями и датами",
+       "audioUrl": "/audio/hb/f81b287e25b815fd.mp3"
+      },
+      {
+       "en": "in May, in 2025, in the morning",
+       "ru": "in — с месяцами, годами, частями дня",
+       "audioUrl": "/audio/hb/a524c25792d549c7.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Типичная ошибка: «in Monday» или «on morning». Верно: on Monday, in the morning. И запомните: at the weekend (BrE) / on the weekend (AmE)."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.travel",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: аэропорт и путешествие",
+    "en": "Airport & travel"
+   },
+   "summary": "Готовые фразы для регистрации, досмотра и посадки в аэропорту.",
+   "level": "A2",
+   "icon": "chat",
+   "order": 5,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Эти фразы помогут пройти регистрацию, сдать багаж, разобраться с посадкой и не растеряться в аэропорту. Выучите ключевые слова: check-in (регистрация), boarding pass (посадочный талон), gate (выход на посадку)."
+    },
+    {
+     "type": "heading",
+     "text": "Регистрация и багаж"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Where is the check-in desk for this flight?",
+       "ru": "Где стойка регистрации на этот рейс?",
+       "audioUrl": "/audio/hb/37a4af9fcc60d8ac.mp3"
+      },
+      {
+       "en": "Here is my passport and booking.",
+       "ru": "Вот мой паспорт и бронь.",
+       "audioUrl": "/audio/hb/8b1e19b24ec811ba.mp3"
+      },
+      {
+       "en": "I'd like a window seat, please.",
+       "ru": "Дайте, пожалуйста, место у окна.",
+       "audioUrl": "/audio/hb/809fe71cdbd978a1.mp3"
+      },
+      {
+       "en": "Where is the bag drop?",
+       "ru": "Где сдать багаж?",
+       "audioUrl": "/audio/hb/4249c43a95823af8.mp3"
+      },
+      {
+       "en": "I have one suitcase to check in.",
+       "ru": "У меня один чемодан для сдачи в багаж.",
+       "audioUrl": "/audio/hb/e186d1b85033b221.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Досмотр и посадка"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Which gate is the flight to London?",
+       "ru": "С какого выхода рейс в Лондон?",
+       "audioUrl": "/audio/hb/167141da65ca7a1c.mp3"
+      },
+      {
+       "en": "What time does boarding start?",
+       "ru": "Во сколько начинается посадка?",
+       "audioUrl": "/audio/hb/df6183d49a0ec249.mp3"
+      },
+      {
+       "en": "Is the flight on time?",
+       "ru": "Рейс вылетает вовремя?",
+       "audioUrl": "/audio/hb/4d3f1874b964b4b6.mp3"
+      },
+      {
+       "en": "Here is my boarding pass.",
+       "ru": "Вот мой посадочный талон.",
+       "audioUrl": "/audio/hb/562fdf70602f1023.mp3"
+      },
+      {
+       "en": "Excuse me, I think this is my seat.",
+       "ru": "Извините, кажется, это моё место.",
+       "audioUrl": "/audio/hb/99b90c4dedf9d9f1.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Если что-то пошло не так"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I've missed my connecting flight.",
+       "ru": "Я опоздал на стыковочный рейс.",
+       "audioUrl": "/audio/hb/267080a6f765a4f0.mp3"
+      },
+      {
+       "en": "My luggage hasn't arrived.",
+       "ru": "Мой багаж не прибыл.",
+       "audioUrl": "/audio/hb/5e9692e9c25da4bf.mp3"
+      },
+      {
+       "en": "Can you help me, please?",
+       "ru": "Вы можете мне помочь?",
+       "audioUrl": "/audio/hb/b4e54420819048cc.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "На стойке принято сначала поздороваться: «Hello» или «Good morning». Просьбу вежливо оформлять через «Could I…?» или «I'd like…», а в конце сказать «Thank you»."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.hotel",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: в отеле",
+    "en": "At the hotel"
+   },
+   "summary": "Фразы, чтобы забронировать номер, заселиться и решить вопросы на ресепшене.",
+   "level": "A2",
+   "icon": "chat",
+   "order": 6,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "С этими фразами вы легко заселитесь в отель, зададите вопросы на ресепшене (reception) и выселитесь. Ключевые слова: check-in (заселение), check-out (выселение), booking / reservation (бронь)."
+    },
+    {
+     "type": "heading",
+     "text": "Бронирование и заселение"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I'd like to book a room for two nights.",
+       "ru": "Я хотел бы забронировать номер на две ночи.",
+       "audioUrl": "/audio/hb/78c59129b075b2bb.mp3"
+      },
+      {
+       "en": "I have a reservation under the name Petrov.",
+       "ru": "У меня бронь на имя Петров.",
+       "audioUrl": "/audio/hb/4fb9f9ac2d0d27da.mp3"
+      },
+      {
+       "en": "Do you have any rooms available?",
+       "ru": "У вас есть свободные номера?",
+       "audioUrl": "/audio/hb/4c3c51709dba0598.mp3"
+      },
+      {
+       "en": "How much is it per night?",
+       "ru": "Сколько стоит за ночь?",
+       "audioUrl": "/audio/hb/4075a904094e5846.mp3"
+      },
+      {
+       "en": "Is breakfast included?",
+       "ru": "Завтрак включён?",
+       "audioUrl": "/audio/hb/49c372c7d445e4d1.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Вопросы на ресепшене"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "What time is check-out?",
+       "ru": "Во сколько выселение?",
+       "audioUrl": "/audio/hb/555a697f26f1f2ef.mp3"
+      },
+      {
+       "en": "Is there Wi-Fi in the room? What's the password?",
+       "ru": "В номере есть Wi-Fi? Какой пароль?",
+       "audioUrl": "/audio/hb/ab2a03e356816997.mp3"
+      },
+      {
+       "en": "Could I have a wake-up call at seven?",
+       "ru": "Можно разбудить меня звонком в семь?",
+       "audioUrl": "/audio/hb/6c4d53e0e41311f9.mp3"
+      },
+      {
+       "en": "Where can I have breakfast?",
+       "ru": "Где можно позавтракать?",
+       "audioUrl": "/audio/hb/3c276cc8a2a26eaf.mp3"
+      },
+      {
+       "en": "Can I leave my luggage here after check-out?",
+       "ru": "Можно оставить багаж здесь после выселения?",
+       "audioUrl": "/audio/hb/274be472bb4e76e4.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Проблемы и просьбы"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "The air conditioning isn't working.",
+       "ru": "Кондиционер не работает.",
+       "audioUrl": "/audio/hb/0e8a26f48ac46f41.mp3"
+      },
+      {
+       "en": "Could I have some more towels, please?",
+       "ru": "Можно ещё полотенец?",
+       "audioUrl": "/audio/hb/3a241dc73c3e5c33.mp3"
+      },
+      {
+       "en": "The room next door is very noisy.",
+       "ru": "В соседнем номере очень шумно.",
+       "audioUrl": "/audio/hb/3025718c2beba524.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Чаевые горничной обычно оставляют на тумбочке. За помощь с багажом или вызов такси на ресепшене принято поблагодарить: «Thank you very much»."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.doctor",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: у врача",
+    "en": "At the doctor"
+   },
+   "summary": "Как описать симптомы, попросить помощь и понять врача.",
+   "level": "A2",
+   "icon": "chat",
+   "order": 7,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Эти фразы помогут записаться к врачу, объяснить, что болит, и понять назначения. Универсальное начало жалобы — «I have a…» и «My … hurts» (у меня болит…)."
+    },
+    {
+     "type": "heading",
+     "text": "Запись и начало приёма"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I'd like to make an appointment with a doctor.",
+       "ru": "Я хотел бы записаться к врачу.",
+       "audioUrl": "/audio/hb/ae584aae1cfe1a07.mp3"
+      },
+      {
+       "en": "I don't feel well.",
+       "ru": "Мне нехорошо.",
+       "audioUrl": "/audio/hb/55c81a4fba373210.mp3"
+      },
+      {
+       "en": "It started two days ago.",
+       "ru": "Это началось два дня назад.",
+       "audioUrl": "/audio/hb/bfcd3d6d8467d7c0.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Симптомы"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I have a headache.",
+       "ru": "У меня болит голова.",
+       "audioUrl": "/audio/hb/1043137d27d39d74.mp3"
+      },
+      {
+       "en": "I have a sore throat and a cough.",
+       "ru": "У меня болит горло и есть кашель.",
+       "audioUrl": "/audio/hb/b0be748dbc8a5980.mp3"
+      },
+      {
+       "en": "I have a temperature / a fever.",
+       "ru": "У меня температура.",
+       "audioUrl": "/audio/hb/defff9b354b90cac.mp3"
+      },
+      {
+       "en": "My stomach hurts.",
+       "ru": "У меня болит живот.",
+       "audioUrl": "/audio/hb/1b1a674aeb488b6c.mp3"
+      },
+      {
+       "en": "I feel dizzy and tired.",
+       "ru": "У меня кружится голова, и я чувствую слабость.",
+       "audioUrl": "/audio/hb/ac568c58a0691e62.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Лекарства и вопросы"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Do I need a prescription?",
+       "ru": "Мне нужен рецепт?",
+       "audioUrl": "/audio/hb/690ba5a555976426.mp3"
+      },
+      {
+       "en": "How often should I take this medicine?",
+       "ru": "Как часто принимать это лекарство?",
+       "audioUrl": "/audio/hb/2a359c7a6e5e0224.mp3"
+      },
+      {
+       "en": "I'm allergic to penicillin.",
+       "ru": "У меня аллергия на пенициллин.",
+       "audioUrl": "/audio/hb/1a3c45c6b1e17c67.mp3"
+      },
+      {
+       "en": "Where is the nearest pharmacy?",
+       "ru": "Где ближайшая аптека?",
+       "audioUrl": "/audio/hb/d3f0c7d8d7989ed3.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В экстренной ситуации в Британии звонят 999, в США — 911, в Европе — 112. Ключевая фраза: «I need a doctor» или «Call an ambulance!» (Вызовите скорую!)."
+    }
+   ]
+  },
+  {
+   "ref": "phrases.phone",
+   "category": "phrases",
+   "title": {
+    "ru": "Разговорник: телефон и смолток",
+    "en": "Phone & small talk"
+   },
+   "summary": "Как начать и вести телефонный разговор и лёгкую беседу ни о чём.",
+   "level": "B1",
+   "icon": "chat",
+   "order": 8,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "По телефону собеседника не видно, поэтому в английском есть свои устойчивые фразы — начать разговор, попросить подождать, переспросить. А small talk (лёгкая беседа о погоде, выходных, планах) помогает наладить контакт."
+    },
+    {
+     "type": "heading",
+     "text": "Начало телефонного разговора"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Hello, this is Anna speaking.",
+       "ru": "Здравствуйте, это Анна.",
+       "audioUrl": "/audio/hb/1c5bce3695816a18.mp3"
+      },
+      {
+       "en": "Could I speak to Mr Brown, please?",
+       "ru": "Можно поговорить с мистером Брауном?",
+       "audioUrl": "/audio/hb/2ae239e1bc1a8b3c.mp3"
+      },
+      {
+       "en": "Who's calling, please?",
+       "ru": "Кто звонит?",
+       "audioUrl": "/audio/hb/1902f1933a025cfd.mp3"
+      },
+      {
+       "en": "Hold on a moment, please.",
+       "ru": "Подождите минутку, пожалуйста.",
+       "audioUrl": "/audio/hb/53d3b846121ed1f4.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Если плохо слышно или не туда попали"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Sorry, I didn't catch that. Could you repeat it?",
+       "ru": "Извините, я не расслышал. Повторите, пожалуйста.",
+       "audioUrl": "/audio/hb/68df84c4c3ae5dde.mp3"
+      },
+      {
+       "en": "Could you speak up a little?",
+       "ru": "Можете говорить немного громче?",
+       "audioUrl": "/audio/hb/83ba48b82b4c1551.mp3"
+      },
+      {
+       "en": "I think you've got the wrong number.",
+       "ru": "Кажется, вы ошиблись номером.",
+       "audioUrl": "/audio/hb/53c4657316092b02.mp3"
+      },
+      {
+       "en": "Can I take a message?",
+       "ru": "Что-нибудь передать?",
+       "audioUrl": "/audio/hb/ebb8b380e631cc11.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Смолток (беседа ни о чём)"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "How's it going?",
+       "ru": "Как дела?",
+       "audioUrl": "/audio/hb/8e2ed126db344fcb.mp3"
+      },
+      {
+       "en": "Lovely weather today, isn't it?",
+       "ru": "Хорошая сегодня погода, правда?",
+       "audioUrl": "/audio/hb/7710b60f2fda9db2.mp3"
+      },
+      {
+       "en": "Did you have a good weekend?",
+       "ru": "Как прошли выходные?",
+       "audioUrl": "/audio/hb/a2ad0d3efbad57e6.mp3"
+      },
+      {
+       "en": "Any plans for the holidays?",
+       "ru": "Есть планы на праздники?",
+       "audioUrl": "/audio/hb/0a590c896bd48052.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как вежливо закончить"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "It was nice talking to you.",
+       "ru": "Было приятно поговорить.",
+       "audioUrl": "/audio/hb/a8a6720b218afa6a.mp3"
+      },
+      {
+       "en": "I'd better go now. Talk to you soon.",
+       "ru": "Мне пора. Ещё созвонимся.",
+       "audioUrl": "/audio/hb/59b6a3fc66b3f5a7.mp3"
+      },
+      {
+       "en": "Thanks for calling. Bye!",
+       "ru": "Спасибо за звонок. Пока!",
+       "audioUrl": "/audio/hb/7b9dd7eb66c1a9d5.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Хорошие темы для small talk: погода, выходные, дорога, спорт. Избегайте вопросов о зарплате, возрасте и политике — в англоязычной культуре это считается слишком личным."
+    }
+   ]
+  },
+  {
+   "ref": "grammar.common-mistakes",
+   "category": "grammar",
+   "title": {
+    "ru": "Частые ошибки русскоязычных",
+    "en": "Common mistakes"
+   },
+   "summary": "Типичные ошибки под влиянием русского и как говорить правильно.",
+   "level": "A2",
+   "icon": "list",
+   "order": 26,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Многие ошибки возникают из-за того, что мы переводим фразу с русского слово в слово. Ниже — самые частые случаи. В примерах озвучивается ВЕРНЫЙ вариант, а в пояснении сказано, что было не так."
+    },
+    {
+     "type": "heading",
+     "text": "Возраст: be, а не have"
+    },
+    {
+     "type": "text",
+     "text": "По-русски «мне 20 лет» — но по-английски возраст выражается глаголом be. Нельзя сказать «I have 20 years old»."
+    },
+    {
+     "type": "example",
+     "en": "I am 20 years old.",
+     "ru": "Мне 20 лет.",
+     "note": "Ошибка: «I have 20 years». Возраст — через am/is/are, а не have.",
+     "audioUrl": "/audio/hb/58ebfacbaf56f886.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "Артикль и множественное число"
+    },
+    {
+     "type": "example",
+     "en": "I like reading books.",
+     "ru": "Я люблю читать книги.",
+     "note": "Ошибка: «I like reading book». В общем смысле — множественное число.",
+     "audioUrl": "/audio/hb/079d043811546beb.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "Present Simple: -s в третьем лице"
+    },
+    {
+     "type": "example",
+     "en": "She works in a bank.",
+     "ru": "Она работает в банке.",
+     "note": "Ошибка: «She work». В he/she/it добавляем -s.",
+     "audioUrl": "/audio/hb/e90d96e36fbe15a8.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "do / does в отрицании и вопросе"
+    },
+    {
+     "type": "example",
+     "en": "I don't know.",
+     "ru": "Я не знаю.",
+     "note": "Ошибка: «I not know» или «I no know». Нужен вспомогательный do.",
+     "audioUrl": "/audio/hb/acedd23ecfb0d9b4.mp3"
+    },
+    {
+     "type": "example",
+     "en": "Do you like coffee?",
+     "ru": "Ты любишь кофе?",
+     "note": "Ошибка: «You like coffee?» без do звучит незаконченно.",
+     "audioUrl": "/audio/hb/564b6c69bccb5ca8.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "Предлоги места и времени"
+    },
+    {
+     "type": "example",
+     "en": "I'm good at English.",
+     "ru": "Я хорош в английском.",
+     "note": "Ошибка: «good in English». Устойчивое сочетание — good AT.",
+     "audioUrl": "/audio/hb/5ed3275b40c88c59.mp3"
+    },
+    {
+     "type": "example",
+     "en": "See you on Monday.",
+     "ru": "Увидимся в понедельник.",
+     "note": "Ошибка: «in Monday». С днями недели — on.",
+     "audioUrl": "/audio/hb/1dffae256519923b.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "advice, information, money — неисчисляемые"
+    },
+    {
+     "type": "example",
+     "en": "He gave me some good advice.",
+     "ru": "Он дал мне хороший совет.",
+     "note": "Ошибка: «an advice», «advices». Слово неисчисляемое: some advice, a piece of advice.",
+     "audioUrl": "/audio/hb/9e0418f4a02ecdb8.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "make или do"
+    },
+    {
+     "type": "example",
+     "en": "I have to do my homework.",
+     "ru": "Мне нужно сделать домашнюю работу.",
+     "note": "Ошибка: «make my homework». Homework — с do.",
+     "audioUrl": "/audio/hb/4cbe43b3325cb80f.mp3"
+    },
+    {
+     "type": "heading",
+     "text": "Ложные друзья"
+    },
+    {
+     "type": "example",
+     "en": "I read an interesting magazine.",
+     "ru": "Я прочитал интересный журнал.",
+     "note": "Ошибка: magazine — это журнал, а не магазин. Магазин — shop/store.",
+     "audioUrl": "/audio/hb/2891c696be7b6aa6.mp3"
+    },
+    {
+     "type": "table",
+     "title": "Коротко: неверно → верно",
+     "headers": [
+      "Неверно",
+      "Верно"
+     ],
+     "rows": [
+      [
+       "I have 20 years",
+       "I am 20 years old"
+      ],
+      [
+       "She work here",
+       "She works here"
+      ],
+      [
+       "I not understand",
+       "I don't understand"
+      ],
+      [
+       "good in sport",
+       "good at sport"
+      ],
+      [
+       "make homework",
+       "do homework"
+      ],
+      [
+       "an advice",
+       "some advice"
+      ],
+      [
+       "in Monday",
+       "on Monday"
+      ],
+      [
+       "I feel myself good",
+       "I feel good"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Не переводите дословно. Сначала вспомните готовую английскую фразу, а потом подставляйте свои слова."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.false-friends",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Ложные друзья переводчика",
+    "en": "False friends"
+   },
+   "summary": "Слова, похожие на русские, но с другим значением.",
+   "level": "A2",
+   "icon": "list",
+   "order": 12,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Ложные друзья — это английские слова, которые звучат как русские, но означают совсем другое. Из-за них легко ошибиться. Запомните главные пары."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Слово",
+      "Кажется",
+      "На самом деле"
+     ],
+     "rows": [
+      [
+       "magazine",
+       "магазин",
+       "журнал"
+      ],
+      [
+       "sympathy",
+       "симпатия",
+       "сочувствие"
+      ],
+      [
+       "accurate",
+       "аккуратный",
+       "точный"
+      ],
+      [
+       "actual",
+       "актуальный",
+       "фактический, настоящий"
+      ],
+      [
+       "fabric",
+       "фабрика",
+       "ткань"
+      ],
+      [
+       "family",
+       "фамилия",
+       "семья"
+      ],
+      [
+       "intelligent",
+       "интеллигентный",
+       "умный"
+      ],
+      [
+       "cabinet",
+       "кабинет",
+       "шкаф; кабинет министров"
+      ],
+      [
+       "brilliant",
+       "бриллиант",
+       "блестящий, великолепный"
+      ],
+      [
+       "artist",
+       "артист",
+       "художник"
+      ],
+      [
+       "list",
+       "лист",
+       "список"
+      ],
+      [
+       "prospect",
+       "проспект",
+       "перспектива"
+      ],
+      [
+       "replica",
+       "реплика (фраза)",
+       "копия"
+      ],
+      [
+       "marmalade",
+       "мармелад",
+       "джем (апельсиновый)"
+      ],
+      [
+       "biscuit",
+       "бисквит",
+       "печенье"
+      ],
+      [
+       "velvet",
+       "вельвет",
+       "бархат"
+      ],
+      [
+       "decade",
+       "декада (10 дней)",
+       "десятилетие"
+      ],
+      [
+       "director",
+       "директор школы",
+       "режиссёр; директор"
+      ]
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Как это в речи"
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I bought a fashion magazine.",
+       "ru": "Я купил модный журнал.",
+       "audioUrl": "/audio/hb/b669a9b6c42bc18f.mp3"
+      },
+      {
+       "en": "Thank you for your sympathy.",
+       "ru": "Спасибо за твоё сочувствие.",
+       "audioUrl": "/audio/hb/cd5d55389f1b3616.mp3"
+      },
+      {
+       "en": "This is an accurate translation.",
+       "ru": "Это точный перевод.",
+       "audioUrl": "/audio/hb/1f4dd2f267c7352b.mp3"
+      },
+      {
+       "en": "What is your actual address?",
+       "ru": "Какой твой настоящий адрес?",
+       "audioUrl": "/audio/hb/cc79cf53cbff2cb3.mp3"
+      },
+      {
+       "en": "The dress is made of soft fabric.",
+       "ru": "Платье сшито из мягкой ткани.",
+       "audioUrl": "/audio/hb/70f21a2a73372850.mp3"
+      },
+      {
+       "en": "My family is very big.",
+       "ru": "Моя семья очень большая.",
+       "audioUrl": "/audio/hb/afa04da6edaa5d40.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Магазин — shop или store. Фамилия — surname / last name. Аккуратный (о человеке) — tidy / neat."
+    },
+    {
+     "type": "tip",
+     "text": "Если слово подозрительно похоже на русское — проверьте его в словаре. Скорее всего, это ложный друг."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.confusables",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "make или do, say или tell, much или many",
+    "en": "Confusables"
+   },
+   "summary": "Разбираемся в парах слов, которые часто путают.",
+   "level": "A2",
+   "icon": "list",
+   "order": 13,
+   "blocks": [
+    {
+     "type": "heading",
+     "text": "make или do"
+    },
+    {
+     "type": "text",
+     "text": "make — когда что-то создаём, производим результат. do — когда речь о действии, работе, обязанности."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "make",
+      "do"
+     ],
+     "rows": [
+      [
+       "make a mistake — сделать ошибку",
+       "do homework — делать домашнюю работу"
+      ],
+      [
+       "make a decision — принять решение",
+       "do the dishes — мыть посуду"
+      ],
+      [
+       "make dinner — готовить ужин",
+       "do exercise — заниматься спортом"
+      ],
+      [
+       "make a plan — составить план",
+       "do business — вести бизнес"
+      ],
+      [
+       "make friends — заводить друзей",
+       "do your best — стараться изо всех сил"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Don't make so many mistakes.",
+       "ru": "Не делай так много ошибок.",
+       "audioUrl": "/audio/hb/ec7757cf3a79ecab.mp3"
+      },
+      {
+       "en": "I have to do my homework tonight.",
+       "ru": "Мне нужно сделать домашку сегодня вечером.",
+       "audioUrl": "/audio/hb/e75a406b2e71a9c2.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "say или tell"
+    },
+    {
+     "type": "text",
+     "text": "tell обычно требует человека (кому говорим): tell me, tell him. say — без адресата или с предлогом to."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "say",
+      "tell"
+     ],
+     "rows": [
+      [
+       "say something — сказать что-то",
+       "tell somebody — сказать кому-то"
+      ],
+      [
+       "say hello — поздороваться",
+       "tell a story — рассказать историю"
+      ],
+      [
+       "say sorry — извиниться",
+       "tell the truth — говорить правду"
+      ],
+      [
+       "He said (that) he was tired.",
+       "He told me (that) he was tired."
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Please tell me the truth.",
+       "ru": "Пожалуйста, скажи мне правду.",
+       "audioUrl": "/audio/hb/9c07f4fd476759bc.mp3"
+      },
+      {
+       "en": "She said hello and left.",
+       "ru": "Она поздоровалась и ушла.",
+       "audioUrl": "/audio/hb/8d5d9227ac5df2a2.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "much или many, few или little"
+    },
+    {
+     "type": "text",
+     "text": "many и few — для исчисляемых (можно посчитать: books, people). much и little — для неисчисляемых (water, time, money)."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Исчисляемые",
+      "Неисчисляемые",
+      "Значение"
+     ],
+     "rows": [
+      [
+       "many books",
+       "much water",
+       "много"
+      ],
+      [
+       "few friends",
+       "little time",
+       "мало"
+      ],
+      [
+       "a few friends",
+       "a little time",
+       "немного (достаточно)"
+      ],
+      [
+       "How many people?",
+       "How much money?",
+       "сколько?"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "How many people are coming?",
+       "ru": "Сколько человек придёт?",
+       "audioUrl": "/audio/hb/5444ee0df615a3b8.mp3"
+      },
+      {
+       "en": "I don't have much free time.",
+       "ru": "У меня не так много свободного времени.",
+       "audioUrl": "/audio/hb/8fabf6d8f12d9186.mp3"
+      },
+      {
+       "en": "We have a little milk left.",
+       "ru": "У нас осталось немного молока.",
+       "audioUrl": "/audio/hb/33aee503e577eeb7.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "В вопросах и отрицаниях much/many звучат естественно, а в утверждениях чаще говорят a lot of: I have a lot of books."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.linking-words",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Слова-связки",
+    "en": "Linking words"
+   },
+   "summary": "Связки, которые делают речь и письмо логичными.",
+   "level": "B1",
+   "icon": "list",
+   "order": 14,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Слова-связки соединяют идеи: добавляют, противопоставляют, объясняют причину и следствие. С ними речь звучит плавно и логично."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Связка",
+      "Значение",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "however",
+       "однако, тем не менее",
+       "It was cold. However, we went out."
+      ],
+      [
+       "therefore",
+       "поэтому, следовательно",
+       "He was late; therefore he missed the bus."
+      ],
+      [
+       "because",
+       "потому что",
+       "I stayed home because I was ill."
+      ],
+      [
+       "although",
+       "хотя",
+       "Although it rained, we had fun."
+      ],
+      [
+       "in addition",
+       "кроме того",
+       "It's cheap. In addition, it's fast."
+      ],
+      [
+       "for example",
+       "например",
+       "I like fruit, for example apples."
+      ],
+      [
+       "on the other hand",
+       "с другой стороны",
+       "It's risky. On the other hand, it pays well."
+      ],
+      [
+       "as a result",
+       "в результате",
+       "He trained hard. As a result, he won."
+      ],
+      [
+       "moreover",
+       "более того",
+       "The plan is cheap; moreover, it's simple."
+      ],
+      [
+       "so",
+       "поэтому, так что",
+       "It was late, so we went home."
+      ],
+      [
+       "first / then / finally",
+       "сначала / затем / наконец",
+       "First boil water, then add tea, finally wait."
+      ],
+      [
+       "in conclusion",
+       "в заключение",
+       "In conclusion, the trip was a success."
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "however обычно стоит в начале нового предложения и отделяется запятой. but соединяет части одного предложения: It was cold, but we went out."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Although it was expensive, we bought it.",
+       "ru": "Хотя это было дорого, мы это купили.",
+       "audioUrl": "/audio/hb/87646e2685a9665f.mp3"
+      },
+      {
+       "en": "The road was closed; therefore, we took another route.",
+       "ru": "Дорога была закрыта, поэтому мы поехали другим путём.",
+       "audioUrl": "/audio/hb/cb35d2755503bf4e.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Для рассказа по шагам используйте first, then, after that, finally — так слушателю легче следить за мыслью."
+    }
+   ]
+  },
+  {
+   "ref": "cheatsheet.collocations",
+   "category": "cheatsheet",
+   "title": {
+    "ru": "Устойчивые сочетания",
+    "en": "Common collocations"
+   },
+   "summary": "Слова, которые в английском привычно идут вместе.",
+   "level": "B1",
+   "icon": "list",
+   "order": 15,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Коллокации — это слова, которые носители языка привыкли ставить рядом. Их учат целиком, как готовые фразы: не «make a photo», а take a photo."
+    },
+    {
+     "type": "table",
+     "headers": [
+      "Сочетание",
+      "Перевод",
+      "Пример"
+     ],
+     "rows": [
+      [
+       "make a decision",
+       "принять решение",
+       "It's hard to make a decision."
+      ],
+      [
+       "take a photo",
+       "сделать фото",
+       "Can you take a photo of us?"
+      ],
+      [
+       "do homework",
+       "делать домашнюю работу",
+       "I do my homework after school."
+      ],
+      [
+       "have breakfast",
+       "завтракать",
+       "I have breakfast at 8 a.m."
+      ],
+      [
+       "catch a cold",
+       "простудиться",
+       "Dress warmly or you'll catch a cold."
+      ],
+      [
+       "pay attention",
+       "обращать внимание",
+       "Please pay attention to the road."
+      ],
+      [
+       "keep in touch",
+       "быть на связи",
+       "Let's keep in touch after the trip."
+      ],
+      [
+       "break the law",
+       "нарушать закон",
+       "You must not break the law."
+      ],
+      [
+       "make progress",
+       "делать успехи",
+       "She is making good progress in English."
+      ],
+      [
+       "take a break",
+       "сделать перерыв",
+       "Let's take a short break."
+      ],
+      [
+       "tell the truth",
+       "говорить правду",
+       "Always tell the truth."
+      ],
+      [
+       "save time",
+       "экономить время",
+       "This app helps you save time."
+      ],
+      [
+       "miss the bus",
+       "опоздать на автобус",
+       "Hurry up or we'll miss the bus."
+      ],
+      [
+       "run out of",
+       "заканчиваться (о запасе)",
+       "We ran out of milk."
+      ]
+     ]
+    },
+    {
+     "type": "rule",
+     "text": "Запоминайте коллокацию целиком вместе с глаголом: make a decision (не do), take a photo (не make), have breakfast (не eat в этом устойчивом смысле)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "Pay attention to the details.",
+       "ru": "Обращай внимание на детали.",
+       "audioUrl": "/audio/hb/02203f94fcedfba8.mp3"
+      },
+      {
+       "en": "We should keep in touch.",
+       "ru": "Нам стоит оставаться на связи.",
+       "audioUrl": "/audio/hb/4eb5900c9523f1af.mp3"
+      },
+      {
+       "en": "I made an important decision.",
+       "ru": "Я принял важное решение.",
+       "audioUrl": "/audio/hb/dd04d18992b3e2de.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Встретили новую коллокацию — записывайте её целиком, а не отдельными словами. Так фраза запомнится и всплывёт в нужный момент."
+    }
+   ]
+  },
+  {
+   "ref": "pronunciation.alphabet",
+   "category": "pronunciation",
+   "title": {
+    "ru": "Алфавит и звуки",
+    "en": "Alphabet & sounds"
+   },
+   "summary": "26 букв, но около 44 звуков: почему написание и произношение не совпадают.",
+   "level": "A0",
+   "icon": "sound",
+   "order": 1,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "В английском алфавите 26 букв, но звуков примерно 44. Поэтому одна буква может читаться по-разному, а один звук — записываться разными буквами. Не пытайтесь читать «как написано»: слова часто произносятся не так, как выглядят."
+    },
+    {
+     "type": "rule",
+     "text": "Буква — это то, что мы пишем. Звук — это то, что мы слышим. В словарях звуки записывают в квадратных скобках: транскрипцией [ ]."
+    },
+    {
+     "type": "heading",
+     "text": "Как называются буквы"
+    },
+    {
+     "type": "text",
+     "text": "У каждой буквы есть своё «имя» — так мы называем её, когда произносим по буквам (например, диктуем имя или email)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "A B C",
+       "ru": "Эй, Би, Си",
+       "note": "[eɪ] [biː] [siː]",
+       "audioUrl": "/audio/hb/031b4059d83c3507.mp3"
+      },
+      {
+       "en": "H",
+       "ru": "Эйч — часто путают",
+       "note": "[eɪtʃ]",
+       "audioUrl": "/audio/hb/7cf184f4c67ad582.mp3"
+      },
+      {
+       "en": "W",
+       "ru": "«дабл-ю», буквально «двойное U»",
+       "note": "[ˈdʌbəljuː]",
+       "audioUrl": "/audio/hb/e2415cb7f63df0c9.mp3"
+      },
+      {
+       "en": "Z",
+       "ru": "Зэд (брит.) / Зи (амер.)",
+       "note": "[zed] / [ziː]",
+       "audioUrl": "/audio/hb/909f99a779adb66a.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Одна буква — разные звуки"
+    },
+    {
+     "type": "table",
+     "title": "Буква «a» читается по-разному",
+     "headers": [
+      "Слово",
+      "Перевод",
+      "Звук"
+     ],
+     "rows": [
+      [
+       "cat",
+       "кот",
+       "[æ]"
+      ],
+      [
+       "car",
+       "машина",
+       "[ɑː]"
+      ],
+      [
+       "cake",
+       "торт",
+       "[eɪ]"
+      ],
+      [
+       "about",
+       "около",
+       "[ə]"
+      ]
+     ]
+    },
+    {
+     "type": "example",
+     "en": "cake",
+     "ru": "торт",
+     "note": "буква «e» на конце не читается, но делает «a» долгим [keɪk]",
+     "audioUrl": "/audio/hb/5ddc2ae17d5b13b4.mp3"
+    },
+    {
+     "type": "tip",
+     "text": "Учите не буквы, а звуки. Когда встречаете новое слово, сразу смотрите его транскрипцию в словаре и слушайте озвучку."
+    },
+    {
+     "type": "note",
+     "text": "Гласные буквы: a, e, i, o, u (и иногда y). Все остальные — согласные."
+    }
+   ]
+  },
+  {
+   "ref": "pronunciation.vowels",
+   "category": "pronunciation",
+   "title": {
+    "ru": "Гласные: краткие и долгие",
+    "en": "Vowels: short & long"
+   },
+   "summary": "Долгота гласного меняет смысл слова: ship (корабль) и sheep (овца).",
+   "level": "A1",
+   "icon": "sound",
+   "order": 2,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "В английском есть краткие и долгие гласные. Долгота — это не просто «дольше тянуть»: краткий и долгий звук часто различаются и по качеству. От этого зависит смысл: перепутаете — и получится другое слово."
+    },
+    {
+     "type": "rule",
+     "text": "Долгий гласный в транскрипции помечается двоеточием: [iː], [uː], [ɑː]. Краткий — без него: [ɪ], [ʊ], [ʌ]."
+    },
+    {
+     "type": "heading",
+     "text": "Минимальные пары"
+    },
+    {
+     "type": "text",
+     "text": "Минимальная пара — это два слова, которые различаются одним звуком. Слушайте и повторяйте разницу."
+    },
+    {
+     "type": "table",
+     "title": "Краткий vs долгий",
+     "headers": [
+      "Краткий",
+      "Звук",
+      "Долгий",
+      "Звук"
+     ],
+     "rows": [
+      [
+       "ship — корабль",
+       "[ɪ]",
+       "sheep — овца",
+       "[iː]"
+      ],
+      [
+       "full — полный",
+       "[ʊ]",
+       "fool — дурак",
+       "[uː]"
+      ],
+      [
+       "sit — сидеть",
+       "[ɪ]",
+       "seat — сиденье",
+       "[iː]"
+      ],
+      [
+       "live — жить",
+       "[ɪ]",
+       "leave — уходить",
+       "[iː]"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "ship",
+       "ru": "корабль",
+       "note": "краткий [ʃɪp]",
+       "audioUrl": "/audio/hb/ed43a8a09e9ba56d.mp3"
+      },
+      {
+       "en": "sheep",
+       "ru": "овца",
+       "note": "долгий [ʃiːp]",
+       "audioUrl": "/audio/hb/6525f2e663e8d223.mp3"
+      },
+      {
+       "en": "full",
+       "ru": "полный",
+       "note": "краткий [fʊl]",
+       "audioUrl": "/audio/hb/52e6d8ab88471af8.mp3"
+      },
+      {
+       "en": "fool",
+       "ru": "дурак",
+       "note": "долгий [fuːl]",
+       "audioUrl": "/audio/hb/33655e63cafac69a.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Звук [ʌ] — важный краткий"
+    },
+    {
+     "type": "text",
+     "text": "Звук [ʌ] похож на короткое русское «а», но произносится расслабленно. Его часто путают с [æ] (как в cat)."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "cat",
+       "ru": "кот",
+       "note": "[kæt] — рот широко, как «э-а»",
+       "audioUrl": "/audio/hb/9d989e8d27dc9e0e.mp3"
+      },
+      {
+       "en": "cut",
+       "ru": "резать",
+       "note": "[kʌt] — короткое «а»",
+       "audioUrl": "/audio/hb/06e45e384318b662.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Долгий гласный не только длиннее — тяните его уверенно. «Sheep» звучит с широкой улыбкой [iː], «ship» — губы расслаблены."
+    }
+   ]
+  },
+  {
+   "ref": "pronunciation.consonants",
+   "category": "pronunciation",
+   "title": {
+    "ru": "Трудные согласные: th, w, ng",
+    "en": "Tricky consonants"
+   },
+   "summary": "Звуки, которых нет в русском: th, английское w и носовое ng.",
+   "level": "A1",
+   "icon": "sound",
+   "order": 3,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Несколько английских согласных не имеют точной пары в русском. Их часто заменяют на «с/з», «в» или «н+г» — и звучит с акцентом. Разберём три самых частых."
+    },
+    {
+     "type": "heading",
+     "text": "Звук th — глухой и звонкий"
+    },
+    {
+     "type": "rule",
+     "text": "Кончик языка слегка между зубами. Глухой [θ] — просто выдох (think). Звонкий [ð] — с голосом (this). Не заменяйте на «с/з» или «ф/в»."
+    },
+    {
+     "type": "table",
+     "title": "Два звука th",
+     "headers": [
+      "Слово",
+      "Перевод",
+      "Звук"
+     ],
+     "rows": [
+      [
+       "think",
+       "думать",
+       "[θɪŋk] глухой"
+      ],
+      [
+       "three",
+       "три",
+       "[θriː] глухой"
+      ],
+      [
+       "this",
+       "это",
+       "[ðɪs] звонкий"
+      ],
+      [
+       "mother",
+       "мама",
+       "[ˈmʌðə] звонкий"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "think",
+       "ru": "думать",
+       "note": "глухой [θɪŋk]",
+       "audioUrl": "/audio/hb/b7c61c80ab26349d.mp3"
+      },
+      {
+       "en": "this",
+       "ru": "это",
+       "note": "звонкий [ðɪs]",
+       "audioUrl": "/audio/hb/c2543fff3bfa6f14.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Звук w — не «в»!"
+    },
+    {
+     "type": "rule",
+     "text": "Для [w] округлите губы трубочкой, как перед «у», и резко разомкните. Верхние зубы НЕ касаются губы (иначе получится «в»)."
+    },
+    {
+     "type": "table",
+     "title": "w против v",
+     "headers": [
+      "w — губы трубочкой",
+      "v — зубы на губе"
+     ],
+     "rows": [
+      [
+       "west — запад [west]",
+       "vest — жилет [vest]"
+      ],
+      [
+       "wine — вино [waɪn]",
+       "vine — лоза [vaɪn]"
+      ],
+      [
+       "wet — мокрый [wet]",
+       "vet — ветеринар [vet]"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "west",
+       "ru": "запад",
+       "note": "губы трубочкой [west]",
+       "audioUrl": "/audio/hb/d63eba28afc02584.mp3"
+      },
+      {
+       "en": "vest",
+       "ru": "жилет",
+       "note": "зубы на нижней губе [vest]",
+       "audioUrl": "/audio/hb/7703ba73d7ded8ab.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Звук ng — носовой"
+    },
+    {
+     "type": "rule",
+     "text": "Сочетание ng — это ОДИН носовой звук [ŋ], без чёткого «г» на конце. Задняя часть языка поднимается к нёбу, воздух идёт через нос."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "sing",
+       "ru": "петь",
+       "note": "[sɪŋ] — не «синг»",
+       "audioUrl": "/audio/hb/f9bef9c232cea359.mp3"
+      },
+      {
+       "en": "morning",
+       "ru": "утро",
+       "note": "[ˈmɔːnɪŋ]",
+       "audioUrl": "/audio/hb/45a21e4b5b2a90eb.mp3"
+      },
+      {
+       "en": "long",
+       "ru": "длинный",
+       "note": "[lɒŋ]",
+       "audioUrl": "/audio/hb/bd3027fa569ea15c.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Проверьте th пальцами у губ: на «think» чувствуется струя воздуха, а язык между зубами. Если язык за зубами — вы говорите «синк»."
+    }
+   ]
+  },
+  {
+   "ref": "pronunciation.stress",
+   "category": "pronunciation",
+   "title": {
+    "ru": "Ударение в словах",
+    "en": "Word stress"
+   },
+   "summary": "Ударный слог звучит сильнее; иногда оно меняет смысл слова.",
+   "level": "A2",
+   "icon": "sound",
+   "order": 4,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "В английских словах из нескольких слогов один слог всегда сильнее: громче, длиннее и чётче. Остальные слоги произносятся слабо, гласные в них часто «съедаются» до звука [ə]."
+    },
+    {
+     "type": "rule",
+     "text": "В транскрипции ударение обозначается вертикальной чёрточкой ˈ перед ударным слогом: [ˈteɪbəl]. Именно перед слогом, а не над буквой, как в русском."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "banana",
+       "ru": "банан",
+       "note": "ударение на 2-й слог [bəˈnɑːnə]",
+       "audioUrl": "/audio/hb/250e77f12a5ab697.mp3"
+      },
+      {
+       "en": "computer",
+       "ru": "компьютер",
+       "note": "[kəmˈpjuːtə]",
+       "audioUrl": "/audio/hb/c60266a8adad2f8e.mp3"
+      },
+      {
+       "en": "important",
+       "ru": "важный",
+       "note": "[ɪmˈpɔːtənt]",
+       "audioUrl": "/audio/hb/5b4009518b37fa93.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Ударение меняет смысл"
+    },
+    {
+     "type": "text",
+     "text": "У некоторых слов существительное и глагол пишутся одинаково, но различаются ударением. У существительного ударение обычно на первом слоге, у глагола — на втором."
+    },
+    {
+     "type": "table",
+     "title": "Существительное vs глагол",
+     "headers": [
+      "Слово",
+      "Существительное",
+      "Глагол"
+     ],
+     "rows": [
+      [
+       "record",
+       "REcord — запись [ˈrekɔːd]",
+       "reCORD — записывать [rɪˈkɔːd]"
+      ],
+      [
+       "present",
+       "PREsent — подарок [ˈprezənt]",
+       "preSENT — представлять [prɪˈzent]"
+      ],
+      [
+       "object",
+       "OBject — предмет [ˈɒbdʒɪkt]",
+       "obJECT — возражать [əbˈdʒekt]"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "This is a present.",
+       "ru": "Это подарок.",
+       "note": "сущ.: PREsent",
+       "audioUrl": "/audio/hb/bfcb87486cf06405.mp3"
+      },
+      {
+       "en": "Let me present the plan.",
+       "ru": "Позвольте представить план.",
+       "note": "глаг.: preSENT",
+       "audioUrl": "/audio/hb/36828207fe15f103.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Безударные гласные почти всегда превращаются в нейтральный [ə]. Поэтому «to» звучит как [tə], а «for» как [fə]."
+    },
+    {
+     "type": "tip",
+     "text": "Учите новое слово сразу с ударением: хлопните в ладоши на сильном слоге. Неверное ударение мешает понять слово сильнее, чем неточный звук."
+    }
+   ]
+  },
+  {
+   "ref": "pronunciation.silent",
+   "category": "pronunciation",
+   "title": {
+    "ru": "Немые буквы",
+    "en": "Silent letters"
+   },
+   "summary": "Буквы, которые пишутся, но не произносятся: knife, write, hour.",
+   "level": "A2",
+   "icon": "sound",
+   "order": 5,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Во многих английских словах есть буквы, которые пишутся, но не читаются. Они остались от старого произношения. Их нужно просто запомнить."
+    },
+    {
+     "type": "rule",
+     "text": "Немую букву видно только на письме — в звучании её нет. Например, «k» в начале перед «n» не читается: knife звучит как [naɪf]."
+    },
+    {
+     "type": "table",
+     "title": "Частые немые буквы",
+     "headers": [
+      "Слово",
+      "Перевод",
+      "Немая",
+      "Звучит как"
+     ],
+     "rows": [
+      [
+       "knife",
+       "нож",
+       "k",
+       "[naɪf]"
+      ],
+      [
+       "write",
+       "писать",
+       "w",
+       "[raɪt]"
+      ],
+      [
+       "hour",
+       "час",
+       "h",
+       "[ˈaʊə]"
+      ],
+      [
+       "island",
+       "остров",
+       "s",
+       "[ˈaɪlənd]"
+      ],
+      [
+       "lamb",
+       "ягнёнок",
+       "b",
+       "[læm]"
+      ],
+      [
+       "listen",
+       "слушать",
+       "t",
+       "[ˈlɪsən]"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "knife",
+       "ru": "нож",
+       "note": "«k» молчит [naɪf]",
+       "audioUrl": "/audio/hb/6e32618ee300d43f.mp3"
+      },
+      {
+       "en": "write",
+       "ru": "писать",
+       "note": "«w» молчит [raɪt]",
+       "audioUrl": "/audio/hb/e1d0c6c1c29e6ad5.mp3"
+      },
+      {
+       "en": "hour",
+       "ru": "час",
+       "note": "«h» молчит [ˈaʊə]",
+       "audioUrl": "/audio/hb/52ab86a87214a453.mp3"
+      },
+      {
+       "en": "island",
+       "ru": "остров",
+       "note": "«s» молчит [ˈaɪlənd]",
+       "audioUrl": "/audio/hb/7bd1a907a1ec4630.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Немая «e» на конце"
+    },
+    {
+     "type": "text",
+     "text": "Буква «e» в конце слова обычно не читается, но часто «удлиняет» гласную в середине и меняет чтение слова."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "hope",
+       "ru": "надежда",
+       "note": "«e» молчит, «o» долгий [həʊp]",
+       "audioUrl": "/audio/hb/4955742b2d74102e.mp3"
+      },
+      {
+       "en": "name",
+       "ru": "имя",
+       "note": "[neɪm]",
+       "audioUrl": "/audio/hb/6ae999552a0d2dca.mp3"
+      }
+     ]
+    },
+    {
+     "type": "tip",
+     "text": "Не читайте немые буквы «на всякий случай». Говорить «книфе» вместо [naɪf] — типичная ошибка. Проверяйте транскрипцию новых слов."
+    }
+   ]
+  },
+  {
+   "ref": "pronunciation.intonation",
+   "category": "pronunciation",
+   "title": {
+    "ru": "Интонация и связки речи",
+    "en": "Intonation & linking"
+   },
+   "summary": "Мелодия фразы и связывание слов делают речь беглой и понятной.",
+   "level": "B1",
+   "icon": "sound",
+   "order": 6,
+   "blocks": [
+    {
+     "type": "text",
+     "text": "Интонация — это мелодия фразы: как голос идёт вверх или вниз. Она передаёт смысл и настроение не хуже слов. А связывание (linking) — это когда слова во фразе сливаются, и речь звучит плавно, а не «по одному слову»."
+    },
+    {
+     "type": "heading",
+     "text": "Мелодия: вверх или вниз"
+    },
+    {
+     "type": "rule",
+     "text": "Утверждения и вопросы со словами what/where/how произносим с понижением голоса в конце (↓). Общие вопросы (да/нет) — с повышением (↑)."
+    },
+    {
+     "type": "table",
+     "title": "Куда идёт голос",
+     "headers": [
+      "Фраза",
+      "Тип",
+      "Интонация"
+     ],
+     "rows": [
+      [
+       "I live in London.",
+       "утверждение",
+       "вниз ↓"
+      ],
+      [
+       "Do you like tea?",
+       "вопрос да/нет",
+       "вверх ↑"
+      ],
+      [
+       "Where do you live?",
+       "вопрос со словом",
+       "вниз ↓"
+      ],
+      [
+       "Really?",
+       "удивление",
+       "вверх ↑"
+      ]
+     ]
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "I live in London.",
+       "ru": "Я живу в Лондоне.",
+       "note": "голос вниз в конце ↓",
+       "audioUrl": "/audio/hb/4a7fc3972b325555.mp3"
+      },
+      {
+       "en": "Do you like tea?",
+       "ru": "Ты любишь чай?",
+       "note": "голос вверх в конце ↑",
+       "audioUrl": "/audio/hb/09d235773c27875e.mp3"
+      },
+      {
+       "en": "Where do you work?",
+       "ru": "Где ты работаешь?",
+       "note": "голос вниз ↓",
+       "audioUrl": "/audio/hb/56bca30477e3bfeb.mp3"
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "Связывание слов (linking)"
+    },
+    {
+     "type": "rule",
+     "text": "Если слово кончается на согласный, а следующее начинается с гласного — они сливаются. «an apple» звучит как одно слово [ə-ˈnæpəl]."
+    },
+    {
+     "type": "examples",
+     "items": [
+      {
+       "en": "an apple",
+       "ru": "яблоко",
+       "note": "сливается: [ə-ˈnæpəl]",
+       "audioUrl": "/audio/hb/efde5f0b5ff895fc.mp3"
+      },
+      {
+       "en": "an hour",
+       "ru": "час",
+       "note": "«h» немая → [ə-ˈnaʊə]",
+       "audioUrl": "/audio/hb/90335b649adeb76e.mp3"
+      },
+      {
+       "en": "pick it up",
+       "ru": "подними это",
+       "note": "звучит слитно [pɪ-kɪ-tʌp]",
+       "audioUrl": "/audio/hb/c5ce97e9fae010dc.mp3"
+      },
+      {
+       "en": "Thank you.",
+       "ru": "Спасибо.",
+       "note": "[ˈθæŋ-kjuː]",
+       "audioUrl": "/audio/hb/174534c6b3882921.mp3"
+      }
+     ]
+    },
+    {
+     "type": "note",
+     "text": "Служебные слова (a, the, to, of, and) в потоке речи звучат слабо и коротко: «and» часто как [ən], «to» как [tə]."
+    },
+    {
+     "type": "tip",
+     "text": "Не проговаривайте каждое слово отдельно. Слушайте фразы целиком и повторяйте их «одним куском» — так речь станет естественной и беглой."
+    }
+   ]
+  }
+ ]
+}

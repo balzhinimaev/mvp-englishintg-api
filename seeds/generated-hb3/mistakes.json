@@ -1,0 +1,387 @@
+{
+  "articles": [
+    {
+      "ref": "grammar.common-mistakes",
+      "category": "grammar",
+      "title": { "ru": "Частые ошибки русскоязычных", "en": "Common mistakes" },
+      "summary": "Типичные ошибки под влиянием русского и как говорить правильно.",
+      "level": "A2",
+      "icon": "list",
+      "order": 26,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Многие ошибки возникают из-за того, что мы переводим фразу с русского слово в слово. Ниже — самые частые случаи. В примерах озвучивается ВЕРНЫЙ вариант, а в пояснении сказано, что было не так."
+        },
+        {
+          "type": "heading",
+          "text": "Возраст: be, а не have"
+        },
+        {
+          "type": "text",
+          "text": "По-русски «мне 20 лет» — но по-английски возраст выражается глаголом be. Нельзя сказать «I have 20 years old»."
+        },
+        {
+          "type": "example",
+          "en": "I am 20 years old.",
+          "ru": "Мне 20 лет.",
+          "note": "Ошибка: «I have 20 years». Возраст — через am/is/are, а не have."
+        },
+        {
+          "type": "heading",
+          "text": "Артикль и множественное число"
+        },
+        {
+          "type": "example",
+          "en": "I like reading books.",
+          "ru": "Я люблю читать книги.",
+          "note": "Ошибка: «I like reading book». В общем смысле — множественное число."
+        },
+        {
+          "type": "heading",
+          "text": "Present Simple: -s в третьем лице"
+        },
+        {
+          "type": "example",
+          "en": "She works in a bank.",
+          "ru": "Она работает в банке.",
+          "note": "Ошибка: «She work». В he/she/it добавляем -s."
+        },
+        {
+          "type": "heading",
+          "text": "do / does в отрицании и вопросе"
+        },
+        {
+          "type": "example",
+          "en": "I don't know.",
+          "ru": "Я не знаю.",
+          "note": "Ошибка: «I not know» или «I no know». Нужен вспомогательный do."
+        },
+        {
+          "type": "example",
+          "en": "Do you like coffee?",
+          "ru": "Ты любишь кофе?",
+          "note": "Ошибка: «You like coffee?» без do звучит незаконченно."
+        },
+        {
+          "type": "heading",
+          "text": "Предлоги места и времени"
+        },
+        {
+          "type": "example",
+          "en": "I'm good at English.",
+          "ru": "Я хорош в английском.",
+          "note": "Ошибка: «good in English». Устойчивое сочетание — good AT."
+        },
+        {
+          "type": "example",
+          "en": "See you on Monday.",
+          "ru": "Увидимся в понедельник.",
+          "note": "Ошибка: «in Monday». С днями недели — on."
+        },
+        {
+          "type": "heading",
+          "text": "advice, information, money — неисчисляемые"
+        },
+        {
+          "type": "example",
+          "en": "He gave me some good advice.",
+          "ru": "Он дал мне хороший совет.",
+          "note": "Ошибка: «an advice», «advices». Слово неисчисляемое: some advice, a piece of advice."
+        },
+        {
+          "type": "heading",
+          "text": "make или do"
+        },
+        {
+          "type": "example",
+          "en": "I have to do my homework.",
+          "ru": "Мне нужно сделать домашнюю работу.",
+          "note": "Ошибка: «make my homework». Homework — с do."
+        },
+        {
+          "type": "heading",
+          "text": "Ложные друзья"
+        },
+        {
+          "type": "example",
+          "en": "I read an interesting magazine.",
+          "ru": "Я прочитал интересный журнал.",
+          "note": "Ошибка: magazine — это журнал, а не магазин. Магазин — shop/store."
+        },
+        {
+          "type": "table",
+          "title": "Коротко: неверно → верно",
+          "headers": ["Неверно", "Верно"],
+          "rows": [
+            ["I have 20 years", "I am 20 years old"],
+            ["She work here", "She works here"],
+            ["I not understand", "I don't understand"],
+            ["good in sport", "good at sport"],
+            ["make homework", "do homework"],
+            ["an advice", "some advice"],
+            ["in Monday", "on Monday"],
+            ["I feel myself good", "I feel good"]
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Не переводите дословно. Сначала вспомните готовую английскую фразу, а потом подставляйте свои слова."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.false-friends",
+      "category": "cheatsheet",
+      "title": { "ru": "Ложные друзья переводчика", "en": "False friends" },
+      "summary": "Слова, похожие на русские, но с другим значением.",
+      "level": "A2",
+      "icon": "list",
+      "order": 12,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Ложные друзья — это английские слова, которые звучат как русские, но означают совсем другое. Из-за них легко ошибиться. Запомните главные пары."
+        },
+        {
+          "type": "table",
+          "headers": ["Слово", "Кажется", "На самом деле"],
+          "rows": [
+            ["magazine", "магазин", "журнал"],
+            ["sympathy", "симпатия", "сочувствие"],
+            ["accurate", "аккуратный", "точный"],
+            ["actual", "актуальный", "фактический, настоящий"],
+            ["fabric", "фабрика", "ткань"],
+            ["family", "фамилия", "семья"],
+            ["intelligent", "интеллигентный", "умный"],
+            ["cabinet", "кабинет", "шкаф; кабинет министров"],
+            ["brilliant", "бриллиант", "блестящий, великолепный"],
+            ["artist", "артист", "художник"],
+            ["list", "лист", "список"],
+            ["prospect", "проспект", "перспектива"],
+            ["replica", "реплика (фраза)", "копия"],
+            ["marmalade", "мармелад", "джем (апельсиновый)"],
+            ["biscuit", "бисквит", "печенье"],
+            ["velvet", "вельвет", "бархат"],
+            ["decade", "декада (10 дней)", "десятилетие"],
+            ["director", "директор школы", "режиссёр; директор"]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Как это в речи"
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "I bought a fashion magazine.", "ru": "Я купил модный журнал." },
+            { "en": "Thank you for your sympathy.", "ru": "Спасибо за твоё сочувствие." },
+            { "en": "This is an accurate translation.", "ru": "Это точный перевод." },
+            { "en": "What is your actual address?", "ru": "Какой твой настоящий адрес?" },
+            { "en": "The dress is made of soft fabric.", "ru": "Платье сшито из мягкой ткани." },
+            { "en": "My family is very big.", "ru": "Моя семья очень большая." }
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Магазин — shop или store. Фамилия — surname / last name. Аккуратный (о человеке) — tidy / neat."
+        },
+        {
+          "type": "tip",
+          "text": "Если слово подозрительно похоже на русское — проверьте его в словаре. Скорее всего, это ложный друг."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.confusables",
+      "category": "cheatsheet",
+      "title": { "ru": "make или do, say или tell, much или many", "en": "Confusables" },
+      "summary": "Разбираемся в парах слов, которые часто путают.",
+      "level": "A2",
+      "icon": "list",
+      "order": 13,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "make или do"
+        },
+        {
+          "type": "text",
+          "text": "make — когда что-то создаём, производим результат. do — когда речь о действии, работе, обязанности."
+        },
+        {
+          "type": "table",
+          "headers": ["make", "do"],
+          "rows": [
+            ["make a mistake — сделать ошибку", "do homework — делать домашнюю работу"],
+            ["make a decision — принять решение", "do the dishes — мыть посуду"],
+            ["make dinner — готовить ужин", "do exercise — заниматься спортом"],
+            ["make a plan — составить план", "do business — вести бизнес"],
+            ["make friends — заводить друзей", "do your best — стараться изо всех сил"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Don't make so many mistakes.", "ru": "Не делай так много ошибок." },
+            { "en": "I have to do my homework tonight.", "ru": "Мне нужно сделать домашку сегодня вечером." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "say или tell"
+        },
+        {
+          "type": "text",
+          "text": "tell обычно требует человека (кому говорим): tell me, tell him. say — без адресата или с предлогом to."
+        },
+        {
+          "type": "table",
+          "headers": ["say", "tell"],
+          "rows": [
+            ["say something — сказать что-то", "tell somebody — сказать кому-то"],
+            ["say hello — поздороваться", "tell a story — рассказать историю"],
+            ["say sorry — извиниться", "tell the truth — говорить правду"],
+            ["He said (that) he was tired.", "He told me (that) he was tired."]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Please tell me the truth.", "ru": "Пожалуйста, скажи мне правду." },
+            { "en": "She said hello and left.", "ru": "Она поздоровалась и ушла." }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "much или many, few или little"
+        },
+        {
+          "type": "text",
+          "text": "many и few — для исчисляемых (можно посчитать: books, people). much и little — для неисчисляемых (water, time, money)."
+        },
+        {
+          "type": "table",
+          "headers": ["Исчисляемые", "Неисчисляемые", "Значение"],
+          "rows": [
+            ["many books", "much water", "много"],
+            ["few friends", "little time", "мало"],
+            ["a few friends", "a little time", "немного (достаточно)"],
+            ["How many people?", "How much money?", "сколько?"]
+          ]
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "How many people are coming?", "ru": "Сколько человек придёт?" },
+            { "en": "I don't have much free time.", "ru": "У меня не так много свободного времени." },
+            { "en": "We have a little milk left.", "ru": "У нас осталось немного молока." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "В вопросах и отрицаниях much/many звучат естественно, а в утверждениях чаще говорят a lot of: I have a lot of books."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.linking-words",
+      "category": "cheatsheet",
+      "title": { "ru": "Слова-связки", "en": "Linking words" },
+      "summary": "Связки, которые делают речь и письмо логичными.",
+      "level": "B1",
+      "icon": "list",
+      "order": 14,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Слова-связки соединяют идеи: добавляют, противопоставляют, объясняют причину и следствие. С ними речь звучит плавно и логично."
+        },
+        {
+          "type": "table",
+          "headers": ["Связка", "Значение", "Пример"],
+          "rows": [
+            ["however", "однако, тем не менее", "It was cold. However, we went out."],
+            ["therefore", "поэтому, следовательно", "He was late; therefore he missed the bus."],
+            ["because", "потому что", "I stayed home because I was ill."],
+            ["although", "хотя", "Although it rained, we had fun."],
+            ["in addition", "кроме того", "It's cheap. In addition, it's fast."],
+            ["for example", "например", "I like fruit, for example apples."],
+            ["on the other hand", "с другой стороны", "It's risky. On the other hand, it pays well."],
+            ["as a result", "в результате", "He trained hard. As a result, he won."],
+            ["moreover", "более того", "The plan is cheap; moreover, it's simple."],
+            ["so", "поэтому, так что", "It was late, so we went home."],
+            ["first / then / finally", "сначала / затем / наконец", "First boil water, then add tea, finally wait."],
+            ["in conclusion", "в заключение", "In conclusion, the trip was a success."]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "however обычно стоит в начале нового предложения и отделяется запятой. but соединяет части одного предложения: It was cold, but we went out."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Although it was expensive, we bought it.", "ru": "Хотя это было дорого, мы это купили." },
+            { "en": "The road was closed; therefore, we took another route.", "ru": "Дорога была закрыта, поэтому мы поехали другим путём." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Для рассказа по шагам используйте first, then, after that, finally — так слушателю легче следить за мыслью."
+        }
+      ]
+    },
+    {
+      "ref": "cheatsheet.collocations",
+      "category": "cheatsheet",
+      "title": { "ru": "Устойчивые сочетания", "en": "Common collocations" },
+      "summary": "Слова, которые в английском привычно идут вместе.",
+      "level": "B1",
+      "icon": "list",
+      "order": 15,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Коллокации — это слова, которые носители языка привыкли ставить рядом. Их учат целиком, как готовые фразы: не «make a photo», а take a photo."
+        },
+        {
+          "type": "table",
+          "headers": ["Сочетание", "Перевод", "Пример"],
+          "rows": [
+            ["make a decision", "принять решение", "It's hard to make a decision."],
+            ["take a photo", "сделать фото", "Can you take a photo of us?"],
+            ["do homework", "делать домашнюю работу", "I do my homework after school."],
+            ["have breakfast", "завтракать", "I have breakfast at 8 a.m."],
+            ["catch a cold", "простудиться", "Dress warmly or you'll catch a cold."],
+            ["pay attention", "обращать внимание", "Please pay attention to the road."],
+            ["keep in touch", "быть на связи", "Let's keep in touch after the trip."],
+            ["break the law", "нарушать закон", "You must not break the law."],
+            ["make progress", "делать успехи", "She is making good progress in English."],
+            ["take a break", "сделать перерыв", "Let's take a short break."],
+            ["tell the truth", "говорить правду", "Always tell the truth."],
+            ["save time", "экономить время", "This app helps you save time."],
+            ["miss the bus", "опоздать на автобус", "Hurry up or we'll miss the bus."],
+            ["run out of", "заканчиваться (о запасе)", "We ran out of milk."]
+          ]
+        },
+        {
+          "type": "rule",
+          "text": "Запоминайте коллокацию целиком вместе с глаголом: make a decision (не do), take a photo (не make), have breakfast (не eat в этом устойчивом смысле)."
+        },
+        {
+          "type": "examples",
+          "items": [
+            { "en": "Pay attention to the details.", "ru": "Обращай внимание на детали." },
+            { "en": "We should keep in touch.", "ru": "Нам стоит оставаться на связи." },
+            { "en": "I made an important decision.", "ru": "Я принял важное решение." }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "Встретили новую коллокацию — записывайте её целиком, а не отдельными словами. Так фраза запомнится и всплывёт в нужный момент."
+        }
+      ]
+    }
+  ]
+}
