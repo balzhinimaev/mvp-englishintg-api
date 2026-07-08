@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { TranslateValidationData } from '../../common/types/validation-data';
 import { TaskValidationStrategy, ValidationResult } from './task-validation.strategy';
+import { normalizeAnswer } from './normalize';
 
 /**
  * Стратегия валидации для задач типа translate.
@@ -12,11 +13,12 @@ export class TranslateValidationStrategy implements TaskValidationStrategy {
     validationData: TranslateValidationData,
     taskData?: Record<string, any>
   ): ValidationResult {
-    const normalizedAnswer = userAnswer.trim().toLowerCase();
+    // Нормализуем обе стороны: не штрафуем за пропущенную финальную точку/кавычки.
+    const normalizedAnswer = normalizeAnswer(userAnswer);
 
     // Проверяем, совпадает ли ответ с одним из ожидаемых переводов
     const isCorrect = validationData.expected.some(
-      expected => normalizedAnswer === expected.toLowerCase()
+      expected => normalizedAnswer === normalizeAnswer(expected)
     );
 
     return {

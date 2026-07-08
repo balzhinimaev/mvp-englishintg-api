@@ -13,6 +13,9 @@ export class ChoiceTaskResponseDto {
   options!: string[];
 
   @Expose()
+  hint?: string;
+
+  @Expose()
   explanation?: string;
 
   // correctIndex НЕ помечен @Expose(), значит не попадет в JSON
@@ -56,11 +59,16 @@ export class ListenTaskResponseDto {
   @Expose()
   question?: string;
 
+  // Варианты MCQ — нужны фронту для отрисовки кнопок. Правильный вариант (correctIndex)
+  // НЕ экспортируется, поэтому options безопасны (как в ChoiceTaskResponseDto).
   @Expose()
-  translation?: string;
+  options?: string[];
 
-  // transcript может быть показан на клиенте для self-check,
-  // но не должен содержать правильный ответ до проверки
+  @Expose()
+  hint?: string;
+
+  // translation НЕ экспортируется: это перевод правильного варианта — утёк бы ответ
+  // на «What did you hear?» до проверки. transcript и correctIndex тоже срезаны.
 }
 
 /**
@@ -69,6 +77,9 @@ export class ListenTaskResponseDto {
 export class SpeakTaskResponseDto {
   @Expose()
   prompt!: string;
+
+  @Expose()
+  hint?: string;
 
   // Модель произношения (озвучка target через TTS). Сам target не экспортируется —
   // audioUrl вычисляется маппером из target и безопасен для клиента.
@@ -92,6 +103,9 @@ export class OrderTaskResponseDto {
 export class TranslateTaskResponseDto {
   @Expose()
   question!: string;
+
+  @Expose()
+  hint?: string;
 
   // expected (правильные переводы) НЕ экспортируется
 }

@@ -153,6 +153,15 @@ export class ProgressService {
       { new: true, upsert: true },
     );
 
+    // Был ли урок уже пройден до этого сабмита (защита от повторного начисления наград за реплей)
+    const wasCompleted = ulp.status === 'completed';
+    // Отвечал ли пользователь на ЭТО задание верно раньше (защита task-XP от фарма пересдачей)
+    const alreadyCorrect = !!(await this.attemptModel.exists({
+      userId: args.userId,
+      taskRef: args.taskRef,
+      correct: true,
+    }));
+
     const hasTasks = Array.isArray(lesson?.tasks) && lesson.tasks.length > 0;
     const actualLastTaskIndex = hasTasks ? lesson!.tasks!.length - 1 : undefined;
     const actualLastTaskRef = hasTasks ? lesson!.tasks![actualLastTaskIndex!]?.ref : undefined;
@@ -241,8 +250,9 @@ export class ProgressService {
       ],
     );
 
-    // XP
-    if (args.isCorrect) {
+    // XP за задание — начисляем ОДИН раз (первый верный ответ), иначе XP фармится пересдачей
+    const awardTaskXp = args.isCorrect && !alreadyCorrect;
+    if (awardTaskXp) {
       await this.addXp(args.userId, xpPerCorrect, 'task', args.taskRef, args.sessionId, { lessonRef: args.lessonRef });
     }
 
@@ -253,20 +263,23 @@ export class ProgressService {
 
     if (args.isLastTask) {
       await this.ulpModel.updateOne({ _id: ulp._id }, { $set: { status: 'completed', completedAt: new Date() } });
-      await this.addXp(args.userId, 20, 'lesson_complete', args.lessonRef, args.sessionId);
-      const newStreak = await this.updateStreakOnActivity(args.userId);
-      await this.dailyModel.updateOne(
-        { userId: args.userId, dayKey },
-        { $inc: { xpEarned: (args.isCorrect ? xpPerCorrect : 0) + 20, lessonsCompleted: 1 }, $setOnInsert: { tz } },
-        { upsert: true },
-      );
-      if ([3, 7].includes(newStreak)) {
-        await this.addXp(args.userId, 15, 'streak_bonus', `streak_${newStreak}`, args.sessionId);
+      // Награды за завершение — только при ПЕРВОМ прохождении урока (реплей не фармит XP/стрик)
+      if (!wasCompleted) {
+        await this.addXp(args.userId, 20, 'lesson_complete', args.lessonRef, args.sessionId);
+        const newStreak = await this.updateStreakOnActivity(args.userId);
+        await this.dailyModel.updateOne(
+          { userId: args.userId, dayKey },
+          { $inc: { xpEarned: (awardTaskXp ? xpPerCorrect : 0) + 20, lessonsCompleted: 1 }, $setOnInsert: { tz } },
+          { upsert: true },
+        );
+        if ([3, 7].includes(newStreak)) {
+          await this.addXp(args.userId, 15, 'streak_bonus', `streak_${newStreak}`, args.sessionId);
+        }
       }
     } else {
       await this.dailyModel.updateOne(
         { userId: args.userId, dayKey },
-        { $inc: { xpEarned: args.isCorrect ? xpPerCorrect : 0, tasksCompleted: 1 }, $setOnInsert: { tz } },
+        { $inc: { xpEarned: awardTaskXp ? xpPerCorrect : 0, tasksCompleted: 1 }, $setOnInsert: { tz } },
         { upsert: true },
       );
     }

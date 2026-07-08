@@ -7,6 +7,8 @@ import { User, UserDocument } from '../common/schemas/user.schema';
 import { Lesson, LessonDocument } from '../common/schemas/lesson.schema';
 import { VocabularyItem as VocabularyItemType, UserVocabularyProgress as UserVocabularyProgressType, VocabularyProgressStats } from '../common/types/content';
 import { VocabularyMapper, UserVocabularyProgressMapper } from '../common/utils/mappers';
+import { schedule, Grade } from './srs';
+import { GrammarAtom, GrammarAtomDocument } from '../common/schemas/grammar-atom.schema';
 import {
   VocabularyStatsResponseDto,
   VocabularySummaryDto,
@@ -57,6 +59,7 @@ export class VocabularyService {
     @InjectModel(UserVocabularyProgress.name) private readonly progressModel: Model<UserVocabularyProgressDocument>,
     @InjectModel(Lesson.name) private readonly lessonModel: Model<LessonDocument>,
     @InjectModel(User.name) private readonly userModel: Model<UserDocument>,
+    @InjectModel(GrammarAtom.name) private readonly grammarModel: Model<GrammarAtomDocument>,
   ) {}
 
   /**
@@ -312,6 +315,217 @@ export class VocabularyService {
   async getUserWordProgress(userId: string, moduleRef: string, wordId: string): Promise<UserVocabularyProgressType | null> {
     const progress = await this.progressModel.findOne({ userId, moduleRef, wordId }).lean();
     return progress ? UserVocabularyProgressMapper.toDto(progress) : null;
+  }
+
+  // ==========================================================================
+  //  SRS / очередь повторений (Фаза 1 механики памяти)
+  // ==========================================================================
+
+  private normalizeText(s?: string): string {
+    return (s || '').toString().trim().toLowerCase().replace(/[.,!?;:«»"']/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  private shuffle<T>(a: T[]): T[] {
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  }
+
+  /**
+   * Дневная очередь: созревшие повторения + немного новых атомов для ввода.
+   * Атомы двух типов: слова (vocab_*) и грам-пробы (gram_*), в общей SRS-очереди.
+   */
+  async getReviewQueue(
+    userId: string,
+    opts?: { reviewLimit?: number; newLimit?: number },
+    focus?: 'weak' | 'due',
+  ): Promise<{ items: any[]; dueCount: number; newCount: number; focus: string }> {
+    const now = new Date();
+    const reviewLimit = Math.min(opts?.reviewLimit ?? 30, 60);
+    const weakMode = focus === 'weak';
+    // Атом «слабый» (западает): его повторно забывали или он даётся тяжело
+    const WEAK_MATCH: any = { $or: [{ lapses: { $gte: 2 } }, { ease: { $lte: 2.0 } }] };
+    const isWeak = (p: any) => (p?.lapses ?? 0) >= 2 || (p?.ease ?? 2.5) <= 2.0;
+
+    // Источник тест-карточек: слабые (разбор ошибок) ИЛИ созревшие (со слабыми вперёд)
+    let source: any[];
+    if (weakMode) {
+      source = await this.progressModel
+        .find({ userId, status: { $in: ['learning', 'learned'] }, ...WEAK_MATCH })
+        .sort({ lapses: -1, ease: 1 }).limit(reviewLimit).lean();
+    } else {
+      source = await this.progressModel
+        .find({ userId, dueAt: { $lte: now }, status: { $in: ['learning', 'learned'] } })
+        .sort({ dueAt: 1 }).limit(reviewLimit).lean();
+      // адаптивность: слабые атомы — вперёд, пока внимание свежее
+      source.sort((a, b) => (isWeak(b) ? 1 : 0) - (isWeak(a) ? 1 : 0));
+    }
+
+    const srcWordIds = source.map(p => p.wordId).filter(id => id.startsWith('vocab_'));
+    const srcGramIds = source.map(p => p.wordId).filter(id => id.startsWith('gram_'));
+    const dueVocab = await this.vocabularyModel.find({ id: { $in: srcWordIds } }).lean();
+    const dueGram = await this.grammarModel.find({ id: { $in: srcGramIds } }).lean();
+    const vById = new Map(dueVocab.map((v: any) => [v.id, v]));
+    const gById = new Map(dueGram.map((g: any) => [g.id, g]));
+
+    // дистракторы для слов
+    const pool: Array<{ translation?: string }> = await this.vocabularyModel
+      .aggregate([{ $sample: { size: 60 } }, { $project: { _id: 0, translation: 1 } }]);
+    const poolTr = pool.map(p => p.translation).filter(Boolean) as string[];
+    const buildOptions = (correct: string): string[] => {
+      const set = new Set<string>([correct]);
+      let guard = 0;
+      while (set.size < 4 && guard++ < 200) {
+        const cand = poolTr[Math.floor(Math.random() * poolTr.length)];
+        if (cand && this.normalizeText(cand) !== this.normalizeText(correct)) set.add(cand);
+      }
+      return this.shuffle(Array.from(set));
+    };
+
+    // Ступень производства по силе памяти: окреп (≥2 подряд) → набор ответа самому, иначе — выбор
+    const stageFor = (reps?: number): 'recognize' | 'recall' => ((reps ?? 0) >= 2 ? 'recall' : 'recognize');
+
+    // тест-карточки (слабые/созревшие) в выбранном порядке
+    const testCards = source.map(p => {
+      const stage = stageFor((p as any).repetitions);
+      if (vById.has(p.wordId)) {
+        const v: any = vById.get(p.wordId);
+        if (stage === 'recall') {
+          // производство: показываем перевод, слово набирает пользователь (без вариантов)
+          return { kind: 'word', stage, wordId: v.id, prompt: v.translation, isNew: false, mode: 'test' };
+        }
+        return {
+          kind: 'word', stage, wordId: v.id, word: v.word, transcription: v.transcription, audioKey: v.audioKey,
+          isNew: false, mode: 'test', options: buildOptions(v.translation || ''),
+        };
+      }
+      if (gById.has(p.wordId)) {
+        const g: any = gById.get(p.wordId);
+        if (stage === 'recall') {
+          return { kind: 'grammar', stage, wordId: g.id, title: g.title, prompt: g.prompt, handbookRef: g.handbookRef, isNew: false, mode: 'test' };
+        }
+        return {
+          kind: 'grammar', stage, wordId: g.id, title: g.title, prompt: g.prompt, handbookRef: g.handbookRef,
+          isNew: false, mode: 'test', options: this.shuffle([...(g.options || [])]),
+        };
+      }
+      return null;
+    }).filter(Boolean);
+
+    // Новые атомы — только в обычном режиме и адаптивно к нагрузке
+    const newInterleaved: any[] = [];
+    if (!weakMode) {
+      const [dueTotal, weakCount] = await Promise.all([
+        this.progressModel.countDocuments({ userId, dueAt: { $lte: now }, status: { $in: ['learning', 'learned'] } }),
+        this.progressModel.countDocuments({ userId, status: { $in: ['learning', 'learned'] }, ...WEAK_MATCH }),
+      ]);
+      // адаптивный темп: большой долг → 0 (консолидация); много слабых → меньше нового
+      let nv = Math.min(opts?.newLimit ?? 6, 20);
+      let ng = 3;
+      if (dueTotal >= 20) { nv = 0; ng = 0; }
+      else if (weakCount >= 10) { nv = 2; ng = 1; }
+
+      if (nv > 0 || ng > 0) {
+        const seen = await this.progressModel.distinct('wordId', { userId });
+        const newVocab = nv > 0 ? await this.vocabularyModel.find({ id: { $nin: seen } }).sort({ occurrenceCount: -1 }).limit(nv).lean() : [];
+        const newGram = ng > 0 ? await this.grammarModel.find({ id: { $nin: seen } }).sort({ level: 1 }).limit(ng).lean() : [];
+        const teachVocab = newVocab.map((v: any) => ({
+          kind: 'word', wordId: v.id, word: v.word, transcription: v.transcription, audioKey: v.audioKey,
+          translation: v.translation, example: (v.examples || [])[0] || null, isNew: true, mode: 'teach',
+        }));
+        const teachGram = newGram.map((g: any) => ({
+          kind: 'grammar', wordId: g.id, title: g.title, prompt: g.prompt, correctOption: g.options[g.correctIndex],
+          explanation: g.explanation, handbookRef: g.handbookRef, isNew: true, mode: 'teach',
+        }));
+        const maxNew = Math.max(teachVocab.length, teachGram.length);
+        for (let i = 0; i < maxNew; i++) {
+          if (teachVocab[i]) newInterleaved.push(teachVocab[i]);
+          if (teachGram[i]) newInterleaved.push(teachGram[i]);
+        }
+      }
+    }
+
+    const items = [...testCards, ...newInterleaved];
+    return { items, dueCount: testCards.length, newCount: newInterleaved.length, focus: weakMode ? 'weak' : 'due' };
+  }
+
+  /** Обработка одного повторения/ввода атома (слово или грамматика): применяет SRS. */
+  async submitReview(userId: string, wordId: string, body: { mode: 'teach' | 'test'; choice?: string; stage?: 'recognize' | 'recall' }): Promise<any> {
+    const now = new Date();
+    const prev = await this.progressModel.findOne({ userId, wordId }).lean();
+    const isGrammar = wordId.startsWith('gram_');
+
+    let correctAnswer = '';
+    let explanation: string | undefined;
+    let handbookRef: string | undefined;
+    let example: any = null;
+    let moduleRef = 'general';
+    let word: string | undefined;
+    let translation: string | undefined;
+
+    if (isGrammar) {
+      const g: any = await this.grammarModel.findOne({ id: wordId }).lean();
+      if (!g) return { error: 'atom_not_found' };
+      correctAnswer = g.options?.[g.correctIndex] ?? ''; // цель одна на обе ступени
+      explanation = g.explanation;
+      handbookRef = g.handbookRef;
+      moduleRef = (g.moduleRefs && g.moduleRefs[0]) || 'grammar';
+    } else {
+      const v: any = await this.vocabularyModel.findOne({ id: wordId }).lean();
+      if (!v) return { error: 'word_not_found' };
+      word = v.word;
+      translation = v.translation || '';
+      example = (v.examples || [])[0] || null;
+      moduleRef = (v.moduleRefs && v.moduleRefs[0]) || 'general';
+      // recall = производство: цель — само слово (набирает пользователь); recognize = перевод
+      correctAnswer = body.stage === 'recall' ? (v.word || '') : (v.translation || '');
+    }
+
+    let grade: Grade;
+    let correct: boolean | undefined;
+    if (body.mode === 'teach') {
+      grade = 'good'; // ввод нового: первый интервал (1 день)
+    } else {
+      correct = this.normalizeText(body.choice) === this.normalizeText(correctAnswer);
+      grade = correct ? 'good' : 'again';
+    }
+
+    const s = schedule(prev as any, grade, now);
+
+    await this.progressModel.updateOne(
+      { userId, wordId },
+      {
+        $set: {
+          moduleRef, status: s.status, repetitions: s.repetitions, intervalDays: s.intervalDays,
+          ease: s.ease, lapses: s.lapses, dueAt: s.dueAt, lastStudiedAt: now,
+          ...(s.status === 'learned' ? { learnedAt: now } : {}),
+          ...(prev ? {} : { introducedAt: now }),
+        },
+        $inc: { attempts: 1, totalAttempts: body.mode === 'test' ? 1 : 0, correctAttempts: correct ? 1 : 0 },
+        $setOnInsert: { userId, wordId },
+      },
+      { upsert: true },
+    );
+
+    return {
+      correct, grade, intervalDays: s.intervalDays, dueAt: s.dueAt, status: s.status,
+      correctTranslation: correctAnswer, explanation, handbookRef, example, word, translation,
+    };
+  }
+
+  /** Сводка для главной/шапки: сколько к повторению, доступно новых, в процессе, освоено (слова+грамматика). */
+  async getReviewStats(userId: string): Promise<any> {
+    const now = new Date();
+    const [due, learning, learned, seen, vocabTotal, gramTotal, weak] = await Promise.all([
+      this.progressModel.countDocuments({ userId, dueAt: { $lte: now }, status: { $in: ['learning', 'learned'] } }),
+      this.progressModel.countDocuments({ userId, status: 'learning' }),
+      this.progressModel.countDocuments({ userId, status: 'learned' }),
+      this.progressModel.countDocuments({ userId }),
+      this.vocabularyModel.estimatedDocumentCount(),
+      this.grammarModel.estimatedDocumentCount(),
+      this.progressModel.countDocuments({ userId, status: { $in: ['learning', 'learned'] }, $or: [{ lapses: { $gte: 2 } }, { ease: { $lte: 2.0 } }] }),
+    ]);
+    const total = vocabTotal + gramTotal;
+    return { due, newAvailable: Math.max(0, total - seen), learning, learned, weak, activeVocab: learning + learned, totalVocab: total };
   }
 
   /**

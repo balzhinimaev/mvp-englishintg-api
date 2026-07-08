@@ -10,6 +10,7 @@ import { Lesson, LessonSchema } from '../common/schemas/lesson.schema';
 import { UserLessonProgress, UserLessonProgressSchema } from '../common/schemas/user-lesson-progress.schema';
 import { VocabularyItem, VocabularySchema } from '../common/schemas/vocabulary.schema';
 import { UserVocabularyProgress, UserVocabularyProgressSchema } from '../common/schemas/user-vocabulary-progress.schema';
+import { GrammarAtom, GrammarAtomSchema } from '../common/schemas/grammar-atom.schema';
 import { Entitlement, EntitlementSchema } from '../common/schemas/entitlement.schema';
 import { ContentService } from './content.service';
 import { VocabularyService } from './vocabulary.service';
@@ -27,6 +28,7 @@ import { LessonPrerequisiteGuard } from './guards/lesson-prerequisite.guard';
       { name: UserLessonProgress.name, schema: UserLessonProgressSchema },
       { name: VocabularyItem.name, schema: VocabularySchema },
       { name: UserVocabularyProgress.name, schema: UserVocabularyProgressSchema },
+      { name: GrammarAtom.name, schema: GrammarAtomSchema },
       { name: Entitlement.name, schema: EntitlementSchema },
     ]),
   ],

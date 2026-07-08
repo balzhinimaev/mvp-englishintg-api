@@ -1,0 +1,5614 @@
+[
+ {
+  "id": "gram_0cd75a59de92",
+  "kind": "grammar",
+  "title": "Приветствие, числа, время",
+  "prompt": "Meeting arranged for Monday. Complete: 'See you on ____'",
+  "options": [
+   "Tuesday",
+   "Monday",
+   "Weekend",
+   "Tomorrow"
+  ],
+  "correctIndex": 1,
+  "explanation": "См. вы в понедельник — See you on Monday. Контекст указывает конкретный день.",
+  "handbookRef": null,
+  "difficulty": "easy",
+  "level": "A0",
+  "moduleRefs": [
+   "a0.basics"
+  ],
+  "lessonRefs": [
+   "a0.basics.003"
+  ]
+ },
+ {
+  "id": "gram_5542db5766b3",
+  "kind": "grammar",
+  "title": "Базовые слова и фразы о еде и напитках: как назвать продукты, сказать, что любиш",
+  "prompt": "Выбери правильный артикль: «___ banana»",
+  "options": [
+   "an",
+   "a",
+   "some",
+   "the"
+  ],
+  "correctIndex": 1,
+  "explanation": "a banana — перед согласным звуком (b) ставим a.",
+  "handbookRef": null,
+  "difficulty": "easy",
+  "level": "A0",
+  "moduleRefs": [
+   "a0.food"
+  ],
+  "lessonRefs": [
+   "a0.food.008"
+  ]
+ },
+ {
+  "id": "gram_71724360d34c",
+  "kind": "grammar",
+  "title": "Past Simple: правильные и неправильные глаголы, вопросы и отрицания",
+  "prompt": "Choose the correct word: I ___ at home yesterday.",
+  "options": [
+   "is",
+   "was",
+   "were",
+   "am"
+  ],
+  "correctIndex": 1,
+  "explanation": "С I, he, she, it используем was. I was at home.",
+  "handbookRef": "grammar.past-simple",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.past"
+  ],
+  "lessonRefs": [
+   "a2.past.001"
+  ]
+ },
+ {
+  "id": "gram_e4936a7459e3",
+  "kind": "grammar",
+  "title": "Past Simple: правильные и неправильные глаголы, вопросы и отрицания",
+  "prompt": "Choose the correct past form: We ___ football yesterday.",
+  "options": [
+   "play",
+   "played",
+   "plaied",
+   "playd"
+  ],
+  "correctIndex": 1,
+  "explanation": "play → played. Правильный глагол получает окончание -ed.",
+  "handbookRef": "grammar.past-simple",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.past"
+  ],
+  "lessonRefs": [
+   "a2.past.002"
+  ]
+ },
+ {
+  "id": "gram_c748298d9ed9",
+  "kind": "grammar",
+  "title": "Past Simple: правильные и неправильные глаголы, вопросы и отрицания",
+  "prompt": "Choose the correct past form: I ___ to school yesterday.",
+  "options": [
+   "go",
+   "went",
+   "goed",
+   "gone"
+  ],
+  "correctIndex": 1,
+  "explanation": "go → went (неправильный глагол). Goed не существует.",
+  "handbookRef": "grammar.past-simple",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.past"
+  ],
+  "lessonRefs": [
+   "a2.past.003"
+  ]
+ },
+ {
+  "id": "gram_64c27c7d699f",
+  "kind": "grammar",
+  "title": "Past Simple: правильные и неправильные глаголы, вопросы и отрицания",
+  "prompt": "Choose the correct form: She ___ come to the party.",
+  "options": [
+   "didn't",
+   "don't",
+   "wasn't",
+   "doesn't"
+  ],
+  "correctIndex": 0,
+  "explanation": "didn't + инфинитив: She didn't come. После didn't глагол без -ed.",
+  "handbookRef": "grammar.past-simple",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.past"
+  ],
+  "lessonRefs": [
+   "a2.past.004"
+  ]
+ },
+ {
+  "id": "gram_7f514ad7313a",
+  "kind": "grammar",
+  "title": "Past Simple: правильные и неправильные глаголы, вопросы и отрицания",
+  "prompt": "Choose the correct question: ___ you enjoy the trip?",
+  "options": [
+   "Do",
+   "Did",
+   "Was",
+   "Are"
+  ],
+  "correctIndex": 1,
+  "explanation": "Did + подлежащее + инфинитив: Did you enjoy...?",
+  "handbookRef": "grammar.past-simple",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.past"
+  ],
+  "lessonRefs": [
+   "a2.past.005"
+  ]
+ },
+ {
+  "id": "gram_c694dfd22a99",
+  "kind": "grammar",
+  "title": "Past Simple: правильные и неправильные глаголы, вопросы и отрицания",
+  "prompt": "Choose the correct marker: We moved here two years ___.",
+  "options": [
+   "ago",
+   "last",
+   "yesterday",
+   "before"
+  ],
+  "correctIndex": 0,
+  "explanation": "ago идёт после отрезка времени: two years ago — два года назад.",
+  "handbookRef": "grammar.past-simple",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.past"
+  ],
+  "lessonRefs": [
+   "a2.past.006"
+  ]
+ },
+ {
+  "id": "gram_1d4f664e5cbf",
+  "kind": "grammar",
+  "title": "Места в городе, дом и комнаты; there is / there are",
+  "prompt": "Choose the correct word: There ___ a park near my house.",
+  "options": [
+   "is",
+   "are",
+   "am",
+   "be"
+  ],
+  "correctIndex": 0,
+  "explanation": "Один предмет в единственном числе → there is. There is a park.",
+  "handbookRef": "grammar.there-is",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.city"
+  ],
+  "lessonRefs": [
+   "a2.city.001"
+  ]
+ },
+ {
+  "id": "gram_88f36e5252ba",
+  "kind": "grammar",
+  "title": "Места в городе, дом и комнаты; there is / there are",
+  "prompt": "Choose the correct sentence about many buildings.",
+  "options": [
+   "There are a lot of cafes here.",
+   "There is a lot of cafes here.",
+   "There are a cafe here.",
+   "There is many cafes here."
+  ],
+  "correctIndex": 0,
+  "explanation": "There are a lot of cafes — множественное число берёт there are.",
+  "handbookRef": "grammar.there-is",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.city"
+  ],
+  "lessonRefs": [
+   "a2.city.002"
+  ]
+ },
+ {
+  "id": "gram_3708285758c5",
+  "kind": "grammar",
+  "title": "Места в городе, дом и комнаты; there is / there are",
+  "prompt": "The cat is ___ the table (не на столе, а внизу).",
+  "options": [
+   "on",
+   "under",
+   "in",
+   "between"
+  ],
+  "correctIndex": 1,
+  "explanation": "under — под. The cat is under the table.",
+  "handbookRef": "grammar.there-is",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.city"
+  ],
+  "lessonRefs": [
+   "a2.city.004"
+  ]
+ },
+ {
+  "id": "gram_492cef42d921",
+  "kind": "grammar",
+  "title": "Места в городе, дом и комнаты; there is / there are",
+  "prompt": "Choose the negative: ___ a lift in this building.",
+  "options": [
+   "There isn't",
+   "There aren't",
+   "There don't",
+   "There not"
+  ],
+  "correctIndex": 0,
+  "explanation": "Отрицание в единственном числе → there isn't. There isn't a lift.",
+  "handbookRef": "grammar.there-is",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.city"
+  ],
+  "lessonRefs": [
+   "a2.city.005"
+  ]
+ },
+ {
+  "id": "gram_ba26392364a0",
+  "kind": "grammar",
+  "title": "Места в городе, дом и комнаты; there is / there are",
+  "prompt": "Choose the correct word: There are ___ nice flats to rent here.",
+  "options": [
+   "some",
+   "any",
+   "a",
+   "much"
+  ],
+  "correctIndex": 0,
+  "explanation": "В утверждении с there are используем some: there are some flats.",
+  "handbookRef": "grammar.there-is",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.city"
+  ],
+  "lessonRefs": [
+   "a2.city.006"
+  ]
+ },
+ {
+  "id": "gram_cc1717f7b702",
+  "kind": "grammar",
+  "title": "Места в городе, дом и комнаты; there is / there are",
+  "prompt": "Choose the correct sentence.",
+  "options": [
+   "There is a bank between the cafe and the shop.",
+   "There are a bank between the cafe and the shop.",
+   "There is a bank between the cafe or the shop.",
+   "There is bank between the cafe and the shop."
+  ],
+  "correctIndex": 0,
+  "explanation": "There is a bank between the cafe and the shop — правильно и по числу, и по предлогу.",
+  "handbookRef": "grammar.there-is",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.city"
+  ],
+  "lessonRefs": [
+   "a2.city.008"
+  ]
+ },
+ {
+  "id": "gram_417d4302c6ae",
+  "kind": "grammar",
+  "title": "Сравнительная и превосходная степени, as … as",
+  "prompt": "Choose the correct word: A car is ___ than a bike.",
+  "options": [
+   "big",
+   "bigger",
+   "biggest",
+   "more big"
+  ],
+  "correctIndex": 1,
+  "explanation": "big → bigger (согласная удваивается). Сравнение идёт с than.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.compare"
+  ],
+  "lessonRefs": [
+   "a2.compare.001"
+  ]
+ },
+ {
+  "id": "gram_573e47771f7c",
+  "kind": "grammar",
+  "title": "Сравнительная и превосходная степени, as … as",
+  "prompt": "Choose the correct word: Moscow is ___ than my town.",
+  "options": [
+   "expensiver",
+   "more expensive",
+   "most expensive",
+   "expensive"
+  ],
+  "correctIndex": 1,
+  "explanation": "expensive — длинное слово, поэтому more expensive, а не expensiver.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.compare"
+  ],
+  "lessonRefs": [
+   "a2.compare.002"
+  ]
+ },
+ {
+  "id": "gram_e9302e3b0439",
+  "kind": "grammar",
+  "title": "Сравнительная и превосходная степени, as … as",
+  "prompt": "Choose the correct word: Tom is as tall ___ his brother.",
+  "options": [
+   "as",
+   "than",
+   "that",
+   "so"
+  ],
+  "correctIndex": 0,
+  "explanation": "as tall as — «такой же высокий, как». Оба слова as.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.compare"
+  ],
+  "lessonRefs": [
+   "a2.compare.003"
+  ]
+ },
+ {
+  "id": "gram_6fe967534141",
+  "kind": "grammar",
+  "title": "Сравнительная и превосходная степени, as … as",
+  "prompt": "Choose the correct word: The plane is the ___ way to travel.",
+  "options": [
+   "faster",
+   "fastest",
+   "most fast",
+   "fast"
+  ],
+  "correctIndex": 1,
+  "explanation": "the fastest — «самый быстрый». Короткое слово: the -est.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.compare"
+  ],
+  "lessonRefs": [
+   "a2.compare.004"
+  ]
+ },
+ {
+  "id": "gram_9c858b537cb0",
+  "kind": "grammar",
+  "title": "Сравнительная и превосходная степени, as … as",
+  "prompt": "Choose the correct word: This is the ___ laptop in the shop.",
+  "options": [
+   "expensivest",
+   "more expensive",
+   "most expensive",
+   "expensive"
+  ],
+  "correctIndex": 2,
+  "explanation": "the most expensive — «самый дорогой». Длинные слова: the most.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.compare"
+  ],
+  "lessonRefs": [
+   "a2.compare.005"
+  ]
+ },
+ {
+  "id": "gram_16bfd42c680c",
+  "kind": "grammar",
+  "title": "Сравнительная и превосходная степени, as … as",
+  "prompt": "Choose the correct word: Today the weather is ___ than yesterday.",
+  "options": [
+   "gooder",
+   "more good",
+   "better",
+   "best"
+  ],
+  "correctIndex": 2,
+  "explanation": "good → better → best. Сравнительная степень — better.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.compare"
+  ],
+  "lessonRefs": [
+   "a2.compare.006"
+  ]
+ },
+ {
+  "id": "gram_6fe21ef0a38f",
+  "kind": "grammar",
+  "title": "Продукты, заказ в ресторане; some / any, much / many",
+  "prompt": "Choose the correct word: I need ___ apple.",
+  "options": [
+   "a",
+   "an",
+   "some",
+   "any"
+  ],
+  "correctIndex": 1,
+  "explanation": "Перед словами с гласным звуком (a, e, i, o, u) ставим an: an apple.",
+  "handbookRef": "grammar.some-any",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.food"
+  ],
+  "lessonRefs": [
+   "a2.food.001"
+  ]
+ },
+ {
+  "id": "gram_75fa17a93126",
+  "kind": "grammar",
+  "title": "Продукты, заказ в ресторане; some / any, much / many",
+  "prompt": "Choose the correct word: We need ___ milk.",
+  "options": [
+   "a",
+   "an",
+   "some",
+   "any"
+  ],
+  "correctIndex": 2,
+  "explanation": "В утверждениях с неисчисляемыми словами используем some: some milk.",
+  "handbookRef": "grammar.some-any",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.food"
+  ],
+  "lessonRefs": [
+   "a2.food.002"
+  ]
+ },
+ {
+  "id": "gram_1a79b26a3a3f",
+  "kind": "grammar",
+  "title": "Продукты, заказ в ресторане; some / any, much / many",
+  "prompt": "Choose the correct word: ___ I have a coffee, please?",
+  "options": [
+   "Can",
+   "Do",
+   "Am",
+   "Is"
+  ],
+  "correctIndex": 0,
+  "explanation": "Can I have...? — стандартная вежливая просьба в кафе.",
+  "handbookRef": "grammar.some-any",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.food"
+  ],
+  "lessonRefs": [
+   "a2.food.003"
+  ]
+ },
+ {
+  "id": "gram_79f1d373a8bd",
+  "kind": "grammar",
+  "title": "Продукты, заказ в ресторане; some / any, much / many",
+  "prompt": "Choose the correct word: For breakfast I'd like ___ omelette.",
+  "options": [
+   "a",
+   "an",
+   "some",
+   "any"
+  ],
+  "correctIndex": 1,
+  "explanation": "an omelette — перед гласным звуком ставим an.",
+  "handbookRef": "grammar.some-any",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.food"
+  ],
+  "lessonRefs": [
+   "a2.food.004"
+  ]
+ },
+ {
+  "id": "gram_197fe6ce5631",
+  "kind": "grammar",
+  "title": "Продукты, заказ в ресторане; some / any, much / many",
+  "prompt": "Choose the correct word: How ___ sugar do you need?",
+  "options": [
+   "much",
+   "many",
+   "a lot",
+   "any"
+  ],
+  "correctIndex": 0,
+  "explanation": "С неисчисляемыми словами используем how much: how much sugar.",
+  "handbookRef": "grammar.some-any",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.food"
+  ],
+  "lessonRefs": [
+   "a2.food.005"
+  ]
+ },
+ {
+  "id": "gram_edbfefea3fbf",
+  "kind": "grammar",
+  "title": "Продукты, заказ в ресторане; some / any, much / many",
+  "prompt": "Choose the correct word: Lemons are very ___.",
+  "options": [
+   "sweet",
+   "sour",
+   "salty",
+   "spicy"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lemons are sour — лимоны кислые.",
+  "handbookRef": "grammar.some-any",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.food"
+  ],
+  "lessonRefs": [
+   "a2.food.006"
+  ]
+ },
+ {
+  "id": "gram_0b557c063120",
+  "kind": "grammar",
+  "title": "Части тела, симптомы, у врача; should / shouldn't",
+  "prompt": "My head hurts. I have got a ___.",
+  "options": [
+   "toothache",
+   "headache",
+   "cold",
+   "cough"
+  ],
+  "correctIndex": 1,
+  "explanation": "headache — головная боль. I have got a headache.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.health"
+  ],
+  "lessonRefs": [
+   "a2.health.002"
+  ]
+ },
+ {
+  "id": "gram_eef73cb7581e",
+  "kind": "grammar",
+  "title": "Части тела, симптомы, у врача; should / shouldn't",
+  "prompt": "The doctor asks: '___ the matter?'",
+  "options": [
+   "What's",
+   "Who's",
+   "Where's",
+   "How's"
+  ],
+  "correctIndex": 0,
+  "explanation": "What's the matter? — Что случилось? / На что жалуетесь?",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.health"
+  ],
+  "lessonRefs": [
+   "a2.health.003"
+  ]
+ },
+ {
+  "id": "gram_e809943112f2",
+  "kind": "grammar",
+  "title": "Части тела, симптомы, у врача; should / shouldn't",
+  "prompt": "To be healthy, you ___ eat more vegetables.",
+  "options": [
+   "shouldn't",
+   "should",
+   "aren't",
+   "don't"
+  ],
+  "correctIndex": 1,
+  "explanation": "should — стоит, следует. You should eat more vegetables.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.health"
+  ],
+  "lessonRefs": [
+   "a2.health.005"
+  ]
+ },
+ {
+  "id": "gram_db153946f8ff",
+  "kind": "grammar",
+  "title": "Части тела, симптомы, у врача; should / shouldn't",
+  "prompt": "Advice for a cold: '___ in bed and rest.'",
+  "options": [
+   "Staying",
+   "Stay",
+   "To stay",
+   "Stays"
+  ],
+  "correctIndex": 1,
+  "explanation": "В советах-командах используем imperative: Stay in bed.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.health"
+  ],
+  "lessonRefs": [
+   "a2.health.006"
+  ]
+ },
+ {
+  "id": "gram_12b10fdb7d7a",
+  "kind": "grammar",
+  "title": "Части тела, симптомы, у врача; should / shouldn't",
+  "prompt": "It's an emergency! Quick, ___ an ambulance!",
+  "options": [
+   "call",
+   "say",
+   "speak",
+   "tell"
+  ],
+  "correctIndex": 0,
+  "explanation": "call an ambulance — вызвать скорую помощь.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.health"
+  ],
+  "lessonRefs": [
+   "a2.health.007"
+  ]
+ },
+ {
+  "id": "gram_48d3ba8f765a",
+  "kind": "grammar",
+  "title": "Части тела, симптомы, у врача; should / shouldn't",
+  "prompt": "After running, I feel tired but ___.",
+  "options": [
+   "healthy",
+   "ill",
+   "broken",
+   "sick"
+  ],
+  "correctIndex": 0,
+  "explanation": "healthy — здоровый. Sport makes you feel healthy.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.health"
+  ],
+  "lessonRefs": [
+   "a2.health.008"
+  ]
+ },
+ {
+  "id": "gram_17d37cbde468",
+  "kind": "grammar",
+  "title": "Свободное время, спорт, кино; like + ing, наречия частоты",
+  "prompt": "Choose the correct word: I like ___ books in the evening.",
+  "options": [
+   "read",
+   "reading",
+   "to reading",
+   "reads"
+  ],
+  "correctIndex": 1,
+  "explanation": "like/love/hate/enjoy + глагол с -ing. I like reading.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.leisure"
+  ],
+  "lessonRefs": [
+   "a2.leisure.001"
+  ]
+ },
+ {
+  "id": "gram_9cbb6bfcbf28",
+  "kind": "grammar",
+  "title": "Свободное время, спорт, кино; like + ing, наречия частоты",
+  "prompt": "Choose the correct word: We ___ football every Saturday.",
+  "options": [
+   "go",
+   "play",
+   "do",
+   "make"
+  ],
+  "correctIndex": 1,
+  "explanation": "play football/tennis/basketball. С мячом и командными играми — play.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.leisure"
+  ],
+  "lessonRefs": [
+   "a2.leisure.002"
+  ]
+ },
+ {
+  "id": "gram_c39dd7fac6dc",
+  "kind": "grammar",
+  "title": "Свободное время, спорт, кино; like + ing, наречия частоты",
+  "prompt": "Choose the correct word: I hate ___ horror films at night.",
+  "options": [
+   "watch",
+   "watching",
+   "to watching",
+   "watched"
+  ],
+  "correctIndex": 1,
+  "explanation": "hate + глагол-ing: watching. I hate watching horror films.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.leisure"
+  ],
+  "lessonRefs": [
+   "a2.leisure.003"
+  ]
+ },
+ {
+  "id": "gram_35d8cbebe87e",
+  "kind": "grammar",
+  "title": "Свободное время, спорт, кино; like + ing, наречия частоты",
+  "prompt": "Choose the correct sentence:",
+  "options": [
+   "I listen always to music.",
+   "I always listen to music.",
+   "Always I listen to music.",
+   "I listen to always music."
+  ],
+  "correctIndex": 1,
+  "explanation": "always/usually/often — перед смысловым глаголом: I always listen to music.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.leisure"
+  ],
+  "lessonRefs": [
+   "a2.leisure.004"
+  ]
+ },
+ {
+  "id": "gram_924a4838aa26",
+  "kind": "grammar",
+  "title": "Свободное время, спорт, кино; like + ing, наречия частоты",
+  "prompt": "Choose the correct word: At the weekend I ___ enjoy relaxing at home.",
+  "options": [
+   "usually",
+   "usual",
+   "use",
+   "usualy"
+  ],
+  "correctIndex": 0,
+  "explanation": "usually — обычно (наречие). I usually enjoy relaxing.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.leisure"
+  ],
+  "lessonRefs": [
+   "a2.leisure.005"
+  ]
+ },
+ {
+  "id": "gram_aad8f2c70ae5",
+  "kind": "grammar",
+  "title": "Свободное время, спорт, кино; like + ing, наречия частоты",
+  "prompt": "Choose the correct word: Do you want ___ go to the cinema tonight?",
+  "options": [
+   "to",
+   "for",
+   "at",
+   "-"
+  ],
+  "correctIndex": 0,
+  "explanation": "Do you want to + глагол. Do you want to go to the cinema?",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.leisure"
+  ],
+  "lessonRefs": [
+   "a2.leisure.006"
+  ]
+ },
+ {
+  "id": "gram_dd83c40a1238",
+  "kind": "grammar",
+  "title": "going to, will, Present Continuous для будущего",
+  "prompt": "Choose the correct form: I ___ going to visit my grandma this weekend.",
+  "options": [
+   "am",
+   "is",
+   "are",
+   "be"
+  ],
+  "correctIndex": 0,
+  "explanation": "be going to: I am, he/she/it is, you/we/they are. С I — am.",
+  "handbookRef": "grammar.present-continuous",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.plans"
+  ],
+  "lessonRefs": [
+   "a2.plans.001"
+  ]
+ },
+ {
+  "id": "gram_060549404f2f",
+  "kind": "grammar",
+  "title": "going to, will, Present Continuous для будущего",
+  "prompt": "Make a question: ___ you going to study English tonight?",
+  "options": [
+   "Am",
+   "Is",
+   "Are",
+   "Do"
+  ],
+  "correctIndex": 2,
+  "explanation": "Вопрос с be going to: Are you going to...? С you — are.",
+  "handbookRef": "grammar.present-continuous",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.plans"
+  ],
+  "lessonRefs": [
+   "a2.plans.002"
+  ]
+ },
+ {
+  "id": "gram_774ad56248d1",
+  "kind": "grammar",
+  "title": "going to, will, Present Continuous для будущего",
+  "prompt": "Choose the correct form: We ___ meeting at six o'clock tomorrow.",
+  "options": [
+   "is",
+   "are",
+   "am",
+   "be"
+  ],
+  "correctIndex": 1,
+  "explanation": "Present Continuous о договорённости: We are meeting at six tomorrow.",
+  "handbookRef": "grammar.present-continuous",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.plans"
+  ],
+  "lessonRefs": [
+   "a2.plans.003"
+  ]
+ },
+ {
+  "id": "gram_bc6d848c1961",
+  "kind": "grammar",
+  "title": "going to, will, Present Continuous для будущего",
+  "prompt": "Choose the correct form: In 2050 people ___ live on Mars.",
+  "options": [
+   "will",
+   "are",
+   "going",
+   "is"
+  ],
+  "correctIndex": 0,
+  "explanation": "will + глагол без to для предсказаний: people will live on Mars.",
+  "handbookRef": "grammar.present-continuous",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.plans"
+  ],
+  "lessonRefs": [
+   "a2.plans.004"
+  ]
+ },
+ {
+  "id": "gram_db5649cc57e4",
+  "kind": "grammar",
+  "title": "going to, will, Present Continuous для будущего",
+  "prompt": "Look at those dark clouds! It ___ rain.",
+  "options": [
+   "will not",
+   "is going to",
+   "was",
+   "won't"
+  ],
+  "correctIndex": 1,
+  "explanation": "Когда видим признак (тучи), используем be going to: It is going to rain.",
+  "handbookRef": "grammar.present-continuous",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.plans"
+  ],
+  "lessonRefs": [
+   "a2.plans.005"
+  ]
+ },
+ {
+  "id": "gram_4f5d7c105c5b",
+  "kind": "grammar",
+  "title": "going to, will, Present Continuous для будущего",
+  "prompt": "Complete the promise: Don't worry, I ___ help you.",
+  "options": [
+   "am",
+   "will",
+   "going",
+   "was"
+  ],
+  "correctIndex": 1,
+  "explanation": "will для обещания: I will help you. Часто сокращается: I'll help you.",
+  "handbookRef": "grammar.present-continuous",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.plans"
+  ],
+  "lessonRefs": [
+   "a2.plans.006"
+  ]
+ },
+ {
+  "id": "gram_e565ebb85a6c",
+  "kind": "grammar",
+  "title": "Банк, почта, аренда, ремонт; вежливые просьбы could / would",
+  "prompt": "Choose the correct sentence about something that happened a moment ago.",
+  "options": [
+   "The tap has just broken.",
+   "The tap just break.",
+   "The tap is just broke.",
+   "The tap breaks just."
+  ],
+  "correctIndex": 0,
+  "explanation": "Present perfect: has/have + just + V3. The tap has just broken — кран только что сломался.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.services"
+  ],
+  "lessonRefs": [
+   "a2.services.004"
+  ]
+ },
+ {
+  "id": "gram_94a844c04ce8",
+  "kind": "grammar",
+  "title": "Банк, почта, аренда, ремонт; вежливые просьбы could / would",
+  "prompt": "Choose the correct polite request about a bill.",
+  "options": [
+   "Would you explain this bill to me, please?",
+   "You explain this bill.",
+   "Explain bill to me.",
+   "I explain the bill you?"
+  ],
+  "correctIndex": 0,
+  "explanation": "Would you explain…, please? — вежливая просьба, как и Could you. Оба смягчают просьбу.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.services"
+  ],
+  "lessonRefs": [
+   "a2.services.008"
+  ]
+ },
+ {
+  "id": "gram_f6157212f5d1",
+  "kind": "grammar",
+  "title": "Аэропорт, отель, маршруты; прошлые поездки",
+  "prompt": "At reception you say: 'I have a ___ for two nights.'",
+  "options": [
+   "reservation",
+   "breakfast",
+   "elevator",
+   "pillow"
+  ],
+  "correctIndex": 0,
+  "explanation": "Reservation (booking) — бронь. I have a reservation — у меня есть бронь.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.travel"
+  ],
+  "lessonRefs": [
+   "a2.travel.002"
+  ]
+ },
+ {
+  "id": "gram_2ed561c95b5a",
+  "kind": "grammar",
+  "title": "Аэропорт, отель, маршруты; прошлые поездки",
+  "prompt": "'How much does it cost to ___ a car for three days?'",
+  "options": [
+   "rent",
+   "drive",
+   "park",
+   "sell"
+  ],
+  "correctIndex": 0,
+  "explanation": "To rent (или hire) a car — арендовать машину. How much does it cost to rent...?",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.travel"
+  ],
+  "lessonRefs": [
+   "a2.travel.003"
+  ]
+ },
+ {
+  "id": "gram_e63a1f2a81b6",
+  "kind": "grammar",
+  "title": "Аэропорт, отель, маршруты; прошлые поездки",
+  "prompt": "You want to find the station. You ask: '___ do I get to the station?'",
+  "options": [
+   "What",
+   "How",
+   "Where",
+   "Who"
+  ],
+  "correctIndex": 1,
+  "explanation": "How do I get to...? — Как добраться до...? Стандартный вопрос о дороге.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.travel"
+  ],
+  "lessonRefs": [
+   "a2.travel.004"
+  ]
+ },
+ {
+  "id": "gram_db94bb598521",
+  "kind": "grammar",
+  "title": "Аэропорт, отель, маршруты; прошлые поездки",
+  "prompt": "The train goes ___ a long tunnel under the mountain.",
+  "options": [
+   "across",
+   "through",
+   "into",
+   "to"
+  ],
+  "correctIndex": 1,
+  "explanation": "Through — сквозь, через что-то закрытое (тоннель, лес). Go through a tunnel.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.travel"
+  ],
+  "lessonRefs": [
+   "a2.travel.005"
+  ]
+ },
+ {
+  "id": "gram_15d34502a706",
+  "kind": "grammar",
+  "title": "Аэропорт, отель, маршруты; прошлые поездки",
+  "prompt": "Last summer we ___ to Italy by train.",
+  "options": [
+   "go",
+   "went",
+   "goes",
+   "going"
+  ],
+  "correctIndex": 1,
+  "explanation": "Went — неправильная форма Past Simple от go. Last summer we went to Italy.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.travel"
+  ],
+  "lessonRefs": [
+   "a2.travel.006"
+  ]
+ },
+ {
+  "id": "gram_ca3ebf346555",
+  "kind": "grammar",
+  "title": "Аэропорт, отель, маршруты; прошлые поездки",
+  "prompt": "'My flight is ___. It will leave two hours late.'",
+  "options": [
+   "cancelled",
+   "delayed",
+   "early",
+   "cheap"
+  ],
+  "correctIndex": 1,
+  "explanation": "Delayed — задержан. Cancelled — отменён. The flight is delayed by two hours.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.travel"
+  ],
+  "lessonRefs": [
+   "a2.travel.007"
+  ]
+ },
+ {
+  "id": "gram_ce40f14c1fcc",
+  "kind": "grammar",
+  "title": "Профессии, обязанности, собеседование; have to / must",
+  "prompt": "A person who teaches students is a ___.",
+  "options": [
+   "teacher",
+   "doctor",
+   "driver",
+   "cook"
+  ],
+  "correctIndex": 0,
+  "explanation": "teacher — учитель, человек, который учит студентов.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.work"
+  ],
+  "lessonRefs": [
+   "a2.work.001"
+  ]
+ },
+ {
+  "id": "gram_78de3b0ff907",
+  "kind": "grammar",
+  "title": "Профессии, обязанности, собеседование; have to / must",
+  "prompt": "Choose the correct form: A nurse ___ wear a uniform.",
+  "options": [
+   "have to",
+   "has to",
+   "having to",
+   "to have"
+  ],
+  "correctIndex": 1,
+  "explanation": "С he/she/it используем has to. A nurse has to wear a uniform.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.work"
+  ],
+  "lessonRefs": [
+   "a2.work.002"
+  ]
+ },
+ {
+  "id": "gram_8d6c56b4f269",
+  "kind": "grammar",
+  "title": "Профессии, обязанности, собеседование; have to / must",
+  "prompt": "Choose the correct form: She ___ to the office by train.",
+  "options": [
+   "go",
+   "goes",
+   "going",
+   "is go"
+  ],
+  "correctIndex": 1,
+  "explanation": "В Present Simple с he/she/it добавляем -s: she goes.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.work"
+  ],
+  "lessonRefs": [
+   "a2.work.003"
+  ]
+ },
+ {
+  "id": "gram_fbd2f5b4ee16",
+  "kind": "grammar",
+  "title": "Профессии, обязанности, собеседование; have to / must",
+  "prompt": "At an interview the manager asks: '___ can you start?'",
+  "options": [
+   "When",
+   "What",
+   "Who",
+   "How much"
+  ],
+  "correctIndex": 0,
+  "explanation": "When can you start? — Когда вы можете начать? When спрашивает о времени.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.work"
+  ],
+  "lessonRefs": [
+   "a2.work.004"
+  ]
+ },
+ {
+  "id": "gram_d479034281d8",
+  "kind": "grammar",
+  "title": "Профессии, обязанности, собеседование; have to / must",
+  "prompt": "Choose the correct word: You ___ be late for important meetings.",
+  "options": [
+   "must",
+   "mustn't",
+   "don't must",
+   "have"
+  ],
+  "correctIndex": 1,
+  "explanation": "mustn't = нельзя, запрещено. You mustn't be late — нельзя опаздывать.",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.work"
+  ],
+  "lessonRefs": [
+   "a2.work.005"
+  ]
+ },
+ {
+  "id": "gram_86cc04c88c3e",
+  "kind": "grammar",
+  "title": "Профессии, обязанности, собеседование; have to / must",
+  "prompt": "Choose the correct word: 'Can you ___ me with this report?'",
+  "options": [
+   "help",
+   "helps",
+   "helping",
+   "to help"
+  ],
+  "correctIndex": 0,
+  "explanation": "После can используем базовую форму: Can you help me?",
+  "handbookRef": "grammar.modals-detail",
+  "difficulty": "medium",
+  "level": "A2",
+  "moduleRefs": [
+   "a2.work"
+  ],
+  "lessonRefs": [
+   "a2.work.006"
+  ]
+ },
+ {
+  "id": "gram_40de55e881f6",
+  "kind": "grammar",
+  "title": "Условные предложения 0, 1 и 2 типа",
+  "prompt": "Zero conditional: 'If you ____ water to 100°C, it boils.'",
+  "options": [
+   "heat",
+   "will heat",
+   "would heat",
+   "heated"
+  ],
+  "correctIndex": 0,
+  "explanation": "В нулевом условном (общие факты) после if идёт Present Simple: If you heat water, it boils.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.conditions"
+  ],
+  "lessonRefs": [
+   "b1.conditions.001"
+  ]
+ },
+ {
+  "id": "gram_e510732e5842",
+  "kind": "grammar",
+  "title": "Условные предложения 0, 1 и 2 типа",
+  "prompt": "First conditional: 'If it rains tomorrow, we ____ at home.'",
+  "options": [
+   "will stay",
+   "stay",
+   "would stay",
+   "stayed"
+  ],
+  "correctIndex": 0,
+  "explanation": "Первый тип: If + Present Simple, а результат с will: we will stay.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.conditions"
+  ],
+  "lessonRefs": [
+   "b1.conditions.002"
+  ]
+ },
+ {
+  "id": "gram_a9439511f341",
+  "kind": "grammar",
+  "title": "Условные предложения 0, 1 и 2 типа",
+  "prompt": "'You'll miss the train ____ you hurry.'",
+  "options": [
+   "unless",
+   "if",
+   "when",
+   "as soon as"
+  ],
+  "correctIndex": 0,
+  "explanation": "Unless = if not: You'll miss the train unless you hurry = ...if you don't hurry.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.conditions"
+  ],
+  "lessonRefs": [
+   "b1.conditions.003"
+  ]
+ },
+ {
+  "id": "gram_b7a09bfeda37",
+  "kind": "grammar",
+  "title": "Условные предложения 0, 1 и 2 типа",
+  "prompt": "Second conditional: 'If I ____ rich, I would travel the world.'",
+  "options": [
+   "were",
+   "am",
+   "will be",
+   "have been"
+  ],
+  "correctIndex": 0,
+  "explanation": "Второй тип: If + Past Simple. С глаголом to be для всех лиц ставят were: If I were rich.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.conditions"
+  ],
+  "lessonRefs": [
+   "b1.conditions.004"
+  ]
+ },
+ {
+  "id": "gram_179fcc322c28",
+  "kind": "grammar",
+  "title": "Условные предложения 0, 1 и 2 типа",
+  "prompt": "Giving advice: 'If I ____ you, I would see a doctor.'",
+  "options": [
+   "were",
+   "was",
+   "am",
+   "would be"
+  ],
+  "correctIndex": 0,
+  "explanation": "Для совета говорят If I were you (were для всех лиц во втором типе).",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.conditions"
+  ],
+  "lessonRefs": [
+   "b1.conditions.005"
+  ]
+ },
+ {
+  "id": "gram_9c9be60ce91b",
+  "kind": "grammar",
+  "title": "Условные предложения 0, 1 и 2 типа",
+  "prompt": "Real plan: 'If we miss the bus, we ____ a taxi.'",
+  "options": [
+   "will take",
+   "would take",
+   "take",
+   "took"
+  ],
+  "correctIndex": 0,
+  "explanation": "Реальный план на будущее — первый тип: we will take a taxi.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.conditions"
+  ],
+  "lessonRefs": [
+   "b1.conditions.006"
+  ]
+ },
+ {
+  "id": "gram_7cff529a7fc6",
+  "kind": "grammar",
+  "title": "Образование и навыки; герундий и инфинитив",
+  "prompt": "I enjoy ____ new subjects at university.",
+  "options": [
+   "study",
+   "to study",
+   "studying",
+   "studies"
+  ],
+  "correctIndex": 2,
+  "explanation": "Глаголы enjoy, like, love, hate часто требуют форму -ing: enjoy studying.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.education"
+  ],
+  "lessonRefs": [
+   "b1.education.001"
+  ]
+ },
+ {
+  "id": "gram_dd021fe376f9",
+  "kind": "grammar",
+  "title": "Образование и навыки; герундий и инфинитив",
+  "prompt": "She is good at ____ languages.",
+  "options": [
+   "learn",
+   "learns",
+   "learning",
+   "to learn"
+  ],
+  "correctIndex": 2,
+  "explanation": "good at + -ing: good at learning — хорошо даётся изучение.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.education"
+  ],
+  "lessonRefs": [
+   "b1.education.002"
+  ]
+ },
+ {
+  "id": "gram_0e88eb8538f3",
+  "kind": "grammar",
+  "title": "Образование и навыки; герундий и инфинитив",
+  "prompt": "I signed up for a course ____ improve my writing.",
+  "options": [
+   "for",
+   "to",
+   "at",
+   "in"
+  ],
+  "correctIndex": 1,
+  "explanation": "to + глагол показывает цель: a course to improve — курс, чтобы улучшить.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.education"
+  ],
+  "lessonRefs": [
+   "b1.education.003"
+  ]
+ },
+ {
+  "id": "gram_09c9445b75d5",
+  "kind": "grammar",
+  "title": "Образование и навыки; герундий и инфинитив",
+  "prompt": "I need ____ hard to pass the exam.",
+  "options": [
+   "studying",
+   "study",
+   "to study",
+   "studied"
+  ],
+  "correctIndex": 2,
+  "explanation": "need to do — нужно сделать: need to study hard.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.education"
+  ],
+  "lessonRefs": [
+   "b1.education.004"
+  ]
+ },
+ {
+  "id": "gram_5944e0a3a838",
+  "kind": "grammar",
+  "title": "Образование и навыки; герундий и инфинитив",
+  "prompt": "We decided ____ a new language this year.",
+  "options": [
+   "studying",
+   "to study",
+   "study",
+   "studies"
+  ],
+  "correctIndex": 1,
+  "explanation": "decide to do — решить сделать: decided to study.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.education"
+  ],
+  "lessonRefs": [
+   "b1.education.005"
+  ]
+ },
+ {
+  "id": "gram_efe663ae672f",
+  "kind": "grammar",
+  "title": "Образование и навыки; герундий и инфинитив",
+  "prompt": "Online courses are great for ____ at your own pace.",
+  "options": [
+   "learn",
+   "to learn",
+   "learning",
+   "learns"
+  ],
+  "correctIndex": 2,
+  "explanation": "for + -ing: great for learning — отлично подходит для обучения.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.education"
+  ],
+  "lessonRefs": [
+   "b1.education.006"
+  ]
+ },
+ {
+  "id": "gram_566397001a11",
+  "kind": "grammar",
+  "title": "Экология и природа; страдательный залог",
+  "prompt": "Many trees ____ in spring.",
+  "options": [
+   "is planted",
+   "are planted",
+   "are planting",
+   "plant"
+  ],
+  "correctIndex": 1,
+  "explanation": "Пассив в настоящем: are + planted. «Деревья сажают весной».",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.environment"
+  ],
+  "lessonRefs": [
+   "b1.environment.001"
+  ]
+ },
+ {
+  "id": "gram_662b02c956cd",
+  "kind": "grammar",
+  "title": "Экология и природа; страдательный залог",
+  "prompt": "The air ____ polluted by cars.",
+  "options": [
+   "is",
+   "are",
+   "be",
+   "being"
+  ],
+  "correctIndex": 0,
+  "explanation": "«The air is polluted by cars» — «Воздух загрязняется машинами».",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.environment"
+  ],
+  "lessonRefs": [
+   "b1.environment.002"
+  ]
+ },
+ {
+  "id": "gram_378e61560dc1",
+  "kind": "grammar",
+  "title": "Экология и природа; страдательный залог",
+  "prompt": "Glass bottles ____ recycled easily.",
+  "options": [
+   "is",
+   "are",
+   "was",
+   "being"
+  ],
+  "correctIndex": 1,
+  "explanation": "«Glass bottles are recycled easily» — «Стеклянные бутылки легко перерабатываются».",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.environment"
+  ],
+  "lessonRefs": [
+   "b1.environment.003"
+  ]
+ },
+ {
+  "id": "gram_0e79f8f4d717",
+  "kind": "grammar",
+  "title": "Экология и природа; страдательный залог",
+  "prompt": "Electricity ____ produced by wind turbines.",
+  "options": [
+   "is",
+   "are",
+   "was",
+   "were"
+  ],
+  "correctIndex": 0,
+  "explanation": "«Electricity is produced by wind turbines» — «Электричество производится ветряными турбинами».",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.environment"
+  ],
+  "lessonRefs": [
+   "b1.environment.004"
+  ]
+ },
+ {
+  "id": "gram_4006ef329887",
+  "kind": "grammar",
+  "title": "Экология и природа; страдательный залог",
+  "prompt": "Pandas ____ protected by international law.",
+  "options": [
+   "is",
+   "are",
+   "was",
+   "were"
+  ],
+  "correctIndex": 1,
+  "explanation": "«Pandas are protected by international law» — «Панды защищены международным законом».",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.environment"
+  ],
+  "lessonRefs": [
+   "b1.environment.005"
+  ]
+ },
+ {
+  "id": "gram_672ac4283dd7",
+  "kind": "grammar",
+  "title": "Экология и природа; страдательный залог",
+  "prompt": "Global warming ____ caused by greenhouse gases.",
+  "options": [
+   "is",
+   "are",
+   "was",
+   "were"
+  ],
+  "correctIndex": 0,
+  "explanation": "«Global warming is caused by greenhouse gases» — «Глобальное потепление вызвано парниковыми газами».",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.environment"
+  ],
+  "lessonRefs": [
+   "b1.environment.006"
+  ]
+ },
+ {
+  "id": "gram_4a996cfad663",
+  "kind": "grammar",
+  "title": "Present Perfect и его контраст с Past Simple",
+  "prompt": "____ you ever been to London?",
+  "options": [
+   "Have",
+   "Has",
+   "Did",
+   "Are"
+  ],
+  "correctIndex": 0,
+  "explanation": "С you, we, they, I используем have. Полная форма вопроса: Have you ever been…?",
+  "handbookRef": "grammar.present-simple",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.experience"
+  ],
+  "lessonRefs": [
+   "b1.experience.001"
+  ]
+ },
+ {
+  "id": "gram_bcac444f27e6",
+  "kind": "grammar",
+  "title": "Present Perfect и его контраст с Past Simple",
+  "prompt": "She ____ a marathon three times.",
+  "options": [
+   "has run",
+   "has ran",
+   "have run",
+   "runs"
+  ],
+  "correctIndex": 0,
+  "explanation": "Present Perfect: has + run. У глагола run третья форма тоже run: has run.",
+  "handbookRef": "grammar.present-simple",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.experience"
+  ],
+  "lessonRefs": [
+   "b1.experience.003"
+  ]
+ },
+ {
+  "id": "gram_219c15efc3c8",
+  "kind": "grammar",
+  "title": "Present Perfect и его контраст с Past Simple",
+  "prompt": "I have lived in this city ____ 2019.",
+  "options": [
+   "since",
+   "for",
+   "from",
+   "ago"
+  ],
+  "correctIndex": 0,
+  "explanation": "since указывает момент начала: since 2019. for указывает длительность: for five years.",
+  "handbookRef": "grammar.present-simple",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.experience"
+  ],
+  "lessonRefs": [
+   "b1.experience.004"
+  ]
+ },
+ {
+  "id": "gram_d243ef8aede6",
+  "kind": "grammar",
+  "title": "Present Perfect и его контраст с Past Simple",
+  "prompt": "Anna isn't here. She has ____ to the shops.",
+  "options": [
+   "gone",
+   "been",
+   "go",
+   "went"
+  ],
+  "correctIndex": 0,
+  "explanation": "has gone = ушёл и всё ещё там. has been = был и уже вернулся. Анны нет → she has gone.",
+  "handbookRef": "grammar.present-simple",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.experience"
+  ],
+  "lessonRefs": [
+   "b1.experience.005"
+  ]
+ },
+ {
+  "id": "gram_24f099b47e50",
+  "kind": "grammar",
+  "title": "Present Perfect и его контраст с Past Simple",
+  "prompt": "Great news! The company ____ a new product.",
+  "options": [
+   "has launched",
+   "launched",
+   "is launching",
+   "launch"
+  ],
+  "correctIndex": 0,
+  "explanation": "Для новостей, важных сейчас, берём Present Perfect: has launched a new product.",
+  "handbookRef": "grammar.present-simple",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.experience"
+  ],
+  "lessonRefs": [
+   "b1.experience.006"
+  ]
+ },
+ {
+  "id": "gram_bf99a0d6d42d",
+  "kind": "grammar",
+  "title": "Привычки и здоровье; used to, модальные",
+  "prompt": "I ____ live in a small village when I was a child.",
+  "options": [
+   "used to",
+   "use to",
+   "am used to",
+   "using to"
+  ],
+  "correctIndex": 0,
+  "explanation": "'used to' + инфинитив описывает регулярное действие в прошлом, которое больше не повторяется.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.health"
+  ],
+  "lessonRefs": [
+   "b1.health.001"
+  ]
+ },
+ {
+  "id": "gram_7393763a5f18",
+  "kind": "grammar",
+  "title": "Привычки и здоровье; used to, модальные",
+  "prompt": "A ____ diet includes plenty of fruit, vegetables and water.",
+  "options": [
+   "balanced",
+   "boring",
+   "quick",
+   "salty"
+  ],
+  "correctIndex": 0,
+  "explanation": "'a balanced diet' — сбалансированная диета, устойчивое сочетание.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.health"
+  ],
+  "lessonRefs": [
+   "b1.health.002"
+  ]
+ },
+ {
+  "id": "gram_585a875304f7",
+  "kind": "grammar",
+  "title": "Привычки и здоровье; used to, модальные",
+  "prompt": "How often do you ____ exercise?",
+  "options": [
+   "do",
+   "make",
+   "play",
+   "go"
+  ],
+  "correctIndex": 0,
+  "explanation": "'do exercise' — заниматься физкультурой. Не 'make exercise'.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.health"
+  ],
+  "lessonRefs": [
+   "b1.health.003"
+  ]
+ },
+ {
+  "id": "gram_e6802e4ff07f",
+  "kind": "grammar",
+  "title": "Привычки и здоровье; used to, модальные",
+  "prompt": "You ____ get at least seven hours of sleep every night.",
+  "options": [
+   "should",
+   "shouldn't",
+   "used to",
+   "give up"
+  ],
+  "correctIndex": 0,
+  "explanation": "'should' даёт совет: тебе следует спать не меньше семи часов.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.health"
+  ],
+  "lessonRefs": [
+   "b1.health.004"
+  ]
+ },
+ {
+  "id": "gram_2f3280fb0f54",
+  "kind": "grammar",
+  "title": "Привычки и здоровье; used to, модальные",
+  "prompt": "When you feel stressed, you ____ take a short break and breathe slowly.",
+  "options": [
+   "should",
+   "must not",
+   "used to",
+   "give up"
+  ],
+  "correctIndex": 0,
+  "explanation": "'should' — совет: тебе стоит сделать паузу и подышать.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.health"
+  ],
+  "lessonRefs": [
+   "b1.health.005"
+  ]
+ },
+ {
+  "id": "gram_7451febd30cb",
+  "kind": "grammar",
+  "title": "Привычки и здоровье; used to, модальные",
+  "prompt": "He decided to give up ____ after twenty years.",
+  "options": [
+   "smoking",
+   "smoke",
+   "to smoke",
+   "smoked"
+  ],
+  "correctIndex": 0,
+  "explanation": "'give up' + герундий: 'give up smoking' — бросить курить.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.health"
+  ],
+  "lessonRefs": [
+   "b1.health.006"
+  ]
+ },
+ {
+  "id": "gram_7910b20ae315",
+  "kind": "grammar",
+  "title": "СМИ и новости; косвенная речь",
+  "prompt": "Direct: 'I am tired.' Reported: She said she ___ tired.",
+  "options": [
+   "was",
+   "is",
+   "are",
+   "were"
+  ],
+  "correctIndex": 0,
+  "explanation": "Present (am) переходит в Past (was), а she требует was.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.media"
+  ],
+  "lessonRefs": [
+   "b1.media.003"
+  ]
+ },
+ {
+  "id": "gram_4411c303d01e",
+  "kind": "grammar",
+  "title": "СМИ и новости; косвенная речь",
+  "prompt": "Choose the correct word: She ___ me that she was a reporter.",
+  "options": [
+   "told",
+   "said",
+   "spoke",
+   "talked"
+  ],
+  "correctIndex": 0,
+  "explanation": "Tell требует человека: tell me. Say идёт без человека: say that.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.media"
+  ],
+  "lessonRefs": [
+   "b1.media.004"
+  ]
+ },
+ {
+  "id": "gram_a006b5054b72",
+  "kind": "grammar",
+  "title": "СМИ и новости; косвенная речь",
+  "prompt": "Direct: 'I saw it today.' Reported: He said he had seen it ___.",
+  "options": [
+   "that day",
+   "today",
+   "this day",
+   "now"
+  ],
+  "correctIndex": 0,
+  "explanation": "Указатели времени сдвигаются: today → that day, now → then.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.media"
+  ],
+  "lessonRefs": [
+   "b1.media.005"
+  ]
+ },
+ {
+  "id": "gram_dcc5dd0a0923",
+  "kind": "grammar",
+  "title": "СМИ и новости; косвенная речь",
+  "prompt": "Reported question: She asked me if I ___ social media.",
+  "options": [
+   "used",
+   "use",
+   "am using",
+   "uses"
+  ],
+  "correctIndex": 0,
+  "explanation": "В косвенных вопросах порядок прямой, а use → used.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.media"
+  ],
+  "lessonRefs": [
+   "b1.media.007"
+  ]
+ },
+ {
+  "id": "gram_a54043ec833d",
+  "kind": "grammar",
+  "title": "СМИ и новости; косвенная речь",
+  "prompt": "Reported: The reporter said that everyone ___ the right to speak freely.",
+  "options": [
+   "had",
+   "has",
+   "have",
+   "having"
+  ],
+  "correctIndex": 0,
+  "explanation": "Present (has) переходит в Past (had) при пересказе.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.media"
+  ],
+  "lessonRefs": [
+   "b1.media.008"
+  ]
+ },
+ {
+  "id": "gram_0a21b61c415c",
+  "kind": "grammar",
+  "title": "Финансы и покупки; квантификаторы, too/enough",
+  "prompt": "How ____ money do you spend on food each week?",
+  "options": [
+   "many",
+   "much",
+   "few",
+   "little"
+  ],
+  "correctIndex": 1,
+  "explanation": "С неисчисляемыми (money) используем much: how much money.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.money"
+  ],
+  "lessonRefs": [
+   "b1.money.001"
+  ]
+ },
+ {
+  "id": "gram_499e87ebdd29",
+  "kind": "grammar",
+  "title": "Финансы и покупки; квантификаторы, too/enough",
+  "prompt": "I'd like to ____ a bank account, please.",
+  "options": [
+   "open",
+   "close",
+   "spend",
+   "borrow"
+  ],
+  "correctIndex": 0,
+  "explanation": "open a bank account — открыть банковский счёт.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.money"
+  ],
+  "lessonRefs": [
+   "b1.money.002"
+  ]
+ },
+ {
+  "id": "gram_274d28a713f2",
+  "kind": "grammar",
+  "title": "Финансы и покупки; квантификаторы, too/enough",
+  "prompt": "I've saved ____ money, so I can buy a laptop soon.",
+  "options": [
+   "a few",
+   "a lot of",
+   "many",
+   "few"
+  ],
+  "correctIndex": 1,
+  "explanation": "a lot of подходит и для исчисляемых, и для неисчисляемых; a few только с исчисляемыми.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.money"
+  ],
+  "lessonRefs": [
+   "b1.money.003"
+  ]
+ },
+ {
+  "id": "gram_eb6d664772b7",
+  "kind": "grammar",
+  "title": "Финансы и покупки; квантификаторы, too/enough",
+  "prompt": "These jeans are on ____, so they're 30% cheaper today.",
+  "options": [
+   "sale",
+   "cost",
+   "price",
+   "money"
+  ],
+  "correctIndex": 0,
+  "explanation": "on sale — на распродаже, со скидкой.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.money"
+  ],
+  "lessonRefs": [
+   "b1.money.004"
+  ]
+ },
+ {
+  "id": "gram_49fe302ad162",
+  "kind": "grammar",
+  "title": "Финансы и покупки; квантификаторы, too/enough",
+  "prompt": "This watch is ____ expensive. I can't buy it.",
+  "options": [
+   "enough",
+   "too",
+   "very much",
+   "so many"
+  ],
+  "correctIndex": 1,
+  "explanation": "too + прилагательное = «слишком»; too expensive — слишком дорого.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.money"
+  ],
+  "lessonRefs": [
+   "b1.money.005"
+  ]
+ },
+ {
+  "id": "gram_f7a01610e0ce",
+  "kind": "grammar",
+  "title": "Финансы и покупки; квантификаторы, too/enough",
+  "prompt": "This kettle is broken. I'd like to ____ it, please.",
+  "options": [
+   "return",
+   "buy",
+   "spend",
+   "save"
+  ],
+  "correctIndex": 0,
+  "explanation": "return an item — вернуть товар в магазин.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.money"
+  ],
+  "lessonRefs": [
+   "b1.money.006"
+  ]
+ },
+ {
+  "id": "gram_85d6764d34c2",
+  "kind": "grammar",
+  "title": "Цели и мечты; повторение будущих форм, first conditional",
+  "prompt": "My goal is clear. I ____ learn to code next year.",
+  "options": [
+   "am going to",
+   "went to",
+   "was going",
+   "have gone"
+  ],
+  "correctIndex": 0,
+  "explanation": "Для запланированных целей используем be going to: I am going to learn.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.plans"
+  ],
+  "lessonRefs": [
+   "b1.plans.001"
+  ]
+ },
+ {
+  "id": "gram_e00f4ea3a1c2",
+  "kind": "grammar",
+  "title": "Цели и мечты; повторение будущих форм, first conditional",
+  "prompt": "I ____ to become a doctor when I finish university.",
+  "options": [
+   "hope",
+   "hoping",
+   "hopes",
+   "hoped"
+  ],
+  "correctIndex": 0,
+  "explanation": "hope to + инфинитив: I hope to become a doctor.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.plans"
+  ],
+  "lessonRefs": [
+   "b1.plans.002"
+  ]
+ },
+ {
+  "id": "gram_826088e90aee",
+  "kind": "grammar",
+  "title": "Цели и мечты; повторение будущих форм, first conditional",
+  "prompt": "I ____ my mentor tomorrow at three, it's already arranged.",
+  "options": [
+   "am meeting",
+   "will meet",
+   "meet",
+   "met"
+  ],
+  "correctIndex": 0,
+  "explanation": "Для конкретных договорённостей — present continuous: I am meeting tomorrow at three.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.plans"
+  ],
+  "lessonRefs": [
+   "b1.plans.003"
+  ]
+ },
+ {
+  "id": "gram_8ce210b381ea",
+  "kind": "grammar",
+  "title": "Цели и мечты; повторение будущих форм, first conditional",
+  "prompt": "I'm not sure yet. I ____ move to another city next year.",
+  "options": [
+   "might",
+   "will definitely",
+   "am",
+   "must"
+  ],
+  "correctIndex": 0,
+  "explanation": "might + глагол выражает вероятность: I might move.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.plans"
+  ],
+  "lessonRefs": [
+   "b1.plans.004"
+  ]
+ },
+ {
+  "id": "gram_b1313eb85ead",
+  "kind": "grammar",
+  "title": "Цели и мечты; повторение будущих форм, first conditional",
+  "prompt": "If I ____ hard, I will pass the exam.",
+  "options": [
+   "study",
+   "will study",
+   "studied",
+   "am studying"
+  ],
+  "correctIndex": 0,
+  "explanation": "First conditional: if + present simple, will + глагол. If I study, I will pass.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.plans"
+  ],
+  "lessonRefs": [
+   "b1.plans.005"
+  ]
+ },
+ {
+  "id": "gram_a976b6486aa8",
+  "kind": "grammar",
+  "title": "Цели и мечты; повторение будущих форм, first conditional",
+  "prompt": "We've decided everything. We ____ move abroad this summer.",
+  "options": [
+   "are going to",
+   "might",
+   "may",
+   "would"
+  ],
+  "correctIndex": 0,
+  "explanation": "be going to для уже принятого решения: We are going to move abroad.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.plans"
+  ],
+  "lessonRefs": [
+   "b1.plans.006"
+  ]
+ },
+ {
+  "id": "gram_7b0fa68c367f",
+  "kind": "grammar",
+  "title": "Социальный английский, глагольные конструкции",
+  "prompt": "Nice to meet you! How ____ you?",
+  "options": [
+   "are",
+   "is",
+   "do",
+   "be"
+  ],
+  "correctIndex": 0,
+  "explanation": "«How are you?» — стандартный вопрос о самочувствии/делах при встрече.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.social"
+  ],
+  "lessonRefs": [
+   "b1.social.001"
+  ]
+ },
+ {
+  "id": "gram_2fa3b442b399",
+  "kind": "grammar",
+  "title": "Социальный английский, глагольные конструкции",
+  "prompt": "Sorry, I can't come. I ____ visiting my parents this weekend.",
+  "options": [
+   "enjoy",
+   "am",
+   "want",
+   "decide"
+  ],
+  "correctIndex": 1,
+  "explanation": "«I'm visiting my parents» — договорённый план в будущем выражаем через Present Continuous.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.social"
+  ],
+  "lessonRefs": [
+   "b1.social.002"
+  ]
+ },
+ {
+  "id": "gram_237d8b9fc6d0",
+  "kind": "grammar",
+  "title": "Социальный английский, глагольные конструкции",
+  "prompt": "I totally ____ with you — that's a great idea.",
+  "options": [
+   "agree",
+   "agreed",
+   "agreeing",
+   "agrees"
+  ],
+  "correctIndex": 0,
+  "explanation": "«I totally agree with you» — так выражаем полное согласие.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.social"
+  ],
+  "lessonRefs": [
+   "b1.social.003"
+  ]
+ },
+ {
+  "id": "gram_1d47272b3af4",
+  "kind": "grammar",
+  "title": "Социальный английский, глагольные конструкции",
+  "prompt": "I apologise ____ being late — the traffic was terrible.",
+  "options": [
+   "for",
+   "to",
+   "of",
+   "at"
+  ],
+  "correctIndex": 0,
+  "explanation": "«apologise FOR doing something» — извиняться за что-то. После for идёт -ing форма.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.social"
+  ],
+  "lessonRefs": [
+   "b1.social.004"
+  ]
+ },
+ {
+  "id": "gram_8625269390cc",
+  "kind": "grammar",
+  "title": "Социальный английский, глагольные конструкции",
+  "prompt": "I really enjoy ____ time with my friends.",
+  "options": [
+   "spending",
+   "to spend",
+   "spend",
+   "spent"
+  ],
+  "correctIndex": 0,
+  "explanation": "Verb + -ing: enjoy DOING. Также: love, like, hate часто идут с -ing.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.social"
+  ],
+  "lessonRefs": [
+   "b1.social.005"
+  ]
+ },
+ {
+  "id": "gram_920602514297",
+  "kind": "grammar",
+  "title": "Социальный английский, глагольные конструкции",
+  "prompt": "A close friend is someone you can ____ on.",
+  "options": [
+   "rely",
+   "relies",
+   "relying",
+   "relied"
+  ],
+  "correctIndex": 0,
+  "explanation": "«rely on someone» — полагаться на кого-то. После can идёт инфинитив без to.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.social"
+  ],
+  "lessonRefs": [
+   "b1.social.006"
+  ]
+ },
+ {
+  "id": "gram_a8e0f0a388b7",
+  "kind": "grammar",
+  "title": "Гаджеты, соцсети; Present Perfect Continuous",
+  "prompt": "I ____ my new smartphone for two weeks now.",
+  "options": [
+   "have been using",
+   "am using",
+   "used",
+   "use"
+  ],
+  "correctIndex": 0,
+  "explanation": "Present Perfect Continuous: have/has + been + глагол-ing. «for two weeks» показывает длительность до сейчас.",
+  "handbookRef": "grammar.present-perfect-continuous",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.technology"
+  ],
+  "lessonRefs": [
+   "b1.technology.001"
+  ]
+ },
+ {
+  "id": "gram_59a43b994296",
+  "kind": "grammar",
+  "title": "Гаджеты, соцсети; Present Perfect Continuous",
+  "prompt": "She ____ on social media since this morning.",
+  "options": [
+   "has been posting",
+   "posts",
+   "is post",
+   "have posted"
+  ],
+  "correctIndex": 0,
+  "explanation": "has been posting: Present Perfect Continuous с «since» показывает начало и продолжение действия.",
+  "handbookRef": "grammar.present-perfect-continuous",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.technology"
+  ],
+  "lessonRefs": [
+   "b1.technology.002"
+  ]
+ },
+ {
+  "id": "gram_7e801beba44c",
+  "kind": "grammar",
+  "title": "Гаджеты, соцсети; Present Perfect Continuous",
+  "prompt": "What ____ you ____ downloading lately?",
+  "options": [
+   "have / been",
+   "has / been",
+   "are / been",
+   "do / been"
+  ],
+  "correctIndex": 0,
+  "explanation": "Вопрос: What have you been downloading lately? — have + подлежащее + been + ing.",
+  "handbookRef": "grammar.present-perfect-continuous",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.technology"
+  ],
+  "lessonRefs": [
+   "b1.technology.003"
+  ]
+ },
+ {
+  "id": "gram_81e564fd1da5",
+  "kind": "grammar",
+  "title": "Гаджеты, соцсети; Present Perfect Continuous",
+  "prompt": "I ____ this website for an hour, but I ____ anything yet.",
+  "options": [
+   "have been browsing / haven't bought",
+   "have browsed / haven't been buying",
+   "browse / don't buy",
+   "am browsing / didn't buy"
+  ],
+  "correctIndex": 0,
+  "explanation": "have been browsing (процесс, длительность) против haven't bought (результат, завершение) — ключевой контраст.",
+  "handbookRef": "grammar.present-perfect-continuous",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.technology"
+  ],
+  "lessonRefs": [
+   "b1.technology.004"
+  ]
+ },
+ {
+  "id": "gram_d7c36ff50a61",
+  "kind": "grammar",
+  "title": "Гаджеты, соцсети; Present Perfect Continuous",
+  "prompt": "Someone ____ to hack my account, so I changed my password.",
+  "options": [
+   "has been trying",
+   "is try",
+   "have tried",
+   "trying"
+  ],
+  "correctIndex": 0,
+  "explanation": "has been trying: Present Perfect Continuous о повторяющемся продолжающемся действии.",
+  "handbookRef": "grammar.present-perfect-continuous",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.technology"
+  ],
+  "lessonRefs": [
+   "b1.technology.005"
+  ]
+ },
+ {
+  "id": "gram_699cc4697a22",
+  "kind": "grammar",
+  "title": "Гаджеты, соцсети; Present Perfect Continuous",
+  "prompt": "____ have you been using this app?",
+  "options": [
+   "How long",
+   "How much",
+   "How many",
+   "How often"
+  ],
+  "correctIndex": 0,
+  "explanation": "How long have you been…? — вопрос о продолжительности действия, которое ещё длится.",
+  "handbookRef": "grammar.present-perfect-continuous",
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.technology"
+  ],
+  "lessonRefs": [
+   "b1.technology.006"
+  ]
+ },
+ {
+  "id": "gram_b6c5f2f900c1",
+  "kind": "grammar",
+  "title": "Поездки и впечатления; относительные придаточные",
+  "prompt": "I booked a trip ___ starts next Monday.",
+  "options": [
+   "who",
+   "which",
+   "where",
+   "whose"
+  ],
+  "correctIndex": 1,
+  "explanation": "Для вещей используем which или that: a trip which starts...",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.travel"
+  ],
+  "lessonRefs": [
+   "b1.travel.001"
+  ]
+ },
+ {
+  "id": "gram_e74e2e332bbc",
+  "kind": "grammar",
+  "title": "Поездки и впечатления; относительные придаточные",
+  "prompt": "A museum is a place ___ you can see old art.",
+  "options": [
+   "which",
+   "who",
+   "where",
+   "whose"
+  ],
+  "correctIndex": 2,
+  "explanation": "Where вводит придаточное о месте: a place where you can see art.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.travel"
+  ],
+  "lessonRefs": [
+   "b1.travel.002"
+  ]
+ },
+ {
+  "id": "gram_dffa8904ccda",
+  "kind": "grammar",
+  "title": "Поездки и впечатления; относительные придаточные",
+  "prompt": "We had a guide ___ spoke four languages.",
+  "options": [
+   "which",
+   "who",
+   "where",
+   "whose"
+  ],
+  "correctIndex": 1,
+  "explanation": "Who вводит придаточное о людях: a guide who spoke...",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.travel"
+  ],
+  "lessonRefs": [
+   "b1.travel.003"
+  ]
+ },
+ {
+  "id": "gram_6c9d200d3fc1",
+  "kind": "grammar",
+  "title": "Поездки и впечатления; относительные придаточные",
+  "prompt": "We chose a hotel ___ had a pool and free breakfast.",
+  "options": [
+   "who",
+   "which",
+   "where",
+   "whose"
+  ],
+  "correctIndex": 1,
+  "explanation": "Which/that вводит придаточное о вещах: a hotel which had...",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.travel"
+  ],
+  "lessonRefs": [
+   "b1.travel.004"
+  ]
+ },
+ {
+  "id": "gram_1412355aba0c",
+  "kind": "grammar",
+  "title": "Поездки и впечатления; относительные придаточные",
+  "prompt": "Japan is a country ___ people bow when they greet.",
+  "options": [
+   "which",
+   "who",
+   "where",
+   "whose"
+  ],
+  "correctIndex": 2,
+  "explanation": "Where вводит придаточное о месте/стране: a country where people bow.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.travel"
+  ],
+  "lessonRefs": [
+   "b1.travel.005"
+  ]
+ },
+ {
+  "id": "gram_0c449776f056",
+  "kind": "grammar",
+  "title": "Поездки и впечатления; относительные придаточные",
+  "prompt": "The hike ___ we did last summer was unforgettable.",
+  "options": [
+   "who",
+   "that",
+   "where",
+   "whose"
+  ],
+  "correctIndex": 1,
+  "explanation": "That вводит придаточное о вещи/событии: the hike that we did.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.travel"
+  ],
+  "lessonRefs": [
+   "b1.travel.006"
+  ]
+ },
+ {
+  "id": "gram_b0e4ca9b7b6a",
+  "kind": "grammar",
+  "title": "Профессиональное общение, будущие формы",
+  "prompt": "I ____ as a project manager for five years.",
+  "options": [
+   "have worked",
+   "am working",
+   "works",
+   "will work"
+  ],
+  "correctIndex": 0,
+  "explanation": "'For five years' + опыт до сих пор → have worked (Present Perfect).",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.work"
+  ],
+  "lessonRefs": [
+   "b1.work.001"
+  ]
+ },
+ {
+  "id": "gram_66a44764f6b0",
+  "kind": "grammar",
+  "title": "Профессиональное общение, будущие формы",
+  "prompt": "She ____ the weekly team meetings.",
+  "options": [
+   "manages",
+   "manage",
+   "is manage",
+   "managing"
+  ],
+  "correctIndex": 0,
+  "explanation": "В Present Simple к глаголу с he/she/it добавляется -s: manages.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.work"
+  ],
+  "lessonRefs": [
+   "b1.work.003"
+  ]
+ },
+ {
+  "id": "gram_8d4fe2d8dd6b",
+  "kind": "grammar",
+  "title": "Профессиональное общение, будущие формы",
+  "prompt": "We must finish the report on time — we can't ____ the deadline.",
+  "options": [
+   "miss",
+   "lose",
+   "drop",
+   "fail"
+  ],
+  "correctIndex": 0,
+  "explanation": "Miss a deadline — пропустить/сорвать срок. Meet a deadline — уложиться в срок.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.work"
+  ],
+  "lessonRefs": [
+   "b1.work.004"
+  ]
+ },
+ {
+  "id": "gram_987acdf0d9cf",
+  "kind": "grammar",
+  "title": "Профессиональное общение, будущие формы",
+  "prompt": "____ find attached the report you requested.",
+  "options": [
+   "Please",
+   "You",
+   "Do",
+   "Make"
+  ],
+  "correctIndex": 0,
+  "explanation": "Please find attached — стандартная фраза 'во вложении вы найдёте'.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.work"
+  ],
+  "lessonRefs": [
+   "b1.work.005"
+  ]
+ },
+ {
+  "id": "gram_e86094cd7c40",
+  "kind": "grammar",
+  "title": "Профессиональное общение, будущие формы",
+  "prompt": "Could you ____ me through to Mr. Brown, please?",
+  "options": [
+   "put",
+   "give",
+   "make",
+   "take"
+  ],
+  "correctIndex": 0,
+  "explanation": "Put someone through — соединить с кем-то по телефону.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.work"
+  ],
+  "lessonRefs": [
+   "b1.work.006"
+  ]
+ },
+ {
+  "id": "gram_c8a108f7165f",
+  "kind": "grammar",
+  "title": "Профессиональное общение, будущие формы",
+  "prompt": "Look at these results — you ____ get a promotion soon!",
+  "options": [
+   "are going to",
+   "will going to",
+   "go to",
+   "are go to"
+  ],
+  "correctIndex": 0,
+  "explanation": "Be going to — предсказание на основе текущих фактов/доказательств.",
+  "handbookRef": null,
+  "difficulty": "medium",
+  "level": "B1",
+  "moduleRefs": [
+   "b1.work"
+  ],
+  "lessonRefs": [
+   "b1.work.007"
+  ]
+ },
+ {
+  "id": "gram_81571b821273",
+  "kind": "grammar",
+  "title": "Деловой английский; дипломатичный язык",
+  "prompt": "Complete the offer: 'If you ___ the price, we would sign the contract today.'",
+  "options": [
+   "lowered",
+   "lower",
+   "will lower",
+   "are lowering"
+  ],
+  "correctIndex": 0,
+  "explanation": "В переговорах гипотетическое условие: If you lowered…, we would sign. После If — Past Simple (lowered).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.business"
+  ],
+  "lessonRefs": [
+   "b2.business.001"
+  ]
+ },
+ {
+  "id": "gram_3f2cc18f2062",
+  "kind": "grammar",
+  "title": "Деловой английский; дипломатичный язык",
+  "prompt": "The list of topics to discuss at a meeting is called the ___.",
+  "options": [
+   "agenda",
+   "minutes",
+   "invoice",
+   "memo"
+  ],
+  "correctIndex": 0,
+  "explanation": "Agenda — повестка дня. Minutes — протокол (записи после встречи).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.business"
+  ],
+  "lessonRefs": [
+   "b2.business.002"
+  ]
+ },
+ {
+  "id": "gram_32173401dc7d",
+  "kind": "grammar",
+  "title": "Деловой английский; дипломатичный язык",
+  "prompt": "Complete the opening: 'Today I'd like to ___ our new product.'",
+  "options": [
+   "talk about",
+   "talk",
+   "say",
+   "tell"
+  ],
+  "correctIndex": 0,
+  "explanation": "Talk about something — рассказать о чём-то. Tell требует адресата (tell you).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.business"
+  ],
+  "lessonRefs": [
+   "b2.business.003"
+  ]
+ },
+ {
+  "id": "gram_cd20460ee1cc",
+  "kind": "grammar",
+  "title": "Деловой английский; дипломатичный язык",
+  "prompt": "A share of ownership in a company is called ___.",
+  "options": [
+   "equity",
+   "revenue",
+   "expense",
+   "refund"
+  ],
+  "correctIndex": 0,
+  "explanation": "Equity — доля/капитал в компании. Revenue — выручка, expense — расход.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.business"
+  ],
+  "lessonRefs": [
+   "b2.business.005"
+  ]
+ },
+ {
+  "id": "gram_4e78c7e32ce6",
+  "kind": "grammar",
+  "title": "Деловой английский; дипломатичный язык",
+  "prompt": "The specific group of people a product is aimed at is the ___.",
+  "options": [
+   "target audience",
+   "board of directors",
+   "supply chain",
+   "annual report"
+  ],
+  "correctIndex": 0,
+  "explanation": "Target audience — целевая аудитория, на которую рассчитан продукт.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.business"
+  ],
+  "lessonRefs": [
+   "b2.business.006"
+  ]
+ },
+ {
+  "id": "gram_68cf892edb73",
+  "kind": "grammar",
+  "title": "Профессиональная лексика, фразовые глаголы",
+  "prompt": "She decided to ____ on a new challenge at work.",
+  "options": [
+   "take",
+   "make",
+   "do",
+   "have"
+  ],
+  "correctIndex": 0,
+  "explanation": "«take on» = взять на себя (задачу, вызов, ответственность).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.career"
+  ],
+  "lessonRefs": [
+   "b2.career.001"
+  ]
+ },
+ {
+  "id": "gram_20664739fe13",
+  "kind": "grammar",
+  "title": "Профессиональная лексика, фразовые глаголы",
+  "prompt": "A good leader knows how to ____ out tasks efficiently.",
+  "options": [
+   "carry",
+   "bring",
+   "take",
+   "put"
+  ],
+  "correctIndex": 0,
+  "explanation": "«carry out tasks» = выполнять задачи.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.career"
+  ],
+  "lessonRefs": [
+   "b2.career.002"
+  ]
+ },
+ {
+  "id": "gram_c33f14b5f899",
+  "kind": "grammar",
+  "title": "Профессиональная лексика, фразовые глаголы",
+  "prompt": "Networking helps you ____ up useful professional contacts.",
+  "options": [
+   "build",
+   "climb",
+   "carry",
+   "deal"
+  ],
+  "correctIndex": 0,
+  "explanation": "«build up contacts» = наращивать полезные связи.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.career"
+  ],
+  "lessonRefs": [
+   "b2.career.003"
+  ]
+ },
+ {
+  "id": "gram_e8f72eecc40b",
+  "kind": "grammar",
+  "title": "Профессиональная лексика, фразовые глаголы",
+  "prompt": "After ten years, she decided to ____ in her notice.",
+  "options": [
+   "hand",
+   "give",
+   "put",
+   "take"
+  ],
+  "correctIndex": 0,
+  "explanation": "«hand in your notice» = подать заявление об увольнении.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.career"
+  ],
+  "lessonRefs": [
+   "b2.career.004"
+  ]
+ },
+ {
+  "id": "gram_3ded3c2e7f7f",
+  "kind": "grammar",
+  "title": "Профессиональная лексика, фразовые глаголы",
+  "prompt": "I'd like to ____ up the question of a pay rise.",
+  "options": [
+   "bring",
+   "take",
+   "carry",
+   "set"
+  ],
+  "correctIndex": 0,
+  "explanation": "«bring up a question» = поднять вопрос, тему.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.career"
+  ],
+  "lessonRefs": [
+   "b2.career.005"
+  ]
+ },
+ {
+  "id": "gram_24e754c6aeca",
+  "kind": "grammar",
+  "title": "Профессиональная лексика, фразовые глаголы",
+  "prompt": "Let me ____ out the main points of today's talk.",
+  "options": [
+   "set",
+   "take",
+   "deal",
+   "hand"
+  ],
+  "correctIndex": 0,
+  "explanation": "«set out the points» = изложить основные пункты.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.career"
+  ],
+  "lessonRefs": [
+   "b2.career.006"
+  ]
+ },
+ {
+  "id": "gram_ef615d404026",
+  "kind": "grammar",
+  "title": "Третий и смешанный тип условных, wish / if only",
+  "prompt": "If I ____ the alarm, I wouldn't have missed the train.",
+  "options": [
+   "had heard",
+   "heard",
+   "would hear",
+   "have heard"
+  ],
+  "correctIndex": 0,
+  "explanation": "Третий условный: If + past perfect (had heard), would have + V3. Речь о нереальном прошлом.",
+  "handbookRef": "grammar.wish-if-only",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.conditionals"
+  ],
+  "lessonRefs": [
+   "b2.conditionals.001"
+  ]
+ },
+ {
+  "id": "gram_6122d3188844",
+  "kind": "grammar",
+  "title": "Третий и смешанный тип условных, wish / if only",
+  "prompt": "If they had accepted the offer, they ____ rich by now.",
+  "options": [
+   "would have been",
+   "were",
+   "will be",
+   "had been"
+  ],
+  "correctIndex": 0,
+  "explanation": "Они не приняли предложение, поэтому не разбогатели: would have been — нереальный результат в прошлом.",
+  "handbookRef": "grammar.wish-if-only",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.conditionals"
+  ],
+  "lessonRefs": [
+   "b2.conditionals.002"
+  ]
+ },
+ {
+  "id": "gram_9c4b9f2dffbc",
+  "kind": "grammar",
+  "title": "Третий и смешанный тип условных, wish / if only",
+  "prompt": "I wish I ____ that rude email yesterday.",
+  "options": [
+   "hadn't sent",
+   "didn't send",
+   "don't send",
+   "wouldn't send"
+  ],
+  "correctIndex": 0,
+  "explanation": "Для сожалений о прошлом после wish используем past perfect: I wish I hadn't sent it.",
+  "handbookRef": "grammar.wish-if-only",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.conditionals"
+  ],
+  "lessonRefs": [
+   "b2.conditionals.003"
+  ]
+ },
+ {
+  "id": "gram_c248e6e17c99",
+  "kind": "grammar",
+  "title": "Третий и смешанный тип условных, wish / if only",
+  "prompt": "I wish I ____ more free time these days.",
+  "options": [
+   "had",
+   "have",
+   "would have",
+   "had had"
+  ],
+  "correctIndex": 0,
+  "explanation": "Про настоящее после wish идёт past simple: I wish I had more free time (но сейчас его нет).",
+  "handbookRef": "grammar.wish-if-only",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.conditionals"
+  ],
+  "lessonRefs": [
+   "b2.conditionals.004"
+  ]
+ },
+ {
+  "id": "gram_9628f091388f",
+  "kind": "grammar",
+  "title": "Третий и смешанный тип условных, wish / if only",
+  "prompt": "If I had studied medicine, I ____ a doctor now.",
+  "options": [
+   "would be",
+   "would have been",
+   "will be",
+   "am"
+  ],
+  "correctIndex": 0,
+  "explanation": "Смешанный тип: If + past perfect (had studied) -> would + инфинитив о настоящем (would be a doctor now).",
+  "handbookRef": "grammar.wish-if-only",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.conditionals"
+  ],
+  "lessonRefs": [
+   "b2.conditionals.005"
+  ]
+ },
+ {
+  "id": "gram_40237f1f16af",
+  "kind": "grammar",
+  "title": "Третий и смешанный тип условных, wish / if only",
+  "prompt": "I wish you ____ interrupting me all the time!",
+  "options": [
+   "would stop",
+   "stopped",
+   "had stopped",
+   "will stop"
+  ],
+  "correctIndex": 0,
+  "explanation": "wish + would выражает недовольство поведением, которое человек может, но не хочет менять.",
+  "handbookRef": "grammar.wish-if-only",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.conditionals"
+  ],
+  "lessonRefs": [
+   "b2.conditionals.006"
+  ]
+ },
+ {
+  "id": "gram_db815aa8311f",
+  "kind": "grammar",
+  "title": "Искусство и культура; относительные придаточные",
+  "prompt": "Choose the correct relative pronoun: 'The actor ___ played Hamlet won an award.'",
+  "options": [
+   "which",
+   "who",
+   "whose",
+   "where"
+  ],
+  "correctIndex": 1,
+  "explanation": "who относится к людям, which — к вещам, where — к местам.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.culture"
+  ],
+  "lessonRefs": [
+   "b2.culture.001"
+  ]
+ },
+ {
+  "id": "gram_f7a3418cf61c",
+  "kind": "grammar",
+  "title": "Искусство и культура; относительные придаточные",
+  "prompt": "Choose the correct sentence with a non-defining clause:",
+  "options": [
+   "My favourite author, who lives in London, writes crime novels.",
+   "My favourite author who lives in London writes crime novels.",
+   "My favourite author, that lives in London, writes crime novels.",
+   "My favourite author which lives in London writes crime novels."
+  ],
+  "correctIndex": 0,
+  "explanation": "Неопределительное придаточное выделяется запятыми и не может вводиться словом that.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.culture"
+  ],
+  "lessonRefs": [
+   "b2.culture.003"
+  ]
+ },
+ {
+  "id": "gram_bb1448fcc6d1",
+  "kind": "grammar",
+  "title": "Искусство и культура; относительные придаточные",
+  "prompt": "Choose the correct word: 'The painter ___ works hang in this gallery died young.'",
+  "options": [
+   "who",
+   "whose",
+   "which",
+   "whom"
+  ],
+  "correctIndex": 1,
+  "explanation": "whose показывает принадлежность и соединяет два существительных: painter + works.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.culture"
+  ],
+  "lessonRefs": [
+   "b2.culture.004"
+  ]
+ },
+ {
+  "id": "gram_68c3e481d9fd",
+  "kind": "grammar",
+  "title": "Искусство и культура; относительные придаточные",
+  "prompt": "Choose the correct word: 'This is the cathedral ___ the king was crowned.'",
+  "options": [
+   "which",
+   "where",
+   "when",
+   "who"
+  ],
+  "correctIndex": 1,
+  "explanation": "where вводит относительное придаточное о месте (= in which).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.culture"
+  ],
+  "lessonRefs": [
+   "b2.culture.005"
+  ]
+ },
+ {
+  "id": "gram_0fdb9fd117ef",
+  "kind": "grammar",
+  "title": "Искусство и культура; относительные придаточные",
+  "prompt": "Choose the more formal option: 'The dancers ___ we invited performed traditional music.'",
+  "options": [
+   "who",
+   "whom",
+   "whose",
+   "which"
+  ],
+  "correctIndex": 1,
+  "explanation": "whom используется как дополнение придаточного, особенно в формальном стиле.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.culture"
+  ],
+  "lessonRefs": [
+   "b2.culture.006"
+  ]
+ },
+ {
+  "id": "gram_329654e589f1",
+  "kind": "grammar",
+  "title": "Искусство и культура; относительные придаточные",
+  "prompt": "Choose the correct sentence: 'She finished the sculpture in a week, ___ surprised everyone.'",
+  "options": [
+   "what",
+   "that",
+   "which",
+   "who"
+  ],
+  "correctIndex": 2,
+  "explanation": "После запятой which относится ко всему высказыванию; what и that здесь недопустимы.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.culture"
+  ],
+  "lessonRefs": [
+   "b2.culture.008"
+  ]
+ },
+ {
+  "id": "gram_4b9432ccf3c0",
+  "kind": "grammar",
+  "title": "Связки и эмфаза; расщеплённые предложения (cleft)",
+  "prompt": "The idea sounds great in theory; ____, it may fail in practice.",
+  "options": [
+   "therefore",
+   "however",
+   "because",
+   "so"
+  ],
+  "correctIndex": 1,
+  "explanation": "however = «однако», вводит противопоставление и обычно стоит после точки с запятой или с запятой.",
+  "handbookRef": "grammar.cleft-sentences",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.debate"
+  ],
+  "lessonRefs": [
+   "b2.debate.001"
+  ]
+ },
+ {
+  "id": "gram_4913feb0244b",
+  "kind": "grammar",
+  "title": "Связки и эмфаза; расщеплённые предложения (cleft)",
+  "prompt": "Cars are fast, ____ bikes are cheaper and greener.",
+  "options": [
+   "whereas",
+   "therefore",
+   "because",
+   "so"
+  ],
+  "correctIndex": 0,
+  "explanation": "whereas = «тогда как», соединяет два контрастных утверждения в одном предложении.",
+  "handbookRef": "grammar.cleft-sentences",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.debate"
+  ],
+  "lessonRefs": [
+   "b2.debate.002"
+  ]
+ },
+ {
+  "id": "gram_3c3c728a750a",
+  "kind": "grammar",
+  "title": "Связки и эмфаза; расщеплённые предложения (cleft)",
+  "prompt": "____ the risks, many still support the new policy.",
+  "options": [
+   "Despite",
+   "However",
+   "Therefore",
+   "Because"
+  ],
+  "correctIndex": 0,
+  "explanation": "Despite + существительное/герундий = «несмотря на». После despite НЕ ставится of.",
+  "handbookRef": "grammar.cleft-sentences",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.debate"
+  ],
+  "lessonRefs": [
+   "b2.debate.004"
+  ]
+ },
+ {
+  "id": "gram_6b1cd5512cb6",
+  "kind": "grammar",
+  "title": "Связки и эмфаза; расщеплённые предложения (cleft)",
+  "prompt": "The budget is tight; ____, this investment is worth it.",
+  "options": [
+   "nevertheless",
+   "because",
+   "whereas",
+   "for example"
+  ],
+  "correctIndex": 0,
+  "explanation": "nevertheless = «тем не менее»; признаёт трудность, но настаивает на выводе — приём убеждения.",
+  "handbookRef": "grammar.cleft-sentences",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.debate"
+  ],
+  "lessonRefs": [
+   "b2.debate.005"
+  ]
+ },
+ {
+  "id": "gram_fef5a33d0c5b",
+  "kind": "grammar",
+  "title": "Связки и эмфаза; расщеплённые предложения (cleft)",
+  "prompt": "Choose the correct cleft sentence emphasising the cause.",
+  "options": [
+   "It was the weak data what caused the doubt.",
+   "It was the weak data that caused the doubt.",
+   "It the weak data was that caused the doubt.",
+   "It was the weak data caused the doubt."
+  ],
+  "correctIndex": 1,
+  "explanation": "Расщеплённое предложение строится как «It was X that…»; после that, а не what.",
+  "handbookRef": "grammar.cleft-sentences",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.debate"
+  ],
+  "lessonRefs": [
+   "b2.debate.007"
+  ]
+ },
+ {
+  "id": "gram_5e9e1bdd5869",
+  "kind": "grammar",
+  "title": "Связки и эмфаза; расщеплённые предложения (cleft)",
+  "prompt": "Choose the correct cleft with 'what' for emphasis.",
+  "options": [
+   "What we need is a clear plan.",
+   "What we need it a clear plan.",
+   "That we need is a clear plan.",
+   "What need we is a clear plan."
+  ],
+  "correctIndex": 0,
+  "explanation": "«What we need is…» — расщеплённая конструкция с what, выделяющая главную мысль.",
+  "handbookRef": "grammar.cleft-sentences",
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.debate"
+  ],
+  "lessonRefs": [
+   "b2.debate.008"
+  ]
+ },
+ {
+  "id": "gram_97063835405a",
+  "kind": "grammar",
+  "title": "Экология и мир; пассив в отчётах (it is said that…)",
+  "prompt": "It ____ said that global temperatures are rising fast.",
+  "options": [
+   "is",
+   "are",
+   "has",
+   "be"
+  ],
+  "correctIndex": 0,
+  "explanation": "Конструкция 'It is said that…' — безличный пассив: 'is' согласуется с формальным подлежащим 'it'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.environment"
+  ],
+  "lessonRefs": [
+   "b2.environment.001"
+  ]
+ },
+ {
+  "id": "gram_43a91b6c8e60",
+  "kind": "grammar",
+  "title": "Экология и мир; пассив в отчётах (it is said that…)",
+  "prompt": "It is ____ that solar power will replace coal by 2050.",
+  "options": [
+   "expecting",
+   "expected",
+   "expects",
+   "expect"
+  ],
+  "correctIndex": 1,
+  "explanation": "'It is expected that…' — ожидается, что… В пассиве используется причастие прошедшего времени 'expected'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.environment"
+  ],
+  "lessonRefs": [
+   "b2.environment.002"
+  ]
+ },
+ {
+  "id": "gram_0b603f77bc00",
+  "kind": "grammar",
+  "title": "Экология и мир; пассив в отчётах (it is said that…)",
+  "prompt": "Thousands of species are believed ____ every year.",
+  "options": [
+   "to disappear",
+   "disappearing",
+   "disappear",
+   "disappeared"
+  ],
+  "correctIndex": 0,
+  "explanation": "Личный пассив: 'are believed to disappear' — считается, что они исчезают. За глаголом отчёта следует инфинитив.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.environment"
+  ],
+  "lessonRefs": [
+   "b2.environment.003"
+  ]
+ },
+ {
+  "id": "gram_b21920499a30",
+  "kind": "grammar",
+  "title": "Экология и мир; пассив в отчётах (it is said that…)",
+  "prompt": "Plastic is said ____ millions of marine animals so far.",
+  "options": [
+   "to have killed",
+   "to kill",
+   "killing",
+   "to killed"
+  ],
+  "correctIndex": 0,
+  "explanation": "'is said to have killed' — говорят, что убил (в прошлом). Перфектный инфинитив 'to have + V3' для завершённого действия.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.environment"
+  ],
+  "lessonRefs": [
+   "b2.environment.004"
+  ]
+ },
+ {
+  "id": "gram_15d8f3542e72",
+  "kind": "grammar",
+  "title": "Экология и мир; пассив в отчётах (it is said that…)",
+  "prompt": "The world population is said ____ growing too quickly.",
+  "options": [
+   "to be",
+   "to have",
+   "being",
+   "to been"
+  ],
+  "correctIndex": 0,
+  "explanation": "'is said to be growing' — говорят, что растёт (прямо сейчас). Продолженный инфинитив 'to be + V-ing'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.environment"
+  ],
+  "lessonRefs": [
+   "b2.environment.005"
+  ]
+ },
+ {
+  "id": "gram_8ad362e4985b",
+  "kind": "grammar",
+  "title": "Экология и мир; пассив в отчётах (it is said that…)",
+  "prompt": "'They claim that the treaty has cut emissions.' → 'The treaty ____ to have cut emissions.'",
+  "options": [
+   "is claimed",
+   "claims",
+   "is claiming",
+   "was claim"
+  ],
+  "correctIndex": 0,
+  "explanation": "'is claimed to have cut' — утверждается, что сократил. Перфектный инфинитив, потому что действие завершено.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.environment"
+  ],
+  "lessonRefs": [
+   "b2.environment.007"
+  ]
+ },
+ {
+  "id": "gram_caac12259b70",
+  "kind": "grammar",
+  "title": "Медиа и информация; причастные обороты",
+  "prompt": "Choose the correct participle: 'The journalist ____ the interview works for the BBC.'",
+  "options": [
+   "conducting",
+   "conducted",
+   "conducts",
+   "to conduct"
+  ],
+  "correctIndex": 0,
+  "explanation": "'conducting' = 'who is conducting' — причастие настоящего времени для активного действия.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.media"
+  ],
+  "lessonRefs": [
+   "b2.media.001"
+  ]
+ },
+ {
+  "id": "gram_57043a8b189e",
+  "kind": "grammar",
+  "title": "Медиа и информация; причастные обороты",
+  "prompt": "'____ by fake news, many readers shared it without checking.' Choose the correct form.",
+  "options": [
+   "Deceiving",
+   "Deceived",
+   "Deceive",
+   "To deceive"
+  ],
+  "correctIndex": 1,
+  "explanation": "'Deceived' = 'Because they were deceived' — причастие прошедшего времени для пассива.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.media"
+  ],
+  "lessonRefs": [
+   "b2.media.002"
+  ]
+ },
+ {
+  "id": "gram_2f9023f7067c",
+  "kind": "grammar",
+  "title": "Медиа и информация; причастные обороты",
+  "prompt": "'____ millions of followers, she has huge influence online.' Choose the correct form.",
+  "options": [
+   "Having",
+   "Had",
+   "To have",
+   "Has"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Having millions of followers' = 'Because she has millions of followers'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.media"
+  ],
+  "lessonRefs": [
+   "b2.media.003"
+  ]
+ },
+ {
+  "id": "gram_b65feec856d1",
+  "kind": "grammar",
+  "title": "Медиа и информация; причастные обороты",
+  "prompt": "'____ the campaign, the agency launched a new product.' Choose the correct form.",
+  "options": [
+   "Having finished",
+   "Finishing",
+   "Finished",
+   "Finish"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Having finished the campaign' = 'After they had finished the campaign' — завершённость раньше следующего действия.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.media"
+  ],
+  "lessonRefs": [
+   "b2.media.004"
+  ]
+ },
+ {
+  "id": "gram_e03a10f70c94",
+  "kind": "grammar",
+  "title": "Медиа и информация; причастные обороты",
+  "prompt": "'____ freedom of speech, journalists can report the truth.' Choose the correct form.",
+  "options": [
+   "Having",
+   "Have",
+   "Had",
+   "Having had"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Having freedom of speech' = 'Because they have freedom of speech'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.media"
+  ],
+  "lessonRefs": [
+   "b2.media.005"
+  ]
+ },
+ {
+  "id": "gram_256a1e5befae",
+  "kind": "grammar",
+  "title": "Медиа и информация; причастные обороты",
+  "prompt": "'The podcast ____ every week attracts a huge audience.' Choose the correct form.",
+  "options": [
+   "released",
+   "releasing",
+   "release",
+   "to release"
+  ],
+  "correctIndex": 0,
+  "explanation": "'The podcast released every week' = 'The podcast which is released every week'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.media"
+  ],
+  "lessonRefs": [
+   "b2.media.006"
+  ]
+ },
+ {
+  "id": "gram_dec737d53f7c",
+  "kind": "grammar",
+  "title": "Продвинутый пассив, каузатив have/get sth done",
+  "prompt": "This coffee ____ in Colombia.",
+  "options": [
+   "grows",
+   "is grown",
+   "are grown",
+   "is growing"
+  ],
+  "correctIndex": 1,
+  "explanation": "Coffee — единственное число, поэтому is grown (его выращивают).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.passive"
+  ],
+  "lessonRefs": [
+   "b2.passive.001"
+  ]
+ },
+ {
+  "id": "gram_957908dfb882",
+  "kind": "grammar",
+  "title": "Продвинутый пассив, каузатив have/get sth done",
+  "prompt": "Penicillin ____ by Alexander Fleming in 1928.",
+  "options": [
+   "discovered",
+   "is discovered",
+   "was discovered",
+   "has discovered"
+  ],
+  "correctIndex": 2,
+  "explanation": "was discovered — пенициллин открыли в 1928 году.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.passive"
+  ],
+  "lessonRefs": [
+   "b2.passive.002"
+  ]
+ },
+ {
+  "id": "gram_646cbad3880d",
+  "kind": "grammar",
+  "title": "Продвинутый пассив, каузатив have/get sth done",
+  "prompt": "The new hospital ____ next year.",
+  "options": [
+   "will build",
+   "will be built",
+   "is built",
+   "will been built"
+  ],
+  "correctIndex": 1,
+  "explanation": "will be built — больницу построят в следующем году.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.passive"
+  ],
+  "lessonRefs": [
+   "b2.passive.003"
+  ]
+ },
+ {
+  "id": "gram_5ed48d73c982",
+  "kind": "grammar",
+  "title": "Продвинутый пассив, каузатив have/get sth done",
+  "prompt": "I ____ my hair cut yesterday.",
+  "options": [
+   "made",
+   "had",
+   "did",
+   "have"
+  ],
+  "correctIndex": 1,
+  "explanation": "had my hair cut — мне подстригли волосы (в салоне).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.passive"
+  ],
+  "lessonRefs": [
+   "b2.passive.004"
+  ]
+ },
+ {
+  "id": "gram_733cf5d0bf9f",
+  "kind": "grammar",
+  "title": "Продвинутый пассив, каузатив have/get sth done",
+  "prompt": "You should ____ your car serviced regularly.",
+  "options": [
+   "get",
+   "make",
+   "do",
+   "be"
+  ],
+  "correctIndex": 0,
+  "explanation": "get your car serviced — регулярно обслуживать машину (в сервисе).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.passive"
+  ],
+  "lessonRefs": [
+   "b2.passive.005"
+  ]
+ },
+ {
+  "id": "gram_7f43690c1d88",
+  "kind": "grammar",
+  "title": "Продвинутый пассив, каузатив have/get sth done",
+  "prompt": "The road ____ at the moment, so take another route.",
+  "options": [
+   "is repaired",
+   "repairs",
+   "is being repaired",
+   "being repaired"
+  ],
+  "correctIndex": 2,
+  "explanation": "is being repaired — дорогу ремонтируют прямо сейчас.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.passive"
+  ],
+  "lessonRefs": [
+   "b2.passive.006"
+  ]
+ },
+ {
+  "id": "gram_9189ece59f9e",
+  "kind": "grammar",
+  "title": "Эмоции и поведение; -ing/-ed прилагательные, глаголы восприятия",
+  "prompt": "The film was so ____ that I nearly fell asleep.",
+  "options": [
+   "boring",
+   "bored",
+   "bores",
+   "boredom"
+  ],
+  "correctIndex": 0,
+  "explanation": "-ing (boring) описывает источник эмоции: фильм скучный. -ed (bored) описывал бы человека.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.psychology"
+  ],
+  "lessonRefs": [
+   "b2.psychology.001"
+  ]
+ },
+ {
+  "id": "gram_df44f0262944",
+  "kind": "grammar",
+  "title": "Эмоции и поведение; -ing/-ed прилагательные, глаголы восприятия",
+  "prompt": "My brother never worries and always stays calm. He is very ____.",
+  "options": [
+   "easy-going",
+   "moody",
+   "bossy",
+   "arrogant"
+  ],
+  "correctIndex": 0,
+  "explanation": "«easy-going» — расслабленный, беспроблемный. Остальные описывают негативные черты.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.psychology"
+  ],
+  "lessonRefs": [
+   "b2.psychology.002"
+  ]
+ },
+ {
+  "id": "gram_1b3e1ec5ead2",
+  "kind": "grammar",
+  "title": "Эмоции и поведение; -ing/-ed прилагательные, глаголы восприятия",
+  "prompt": "He ____ motivated today; he has been working since early morning.",
+  "options": [
+   "seems",
+   "seem",
+   "is seeming",
+   "seemed to be seeming"
+  ],
+  "correctIndex": 0,
+  "explanation": "«seems» — 3-е лицо ед. ч. глагола seem. Глаголы восприятия обычно не в Continuous.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.psychology"
+  ],
+  "lessonRefs": [
+   "b2.psychology.003"
+  ]
+ },
+ {
+  "id": "gram_764afdfe6ed0",
+  "kind": "grammar",
+  "title": "Эмоции и поведение; -ing/-ed прилагательные, глаголы восприятия",
+  "prompt": "The situation at work is really ____, and everyone feels stressed.",
+  "options": [
+   "stressful",
+   "stressed",
+   "stressing",
+   "stress"
+  ],
+  "correctIndex": 0,
+  "explanation": "Для источника стресса используем «stressful»; человек при этом чувствует себя «stressed».",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.psychology"
+  ],
+  "lessonRefs": [
+   "b2.psychology.004"
+  ]
+ },
+ {
+  "id": "gram_97a92cf9d4d5",
+  "kind": "grammar",
+  "title": "Эмоции и поведение; -ing/-ed прилагательные, глаголы восприятия",
+  "prompt": "Spending time in nature is deeply ____; it makes me feel calm.",
+  "options": [
+   "relaxing",
+   "relaxed",
+   "relaxes",
+   "relaxation"
+  ],
+  "correctIndex": 0,
+  "explanation": "«relaxing» (-ing) описывает источник, который расслабляет; человек после этого «relaxed».",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.psychology"
+  ],
+  "lessonRefs": [
+   "b2.psychology.005"
+  ]
+ },
+ {
+  "id": "gram_7e1b40053bb7",
+  "kind": "grammar",
+  "title": "Эмоции и поведение; -ing/-ed прилагательные, глаголы восприятия",
+  "prompt": "His behaviour was really ____; I could not understand what he wanted.",
+  "options": [
+   "confusing",
+   "confused",
+   "confuses",
+   "confusion"
+  ],
+  "correctIndex": 0,
+  "explanation": "«confusing» (-ing) описывает то, что запутывает; человек при этом чувствует себя «confused».",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.psychology"
+  ],
+  "lessonRefs": [
+   "b2.psychology.006"
+  ]
+ },
+ {
+  "id": "gram_aa965880091d",
+  "kind": "grammar",
+  "title": "Косвенная речь: вопросы, команды, глаголы речи",
+  "prompt": "Direct: 'I am tired.' → She said that she ____ tired.",
+  "options": [
+   "is",
+   "was",
+   "were",
+   "had been"
+  ],
+  "correctIndex": 1,
+  "explanation": "'am' сдвигается в 'was': She said that she was tired.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.reported"
+  ],
+  "lessonRefs": [
+   "b2.reported.001"
+  ]
+ },
+ {
+  "id": "gram_5afa1ca6fa30",
+  "kind": "grammar",
+  "title": "Косвенная речь: вопросы, команды, глаголы речи",
+  "prompt": "Direct: 'Where do you work?' → She asked me where I ____.",
+  "options": [
+   "do work",
+   "worked",
+   "did work",
+   "work"
+  ],
+  "correctIndex": 1,
+  "explanation": "Вопрос теряет вспомогательный do/did: 'where I worked'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.reported"
+  ],
+  "lessonRefs": [
+   "b2.reported.002"
+  ]
+ },
+ {
+  "id": "gram_576d59d87449",
+  "kind": "grammar",
+  "title": "Косвенная речь: вопросы, команды, глаголы речи",
+  "prompt": "Direct: 'Sit down.' → The teacher told us ____ down.",
+  "options": [
+   "sit",
+   "to sit",
+   "sitting",
+   "that sit"
+  ],
+  "correctIndex": 1,
+  "explanation": "'The teacher told us to sit down.'",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.reported"
+  ],
+  "lessonRefs": [
+   "b2.reported.003"
+  ]
+ },
+ {
+  "id": "gram_fc27cca362c1",
+  "kind": "grammar",
+  "title": "Косвенная речь: вопросы, команды, глаголы речи",
+  "prompt": "'I'll pay you back next week.' → He promised ____ me back the following week.",
+  "options": [
+   "paying",
+   "to pay",
+   "that pay",
+   "pay"
+  ],
+  "correctIndex": 1,
+  "explanation": "'He promised to pay me back the following week.'",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.reported"
+  ],
+  "lessonRefs": [
+   "b2.reported.004"
+  ]
+ },
+ {
+  "id": "gram_40e5e86d476f",
+  "kind": "grammar",
+  "title": "Косвенная речь: вопросы, команды, глаголы речи",
+  "prompt": "'It was me. I broke it.' → He admitted ____ the window.",
+  "options": [
+   "to break",
+   "breaking",
+   "break",
+   "that break"
+  ],
+  "correctIndex": 1,
+  "explanation": "'He admitted breaking the window.' admit не берёт to-инфинитив.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.reported"
+  ],
+  "lessonRefs": [
+   "b2.reported.005"
+  ]
+ },
+ {
+  "id": "gram_01155996cbff",
+  "kind": "grammar",
+  "title": "Косвенная речь: вопросы, команды, глаголы речи",
+  "prompt": "'Why don't we take a break?' → She suggested ____ a break.",
+  "options": [
+   "to take",
+   "taking",
+   "take",
+   "that take"
+  ],
+  "correctIndex": 1,
+  "explanation": "'She suggested taking a break.' Нельзя 'suggested to take'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.reported"
+  ],
+  "lessonRefs": [
+   "b2.reported.006"
+  ]
+ },
+ {
+  "id": "gram_8ff3f46048c0",
+  "kind": "grammar",
+  "title": "Будущее совершенное/длительное, предположения",
+  "prompt": "By 2050, scientists ____ a cure for many diseases.",
+  "options": [
+   "will have found",
+   "will find",
+   "will have find",
+   "are finding"
+  ],
+  "correctIndex": 0,
+  "explanation": "'By 2050' = к 2050 году → Future Perfect: will have found. find → found (3-я форма).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.science"
+  ],
+  "lessonRefs": [
+   "b2.science.001"
+  ]
+ },
+ {
+  "id": "gram_6adcee58f866",
+  "kind": "grammar",
+  "title": "Будущее совершенное/длительное, предположения",
+  "prompt": "This time next year, we ____ on Mars-simulation projects.",
+  "options": [
+   "will be working",
+   "will have worked",
+   "work",
+   "worked"
+  ],
+  "correctIndex": 0,
+  "explanation": "'This time next year' описывает процесс в будущем → will be working.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.science"
+  ],
+  "lessonRefs": [
+   "b2.science.002"
+  ]
+ },
+ {
+  "id": "gram_38af62e99f44",
+  "kind": "grammar",
+  "title": "Будущее совершенное/длительное, предположения",
+  "prompt": "By 2035, astronauts ____ on the Moon again, and by 2040 they ____ towards Mars.",
+  "options": [
+   "will have landed / will be travelling",
+   "will land / will travel",
+   "will have landed / will have travel",
+   "land / travel"
+  ],
+  "correctIndex": 0,
+  "explanation": "'By 2035 ... will have landed' (завершится), 'by 2040 ... will be travelling' (будет длиться).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.science"
+  ],
+  "lessonRefs": [
+   "b2.science.003"
+  ]
+ },
+ {
+  "id": "gram_8e905c644c2e",
+  "kind": "grammar",
+  "title": "Будущее совершенное/длительное, предположения",
+  "prompt": "Gene therapy ____ change how we treat cancer, but we can't be sure yet.",
+  "options": [
+   "might",
+   "must",
+   "will definitely",
+   "can't"
+  ],
+  "correctIndex": 0,
+  "explanation": "'might change' = возможно, изменит. Уверенности нет, поэтому не 'will definitely'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.science"
+  ],
+  "lessonRefs": [
+   "b2.science.004"
+  ]
+ },
+ {
+  "id": "gram_434f583b88b2",
+  "kind": "grammar",
+  "title": "Будущее совершенное/длительное, предположения",
+  "prompt": "The system crashed. A bug ____ caused the failure, but nobody knows for sure.",
+  "options": [
+   "may have",
+   "may",
+   "will have",
+   "must"
+  ],
+  "correctIndex": 0,
+  "explanation": "'may have caused' = возможно, вызвал (прошлое). Форма: may have + причастие.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.science"
+  ],
+  "lessonRefs": [
+   "b2.science.005"
+  ]
+ },
+ {
+  "id": "gram_b9cb66df6228",
+  "kind": "grammar",
+  "title": "Будущее совершенное/длительное, предположения",
+  "prompt": "By 2040, engineers ____ on this technology for over twenty years.",
+  "options": [
+   "will have been working",
+   "will work",
+   "will be work",
+   "have worked"
+  ],
+  "correctIndex": 0,
+  "explanation": "'for over twenty years' + 'by 2040' → will have been working (сколько времени будет длиться).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.science"
+  ],
+  "lessonRefs": [
+   "b2.science.006"
+  ]
+ },
+ {
+  "id": "gram_42ab164f27b4",
+  "kind": "grammar",
+  "title": "Социальные темы; квантификаторы и артикли",
+  "prompt": "____ people in the country live below the poverty line.",
+  "options": [
+   "The majority of",
+   "The majority",
+   "Majority of",
+   "A majority"
+  ],
+  "correctIndex": 0,
+  "explanation": "«The majority of + существительное» = «большинство (из)». Артикль the и предлог of обязательны.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.society"
+  ],
+  "lessonRefs": [
+   "b2.society.001"
+  ]
+ },
+ {
+  "id": "gram_f92155a13707",
+  "kind": "grammar",
+  "title": "Социальные темы; квантификаторы и артикли",
+  "prompt": "Sadly, ____ young people today read printed newspapers — almost none.",
+  "options": [
+   "few",
+   "a few",
+   "little",
+   "a little"
+  ],
+  "correctIndex": 0,
+  "explanation": "few + счётное = «мало, почти нет» (негативно). a few = «немного» (позитивно). Здесь смысл «почти никто» → few.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.society"
+  ],
+  "lessonRefs": [
+   "b2.society.002"
+  ]
+ },
+ {
+  "id": "gram_6d7088725ba0",
+  "kind": "grammar",
+  "title": "Социальные темы; квантификаторы и артикли",
+  "prompt": "____ life in big cities can be stressful and expensive.",
+  "options": [
+   "—",
+   "The",
+   "A",
+   "An"
+  ],
+  "correctIndex": 0,
+  "explanation": "При обобщении с неисчисляемым/абстрактным существительным (life in general) используется нулевой артикль. «Life in big cities» = жизнь вообще.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.society"
+  ],
+  "lessonRefs": [
+   "b2.society.003"
+  ]
+ },
+ {
+  "id": "gram_1c36e5ca56e3",
+  "kind": "grammar",
+  "title": "Социальные темы; квантификаторы и артикли",
+  "prompt": "A growing ____ of migrants are highly skilled professionals.",
+  "options": [
+   "number",
+   "amount",
+   "deal",
+   "quantity of"
+  ],
+  "correctIndex": 0,
+  "explanation": "С исчисляемыми существительными используем number of, а не amount of. «A growing number of migrants».",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.society"
+  ],
+  "lessonRefs": [
+   "b2.society.004"
+  ]
+ },
+ {
+  "id": "gram_cbc7f0c8f11d",
+  "kind": "grammar",
+  "title": "Социальные темы; квантификаторы и артикли",
+  "prompt": "____ equality between men and women is a basic human right.",
+  "options": [
+   "—",
+   "The",
+   "An",
+   "A"
+  ],
+  "correctIndex": 0,
+  "explanation": "Абстрактные существительные (equality, freedom, justice) в общем значении идут без артикля.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.society"
+  ],
+  "lessonRefs": [
+   "b2.society.005"
+  ]
+ },
+ {
+  "id": "gram_76b1de5a8c88",
+  "kind": "grammar",
+  "title": "Социальные темы; квантификаторы и артикли",
+  "prompt": "Volunteers put ____ a great deal of effort into helping the community.",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "of"
+  ],
+  "correctIndex": 0,
+  "explanation": "«put in a great deal of effort» = «вкладывать много усилий». a great deal of + неисчисляемое effort.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "B2",
+  "moduleRefs": [
+   "b2.society"
+  ],
+  "lessonRefs": [
+   "b2.society.006"
+  ]
+ },
+ {
+  "id": "gram_c21037dc9113",
+  "kind": "grammar",
+  "title": "Продвинутые условные и гипотетические значения",
+  "prompt": "Choose the correct inverted conditional: '____ I known the truth, I would have questioned everything.'",
+  "options": [
+   "Had",
+   "If",
+   "Have",
+   "Would"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Had I known' = 'If I had known'. В инверсии had ставится перед подлежащим, а if опускается.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.abstract"
+  ],
+  "lessonRefs": [
+   "c1.abstract.001"
+  ]
+ },
+ {
+  "id": "gram_deeb461b4019",
+  "kind": "grammar",
+  "title": "Продвинутые условные и гипотетические значения",
+  "prompt": "'____ you ever face a moral dilemma, trust your conscience.' Which word fits the inverted conditional?",
+  "options": [
+   "Should",
+   "If",
+   "Would",
+   "Were"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Should you face…' = 'If you (ever) face…'. Инверсия с should выражает возможность.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.abstract"
+  ],
+  "lessonRefs": [
+   "c1.abstract.002"
+  ]
+ },
+ {
+  "id": "gram_11f88c6087ff",
+  "kind": "grammar",
+  "title": "Продвинутые условные и гипотетические значения",
+  "prompt": "'____ you won the lottery — what would you do first?' Choose the natural opener.",
+  "options": [
+   "Suppose",
+   "Unless",
+   "Despite",
+   "Whether"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Suppose you won…' вводит воображаемый сценарий, эквивалент 'What if you won…'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.abstract"
+  ],
+  "lessonRefs": [
+   "c1.abstract.003"
+  ]
+ },
+ {
+  "id": "gram_42ec65604323",
+  "kind": "grammar",
+  "title": "Продвинутые условные и гипотетические значения",
+  "prompt": "'____ artificial intelligence to replace most jobs, how would we redefine work?' Complete the inverted conditional.",
+  "options": [
+   "Were",
+   "Had",
+   "Should",
+   "Would"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Were + subject + to-infinitive' — формальная инверсия для маловероятного будущего.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.abstract"
+  ],
+  "lessonRefs": [
+   "c1.abstract.004"
+  ]
+ },
+ {
+  "id": "gram_bb16ce3bebf1",
+  "kind": "grammar",
+  "title": "Продвинутые условные и гипотетические значения",
+  "prompt": "'____ it not for freedom of speech, democracy could not function.' Choose the correct form.",
+  "options": [
+   "Were",
+   "Had",
+   "Should",
+   "Was"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Were it not for X' = «если бы не X». Всегда were (сослагательное), никогда was.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.abstract"
+  ],
+  "lessonRefs": [
+   "c1.abstract.005"
+  ]
+ },
+ {
+  "id": "gram_fe33223fb2e6",
+  "kind": "grammar",
+  "title": "Продвинутые условные и гипотетические значения",
+  "prompt": "'____ consciousness be reducible to brain chemistry, free will might be an illusion.' Complete the inversion.",
+  "options": [
+   "Should",
+   "Had",
+   "Were it",
+   "Would"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Should X be…' вводит гипотетическую возможность: «если окажется, что…».",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.abstract"
+  ],
+  "lessonRefs": [
+   "c1.abstract.006"
+  ]
+ },
+ {
+  "id": "gram_9e9a32e63149",
+  "kind": "grammar",
+  "title": "Номинализация, формальная связность",
+  "prompt": "Choose the most formal linker to add a further point: 'The policy is costly. ____, it is difficult to enforce.'",
+  "options": [
+   "Moreover",
+   "Plus",
+   "And also",
+   "On top of that"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Moreover' — академическая связка для добавления довода. 'Plus', 'and also', 'on top of that' звучат разговорно.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.academic"
+  ],
+  "lessonRefs": [
+   "c1.academic.002"
+  ]
+ },
+ {
+  "id": "gram_85d9d8014d69",
+  "kind": "grammar",
+  "title": "Номинализация, формальная связность",
+  "prompt": "Which verb best introduces a source neutrally: 'Smith (2019) ____ that inequality has widened.'?",
+  "options": [
+   "notes",
+   "screams",
+   "whines",
+   "brags"
+  ],
+  "correctIndex": 0,
+  "explanation": "'notes', 'states', 'observes', 'argues' — нейтральные вводящие глаголы. Остальные варианты эмоционально окрашены и неуместны.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.academic"
+  ],
+  "lessonRefs": [
+   "c1.academic.003"
+  ]
+ },
+ {
+  "id": "gram_081adb75d025",
+  "kind": "grammar",
+  "title": "Номинализация, формальная связность",
+  "prompt": "Choose the formal linker of consequence: 'Costs rose sharply; ____, output fell.'",
+  "options": [
+   "consequently",
+   "so",
+   "that's why",
+   "and then"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Consequently' выражает следствие в академическом регистре. 'so', 'that's why', 'and then' слишком разговорны.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.academic"
+  ],
+  "lessonRefs": [
+   "c1.academic.004"
+  ]
+ },
+ {
+  "id": "gram_d2b1390fd923",
+  "kind": "grammar",
+  "title": "Номинализация, формальная связность",
+  "prompt": "Choose the more academic phrasing: 'The theory ____ several key phenomena.'",
+  "options": [
+   "accounts for",
+   "sorts out",
+   "deals with a lot of",
+   "gets"
+  ],
+  "correctIndex": 0,
+  "explanation": "'accounts for' (объясняет/учитывает) уместнее в академическом регистре, чем разговорные 'sorts out', 'gets'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.academic"
+  ],
+  "lessonRefs": [
+   "c1.academic.007"
+  ]
+ },
+ {
+  "id": "gram_e316936f6712",
+  "kind": "grammar",
+  "title": "Идиоматическая речь, продвинутые фразовые глаголы",
+  "prompt": "Choose the sentence where the idiom is used correctly.",
+  "options": [
+   "I hit the nail on the head with my diagnosis of the problem.",
+   "I hit the nail on the head to the shops yesterday.",
+   "She put up with the moon last night.",
+   "We got away with an arm and a leg."
+  ],
+  "correctIndex": 0,
+  "explanation": "Hit the nail on the head означает «попасть в точку»; правильно описывает точный вывод.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.idioms"
+  ],
+  "lessonRefs": [
+   "c1.idioms.008"
+  ]
+ },
+ {
+  "id": "gram_b1a82cf1734d",
+  "kind": "grammar",
+  "title": "Инверсия для выразительности",
+  "prompt": "Choose the correct inversion: '____ such a storm in my life.'",
+  "options": [
+   "Never I have seen",
+   "Never have I seen",
+   "Never I saw",
+   "Never seen have I"
+  ],
+  "correctIndex": 1,
+  "explanation": "Never have I seen: negative adverb в начале → auxiliary (have) + subject (I) + past participle (seen).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.inversion"
+  ],
+  "lessonRefs": [
+   "c1.inversion.001"
+  ]
+ },
+ {
+  "id": "gram_e62eae279056",
+  "kind": "grammar",
+  "title": "Инверсия для выразительности",
+  "prompt": "'Under no circumstances ____ share your password.'",
+  "options": [
+   "you should",
+   "should you",
+   "you must",
+   "do you must"
+  ],
+  "correctIndex": 1,
+  "explanation": "Under no circumstances should you share — negative adverbial → auxiliary/modal before subject.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.inversion"
+  ],
+  "lessonRefs": [
+   "c1.inversion.002"
+  ]
+ },
+ {
+  "id": "gram_6bc29d696bd7",
+  "kind": "grammar",
+  "title": "Инверсия для выразительности",
+  "prompt": "'____ she know that her life was about to change.'",
+  "options": [
+   "Little did",
+   "Little she did",
+   "Little does",
+   "Little knew"
+  ],
+  "correctIndex": 0,
+  "explanation": "Little did she know — 'little' как negative adverb вызывает do-инверсию.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.inversion"
+  ],
+  "lessonRefs": [
+   "c1.inversion.003"
+  ]
+ },
+ {
+  "id": "gram_82b467adc9e8",
+  "kind": "grammar",
+  "title": "Инверсия для выразительности",
+  "prompt": "'Not only ____ the exam, but she also won a scholarship.'",
+  "options": [
+   "she passed",
+   "did she pass",
+   "passed she",
+   "she did pass"
+  ],
+  "correctIndex": 1,
+  "explanation": "Not only did she pass — negative adverbial требует инверсии со вспомогательным глаголом.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.inversion"
+  ],
+  "lessonRefs": [
+   "c1.inversion.004"
+  ]
+ },
+ {
+  "id": "gram_4f3b2f9b67d6",
+  "kind": "grammar",
+  "title": "Инверсия для выразительности",
+  "prompt": "'____ has a team achieved so much in one season.'",
+  "options": [
+   "Never before",
+   "Before never",
+   "Never before it",
+   "Ever before"
+  ],
+  "correctIndex": 0,
+  "explanation": "Never before has a team achieved — отрицательное обстоятельство времени + инверсия.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.inversion"
+  ],
+  "lessonRefs": [
+   "c1.inversion.005"
+  ]
+ },
+ {
+  "id": "gram_9c629840b470",
+  "kind": "grammar",
+  "title": "Инверсия для выразительности",
+  "prompt": "'On no account ____ the machine be left running unattended.'",
+  "options": [
+   "should",
+   "must not",
+   "is",
+   "should not"
+  ],
+  "correctIndex": 0,
+  "explanation": "On no account should the machine be left — фраза уже отрицательная, поэтому без лишнего 'not'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.inversion"
+  ],
+  "lessonRefs": [
+   "c1.inversion.006"
+  ]
+ },
+ {
+  "id": "gram_66aa6c300650",
+  "kind": "grammar",
+  "title": "Совершенные модальные, предположения о прошлом",
+  "prompt": "The window was smashed from the inside, so the burglar ____ through the front door.",
+  "options": [
+   "must have got in",
+   "can have got in",
+   "must got in",
+   "must have get in"
+  ],
+  "correctIndex": 0,
+  "explanation": "must have + past participle выражает почти полную уверенность в том, что произошло.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.modals"
+  ],
+  "lessonRefs": [
+   "c1.modals.001"
+  ]
+ },
+ {
+  "id": "gram_e6536ab6240d",
+  "kind": "grammar",
+  "title": "Совершенные модальные, предположения о прошлом",
+  "prompt": "The train's late. There ____ an accident on the line, but I'm not sure.",
+  "options": [
+   "might have been",
+   "must have been",
+   "can't have been",
+   "should have been"
+  ],
+  "correctIndex": 0,
+  "explanation": "might/could/may have done выражает возможную, но не подтверждённую версию событий.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.modals"
+  ],
+  "lessonRefs": [
+   "c1.modals.002"
+  ]
+ },
+ {
+  "id": "gram_f6ac5ec17313",
+  "kind": "grammar",
+  "title": "Совершенные модальные, предположения о прошлом",
+  "prompt": "You ____ told me earlier — now it's too late to fix it.",
+  "options": [
+   "should have",
+   "must have",
+   "can't have",
+   "needn't have"
+  ],
+  "correctIndex": 0,
+  "explanation": "should have done — сожаление или упрёк: правильно было сделать, но этого не сделали.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.modals"
+  ],
+  "lessonRefs": [
+   "c1.modals.003"
+  ]
+ },
+ {
+  "id": "gram_502b39d812cd",
+  "kind": "grammar",
+  "title": "Совершенные модальные, предположения о прошлом",
+  "prompt": "She barely touched her food. She ____ nervous about the interview.",
+  "options": [
+   "must have felt",
+   "can't have felt",
+   "needn't have felt",
+   "should have felt"
+  ],
+  "correctIndex": 0,
+  "explanation": "must have felt — логичный, уверенный вывод из поведения: она явно нервничала.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.modals"
+  ],
+  "lessonRefs": [
+   "c1.modals.004"
+  ]
+ },
+ {
+  "id": "gram_49b90c9bf850",
+  "kind": "grammar",
+  "title": "Совершенные модальные, предположения о прошлом",
+  "prompt": "You ____ cooked so much — half of it went to waste.",
+  "options": [
+   "needn't have",
+   "must have",
+   "can't have",
+   "should have"
+  ],
+  "correctIndex": 0,
+  "explanation": "needn't have cooked — ты приготовил, но в этом не было необходимости.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.modals"
+  ],
+  "lessonRefs": [
+   "c1.modals.005"
+  ]
+ },
+ {
+  "id": "gram_30a2753a2af7",
+  "kind": "grammar",
+  "title": "Совершенные модальные, предположения о прошлом",
+  "prompt": "If you'd left earlier, you ____ the traffic completely.",
+  "options": [
+   "could have avoided",
+   "must have avoided",
+   "needn't have avoided",
+   "can't have avoided"
+  ],
+  "correctIndex": 0,
+  "explanation": "could have avoided — у тебя была возможность избежать пробки, но ты ею не воспользовался.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.modals"
+  ],
+  "lessonRefs": [
+   "c1.modals.006"
+  ]
+ },
+ {
+  "id": "gram_6bf39551a540",
+  "kind": "grammar",
+  "title": "Коллокации, коннотации, близкие синонимы",
+  "prompt": "Choose the natural collocation: a ____ smoker.",
+  "options": [
+   "strong",
+   "heavy",
+   "high",
+   "big"
+  ],
+  "correctIndex": 1,
+  "explanation": "«Heavy smoker» — заядлый курильщик; фиксированная коллокация.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.nuance"
+  ],
+  "lessonRefs": [
+   "c1.nuance.008"
+  ]
+ },
+ {
+  "id": "gram_2d4ee687622f",
+  "kind": "grammar",
+  "title": "Формальный и неформальный стиль, эллипсис",
+  "prompt": "'Is she coming?' — 'I think ____.' Choose the substitution word.",
+  "options": [
+   "so",
+   "one",
+   "it",
+   "such"
+  ],
+  "correctIndex": 0,
+  "explanation": "'I think so' = 'I think she is coming'; 'so' замещает всё придаточное.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.register"
+  ],
+  "lessonRefs": [
+   "c1.register.007"
+  ]
+ },
+ {
+  "id": "gram_28f587b42b26",
+  "kind": "grammar",
+  "title": "Формальный и неформальный стиль, эллипсис",
+  "prompt": "Best way to avoid repeating 'the company' in the second sentence: 'The company grew fast. ____ opened three offices.'",
+  "options": [
+   "The company",
+   "It",
+   "One",
+   "So"
+  ],
+  "correctIndex": 1,
+  "explanation": "'It' замещает 'the company', обеспечивая связность и избегая повтора.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.register"
+  ],
+  "lessonRefs": [
+   "c1.register.008"
+  ]
+ },
+ {
+  "id": "gram_22be4991f2ea",
+  "kind": "grammar",
+  "title": "Связность, референция, сложные предложения",
+  "prompt": "The company cut its training budget. ____ decision angered many staff.",
+  "options": [
+   "This",
+   "These",
+   "Such",
+   "Those"
+  ],
+  "correctIndex": 0,
+  "explanation": "'This decision' отсылает назад к одной уже названной идее — базовая референция для связности.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.writing"
+  ],
+  "lessonRefs": [
+   "c1.writing.002"
+  ]
+ },
+ {
+  "id": "gram_617d6b989ba0",
+  "kind": "grammar",
+  "title": "Связность, референция, сложные предложения",
+  "prompt": "In a balanced review you should mention both ____ .",
+  "options": [
+   "strengths and weaknesses",
+   "only strengths",
+   "only weaknesses",
+   "neither of them"
+  ],
+  "correctIndex": 0,
+  "explanation": "Сбалансированный обзор рассматривает и сильные, и слабые стороны.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.writing"
+  ],
+  "lessonRefs": [
+   "c1.writing.003"
+  ]
+ },
+ {
+  "id": "gram_55ce68f0a466",
+  "kind": "grammar",
+  "title": "Связность, референция, сложные предложения",
+  "prompt": "____ the risks are real, the long-term benefits outweigh them.",
+  "options": [
+   "Although",
+   "Despite",
+   "However",
+   "In spite"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Although' вводит уступительное придаточное с подлежащим и сказуемым; 'despite/in spite of' требуют существительного.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.writing"
+  ],
+  "lessonRefs": [
+   "c1.writing.004"
+  ]
+ },
+ {
+  "id": "gram_597f610f67a4",
+  "kind": "grammar",
+  "title": "Связность, референция, сложные предложения",
+  "prompt": "____ the door, he noticed a strange smell.",
+  "options": [
+   "Opening",
+   "Opened",
+   "To open",
+   "Open"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Opening the door, he noticed...' — активный причастный оборот, сжимающий два действия в одно предложение.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.writing"
+  ],
+  "lessonRefs": [
+   "c1.writing.005"
+  ]
+ },
+ {
+  "id": "gram_cfd5827632de",
+  "kind": "grammar",
+  "title": "Связность, референция, сложные предложения",
+  "prompt": "A formal cover letter typically opens with ____ .",
+  "options": [
+   "'Dear Hiring Manager,'",
+   "'Hey there!'",
+   "'Yo,'",
+   "'Hi guys,'"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Dear Hiring Manager,' — стандартное формальное обращение, когда имя адресата неизвестно.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.writing"
+  ],
+  "lessonRefs": [
+   "c1.writing.007"
+  ]
+ },
+ {
+  "id": "gram_3bfc8abb155e",
+  "kind": "grammar",
+  "title": "Связность, референция, сложные предложения",
+  "prompt": "The theory, ____ was proposed decades ago, still holds today.",
+  "options": [
+   "which",
+   "who",
+   "what",
+   "where"
+  ],
+  "correctIndex": 0,
+  "explanation": "'The theory, which was proposed..., still holds' — придаточное с 'which' встраивается в главное предложение.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C1",
+  "moduleRefs": [
+   "c1.writing"
+  ],
+  "lessonRefs": [
+   "c1.writing.008"
+  ]
+ },
+ {
+  "id": "gram_fcd3c6e78e87",
+  "kind": "grammar",
+  "title": "Продвинутое письмо и аргументация",
+  "prompt": "The section that concisely summarises the aims, methods and key findings of a study is the ____.",
+  "options": [
+   "abstract",
+   "appendix",
+   "footnote",
+   "bibliography"
+  ],
+  "correctIndex": 0,
+  "explanation": "Abstract — краткое резюме всей статьи (обычно до 250 слов).",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.academic"
+  ],
+  "lessonRefs": [
+   "c2.academic.001"
+  ]
+ },
+ {
+  "id": "gram_0b0c4a1d06f8",
+  "kind": "grammar",
+  "title": "Продвинутое письмо и аргументация",
+  "prompt": "To signal that a source's conclusion is open to question, an academic writer would most likely write that the author ____ that...",
+  "options": [
+   "claims",
+   "demonstrates",
+   "proves",
+   "establishes"
+  ],
+  "correctIndex": 0,
+  "explanation": "'claims' сигнализирует, что автор не берёт на себя ответственность за истинность; 'proves/demonstrates' наоборот подтверждают.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.academic"
+  ],
+  "lessonRefs": [
+   "c2.academic.002"
+  ]
+ },
+ {
+  "id": "gram_afca01f104a0",
+  "kind": "grammar",
+  "title": "Продвинутое письмо и аргументация",
+  "prompt": "Participants ____ randomly assigned to two groups.",
+  "options": [
+   "were",
+   "was",
+   "are being",
+   "has been"
+  ],
+  "correctIndex": 0,
+  "explanation": "Passive Past: 'participants were assigned'. Пассив обезличивает описание метода.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.academic"
+  ],
+  "lessonRefs": [
+   "c2.academic.003"
+  ]
+ },
+ {
+  "id": "gram_a1a5a3ac00f0",
+  "kind": "grammar",
+  "title": "Продвинутое письмо и аргументация",
+  "prompt": "____ the strength of this argument, it fails to account for cultural variation.",
+  "options": [
+   "Notwithstanding",
+   "Because",
+   "Therefore",
+   "So"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Notwithstanding' = despite; вводит уступку перед критикой.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.academic"
+  ],
+  "lessonRefs": [
+   "c2.academic.005"
+  ]
+ },
+ {
+  "id": "gram_4cd2570f7e3f",
+  "kind": "grammar",
+  "title": "Ирония, импликатура, игра слов",
+  "prompt": "A classic joke has a 'setup' and a '____' — the surprising last line that makes you laugh.",
+  "options": [
+   "punchline",
+   "headline",
+   "deadline",
+   "guideline"
+  ],
+  "correctIndex": 0,
+  "explanation": "Punchline — кульминация шутки. Смех рождается из внезапного несоответствия: setup ведёт мысль в одну сторону, а punchline резко разворачивает её.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.humor"
+  ],
+  "lessonRefs": [
+   "c2.humor.001"
+  ]
+ },
+ {
+  "id": "gram_539a418ef320",
+  "kind": "grammar",
+  "title": "Идиомы, устойчивые выражения, беглость",
+  "prompt": "Your colleague keeps avoiding the real issue. You say: 'Stop beating around the bush and ___.'",
+  "options": [
+   "tell me straight",
+   "beat the drum",
+   "hold your horses",
+   "spill the beans slowly"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Beat around the bush' значит говорить уклончиво, не переходя к сути. Логичное продолжение — просьба сказать прямо.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.idiomatic"
+  ],
+  "lessonRefs": [
+   "c2.idiomatic.001"
+  ]
+ },
+ {
+  "id": "gram_4504aec71bbb",
+  "kind": "grammar",
+  "title": "Идиомы, устойчивые выражения, беглость",
+  "prompt": "I've sent them my offer. Now ___ — it's up to them to respond.",
+  "options": [
+   "the ball is in their court",
+   "the towel is thrown",
+   "the bar is raised",
+   "the page is turned"
+  ],
+  "correctIndex": 0,
+  "explanation": "'The ball is in their court' — решение и следующий шаг теперь на их стороне.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.idiomatic"
+  ],
+  "lessonRefs": [
+   "c2.idiomatic.005"
+  ]
+ },
+ {
+  "id": "gram_f0826031c84b",
+  "kind": "grammar",
+  "title": "Идиомы, устойчивые выражения, беглость",
+  "prompt": "They argue a lot but stay together. You'd say they have a ___ relationship.",
+  "options": [
+   "love-hate",
+   "black-and-white",
+   "give-and-go",
+   "hit-or-run"
+  ],
+  "correctIndex": 0,
+  "explanation": "'Love-hate relationship' точно описывает пару, которую тянет друг к другу и одновременно раздражает.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.idiomatic"
+  ],
+  "lessonRefs": [
+   "c2.idiomatic.006"
+  ]
+ },
+ {
+  "id": "gram_4e1f2faee32c",
+  "kind": "grammar",
+  "title": "Идиомы, устойчивые выражения, беглость",
+  "prompt": "Which reply best fits: 'We tried everything and it still failed.' — '___'",
+  "options": [
+   "Well, back to the drawing board, then.",
+   "Over the moon, then.",
+   "You don't say the towel.",
+   "The ball is under the weather."
+  ],
+  "correctIndex": 0,
+  "explanation": "После неудачи логично сказать 'back to the drawing board' — придётся всё переделывать. Остальные варианты смешивают идиомы бессмысленно.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.idiomatic"
+  ],
+  "lessonRefs": [
+   "c2.idiomatic.008"
+  ]
+ },
+ {
+  "id": "gram_6faeed9f6ab2",
+  "kind": "grammar",
+  "title": "Коннотация, точность, тонкость",
+  "prompt": "At the formal dinner he addressed the ambassador by the wrong title — a real social ____.",
+  "options": [
+   "error",
+   "gaffe",
+   "slip",
+   "oversight"
+  ],
+  "correctIndex": 1,
+  "explanation": "gaffe — публичная социальная оплошность, вызывающая неловкость. error нейтрально, slip — мелкая оговорка, oversight — упущение по невнимательности.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.nuance"
+  ],
+  "lessonRefs": [
+   "c2.nuance.001"
+  ]
+ },
+ {
+  "id": "gram_24df96cd8953",
+  "kind": "grammar",
+  "title": "Коннотация, точность, тонкость",
+  "prompt": "She ____ at him angrily across the room. Which verb fits the hostile look?",
+  "options": [
+   "glanced",
+   "glared",
+   "peeked",
+   "gazed"
+  ],
+  "correctIndex": 1,
+  "explanation": "glare — сердитый, пристальный взгляд. glance мимолётный, peek украдкой, gaze долгий, но нейтрально-восхищённый.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.nuance"
+  ],
+  "lessonRefs": [
+   "c2.nuance.005"
+  ]
+ },
+ {
+  "id": "gram_407a6f5640c4",
+  "kind": "grammar",
+  "title": "Коннотация, точность, тонкость",
+  "prompt": "You admire how carefully she checks every detail. She is ____.",
+  "options": [
+   "pedantic",
+   "meticulous",
+   "fussy",
+   "nit-picking"
+  ],
+  "correctIndex": 1,
+  "explanation": "meticulous — положительное 'скрупулёзный'. pedantic, fussy, nit-picking критикуют за придирчивость к мелочам.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.nuance"
+  ],
+  "lessonRefs": [
+   "c2.nuance.006"
+  ]
+ },
+ {
+  "id": "gram_5160eb44c04b",
+  "kind": "grammar",
+  "title": "Убеждение, акцент, риторические приёмы",
+  "prompt": "Which is a correctly formed cleft sentence emphasising the reason?",
+  "options": [
+   "The reason is because we lack the funding.",
+   "It is precisely this complacency that must be challenged.",
+   "We must challenge, and it is the complacency there.",
+   "Challenging complacency is what we, it must be."
+  ],
+  "correctIndex": 1,
+  "explanation": "«It is precisely this complacency that must be challenged» — расщеплённое предложение, выносящее фокус на 'complacency'.",
+  "handbookRef": null,
+  "difficulty": "hard",
+  "level": "C2",
+  "moduleRefs": [
+   "c2.rhetoric"
+  ],
+  "lessonRefs": [
+   "c2.rhetoric.007"
+  ]
+ }
+]

@@ -42,6 +42,25 @@ export class UserVocabularyProgress {
 
   @Prop({ type: [String], default: [] })
   lessonRefs?: string[]; // Lessons where this word was encountered
+
+  // --- SRS: интервальное повторение (SM-2-lite) ---
+  @Prop({ default: 0 })
+  repetitions?: number; // подряд успешных повторений
+
+  @Prop({ default: 0 })
+  intervalDays?: number; // текущий интервал в днях
+
+  @Prop({ default: 2.5 })
+  ease?: number; // фактор лёгкости
+
+  @Prop()
+  dueAt?: Date; // когда атом пора повторить
+
+  @Prop({ default: 0 })
+  lapses?: number; // сколько раз забывал
+
+  @Prop()
+  introducedAt?: Date; // когда впервые показан
 }
 
 export const UserVocabularyProgressSchema = SchemaFactory.createForClass(UserVocabularyProgress);
@@ -50,3 +69,4 @@ export const UserVocabularyProgressSchema = SchemaFactory.createForClass(UserVoc
 UserVocabularyProgressSchema.index({ userId: 1, moduleRef: 1 });
 UserVocabularyProgressSchema.index({ userId: 1, wordId: 1 });
 UserVocabularyProgressSchema.index({ userId: 1, moduleRef: 1, status: 1 });
+UserVocabularyProgressSchema.index({ userId: 1, dueAt: 1 }); // очередь повторений

@@ -13,7 +13,8 @@ import {
   VocabularyProgressResponseDto,
   UserWordProgressResponseDto,
   SyncVocabularyResponseDto,
-  VocabularyStatsResponseDto
+  VocabularyStatsResponseDto,
+  ReviewSubmitDto
 } from './dto/vocabulary.dto';
 
 @Controller('vocabulary')
@@ -44,6 +45,51 @@ export class VocabularyController {
     }
 
     return await this.vocabularyService.getVocabularyStats(userId);
+  }
+
+  /**
+   * Дневная очередь повторений: созревшие атомы + немного новых слов.
+   * GET /vocabulary/review/queue
+   */
+  @Get('review/queue')
+  async getReviewQueue(
+    @Request() req: any,
+    @Query('newLimit') newLimit?: string,
+    @Query('reviewLimit') reviewLimit?: string,
+    @Query('focus') focus?: string,
+  ) {
+    const userId = req.user?.userId;
+    if (!userId) throw new BadRequestException('userId is required');
+    return await this.vocabularyService.getReviewQueue(
+      userId,
+      {
+        newLimit: newLimit ? Number(newLimit) : undefined,
+        reviewLimit: reviewLimit ? Number(reviewLimit) : undefined,
+      },
+      focus === 'weak' ? 'weak' : 'due',
+    );
+  }
+
+  /**
+   * Обработать одно повторение/ввод атома (применяет SRS-планирование).
+   * POST /vocabulary/review/submit
+   */
+  @Post('review/submit')
+  async submitReview(@Request() req: any, @Body() body: ReviewSubmitDto) {
+    const userId = req.user?.userId;
+    if (!userId) throw new BadRequestException('userId is required');
+    return await this.vocabularyService.submitReview(userId, body.wordId, { mode: body.mode, choice: body.choice, stage: body.stage });
+  }
+
+  /**
+   * Сводка по повторениям для главной/шапки.
+   * GET /vocabulary/review/stats
+   */
+  @Get('review/stats')
+  async getReviewStats(@Request() req: any) {
+    const userId = req.user?.userId;
+    if (!userId) throw new BadRequestException('userId is required');
+    return await this.vocabularyService.getReviewStats(userId);
   }
 
   /**

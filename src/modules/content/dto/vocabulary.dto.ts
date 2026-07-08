@@ -1,4 +1,20 @@
-import { IsString, IsOptional, IsEnum, IsBoolean, IsNumber, Min, Max } from 'class-validator';
+import { IsString, IsOptional, IsEnum, IsBoolean, IsNumber, IsIn, Min, Max } from 'class-validator';
+
+export class ReviewSubmitDto {
+  @IsString()
+  wordId!: string;
+
+  @IsIn(['teach', 'test'])
+  mode!: 'teach' | 'test';
+
+  @IsOptional()
+  @IsString()
+  choice?: string;
+
+  @IsOptional()
+  @IsIn(['recognize', 'recall'])
+  stage?: 'recognize' | 'recall';
+}
 
 export class GetModuleVocabularyDto {
   @IsString()

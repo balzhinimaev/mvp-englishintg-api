@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { AudioValidationData } from '../../common/types/validation-data';
 import { TaskValidationStrategy, ValidationResult } from './task-validation.strategy';
+import { normalizeAnswer } from './normalize';
 
 /**
  * Стратегия валидации для задач типа listen/listening/speak.
@@ -37,9 +38,9 @@ export class AudioValidationStrategy implements TaskValidationStrategy {
 
       // text answer path (option text)
       const asText = typeof parsed === 'string' ? parsed : String(userAnswer ?? '');
-      const normalizedAnswer = asText.trim().toLowerCase();
-      const normalizedCorrect = String(validationData.options[validationData.correctIndex] ?? '').trim().toLowerCase();
-      const isCorrect = normalizedAnswer.length > 0 && normalizedAnswer === normalizedCorrect;
+      const normAnswer = normalizeAnswer(asText);
+      const normalizedCorrect = normalizeAnswer(String(validationData.options[validationData.correctIndex] ?? ''));
+      const isCorrect = normAnswer.length > 0 && normAnswer === normalizedCorrect;
 
       return {
         isCorrect,
@@ -52,10 +53,10 @@ export class AudioValidationStrategy implements TaskValidationStrategy {
     // 2) target-based path (speak / legacy listen)
     const parsed = this.safeParse(userAnswer);
     const asText = typeof parsed === 'string' ? parsed : String(userAnswer ?? '');
-    const normalizedAnswer = asText.trim().toLowerCase();
-    const normalizedTarget = validationData.target?.toLowerCase() || '';
+    const normalizedAnswer = normalizeAnswer(asText);
+    const normalizedTarget = normalizeAnswer(validationData.target || '');
 
-    const isCorrect = normalizedAnswer === normalizedTarget;
+    const isCorrect = normalizedAnswer.length > 0 && normalizedAnswer === normalizedTarget;
 
     return {
       isCorrect,
