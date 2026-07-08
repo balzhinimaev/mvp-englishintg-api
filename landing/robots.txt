@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /$
+Allow: /og.png
+Disallow: /webapp/
+Disallow: /audio/
+Disallow: /bot
+Disallow: /auth/
+Disallow: /content/
+Disallow: /progress/
+Disallow: /profile/
+Disallow: /payments/
+Disallow: /docs
+
+Sitemap: https://englishintg.ru/sitemap.xml
