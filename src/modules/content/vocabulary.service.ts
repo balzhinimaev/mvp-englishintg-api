@@ -9,6 +9,7 @@ import { VocabularyItem as VocabularyItemType, UserVocabularyProgress as UserVoc
 import { VocabularyMapper, UserVocabularyProgressMapper } from '../common/utils/mappers';
 import { schedule, Grade } from './srs';
 import { GrammarAtom, GrammarAtomDocument } from '../common/schemas/grammar-atom.schema';
+import { UserLessonProgress, UserLessonProgressDocument } from '../common/schemas/user-lesson-progress.schema';
 import {
   VocabularyStatsResponseDto,
   VocabularySummaryDto,
@@ -60,6 +61,7 @@ export class VocabularyService {
     @InjectModel(Lesson.name) private readonly lessonModel: Model<LessonDocument>,
     @InjectModel(User.name) private readonly userModel: Model<UserDocument>,
     @InjectModel(GrammarAtom.name) private readonly grammarModel: Model<GrammarAtomDocument>,
+    @InjectModel(UserLessonProgress.name) private readonly lessonProgressModel: Model<UserLessonProgressDocument>,
   ) {}
 
   /**
@@ -426,8 +428,19 @@ export class VocabularyService {
 
       if (nv > 0 || ng > 0) {
         const seen = await this.progressModel.distinct('wordId', { userId });
-        const newVocab = nv > 0 ? await this.vocabularyModel.find({ id: { $nin: seen } }).sort({ occurrenceCount: -1 }).limit(nv).lean() : [];
-        const newGram = ng > 0 ? await this.grammarModel.find({ id: { $nin: seen } }).sort({ level: 1 }).limit(ng).lean() : [];
+        // Новые атомы — ТОЛЬКО из пройденных уроков: SRS закрепляет курс,
+        // а не заменяет его (и не отдаёт платный словарь бесплатно)
+        const completedLessons: string[] = await this.lessonProgressModel.distinct('lessonRef', {
+          userId: String(userId),
+          status: 'completed',
+        });
+        const completedModules = Array.from(new Set(completedLessons.map((r) => r.split('.').slice(0, 2).join('.'))));
+        const newVocab = nv > 0 && completedLessons.length
+          ? await this.vocabularyModel.find({ id: { $nin: seen }, lessonRefs: { $in: completedLessons } }).sort({ occurrenceCount: -1 }).limit(nv).lean()
+          : [];
+        const newGram = ng > 0 && completedModules.length
+          ? await this.grammarModel.find({ id: { $nin: seen }, moduleRefs: { $in: completedModules } }).sort({ level: 1 }).limit(ng).lean()
+          : [];
         const teachVocab = newVocab.map((v: any) => ({
           kind: 'word', wordId: v.id, word: v.word, transcription: v.transcription, audioKey: v.audioKey,
           translation: v.translation, example: (v.examples || [])[0] || null, isNew: true, mode: 'teach',

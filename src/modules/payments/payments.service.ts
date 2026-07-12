@@ -227,8 +227,14 @@ export class PaymentsService {
 
         const now = new Date();
         const existing = await this.entitlementModel.findOne({ userId, product }).session(session);
-        const base = existing?.endsAt && existing.endsAt > now ? existing.endsAt : now;
-        const newEndsAt = new Date(base.getTime() + durationDays * 24 * 60 * 60 * 1000);
+        // Оплаченное время не должно теряться при смене тарифа: новый период
+        // стартует после САМОГО ПОЗДНЕГО endsAt среди всех entitlements юзера
+        const latestAny = await this.entitlementModel
+          .findOne({ userId })
+          .sort({ endsAt: -1 })
+          .session(session);
+        const maxEndsAt = latestAny?.endsAt && latestAny.endsAt > now ? latestAny.endsAt : now;
+        const newEndsAt = new Date(maxEndsAt.getTime() + durationDays * 24 * 60 * 60 * 1000);
         const startsAt = existing?.startsAt || now;
 
         await this.entitlementModel.updateOne(
