@@ -44,6 +44,7 @@ export class MatchingValidationStrategy implements TaskValidationStrategy {
       correctAnswer: validationData.pairs
         .map(p => `${p.left} → ${p.right}`)
         .join(', '),
+      explanation: taskData?.explanation,
       feedback: isCorrect ? undefined : `Правильно: ${correctCount} из ${validationData.pairs.length}`,
     };
   }

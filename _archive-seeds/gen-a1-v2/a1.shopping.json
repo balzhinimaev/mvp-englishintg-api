@@ -1,0 +1,868 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a1.shopping",
+      "level": "A1",
+      "title": { "ru": "Покупки и деньги A1", "en": "Shopping & Money A1" },
+      "description": { "ru": "Магазин, цены, оплата, возвраты", "en": "Stores, prices, payments, returns" },
+      "tags": ["a1", "shopping", "money"],
+      "order": 6,
+      "published": true
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.001",
+      "title": { "ru": "В продуктовом магазине", "en": "At the Grocery Store" },
+      "description": { "ru": "Продукты, some и any, вопрос о наличии", "en": "Food words, some and any, asking what the shop has" },
+      "order": 1,
+      "published": true,
+      "estimatedMinutes": 10,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Excuse me, do you have ____ milk?",
+            "options": ["a", "any", "a few", "many"],
+            "correctIndex": 1,
+            "hint": "Это вопрос, а молоко — неисчисляемое.",
+            "explanation": "В вопросах с неисчисляемыми существительными используем any: Do you have any milk? «A milk» и «many milk» — типичные ошибки: молоко нельзя посчитать штуками."
+          }
+        },
+        {
+          "ref": "a1.shopping.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "I'd like ____ apples, please.",
+            "answer": "some",
+            "hint": "Утвердительное предложение: any здесь не подходит.",
+            "explanation": "В утвердительных предложениях о неопределённом количестве используем some: I'd like some apples. Any обычно живёт в вопросах и отрицаниях.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.001.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "bread", "right": "хлеб" },
+              { "left": "milk", "right": "молоко" },
+              { "left": "cheese", "right": "сыр" },
+              { "left": "eggs", "right": "яйца" },
+              { "left": "butter", "right": "масло" },
+              { "left": "sugar", "right": "сахар" }
+            ],
+            "hint": "Базовая продуктовая корзина.",
+            "explanation": "Это самые частые продукты в списке покупок. Обрати внимание: bread, milk, cheese, butter, sugar — неисчисляемые, а eggs — исчисляемое."
+          }
+        },
+        {
+          "ref": "a1.shopping.001.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Do", "we", "need", "any", "eggs", "?"],
+            "hint": "Общий вопрос начинается со вспомогательного глагола.",
+            "explanation": "Порядок общего вопроса: Do + подлежащее + глагол: Do we need any eggs? Русскоязычные часто говорят «We need eggs?» с одной интонацией — в английском нужен do."
+          }
+        },
+        {
+          "ref": "a1.shopping.001.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.001.t5.any-juice",
+            "transcript": "I'm at the store. Do you want any juice?",
+            "translation": "Я в магазине. Хочешь сока?",
+            "question": "Что говорящий предлагает купить?",
+            "options": ["Juice", "Milk", "Bread", "Cheese"],
+            "correctIndex": 0,
+            "hint": "Слушай слово после any.",
+            "explanation": "Говорящий спрашивает: Do you want any juice? — «Хочешь сока?». Остальные продукты в аудио не звучат."
+          }
+        },
+        {
+          "ref": "a1.shopping.001.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Do you have any fresh bread?\"",
+            "target": "Do you have any fresh bread?",
+            "audioKey": "a1.shopping.001.t6.fresh-bread",
+            "hint": "Вопрос о наличии: do you have + any.",
+            "explanation": "Do you have any fresh bread? — «У вас есть свежий хлеб?» Универсальная фраза для любого продукта: подставляй нужное слово вместо bread."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.002",
+      "title": { "ru": "Цены и числа", "en": "Prices and Numbers" },
+      "description": { "ru": "How much is/are, числа 13/30, цены на слух", "en": "How much is/are, tricky numbers, hearing prices" },
+      "order": 2,
+      "published": true,
+      "estimatedMinutes": 11,
+      "type": "grammar",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.002.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.002.t1.tomato-price",
+            "transcript": "The tomatoes are two euros fifty a kilo.",
+            "translation": "Помидоры — два евро пятьдесят за килограмм.",
+            "question": "Сколько стоит килограмм помидоров?",
+            "options": ["€2.15", "€3.50", "€2.50", "€2.55"],
+            "correctIndex": 2,
+            "hint": "Слушай два числа: евро и центы.",
+            "explanation": "Two euros fifty = €2.50. Цены часто называют без слова cents: two fifty, four ninety."
+          }
+        },
+        {
+          "ref": "a1.shopping.002.t2",
+          "type": "choice",
+          "data": {
+            "question": "____ is this bottle of water?",
+            "options": ["How many", "How often", "How old", "How much"],
+            "correctIndex": 3,
+            "hint": "Спрашиваем цену.",
+            "explanation": "О цене спрашиваем How much is...? How many — про количество штук (How many bottles?), а не про деньги."
+          }
+        },
+        {
+          "ref": "a1.shopping.002.t3",
+          "type": "gap",
+          "data": {
+            "text": "How ____ is the cheese? — It's five euros.",
+            "answer": "much",
+            "hint": "Вопрос о цене, а не о количестве кусков.",
+            "explanation": "How much is the cheese? — «Сколько стоит сыр?» С ценами всегда much, даже если товар исчисляемый: How much are the apples?",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.002.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Сколько стоят эти яблоки?»",
+            "expected": ["How much are these apples?", "How much do these apples cost?"],
+            "hint": "Яблок много, поэтому глагол во множественном числе.",
+            "explanation": "How much are these apples? Частая ошибка — «How many are these apples?»: how many спрашивает о числе штук, а не о цене."
+          }
+        },
+        {
+          "ref": "a1.shopping.002.t5",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "thirteen", "right": "тринадцать" },
+              { "left": "thirty", "right": "тридцать" },
+              { "left": "fifteen", "right": "пятнадцать" },
+              { "left": "fifty", "right": "пятьдесят" },
+              { "left": "nineteen", "right": "девятнадцать" },
+              { "left": "ninety", "right": "девяносто" }
+            ],
+            "hint": "-teen — числа 13–19, -ty — десятки.",
+            "explanation": "ThirTEEN (13) и THIRty (30) различаются ударением и концовкой: -teen — ударное и длинное, -ty — короткое. Продавцы путают их специально редко, а покупатели — часто."
+          }
+        },
+        {
+          "ref": "a1.shopping.002.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"How much is this, please?\"",
+            "target": "How much is this, please?",
+            "audioKey": "a1.shopping.002.t6.how-much-is-this",
+            "hint": "Главный вопрос покупателя во всём мире.",
+            "explanation": "How much is this, please? — «Сколько это стоит?» Работает с любым товаром: просто покажи на него."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.003",
+      "title": { "ru": "Одежда и размеры", "en": "Clothes and Sizes" },
+      "description": { "ru": "Названия одежды, размеры S/M/L, look for", "en": "Clothes words, sizes, looking for things" },
+      "order": 3,
+      "published": true,
+      "estimatedMinutes": 11,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "What ____ are you? — I'm a medium.",
+            "options": ["size", "number", "height", "age"],
+            "correctIndex": 0,
+            "hint": "Ответ — S, M или L.",
+            "explanation": "What size are you? — стандартный вопрос продавца об одежде. «What number are you?» — калька с русского «какой у вас номер», так не говорят."
+          }
+        },
+        {
+          "ref": "a1.shopping.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "I'm looking ____ a warm jacket.",
+            "answer": "for",
+            "hint": "После look нужен предлог со значением «искать».",
+            "explanation": "Look for = искать: I'm looking for a jacket. Без предлога look значит «смотреть», а look at — «смотреть на».",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.003.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "a shirt", "right": "рубашка" },
+              { "left": "a skirt", "right": "юбка" },
+              { "left": "trousers", "right": "брюки" },
+              { "left": "a dress", "right": "платье" },
+              { "left": "shoes", "right": "туфли" },
+              { "left": "a coat", "right": "пальто" }
+            ],
+            "hint": "Не перепутай две похожие по буквам вещи.",
+            "explanation": "Shirt (рубашка) и skirt (юбка) различаются одной буквой — классическая путаница. Trousers и shoes всегда во множественном числе."
+          }
+        },
+        {
+          "ref": "a1.shopping.003.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Do", "you", "have", "it", "in", "a", "smaller", "size", "?"],
+            "hint": "Общий вопрос, в конце — «в размере поменьше».",
+            "explanation": "Do you have it in a smaller size? — «А есть размером поменьше?» Запомни конструкцию in a size: in a medium, in a 38."
+          }
+        },
+        {
+          "ref": "a1.shopping.003.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «У вас есть эти туфли 38-го размера?»",
+            "expected": ["Do you have these shoes in size 38?", "Have you got these shoes in size 38?", "Do you have these shoes in a size 38?"],
+            "hint": "«Эти» — множественное число, размер через in.",
+            "explanation": "Do you have these shoes in size 38? Размер присоединяется предлогом in, а не «of 38 size» — это калька с русского."
+          }
+        },
+        {
+          "ref": "a1.shopping.003.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Do you have this in a medium?\"",
+            "target": "Do you have this in a medium?",
+            "audioKey": "a1.shopping.003.t6.in-a-medium",
+            "hint": "Спроси про размер M.",
+            "explanation": "Do you have this in a medium? — «А есть это в размере M?» Так же спрашивают про цвет: Do you have this in black?"
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.004",
+      "title": { "ru": "В примерочной", "en": "In the Fitting Room" },
+      "description": { "ru": "this/that/these/those, try on, fit", "en": "this/that/these/those, trying clothes on" },
+      "order": 4,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "____ jeans are too long. Can I try another pair?",
+            "options": ["This", "These", "That", "It"],
+            "correctIndex": 1,
+            "hint": "Jeans — множественное число, и они у тебя в руках.",
+            "explanation": "Jeans, trousers, shorts — всегда множественное число, поэтому these jeans. «This jeans» — типичная ошибка: в русском «эти джинсы» тоже множественное, но одна вещь сбивает."
+          }
+        },
+        {
+          "ref": "a1.shopping.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "____ shirt fits well, but that one is too big.",
+            "answer": "this",
+            "hint": "Предмет рядом с тобой, единственное число.",
+            "explanation": "This — для предмета рядом, that — для дальнего: this shirt (на мне) vs that one (на вешалке). Контраст в предложении подсказывает пару this/that.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.004.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Where", "are", "the", "fitting", "rooms", "?"],
+            "hint": "Специальный вопрос: вопросительное слово, потом глагол.",
+            "explanation": "Where are the fitting rooms? — «Где примерочные?» После where сразу идёт are, без do: ошибка «Where do the fitting rooms?» встречается часто."
+          }
+        },
+        {
+          "ref": "a1.shopping.004.t4",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.004.t4.shoes-small",
+            "transcript": "These shoes are nice, but they're a bit small for me.",
+            "translation": "Эти туфли красивые, но они мне немного малы.",
+            "question": "Что не так с туфлями?",
+            "options": ["They are too big", "They are too expensive", "They are the wrong colour", "They are a bit small"],
+            "correctIndex": 3,
+            "hint": "Слушай, что идёт после but.",
+            "explanation": "Говорящий хвалит туфли (nice), но they're a bit small — «немного малы». A bit = немного."
+          }
+        },
+        {
+          "ref": "a1.shopping.004.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Можно это примерить?»",
+            "expected": ["Can I try this on?", "Can I try it on?", "May I try this on?"],
+            "hint": "Фразовый глагол «примерить» заканчивается на on.",
+            "explanation": "Can I try this on? Частица on уходит в конец. «Can I try on this?» звучит хуже, а «Can I measure this?» — неверная калька с «померить»."
+          }
+        },
+        {
+          "ref": "a1.shopping.004.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"These jeans fit me well.\"",
+            "target": "These jeans fit me well.",
+            "audioKey": "a1.shopping.004.t6.jeans-fit",
+            "hint": "Fit — «подходить по размеру».",
+            "explanation": "These jeans fit me well — «Эти джинсы мне хорошо подходят». Fit — про размер, suit — про стиль: This colour suits you."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.005",
+      "title": { "ru": "Оплата: карта или наличные", "en": "Paying: Card or Cash" },
+      "description": { "ru": "pay by card / in cash, сдача и чек", "en": "Paying by card or in cash, change and receipts" },
+      "order": 5,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.005.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.005.t1.card-or-cash",
+            "transcript": "That's eighteen ninety. Are you paying by card or in cash?",
+            "translation": "С вас восемнадцать девяносто. Вы платите картой или наличными?",
+            "question": "Сколько нужно заплатить?",
+            "options": ["18.90", "80.90", "19.80", "18.19"],
+            "correctIndex": 0,
+            "hint": "Не перепутай -teen и -ty.",
+            "explanation": "Eighteen ninety = 18.90. EighTEEN (18) — ударение на конец, EIGHTy (80) — на начало."
+          }
+        },
+        {
+          "ref": "a1.shopping.005.t2",
+          "type": "choice",
+          "data": {
+            "question": "How would you like to pay? — ____",
+            "options": ["I pay card.", "On card, please.", "By card, please.", "With card, please."],
+            "correctIndex": 2,
+            "hint": "Нужен правильный предлог перед card.",
+            "explanation": "Платим by card — «картой». «On card» и «I pay card» — кальки с русского; with требует артикля (with my card) и звучит менее естественно."
+          }
+        },
+        {
+          "ref": "a1.shopping.005.t3",
+          "type": "gap",
+          "data": {
+            "text": "Can I pay ____ cash?",
+            "answer": "in",
+            "accept": ["with"],
+            "hint": "Предлог другой, чем с картой.",
+            "explanation": "Наличными — in cash, картой — by card. Пары «by card / in cash» стоит выучить вместе.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.005.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "cash", "right": "наличные" },
+              { "left": "a card", "right": "карта" },
+              { "left": "a receipt", "right": "чек" },
+              { "left": "change", "right": "сдача" },
+              { "left": "a wallet", "right": "кошелёк" },
+              { "left": "a price", "right": "цена" }
+            ],
+            "hint": "Всё, что происходит на кассе.",
+            "explanation": "Receipt читается [рисИт] — p не произносится. Change — это и «сдача», и «мелочь»."
+          }
+        },
+        {
+          "ref": "a1.shopping.005.t5",
+          "type": "order",
+          "data": {
+            "tokens": ["Would", "you", "like", "a", "receipt", "?"],
+            "hint": "Вежливое предложение начинается с would.",
+            "explanation": "Would you like a receipt? — «Вам нужен чек?» Would you like — вежливее, чем do you want, кассиры говорят именно так."
+          }
+        },
+        {
+          "ref": "a1.shopping.005.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I'd like to pay by card, please.\"",
+            "target": "I'd like to pay by card, please.",
+            "audioKey": "a1.shopping.005.t6.pay-by-card",
+            "hint": "I'd = I would.",
+            "explanation": "I'd like to pay by card, please — вежливый способ сказать «я буду платить картой». I'd like мягче, чем I want."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.006",
+      "title": { "ru": "Скидки и акции", "en": "Discounts and Special Offers" },
+      "description": { "ru": "on sale, 50% off, дёшево и дорого", "en": "Sales, percent off, cheap and expensive" },
+      "order": 6,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "This T-shirt is 50% ____ today.",
+            "options": ["off", "of", "out", "down"],
+            "correctIndex": 0,
+            "hint": "Наречие «скидки» на ценниках по всему миру.",
+            "explanation": "50% off = скидка 50%. «50% of» значило бы «50% от чего-то», а off показывает, что цену «сняли»."
+          }
+        },
+        {
+          "ref": "a1.shopping.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "Everything is on ____ this week.",
+            "answer": "sale",
+            "hint": "Устойчивое выражение с on: товары стали дешевле.",
+            "explanation": "On sale = со скидкой, на распродаже. Не путай с for sale — «продаётся» (например, дом).",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.006.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.006.t3.winter-coats",
+            "transcript": "Good news! Today all winter coats are thirty percent off.",
+            "translation": "Хорошие новости! Сегодня все зимние пальто со скидкой тридцать процентов.",
+            "question": "Какая скидка на зимние пальто?",
+            "options": ["13%", "30%", "33%", "3%"],
+            "correctIndex": 1,
+            "hint": "Число оканчивается на -ty, не на -teen.",
+            "explanation": "Thirty percent off = скидка 30%. THIRty — ударение на первый слог; thirTEEN звучало бы длиннее и с ударением на конец."
+          }
+        },
+        {
+          "ref": "a1.shopping.006.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Это со скидкой?»",
+            "expected": ["Is this on sale?", "Is it on sale?"],
+            "hint": "Вспомни выражение из второго задания.",
+            "explanation": "Is this on sale? — «Это по акции / со скидкой?» Короткий вопрос, который экономит деньги."
+          }
+        },
+        {
+          "ref": "a1.shopping.006.t5",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "a discount", "right": "скидка" },
+              { "left": "cheap", "right": "дешёвый" },
+              { "left": "expensive", "right": "дорогой" },
+              { "left": "free", "right": "бесплатный" },
+              { "left": "half price", "right": "за полцены" },
+              { "left": "a special offer", "right": "акция" }
+            ],
+            "hint": "Слова с ценников и рекламных плакатов.",
+            "explanation": "Free — «бесплатный», а не «свободный», когда речь о цене. Half price = за полцены: It's half price today."
+          }
+        },
+        {
+          "ref": "a1.shopping.006.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Is there a discount on this?\"",
+            "target": "Is there a discount on this?",
+            "audioKey": "a1.shopping.006.t6.discount-question",
+            "hint": "Конструкция is there...? — «есть ли...?»",
+            "explanation": "Is there a discount on this? — «На это есть скидка?» Скидка на что-то = discount on something."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.007",
+      "title": { "ru": "Возврат товара", "en": "Returning Goods" },
+      "description": { "ru": "return, refund, exchange, чек при возврате", "en": "Returns, refunds, exchanges, receipts" },
+      "order": 7,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "I'd like to ____ this jacket. It doesn't fit.",
+            "options": ["turn back", "give", "return", "money back"],
+            "correctIndex": 2,
+            "hint": "Один глагол, а не фраза из двух слов.",
+            "explanation": "Вернуть товар = return: I'd like to return this jacket. «Turn back» — «повернуть назад» (о движении), типичная калька с «вернуть»."
+          }
+        },
+        {
+          "ref": "a1.shopping.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "Do you have the ____? — Yes, here it is.",
+            "answer": "receipt",
+            "hint": "Документ об оплате: без него возврат обычно не делают.",
+            "explanation": "Receipt — чек. Первое, что спросят при возврате: Do you have the receipt? Буква p в этом слове не читается.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.007.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Can", "we", "get", "a", "refund", "without", "the", "receipt", "?"],
+            "hint": "Вопрос с can: can + подлежащее + глагол.",
+            "explanation": "Can we get a refund without the receipt? — «Можно вернуть деньги без чека?» Refund — возврат денег, get a refund — устойчивое сочетание."
+          }
+        },
+        {
+          "ref": "a1.shopping.007.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я хочу вернуть эти брюки»",
+            "expected": ["I want to return these trousers.", "I'd like to return these trousers.", "I would like to return these trousers.", "I want to return these pants."],
+            "hint": "Брюки — множественное число: «эти», не «эта».",
+            "explanation": "I want to return these trousers. Trousers всегда во множественном числе, поэтому these. В американском английском брюки — pants."
+          }
+        },
+        {
+          "ref": "a1.shopping.007.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.007.t5.no-refund",
+            "transcript": "I'm sorry, we can't give you a refund without a receipt.",
+            "translation": "Извините, мы не можем вернуть вам деньги без чека.",
+            "question": "Без чего магазин не вернёт деньги?",
+            "options": ["Без карты", "Без скидки", "Без пакета", "Без чека"],
+            "correctIndex": 3,
+            "hint": "Слушай слово после without.",
+            "explanation": "Without a receipt — «без чека». Can't give a refund = не можем вернуть деньги."
+          }
+        },
+        {
+          "ref": "a1.shopping.007.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"This shirt is too big. Can I exchange it?\"",
+            "target": "This shirt is too big. Can I exchange it?",
+            "audioKey": "a1.shopping.007.t6.exchange-shirt",
+            "hint": "Exchange — поменять на другой товар, не вернуть деньги.",
+            "explanation": "Can I exchange it? — «Можно обменять?» Exchange — обмен товара, refund — возврат денег: разные просьбы на кассе."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.008",
+      "title": { "ru": "Онлайн-заказ", "en": "Ordering Online" },
+      "description": { "ru": "Корзина, доставка, наличие товара", "en": "Cart, delivery, stock" },
+      "order": 8,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "vocabulary",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "How ____ does delivery cost?",
+            "options": ["many", "much", "often", "long"],
+            "correctIndex": 1,
+            "hint": "Cost — это про деньги.",
+            "explanation": "How much does delivery cost? — «Сколько стоит доставка?» How long подошло бы к take (сколько занимает), но не к cost."
+          }
+        },
+        {
+          "ref": "a1.shopping.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "Add the shoes to your ____ and pay online.",
+            "answer": "basket",
+            "accept": ["cart"],
+            "hint": "Туда складывают товары перед оплатой в интернет-магазине.",
+            "explanation": "Add to basket (брит.) или add to cart (амер.) — «добавить в корзину». Обе кнопки встречаются в магазинах постоянно.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.008.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "delivery", "right": "доставка" },
+              { "left": "an order", "right": "заказ" },
+              { "left": "add to cart", "right": "добавить в корзину" },
+              { "left": "free shipping", "right": "бесплатная пересылка" },
+              { "left": "in stock", "right": "в наличии" },
+              { "left": "sold out", "right": "распродано" }
+            ],
+            "hint": "Слова с любого сайта интернет-магазина.",
+            "explanation": "In stock — товар есть, sold out — всё продано. Shipping и delivery — почти синонимы, но shipping чаще про пересылку из магазина к тебе."
+          }
+        },
+        {
+          "ref": "a1.shopping.008.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["How", "many", "days", "does", "delivery", "take", "?"],
+            "hint": "Вопрос о количестве дней: сколько занимает доставка.",
+            "explanation": "How many days does delivery take? Дни считаются штуками, поэтому many. Take здесь = «занимать (время)»."
+          }
+        },
+        {
+          "ref": "a1.shopping.008.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Доставка бесплатная?»",
+            "expected": ["Is delivery free?", "Is the delivery free?", "Is shipping free?"],
+            "hint": "Короткий вопрос с is в начале.",
+            "explanation": "Is delivery free? В вопросе is выходит на первое место. «Delivery is free?» с вопросительной интонацией — русская привычка, в английском нужна инверсия."
+          }
+        },
+        {
+          "ref": "a1.shopping.008.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.008.t6.order-on-way",
+            "transcript": "Your order is on its way. It will arrive in three days.",
+            "translation": "Ваш заказ в пути. Он прибудет через три дня.",
+            "question": "Когда придёт заказ?",
+            "options": ["Через два дня", "Через тринадцать дней", "Через три дня", "Через три недели"],
+            "correctIndex": 2,
+            "hint": "Слушай число перед days.",
+            "explanation": "In three days = через три дня. Предлог in с будущим временем значит «через»: in an hour, in a week."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.009",
+      "title": { "ru": "На рынке", "en": "At the Market" },
+      "description": { "ru": "Вес, килограммы, торг о цене", "en": "Weight, kilos, bargaining" },
+      "order": 9,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.009.t1",
+          "type": "choice",
+          "data": {
+            "question": "How ____ potatoes do you want? — Two kilos, please.",
+            "options": ["some", "much", "many", "any"],
+            "correctIndex": 2,
+            "hint": "Картофелины можно посчитать.",
+            "explanation": "Potatoes — исчисляемое, поэтому how many potatoes. «How much potatoes» — одна из самых частых ошибок русскоговорящих: в русском «сколько» одно на всё."
+          }
+        },
+        {
+          "ref": "a1.shopping.009.t2",
+          "type": "gap",
+          "data": {
+            "text": "Can I have half a ____ of grapes, please?",
+            "answer": "kilo",
+            "accept": ["kilogram"],
+            "hint": "Единица веса — тысяча граммов.",
+            "explanation": "Half a kilo of grapes — полкило винограда. Неисчисляемое или «весовое» покупаем через меру: a kilo of, half a kilo of, a bag of.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.009.t3",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Сколько стоит килограмм помидоров?»",
+            "expected": ["How much is a kilo of tomatoes?", "How much does a kilo of tomatoes cost?"],
+            "hint": "Цена — значит much; килограмм чего-то — через of.",
+            "explanation": "How much is a kilo of tomatoes? Конструкция «a kilo of + продукт» — главный шаблон рынка."
+          }
+        },
+        {
+          "ref": "a1.shopping.009.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Can", "you", "give", "me", "a", "discount", "?"],
+            "hint": "Просьба с can: can + you + глагол.",
+            "explanation": "Can you give me a discount? — «Можете дать скидку?» Порядок просьбы: Can you + глагол + me. На рынках так торгуются каждый день."
+          }
+        },
+        {
+          "ref": "a1.shopping.009.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.009.t5.strawberries",
+            "transcript": "These strawberries are five euros, but for you it's four fifty.",
+            "translation": "Эта клубника — пять евро, но для вас — четыре пятьдесят.",
+            "question": "Какую цену в итоге предлагает продавец?",
+            "options": ["€5.00", "€4.50", "€5.40", "€4.15"],
+            "correctIndex": 1,
+            "hint": "Слушай цену после but for you.",
+            "explanation": "Four fifty = €4.50 — цена «для вас» после торга. Первая цена (five euros) была стартовой."
+          }
+        },
+        {
+          "ref": "a1.shopping.009.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"That's too expensive. Can you do four euros?\"",
+            "target": "That's too expensive. Can you do four euros?",
+            "audioKey": "a1.shopping.009.t6.four-euros",
+            "hint": "Фраза для торга: «слишком дорого» + своя цена.",
+            "explanation": "Too expensive — «слишком дорого». Can you do four euros? — разговорный способ предложить свою цену; do здесь = «согласиться на»."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.shopping",
+      "lessonRef": "a1.shopping.010",
+      "title": { "ru": "Идём за покупками: повторение", "en": "Shopping Day: Review" },
+      "description": { "ru": "Большой диалог: выбор, примерка, скидка, оплата", "en": "A full shopping dialogue: choosing, trying on, paying" },
+      "order": 10,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.shopping.010.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.shopping.010.t1.present-for-mum",
+            "transcript": "I need a present for my mum. How much is that scarf?",
+            "translation": "Мне нужен подарок для мамы. Сколько стоит тот шарф?",
+            "question": "Что покупатель хочет купить и для кого?",
+            "options": ["Шарф для себя", "Подарок для мамы", "Подарок для папы", "Цветы для мамы"],
+            "correctIndex": 1,
+            "hint": "Слушай, что идёт после for.",
+            "explanation": "A present for my mum — подарок для мамы; покупатель присматривает шарф (that scarf) именно как подарок."
+          }
+        },
+        {
+          "ref": "a1.shopping.010.t2",
+          "type": "choice",
+          "data": {
+            "question": "There isn't ____ milk left. Can you buy some?",
+            "options": ["much", "many", "a", "few"],
+            "correctIndex": 0,
+            "hint": "Отрицание с неисчисляемым существительным.",
+            "explanation": "Молоко — неисчисляемое: not much milk. Many и few работают только с исчисляемыми (many apples, few shops)."
+          }
+        },
+        {
+          "ref": "a1.shopping.010.t3",
+          "type": "gap",
+          "data": {
+            "text": "____ shoes over there are nice, but they're expensive.",
+            "answer": "those",
+            "hint": "Предметы далеко (over there), множественное число.",
+            "explanation": "Those — «те» (далеко, много): those shoes over there. Пары для запоминания: this/these — рядом, that/those — далеко.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.shopping.010.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "How much is it?", "right": "Сколько это стоит?" },
+              { "left": "Can I try it on?", "right": "Можно это примерить?" },
+              { "left": "I'd like a refund.", "right": "Я хочу вернуть деньги." },
+              { "left": "By card, please.", "right": "Картой, пожалуйста." },
+              { "left": "Do you have a receipt?", "right": "У вас есть чек?" },
+              { "left": "It's half price.", "right": "Это за полцены." }
+            ],
+            "hint": "Ключевые фразы всех уроков модуля.",
+            "explanation": "Шесть фраз, которые закрывают весь поход в магазин: цена, примерка, оплата, скидка, чек и возврат."
+          }
+        },
+        {
+          "ref": "a1.shopping.010.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я заплачу наличными»",
+            "expected": ["I'll pay in cash.", "I will pay in cash.", "I'll pay cash.", "I will pay cash."],
+            "hint": "Будущее время + предлог из урока про оплату.",
+            "explanation": "I'll pay in cash. Сокращение I'll = I will. Наличными — in cash (или разговорное pay cash без предлога)."
+          }
+        },
+        {
+          "ref": "a1.shopping.010.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I'll take it. Can I pay by card?\"",
+            "target": "I'll take it. Can I pay by card?",
+            "audioKey": "a1.shopping.010.t6.take-it-card",
+            "hint": "«Беру!» + вопрос об оплате.",
+            "explanation": "I'll take it — «Я это беру», стандартная фраза решения о покупке. Дальше сразу вопрос об оплате: Can I pay by card?"
+          }
+        }
+      ]
+    }
+  ]
+}

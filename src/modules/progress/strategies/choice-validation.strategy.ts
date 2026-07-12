@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { ChoiceValidationData } from '../../common/types/validation-data';
 import { TaskValidationStrategy, ValidationResult } from './task-validation.strategy';
+import { normalizeAnswer } from './normalize';
 
 /**
  * Стратегия валидации для задач типа choice/multiple_choice.

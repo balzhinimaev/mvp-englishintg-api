@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { GapValidationData } from '../../common/types/validation-data';
 import { TaskValidationStrategy, ValidationResult } from './task-validation.strategy';
+import { normalizeAnswer } from './normalize';
 
 /**
  * Стратегия валидации для задач типа gap (заполнение пропусков).
@@ -13,20 +14,18 @@ export class GapValidationStrategy implements TaskValidationStrategy {
     taskData?: Record<string, any>
   ): ValidationResult {
     const caseInsensitive = taskData?.caseInsensitive !== false; // По умолчанию true
-    const normalizedAnswer = caseInsensitive ? userAnswer.trim().toLowerCase() : userAnswer.trim();
-    const normalizedCorrect = caseInsensitive 
-      ? validationData.answer.toLowerCase() 
-      : validationData.answer;
+    // Единая нормализация (как в translate): trim, кавычки, финальная пунктуация,
+    // двойные пробелы. Регистр — по флагу caseInsensitive.
+    const normalizedAnswer = normalizeAnswer(userAnswer, { caseInsensitive });
 
     // Проверяем основной ответ
-    let isCorrect = normalizedAnswer === normalizedCorrect;
+    let isCorrect = normalizedAnswer === normalizeAnswer(validationData.answer, { caseInsensitive });
 
     // Проверяем альтернативы
     if (!isCorrect && validationData.alternatives) {
-      isCorrect = validationData.alternatives.some(alt => {
-        const normalizedAlt = caseInsensitive ? alt.toLowerCase() : alt;
-        return normalizedAnswer === normalizedAlt;
-      });
+      isCorrect = validationData.alternatives.some(
+        alt => normalizedAnswer === normalizeAnswer(alt, { caseInsensitive }),
+      );
     }
 
     return {

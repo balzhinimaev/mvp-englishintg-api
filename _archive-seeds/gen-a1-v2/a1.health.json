@@ -1,0 +1,869 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a1.health",
+      "level": "A1",
+      "title": { "ru": "Здоровье и самочувствие A1", "en": "Health & Wellbeing A1" },
+      "description": { "ru": "Симптомы, визит к врачу, лекарства", "en": "Symptoms, doctor visits, medicine basics" },
+      "tags": ["a1", "health", "daily"],
+      "order": 7,
+      "published": true
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.001",
+      "title": { "ru": "Тело и самочувствие", "en": "Body and How You Feel" },
+      "description": { "ru": "Части тела и глагол feel: учимся говорить, как ты себя чувствуешь", "en": "Body parts and feel + adjective: say how you feel" },
+      "order": 1,
+      "published": true,
+      "estimatedMinutes": 10,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.001.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.001.t1.tired-head",
+            "transcript": "I am very tired and my head hurts a little.",
+            "translation": "Я очень устал, и у меня немного болит голова.",
+            "question": "Как себя чувствует говорящий?",
+            "options": ["He feels great.", "He is tired and his head hurts.", "His legs hurt.", "He is hungry."],
+            "correctIndex": 1,
+            "hint": "Слушай прилагательное после very и часть тела в конце.",
+            "explanation": "Он говорит: I am very tired and my head hurts — он устал, и у него болит голова."
+          }
+        },
+        {
+          "ref": "a1.health.001.t2",
+          "type": "choice",
+          "data": {
+            "question": "I ____ tired today.",
+            "options": ["am feel", "feels", "feel", "feeling"],
+            "correctIndex": 2,
+            "hint": "После I смысловой глагол идёт без am и без окончаний.",
+            "explanation": "Правильно: I feel tired. Feel — обычный глагол: am перед ним не нужен (частая ошибка!), а окончание -s бывает только после he/she/it."
+          }
+        },
+        {
+          "ref": "a1.health.001.t3",
+          "type": "gap",
+          "data": {
+            "text": "My ____ hurts, I can't eat an apple.",
+            "answer": "tooth",
+            "hint": "Их во рту 32, а здесь болит один.",
+            "explanation": "My tooth hurts — у меня болит зуб. Одна часть тела → глагол hurts с окончанием -s.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.001.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "head", "right": "голова" },
+              { "left": "leg", "right": "нога" },
+              { "left": "back", "right": "спина" },
+              { "left": "stomach", "right": "живот" },
+              { "left": "throat", "right": "горло" },
+              { "left": "ear", "right": "ухо" }
+            ],
+            "hint": "Части тела, которые чаще всего болят.",
+            "explanation": "Эти шесть слов понадобятся, чтобы сказать врачу, что именно болит."
+          }
+        },
+        {
+          "ref": "a1.health.001.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I feel good, but my leg hurts.\"",
+            "target": "I feel good, but my leg hurts.",
+            "audioKey": "a1.health.001.t5.leg-hurts",
+            "hint": "Не забудь окончание -s в последнем слове фразы.",
+            "explanation": "I feel good, but my leg hurts — я чувствую себя хорошо, но у меня болит нога."
+          }
+        },
+        {
+          "ref": "a1.health.001.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я чувствую себя плохо»",
+            "expected": ["I feel bad", "I feel ill", "I feel unwell"],
+            "hint": "По-английски «себя» не переводится: просто глагол + прилагательное.",
+            "explanation": "I feel bad / I feel ill. Говорить «I feel myself bad» нельзя — myself здесь не нужно."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.002",
+      "title": { "ru": "У меня болит голова", "en": "I've Got a Headache" },
+      "description": { "ru": "Конструкция have got / has got для болезней и боли", "en": "Have got / has got for aches and illnesses" },
+      "order": 2,
+      "published": true,
+      "estimatedMinutes": 10,
+      "type": "grammar",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.002.t1",
+          "type": "choice",
+          "data": {
+            "question": "Choose the correct sentence:",
+            "options": ["I have got a headache.", "I have got headache.", "I am got a headache.", "My head is hurt."],
+            "correctIndex": 0,
+            "hint": "Название болезни в единственном числе требует артикля, а с have не бывает am.",
+            "explanation": "Правильно: I have got a headache. Перед headache нужен артикль a (частая ошибка — его терять). «My head is hurt» — калька с русского; по-английски My head hurts."
+          }
+        },
+        {
+          "ref": "a1.health.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "She has ____ a sore throat.",
+            "answer": "got",
+            "hint": "Конструкция «у неё есть»: has + ещё одно короткое слово.",
+            "explanation": "She has got a sore throat — у неё болит горло. Have got / has got = «есть, имеется».",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.002.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["He", "has", "got", "a", "stomach", "ache", "."],
+            "hint": "Подлежащее → конструкция «у него есть» → артикль → что болит.",
+            "explanation": "He has got a stomach ache. — У него болит живот."
+          }
+        },
+        {
+          "ref": "a1.health.002.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «У меня болит голова»",
+            "expected": ["I have got a headache", "I've got a headache", "I have a headache"],
+            "hint": "Дословно: «я имею головную боль». Не потеряй артикль.",
+            "explanation": "I've got a headache / I have a headache. Артикль a перед названием боли обязателен."
+          }
+        },
+        {
+          "ref": "a1.health.002.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.002.t5.toothache",
+            "transcript": "I've got a toothache, so I can't eat ice cream.",
+            "translation": "У меня болит зуб, поэтому я не могу есть мороженое.",
+            "question": "Что болит у говорящего?",
+            "options": ["His head", "His ear", "His tooth", "His stomach"],
+            "correctIndex": 2,
+            "hint": "Слушай слово сразу после «I've got a».",
+            "explanation": "I've got a toothache — болит зуб, поэтому мороженое ему нельзя."
+          }
+        },
+        {
+          "ref": "a1.health.002.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I have got a terrible headache.\"",
+            "target": "I have got a terrible headache.",
+            "audioKey": "a1.health.002.t6.terrible-headache",
+            "hint": "Не глотай короткие слова в середине фразы.",
+            "explanation": "I have got a terrible headache — у меня ужасно болит голова."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.003",
+      "title": { "ru": "Запись к врачу", "en": "Making an Appointment" },
+      "description": { "ru": "Звоним в клинику и записываемся на приём", "en": "Phone the clinic and book a doctor's appointment" },
+      "order": 3,
+      "published": true,
+      "estimatedMinutes": 11,
+      "type": "conversation",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "You phone the doctor's office. What do you say?",
+            "options": ["I want doctor now.", "I'd like to make an appointment, please.", "Give me a doctor, please.", "I make appointment, please."],
+            "correctIndex": 1,
+            "hint": "Нужна вежливая просьба, правильный глагол-партнёр слова appointment и артикль.",
+            "explanation": "I'd like to make an appointment, please — вежливая запись на приём. Appointment «делают» (make), и перед ним нужен артикль an."
+          }
+        },
+        {
+          "ref": "a1.health.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "Can I ____ an appointment for Monday, please?",
+            "answer": "make",
+            "accept": ["book"],
+            "hint": "Этот глагол — партнёр слова appointment (и это не do).",
+            "explanation": "Make an appointment — записаться на приём. Также говорят book an appointment.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.003.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "appointment", "right": "запись на приём" },
+              { "left": "doctor", "right": "врач" },
+              { "left": "nurse", "right": "медсестра" },
+              { "left": "patient", "right": "пациент" },
+              { "left": "medicine", "right": "лекарство" },
+              { "left": "ill", "right": "больной" }
+            ],
+            "hint": "Люди и слова из регистратуры клиники.",
+            "explanation": "Базовый словарь визита к врачу: кто есть кто и зачем вы звоните."
+          }
+        },
+        {
+          "ref": "a1.health.003.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["What", "time", "is", "the", "doctor", "free", "?"],
+            "hint": "Вопросительное слово о времени → глагол-связка → кто → прилагательное.",
+            "explanation": "What time is the doctor free? — Во сколько врач свободен?"
+          }
+        },
+        {
+          "ref": "a1.health.003.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.003.t5.friday-ten",
+            "transcript": "Doctor Green can see you on Friday at ten o'clock.",
+            "translation": "Доктор Грин может принять вас в пятницу в десять часов.",
+            "question": "Когда приём у врача?",
+            "options": ["On Friday at two", "On Thursday at ten", "On Monday at nine", "On Friday at ten"],
+            "correctIndex": 3,
+            "hint": "Слушай день недели и число — оба важны.",
+            "explanation": "On Friday at ten o'clock — в пятницу в десять часов."
+          }
+        },
+        {
+          "ref": "a1.health.003.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I'd like to see a doctor, please.\"",
+            "target": "I'd like to see a doctor, please.",
+            "audioKey": "a1.health.003.t6.see-doctor",
+            "hint": "Первое сокращение произносится слитно, как одно слово.",
+            "explanation": "I'd like to see a doctor, please — я хотел(а) бы попасть к врачу. Вежливая фраза в регистратуре."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.004",
+      "title": { "ru": "На приёме у врача", "en": "At the Doctor's" },
+      "description": { "ru": "Описываем симптомы: кашель, температура, боль", "en": "Describe your symptoms: cough, fever, pain" },
+      "order": 4,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "The doctor asks: \"What's the matter?\" What do you answer?",
+            "options": ["I have cough and fever.", "My throat is hurt.", "I've got a cough and a fever.", "I am cough and fever."],
+            "correctIndex": 2,
+            "hint": "Перед каждым симптомом в единственном числе нужен артикль.",
+            "explanation": "I've got a cough and a fever — у меня кашель и температура. «My throat is hurt» — калька с русского: правильно My throat hurts."
+          }
+        },
+        {
+          "ref": "a1.health.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "I feel ____, maybe I've got a fever.",
+            "answer": "hot",
+            "hint": "Прилагательное — противоположность cold.",
+            "explanation": "I feel hot — мне жарко. Частый признак температуры.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.004.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "cough", "right": "кашель" },
+              { "left": "fever", "right": "высокая температура" },
+              { "left": "runny nose", "right": "насморк" },
+              { "left": "sore throat", "right": "больное горло" },
+              { "left": "pain", "right": "боль" },
+              { "left": "cold", "right": "простуда" }
+            ],
+            "hint": "Симптомы, которые называют врачу на приёме.",
+            "explanation": "Шесть главных слов, чтобы описать простуду и боль по-английски."
+          }
+        },
+        {
+          "ref": "a1.health.004.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «У меня болит горло, и я плохо себя чувствую»",
+            "expected": ["I have got a sore throat and I feel bad", "I've got a sore throat and I feel bad", "I have a sore throat and I don't feel well"],
+            "hint": "«Болит горло» — через конструкцию «у меня есть…», а «себя» не переводится.",
+            "explanation": "I've got a sore throat and I feel bad. Sore throat идёт с артиклем a, а feel — без myself."
+          }
+        },
+        {
+          "ref": "a1.health.004.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.004.t5.son-fever",
+            "transcript": "My son feels sick and he's got a high temperature.",
+            "translation": "Моего сына тошнит, и у него высокая температура.",
+            "question": "Кто заболел?",
+            "options": ["The speaker", "The speaker's son", "The speaker's daughter", "The doctor"],
+            "correctIndex": 1,
+            "hint": "Слушай слово сразу после my в начале фразы.",
+            "explanation": "My son feels sick — болеет сын говорящего, а не он сам."
+          }
+        },
+        {
+          "ref": "a1.health.004.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I feel sick and my stomach hurts.\"",
+            "target": "I feel sick and my stomach hurts.",
+            "audioKey": "a1.health.004.t6.feel-sick",
+            "hint": "У последнего глагола фразы есть окончание -s.",
+            "explanation": "I feel sick and my stomach hurts — меня тошнит, и болит живот."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.005",
+      "title": { "ru": "Советы врача", "en": "Doctor's Advice" },
+      "description": { "ru": "Should и shouldn't: даём и понимаем советы", "en": "Should and shouldn't: give and understand advice" },
+      "order": 5,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.005.t1",
+          "type": "choice",
+          "data": {
+            "question": "Choose the correct advice:",
+            "options": ["You should to rest.", "You should rest.", "You should resting.", "You are should rest."],
+            "correctIndex": 1,
+            "hint": "После модального глагола — голый инфинитив: без to, без -ing, без are.",
+            "explanation": "You should rest — тебе следует отдохнуть. «Should to rest» — типичная ошибка: to после should не ставится."
+          }
+        },
+        {
+          "ref": "a1.health.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "You ____ drink cold water when your throat hurts.",
+            "answer": "shouldn't",
+            "accept": ["should not"],
+            "hint": "Отрицательный совет одним словом.",
+            "explanation": "You shouldn't drink cold water — не следует пить холодную воду, когда болит горло.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.005.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["You", "should", "stay", "in", "bed", "today", "."],
+            "hint": "Совет: кто → модальный глагол → действие → где → когда.",
+            "explanation": "You should stay in bed today. — Тебе следует сегодня остаться в постели."
+          }
+        },
+        {
+          "ref": "a1.health.005.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Тебе не следует ходить на работу сегодня»",
+            "expected": ["You shouldn't go to work today", "You should not go to work today"],
+            "hint": "Отрицание модального глагола + «ходить на работу» с предлогом to.",
+            "explanation": "You shouldn't go to work today. После модального глагола отрицание образуется частицей not, без don't."
+          }
+        },
+        {
+          "ref": "a1.health.005.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.005.t5.twice-a-day",
+            "transcript": "You should take this medicine twice a day after meals.",
+            "translation": "Вам следует принимать это лекарство два раза в день после еды.",
+            "question": "Как часто нужно принимать лекарство?",
+            "options": ["Once a day", "Three times a day", "Twice a day", "Every two hours"],
+            "correctIndex": 2,
+            "hint": "Слушай слово перед «a day».",
+            "explanation": "Twice a day — два раза в день (once — один раз, twice — два)."
+          }
+        },
+        {
+          "ref": "a1.health.005.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"You should drink warm tea with honey.\"",
+            "target": "You should drink warm tea with honey.",
+            "audioKey": "a1.health.005.t6.warm-tea",
+            "hint": "После модального глагола — сразу действие, без to.",
+            "explanation": "You should drink warm tea with honey — совет при простуде: пить тёплый чай с мёдом."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.006",
+      "title": { "ru": "В аптеке", "en": "At the Pharmacy" },
+      "description": { "ru": "Покупаем лекарства и спрашиваем, как их принимать", "en": "Buy medicine and ask how to take it" },
+      "order": 6,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.006.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.006.t1.one-pill",
+            "transcript": "Take one pill in the morning and one at night.",
+            "translation": "Принимайте одну таблетку утром и одну на ночь.",
+            "question": "Сколько таблеток нужно принять утром?",
+            "options": ["One", "Two", "Three", "None"],
+            "correctIndex": 0,
+            "hint": "Слушай число сразу после первого слова.",
+            "explanation": "Take one pill in the morning — одну таблетку утром и ещё одну на ночь."
+          }
+        },
+        {
+          "ref": "a1.health.006.t2",
+          "type": "choice",
+          "data": {
+            "question": "At the pharmacy you ask:",
+            "options": ["Do you got something for a cold?", "Have you something for cold?", "You have got a cold?", "Have you got something for a cold?"],
+            "correctIndex": 3,
+            "hint": "В вопросе с have got первый глагол выходит вперёд, а перед болезнью нужен артикль.",
+            "explanation": "Have you got something for a cold? — есть ли у вас что-нибудь от простуды? «Do you got» — частая ошибка: do с got не сочетается."
+          }
+        },
+        {
+          "ref": "a1.health.006.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "pills", "right": "таблетки" },
+              { "left": "syrup", "right": "сироп" },
+              { "left": "plaster", "right": "пластырь" },
+              { "left": "drops", "right": "капли" },
+              { "left": "vitamins", "right": "витамины" },
+              { "left": "painkiller", "right": "обезболивающее" }
+            ],
+            "hint": "Всё это продаётся в аптеке.",
+            "explanation": "Шесть аптечных слов: от таблеток до обезболивающего."
+          }
+        },
+        {
+          "ref": "a1.health.006.t4",
+          "type": "gap",
+          "data": {
+            "text": "How often should I ____ these pills?",
+            "answer": "take",
+            "hint": "Лекарства по-английски не «пьют» и не «едят» — нужен другой частотный глагол.",
+            "explanation": "Take pills / take medicine — принимать таблетки. Drink или eat здесь не годятся.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.006.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Have you got anything for a headache?\"",
+            "target": "Have you got anything for a headache?",
+            "audioKey": "a1.health.006.t5.pharmacy-ask",
+            "hint": "Это вопрос — интонация в конце идёт вверх.",
+            "explanation": "Have you got anything for a headache? — есть ли у вас что-нибудь от головной боли?"
+          }
+        },
+        {
+          "ref": "a1.health.006.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Мне нужно лекарство от кашля»",
+            "expected": ["I need some medicine for a cough", "I need medicine for a cough"],
+            "hint": "«От кашля» — предлог for, а не from.",
+            "explanation": "I need (some) medicine for a cough. «Лекарство от…» по-английски — medicine for…, не from."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.007",
+      "title": { "ru": "Здоровые привычки", "en": "Healthy Habits" },
+      "description": { "ru": "Советы о сне, еде и спорте со should", "en": "Advice about sleep, food and exercise with should" },
+      "order": 7,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "Choose the correct sentence:",
+            "options": ["People should to sleep eight hours.", "People are should sleep eight hours.", "People should sleeps eight hours.", "People should sleep eight hours."],
+            "correctIndex": 3,
+            "hint": "Модальный глагол не дружит ни с to, ни с are, ни с окончанием -s.",
+            "explanation": "People should sleep eight hours — людям следует спать восемь часов. После should глагол всегда в базовой форме."
+          }
+        },
+        {
+          "ref": "a1.health.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "You should eat fruit and vegetables every ____.",
+            "answer": "day",
+            "hint": "«Каждый …» — слово о частоте, самое короткое из возможных.",
+            "explanation": "Every day — каждый день. Пишется раздельно (everyday слитно — это прилагательное «повседневный»).",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.007.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["You", "shouldn't", "eat", "sweets", "before", "bed", "."],
+            "hint": "Отрицательный совет: подлежащее → модальный глагол → что не делать → когда.",
+            "explanation": "You shouldn't eat sweets before bed. — Не стоит есть сладкое перед сном."
+          }
+        },
+        {
+          "ref": "a1.health.007.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "exercise", "right": "зарядка" },
+              { "left": "sleep", "right": "сон" },
+              { "left": "walk", "right": "прогулка" },
+              { "left": "water", "right": "вода" },
+              { "left": "fruit", "right": "фрукты" },
+              { "left": "rest", "right": "отдых" }
+            ],
+            "hint": "Слова о здоровом образе жизни.",
+            "explanation": "Шесть опор здорового образа жизни: движение, сон, вода и отдых."
+          }
+        },
+        {
+          "ref": "a1.health.007.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.007.t5.walk-heart",
+            "transcript": "I walk to work every day because it's good for my heart.",
+            "translation": "Я хожу на работу пешком каждый день, потому что это полезно для сердца.",
+            "question": "Почему говорящий ходит на работу пешком?",
+            "options": ["It's good for his heart", "He hasn't got a car", "The bus is too expensive", "He likes the fresh air"],
+            "correctIndex": 0,
+            "hint": "Причина названа после because.",
+            "explanation": "…because it's good for my heart — потому что это полезно для сердца."
+          }
+        },
+        {
+          "ref": "a1.health.007.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"You should do exercise every morning.\"",
+            "target": "You should do exercise every morning.",
+            "audioKey": "a1.health.007.t6.morning-exercise",
+            "hint": "«Делать зарядку» — устойчивая пара глагола do с существительным.",
+            "explanation": "You should do exercise every morning — тебе стоит делать зарядку каждое утро."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.008",
+      "title": { "ru": "Простуда и отдых", "en": "A Cold and Rest" },
+      "description": { "ru": "Что делать, когда простудился: постель, вода, отдых", "en": "What to do when you have a cold: bed, water, rest" },
+      "order": 8,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "vocabulary",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "Your friend has got a cold. What do you say?",
+            "options": ["You should stay at home and to rest.", "You should staying at home.", "You are should rest at home.", "You should stay at home and rest."],
+            "correctIndex": 3,
+            "hint": "Оба глагола после модального — в базовой форме, второму to тоже не нужно.",
+            "explanation": "You should stay at home and rest. Даже второй глагол после should идёт без to — «and to rest» звучит по-русски, а не по-английски."
+          }
+        },
+        {
+          "ref": "a1.health.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "I've got a cold, so I feel very ____ and sleepy.",
+            "answer": "tired",
+            "accept": ["weak"],
+            "hint": "Состояние, когда совсем нет сил.",
+            "explanation": "I feel very tired and sleepy — я чувствую усталость и сонливость. Подойдёт и weak — слабый.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.008.t3",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я простудился и не могу спать»",
+            "expected": ["I have got a cold and I can't sleep", "I've got a cold and I can't sleep", "I have a cold and I cannot sleep"],
+            "hint": "«Простудиться» по-английски — «иметь простуду», с артиклем.",
+            "explanation": "I've got a cold and I can't sleep. Простуда — исчисляемое: a cold."
+          }
+        },
+        {
+          "ref": "a1.health.008.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["She", "shouldn't", "go", "out", "because", "she", "has", "got", "a", "fever", "."],
+            "hint": "Сначала отрицательный совет, потом причина с because.",
+            "explanation": "She shouldn't go out because she has got a fever. — Ей не следует выходить, потому что у неё температура."
+          }
+        },
+        {
+          "ref": "a1.health.008.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.008.t5.much-better",
+            "transcript": "I'm in bed with a cold, but I feel much better now.",
+            "translation": "Я лежу в постели с простудой, но сейчас мне намного лучше.",
+            "question": "Как говорящий чувствует себя сейчас?",
+            "options": ["Much worse", "Still very sick", "Much better", "Tired and weak"],
+            "correctIndex": 2,
+            "hint": "Слушай, что говорится после but.",
+            "explanation": "…but I feel much better now — но сейчас мне намного лучше."
+          }
+        },
+        {
+          "ref": "a1.health.008.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I should rest and drink a lot of water.\"",
+            "target": "I should rest and drink a lot of water.",
+            "audioKey": "a1.health.008.t6.rest-water",
+            "hint": "Три коротких слова про «много» произносятся почти слитно.",
+            "explanation": "I should rest and drink a lot of water — мне следует отдыхать и пить много воды."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.009",
+      "title": { "ru": "Звонок на работу", "en": "Calling in Sick" },
+      "description": { "ru": "Сообщаем на работе, что заболели", "en": "Tell your boss you are ill and can't come" },
+      "order": 9,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.009.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.009.t1.anna-ill",
+            "transcript": "Hello, this is Anna. I can't come to work today, I'm ill.",
+            "translation": "Здравствуйте, это Анна. Я не могу сегодня прийти на работу, я болею.",
+            "question": "Почему Анна звонит на работу?",
+            "options": ["She is late for work", "She wants a day off for a trip", "She has got a new job", "She is ill and can't come"],
+            "correctIndex": 3,
+            "hint": "Слушай последние слова сообщения.",
+            "explanation": "I can't come to work today, I'm ill — она болеет и не может прийти."
+          }
+        },
+        {
+          "ref": "a1.health.009.t2",
+          "type": "choice",
+          "data": {
+            "question": "You call your boss. What do you say?",
+            "options": ["I'm ill today, so I can't come to work.", "I ill today and no work.", "I am feel ill for work today.", "Today I can't to come to work."],
+            "correctIndex": 0,
+            "hint": "Перед прилагательным нужен глагол-связка, а после can't не бывает to.",
+            "explanation": "I'm ill today, so I can't come to work. «I ill» без am и «can't to come» с to — частые ошибки русскоговорящих."
+          }
+        },
+        {
+          "ref": "a1.health.009.t3",
+          "type": "gap",
+          "data": {
+            "text": "I'm sorry, I can't ____ to work today.",
+            "answer": "come",
+            "accept": ["go"],
+            "hint": "Глагол движения: прийти или пойти.",
+            "explanation": "I can't come to work — не могу прийти на работу. Вариант go тоже верный.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.009.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Извините, я сегодня болею»",
+            "expected": ["Sorry, I am ill today", "Sorry, I'm ill today", "I'm sorry, I am ill today", "Sorry, I'm sick today"],
+            "hint": "«Болею» здесь — быть больным: глагол-связка + прилагательное.",
+            "explanation": "Sorry, I'm ill today (брит.) или I'm sick today (амер.) — оба варианта естественны."
+          }
+        },
+        {
+          "ref": "a1.health.009.t5",
+          "type": "order",
+          "data": {
+            "tokens": ["I", "hope", "you", "feel", "better", "soon", "."],
+            "hint": "Пожелание коллеге: я надеюсь → ты → почувствуешь себя → как → когда.",
+            "explanation": "I hope you feel better soon. — Надеюсь, тебе скоро станет лучше."
+          }
+        },
+        {
+          "ref": "a1.health.009.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I'm sorry, I'm ill and I can't come to work today.\"",
+            "target": "I'm sorry, I'm ill and I can't come to work today.",
+            "audioKey": "a1.health.009.t6.call-work",
+            "hint": "Во фразе три сокращения с апострофом — произноси их слитно.",
+            "explanation": "I'm sorry, I'm ill and I can't come to work today — стандартная фраза для звонка начальнику."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.health",
+      "lessonRef": "a1.health.010",
+      "title": { "ru": "Итоговый диалог", "en": "Review: At the Doctor's Again" },
+      "description": { "ru": "Повторяем весь модуль: симптомы, have got, should", "en": "Module review: symptoms, have got, should" },
+      "order": 10,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.health.010.t1",
+          "type": "choice",
+          "data": {
+            "question": "Doctor: \"What's the matter?\" — You:",
+            "options": ["I got headache and feel dizzy.", "My head is hurt and I dizzy.", "I've got a headache and I feel dizzy.", "I am have a headache."],
+            "correctIndex": 2,
+            "hint": "Вспомни: «у меня есть» + артикль, «кружится голова» — через глагол чувств.",
+            "explanation": "I've got a headache and I feel dizzy — у меня болит и кружится голова. «I got headache» без 've и артикля — типичная ошибка."
+          }
+        },
+        {
+          "ref": "a1.health.010.t2",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "What's the matter?", "right": "Что случилось?" },
+              { "left": "How do you feel?", "right": "Как ты себя чувствуешь?" },
+              { "left": "Get well soon!", "right": "Выздоравливай скорее!" },
+              { "left": "I feel much better.", "right": "Мне намного лучше." },
+              { "left": "Take this medicine.", "right": "Принимайте это лекарство." },
+              { "left": "Stay in bed.", "right": "Оставайся в постели." }
+            ],
+            "hint": "Ключевые фразы из всех уроков модуля.",
+            "explanation": "Эти шесть реплик покрывают весь диалог о здоровье: вопрос, совет и пожелание."
+          }
+        },
+        {
+          "ref": "a1.health.010.t3",
+          "type": "gap",
+          "data": {
+            "text": "The doctor says I ____ stay in bed for three days.",
+            "answer": "should",
+            "hint": "Модальный глагол совета из середины модуля.",
+            "explanation": "I should stay in bed — мне следует остаться в постели. Совет = модальный глагол + базовая форма.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.health.010.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «У неё температура, и ей следует остаться дома»",
+            "expected": ["She has got a fever and she should stay at home", "She's got a fever and she should stay at home", "She has a fever and she should stay home"],
+            "hint": "Третье лицо: has, а совет — модальным глаголом без to.",
+            "explanation": "She's got a fever and she should stay at home. Обрати внимание: has got для she, а после модального глагола — сразу stay."
+          }
+        },
+        {
+          "ref": "a1.health.010.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.health.010.t5.sore-throat-ears",
+            "transcript": "Good morning, doctor. I've got a sore throat and my ears hurt.",
+            "translation": "Доброе утро, доктор. У меня болит горло, и болят уши.",
+            "question": "На что жалуется пациент?",
+            "options": ["Throat and eyes", "Throat and ears", "Head and ears", "Back and throat"],
+            "correctIndex": 1,
+            "hint": "Названы две части тела — слушай обе.",
+            "explanation": "A sore throat and my ears hurt — болит горло и уши."
+          }
+        },
+        {
+          "ref": "a1.health.010.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Thank you, doctor. I feel much better now.\"",
+            "target": "Thank you, doctor. I feel much better now.",
+            "audioKey": "a1.health.010.t6.thank-doctor",
+            "hint": "Сравнительная степень в середине фразы — одно слово, без more.",
+            "explanation": "Thank you, doctor. I feel much better now — спасибо, доктор, мне уже намного лучше."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "lessons": [
+    {
+      "moduleRef": "a1.intro",
+      "lessonRef": "a1.intro.009",
+      "title": { "ru": "Прощание и обмен контактами", "en": "Goodbye and Exchanging Contacts" },
+      "description": { "ru": "Как завершить разговор, попросить контакт и договориться быть на связи", "en": "Ending a conversation, asking for contacts and staying in touch" },
+      "order": 9, "published": true, "estimatedMinutes": 12,
+      "type": "conversation", "difficulty": "hard", "xpReward": 38, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.intro.009.t1", "type": "choice", "data": {
+          "question": "Разговор на митапе заканчивается. Как вежливо попросить контакт для связи?",
+          "options": ["How I can contact you?", "Could I have your phone number?", "Give me your number, fast.", "You have telephone?"],
+          "correctIndex": 1,
+          "hint": "Вежливая просьба — это полный вопрос с модальным глаголом, а не приказ.",
+          "explanation": "Could I have your phone number? — вежливая форма. «How I can contact you?» — типичная ошибка порядка слов: в вопросе нужно How can I..." } },
+        { "ref": "a1.intro.009.t2", "type": "gap", "data": {
+          "text": "Great talking to you! I'll ____ you a message tonight.",
+          "answer": "send",
+          "hint": "Что делают с сообщением в мессенджере?",
+          "explanation": "send a message — отправить сообщение. I'll send you a message tonight — я напишу тебе сегодня вечером.",
+          "caseInsensitive": true } },
+        { "ref": "a1.intro.009.t3", "type": "listen", "data": {
+          "audioKey": "a1.intro.009.t3.email-contact",
+          "transcript": "Here is my email, write to me anytime.",
+          "translation": "Вот моя почта, пиши мне в любое время.",
+          "question": "Что собеседник даёт для связи?",
+          "options": ["Phone number", "Business card", "Home address", "Email address"],
+          "correctIndex": 3,
+          "hint": "Слушай, какой именно контакт называет собеседник.",
+          "explanation": "Here is my email — вот мой имейл. Даёт адрес электронной почты, а не номер или визитку." } },
+        { "ref": "a1.intro.009.t4", "type": "match", "data": {
+          "pairs": [
+            { "left": "phone number", "right": "номер телефона" },
+            { "left": "email address", "right": "адрес электронной почты" },
+            { "left": "business card", "right": "визитка" },
+            { "left": "keep in touch", "right": "оставаться на связи" },
+            { "left": "see you soon", "right": "до скорого" },
+            { "left": "take care", "right": "береги себя" }
+          ],
+          "hint": "Слова и формулы для завершения разговора и обмена контактами.",
+          "explanation": "keep in touch, see you soon и take care — стандартные фразы прощания; business card — визитка с контактами." } },
+        { "ref": "a1.intro.009.t5", "type": "translate", "data": {
+          "question": "Переведи: «Я напишу тебе завтра»",
+          "expected": ["I'll write to you tomorrow", "I will write to you tomorrow", "I'll text you tomorrow", "I will text you tomorrow"],
+          "hint": "Будущее время: решение, принятое сейчас.",
+          "explanation": "I'll write to you tomorrow / I'll text you tomorrow. Сокращение I'll = I will." } },
+        { "ref": "a1.intro.009.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"Add me on Telegram, my username is Alex.\"",
+          "target": "Add me on Telegram, my username is Alex.",
+          "audioKey": "a1.intro.009.t6.add-telegram",
+          "hint": "Add me on... — «добавь меня в...». Произноси спокойно, с паузой на запятой.",
+          "explanation": "Add me on Telegram — добавь меня в Телеграме; username — имя пользователя. Так обмениваются контактами в мессенджерах." } }
+      ]
+    },
+    {
+      "moduleRef": "a1.intro",
+      "lessonRef": "a1.intro.010",
+      "title": { "ru": "Итоговый диалог: новое знакомство", "en": "Final Dialogue: Meeting Someone New" },
+      "description": { "ru": "Полный сценарий: приветствие, рассказ о себе, приглашение и прощание", "en": "Full scenario: greeting, introducing yourself, inviting and saying goodbye" },
+      "order": 10, "published": true, "estimatedMinutes": 12,
+      "type": "grammar", "difficulty": "hard", "xpReward": 40, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.intro.010.t1", "type": "listen", "data": {
+          "audioKey": "a1.intro.010.t1.tom-intro",
+          "transcript": "Hi, I am Tom. I work in marketing and live in Berlin.",
+          "translation": "Привет, я Том. Я работаю в маркетинге и живу в Берлине.",
+          "question": "В какой сфере работает Том?",
+          "options": ["Design", "Marketing", "IT", "Finance"],
+          "correctIndex": 1,
+          "hint": "Слушай фразу после I work in...",
+          "explanation": "I work in marketing — я работаю в маркетинге. Город (Berlin) — это где он живёт, а не сфера работы." } },
+        { "ref": "a1.intro.010.t2", "type": "choice", "data": {
+          "question": "Собеседник спрашивает: \"What do you do?\" Как правильно ответить?",
+          "options": ["I am work in IT.", "I working in IT.", "I work in IT.", "Me work in IT."],
+          "correctIndex": 2,
+          "hint": "В Present Simple перед смысловым глаголом не нужен вспомогательный am.",
+          "explanation": "I work in IT — правильный Present Simple. «I am work» и «I working» — типичные ошибки: am и глагол без -ing не сочетаются." } },
+        { "ref": "a1.intro.010.t3", "type": "gap", "data": {
+          "text": "Would you ____ to join us for lunch tomorrow?",
+          "answer": "like",
+          "hint": "Вежливое приглашение с would.",
+          "explanation": "Would you like to... — «не хотел бы ты...». Стандартная формула приглашения.",
+          "caseInsensitive": true } },
+        { "ref": "a1.intro.010.t4", "type": "order", "data": {
+          "tokens": ["Let's", "keep", "in", "touch", "after", "the", "meetup"],
+          "hint": "Конструкция с let's, место события — в конце фразы.",
+          "explanation": "Let's keep in touch after the meetup — давай будем на связи после митапа." } },
+        { "ref": "a1.intro.010.t5", "type": "translate", "data": {
+          "question": "Переведи: «Я не из Лондона, я из Москвы»",
+          "expected": ["I'm not from London, I'm from Moscow", "I am not from London, I am from Moscow"],
+          "hint": "Отрицание с глаголом be и предлог происхождения.",
+          "explanation": "I'm not from London, I'm from Moscow. Сокращение I'm = I am; «из города» — from." } },
+        { "ref": "a1.intro.010.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"It was great to meet you. See you on Friday.\"",
+          "target": "It was great to meet you. See you on Friday.",
+          "audioKey": "a1.intro.010.t6.great-to-meet",
+          "hint": "Две короткие фразы прощания — с паузой между ними.",
+          "explanation": "It was great to meet you — было здорово познакомиться; see you on Friday — увидимся в пятницу. Так завершают удачное знакомство." } }
+      ]
+    },
+    {
+      "moduleRef": "a1.food",
+      "lessonRef": "a1.food.009",
+      "title": { "ru": "Жалоба и комплимент блюду", "en": "Complaining and Complimenting a Dish" },
+      "description": { "ru": "Вежливо сказать, что блюдо не то или остыло, и похвалить, когда всё вкусно", "en": "Politely report a wrong or cold dish and give a compliment when it is good" },
+      "order": 9, "published": true, "estimatedMinutes": 12,
+      "type": "conversation", "difficulty": "hard", "xpReward": 38, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.food.009.t1", "type": "choice", "data": {
+          "question": "Суп принесли холодным. Как вежливо пожаловаться?",
+          "options": ["My soup is cold, do something!", "Excuse me, my soup is cold.", "Why you bring me cold soup?", "You must change my soup."],
+          "correctIndex": 1,
+          "hint": "Начни с вежливого привлечения внимания, затем спокойно опиши проблему.",
+          "explanation": "Excuse me, my soup is cold — вежливо и по делу. «Why you bring...» — ошибка: в вопросе нужен вспомогательный did (Why did you bring...)." } },
+        { "ref": "a1.food.009.t2", "type": "gap", "data": {
+          "text": "This is not what I ordered — I asked ____ the grilled salmon.",
+          "answer": "for",
+          "hint": "После ask нужен предлог.",
+          "explanation": "ask for — просить/заказывать что-то: I asked for the salmon — я заказывал лосося.",
+          "caseInsensitive": true } },
+        { "ref": "a1.food.009.t3", "type": "listen", "data": {
+          "audioKey": "a1.food.009.t3.new-dish",
+          "transcript": "I am so sorry, we will bring a new dish right away.",
+          "translation": "Мне очень жаль, мы сразу же принесём новое блюдо.",
+          "question": "Что сделает официант?",
+          "options": ["Bring a new dish", "Bring the bill", "Call the manager", "Give a discount"],
+          "correctIndex": 0,
+          "hint": "Слушай, что официант обещает сделать после извинения.",
+          "explanation": "We will bring a new dish right away — мы сразу принесём новое блюдо. О счёте, менеджере и скидке речи нет." } },
+        { "ref": "a1.food.009.t4", "type": "match", "data": {
+          "pairs": [
+            { "left": "too salty", "right": "слишком солёный" },
+            { "left": "cold", "right": "холодный" },
+            { "left": "delicious", "right": "очень вкусный" },
+            { "left": "wrong order", "right": "неверный заказ" },
+            { "left": "complaint", "right": "жалоба" },
+            { "left": "compliment", "right": "похвала" }
+          ],
+          "hint": "Слова для оценки блюда — от проблемы до похвалы. Не перепутай complaint и compliment.",
+          "explanation": "complaint — жалоба, compliment — похвала: пишутся похоже, значат противоположное. too + прилагательное = «слишком»." } },
+        { "ref": "a1.food.009.t5", "type": "translate", "data": {
+          "question": "Переведи: «Всё было очень вкусно, передайте комплименты повару»",
+          "expected": ["Everything was delicious, my compliments to the chef", "Everything was very tasty, my compliments to the chef", "Everything was delicious, compliments to the chef"],
+          "hint": "Вежливая итоговая фраза после ужина; похвалу «передают» устойчивой формулой.",
+          "explanation": "Everything was delicious, my compliments to the chef — стандартная формула похвалы в ресторане." } },
+        { "ref": "a1.food.009.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"Excuse me, this is not what I ordered.\"",
+          "target": "Excuse me, this is not what I ordered.",
+          "audioKey": "a1.food.009.t6.not-my-order",
+          "hint": "Спокойный тон: сначала привлеки внимание, потом назови проблему.",
+          "explanation": "This is not what I ordered — это не то, что я заказывал. Ключевая фраза при ошибке в заказе." } }
+      ]
+    },
+    {
+      "moduleRef": "a1.food",
+      "lessonRef": "a1.food.010",
+      "title": { "ru": "Итоговый диалог: ужин в кафе", "en": "Final Dialogue: Dinner at a Cafe" },
+      "description": { "ru": "Полный сценарий ужина: меню, заказ с ограничениями, счёт и чаевые", "en": "Full dinner scenario: menu, order with preferences, bill and tips" },
+      "order": 10, "published": true, "estimatedMinutes": 12,
+      "type": "grammar", "difficulty": "hard", "xpReward": 40, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.food.010.t1", "type": "choice", "data": {
+          "question": "Официант спрашивает: \"Are you ready to order?\" Что ответить, если нужно ещё время?",
+          "options": ["We need more few minutes.", "We not ready yet.", "Please to wait us.", "Could we have a few more minutes?"],
+          "correctIndex": 3,
+          "hint": "Вежливая просьба с модальным глаголом; следи за порядком слов a few more.",
+          "explanation": "Could we have a few more minutes? — вежливо попросить ещё пару минут. «more few minutes» — типичная ошибка порядка слов, «we not ready» — пропущен глагол are." } },
+        { "ref": "a1.food.010.t2", "type": "gap", "data": {
+          "text": "I am allergic ____ seafood. What is in this soup?",
+          "answer": "to",
+          "hint": "Предлог после allergic — не тот, что в русском «аллергия на».",
+          "explanation": "allergic to — аллергия на что-то: I am allergic to seafood. Русское «на» здесь нельзя переводить как on.",
+          "caseInsensitive": true } },
+        { "ref": "a1.food.010.t3", "type": "listen", "data": {
+          "audioKey": "a1.food.010.t3.change-receipt",
+          "transcript": "Here is your change and the receipt. Have a nice evening.",
+          "translation": "Вот ваша сдача и чек. Хорошего вечера.",
+          "question": "Что официант даёт вместе со сдачей?",
+          "options": ["The menu", "The receipt", "A dessert", "A discount"],
+          "correctIndex": 1,
+          "hint": "Слушай, что идёт после and.",
+          "explanation": "Your change and the receipt — сдача и чек. receipt — чек об оплате." } },
+        { "ref": "a1.food.010.t4", "type": "order", "data": {
+          "tokens": ["How", "much", "should", "I", "tip", "here", "?"],
+          "hint": "Вопрос о количестве + модальный глагол совета.",
+          "explanation": "How much should I tip here? — сколько здесь принято оставлять чаевых?" } },
+        { "ref": "a1.food.010.t5", "type": "translate", "data": {
+          "question": "Переведи: «Я возьму стейк, но без лука, пожалуйста»",
+          "expected": ["I'll have the steak, but no onions, please", "I will have the steak, but no onions, please", "I'll take the steak, but without onions, please"],
+          "hint": "Решение о заказе — будущее время; отказ от ингредиента — короткая формула.",
+          "explanation": "I'll have the steak, but no onions, please. I'll = I will; «без лука» в заказе чаще no onions, чем without." } },
+        { "ref": "a1.food.010.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"Thank you, everything was delicious. Keep the change.\"",
+          "target": "Thank you, everything was delicious. Keep the change.",
+          "audioKey": "a1.food.010.t6.keep-the-change",
+          "hint": "Благодарность, оценка ужина и фраза про сдачу — три короткие части.",
+          "explanation": "Keep the change — сдачи не нужно. Стандартное завершение ужина с чаевыми." } }
+      ]
+    },
+    {
+      "moduleRef": "a1.directions",
+      "lessonRef": "a1.directions.009",
+      "title": { "ru": "Потерялся: спросить и переспросить", "en": "Lost: Ask and Ask Again" },
+      "description": { "ru": "Сказать, что заблудился, попросить повторить и понять объяснение", "en": "Say you are lost, ask to repeat and understand the directions" },
+      "order": 9, "published": true, "estimatedMinutes": 12,
+      "type": "conversation", "difficulty": "hard", "xpReward": 38, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.directions.009.t1", "type": "choice", "data": {
+          "question": "Вы не расслышали объяснение маршрута. Как вежливо переспросить?",
+          "options": ["Repeat!", "What you said?", "Could you say that again, please?", "You talk again, please."],
+          "correctIndex": 2,
+          "hint": "Вежливая просьба повторить — полный вопрос с модальным глаголом.",
+          "explanation": "Could you say that again, please? — вежливо переспросить. «What you said?» — ошибка: нужен вспомогательный did (What did you say?)." } },
+        { "ref": "a1.directions.009.t2", "type": "gap", "data": {
+          "text": "Excuse me, I think I am ____. Where is King Street?",
+          "answer": "lost",
+          "hint": "Ты не знаешь, где находишься, — одно слово после am.",
+          "explanation": "I am lost — я заблудился. Ключевая фраза, когда потерялся в городе.",
+          "caseInsensitive": true } },
+        { "ref": "a1.directions.009.t3", "type": "listen", "data": {
+          "audioKey": "a1.directions.009.t3.back-two-blocks",
+          "transcript": "Go back two blocks and turn right at the bank.",
+          "translation": "Вернитесь на два квартала назад и поверните направо у банка.",
+          "question": "Где нужно повернуть направо?",
+          "options": ["At the traffic lights", "At the bank", "At the pharmacy", "At the bridge"],
+          "correctIndex": 1,
+          "hint": "Слушай ориентир после turn right.",
+          "explanation": "Turn right at the bank — поверните направо у банка. Сначала — два квартала назад." } },
+        { "ref": "a1.directions.009.t4", "type": "match", "data": {
+          "pairs": [
+            { "left": "I'm lost", "right": "я заблудился" },
+            { "left": "say that again", "right": "повторите ещё раз" },
+            { "left": "more slowly", "right": "помедленнее" },
+            { "left": "go back", "right": "вернуться назад" },
+            { "left": "near here", "right": "недалеко отсюда" },
+            { "left": "on the corner", "right": "на углу" }
+          ],
+          "hint": "Фразы для ситуации «потерялся и переспрашиваю».",
+          "explanation": "Эти фразы помогают переспросить и сориентироваться: say that again, more slowly, go back, on the corner." } },
+        { "ref": "a1.directions.009.t5", "type": "order", "data": {
+          "tokens": ["Could", "you", "repeat", "that", "more", "slowly", ",", "please", "?"],
+          "hint": "Модальный глагол, просьба, затем «как именно», вежливое слово в конце.",
+          "explanation": "Could you repeat that more slowly, please? — не могли бы вы повторить это помедленнее?" } },
+        { "ref": "a1.directions.009.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"Sorry, I am lost. Could you help me?\"",
+          "target": "Sorry, I am lost. Could you help me?",
+          "audioKey": "a1.directions.009.t6.i-am-lost",
+          "hint": "Извинение, проблема, просьба — три короткие части.",
+          "explanation": "Sorry, I am lost. Could you help me? — универсальное начало разговора, когда потерялся." } }
+      ]
+    },
+    {
+      "moduleRef": "a1.directions",
+      "lessonRef": "a1.directions.010",
+      "title": { "ru": "Итоговый диалог: добраться до места", "en": "Final Dialogue: Getting to the Place" },
+      "description": { "ru": "Полный сценарий: спросить дорогу, выбрать транспорт, пересесть и выйти где нужно", "en": "Full scenario: ask the way, choose transport, transfer and get off at the right stop" },
+      "order": 10, "published": true, "estimatedMinutes": 12,
+      "type": "grammar", "difficulty": "hard", "xpReward": 40, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.directions.010.t1", "type": "listen", "data": {
+          "audioKey": "a1.directions.010.t1.change-central",
+          "transcript": "Change at Central Station and get off at Park Street.",
+          "translation": "Сделайте пересадку на Центральном вокзале и выйдите на Парк-стрит.",
+          "question": "Где нужно сделать пересадку?",
+          "options": ["At Park Street", "At the airport", "At the next stop", "At Central Station"],
+          "correctIndex": 3,
+          "hint": "Слушай место после слова change.",
+          "explanation": "Change at Central Station — пересадка на Центральном вокзале; Park Street — это где выходить." } },
+        { "ref": "a1.directions.010.t2", "type": "choice", "data": {
+          "question": "Как спросить, идёт ли этот автобус до вокзала?",
+          "options": ["This bus go to the station?", "Goes this bus to the station?", "Does this bus go to the station?", "Is this bus goes to the station?"],
+          "correctIndex": 2,
+          "hint": "Вопрос в Present Simple требует вспомогательного глагола перед подлежащим.",
+          "explanation": "Does this bus go to the station? — вопрос с does, глагол без -es. «Goes this bus...» и «Is this bus goes...» — типичные ошибки русскоговорящих." } },
+        { "ref": "a1.directions.010.t3", "type": "gap", "data": {
+          "text": "Get ____ at the next stop, the museum is across the street.",
+          "answer": "off",
+          "hint": "Фразовый глагол — противоположность get on.",
+          "explanation": "get off — выходить из транспорта; get on — садиться в транспорт.",
+          "caseInsensitive": true } },
+        { "ref": "a1.directions.010.t4", "type": "match", "data": {
+          "pairs": [
+            { "left": "get off", "right": "выходить из транспорта" },
+            { "left": "get on", "right": "садиться в транспорт" },
+            { "left": "one-way ticket", "right": "билет в одну сторону" },
+            { "left": "return ticket", "right": "билет туда-обратно" },
+            { "left": "delay", "right": "задержка" },
+            { "left": "on foot", "right": "пешком" }
+          ],
+          "hint": "Пары про транспорт: не перепутай направления get on/get off и типы билетов.",
+          "explanation": "get on/get off — сесть/выйти; one-way — в одну сторону, return — туда-обратно; on foot — пешком." } },
+        { "ref": "a1.directions.010.t5", "type": "translate", "data": {
+          "question": "Переведи: «Мне нужно выйти на следующей остановке?»",
+          "expected": ["Do I need to get off at the next stop?", "Should I get off at the next stop?"],
+          "hint": "Спроси о необходимости действия — вопрос начинается со вспомогательного или модального глагола.",
+          "explanation": "Do I need to get off at the next stop? / Should I get off at the next stop? — оба варианта естественны." } },
+        { "ref": "a1.directions.010.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"Excuse me, is this the right stop for the museum?\"",
+          "target": "Excuse me, is this the right stop for the museum?",
+          "audioKey": "a1.directions.010.t6.right-stop",
+          "hint": "Вежливое обращение + вопрос с is в начале.",
+          "explanation": "Is this the right stop for the museum? — та ли это остановка для музея? Проверяй остановку перед выходом." } }
+      ]
+    },
+    {
+      "moduleRef": "a1.routines",
+      "lessonRef": "a1.routines.009",
+      "title": { "ru": "Выходные и уборка", "en": "Weekends and Housework" },
+      "description": { "ru": "Рассказать про выходные: поспать подольше, навести порядок, отдохнуть", "en": "Talk about weekends: sleeping in, tidying up and relaxing" },
+      "order": 9, "published": true, "estimatedMinutes": 12,
+      "type": "conversation", "difficulty": "hard", "xpReward": 38, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.routines.009.t1", "type": "choice", "data": {
+          "question": "Как сказать, что по выходным ты спишь подольше?",
+          "options": ["On weekends I sleep in.", "On weekends I am sleep long.", "I sleep very much time on weekends.", "On weekends I sleep myself."],
+          "correctIndex": 0,
+          "hint": "Есть короткий фразовый глагол про долгий утренний сон.",
+          "explanation": "sleep in — поспать подольше утром. «I am sleep» — типичная ошибка: am не сочетается с глаголом без -ing." } },
+        { "ref": "a1.routines.009.t2", "type": "gap", "data": {
+          "text": "Could you take ____ the trash before dinner?",
+          "answer": "out",
+          "hint": "Частица фразового глагола с take.",
+          "explanation": "take out the trash — вынести мусор. Частотный фразовый глагол про домашние дела.",
+          "caseInsensitive": true } },
+        { "ref": "a1.routines.009.t3", "type": "listen", "data": {
+          "audioKey": "a1.routines.009.t3.clean-first",
+          "transcript": "I want to relax, but first I must clean the kitchen.",
+          "translation": "Я хочу отдохнуть, но сначала мне нужно убрать кухню.",
+          "question": "Что нужно сделать сначала?",
+          "options": ["Buy groceries", "Wash the car", "Clean the kitchen", "Relax"],
+          "correctIndex": 2,
+          "hint": "Слушай, что идёт после but first.",
+          "explanation": "But first I must clean the kitchen — но сначала нужно убрать кухню. Отдых — потом." } },
+        { "ref": "a1.routines.009.t4", "type": "match", "data": {
+          "pairs": [
+            { "left": "do the laundry", "right": "стирать бельё" },
+            { "left": "vacuum", "right": "пылесосить" },
+            { "left": "tidy up", "right": "наводить порядок" },
+            { "left": "sleep in", "right": "спать подольше" },
+            { "left": "make the bed", "right": "заправлять кровать" },
+            { "left": "water the plants", "right": "поливать цветы" }
+          ],
+          "hint": "Домашние дела выходного дня. Обрати внимание на устойчивые сочетания с do и make.",
+          "explanation": "do the laundry, make the bed — устойчивые пары глагол+существительное, их сочетания нельзя менять местами." } },
+        { "ref": "a1.routines.009.t5", "type": "order", "data": {
+          "tokens": ["I", "do", "the", "laundry", "on", "Saturday", "morning"],
+          "hint": "Подлежащее, действие, затем время в конце фразы.",
+          "explanation": "I do the laundry on Saturday morning — я стираю в субботу утром. Время — в конце предложения." } },
+        { "ref": "a1.routines.009.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"On weekends I sleep in and clean my apartment.\"",
+          "target": "On weekends I sleep in and clean my apartment.",
+          "audioKey": "a1.routines.009.t6.weekend-chores",
+          "hint": "Одна фраза о выходных: сначала сон, потом уборка.",
+          "explanation": "On weekends I sleep in and clean my apartment — по выходным я сплю подольше и убираю квартиру." } }
+      ]
+    },
+    {
+      "moduleRef": "a1.routines",
+      "lessonRef": "a1.routines.010",
+      "title": { "ru": "Итоговый диалог: мой типичный день", "en": "Final Dialogue: My Typical Day" },
+      "description": { "ru": "Связный рассказ о дне: подъём, работа, вечер и выходной", "en": "A connected story of your day: getting up, work, evening and a day off" },
+      "order": 10, "published": true, "estimatedMinutes": 12,
+      "type": "grammar", "difficulty": "hard", "xpReward": 40, "hasAudio": true,
+      "tasks": [
+        { "ref": "a1.routines.010.t1", "type": "listen", "data": {
+          "audioKey": "a1.routines.010.t1.start-at-nine",
+          "transcript": "I get up at seven and start work at nine.",
+          "translation": "Я встаю в семь и начинаю работать в девять.",
+          "question": "Во сколько человек начинает работать?",
+          "options": ["At seven", "At eight", "At nine", "At ten"],
+          "correctIndex": 2,
+          "hint": "Слушай время после start work.",
+          "explanation": "Start work at nine — начинает работать в девять. В семь он только встаёт." } },
+        { "ref": "a1.routines.010.t2", "type": "choice", "data": {
+          "question": "Друг спрашивает: \"What time do you usually go to bed?\" Что ответить?",
+          "options": ["I am go to bed at eleven.", "I usually go to bed at eleven.", "I use to go to bed at eleven.", "I going to bed at eleven."],
+          "correctIndex": 1,
+          "hint": "Привычка — это Present Simple с наречием частоты, без вспомогательных.",
+          "explanation": "I usually go to bed at eleven. «I use to go» — частая ошибка: used to — про прошлое, для привычек сейчас нужно usually + Present Simple." } },
+        { "ref": "a1.routines.010.t3", "type": "gap", "data": {
+          "text": "She ____ up at six because her office is far from home.",
+          "answer": "gets",
+          "accept": ["wakes"],
+          "hint": "Третье лицо единственного числа — не забудь окончание.",
+          "explanation": "she gets up — она встаёт: в 3-м лице единственного числа глагол получает окончание -s.",
+          "caseInsensitive": true } },
+        { "ref": "a1.routines.010.t4", "type": "match", "data": {
+          "pairs": [
+            { "left": "get up", "right": "вставать" },
+            { "left": "have breakfast", "right": "завтракать" },
+            { "left": "check emails", "right": "проверять почту" },
+            { "left": "cook dinner", "right": "готовить ужин" },
+            { "left": "go to bed", "right": "ложиться спать" },
+            { "left": "day off", "right": "выходной день" }
+          ],
+          "hint": "Действия типичного дня — от подъёма до сна.",
+          "explanation": "Базовые коллокации дня: have breakfast (не eat breakfast в формулах), go to bed — ложиться спать, day off — выходной." } },
+        { "ref": "a1.routines.010.t5", "type": "translate", "data": {
+          "question": "Переведи: «Я не работаю по воскресеньям, это мой выходной»",
+          "expected": ["I don't work on Sundays, it's my day off", "I do not work on Sundays, it is my day off", "I don't work on Sundays, it is my day off"],
+          "hint": "Отрицание в Present Simple; дни недели — с предлогом.",
+          "explanation": "I don't work on Sundays, it's my day off. don't = do not; по воскресеньям — on Sundays." } },
+        { "ref": "a1.routines.010.t6", "type": "speak", "data": {
+          "prompt": "Скажи: \"My typical day is busy, but I always find time to relax.\"",
+          "target": "My typical day is busy, but I always find time to relax.",
+          "audioKey": "a1.routines.010.t6.typical-day",
+          "hint": "Две части фразы через but — с небольшой паузой.",
+          "explanation": "My typical day is busy, but I always find time to relax — мой типичный день насыщенный, но я всегда нахожу время отдохнуть." } }
+      ]
+    }
+  ]
+}

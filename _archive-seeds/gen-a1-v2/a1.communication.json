@@ -1,0 +1,863 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a1.communication",
+      "level": "A1",
+      "title": { "ru": "Общение и отношения A1", "en": "Communication A1" },
+      "description": { "ru": "Дружелюбные диалоги, планы, просьбы и ответы", "en": "Friendly dialogues, plans, requests and replies" },
+      "tags": ["a1", "communication", "social"],
+      "order": 9,
+      "published": true
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.001",
+      "title": { "ru": "Что ты сейчас делаешь?", "en": "What are you doing?" },
+      "description": { "ru": "Рассказываем о действиях прямо сейчас: Present Continuous", "en": "Talking about actions happening right now" },
+      "order": 1,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.001.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.001.t1.cooking-dinner",
+            "transcript": "I am cooking dinner right now, call me later.",
+            "translation": "Я сейчас готовлю ужин, позвони мне позже.",
+            "question": "Что сейчас делает говорящий?",
+            "options": ["He is watching TV", "He is cooking dinner", "He is calling a friend", "He is eating dinner"],
+            "correctIndex": 1,
+            "hint": "Слушай глагол сразу после I am.",
+            "explanation": "I am cooking dinner — я готовлю ужин (прямо сейчас). Right now — прямо сейчас."
+          }
+        },
+        {
+          "ref": "a1.communication.001.t2",
+          "type": "choice",
+          "data": {
+            "question": "— What are you doing? — I ____ a book.",
+            "options": ["read", "reading", "am reading", "is reading"],
+            "correctIndex": 2,
+            "hint": "Действие происходит прямо сейчас — нужны обе части: глагол be и форма с -ing.",
+            "explanation": "Сейчас = Present Continuous: I am reading. Ошибка «I reading» — потерян am, «I read» — это привычка, а не «сейчас»."
+          }
+        },
+        {
+          "ref": "a1.communication.001.t3",
+          "type": "gap",
+          "data": {
+            "text": "Look! The children ____ playing football.",
+            "answer": "are",
+            "hint": "Дети — их много. Выбери нужную форму глагола be.",
+            "explanation": "The children — «они», поэтому are playing. Look! — сигнал, что действие идёт прямо сейчас.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.communication.001.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["What", "are", "you", "doing", "now", "?"],
+            "hint": "Вопрос о действии сейчас: вопросительное слово, потом глагол be, потом подлежащее.",
+            "explanation": "What are you doing now? — Что ты сейчас делаешь? Частая ошибка: «What you are doing?» — be должен стоять до you."
+          }
+        },
+        {
+          "ref": "a1.communication.001.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я сейчас смотрю фильм».",
+            "expected": ["I am watching a film now", "I'm watching a film now", "I am watching a movie now", "I'm watching a movie now"],
+            "hint": "Действие прямо сейчас: глагол be + основной глагол с -ing.",
+            "explanation": "«Сейчас» = Present Continuous: I am (I'm) watching a film/movie now."
+          }
+        },
+        {
+          "ref": "a1.communication.001.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Sorry, I am busy. I am working now.\"",
+            "target": "Sorry, I am busy. I am working now.",
+            "audioKey": "a1.communication.001.t6.i-am-working-now",
+            "hint": "Две короткие фразы, произноси спокойно и слитно.",
+            "explanation": "Так вежливо отвечают, когда заняты: извинение + что ты делаешь сейчас."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.002",
+      "title": { "ru": "Хобби: что мне нравится", "en": "Hobbies: what I like" },
+      "description": { "ru": "Говорим о любимых занятиях: like, love, hate + -ing", "en": "Talking about favourite activities with like/love/hate + -ing" },
+      "order": 2,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.002.t1",
+          "type": "choice",
+          "data": {
+            "question": "She ____ dancing, but she hates singing.",
+            "options": ["love", "is love", "loving", "loves"],
+            "correctIndex": 3,
+            "hint": "После he/she глагол в Present Simple получает окончание.",
+            "explanation": "She loves dancing. Частая ошибка русскоговорящих — «She love» без -s. «Is love» — лишний be."
+          }
+        },
+        {
+          "ref": "a1.communication.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "I really like ____ to music in the evening.",
+            "answer": "listening",
+            "hint": "После like занятие называем формой глагола с -ing. Музыку мы... что делаем?",
+            "explanation": "Like + listening: мне нравится слушать музыку. После like/love/hate — глагол с -ing.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.communication.002.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "reading", "right": "чтение" },
+              { "left": "swimming", "right": "плавание" },
+              { "left": "cooking", "right": "готовка" },
+              { "left": "drawing", "right": "рисование" },
+              { "left": "running", "right": "бег" },
+              { "left": "travelling", "right": "путешествия" }
+            ],
+            "hint": "Все слова — любимые занятия, отвечают на вопрос «что делать?».",
+            "explanation": "Хобби в английском называют формой на -ing: reading — чтение, swimming — плавание."
+          }
+        },
+        {
+          "ref": "a1.communication.002.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я ненавижу рано вставать».",
+            "expected": ["I hate getting up early", "I hate to get up early", "I hate waking up early", "I hate to wake up early"],
+            "hint": "«Ненавидеть» + занятие: после этого глагола обычно форма с -ing.",
+            "explanation": "I hate getting up early. Get up / wake up — вставать, просыпаться."
+          }
+        },
+        {
+          "ref": "a1.communication.002.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.002.t5.love-playing-guitar",
+            "transcript": "I love playing the guitar with my friends at weekends.",
+            "translation": "Я люблю играть на гитаре с друзьями по выходным.",
+            "question": "Что любит делать говорящий?",
+            "options": ["Playing football", "Singing with friends", "Playing the guitar", "Listening to the radio"],
+            "correctIndex": 2,
+            "hint": "Инструмент или спорт? Слушай внимательно после I love.",
+            "explanation": "I love playing the guitar — я люблю играть на гитаре. At weekends — по выходным."
+          }
+        },
+        {
+          "ref": "a1.communication.002.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I like swimming, but I hate running.\"",
+            "target": "I like swimming, but I hate running.",
+            "audioKey": "a1.communication.002.t6.like-swimming-hate-running",
+            "hint": "Контраст: первая часть — с удовольствием, вторая — с недовольством.",
+            "explanation": "Классическая фраза о вкусах: like + -ing, hate + -ing."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.003",
+      "title": { "ru": "Пойдём в кино!", "en": "Let's go to the cinema!" },
+      "description": { "ru": "Приглашаем друга: Let's... и Shall we...?", "en": "Inviting a friend with Let's... and Shall we...?" },
+      "order": 3,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.003.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.003.t1.lets-go-cinema",
+            "transcript": "Let's go to the cinema tonight, there is a new film.",
+            "translation": "Пойдём сегодня вечером в кино, там новый фильм.",
+            "question": "Что предлагает говорящий?",
+            "options": ["To watch TV at home", "To go to the cinema", "To go to a cafe", "To buy a new phone"],
+            "correctIndex": 1,
+            "hint": "Предложение начинается с Let's — слушай, куда зовут.",
+            "explanation": "Let's go to the cinema — пойдём в кино. Tonight — сегодня вечером."
+          }
+        },
+        {
+          "ref": "a1.communication.003.t2",
+          "type": "choice",
+          "data": {
+            "question": "Ты хочешь позвать друга в кино. Как сказать правильно?",
+            "options": ["Let's go to the cinema!", "Let's to go to the cinema!", "Let's going to the cinema!", "We go cinema!"],
+            "correctIndex": 0,
+            "hint": "После «давай» глагол идёт сразу, в самой простой форме.",
+            "explanation": "Let's + глагол без to и без -ing. «Let's to go» и «Let's going» — типичные ошибки."
+          }
+        },
+        {
+          "ref": "a1.communication.003.t3",
+          "type": "gap",
+          "data": {
+            "text": "____ we meet at seven o'clock?",
+            "answer": "Shall",
+            "hint": "Вежливый вопрос-предложение «может, ...?» начинается с особого слова.",
+            "explanation": "Shall we meet at seven? — Может, встретимся в семь? Shall we — вежливое предложение.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.communication.003.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Shall", "we", "watch", "a", "comedy", "tonight", "?"],
+            "hint": "Вопрос-предложение: сначала модальный глагол, потом «мы», потом действие.",
+            "explanation": "Shall we watch a comedy tonight? — Посмотрим сегодня комедию?"
+          }
+        },
+        {
+          "ref": "a1.communication.003.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Давай встретимся у кинотеатра».",
+            "expected": ["Let's meet at the cinema", "Let us meet at the cinema", "Let's meet near the cinema"],
+            "hint": "«Давай» — есть короткая форма с апострофом и полная из двух слов.",
+            "explanation": "Let's = Let us. Let's meet at the cinema — давай встретимся у кинотеатра."
+          }
+        },
+        {
+          "ref": "a1.communication.003.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Great idea! Let's meet at six.\"",
+            "target": "Great idea! Let's meet at six.",
+            "audioKey": "a1.communication.003.t6.lets-meet-at-six",
+            "hint": "Сначала радость, потом предложение — с восходящей энергией.",
+            "explanation": "Great idea! — Отличная идея! Так соглашаются на приглашение и уточняют время."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.004",
+      "title": { "ru": "Когда и где встречаемся?", "en": "When and where shall we meet?" },
+      "description": { "ru": "Договариваемся о времени и месте: предлоги at, on, in", "en": "Agreeing on time and place: prepositions at, on, in" },
+      "order": 4,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "The film starts ____ seven o'clock.",
+            "options": ["in", "on", "to", "at"],
+            "correctIndex": 3,
+            "hint": "Для точного времени по часам — свой предлог.",
+            "explanation": "At seven o'clock — в семь часов. Запомни: at + час, on + день, in + часть дня."
+          }
+        },
+        {
+          "ref": "a1.communication.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "Let's meet ____ Friday evening.",
+            "answer": "on",
+            "hint": "Перед днями недели ставится свой предлог.",
+            "explanation": "On Friday — в пятницу. С днями недели всегда on.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.communication.004.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "at seven o'clock", "right": "в семь часов" },
+              { "left": "on Saturday", "right": "в субботу" },
+              { "left": "in the morning", "right": "утром" },
+              { "left": "near the park", "right": "около парка" },
+              { "left": "at the bus stop", "right": "на остановке" },
+              { "left": "after work", "right": "после работы" }
+            ],
+            "hint": "Всё это — ответы на вопросы «когда?» и «где?».",
+            "explanation": "Договариваемся о встрече: at + час, on + день, in + часть дня, near — около."
+          }
+        },
+        {
+          "ref": "a1.communication.004.t4",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.004.t4.meet-at-ten",
+            "transcript": "Let's meet at the bus stop at ten on Saturday.",
+            "translation": "Давай встретимся на остановке в десять в субботу.",
+            "question": "Во сколько встреча?",
+            "options": ["At ten", "At two", "At seven", "At five"],
+            "correctIndex": 0,
+            "hint": "Слушай число между местом и днём недели.",
+            "explanation": "At ten — в десять. Не путай ten (десять) и two (два) на слух."
+          }
+        },
+        {
+          "ref": "a1.communication.004.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Где мы встретимся?»",
+            "expected": ["Where shall we meet?", "Where shall we meet", "Where will we meet?"],
+            "hint": "Вопрос о месте + вежливое «может, ...» из урока про приглашения.",
+            "explanation": "Where shall we meet? — стандартный вопрос, когда договариваются о месте."
+          }
+        },
+        {
+          "ref": "a1.communication.004.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Let's meet near the park at five.\"",
+            "target": "Let's meet near the park at five.",
+            "audioKey": "a1.communication.004.t6.meet-near-park",
+            "hint": "Сначала место, потом время.",
+            "explanation": "Полное предложение о встрече: место (near the park) + время (at five)."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.005",
+      "title": { "ru": "Телефонный разговор", "en": "A phone call" },
+      "description": { "ru": "Звоним и отвечаем: This is..., Can I speak to...?", "en": "Making and answering calls: This is..., Can I speak to...?" },
+      "order": 5,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.005.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.005.t1.anna-calling",
+            "transcript": "Hi, it's Anna. Are you free? I am calling about tonight.",
+            "translation": "Привет, это Анна. Ты свободен? Я звоню насчёт сегодняшнего вечера.",
+            "question": "Кто звонит?",
+            "options": ["Mary", "Kate", "Anna", "Olga"],
+            "correctIndex": 2,
+            "hint": "Имя звучит в самом начале, после it's.",
+            "explanation": "It's Anna — это Анна. По телефону так представляются: it's / this is + имя."
+          }
+        },
+        {
+          "ref": "a1.communication.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "Hello! ____ is Tom. Can I speak to Kate, please?",
+            "answer": "This",
+            "hint": "По телефону о себе говорят не «я — Том», а «... есть Том» — с указательным словом.",
+            "explanation": "По телефону представляются: This is Tom — это Том. Говорить «I am Tom» в трубку — калька с русского.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.communication.005.t3",
+          "type": "choice",
+          "data": {
+            "question": "Ты плохо слышишь собеседника по телефону. Что сказать вежливо?",
+            "options": ["Speak me loud!", "Can you speak louder, please?", "You speak very bad!", "Repeat!"],
+            "correctIndex": 1,
+            "hint": "Вежливая просьба — это вопрос, а не приказ.",
+            "explanation": "Can you speak louder, please? — Говорите, пожалуйста, громче. «Speak me loud» — калька, так не говорят."
+          }
+        },
+        {
+          "ref": "a1.communication.005.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Can", "I", "call", "you", "back", "later", "?"],
+            "hint": "Просьба-вопрос: модальный глагол на первом месте, «перезвонить» — из двух слов.",
+            "explanation": "Can I call you back later? — Можно я перезвоню позже? Call back — перезвонить."
+          }
+        },
+        {
+          "ref": "a1.communication.005.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Извини, я сейчас работаю. Я перезвоню позже».",
+            "expected": ["Sorry, I am working now. I will call you back later", "Sorry, I'm working now. I'll call you back later", "Sorry, I am working now. I'll call you back later", "Sorry, I'm working now. I will call you back later"],
+            "hint": "Действие сейчас — be + -ing; обещание — will.",
+            "explanation": "I'm working now (сейчас) + I'll call you back later (обещание перезвонить)."
+          }
+        },
+        {
+          "ref": "a1.communication.005.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Hello! This is Max. Can I speak to Anna, please?\"",
+            "target": "Hello! This is Max. Can I speak to Anna, please?",
+            "audioKey": "a1.communication.005.t6.this-is-max",
+            "hint": "Три шага: приветствие, кто ты, кого просишь.",
+            "explanation": "Полный шаблон начала телефонного разговора: Hello + This is + Can I speak to."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.006",
+      "title": { "ru": "Переписка в мессенджере", "en": "Texting a friend" },
+      "description": { "ru": "Короткие сообщения: что делаешь, занят ли, когда придёшь", "en": "Short messages: what you are doing, if you are busy" },
+      "order": 6,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "Друг пишет: «What are you doing?» Выбери правильный ответ.",
+            "options": ["I'm just watching TV.", "I just watch TV now.", "I am watch TV.", "I watching TV now."],
+            "correctIndex": 0,
+            "hint": "Действие прямо сейчас: нужны обе части — глагол be и форма с -ing.",
+            "explanation": "I'm just watching TV. Ошибки: «I am watch» — нет -ing, «I watching» — нет am, «I watch ... now» — Simple вместо Continuous."
+          }
+        },
+        {
+          "ref": "a1.communication.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "Sorry, I can't talk now. I ____ dinner with my family.",
+            "answer": "am having",
+            "hint": "Ужин идёт прямо в этот момент: форма be + глагол с -ing, два слова.",
+            "explanation": "I am having dinner — я ужинаю (сейчас). Have dinner — ужинать.",
+            "caseInsensitive": true,
+            "accept": ["'m having"]
+          }
+        },
+        {
+          "ref": "a1.communication.006.t3",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Ты сейчас занят?»",
+            "expected": ["Are you busy now?", "Are you busy now", "Are you busy right now?"],
+            "hint": "Вопрос со словом «занят»: глагол be выходит на первое место, do не нужен.",
+            "explanation": "Are you busy now? Busy — прилагательное, поэтому вопрос строится через be, без do."
+          }
+        },
+        {
+          "ref": "a1.communication.006.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "See you soon!", "right": "До скорого!" },
+              { "left": "What's up?", "right": "Как дела?" },
+              { "left": "I'm on my way.", "right": "Я уже еду." },
+              { "left": "Sounds good!", "right": "Звучит отлично!" },
+              { "left": "Sorry, I'm busy.", "right": "Извини, я занят." },
+              { "left": "Call me back.", "right": "Перезвони мне." }
+            ],
+            "hint": "Короткие живые фразы из переписки.",
+            "explanation": "Это самые частые фразы в чатах: What's up? — Как дела? I'm on my way — уже еду."
+          }
+        },
+        {
+          "ref": "a1.communication.006.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.006.t5.coming-to-party",
+            "transcript": "Are you coming to the party? Everyone is waiting for you.",
+            "translation": "Ты придёшь на вечеринку? Все тебя ждут.",
+            "question": "О чём спрашивает говорящий?",
+            "options": ["About homework", "About a new film", "About work", "About the party"],
+            "correctIndex": 3,
+            "hint": "Слушай последнее слово первого вопроса.",
+            "explanation": "Are you coming to the party? — Ты идёшь на вечеринку? Everyone is waiting — все ждут."
+          }
+        },
+        {
+          "ref": "a1.communication.006.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Sounds good! I'm on my way.\"",
+            "target": "Sounds good! I'm on my way.",
+            "audioKey": "a1.communication.006.t6.on-my-way",
+            "hint": "Согласие + «уже еду»: коротко и бодро.",
+            "explanation": "Sounds good! — Отлично! I'm on my way — я уже в пути."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.007",
+      "title": { "ru": "Вежливый отказ", "en": "Saying no politely" },
+      "description": { "ru": "Отказываемся вежливо и предлагаем другой вариант", "en": "Refusing politely and suggesting an alternative" },
+      "order": 7,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.007.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.007.t1.meet-tomorrow-instead",
+            "transcript": "I'm sorry, I can't come today. Let's meet tomorrow instead.",
+            "translation": "Прости, я не могу прийти сегодня. Давай вместо этого встретимся завтра.",
+            "question": "Что предлагает говорящий?",
+            "options": ["To meet today", "To stay at home", "To meet tomorrow", "To call later"],
+            "correctIndex": 2,
+            "hint": "Слушай, какой день звучит после Let's.",
+            "explanation": "Let's meet tomorrow instead — давай лучше завтра. Instead — вместо этого."
+          }
+        },
+        {
+          "ref": "a1.communication.007.t2",
+          "type": "choice",
+          "data": {
+            "question": "Друг зовёт в кафе, но ты не можешь. Как отказаться вежливо?",
+            "options": ["No. I don't want.", "Sorry, I can't today. What about tomorrow?", "I am not agree.", "It is bad idea."],
+            "correctIndex": 1,
+            "hint": "Вежливый отказ = извинение + другое предложение.",
+            "explanation": "Sorry, I can't + альтернатива. «I am not agree» — частая ошибка: agree — глагол, be не нужен."
+          }
+        },
+        {
+          "ref": "a1.communication.007.t3",
+          "type": "gap",
+          "data": {
+            "text": "That sounds nice, but I'm busy. What ____ Sunday?",
+            "answer": "about",
+            "hint": "Предложить альтернативу: «а как насчёт...?» — What + предлог.",
+            "explanation": "What about Sunday? — А как насчёт воскресенья? Готовая формула для другого варианта.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.communication.007.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Sorry", ",", "I", "can't", "come", "to", "the", "party", "."],
+            "hint": "Начни с извинения, потом — что именно не можешь сделать.",
+            "explanation": "Sorry, I can't come to the party. — Извини, я не могу прийти на вечеринку."
+          }
+        },
+        {
+          "ref": "a1.communication.007.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Извини, я не могу. Давай в другой раз».",
+            "expected": ["Sorry, I can't. Let's do it another time", "Sorry, I cannot. Let's do it another time", "Sorry, I can't. Let us do it another time", "Sorry, I can't. Let's meet another time"],
+            "hint": "Отказ через «не могу» + предложение с «давай». Another time — в другой раз.",
+            "explanation": "Sorry, I can't. Let's do it another time — вежливая формула отказа с переносом."
+          }
+        },
+        {
+          "ref": "a1.communication.007.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I'd love to, but I can't today.\"",
+            "target": "I'd love to, but I can't today.",
+            "audioKey": "a1.communication.007.t6.love-to-but-cant",
+            "hint": "Первая часть тёплая, вторая — с сожалением.",
+            "explanation": "I'd love to, but... — «я бы с удовольствием, но...» — самый вежливый отказ. I'd = I would."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.008",
+      "title": { "ru": "Семья и друзья", "en": "Family and friends" },
+      "description": { "ru": "Рассказываем о близких: привычки и любимые занятия", "en": "Talking about family: habits and favourite activities" },
+      "order": 8,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "vocabulary",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "My sister ____ reading, she reads every evening.",
+            "options": ["like", "is like", "liking", "likes"],
+            "correctIndex": 3,
+            "hint": "Говорим про «она» — не забудь окончание глагола в Present Simple.",
+            "explanation": "She likes reading. «She like» — типичная ошибка: после he/she нужно -s."
+          }
+        },
+        {
+          "ref": "a1.communication.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "My brother usually ____ football on Saturdays, but today he is playing tennis.",
+            "answer": "plays",
+            "hint": "Usually — привычка: Present Simple, «он» — с окончанием.",
+            "explanation": "Usually — Present Simple с -s. А «сегодня» — is playing, Present Continuous. В этом контраст двух времён.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.communication.008.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "wife", "right": "жена" },
+              { "left": "husband", "right": "муж" },
+              { "left": "daughter", "right": "дочь" },
+              { "left": "son", "right": "сын" },
+              { "left": "parents", "right": "родители" },
+              { "left": "grandmother", "right": "бабушка" }
+            ],
+            "hint": "Члены семьи — от супругов до старшего поколения.",
+            "explanation": "Базовые слова о семье: wife — жена, husband — муж, daughter — дочь, son — сын."
+          }
+        },
+        {
+          "ref": "a1.communication.008.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Мы часто навещаем бабушку по воскресеньям».",
+            "expected": ["We often visit our grandmother on Sundays", "We often visit grandma on Sundays", "We often visit our grandma on Sundays", "We often visit our grandmother on Sunday"],
+            "hint": "Привычка: Present Simple, «часто» ставится перед глаголом.",
+            "explanation": "We often visit our grandmother on Sundays. Often — перед глаголом, on Sundays — по воскресеньям."
+          }
+        },
+        {
+          "ref": "a1.communication.008.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.008.t5.brother-nick",
+            "transcript": "This is my brother Nick. He loves cooking and plays the guitar.",
+            "translation": "Это мой брат Ник. Он любит готовить и играет на гитаре.",
+            "question": "Что любит делать брат Ник?",
+            "options": ["Cooking", "Dancing", "Swimming", "Drawing"],
+            "correctIndex": 0,
+            "hint": "Слушай занятие сразу после He loves.",
+            "explanation": "He loves cooking — он любит готовить. And plays the guitar — и играет на гитаре."
+          }
+        },
+        {
+          "ref": "a1.communication.008.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I have a big family and I love spending time with them.\"",
+            "target": "I have a big family and I love spending time with them.",
+            "audioKey": "a1.communication.008.t6.big-family",
+            "hint": "Длинная фраза — дели на две части по смыслу.",
+            "explanation": "Spend time with — проводить время с кем-то. После love — форма с -ing: spending."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.009",
+      "title": { "ru": "Планы на выходные", "en": "Weekend plans" },
+      "description": { "ru": "Договорённости на выходные через Present Continuous", "en": "Weekend arrangements with the Present Continuous" },
+      "order": 9,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.009.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.009.t1.going-to-lake",
+            "transcript": "On Saturday we are going to the lake with our friends.",
+            "translation": "В субботу мы едем на озеро с друзьями.",
+            "question": "Куда едут говорящие в субботу?",
+            "options": ["To the cinema", "To the park", "To the lake", "To the shop"],
+            "correctIndex": 2,
+            "hint": "Слушай место после going to — это про воду.",
+            "explanation": "We are going to the lake — мы едем на озеро. Lake — озеро."
+          }
+        },
+        {
+          "ref": "a1.communication.009.t2",
+          "type": "choice",
+          "data": {
+            "question": "— What are you doing this weekend? — ____",
+            "options": ["I'm visiting my parents.", "I visiting my parents.", "I am visit my parents.", "I'm visit my parents."],
+            "correctIndex": 0,
+            "hint": "План на выходные — как действие сейчас: be + -ing, обе части на месте.",
+            "explanation": "I'm visiting my parents — договорённость на выходные. Остальные варианты теряют am или -ing."
+          }
+        },
+        {
+          "ref": "a1.communication.009.t3",
+          "type": "gap",
+          "data": {
+            "text": "____ have a picnic in the park on Sunday!",
+            "answer": "Let's",
+            "hint": "Предложение «давай...» — вспомни короткую форму с апострофом.",
+            "explanation": "Let's have a picnic — Давай устроим пикник. Let's = Let us.",
+            "caseInsensitive": true,
+            "accept": ["Lets", "Let us"]
+          }
+        },
+        {
+          "ref": "a1.communication.009.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["We", "are", "playing", "volleyball", "on", "Saturday", "morning", "."],
+            "hint": "Подлежащее + be + глагол с -ing, время — в конце предложения.",
+            "explanation": "We are playing volleyball on Saturday morning — договорённость: Present Continuous + время."
+          }
+        },
+        {
+          "ref": "a1.communication.009.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «В воскресенье я встречаюсь с друзьями».",
+            "expected": ["I am meeting my friends on Sunday", "I'm meeting my friends on Sunday", "On Sunday I am meeting my friends", "On Sunday I'm meeting my friends"],
+            "hint": "Запланированная встреча: be + глагол с -ing.",
+            "explanation": "I'm meeting my friends on Sunday — о договорённостях говорят в Present Continuous."
+          }
+        },
+        {
+          "ref": "a1.communication.009.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"We are having a picnic on Sunday. Join us!\"",
+            "target": "We are having a picnic on Sunday. Join us!",
+            "audioKey": "a1.communication.009.t6.picnic-on-sunday",
+            "hint": "Вторая фраза — короткое приглашение, скажи её с улыбкой.",
+            "explanation": "Join us! — Присоединяйся! Так зовут друзей на уже запланированное событие."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.communication",
+      "lessonRef": "a1.communication.010",
+      "title": { "ru": "Большой диалог: повторение", "en": "The big dialogue: review" },
+      "description": { "ru": "Собираем всё вместе: сейчас vs обычно, Let's, вкусы", "en": "Putting it all together: now vs usually, Let's, likes" },
+      "order": 10,
+      "published": true,
+      "estimatedMinutes": 15,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.communication.010.t1",
+          "type": "choice",
+          "data": {
+            "question": "— What ____ in your free time? — I usually read or draw.",
+            "options": ["you do", "are you do", "you doing", "do you do"],
+            "correctIndex": 3,
+            "hint": "Вопрос о привычках: нужен вспомогательный глагол перед you.",
+            "explanation": "What do you do in your free time? — вопрос в Present Simple строится через do. «What you do?» — калька с русского."
+          }
+        },
+        {
+          "ref": "a1.communication.010.t2",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.communication.010.t2.new-cafe-pizza",
+            "transcript": "Shall we go to the new cafe? They make great pizza.",
+            "translation": "Может, сходим в новое кафе? Там готовят отличную пиццу.",
+            "question": "Почему говорящий предлагает это кафе?",
+            "options": ["It is very cheap", "The pizza is great", "It is near the house", "The coffee is good"],
+            "correctIndex": 1,
+            "hint": "Слушай вторую фразу: что там хорошо готовят?",
+            "explanation": "They make great pizza — там готовят отличную пиццу. Это и есть причина."
+          }
+        },
+        {
+          "ref": "a1.communication.010.t3",
+          "type": "gap",
+          "data": {
+            "text": "— Is Anna at home? — Yes, but she ____ now, call her later.",
+            "answer": "is sleeping",
+            "hint": "Действие идёт прямо сейчас: форма be для «она» + глагол «спать» с -ing.",
+            "explanation": "She is sleeping now — она сейчас спит. Now — сигнал Present Continuous.",
+            "caseInsensitive": true,
+            "accept": ["'s sleeping"]
+          }
+        },
+        {
+          "ref": "a1.communication.010.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "Let's stay at home.", "right": "Давай останемся дома." },
+              { "left": "Shall we dance?", "right": "Потанцуем?" },
+              { "left": "I hate waiting.", "right": "Ненавижу ждать." },
+              { "left": "They are travelling.", "right": "Они путешествуют." },
+              { "left": "He works a lot.", "right": "Он много работает." },
+              { "left": "What about Friday?", "right": "Как насчёт пятницы?" }
+            ],
+            "hint": "Все конструкции модуля в одном задании.",
+            "explanation": "Повторение: Let's и Shall we — предложения, hate + -ing — вкусы, are travelling — сейчас, works — обычно."
+          }
+        },
+        {
+          "ref": "a1.communication.010.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я не смотрю телевизор, я читаю».",
+            "expected": ["I am not watching TV, I am reading", "I'm not watching TV, I'm reading", "I am not watching TV, I'm reading", "I'm not watching TV, I am reading"],
+            "hint": "Оба действия — прямо сейчас; в первом — отрицание после глагола be.",
+            "explanation": "I'm not watching TV, I'm reading. Отрицание в Present Continuous: not после am/is/are."
+          }
+        },
+        {
+          "ref": "a1.communication.010.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Let's talk in English. I love learning new words!\"",
+            "target": "Let's talk in English. I love learning new words!",
+            "audioKey": "a1.communication.010.t6.lets-talk-english",
+            "hint": "Финальная фраза курса — произнеси её уверенно.",
+            "explanation": "Let's talk in English — давай говорить по-английски. Love + learning — любимое занятие с -ing."
+          }
+        }
+      ]
+    }
+  ]
+}

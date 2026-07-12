@@ -1,0 +1,868 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a1.workplace",
+      "level": "A1",
+      "title": { "ru": "Работа и офис A1", "en": "Workplace A1" },
+      "description": { "ru": "Базовое общение в офисе: задачи, встречи, отчёты", "en": "Basic office communication: tasks, meetings, updates" },
+      "tags": ["a1", "work", "office"],
+      "order": 5,
+      "published": true
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.001",
+      "title": { "ru": "Знакомство с коллегами", "en": "Meeting the Team" },
+      "description": { "ru": "Первый день в офисе: представься и познакомься с командой", "en": "Your first day at the office: introduce yourself and meet the team" },
+      "order": 1,
+      "published": true,
+      "estimatedMinutes": 10,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Ты представляешь новую коллегу. Выбери правильный вариант: This is Anna. She ___ in the sales team.",
+            "options": ["work", "is work", "works", "working"],
+            "correctIndex": 2,
+            "hint": "Подлежащее — she, 3-е лицо единственного числа.",
+            "explanation": "В Present Simple после he/she/it глагол получает окончание -s: She works in the sales team. «Is work» и «working» без am/is — типичные ошибки, так по-английски не говорят."
+          }
+        },
+        {
+          "ref": "a1.workplace.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "Hello! My name ____ Pavel. I am a new designer.",
+            "answer": "is",
+            "hint": "Нужен глагол-связка для единственного числа.",
+            "explanation": "My name is Pavel — «Меня зовут Павел». С существительным в единственном числе (name) используем is.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.001.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "colleague", "right": "коллега" },
+              { "left": "manager", "right": "руководитель" },
+              { "left": "team", "right": "команда" },
+              { "left": "office", "right": "офис" },
+              { "left": "desk", "right": "рабочий стол" },
+              { "left": "meeting room", "right": "переговорная" }
+            ],
+            "hint": "Это базовые слова про офис — вспомни, кто и что тебя окружает на работе.",
+            "explanation": "Colleague — коллега, manager — руководитель, team — команда, office — офис, desk — рабочий стол, meeting room — переговорная. Эти слова будут во всех уроках модуля."
+          }
+        },
+        {
+          "ref": "a1.workplace.001.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Nice", "to", "meet", "you", "."],
+            "hint": "Стандартная вежливая фраза при знакомстве.",
+            "explanation": "Nice to meet you — «Приятно познакомиться». Порядок фиксированный, это устойчивое выражение."
+          }
+        },
+        {
+          "ref": "a1.workplace.001.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Hello! I'm new here. What's your name?\"",
+            "target": "Hello! I'm new here. What's your name?",
+            "audioKey": "a1.workplace.001.t5.new-here",
+            "hint": "Представься как новичок и спроси имя собеседника.",
+            "explanation": "I'm new here — «я здесь новенький». What's your name? — самый простой способ спросить имя."
+          }
+        },
+        {
+          "ref": "a1.workplace.001.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.001.t6.kate-manager",
+            "transcript": "Hello! I'm Kate, the new office manager.",
+            "translation": "Привет! Я Кейт, новый офис-менеджер.",
+            "question": "Кем работает Кейт?",
+            "options": ["Office manager", "Sales manager", "Designer", "Accountant"],
+            "correctIndex": 0,
+            "hint": "Должность звучит сразу после имени.",
+            "explanation": "Кейт говорит: I'm Kate, the new office manager — она новый офис-менеджер."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.002",
+      "title": { "ru": "Мой рабочий день", "en": "My Working Day" },
+      "description": { "ru": "Расскажи о своём распорядке: когда начинаешь, что делаешь, когда заканчиваешь", "en": "Talk about your routine: when you start, what you do, when you finish" },
+      "order": 2,
+      "published": true,
+      "estimatedMinutes": 11,
+      "type": "grammar",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.002.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.002.t1.finish-at-six",
+            "transcript": "I usually finish work at six and go home by bus.",
+            "translation": "Я обычно заканчиваю работу в шесть и еду домой на автобусе.",
+            "question": "Когда говорящий заканчивает работу?",
+            "options": ["At five", "At seven", "At nine", "At six"],
+            "correctIndex": 3,
+            "hint": "Слушай число после слова finish.",
+            "explanation": "I usually finish work at six — «я обычно заканчиваю работу в шесть»."
+          }
+        },
+        {
+          "ref": "a1.workplace.002.t2",
+          "type": "choice",
+          "data": {
+            "question": "Куда поставить наречие частотности? I ___ my email in the morning.",
+            "options": ["check always", "always check", "am always check", "always checking"],
+            "correctIndex": 1,
+            "hint": "Наречия частотности стоят перед смысловым глаголом.",
+            "explanation": "Always, usually, sometimes, never ставятся ПЕРЕД глаголом: I always check my email. «Am always check» — частая ошибка: с обычным глаголом am не нужен."
+          }
+        },
+        {
+          "ref": "a1.workplace.002.t3",
+          "type": "gap",
+          "data": {
+            "text": "I ____ not work on Saturdays. Saturday is my day off.",
+            "answer": "do",
+            "hint": "Отрицание в Present Simple, первое лицо.",
+            "explanation": "Отрицание с I строится через do not (don't): I do not work on Saturdays — «я не работаю по субботам».",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.002.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["We", "usually", "start", "work", "at", "nine", "."],
+            "hint": "Подлежащее, потом наречие частотности, потом глагол.",
+            "explanation": "We usually start work at nine — «мы обычно начинаем работу в девять». Usually стоит между подлежащим и глаголом."
+          }
+        },
+        {
+          "ref": "a1.workplace.002.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я обычно начинаю работу в девять».",
+            "expected": ["I usually start work at nine", "I usually start work at nine o'clock", "I usually start my work at nine", "Usually I start work at nine"],
+            "hint": "Наречие частотности обычно ставится перед глаголом.",
+            "explanation": "I usually start work at nine. Наречие usually стоит перед смысловым глаголом start."
+          }
+        },
+        {
+          "ref": "a1.workplace.002.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I start work at nine and finish at six.\"",
+            "target": "I start work at nine and finish at six.",
+            "audioKey": "a1.workplace.002.t6.start-at-nine",
+            "hint": "Расскажи про начало и конец рабочего дня одной фразой.",
+            "explanation": "Start — начинать, finish — заканчивать. С I глагол идёт без окончания."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.003",
+      "title": { "ru": "Задачи и дедлайны", "en": "Tasks and Deadlines" },
+      "description": { "ru": "Слова про задачи, отчёты и сроки + окончание -s у глаголов", "en": "Words for tasks, reports and deadlines + the -s ending" },
+      "order": 3,
+      "published": true,
+      "estimatedMinutes": 11,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Олег хвалит коллегу. Выбери правильное предложение.",
+            "options": [
+              "He finishes his tasks on time.",
+              "He finish his tasks on time.",
+              "He don't finishes his tasks on time.",
+              "He is finish his tasks on time."
+            ],
+            "correctIndex": 0,
+            "hint": "После he глаголу нужно окончание, а лишние слова не нужны.",
+            "explanation": "He finishes his tasks on time — «он заканчивает задачи вовремя». «He finish» — забыли -es, «he don't finishes» — двойная ошибка, «he is finish» — лишний is."
+          }
+        },
+        {
+          "ref": "a1.workplace.003.t2",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "task", "right": "задача" },
+              { "left": "deadline", "right": "срок сдачи" },
+              { "left": "report", "right": "отчёт" },
+              { "left": "project", "right": "проект" },
+              { "left": "to send", "right": "отправлять" },
+              { "left": "to finish", "right": "заканчивать" }
+            ],
+            "hint": "Два слова здесь — глаголы с частицей to.",
+            "explanation": "Task — задача, deadline — срок сдачи, report — отчёт, project — проект, to send — отправлять, to finish — заканчивать."
+          }
+        },
+        {
+          "ref": "a1.workplace.003.t3",
+          "type": "gap",
+          "data": {
+            "text": "Olga always ____ (finish) her tasks on time.",
+            "answer": "finishes",
+            "hint": "3-е лицо единственного числа: подумай, какое окончание нужно глаголу.",
+            "explanation": "После she/he/it к глаголу добавляется -s, а после -sh — -es: finishes.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.003.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «У меня сегодня три задачи».",
+            "expected": ["I have three tasks today", "Today I have three tasks", "I have 3 tasks today"],
+            "hint": "«У меня есть» по-английски — одно короткое слово-глагол.",
+            "explanation": "I have three tasks today. Конструкция «у меня есть» переводится глаголом have, без is/are."
+          }
+        },
+        {
+          "ref": "a1.workplace.003.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.003.t5.send-report",
+            "transcript": "Please send me the report before five o'clock.",
+            "translation": "Пожалуйста, отправь мне отчёт до пяти часов.",
+            "question": "О чём просит говорящий?",
+            "options": ["To call a client", "To book a room", "To send a report", "To read an email"],
+            "correctIndex": 2,
+            "hint": "Слушай глагол сразу после please.",
+            "explanation": "Please send me the report — просьба отправить отчёт. Before five o'clock — до пяти часов, это дедлайн."
+          }
+        },
+        {
+          "ref": "a1.workplace.003.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I need to finish this task today.\"",
+            "target": "I need to finish this task today.",
+            "audioKey": "a1.workplace.003.t6.finish-task",
+            "hint": "Скажи, что тебе нужно закончить задачу сегодня.",
+            "explanation": "I need to + глагол — «мне нужно что-то сделать». Очень частая рабочая конструкция."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.004",
+      "title": { "ru": "Встречи и календарь", "en": "Meetings and the Calendar" },
+      "description": { "ru": "Вопросы с do/does: когда встреча, кто приходит, во сколько начало", "en": "Questions with do/does: when is the meeting, who comes, what time it starts" },
+      "order": 4,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "Спроси про командную встречу: ___ the team meet on Mondays?",
+            "options": ["Is", "Are", "Do", "Does"],
+            "correctIndex": 3,
+            "hint": "В предложении есть смысловой глагол meet, а подлежащее — единственное число.",
+            "explanation": "Вопрос в Present Simple строится через do/does. Team — единственное число, поэтому Does the team meet...? Is/Are здесь не нужны: уже есть глагол meet."
+          }
+        },
+        {
+          "ref": "a1.workplace.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "What time ____ the meeting start?",
+            "answer": "does",
+            "hint": "Вопрос в Present Simple, подлежащее в 3-м лице единственного числа.",
+            "explanation": "The meeting — it, поэтому вспомогательный глагол does: What time does the meeting start? Сам глагол start остаётся без окончания.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.004.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["When", "do", "you", "have", "team", "meetings", "?"],
+            "hint": "Вопросительное слово, вспомогательный глагол, подлежащее.",
+            "explanation": "When do you have team meetings? Порядок вопроса: When + do + you + have..."
+          }
+        },
+        {
+          "ref": "a1.workplace.004.t4",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.004.t4.meeting-at-ten",
+            "transcript": "The meeting starts at ten in room five.",
+            "translation": "Встреча начинается в десять в пятой переговорной.",
+            "question": "Во сколько начинается встреча?",
+            "options": ["At five", "At ten", "At nine", "At two"],
+            "correctIndex": 1,
+            "hint": "В фразе два числа: время идёт первым, номер комнаты — вторым.",
+            "explanation": "Starts at ten — начинается в десять. Five — это номер переговорной (room five), а не время: ловушка на невнимательность."
+          }
+        },
+        {
+          "ref": "a1.workplace.004.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Во сколько начинается встреча?»",
+            "expected": ["What time does the meeting start?", "When does the meeting start?", "What time does the meeting begin?"],
+            "hint": "Понадобится вспомогательный глагол для 3-го лица.",
+            "explanation": "What time does the meeting start? Вопрос строится через does, а start — без окончания -s."
+          }
+        },
+        {
+          "ref": "a1.workplace.004.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Do you have a meeting today?\"",
+            "target": "Do you have a meeting today?",
+            "audioKey": "a1.workplace.004.t6.meeting-today",
+            "hint": "Спроси коллегу, есть ли у него сегодня встреча.",
+            "explanation": "Do you have...? — универсальный вопрос «у тебя есть...?». В конце вопроса интонация идёт вверх."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.005",
+      "title": { "ru": "Письма и звонки", "en": "Emails and Phone Calls" },
+      "description": { "ru": "Рабочая переписка и телефон: пиши, отвечай, перезванивай", "en": "Work correspondence and phone: write, reply, call back" },
+      "order": 5,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.005.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.005.t1.anna-calls",
+            "transcript": "Anna calls clients in the morning and writes emails after lunch.",
+            "translation": "Анна звонит клиентам утром, а после обеда пишет письма.",
+            "question": "Что Анна делает утром?",
+            "options": ["She calls clients", "She writes emails", "She has lunch", "She reads reports"],
+            "correctIndex": 0,
+            "hint": "В фразе два действия — тебе нужно первое, со словами in the morning.",
+            "explanation": "Anna calls clients in the morning — утром Анна звонит клиентам. Письма (emails) она пишет после обеда."
+          }
+        },
+        {
+          "ref": "a1.workplace.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "He ____ (reply) to emails very quickly.",
+            "answer": "replies",
+            "hint": "3-е лицо: у глаголов на -y окончание меняется особым образом.",
+            "explanation": "Глаголы на согласную + y в 3-м лице меняют y на ies: reply → replies.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.005.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "to call", "right": "звонить" },
+              { "left": "to reply", "right": "отвечать на письмо" },
+              { "left": "inbox", "right": "входящие" },
+              { "left": "subject", "right": "тема письма" },
+              { "left": "to attach", "right": "прикреплять файл" },
+              { "left": "message", "right": "сообщение" }
+            ],
+            "hint": "Половина слов — про электронную почту, вспомни интерфейс почтового ящика.",
+            "explanation": "To call — звонить, to reply — отвечать на письмо, inbox — входящие, subject — тема письма, to attach — прикреплять файл, message — сообщение."
+          }
+        },
+        {
+          "ref": "a1.workplace.005.t4",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильный вариант: I write emails every day, but I ___ write letters.",
+            "options": ["not", "don't never", "never", "no"],
+            "correctIndex": 2,
+            "hint": "Нужно наречие частотности со значением «никогда» — одно слово, без двойного отрицания.",
+            "explanation": "I never write letters — «я никогда не пишу письма». Never само по себе отрицание, добавлять don't нельзя: «don't never» — типичная русская калька с двойным отрицанием."
+          }
+        },
+        {
+          "ref": "a1.workplace.005.t5",
+          "type": "order",
+          "data": {
+            "tokens": ["Please", "call", "me", "back", "after", "lunch", "."],
+            "hint": "Вежливая просьба начинается с волшебного слова.",
+            "explanation": "Please call me back after lunch — «пожалуйста, перезвони мне после обеда». Call back — перезванивать, me встаёт между call и back."
+          }
+        },
+        {
+          "ref": "a1.workplace.005.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Thank you for your email.\"",
+            "target": "Thank you for your email.",
+            "audioKey": "a1.workplace.005.t6.thanks-email",
+            "hint": "Стандартное начало ответа на рабочее письмо.",
+            "explanation": "Thank you for your email — вежливая формула, с которой часто начинают ответ на письмо. После for идёт существительное."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.006",
+      "title": { "ru": "Просьба о помощи", "en": "Asking for Help" },
+      "description": { "ru": "Вежливые просьбы с can и could: попроси коллегу помочь", "en": "Polite requests with can and could: ask a colleague for help" },
+      "order": 6,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "Вежливо попроси о помощи: ___ you help me with this report, please?",
+            "options": ["Must", "Could", "Are", "Is"],
+            "correctIndex": 1,
+            "hint": "Для вежливой просьбы есть специальный модальный глагол.",
+            "explanation": "Could you help me...? — самая вежливая форма просьбы. Can тоже подходит, но чуть менее формально. Must — приказ, are/is с глаголом help не сочетаются."
+          }
+        },
+        {
+          "ref": "a1.workplace.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "I need this file today. ____ you help me, please?",
+            "answer": "Could",
+            "accept": ["Can"],
+            "hint": "Начни вопрос с модального глагола вежливой просьбы.",
+            "explanation": "Could you help me, please? / Can you help me, please? — обе формы правильные, could звучит вежливее.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.006.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Can", "you", "explain", "this", "email", "to", "me", "?"],
+            "hint": "Модальный глагол, подлежащее, смысловой глагол, потом что и кому.",
+            "explanation": "Can you explain this email to me? — «можешь объяснить мне это письмо?». Explain something to somebody — объяснять что-то кому-то."
+          }
+        },
+        {
+          "ref": "a1.workplace.006.t4",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Can I ask you a question?\"",
+            "target": "Can I ask you a question?",
+            "audioKey": "a1.workplace.006.t4.ask-question",
+            "hint": "Так вежливо начинают разговор, когда нужен совет коллеги.",
+            "explanation": "Can I ask you a question? — «можно задать тебе вопрос?». Ask somebody a question — задавать кому-то вопрос, без предлога."
+          }
+        },
+        {
+          "ref": "a1.workplace.006.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Ты можешь мне помочь?»",
+            "expected": ["Can you help me?", "Could you help me?", "Can you help me", "Could you help me"],
+            "hint": "Начни с модального глагола, потом подлежащее.",
+            "explanation": "Can you help me? Вопрос с модальным глаголом строится без do: Can + you + help."
+          }
+        },
+        {
+          "ref": "a1.workplace.006.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.006.t6.can-help",
+            "transcript": "Of course I can help you. Give me five minutes.",
+            "translation": "Конечно, я могу тебе помочь. Дай мне пять минут.",
+            "question": "Что коллега отвечает на просьбу?",
+            "options": ["He needs help", "He can't help now", "He is at lunch", "He can help"],
+            "correctIndex": 3,
+            "hint": "Слушай самое начало ответа — согласие или отказ.",
+            "explanation": "Of course I can help you — «конечно, я могу помочь». Give me five minutes — «дай мне пять минут», то есть он поможет чуть позже, но поможет."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.007",
+      "title": { "ru": "Обед и перерывы", "en": "Lunch and Breaks" },
+      "description": { "ru": "Обеденный перерыв, кофе и разговоры на кухне", "en": "Lunch break, coffee and small talk in the office kitchen" },
+      "order": 7,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.007.t1",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "lunch", "right": "обед" },
+              { "left": "break", "right": "перерыв" },
+              { "left": "canteen", "right": "столовая" },
+              { "left": "coffee", "right": "кофе" },
+              { "left": "snack", "right": "перекус" },
+              { "left": "kitchen", "right": "кухня" }
+            ],
+            "hint": "Все слова — про еду и отдых в офисе.",
+            "explanation": "Lunch — обед, break — перерыв, canteen — столовая, coffee — кофе, snack — перекус, kitchen — кухня."
+          }
+        },
+        {
+          "ref": "a1.workplace.007.t2",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильный вариант: We ___ go to the canteen at one o'clock.",
+            "options": ["usually", "usual", "are usually", "usually are"],
+            "correctIndex": 0,
+            "hint": "Нужно наречие, а не прилагательное, и без глагола-связки.",
+            "explanation": "We usually go — «мы обычно ходим». Usual — прилагательное («обычный»), а перед смысловым глаголом нужно наречие. Are здесь лишнее: уже есть глагол go."
+          }
+        },
+        {
+          "ref": "a1.workplace.007.t3",
+          "type": "gap",
+          "data": {
+            "text": "Tom ____ (have) a coffee break at eleven every day.",
+            "answer": "has",
+            "hint": "3-е лицо единственного числа: этот глагол меняется не по общему правилу.",
+            "explanation": "Have — неправильный в 3-м лице: he/she/it has, а не haves. Have a break — устойчивое «делать перерыв».",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.007.t4",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.007.t4.tea-break",
+            "transcript": "I usually have a short break at three and drink tea.",
+            "translation": "Я обычно делаю короткий перерыв в три и пью чай.",
+            "question": "Что говорящий пьёт во время перерыва?",
+            "options": ["Coffee", "Juice", "Tea", "Water"],
+            "correctIndex": 2,
+            "hint": "Напиток назван в самом конце фразы.",
+            "explanation": "And drink tea — «и пью чай». Кофе в фразе не звучит, хотя это самый ожидаемый офисный напиток."
+          }
+        },
+        {
+          "ref": "a1.workplace.007.t5",
+          "type": "order",
+          "data": {
+            "tokens": ["How", "long", "is", "your", "lunch", "break", "?"],
+            "hint": "Вопрос о длительности начинается с двух вопросительных слов подряд.",
+            "explanation": "How long is your lunch break? — «сколько длится твой обеденный перерыв?». How long — «как долго», дальше обычный порядок вопроса с is."
+          }
+        },
+        {
+          "ref": "a1.workplace.007.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Let's have lunch together today.\"",
+            "target": "Let's have lunch together today.",
+            "audioKey": "a1.workplace.007.t6.lunch-together",
+            "hint": "Предложи коллеге пообедать вместе.",
+            "explanation": "Let's + глагол — «давай что-то сделаем». Have lunch — обедать, together — вместе."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.008",
+      "title": { "ru": "Отчёт о работе", "en": "My Work Update" },
+      "description": { "ru": "Расскажи, как идёт работа: что делаешь регулярно и как часто", "en": "Say how work is going: what you do regularly and how often" },
+      "order": 8,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "grammar",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильный вариант: My manager ___ our reports every Friday.",
+            "options": ["read", "don't read", "is read", "reads"],
+            "correctIndex": 3,
+            "hint": "Подлежащее — 3-е лицо единственного числа, предложение утвердительное.",
+            "explanation": "My manager reads our reports — руководитель один, поэтому глаголу нужно окончание -s. «Don't read» с he/she — классическая ошибка: для 3-го лица было бы doesn't."
+          }
+        },
+        {
+          "ref": "a1.workplace.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "How often ____ you send updates to the client?",
+            "answer": "do",
+            "hint": "Вопрос в Present Simple ко 2-му лицу — нужен вспомогательный глагол.",
+            "explanation": "How often do you send...? — «как часто ты отправляешь...?». С you в вопросе используется do.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.008.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["He", "always", "sends", "his", "report", "before", "lunch", "."],
+            "hint": "Наречие частотности встаёт между подлежащим и глаголом.",
+            "explanation": "He always sends his report before lunch — «он всегда отправляет отчёт до обеда». Always перед sends, время — в конце."
+          }
+        },
+        {
+          "ref": "a1.workplace.008.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Он никогда не опаздывает с отчётом».",
+            "expected": ["He is never late with his report", "He's never late with his report", "He is never late with the report"],
+            "hint": "«Опаздывать» здесь — конструкция с глаголом-связкой, наречие встаёт после него.",
+            "explanation": "He is never late with his report. To be late — опаздывать; с глаголом be наречие частотности идёт ПОСЛЕ него: is never late."
+          }
+        },
+        {
+          "ref": "a1.workplace.008.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I send my report every Friday.\"",
+            "target": "I send my report every Friday.",
+            "audioKey": "a1.workplace.008.t5.report-friday",
+            "hint": "Расскажи о своей еженедельной привычке.",
+            "explanation": "Every Friday — «каждую пятницу». С I глагол send идёт без окончания."
+          }
+        },
+        {
+          "ref": "a1.workplace.008.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.008.t6.project-well",
+            "transcript": "The project goes well. We usually finish our tasks on time.",
+            "translation": "Проект идёт хорошо. Мы обычно заканчиваем задачи вовремя.",
+            "question": "Как идёт проект?",
+            "options": ["It goes badly", "It goes well", "It is late", "It is finished"],
+            "correctIndex": 1,
+            "hint": "Оценка проекта звучит в первом предложении.",
+            "explanation": "The project goes well — «проект идёт хорошо». Goes well / goes badly — устойчивые способы сказать, как идут дела."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.009",
+      "title": { "ru": "Проблемы и решения", "en": "Problems and Solutions" },
+      "description": { "ru": "Что-то сломалось или непонятно: скажи о проблеме и попроси её решить", "en": "Something is broken or unclear: report the problem and ask for a fix" },
+      "order": 9,
+      "published": true,
+      "estimatedMinutes": 13,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.009.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.009.t1.fix-today",
+            "transcript": "Don't worry, I know this problem. I can fix it today.",
+            "translation": "Не волнуйся, я знаю эту проблему. Я могу починить это сегодня.",
+            "question": "Что айтишник говорит о проблеме?",
+            "options": ["He can fix it today", "He can't fix it", "He doesn't know it", "He needs a new printer"],
+            "correctIndex": 0,
+            "hint": "Слушай, что он может сделать и когда.",
+            "explanation": "I know this problem. I can fix it today — он знает проблему и может починить сегодня. Fix — чинить, исправлять."
+          }
+        },
+        {
+          "ref": "a1.workplace.009.t2",
+          "type": "choice",
+          "data": {
+            "question": "Принтер опять сломался. Выбери правильный вариант: The printer ___ work again. I need to call IT.",
+            "options": ["don't", "isn't", "doesn't", "not"],
+            "correctIndex": 2,
+            "hint": "Отрицание в Present Simple для 3-го лица единственного числа.",
+            "explanation": "The printer doesn't work — «принтер не работает». «The printer don't work» — самая частая ошибка русскоговорящих: с he/she/it нужно doesn't."
+          }
+        },
+        {
+          "ref": "a1.workplace.009.t3",
+          "type": "gap",
+          "data": {
+            "text": "This program never ____ (work) on my old computer.",
+            "answer": "works",
+            "hint": "После never глагол стоит в обычной утвердительной форме — вспомни про 3-е лицо.",
+            "explanation": "Never уже даёт отрицание, поэтому глагол утвердительный: never works. Program — it, значит нужно окончание -s.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.009.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "problem", "right": "проблема" },
+              { "left": "solution", "right": "решение" },
+              { "left": "to fix", "right": "чинить" },
+              { "left": "to explain", "right": "объяснять" },
+              { "left": "broken", "right": "сломанный" },
+              { "left": "to check", "right": "проверять" }
+            ],
+            "hint": "Три глагола, два существительных и одно прилагательное.",
+            "explanation": "Problem — проблема, solution — решение, to fix — чинить, to explain — объяснять, broken — сломанный, to check — проверять."
+          }
+        },
+        {
+          "ref": "a1.workplace.009.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Компьютер не работает».",
+            "expected": ["The computer doesn't work", "The computer does not work", "My computer doesn't work"],
+            "hint": "Отрицание для 3-го лица единственного числа; полная и краткая формы — обе верны.",
+            "explanation": "The computer doesn't work / does not work. Computer — it, поэтому doesn't, а глагол work — без окончания."
+          }
+        },
+        {
+          "ref": "a1.workplace.009.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I have a problem with my computer.\"",
+            "target": "I have a problem with my computer.",
+            "audioKey": "a1.workplace.009.t6.computer-problem",
+            "hint": "Сообщи о неполадке коллеге из техподдержки.",
+            "explanation": "I have a problem with... — «у меня проблема с...». После with называем то, что сломалось."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.workplace",
+      "lessonRef": "a1.workplace.010",
+      "title": { "ru": "Повторение: день в офисе", "en": "Review: A Day at the Office" },
+      "description": { "ru": "Финальный урок: собираем лексику и грамматику уроков 1–9 в один рабочий день", "en": "Final lesson: put the words and grammar of lessons 1-9 into one office day" },
+      "order": 10,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.workplace.010.t1",
+          "type": "gap",
+          "data": {
+            "text": "____ you usually have lunch in the canteen?",
+            "answer": "Do",
+            "hint": "Общий вопрос в Present Simple начинается со вспомогательного глагола.",
+            "explanation": "Общий вопрос с you: Do you usually have lunch...? Наречие usually остаётся перед смысловым глаголом.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.workplace.010.t2",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "send a report", "right": "отправить отчёт" },
+              { "left": "take a break", "right": "сделать перерыв" },
+              { "left": "call a client", "right": "позвонить клиенту" },
+              { "left": "fix a problem", "right": "устранить проблему" },
+              { "left": "book a meeting room", "right": "забронировать переговорную" },
+              { "left": "check your email", "right": "проверить почту" }
+            ],
+            "hint": "Это устойчивые сочетания «глагол + существительное» из прошлых уроков.",
+            "explanation": "Send a report, take a break, call a client, fix a problem, book a meeting room, check your email — шесть самых нужных офисных сочетаний модуля."
+          }
+        },
+        {
+          "ref": "a1.workplace.010.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["How", "often", "do", "you", "meet", "your", "team", "?"],
+            "hint": "Вопрос о частоте: сначала вопросительная пара слов, потом вспомогательный глагол.",
+            "explanation": "How often do you meet your team? — «как часто ты встречаешься с командой?». How often + do + you + глагол."
+          }
+        },
+        {
+          "ref": "a1.workplace.010.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Она не работает по пятницам».",
+            "expected": ["She doesn't work on Fridays", "She does not work on Fridays", "She doesn't work on Friday"],
+            "hint": "Отрицание для she; день недели — с предлогом on.",
+            "explanation": "She doesn't work on Fridays. Отрицание 3-го лица — doesn't + глагол без окончания; «по пятницам» — on Fridays."
+          }
+        },
+        {
+          "ref": "a1.workplace.010.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.workplace.010.t5.go-home",
+            "transcript": "It's five o'clock. I finish my tasks and go home. See you tomorrow!",
+            "translation": "Пять часов. Я заканчиваю свои задачи и иду домой. До завтра!",
+            "question": "Что сейчас делает говорящий?",
+            "options": ["He starts work", "He goes home", "He has lunch", "He calls a client"],
+            "correctIndex": 1,
+            "hint": "Уже пять часов — рабочий день подходит к концу.",
+            "explanation": "I finish my tasks and go home — он заканчивает задачи и идёт домой. See you tomorrow — «до завтра», прощание с коллегами."
+          }
+        },
+        {
+          "ref": "a1.workplace.010.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"See you at the meeting tomorrow.\"",
+            "target": "See you at the meeting tomorrow.",
+            "audioKey": "a1.workplace.010.t6.see-you",
+            "hint": "Попрощайся с коллегой до завтрашней встречи.",
+            "explanation": "See you at the meeting tomorrow — «увидимся завтра на встрече». See you + место/время — универсальное прощание."
+          }
+        }
+      ]
+    }
+  ]
+}

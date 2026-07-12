@@ -1,0 +1,857 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a1.digital",
+      "level": "A1",
+      "title": { "ru": "Цифровая жизнь A1", "en": "Digital Life A1" },
+      "description": { "ru": "Приложения, аккаунты, настройки и помощь", "en": "Apps, accounts, settings and basic support" },
+      "tags": ["a1", "digital", "tech"],
+      "order": 10,
+      "published": true
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.001",
+      "title": { "ru": "Мой телефон", "en": "My Phone" },
+      "description": { "ru": "Базовые действия с телефоном: tap, swipe, open", "en": "Basic phone actions: tap, swipe, open" },
+      "order": 1,
+      "published": true,
+      "estimatedMinutes": 10,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Ты хочешь открыть приложение на сенсорном экране. Что ты сделаешь?",
+            "options": ["Push the icon", "Tap the icon", "Press to the icon", "Touch on the icon"],
+            "correctIndex": 1,
+            "hint": "Для сенсорного экрана в английском есть отдельный короткий глагол, и он идёт без предлога.",
+            "explanation": "По экрану «тапают»: tap the icon. Push — толкать (дверь, тележку), а press to / touch on — неверные предлоги."
+          }
+        },
+        {
+          "ref": "a1.digital.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "Swipe ____ to see your notifications.",
+            "answer": "down",
+            "hint": "Шторка уведомлений прячется у верхнего края экрана. В какую сторону её тянут?",
+            "explanation": "Swipe down — «проведи вниз»: шторку уведомлений вытягивают сверху вниз.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.001.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "screen", "right": "экран" },
+              { "left": "button", "right": "кнопка" },
+              { "left": "charger", "right": "зарядка" },
+              { "left": "headphones", "right": "наушники" },
+              { "left": "volume", "right": "громкость" },
+              { "left": "battery", "right": "батарея" }
+            ],
+            "hint": "Всё это — части телефона и аксессуары к нему.",
+            "explanation": "Базовые слова о телефоне: screen — экран, button — кнопка, charger — зарядка, headphones — наушники, volume — громкость, battery — батарея."
+          }
+        },
+        {
+          "ref": "a1.digital.001.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Open", "the", "camera", "on", "your", "phone", "."],
+            "hint": "Императив: предложение начинается с глагола-команды, место указано в конце.",
+            "explanation": "Open the camera on your phone. — Открой камеру на своём телефоне. Команда = глагол + объект + место."
+          }
+        },
+        {
+          "ref": "a1.digital.001.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.001.t5.open-the-settings",
+            "transcript": "Turn on your phone and open the settings.",
+            "translation": "Включи свой телефон и открой настройки.",
+            "question": "Что нужно открыть после включения телефона?",
+            "options": ["Настройки", "Камеру", "Сообщения", "Браузер"],
+            "correctIndex": 0,
+            "hint": "Слушай последнее слово фразы — это раздел телефона.",
+            "explanation": "Open the settings — «открой настройки». Turn on — включить, open — открыть."
+          }
+        },
+        {
+          "ref": "a1.digital.001.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"This is my new phone.\"",
+            "target": "This is my new phone.",
+            "audioKey": "a1.digital.001.t6.my-new-phone",
+            "hint": "Притяжательное местоимение «мой» стоит перед прилагательным.",
+            "explanation": "This is my new phone. — Это мой новый телефон. Порядок: my + new + phone."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.002",
+      "title": { "ru": "Создаём аккаунт", "en": "Creating an Account" },
+      "description": { "ru": "Регистрация: email, пароль, подтверждение", "en": "Sign up: email, password, confirmation" },
+      "order": 2,
+      "published": true,
+      "estimatedMinutes": 10,
+      "type": "grammar",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.002.t1",
+          "type": "gap",
+          "data": {
+            "text": "____ your email address and choose a password.",
+            "answer": "Enter",
+            "accept": ["Type"],
+            "hint": "Регистрация начинается с того, что данные печатают в пустое поле. Нужен глагол-команда.",
+            "explanation": "Enter your email address — «введи свой электронный адрес». Также можно сказать type (напечатай).",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.002.t2",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильное предложение:",
+            "options": ["Create you account here.", "Create yours account here.", "Create your account here.", "Create your's account here."],
+            "correctIndex": 2,
+            "hint": "Перед существительным притяжательное местоимение имеет особую форму — без апострофов.",
+            "explanation": "Перед существительным нужно your: your account. You — «ты», yours стоит без существительного (This account is yours), а формы your's не существует."
+          }
+        },
+        {
+          "ref": "a1.digital.002.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Choose", "a", "strong", "password", "for", "your", "account", "."],
+            "hint": "Команда: глагол, потом что выбрать, потом для чего.",
+            "explanation": "Choose a strong password for your account. — Выбери надёжный пароль для своего аккаунта."
+          }
+        },
+        {
+          "ref": "a1.digital.002.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Где мой пароль?»",
+            "expected": ["Where is my password?", "Where's my password?"],
+            "hint": "Вопрос со словом «где»: сначала вопросительное слово, потом глагол-связка.",
+            "explanation": "Where is my password? / Where's my password? Русская ошибка «Where my password?» — без is — неверна."
+          }
+        },
+        {
+          "ref": "a1.digital.002.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.002.t5.tap-blue-link",
+            "transcript": "Check your email and tap the blue link.",
+            "translation": "Проверь свою почту и нажми на синюю ссылку.",
+            "question": "Какого цвета ссылка в письме?",
+            "options": ["Зелёная", "Красная", "Синяя", "Жёлтая"],
+            "correctIndex": 2,
+            "hint": "Слушай прилагательное перед словом link.",
+            "explanation": "The blue link — синяя ссылка. Blue — синий, green — зелёный, red — красный, yellow — жёлтый."
+          }
+        },
+        {
+          "ref": "a1.digital.002.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"My password is secret.\"",
+            "target": "My password is secret.",
+            "audioKey": "a1.digital.002.t6.password-secret",
+            "hint": "Не забудь глагол-связку между подлежащим и прилагательным.",
+            "explanation": "My password is secret. — Мой пароль — секрет. В английском связка is обязательна."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.003",
+      "title": { "ru": "Настройки", "en": "Settings" },
+      "description": { "ru": "Язык, уведомления, звук и тёмная тема", "en": "Language, notifications, sound and dark mode" },
+      "order": 3,
+      "published": true,
+      "estimatedMinutes": 10,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Ты хочешь поменять язык приложения. Куда нужно зайти?",
+            "options": ["Settings", "Camera", "Gallery", "Contacts"],
+            "correctIndex": 0,
+            "hint": "Язык, звук и уведомления меняют в одном и том же разделе телефона.",
+            "explanation": "Язык меняют в Settings (настройках). Camera — камера, Gallery — галерея, Contacts — контакты."
+          }
+        },
+        {
+          "ref": "a1.digital.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "It is too noisy. Open Settings and turn ____ notifications.",
+            "answer": "off",
+            "hint": "Телефон слишком шумит, значит уведомления надо не включить, а наоборот.",
+            "explanation": "Turn off — выключить: turn off notifications. Включить — turn on.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.003.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "language", "right": "язык" },
+              { "left": "notifications", "right": "уведомления" },
+              { "left": "sound", "right": "звук" },
+              { "left": "brightness", "right": "яркость" },
+              { "left": "dark mode", "right": "тёмная тема" },
+              { "left": "update", "right": "обновление" }
+            ],
+            "hint": "Все эти слова можно увидеть в меню настроек телефона.",
+            "explanation": "Слова из настроек: language — язык, notifications — уведомления, sound — звук, brightness — яркость, dark mode — тёмная тема, update — обновление."
+          }
+        },
+        {
+          "ref": "a1.digital.003.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Where", "can", "you", "change", "the", "language", "?"],
+            "hint": "Вопрос: вопросительное слово, затем модальный глагол, затем подлежащее.",
+            "explanation": "Where can you change the language? — Где можно поменять язык? Порядок: where + can + you + глагол."
+          }
+        },
+        {
+          "ref": "a1.digital.003.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Выключи звук»",
+            "expected": ["Turn off the sound", "Turn the sound off", "Turn off the sound."],
+            "hint": "Фразовый глагол из двух слов; объект можно поставить в середину или в конец.",
+            "explanation": "Turn off the sound / Turn the sound off — оба порядка верны для фразового глагола turn off."
+          }
+        },
+        {
+          "ref": "a1.digital.003.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.003.t6.choose-dark-mode",
+            "transcript": "Go to settings and choose dark mode, please.",
+            "translation": "Зайди в настройки и выбери тёмную тему, пожалуйста.",
+            "question": "Какой режим просят выбрать?",
+            "options": ["Светлый", "Беззвучный", "Авиарежим", "Тёмный"],
+            "correctIndex": 3,
+            "hint": "Слушай два слова после глагола choose.",
+            "explanation": "Choose dark mode — выбери тёмную тему. Dark — тёмный, light — светлый."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.004",
+      "title": { "ru": "Фото и сообщения", "en": "Photos and Messages" },
+      "description": { "ru": "Отправляем фото и сообщения, притяжательные his/her", "en": "Sending photos and messages, possessives his/her" },
+      "order": 4,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.004.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильный вопрос:",
+            "options": ["Where I can find my photos?", "Where can I find my photos?", "Where can find I my photos?", "Where I find can my photos?"],
+            "correctIndex": 1,
+            "hint": "В английском вопросе модальный глагол встаёт до подлежащего, а не после.",
+            "explanation": "Where can I find my photos? Частая русская ошибка — «Where I can find...?»: в вопросе can идёт перед I."
+          }
+        },
+        {
+          "ref": "a1.digital.004.t2",
+          "type": "gap",
+          "data": {
+            "text": "Take a photo and ____ it to me.",
+            "answer": "send",
+            "hint": "Что делают с готовым фото в мессенджере, чтобы его увидел друг?",
+            "explanation": "Send it to me — «отправь его мне». Take a photo — сделать фото, send — отправить.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.004.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Don't", "send", "this", "photo", "to", "him", "."],
+            "hint": "Запрет: отрицательная команда, получатель — в конце с предлогом.",
+            "explanation": "Don't send this photo to him. — Не отправляй это фото ему. Отрицательный императив: Don't + глагол."
+          }
+        },
+        {
+          "ref": "a1.digital.004.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "message", "right": "сообщение" },
+              { "left": "send", "right": "отправить" },
+              { "left": "delete", "right": "удалить" },
+              { "left": "share", "right": "поделиться" },
+              { "left": "save", "right": "сохранить" },
+              { "left": "voice message", "right": "голосовое" }
+            ],
+            "hint": "Это действия и объекты из любого мессенджера.",
+            "explanation": "Лексика мессенджера: message — сообщение, send — отправить, delete — удалить, share — поделиться, save — сохранить, voice message — голосовое сообщение."
+          }
+        },
+        {
+          "ref": "a1.digital.004.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Send me your photo, please.\"",
+            "target": "Send me your photo, please.",
+            "audioKey": "a1.digital.004.t5.send-your-photo",
+            "hint": "Команда-просьба: глагол, кому, что, и вежливое слово в конце.",
+            "explanation": "Send me your photo, please. — Отправь мне своё фото, пожалуйста."
+          }
+        },
+        {
+          "ref": "a1.digital.004.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.004.t6.his-funny-dog",
+            "transcript": "Look at his photo. His dog is so funny!",
+            "translation": "Посмотри на его фото. Его собака такая смешная!",
+            "question": "Кто на фото?",
+            "options": ["Её кошка", "Его собака", "Его брат", "Её собака"],
+            "correctIndex": 1,
+            "hint": "Слушай притяжательное местоимение и название животного.",
+            "explanation": "His dog — его собака. His — его, her — её; dog — собака, cat — кошка."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.005",
+      "title": { "ru": "Видеозвонок", "en": "Video Call" },
+      "description": { "ru": "Камера, микрофон и фразы во время звонка", "en": "Camera, microphone and phrases during a call" },
+      "order": 5,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.005.t1",
+          "type": "gap",
+          "data": {
+            "text": "I can see you, but I can't ____ you.",
+            "answer": "hear",
+            "hint": "Проблема не с картинкой, а со звуком.",
+            "explanation": "I can't hear you — «я тебя не слышу». See — видеть, а для звука нужен другой глагол восприятия.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.005.t2",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильный вопрос:",
+            "options": ["How I can turn on the camera?", "How turn I on the camera?", "How does I turn on the camera?", "How do I turn on the camera?"],
+            "correctIndex": 3,
+            "hint": "После вопросительного слова нужен вспомогательный глагол в правильной форме для I.",
+            "explanation": "How do I turn on the camera? С подлежащим I вспомогательный глагол — do, и он стоит сразу после how."
+          }
+        },
+        {
+          "ref": "a1.digital.005.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Can", "you", "hear", "me", "now", "?"],
+            "hint": "Общий вопрос начинается с модального глагола, «сейчас» — в конце.",
+            "explanation": "Can you hear me now? — Ты меня сейчас слышишь? Классическая фраза видеозвонка."
+          }
+        },
+        {
+          "ref": "a1.digital.005.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я тебя не вижу»",
+            "expected": ["I can't see you", "I cannot see you", "I can not see you", "I don't see you"],
+            "hint": "Про восприятие на звонке обычно говорят через модальный глагол возможности с отрицанием.",
+            "explanation": "I can't see you / I cannot see you — про зрение и слух англичане говорят с can: «не могу тебя видеть»."
+          }
+        },
+        {
+          "ref": "a1.digital.005.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Can you see my screen?\"",
+            "target": "Can you see my screen?",
+            "audioKey": "a1.digital.005.t5.see-my-screen",
+            "hint": "Вопрос при демонстрации экрана: модальный глагол — в начале.",
+            "explanation": "Can you see my screen? — Тебе видно мой экран? Так спрашивают, когда показывают экран на звонке."
+          }
+        },
+        {
+          "ref": "a1.digital.005.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.005.t6.camera-not-working",
+            "transcript": "Sorry, my camera doesn't work. Can we talk tomorrow?",
+            "translation": "Извини, моя камера не работает. Можем поговорить завтра?",
+            "question": "Что не работает у говорящего?",
+            "options": ["Микрофон", "Камера", "Интернет", "Динамик"],
+            "correctIndex": 1,
+            "hint": "Слушай существительное после my в первом предложении.",
+            "explanation": "My camera doesn't work — моя камера не работает. Camera — камера, microphone — микрофон."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.006",
+      "title": { "ru": "Wi-Fi и интернет", "en": "Wi-Fi and Internet" },
+      "description": { "ru": "Подключение к сети и проблемы с интернетом", "en": "Connecting to a network and internet problems" },
+      "order": 6,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "Интернет очень медленный. Что стоит сделать в первую очередь?",
+            "options": ["Restart the router", "Charge the battery", "Update the calendar", "Clean the screen"],
+            "correctIndex": 0,
+            "hint": "Проблема чаще всего в устройстве, которое раздаёт интернет дома.",
+            "explanation": "Restart the router — перезапусти роутер: первое средство от медленного интернета. Charge — заряжать, update — обновлять, clean — чистить."
+          }
+        },
+        {
+          "ref": "a1.digital.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "My phone can't ____ to the Wi-Fi.",
+            "answer": "connect",
+            "hint": "Этот глагол используется в паре с предлогом to и виден на экране рядом с названием сети.",
+            "explanation": "Connect to the Wi-Fi — подключиться к вай-фаю. Глагол connect всегда с предлогом to.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.006.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "network", "right": "сеть" },
+              { "left": "connection", "right": "соединение" },
+              { "left": "slow", "right": "медленный" },
+              { "left": "router", "right": "роутер" },
+              { "left": "signal", "right": "сигнал" },
+              { "left": "offline", "right": "не в сети" }
+            ],
+            "hint": "Все слова — про интернет и его качество.",
+            "explanation": "Интернет-лексика: network — сеть, connection — соединение, slow — медленный, router — роутер, signal — сигнал, offline — не в сети."
+          }
+        },
+        {
+          "ref": "a1.digital.006.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Why", "is", "the", "internet", "so", "slow", "today", "?"],
+            "hint": "Вопрос «почему»: связка сразу после вопросительного слова, время — в самом конце.",
+            "explanation": "Why is the internet so slow today? — Почему интернет сегодня такой медленный?"
+          }
+        },
+        {
+          "ref": "a1.digital.006.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Вай-фай не работает»",
+            "expected": ["The Wi-Fi doesn't work", "The Wi-Fi does not work", "Wi-Fi doesn't work", "The Wi-Fi isn't working"],
+            "hint": "Отрицание в настоящем времени: нужен вспомогательный глагол для it/оно.",
+            "explanation": "The Wi-Fi doesn't work / does not work. С третьим лицом отрицание строится через doesn't + глагол без -s."
+          }
+        },
+        {
+          "ref": "a1.digital.006.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.006.t6.restart-wifi",
+            "transcript": "Turn off your Wi-Fi and turn it on again.",
+            "translation": "Выключи свой вай-фай и включи его снова.",
+            "question": "Что советует сделать говорящий?",
+            "options": ["Купить новый роутер", "Обновить приложение", "Перезапустить вай-фай", "Сменить пароль"],
+            "correctIndex": 2,
+            "hint": "Во фразе два противоположных действия подряд с одним и тем же устройством.",
+            "explanation": "Turn off... and turn it on again — выключить и снова включить, то есть перезапустить."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.007",
+      "title": { "ru": "Безопасность в сети", "en": "Online Safety" },
+      "description": { "ru": "Запреты: Don't share, Never tell — пароли и ссылки", "en": "Prohibitions: Don't share, Never tell — passwords and links" },
+      "order": 7,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильное предложение:",
+            "options": ["Don't share your password with strangers.", "No share your password with strangers.", "Don't sharing your password with strangers.", "Not share your password with strangers."],
+            "correctIndex": 0,
+            "hint": "Запрет в английском строится через вспомогательный глагол с отрицанием + начальная форма.",
+            "explanation": "Отрицательный императив: Don't + глагол в начальной форме. «No share» и «Not share» — кальки с русского, после don't нельзя -ing."
+          }
+        },
+        {
+          "ref": "a1.digital.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "____ click on strange links in emails.",
+            "answer": "Don't",
+            "accept": ["Do not", "Never"],
+            "hint": "Предложение — запрет. Какое слово ставят перед глаголом, чтобы запретить действие?",
+            "explanation": "Don't click / Do not click / Never click — не нажимай на странные ссылки в письмах.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.007.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Never", "tell", "anyone", "your", "bank", "code", "."],
+            "hint": "Строгий запрет начинается с наречия «никогда», кому — сразу после глагола.",
+            "explanation": "Never tell anyone your bank code. — Никогда никому не говори код от банка. Порядок: never + глагол + кому + что."
+          }
+        },
+        {
+          "ref": "a1.digital.007.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Не открывай это письмо»",
+            "expected": ["Don't open this email", "Do not open this email", "Don't open this letter"],
+            "hint": "Запрет: отрицательная команда из урока. Электронное письмо — одно слово.",
+            "explanation": "Don't open this email / Do not open this email. Электронное письмо — email."
+          }
+        },
+        {
+          "ref": "a1.digital.007.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Don't share your password.\"",
+            "target": "Don't share your password.",
+            "audioKey": "a1.digital.007.t5.dont-share-password",
+            "hint": "Главное правило безопасности — запрет из трёх смысловых слов.",
+            "explanation": "Don't share your password. — Не делись своим паролем. Ключевая фраза онлайн-безопасности."
+          }
+        },
+        {
+          "ref": "a1.digital.007.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.007.t6.strange-message",
+            "transcript": "This message is strange. Don't open it, please.",
+            "translation": "Это сообщение странное. Не открывай его, пожалуйста.",
+            "question": "Что нужно сделать с сообщением?",
+            "options": ["Переслать другу", "Ответить на него", "Не открывать его", "Сохранить его"],
+            "correctIndex": 2,
+            "hint": "Вторая фраза — запрет. Слушай глагол после отрицания.",
+            "explanation": "Don't open it — не открывай его. Strange — странный: странные сообщения не открываем."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.008",
+      "title": { "ru": "Пишем в поддержку", "en": "Contacting Support" },
+      "description": { "ru": "Просим помощь: How can I...? I need help", "en": "Asking for help: How can I...? I need help" },
+      "order": 8,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.008.t1",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильный вопрос для службы поддержки:",
+            "options": ["How I can reset my password?", "How I reset can my password?", "How can I reset my password?", "How can reset I my password?"],
+            "correctIndex": 2,
+            "hint": "Порядок слов в вопросе: вопросительное слово, модальный глагол, подлежащее, действие.",
+            "explanation": "How can I reset my password? — Как мне сбросить пароль? «How I can...» — типичная русская ошибка: can должен стоять перед I."
+          }
+        },
+        {
+          "ref": "a1.digital.008.t2",
+          "type": "gap",
+          "data": {
+            "text": "Hello! I need some ____ with my account.",
+            "answer": "help",
+            "hint": "Неисчисляемое существительное — то, за чем обращаются в поддержку.",
+            "explanation": "I need some help with my account — мне нужна помощь с аккаунтом. Help — неисчисляемое, без артикля a.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.008.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["What", "is", "your", "account", "number", "?"],
+            "hint": "Вопрос поддержки: вопросительное слово, связка, притяжательное местоимение.",
+            "explanation": "What is your account number? — Какой у вас номер аккаунта? Так поддержка уточняет данные."
+          }
+        },
+        {
+          "ref": "a1.digital.008.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Как я могу изменить свой электронный адрес?»",
+            "expected": ["How can I change my email address?", "How can I change my email?", "How do I change my email address?"],
+            "hint": "Вопрос о способе: модальный глагол — перед подлежащим.",
+            "explanation": "How can I change my email address? Порядок: how + can + I + глагол. Email address — электронный адрес."
+          }
+        },
+        {
+          "ref": "a1.digital.008.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"My app doesn't work. Please help me.\"",
+            "target": "My app doesn't work. Please help me.",
+            "audioKey": "a1.digital.008.t5.please-help-me",
+            "hint": "Сначала проблема с отрицанием, потом вежливая просьба.",
+            "explanation": "My app doesn't work. Please help me. — Моё приложение не работает. Пожалуйста, помогите мне."
+          }
+        },
+        {
+          "ref": "a1.digital.008.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.008.t6.support-answer",
+            "transcript": "Thank you for your message. We will answer in two hours.",
+            "translation": "Спасибо за ваше сообщение. Мы ответим в течение двух часов.",
+            "question": "Когда ответит поддержка?",
+            "options": ["Через два дня", "Через два часа", "Завтра утром", "Через десять минут"],
+            "correctIndex": 1,
+            "hint": "Слушай число и единицу времени в конце фразы.",
+            "explanation": "In two hours — через два часа. Hours — часы, days — дни, minutes — минуты."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.009",
+      "title": { "ru": "Карты и навигация", "en": "Maps and Navigation" },
+      "description": { "ru": "Ищем места на карте и спрашиваем дорогу", "en": "Finding places on the map and asking for directions" },
+      "order": 9,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "vocabulary",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.009.t1",
+          "type": "gap",
+          "data": {
+            "text": "Open the map and ____ for the nearest cafe.",
+            "answer": "search",
+            "accept": ["look"],
+            "hint": "Глагол используется в паре с предлогом for, а в приложениях так называется строка с лупой.",
+            "explanation": "Search for — искать что-то: search for the nearest cafe. Также можно look for.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.009.t2",
+          "type": "choice",
+          "data": {
+            "question": "Выбери правильный вопрос:",
+            "options": ["Where the nearest bus stop is?", "Where is nearest the bus stop?", "Where the nearest bus stop?", "Where is the nearest bus stop?"],
+            "correctIndex": 3,
+            "hint": "После вопросительного слова сразу идёт глагол-связка, артикль — перед прилагательным.",
+            "explanation": "Where is the nearest bus stop? — Где ближайшая остановка? В вопросе is встаёт сразу после where, порядок the + nearest + bus stop."
+          }
+        },
+        {
+          "ref": "a1.digital.009.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "map", "right": "карта" },
+              { "left": "route", "right": "маршрут" },
+              { "left": "left", "right": "налево" },
+              { "left": "right", "right": "направо" },
+              { "left": "straight", "right": "прямо" },
+              { "left": "near", "right": "рядом" }
+            ],
+            "hint": "Слова из навигатора: направления и объекты на карте.",
+            "explanation": "Навигация: map — карта, route — маршрут, left — налево, right — направо, straight — прямо, near — рядом."
+          }
+        },
+        {
+          "ref": "a1.digital.009.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Turn", "left", "at", "the", "next", "corner", "."],
+            "hint": "Команда навигатора: глагол, направление, место с предлогом at.",
+            "explanation": "Turn left at the next corner. — Поверни налево на следующем углу. Так говорит навигатор."
+          }
+        },
+        {
+          "ref": "a1.digital.009.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Where is the nearest metro station?\"",
+            "target": "Where is the nearest metro station?",
+            "audioKey": "a1.digital.009.t5.nearest-metro",
+            "hint": "Вопрос о месте: связка сразу после вопросительного слова.",
+            "explanation": "Where is the nearest metro station? — Где ближайшая станция метро? Самый полезный вопрос в городе."
+          }
+        },
+        {
+          "ref": "a1.digital.009.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.009.t6.turn-right-bank",
+            "transcript": "Go straight and turn right after the bank.",
+            "translation": "Иди прямо и поверни направо после банка.",
+            "question": "Где нужно повернуть направо?",
+            "options": ["Перед банком", "После парка", "После банка", "На светофоре"],
+            "correctIndex": 2,
+            "hint": "Слушай предлог перед словом bank.",
+            "explanation": "After the bank — после банка. After — после, before — перед."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.digital",
+      "lessonRef": "a1.digital.010",
+      "title": { "ru": "Цифровой день: повторение", "en": "Digital Day: Review" },
+      "description": { "ru": "Итоговый диалог: телефон, вай-фай, фото, помощь", "en": "Final dialogue: phone, Wi-Fi, photos, help" },
+      "order": 10,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.digital.010.t1",
+          "type": "choice",
+          "data": {
+            "question": "Друг спрашивает: «Where are my photos?» Выбери правильный ответ:",
+            "options": ["They are in yours gallery.", "They are in your gallery.", "They is in your gallery.", "Them are in your gallery."],
+            "correctIndex": 1,
+            "hint": "Проверь форму глагола to be для множественного числа и форму притяжательного местоимения перед существительным.",
+            "explanation": "They are in your gallery. — Они в твоей галерее. They + are; перед существительным — your, а не yours."
+          }
+        },
+        {
+          "ref": "a1.digital.010.t2",
+          "type": "gap",
+          "data": {
+            "text": "How ____ I connect to your Wi-Fi?",
+            "answer": "can",
+            "accept": ["do"],
+            "hint": "Вопрос о способе: после how нужен модальный или вспомогательный глагол.",
+            "explanation": "How can I connect to your Wi-Fi? — Как мне подключиться к твоему вай-фаю? Подойдёт и how do I connect.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.digital.010.t3",
+          "type": "order",
+          "data": {
+            "tokens": ["Don't", "forget", "your", "charger", "at", "home", "."],
+            "hint": "Запрет-напоминание: отрицательная команда, место — в конце.",
+            "explanation": "Don't forget your charger at home. — Не забудь зарядку дома. Повторяем отрицательный императив и слово из урока 1."
+          }
+        },
+        {
+          "ref": "a1.digital.010.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Что не так с твоим телефоном?»",
+            "expected": ["What's wrong with your phone?", "What is wrong with your phone?"],
+            "hint": "Устойчивый вопрос о проблеме: «что не так» — двумя словами, дальше предлог with.",
+            "explanation": "What's wrong with your phone? / What is wrong with your phone? — устойчивая фраза для вопроса о проблеме."
+          }
+        },
+        {
+          "ref": "a1.digital.010.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Tap the button and open the settings.\"",
+            "target": "Tap the button and open the settings.",
+            "audioKey": "a1.digital.010.t5.tap-and-open",
+            "hint": "Две команды подряд, соединённые союзом. Оба глагола — из первых уроков.",
+            "explanation": "Tap the button and open the settings. — Нажми кнопку и открой настройки. Повторяем императивы модуля."
+          }
+        },
+        {
+          "ref": "a1.digital.010.t6",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.digital.010.t6.use-your-charger",
+            "transcript": "My phone is dead. Can I use your charger?",
+            "translation": "Мой телефон разрядился. Можно взять твою зарядку?",
+            "question": "Что просит говорящий?",
+            "options": ["Наушники", "Телефон", "Зарядку", "Пароль от вай-фая"],
+            "correctIndex": 2,
+            "hint": "Слушай последнее слово — этот предмет был в уроке 1.",
+            "explanation": "Can I use your charger? — Можно воспользоваться твоей зарядкой? My phone is dead — телефон разрядился."
+          }
+        }
+      ]
+    }
+  ]
+}

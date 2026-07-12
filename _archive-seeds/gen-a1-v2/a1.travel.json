@@ -1,0 +1,986 @@
+{
+  "modules": [
+    {
+      "moduleRef": "a1.travel",
+      "level": "A1",
+      "title": { "ru": "Путешествия A1", "en": "Travel A1" },
+      "description": { "ru": "Аэропорт, отель, транспорт и базовые ситуации", "en": "Airport, hotel, transport and basic travel situations" },
+      "tags": ["a1", "travel", "transport"],
+      "order": 8,
+      "published": true
+    }
+  ],
+  "lessons": [
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.001",
+      "title": { "ru": "Сборы и билеты", "en": "Packing and tickets" },
+      "description": { "ru": "Собираем чемодан и покупаем билеты: базовая лексика и просьбы с can", "en": "Pack your suitcase and buy tickets: key words and requests with can" },
+      "order": 1,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.001.t1",
+          "type": "choice",
+          "data": {
+            "question": "Ты в кассе и хочешь купить билет. Выбери правильную просьбу:",
+            "options": [
+              "Can I to book a ticket to London?",
+              "Can I book a ticket to London?",
+              "I can to book a ticket to London?",
+              "Can I booking a ticket to London?"
+            ],
+            "correctIndex": 1,
+            "hint": "После can глагол идёт в начальной форме — без частицы to и без -ing.",
+            "explanation": "Правильно: Can I book a ticket? После модального can глагол стоит без to и без -ing. «Can I to book» — типичная ошибка из-за русского «могу купить»."
+          }
+        },
+        {
+          "ref": "a1.travel.001.t2",
+          "type": "gap",
+          "data": {
+            "text": "My passport is ____ my bag, don't worry.",
+            "answer": "in",
+            "hint": "Предлог со значением «внутри чего-то».",
+            "explanation": "Внутри сумки — in my bag. Предлог in используется, когда предмет находится внутри: in the bag, in the pocket.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.001.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "suitcase", "right": "чемодан" },
+              { "left": "luggage", "right": "багаж" },
+              { "left": "ticket", "right": "билет" },
+              { "left": "passport", "right": "паспорт" },
+              { "left": "trip", "right": "поездка" },
+              { "left": "to pack", "right": "собирать вещи" }
+            ],
+            "hint": "Все слова — про подготовку к поездке. Suitcase — это конкретный предмет с ручкой.",
+            "explanation": "Базовый набор путешественника: suitcase — чемодан, luggage — багаж в целом, ticket — билет, passport — паспорт, trip — поездка, to pack — собирать вещи."
+          }
+        },
+        {
+          "ref": "a1.travel.001.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["We", "can", "buy", "tickets", "online", "."],
+            "hint": "Подлежащее → can → глагол → дополнение → обстоятельство.",
+            "explanation": "We can buy tickets online. — Мы можем купить билеты онлайн. Can ставится сразу после подлежащего, перед основным глаголом."
+          }
+        },
+        {
+          "ref": "a1.travel.001.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «У меня есть два билета и один чемодан»",
+            "expected": [
+              "I have two tickets and one suitcase",
+              "I have got two tickets and one suitcase",
+              "I've got two tickets and one suitcase"
+            ],
+            "hint": "«У меня есть» — конструкция с глаголом обладания, не с there is.",
+            "explanation": "I have two tickets and one suitcase. Также верно I have got / I've got. Русское «у меня есть» переводится через have, а не через there is."
+          }
+        },
+        {
+          "ref": "a1.travel.001.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Can I buy two tickets to London, please?\"",
+            "target": "Can I buy two tickets to London, please?",
+            "audioKey": "a1.travel.001.t6.buy-two-tickets",
+            "hint": "Вежливая просьба: интонация вверх в конце вопроса, please в конце.",
+            "explanation": "Can I buy...? — универсальная вежливая просьба. Please в конце делает её ещё вежливее."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.002",
+      "title": { "ru": "В аэропорту: регистрация", "en": "At the airport: check-in" },
+      "description": { "ru": "Стойка регистрации: сдаём багаж и просим место у окна", "en": "At the check-in desk: drop your luggage and ask for a window seat" },
+      "order": 2,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.002.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.002.t1.passport-and-ticket",
+            "transcript": "Good morning! Can I see your passport and your ticket, please?",
+            "translation": "Доброе утро! Могу я увидеть ваш паспорт и ваш билет?",
+            "question": "Что просит показать сотрудник на регистрации?",
+            "options": [
+              "A visa and a ticket",
+              "A passport and a boarding pass",
+              "A ticket and a suitcase",
+              "A passport and a ticket"
+            ],
+            "correctIndex": 3,
+            "hint": "Слушай два существительных после can I see.",
+            "explanation": "В аудио: Can I see your passport and your ticket. Сотрудник просит паспорт и билет — про визу и посадочный талон речи нет."
+          }
+        },
+        {
+          "ref": "a1.travel.002.t2",
+          "type": "gap",
+          "data": {
+            "text": "The plane from Paris arrives ____ nine o'clock.",
+            "answer": "at",
+            "hint": "Предлог времени, который ставится перед точным часом.",
+            "explanation": "С точным временем всегда at: at nine o'clock, at seven thirty. Предлоги in и on с часами не используются.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.002.t3",
+          "type": "choice",
+          "data": {
+            "question": "Попроси место у окна на стойке регистрации. Выбери правильный вариант:",
+            "options": [
+              "Can I to have a window seat?",
+              "I can have a window seat, yes?",
+              "Can I have a window seat, please?",
+              "Can I having a window seat?"
+            ],
+            "correctIndex": 2,
+            "hint": "В вопросе can выходит на первое место, а глагол остаётся в начальной форме.",
+            "explanation": "Правильно: Can I have a window seat, please? Вопрос строится инверсией: Can + I + глагол без to. «I can have..., yes?» — калька с русского «я могу..., да?»."
+          }
+        },
+        {
+          "ref": "a1.travel.002.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Where", "can", "we", "check", "in", "our", "luggage", "?"],
+            "hint": "Вопросительное слово → can → подлежащее → глагол.",
+            "explanation": "Where can we check in our luggage? — Где мы можем сдать багаж? После вопросительного слова идёт can, потом подлежащее."
+          }
+        },
+        {
+          "ref": "a1.travel.002.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I have one suitcase and one small bag.\"",
+            "target": "I have one suitcase and one small bag.",
+            "audioKey": "a1.travel.002.t5.one-suitcase",
+            "hint": "Так отвечают на вопрос «How many bags do you have?» на регистрации.",
+            "explanation": "I have one suitcase and one small bag. — У меня один чемодан и одна маленькая сумка. Стандартный ответ при сдаче багажа."
+          }
+        },
+        {
+          "ref": "a1.travel.002.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Можно мне место у окна?»",
+            "expected": [
+              "Can I have a window seat?",
+              "Could I have a window seat?",
+              "Can I have a window seat, please?"
+            ],
+            "hint": "Просьба через модальный глагол + have. «Место у окна» — устойчивое сочетание из двух слов.",
+            "explanation": "Can I have a window seat? Вежливее — Could I have... «Можно мне...» почти всегда переводится как Can/Could I have..."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.003",
+      "title": { "ru": "Паспортный контроль и досмотр", "en": "Passport control and security" },
+      "description": { "ru": "Отвечаем на вопросы офицера и проходим досмотр без стресса", "en": "Answer the officer's questions and go through security" },
+      "order": 3,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "easy",
+      "xpReward": 25,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.003.t1",
+          "type": "choice",
+          "data": {
+            "question": "Офицер спрашивает: \"What is the purpose of your visit?\" Выбери подходящий ответ:",
+            "options": [
+              "Tourism. I am here for a week.",
+              "Yes, please.",
+              "I am fine, thank you.",
+              "You are welcome."
+            ],
+            "correctIndex": 0,
+            "hint": "Purpose — это «цель». Вопрос требует ответа по существу, а не вежливой формулы.",
+            "explanation": "На вопрос о цели визита отвечают: Tourism / Business / Study. Остальные варианты — вежливые фразы для других ситуаций, на этот вопрос ими не отвечают."
+          }
+        },
+        {
+          "ref": "a1.travel.003.t2",
+          "type": "gap",
+          "data": {
+            "text": "Take your laptop ____ of your bag, please.",
+            "answer": "out",
+            "hint": "Направление «изнутри наружу», в паре с of.",
+            "explanation": "Take out of — вынуть из. На досмотре часто говорят: Take your laptop out of your bag — достаньте ноутбук из сумки.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.003.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.003.t3.open-your-bag",
+            "transcript": "Could you open your bag and take out your laptop, please?",
+            "translation": "Вы могли бы открыть сумку и достать ноутбук?",
+            "question": "О чём просит сотрудник досмотра?",
+            "options": [
+              "To close the bag",
+              "To open the bag and take out the laptop",
+              "To show the passport",
+              "To take off the shoes"
+            ],
+            "correctIndex": 1,
+            "hint": "Слушай два глагола после could you.",
+            "explanation": "В аудио две просьбы: open your bag и take out your laptop. Про обувь и паспорт сотрудник ничего не говорил."
+          }
+        },
+        {
+          "ref": "a1.travel.003.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "passport control", "right": "паспортный контроль" },
+              { "left": "security check", "right": "досмотр" },
+              { "left": "boarding pass", "right": "посадочный талон" },
+              { "left": "customs", "right": "таможня" },
+              { "left": "queue", "right": "очередь" },
+              { "left": "gate", "right": "выход на посадку" }
+            ],
+            "hint": "Всё это ты проходишь по пути к самолёту. Gate — там, где садятся в самолёт.",
+            "explanation": "Путь в аэропорту: check-in → security check (досмотр) → passport control → gate (выход на посадку). Customs — таможня, queue — очередь."
+          }
+        },
+        {
+          "ref": "a1.travel.003.t5",
+          "type": "order",
+          "data": {
+            "tokens": ["Could", "you", "show", "me", "your", "passport", ",", "please", "?"],
+            "hint": "Вежливая просьба: модальный глагол в начале, please после запятой в конце.",
+            "explanation": "Could you show me your passport, please? — Вы могли бы показать паспорт? Could you + глагол — самая вежливая форма просьбы."
+          }
+        },
+        {
+          "ref": "a1.travel.003.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"I am here for tourism.\"",
+            "target": "I am here for tourism.",
+            "audioKey": "a1.travel.003.t6.here-for-tourism",
+            "hint": "Готовый ответ на вопрос о цели визита на паспортном контроле.",
+            "explanation": "I am here for tourism. — Я здесь с туристической целью. Предлог for указывает цель: for tourism, for business."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.004",
+      "title": { "ru": "В самолёте", "en": "On the plane" },
+      "description": { "ru": "Находим место, просим воду и понимаем объявления экипажа", "en": "Find your seat, ask for water and understand cabin announcements" },
+      "order": 4,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.004.t1",
+          "type": "gap",
+          "data": {
+            "text": "The plane flies ____ Moscow to Istanbul.",
+            "answer": "from",
+            "hint": "Предлог исходной точки — «откуда».",
+            "explanation": "From ... to ... — из ... в ...: The plane flies from Moscow to Istanbul. Пара from/to описывает начало и конец маршрута.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.004.t2",
+          "type": "choice",
+          "data": {
+            "question": "Попроси у бортпроводника воды. Выбери правильный вариант:",
+            "options": [
+              "Can I to have some water, please?",
+              "I can to have water, please?",
+              "Can I some water, please?",
+              "Can I have some water, please?"
+            ],
+            "correctIndex": 3,
+            "hint": "В просьбе нужны и модальный глагол, и основной глагол — оба на месте, без to.",
+            "explanation": "Правильно: Can I have some water, please? Нельзя пропускать have и нельзя ставить to после can — это самые частые ошибки в таких просьбах."
+          }
+        },
+        {
+          "ref": "a1.travel.004.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.004.t3.fasten-seat-belts",
+            "transcript": "Ladies and gentlemen, please fasten your seat belts. We land in twenty minutes.",
+            "translation": "Дамы и господа, пожалуйста, пристегните ремни. Мы приземляемся через двадцать минут.",
+            "question": "Через сколько минут самолёт приземляется?",
+            "options": [
+              "In twelve minutes",
+              "In two hours",
+              "In twenty minutes",
+              "In ten minutes"
+            ],
+            "correctIndex": 2,
+            "hint": "Слушай число внимательно: twelve и twenty звучат похоже.",
+            "explanation": "В аудио: We land in twenty minutes — через двадцать минут. Twenty [ˈtwenti] легко перепутать с twelve [twelv] — тренируй это различие."
+          }
+        },
+        {
+          "ref": "a1.travel.004.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "seat", "right": "место" },
+              { "left": "seat belt", "right": "ремень безопасности" },
+              { "left": "flight attendant", "right": "бортпроводник" },
+              { "left": "to take off", "right": "взлетать" },
+              { "left": "to land", "right": "приземляться" },
+              { "left": "pilot", "right": "пилот" }
+            ],
+            "hint": "Два глагола здесь — противоположности: начало и конец полёта.",
+            "explanation": "Take off — взлетать, land — приземляться. Flight attendant — нейтральное слово для стюарда и стюардессы."
+          }
+        },
+        {
+          "ref": "a1.travel.004.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Could I have a cup of tea, please?\"",
+            "target": "Could I have a cup of tea, please?",
+            "audioKey": "a1.travel.004.t5.cup-of-tea",
+            "hint": "Could звучит вежливее, чем can. Идеально для просьбы к бортпроводнику.",
+            "explanation": "Could I have a cup of tea, please? — Можно мне чашку чая? Could — более мягкая и вежливая форма can."
+          }
+        },
+        {
+          "ref": "a1.travel.004.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Я не могу найти своё место»",
+            "expected": [
+              "I can't find my seat",
+              "I cannot find my seat",
+              "I can not find my seat"
+            ],
+            "hint": "Отрицание модального глагола + find. «Место» в самолёте — не place.",
+            "explanation": "I can't find my seat. Полная форма — cannot (пишется слитно). Место в самолёте, кино, поезде — seat, а не place."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.005",
+      "title": { "ru": "Заселение в отель", "en": "Hotel check-in" },
+      "description": { "ru": "Ресепшн: бронь, ключи и вопросы про завтрак", "en": "Reception: reservation, keys and breakfast questions" },
+      "order": 5,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.005.t1",
+          "type": "choice",
+          "data": {
+            "question": "Ты подходишь к стойке ресепшн. Выбери правильную фразу:",
+            "options": [
+              "I have a reservation for tonight.",
+              "I am a reservation for tonight.",
+              "I have reservation of tonight.",
+              "Me have a reservation tonight."
+            ],
+            "correctIndex": 0,
+            "hint": "Нужен глагол обладания и артикль перед существительным.",
+            "explanation": "I have a reservation. — У меня бронь. Перед reservation обязателен артикль a; «I have reservation» без артикля — типичная ошибка русскоговорящих."
+          }
+        },
+        {
+          "ref": "a1.travel.005.t2",
+          "type": "gap",
+          "data": {
+            "text": "Here is your key. Your room is ____ the third floor.",
+            "answer": "on",
+            "hint": "Предлог, который используется с этажами.",
+            "explanation": "С этажами всегда on: on the third floor — на третьем этаже. «In the floor» — ошибка.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.005.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.005.t3.fifth-floor",
+            "transcript": "Welcome to our hotel! Your room is on the fifth floor, room five oh two.",
+            "translation": "Добро пожаловать в наш отель! Ваш номер на пятом этаже, комната пятьсот два.",
+            "question": "На каком этаже находится номер?",
+            "options": [
+              "On the fourth floor",
+              "On the first floor",
+              "On the fifth floor",
+              "On the ninth floor"
+            ],
+            "correctIndex": 2,
+            "hint": "Fourth и fifth звучат похоже — слушай конец слова.",
+            "explanation": "В аудио: on the fifth floor — на пятом этаже. Fifth [fɪfθ] и fourth [fɔːθ] различаются гласной — частая ловушка на слух."
+          }
+        },
+        {
+          "ref": "a1.travel.005.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Can", "we", "leave", "our", "bags", "here", "?"],
+            "hint": "Вопрос-просьба: модальный глагол в самом начале.",
+            "explanation": "Can we leave our bags here? — Можно оставить сумки здесь? Полезная фраза, если номер ещё не готов."
+          }
+        },
+        {
+          "ref": "a1.travel.005.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «У меня бронь на две ночи»",
+            "expected": [
+              "I have a reservation for two nights",
+              "I have got a reservation for two nights",
+              "I've got a reservation for two nights",
+              "I have a booking for two nights"
+            ],
+            "hint": "«На две ночи» — предлог for. Не забудь артикль.",
+            "explanation": "I have a reservation for two nights. Срок брони вводится предлогом for: for two nights, for a week."
+          }
+        },
+        {
+          "ref": "a1.travel.005.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Can we have breakfast in the room?\"",
+            "target": "Can we have breakfast in the room?",
+            "audioKey": "a1.travel.005.t6.breakfast-in-room",
+            "hint": "Вопрос-просьба от лица двоих гостей.",
+            "explanation": "Can we have breakfast in the room? — Можно нам завтрак в номер? Have breakfast — устойчивое сочетание «завтракать»."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.006",
+      "title": { "ru": "В номере: there is / there are", "en": "In the room: there is / there are" },
+      "description": { "ru": "Что есть в номере и как пожаловаться на проблему", "en": "What is in the room and how to report a problem" },
+      "order": 6,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "grammar",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.006.t1",
+          "type": "choice",
+          "data": {
+            "question": "____ two beds and a sofa in our room.",
+            "options": [
+              "There is",
+              "There are",
+              "It is",
+              "There have"
+            ],
+            "correctIndex": 1,
+            "hint": "Смотри на первое существительное после пропуска — оно во множественном числе.",
+            "explanation": "There are two beds... — форма are, потому что first noun (two beds) во множественном числе. «There is two beds» — очень частая ошибка."
+          }
+        },
+        {
+          "ref": "a1.travel.006.t2",
+          "type": "gap",
+          "data": {
+            "text": "There ____ no hot water in my room.",
+            "answer": "is",
+            "hint": "Water — неисчисляемое, глагол в единственном числе.",
+            "explanation": "There is no hot water. С неисчисляемыми (water, money, time) конструкция there is всегда в единственном числе.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.006.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "towel", "right": "полотенце" },
+              { "left": "blanket", "right": "одеяло" },
+              { "left": "pillow", "right": "подушка" },
+              { "left": "air conditioner", "right": "кондиционер" },
+              { "left": "fridge", "right": "холодильник" },
+              { "left": "key card", "right": "ключ-карта" }
+            ],
+            "hint": "Всё это можно найти (или не найти) в номере отеля.",
+            "explanation": "Товары номера: towel — полотенце, blanket — одеяло, pillow — подушка. Fridge — разговорное от refrigerator."
+          }
+        },
+        {
+          "ref": "a1.travel.006.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["There", "are", "two", "towels", "in", "the", "bathroom", "."],
+            "hint": "Начни с конструкции наличия, место — в конце предложения.",
+            "explanation": "There are two towels in the bathroom. — В ванной два полотенца. Порядок: there are + что + где."
+          }
+        },
+        {
+          "ref": "a1.travel.006.t5",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.006.t5.no-towel",
+            "transcript": "Hello, this is room ten. There is no towel in the bathroom.",
+            "translation": "Здравствуйте, это десятый номер. В ванной нет полотенца.",
+            "question": "На какую проблему жалуется гость?",
+            "options": [
+              "There is no blanket",
+              "There is no hot water",
+              "There is no towel",
+              "The TV does not work"
+            ],
+            "correctIndex": 2,
+            "hint": "Слушай существительное после there is no.",
+            "explanation": "Гость говорит: There is no towel in the bathroom — нет полотенца. Так по телефону сообщают о проблеме на ресепшн."
+          }
+        },
+        {
+          "ref": "a1.travel.006.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «В номере есть холодильник?»",
+            "expected": [
+              "Is there a fridge in the room?",
+              "Is there a refrigerator in the room?"
+            ],
+            "hint": "Вопрос с конструкцией наличия: глагол-связка выходит вперёд.",
+            "explanation": "Is there a fridge in the room? В вопросе is и there меняются местами: There is → Is there...?"
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.007",
+      "title": { "ru": "Городской транспорт", "en": "City transport" },
+      "description": { "ru": "Автобус, метро и трамвай: покупаем билет и не проезжаем остановку", "en": "Bus, underground and tram: buy a ticket and get off at the right stop" },
+      "order": 7,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "vocabulary",
+      "difficulty": "medium",
+      "xpReward": 30,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.007.t1",
+          "type": "choice",
+          "data": {
+            "question": "Как правильно сказать «Мы едем в центр на автобусе»?",
+            "options": [
+              "We go to the centre in the bus.",
+              "We go to the centre on bus.",
+              "We go to the centre with bus.",
+              "We go to the centre by bus."
+            ],
+            "correctIndex": 3,
+            "hint": "Способ передвижения — особый предлог + транспорт без артикля.",
+            "explanation": "Ехать на транспорте — by + транспорт без артикля: by bus, by train, by taxi. «In the bus» и «with bus» — кальки с русского."
+          }
+        },
+        {
+          "ref": "a1.travel.007.t2",
+          "type": "gap",
+          "data": {
+            "text": "This is our stop! We get ____ the bus here.",
+            "answer": "off",
+            "hint": "Фразовый глагол «выходить из транспорта». Первое предложение подсказывает: это наша остановка.",
+            "explanation": "Get off the bus — выходить из автобуса. Противоположное — get on (садиться). Раз «это наша остановка», мы выходим.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.007.t3",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "bus stop", "right": "остановка" },
+              { "left": "underground", "right": "метро" },
+              { "left": "tram", "right": "трамвай" },
+              { "left": "ticket machine", "right": "билетный автомат" },
+              { "left": "timetable", "right": "расписание" },
+              { "left": "driver", "right": "водитель" }
+            ],
+            "hint": "Underground — британское слово, в Америке скажут subway.",
+            "explanation": "Городской транспорт: bus stop — остановка, underground (брит.) — метро, tram — трамвай, timetable — расписание."
+          }
+        },
+        {
+          "ref": "a1.travel.007.t4",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.007.t4.get-off-museum",
+            "transcript": "Take bus number seven and get off at the museum.",
+            "translation": "Садитесь на автобус номер семь и выходите у музея.",
+            "question": "Где нужно выйти из автобуса?",
+            "options": [
+              "At the station",
+              "At the hotel",
+              "At the airport",
+              "At the museum"
+            ],
+            "correctIndex": 3,
+            "hint": "Слушай место после get off at.",
+            "explanation": "В аудио: get off at the museum — выходите у музея. Get off at + место — так объясняют, где выходить."
+          }
+        },
+        {
+          "ref": "a1.travel.007.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Where is the nearest bus stop?\"",
+            "target": "Where is the nearest bus stop?",
+            "audioKey": "a1.travel.007.t5.nearest-bus-stop",
+            "hint": "Самый нужный вопрос туриста на улице.",
+            "explanation": "Where is the nearest bus stop? — Где ближайшая остановка? Nearest — превосходная степень от near (близкий)."
+          }
+        },
+        {
+          "ref": "a1.travel.007.t6",
+          "type": "order",
+          "data": {
+            "tokens": ["You", "can", "buy", "a", "ticket", "at", "the", "machine", "."],
+            "hint": "Утверждение с can: подлежащее → can → глагол → что → где.",
+            "explanation": "You can buy a ticket at the machine. — Билет можно купить в автомате. At the machine — у автомата, предлог точки."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.008",
+      "title": { "ru": "Такси и каршеринг", "en": "Taxi and car sharing" },
+      "description": { "ru": "Называем адрес, просим подождать и остановиться", "en": "Give the address, ask the driver to wait and to stop" },
+      "order": 8,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.008.t1",
+          "type": "gap",
+          "data": {
+            "text": "Could you take us ____ the airport, please?",
+            "answer": "to",
+            "hint": "Предлог направления после глагола движения.",
+            "explanation": "Take us to the airport — отвезите нас в аэропорт. Направление «куда» после глаголов движения передаёт to.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.008.t2",
+          "type": "choice",
+          "data": {
+            "question": "Попроси таксиста остановиться здесь. Выбери правильный вариант:",
+            "options": [
+              "You can stop here?",
+              "Can you stopping here?",
+              "Can you stop here, please?",
+              "Can you to stop here?"
+            ],
+            "correctIndex": 2,
+            "hint": "Просьба к другому человеку: Can you + глагол в начальной форме.",
+            "explanation": "Can you stop here, please? Просьба к собеседнику строится через Can/Could you + глагол без to и без -ing. «You can stop here?» — не вопрос-просьба, а утверждение."
+          }
+        },
+        {
+          "ref": "a1.travel.008.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.008.t3.white-taxi",
+            "transcript": "Your taxi is near the hotel. It is a white car, number three one five.",
+            "translation": "Ваше такси возле отеля. Это белая машина, номер триста пятнадцать.",
+            "question": "Какая машина ждёт вас?",
+            "options": [
+              "A white car",
+              "A black car",
+              "A grey car",
+              "A blue car"
+            ],
+            "correctIndex": 0,
+            "hint": "Слушай прилагательное перед словом car.",
+            "explanation": "В аудио: It is a white car — белая машина. Так диспетчер или приложение описывает подъехавшее такси."
+          }
+        },
+        {
+          "ref": "a1.travel.008.t4",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Вы можете подождать пять минут?»",
+            "expected": [
+              "Can you wait five minutes?",
+              "Could you wait five minutes?",
+              "Can you wait for five minutes?",
+              "Could you wait for five minutes?"
+            ],
+            "hint": "Просьба к водителю: модальный глагол + wait.",
+            "explanation": "Can/Could you wait (for) five minutes? После wait предлог for можно ставить или опускать — оба варианта естественны."
+          }
+        },
+        {
+          "ref": "a1.travel.008.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Could you take me to the city centre, please?\"",
+            "target": "Could you take me to the city centre, please?",
+            "audioKey": "a1.travel.008.t5.to-city-centre",
+            "hint": "Главная фраза пассажира такси: вежливо назови направление.",
+            "explanation": "Could you take me to the city centre, please? — Отвезите меня в центр, пожалуйста. Take me to + место — «отвезти куда-то»."
+          }
+        },
+        {
+          "ref": "a1.travel.008.t6",
+          "type": "order",
+          "data": {
+            "tokens": ["How", "much", "is", "the", "trip", "to", "the", "hotel", "?"],
+            "hint": "Вопрос о цене: how much + глагол-связка + что именно.",
+            "explanation": "How much is the trip to the hotel? — Сколько стоит поездка до отеля? How much is...? — универсальный вопрос о цене."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.009",
+      "title": { "ru": "Экскурсия и фото", "en": "Sightseeing and photos" },
+      "description": { "ru": "Гуляем по городу, просим сфотографировать и узнаём время экскурсии", "en": "Walk around the city, ask for a photo and find out the tour time" },
+      "order": 9,
+      "published": true,
+      "estimatedMinutes": 12,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.009.t1",
+          "type": "choice",
+          "data": {
+            "question": "Попроси прохожего сфотографировать вас. Выбери правильный вариант:",
+            "options": [
+              "Can you take a photo of us, please?",
+              "Can you make a photo of us, please?",
+              "Can you to take a photo of us?",
+              "You take a photo of us, please?"
+            ],
+            "correctIndex": 0,
+            "hint": "С фото в английском работает глагол take, и просьба строится вопросом.",
+            "explanation": "Take a photo — устойчивое сочетание; «make a photo» — калька с русского «сделать фото». Просьба — через Can you...?"
+          }
+        },
+        {
+          "ref": "a1.travel.009.t2",
+          "type": "gap",
+          "data": {
+            "text": "There ____ many old houses in this street.",
+            "answer": "are",
+            "hint": "После конструкции наличия идёт существительное во множественном числе.",
+            "explanation": "There are many old houses — домов много, поэтому множественная форма. Ошибка «there is many houses» очень частая.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.009.t3",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.009.t3.tour-at-ten",
+            "transcript": "The tour starts at ten in the morning, near the old church.",
+            "translation": "Экскурсия начинается в десять утра, возле старой церкви.",
+            "question": "Когда начинается экскурсия?",
+            "options": [
+              "At nine in the morning",
+              "At ten in the morning",
+              "At ten in the evening",
+              "At two in the afternoon"
+            ],
+            "correctIndex": 1,
+            "hint": "Важны и число, и время суток.",
+            "explanation": "В аудио: at ten in the morning — в десять утра. Уточнение in the morning / in the evening помогает не перепутать время."
+          }
+        },
+        {
+          "ref": "a1.travel.009.t4",
+          "type": "match",
+          "data": {
+            "pairs": [
+              { "left": "church", "right": "церковь" },
+              { "left": "castle", "right": "замок" },
+              { "left": "square", "right": "площадь" },
+              { "left": "bridge", "right": "мост" },
+              { "left": "guide", "right": "гид" },
+              { "left": "tour", "right": "экскурсия" }
+            ],
+            "hint": "Четыре слова — места в городе, два — про организованную прогулку.",
+            "explanation": "Городские достопримечательности: church — церковь, castle — замок, square — площадь, bridge — мост. Tour ведёт guide."
+          }
+        },
+        {
+          "ref": "a1.travel.009.t5",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Could you take a photo of us, please?\"",
+            "target": "Could you take a photo of us, please?",
+            "audioKey": "a1.travel.009.t5.take-a-photo",
+            "hint": "Та же просьба о фото, но в самой вежливой форме.",
+            "explanation": "Could you take a photo of us, please? — Вы не могли бы нас сфотографировать? Of us — «нас», объектная форма we."
+          }
+        },
+        {
+          "ref": "a1.travel.009.t6",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Мы можем купить билеты здесь?»",
+            "expected": [
+              "Can we buy tickets here?",
+              "Could we buy tickets here?",
+              "Can we buy the tickets here?"
+            ],
+            "hint": "Вопрос о возможности: модальный глагол выходит на первое место.",
+            "explanation": "Can we buy tickets here? Вопрос о возможности строится инверсией: Can + we + глагол. Слово «здесь» — here, в конце."
+          }
+        }
+      ]
+    },
+    {
+      "moduleRef": "a1.travel",
+      "lessonRef": "a1.travel.010",
+      "title": { "ru": "Итоговый диалог", "en": "Final review dialogue" },
+      "description": { "ru": "Повторяем весь маршрут: отель, транспорт, просьбы и there is/are", "en": "Review the whole trip: hotel, transport, requests and there is/are" },
+      "order": 10,
+      "published": true,
+      "estimatedMinutes": 14,
+      "type": "conversation",
+      "difficulty": "hard",
+      "xpReward": 35,
+      "hasAudio": true,
+      "tasks": [
+        {
+          "ref": "a1.travel.010.t1",
+          "type": "listen",
+          "data": {
+            "audioKey": "a1.travel.010.t1.reservation-two-nights",
+            "transcript": "Hello! I have a reservation for two nights. My name is Anna Petrova.",
+            "translation": "Здравствуйте! У меня бронь на две ночи. Меня зовут Анна Петрова.",
+            "question": "На сколько ночей у гостьи бронь?",
+            "options": [
+              "For one night",
+              "For two weeks",
+              "For two nights",
+              "For three nights"
+            ],
+            "correctIndex": 2,
+            "hint": "Слушай слова после предлога for — и число, и существительное.",
+            "explanation": "В аудио: a reservation for two nights — бронь на две ночи. Важно услышать и two, и nights (не weeks)."
+          }
+        },
+        {
+          "ref": "a1.travel.010.t2",
+          "type": "choice",
+          "data": {
+            "question": "Выбери предложение без ошибок:",
+            "options": [
+              "There is two beds in our room.",
+              "We can go to the centre by bus.",
+              "Can I to see your room, please?",
+              "I go to the hotel with taxi."
+            ],
+            "correctIndex": 1,
+            "hint": "Проверь каждое: форма there is/are, глагол после can, предлог с транспортом.",
+            "explanation": "Верно: We can go to the centre by bus. Ошибки в остальных: there is + two beds (нужно are), can + to see (to лишнее), with taxi (нужно by taxi)."
+          }
+        },
+        {
+          "ref": "a1.travel.010.t3",
+          "type": "gap",
+          "data": {
+            "text": "We are lost. Could you ____ us, please?",
+            "answer": "help",
+            "hint": "Мы заблудились — вежливо попроси о помощи.",
+            "explanation": "Could you help us, please? — Вы не могли бы нам помочь? После could глагол идёт в начальной форме, без to.",
+            "caseInsensitive": true
+          }
+        },
+        {
+          "ref": "a1.travel.010.t4",
+          "type": "order",
+          "data": {
+            "tokens": ["Is", "there", "a", "bank", "near", "the", "hotel", "?"],
+            "hint": "Вопрос о наличии: связка выходит перед there.",
+            "explanation": "Is there a bank near the hotel? — Возле отеля есть банк? В вопросе is встаёт перед there: There is → Is there...?"
+          }
+        },
+        {
+          "ref": "a1.travel.010.t5",
+          "type": "translate",
+          "data": {
+            "question": "Переведи: «Здесь есть автобус до аэропорта?»",
+            "expected": [
+              "Is there a bus to the airport?",
+              "Is there a bus to the airport here?",
+              "Is there a bus to the airport from here?"
+            ],
+            "hint": "Вопрос о наличии + предлог направления «до».",
+            "explanation": "Is there a bus to the airport? Конструкция наличия в вопросе + to the airport (направление «до аэропорта»)."
+          }
+        },
+        {
+          "ref": "a1.travel.010.t6",
+          "type": "speak",
+          "data": {
+            "prompt": "Скажи: \"Thank you for your help! Have a nice day!\"",
+            "target": "Thank you for your help! Have a nice day!",
+            "audioKey": "a1.travel.010.t6.have-a-nice-day",
+            "hint": "Финальная вежливая фраза — благодарность и пожелание.",
+            "explanation": "Thank you for your help! Have a nice day! — Спасибо за помощь! Хорошего дня! Идеальное завершение любого разговора в путешествии."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -25,6 +25,7 @@ export class TranslateValidationStrategy implements TaskValidationStrategy {
       isCorrect,
       score: isCorrect ? 1 : 0,
       correctAnswer: validationData.expected[0], // Показываем первый вариант как основной
+      explanation: taskData?.explanation,
       feedback: isCorrect ? undefined : `Правильный перевод: ${validationData.expected[0]}`,
     };
   }

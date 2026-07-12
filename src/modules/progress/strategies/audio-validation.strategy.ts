@@ -32,6 +32,7 @@ export class AudioValidationStrategy implements TaskValidationStrategy {
           isCorrect,
           score: isCorrect ? 1 : 0,
           correctAnswer: validationData.options[validationData.correctIndex],
+          explanation: taskData?.explanation,
           feedback: isCorrect ? undefined : 'Попробуйте еще раз',
         };
       }
@@ -46,6 +47,7 @@ export class AudioValidationStrategy implements TaskValidationStrategy {
         isCorrect,
         score: isCorrect ? 1 : 0,
         correctAnswer: validationData.options[validationData.correctIndex],
+        explanation: taskData?.explanation,
         feedback: isCorrect ? undefined : 'Попробуйте еще раз',
       };
     }
@@ -62,6 +64,7 @@ export class AudioValidationStrategy implements TaskValidationStrategy {
       isCorrect,
       score: isCorrect ? 1 : 0,
       correctAnswer: validationData.target,
+      explanation: taskData?.explanation,
       feedback: isCorrect ? undefined : 'Попробуйте еще раз',
     };
   }

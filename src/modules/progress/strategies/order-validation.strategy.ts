@@ -36,6 +36,7 @@ export class OrderValidationStrategy implements TaskValidationStrategy {
       isCorrect,
       score: isCorrect ? 1 : 0,
       correctAnswer: validationData.tokens.join(' '),
+      explanation: taskData?.explanation,
       feedback: isCorrect ? undefined : `Правильный порядок: ${validationData.tokens.join(' ')}`,
     };
   }
