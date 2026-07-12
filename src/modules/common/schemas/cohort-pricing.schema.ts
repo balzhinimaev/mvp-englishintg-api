@@ -1,7 +1,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-@Schema({ timestamps: true })
+// collection задана явно: сиды пишут в `cohortpricings`, а дефолтное имя
+// mongoose для этого класса — `cohortpricingdocuments` (пустая коллекция → вечный fallback)
+@Schema({ timestamps: true, collection: 'cohortpricings' })
 export class CohortPricingDocument extends Document {
   @Prop({ required: true, unique: true })
   cohortName!: string;

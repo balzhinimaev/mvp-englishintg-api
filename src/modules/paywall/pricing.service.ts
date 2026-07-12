@@ -169,10 +169,22 @@ export class PricingService {
     } as CohortPricing;
   }
 
-  getProducts(pricing: CohortPricing): PaywallProduct[] {
+  getProducts(pricing: CohortPricing, regular?: CohortPricing): PaywallProduct[] {
     // Calculate monthly equivalent for quarterly and yearly subscriptions
     const quarterlyMonthlyEquivalent = Math.round(pricing.quarterlyPrice / 3);
     const yearlyMonthlyEquivalent = Math.round(pricing.yearlyPrice / 12);
+
+    // ЧЕСТНЫЕ якоря вместо вечной «скидки» от цены, по которой никогда не продавали:
+    //  - quarterly/yearly: «было» = столько же месяцев по помесячной цене ЭТОЙ когорты;
+    //  - monthly: «было» = обычная (default) цена, только если когорте реально дешевле.
+    const monthlyRegular = regular && pricing.monthlyPrice < regular.monthlyPrice ? regular.monthlyPrice : undefined;
+    const monthlyRegularDiscount = monthlyRegular
+      ? Math.round((1 - pricing.monthlyPrice / monthlyRegular) * 100)
+      : undefined;
+    const quarterlyIfMonthly =
+      pricing.monthlyPrice * 3 > pricing.quarterlyPrice ? pricing.monthlyPrice * 3 : undefined;
+    const yearlyIfMonthly =
+      pricing.monthlyPrice * 12 > pricing.yearlyPrice ? pricing.monthlyPrice * 12 : undefined;
 
     // Calculate savings percentage compared to monthly subscription (защита от негативных значений)
     const quarterlySavingsPercentage = Math.max(0, Math.round(
@@ -188,10 +200,10 @@ export class PricingService {
         name: 'Месяц',
         description: 'Полный доступ ко всем урокам',
         price: pricing.monthlyPrice,
-        originalPrice: pricing.monthlyOriginalPrice,
+        originalPrice: monthlyRegular,
         currency: 'RUB',
         duration: 'month',
-        discount: pricing.discountPercentage,
+        discount: monthlyRegularDiscount,
         isPopular: true,
       },
       {
@@ -201,10 +213,10 @@ export class PricingService {
           ? `Экономия ${quarterlySavingsPercentage}% против помесячки • ~${Math.round(quarterlyMonthlyEquivalent / 100)}₽/месяц`
           : `~${Math.round(quarterlyMonthlyEquivalent / 100)}₽/месяц`,
         price: pricing.quarterlyPrice,
-        originalPrice: pricing.quarterlyOriginalPrice,
+        originalPrice: quarterlyIfMonthly,
         currency: 'RUB',
         duration: 'quarter',
-        discount: pricing.quarterlyDiscountPercentage,
+        discount: quarterlySavingsPercentage,
         monthlyEquivalent: quarterlyMonthlyEquivalent,
         savingsPercentage: quarterlySavingsPercentage,
       } as PaywallProduct,
@@ -215,10 +227,10 @@ export class PricingService {
           ? `Экономия ${yearlySavingsPercentage}% против помесячки • ~${Math.round(yearlyMonthlyEquivalent / 100)}₽/месяц`
           : `~${Math.round(yearlyMonthlyEquivalent / 100)}₽/месяц`,
         price: pricing.yearlyPrice,
-        originalPrice: pricing.yearlyOriginalPrice,
+        originalPrice: yearlyIfMonthly,
         currency: 'RUB',
         duration: 'year',
-        discount: pricing.yearlyDiscountPercentage,
+        discount: yearlySavingsPercentage,
         monthlyEquivalent: yearlyMonthlyEquivalent,
         savingsPercentage: yearlySavingsPercentage,
       } as PaywallProduct,

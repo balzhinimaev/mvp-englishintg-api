@@ -61,11 +61,15 @@ export class PaywallController {
 
     // Получаем ценообразование
     const pricing = await this.pricingService.getPricing(cohort);
-    const products = this.pricingService.getProducts(pricing);
+    // «обычная» цена для честного зачёркивания у льготных когорт
+    const regularPricing = cohort === 'default' ? pricing : await this.pricingService.getPricing('default');
+    const products = this.pricingService.getProducts(pricing, regularPricing);
 
+    // promoCode не влияет на цену (createPayment считает только по когорте) — наружу не отдаём
+    const { promoCode: _promoCode, ...publicPricing } = pricing;
     return {
       cohort,
-      pricing,
+      pricing: publicPricing,
       products,
       userStats: {
         lessonCount,
