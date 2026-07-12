@@ -16,8 +16,10 @@
     "communication",
     "social"
    ],
+   "published": true,
    "order": 9,
-   "published": true
+   "requiresPro": false,
+   "isAvailable": true
   },
   {
    "moduleRef": "a1.digital",
@@ -35,8 +37,10 @@
     "digital",
     "tech"
    ],
+   "published": true,
    "order": 10,
-   "published": true
+   "requiresPro": false,
+   "isAvailable": true
   },
   {
    "moduleRef": "a1.health",
@@ -54,8 +58,10 @@
     "health",
     "daily"
    ],
+   "published": true,
    "order": 7,
-   "published": true
+   "requiresPro": false,
+   "isAvailable": true
   },
   {
    "moduleRef": "a1.shopping",
@@ -73,8 +79,10 @@
     "shopping",
     "money"
    ],
+   "published": true,
    "order": 6,
-   "published": true
+   "requiresPro": false,
+   "isAvailable": true
   },
   {
    "moduleRef": "a1.travel",
@@ -92,8 +100,10 @@
     "travel",
     "transport"
    ],
+   "published": true,
    "order": 8,
-   "published": true
+   "requiresPro": false,
+   "isAvailable": true
   },
   {
    "moduleRef": "a1.workplace",
@@ -111,8 +121,10 @@
     "work",
     "office"
    ],
+   "published": true,
    "order": 5,
-   "published": true
+   "requiresPro": false,
+   "isAvailable": true
   }
  ],
  "lessons": [
@@ -127,13 +139,7 @@
     "ru": "Рассказываем о действиях прямо сейчас: Present Continuous",
     "en": "Talking about actions happening right now"
    },
-   "order": 1,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.001.t1",
@@ -223,7 +229,17 @@
       "explanation": "Так вежливо отвечают, когда заняты: извинение + что ты делаешь сейчас."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 1,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -236,13 +252,7 @@
     "ru": "Говорим о любимых занятиях: like, love, hate + -ing",
     "en": "Talking about favourite activities with like/love/hate + -ing"
    },
-   "order": 2,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.002.t1",
@@ -350,7 +360,17 @@
       "explanation": "Классическая фраза о вкусах: like + -ing, hate + -ing."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 2,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -363,13 +383,7 @@
     "ru": "Приглашаем друга: Let's... и Shall we...?",
     "en": "Inviting a friend with Let's... and Shall we...?"
    },
-   "order": 3,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.003.t1",
@@ -414,7 +428,11 @@
       "answer": "Shall",
       "hint": "Вежливый вопрос-предложение «может, ...?» начинается с особого слова.",
       "explanation": "Shall we meet at seven? — Может, встретимся в семь? Shall we — вежливое предложение.",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "Can",
+       "Could"
+      ]
      }
     },
     {
@@ -459,7 +477,17 @@
       "explanation": "Great idea! — Отличная идея! Так соглашаются на приглашение и уточняют время."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 3,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -472,13 +500,7 @@
     "ru": "Договариваемся о времени и месте: предлоги at, on, in",
     "en": "Agreeing on time and place: prepositions at, on, in"
    },
-   "order": 4,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.004.t1",
@@ -585,7 +607,17 @@
       "explanation": "Полное предложение о встрече: место (near the park) + время (at five)."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 4,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -598,13 +630,7 @@
     "ru": "Звоним и отвечаем: This is..., Can I speak to...?",
     "en": "Making and answering calls: This is..., Can I speak to...?"
    },
-   "order": 5,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.005.t1",
@@ -633,7 +659,10 @@
       "answer": "This",
       "hint": "По телефону о себе говорят не «я — Том», а «... есть Том» — с указательным словом.",
       "explanation": "По телефону представляются: This is Tom — это Том. Говорить «I am Tom» в трубку — калька с русского.",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "It"
+      ]
      }
     },
     {
@@ -695,7 +724,17 @@
       "explanation": "Полный шаблон начала телефонного разговора: Hello + This is + Can I speak to."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 5,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -708,13 +747,7 @@
     "ru": "Короткие сообщения: что делаешь, занят ли, когда придёшь",
     "en": "Short messages: what you are doing, if you are busy"
    },
-   "order": 6,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.006.t1",
@@ -824,7 +857,17 @@
       "explanation": "Sounds good! — Отлично! I'm on my way — я уже в пути."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 6,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -837,13 +880,7 @@
     "ru": "Отказываемся вежливо и предлагаем другой вариант",
     "en": "Refusing politely and suggesting an alternative"
    },
-   "order": 7,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.007.t1",
@@ -936,7 +973,17 @@
       "explanation": "I'd love to, but... — «я бы с удовольствием, но...» — самый вежливый отказ. I'd = I would."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 7,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -949,13 +996,7 @@
     "ru": "Рассказываем о близких: привычки и любимые занятия",
     "en": "Talking about family: habits and favourite activities"
    },
-   "order": 8,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "vocabulary",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.008.t1",
@@ -1063,7 +1104,17 @@
       "explanation": "Spend time with — проводить время с кем-то. После love — форма с -ing: spending."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 8,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -1076,13 +1127,7 @@
     "ru": "Договорённости на выходные через Present Continuous",
     "en": "Weekend arrangements with the Present Continuous"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "grammar",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.009.t1",
@@ -1178,7 +1223,17 @@
       "explanation": "Join us! — Присоединяйся! Так зовут друзей на уже запланированное событие."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.communication",
@@ -1191,13 +1246,7 @@
     "ru": "Собираем всё вместе: сейчас vs обычно, Let's, вкусы",
     "en": "Putting it all together: now vs usually, Let's, likes"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 15,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.communication.010.t1",
@@ -1308,7 +1357,17 @@
       "explanation": "Let's talk in English — давай говорить по-английски. Love + learning — любимое занятие с -ing."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -1321,13 +1380,7 @@
     "ru": "Базовые действия с телефоном: tap, swipe, open",
     "en": "Basic phone actions: tap, swipe, open"
    },
-   "order": 1,
-   "published": true,
    "estimatedMinutes": 10,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.001.t1",
@@ -1398,13 +1451,14 @@
        "Open",
        "the",
        "camera",
-       "on",
-       "your",
-       "phone",
+       "to",
+       "take",
+       "a",
+       "photo",
        "."
       ],
       "hint": "Императив: предложение начинается с глагола-команды, место указано в конце.",
-      "explanation": "Open the camera on your phone. — Открой камеру на своём телефоне. Команда = глагол + объект + место."
+      "explanation": "Open the camera to take a photo — «открой камеру, чтобы сделать фото»."
      }
     },
     {
@@ -1437,7 +1491,17 @@
       "explanation": "This is my new phone. — Это мой новый телефон. Порядок: my + new + phone."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 1,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -1450,13 +1514,7 @@
     "ru": "Регистрация: email, пароль, подтверждение",
     "en": "Sign up: email, password, confirmation"
    },
-   "order": 2,
-   "published": true,
    "estimatedMinutes": 10,
-   "type": "grammar",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.002.t1",
@@ -1465,7 +1523,8 @@
       "text": "____ your email address and choose a password.",
       "answer": "Enter",
       "accept": [
-       "Type"
+       "Type",
+       "Write"
       ],
       "hint": "Регистрация начинается с того, что данные печатают в пустое поле. Нужен глагол-команда.",
       "explanation": "Enter your email address — «введи свой электронный адрес». Также можно сказать type (напечатай).",
@@ -1479,13 +1538,13 @@
       "question": "Выбери правильное предложение:",
       "options": [
        "Create you account here.",
-       "Create yours account here.",
+       "Create account here.",
        "Create your account here.",
-       "Create your's account here."
+       "Create yours account here."
       ],
       "correctIndex": 2,
-      "hint": "Перед существительным притяжательное местоимение имеет особую форму — без апострофов.",
-      "explanation": "Перед существительным нужно your: your account. You — «ты», yours стоит без существительного (This account is yours), а формы your's не существует."
+      "hint": "Перед существительным нужна краткая притяжательная форма; та, что живёт без существительного, сюда не подходит.",
+      "explanation": "Перед существительным нужно your: your account. You — «ты», yours стоит без существительного (This account is yours)."
      }
     },
     {
@@ -1549,7 +1608,17 @@
       "explanation": "My password is secret. — Мой пароль — секрет. В английском связка is обязательна."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 2,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -1562,13 +1631,7 @@
     "ru": "Язык, уведомления, звук и тёмная тема",
     "en": "Language, notifications, sound and dark mode"
    },
-   "order": 3,
-   "published": true,
    "estimatedMinutes": 10,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.003.t1",
@@ -1681,7 +1744,17 @@
       "explanation": "Choose dark mode — выбери тёмную тему. Dark — тёмный, light — светлый."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 3,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -1694,13 +1767,7 @@
     "ru": "Отправляем фото и сообщения, притяжательные his/her",
     "en": "Sending photos and messages, possessives his/her"
    },
-   "order": 4,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.004.t1",
@@ -1726,7 +1793,11 @@
       "answer": "send",
       "hint": "Что делают с готовым фото в мессенджере, чтобы его увидел друг?",
       "explanation": "Send it to me — «отправь его мне». Take a photo — сделать фото, send — отправить.",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "show",
+       "give"
+      ]
      }
     },
     {
@@ -1810,7 +1881,17 @@
       "explanation": "His dog — его собака. His — его, her — её; dog — собака, cat — кошка."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 4,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -1823,13 +1904,7 @@
     "ru": "Камера, микрофон и фразы во время звонка",
     "en": "Camera, microphone and phrases during a call"
    },
-   "order": 5,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.005.t1",
@@ -1919,7 +1994,17 @@
       "explanation": "My camera doesn't work — моя камера не работает. Camera — камера, microphone — микрофон."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 5,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -1932,13 +2017,7 @@
     "ru": "Подключение к сети и проблемы с интернетом",
     "en": "Connecting to a network and internet problems"
    },
-   "order": 6,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.006.t1",
@@ -2053,7 +2132,17 @@
       "explanation": "Turn off... and turn it on again — выключить и снова включить, то есть перезапустить."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 6,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -2066,13 +2155,7 @@
     "ru": "Запреты: Don't share, Never tell — пароли и ссылки",
     "en": "Prohibitions: Don't share, Never tell — passwords and links"
    },
-   "order": 7,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.007.t1",
@@ -2166,7 +2249,17 @@
       "explanation": "Don't open it — не открывай его. Strange — странный: странные сообщения не открываем."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 7,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -2179,13 +2272,7 @@
     "ru": "Просим помощь: How can I...? I need help",
     "en": "Asking for help: How can I...? I need help"
    },
-   "order": 8,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.008.t1",
@@ -2274,7 +2361,17 @@
       "explanation": "In two hours — через два часа. Hours — часы, days — дни, minutes — минуты."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 8,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -2287,13 +2384,7 @@
     "ru": "Ищем места на карте и спрашиваем дорогу",
     "en": "Finding places on the map and asking for directions"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "vocabulary",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.009.t1",
@@ -2406,7 +2497,17 @@
       "explanation": "After the bank — после банка. After — после, before — перед."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.digital",
@@ -2419,13 +2520,7 @@
     "ru": "Итоговый диалог: телефон, вай-фай, фото, помощь",
     "en": "Final dialogue: phone, Wi-Fi, photos, help"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.digital.010.t1",
@@ -2463,7 +2558,7 @@
      "data": {
       "tokens": [
        "Don't",
-       "forget",
+       "leave",
        "your",
        "charger",
        "at",
@@ -2471,7 +2566,7 @@
        "."
       ],
       "hint": "Запрет-напоминание: отрицательная команда, место — в конце.",
-      "explanation": "Don't forget your charger at home. — Не забудь зарядку дома. Повторяем отрицательный императив и слово из урока 1."
+      "explanation": "Don't leave your charger at home — «не оставь зарядку дома». Отрицательный императив: Don't + глагол."
      }
     },
     {
@@ -2517,7 +2612,17 @@
       "explanation": "Can I use your charger? — Можно воспользоваться твоей зарядкой? My phone is dead — телефон разрядился."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.directions",
@@ -2530,13 +2635,7 @@
     "ru": "Сказать, что заблудился, попросить повторить и понять объяснение",
     "en": "Say you are lost, ask to repeat and understand the directions"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 38,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.directions.009.t1",
@@ -2648,7 +2747,17 @@
       "explanation": "Sorry, I am lost. Could you help me? — универсальное начало разговора, когда потерялся."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 38,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.directions",
@@ -2661,13 +2770,7 @@
     "ru": "Полный сценарий: спросить дорогу, выбрать транспорт, пересесть и выйти где нужно",
     "en": "Full scenario: ask the way, choose transport, transfer and get off at the right stop"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "hard",
-   "xpReward": 40,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.directions.010.t1",
@@ -2756,7 +2859,8 @@
       "question": "Переведи: «Мне нужно выйти на следующей остановке?»",
       "expected": [
        "Do I need to get off at the next stop?",
-       "Should I get off at the next stop?"
+       "Should I get off at the next stop?",
+       "Do I have to get off at the next stop?"
       ],
       "hint": "Спроси о необходимости действия — вопрос начинается со вспомогательного или модального глагола.",
       "explanation": "Do I need to get off at the next stop? / Should I get off at the next stop? — оба варианта естественны."
@@ -2773,7 +2877,17 @@
       "explanation": "Is this the right stop for the museum? — та ли это остановка для музея? Проверяй остановку перед выходом."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 40,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.food",
@@ -2786,13 +2900,7 @@
     "ru": "Вежливо сказать, что блюдо не то или остыло, и похвалить, когда всё вкусно",
     "en": "Politely report a wrong or cold dish and give a compliment when it is good"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 38,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.food.009.t1",
@@ -2882,7 +2990,10 @@
       "expected": [
        "Everything was delicious, my compliments to the chef",
        "Everything was very tasty, my compliments to the chef",
-       "Everything was delicious, compliments to the chef"
+       "Everything was delicious, compliments to the chef",
+       "Please give my compliments to the chef",
+       "Give my compliments to the chef",
+       "Please pass my compliments to the chef"
       ],
       "hint": "Вежливая итоговая фраза после ужина; похвалу «передают» устойчивой формулой.",
       "explanation": "Everything was delicious, my compliments to the chef — стандартная формула похвалы в ресторане."
@@ -2899,7 +3010,17 @@
       "explanation": "This is not what I ordered — это не то, что я заказывал. Ключевая фраза при ошибке в заказе."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 38,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.food",
@@ -2912,13 +3033,7 @@
     "ru": "Полный сценарий ужина: меню, заказ с ограничениями, счёт и чаевые",
     "en": "Full dinner scenario: menu, order with preferences, bill and tips"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "hard",
-   "xpReward": 40,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.food.010.t1",
@@ -2991,7 +3106,9 @@
       "expected": [
        "I'll have the steak, but no onions, please",
        "I will have the steak, but no onions, please",
-       "I'll take the steak, but without onions, please"
+       "I'll take the steak, but without onions, please",
+       "I'll have the steak, but without onions",
+       "I'll take the steak, but no onions"
       ],
       "hint": "Решение о заказе — будущее время; отказ от ингредиента — короткая формула.",
       "explanation": "I'll have the steak, but no onions, please. I'll = I will; «без лука» в заказе чаще no onions, чем without."
@@ -3008,7 +3125,17 @@
       "explanation": "Keep the change — сдачи не нужно. Стандартное завершение ужина с чаевыми."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 40,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3021,13 +3148,7 @@
     "ru": "Части тела и глагол feel: учимся говорить, как ты себя чувствуешь",
     "en": "Body parts and feel + adjective: say how you feel"
    },
-   "order": 1,
-   "published": true,
    "estimatedMinutes": 10,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.001.t1",
@@ -3068,7 +3189,7 @@
      "ref": "a1.health.001.t3",
      "type": "gap",
      "data": {
-      "text": "My ____ hurts, I can't eat an apple.",
+      "text": "My ____ hurts, I can't bite an apple.",
       "answer": "tooth",
       "hint": "Их во рту 32, а здесь болит один.",
       "explanation": "My tooth hurts — у меня болит зуб. Одна часть тела → глагол hurts с окончанием -s.",
@@ -3128,13 +3249,25 @@
       "expected": [
        "I feel bad",
        "I feel ill",
-       "I feel unwell"
+       "I feel unwell",
+       "I don't feel well",
+       "I feel sick"
       ],
       "hint": "По-английски «себя» не переводится: просто глагол + прилагательное.",
       "explanation": "I feel bad / I feel ill. Говорить «I feel myself bad» нельзя — myself здесь не нужно."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 1,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3147,13 +3280,7 @@
     "ru": "Конструкция have got / has got для болезней и боли",
     "en": "Have got / has got for aches and illnesses"
    },
-   "order": 2,
-   "published": true,
    "estimatedMinutes": 10,
-   "type": "grammar",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.002.t1",
@@ -3243,7 +3370,17 @@
       "explanation": "I have got a terrible headache — у меня ужасно болит голова."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 2,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3256,13 +3393,7 @@
     "ru": "Звоним в клинику и записываемся на приём",
     "en": "Phone the clinic and book a doctor's appointment"
    },
-   "order": 3,
-   "published": true,
    "estimatedMinutes": 11,
-   "type": "conversation",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.003.t1",
@@ -3287,7 +3418,8 @@
       "text": "Can I ____ an appointment for Monday, please?",
       "answer": "make",
       "accept": [
-       "book"
+       "book",
+       "get"
       ],
       "hint": "Этот глагол — партнёр слова appointment (и это не do).",
       "explanation": "Make an appointment — записаться на приём. Также говорят book an appointment.",
@@ -3375,7 +3507,17 @@
       "explanation": "I'd like to see a doctor, please — я хотел(а) бы попасть к врачу. Вежливая фраза в регистратуре."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 3,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3388,13 +3530,7 @@
     "ru": "Описываем симптомы: кашель, температура, боль",
     "en": "Describe your symptoms: cough, fever, pain"
    },
-   "order": 4,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.004.t1",
@@ -3420,7 +3556,12 @@
       "answer": "hot",
       "hint": "Прилагательное — противоположность cold.",
       "explanation": "I feel hot — мне жарко. Частый признак температуры.",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "sick",
+       "ill",
+       "bad"
+      ]
      }
     },
     {
@@ -3465,7 +3606,8 @@
       "expected": [
        "I have got a sore throat and I feel bad",
        "I've got a sore throat and I feel bad",
-       "I have a sore throat and I don't feel well"
+       "I have a sore throat and I don't feel well",
+       "I have a sore throat and I feel bad"
       ],
       "hint": "«Болит горло» — через конструкцию «у меня есть…», а «себя» не переводится.",
       "explanation": "I've got a sore throat and I feel bad. Sore throat идёт с артиклем a, а feel — без myself."
@@ -3501,7 +3643,17 @@
       "explanation": "I feel sick and my stomach hurts — меня тошнит, и болит живот."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 4,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3514,13 +3666,7 @@
     "ru": "Should и shouldn't: даём и понимаем советы",
     "en": "Should and shouldn't: give and understand advice"
    },
-   "order": 5,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.005.t1",
@@ -3612,7 +3758,17 @@
       "explanation": "You should drink warm tea with honey — совет при простуде: пить тёплый чай с мёдом."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 5,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3625,13 +3781,7 @@
     "ru": "Покупаем лекарства и спрашиваем, как их принимать",
     "en": "Buy medicine and ask how to take it"
    },
-   "order": 6,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.006.t1",
@@ -3737,7 +3887,17 @@
       "explanation": "I need (some) medicine for a cough. «Лекарство от…» по-английски — medicine for…, не from."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 6,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3750,13 +3910,7 @@
     "ru": "Советы о сне, еде и спорте со should",
     "en": "Advice about sleep, food and exercise with should"
    },
-   "order": 7,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.007.t1",
@@ -3866,7 +4020,17 @@
       "explanation": "You should do exercise every morning — тебе стоит делать зарядку каждое утро."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 7,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3879,13 +4043,7 @@
     "ru": "Что делать, когда простудился: постель, вода, отдых",
     "en": "What to do when you have a cold: bed, water, rest"
    },
-   "order": 8,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "vocabulary",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.008.t1",
@@ -3925,7 +4083,8 @@
       "expected": [
        "I have got a cold and I can't sleep",
        "I've got a cold and I can't sleep",
-       "I have a cold and I cannot sleep"
+       "I have a cold and I cannot sleep",
+       "I caught a cold and I can't sleep"
       ],
       "hint": "«Простудиться» по-английски — «иметь простуду», с артиклем.",
       "explanation": "I've got a cold and I can't sleep. Простуда — исчисляемое: a cold."
@@ -3982,7 +4141,17 @@
       "explanation": "I should rest and drink a lot of water — мне следует отдыхать и пить много воды."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 8,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -3995,13 +4164,7 @@
     "ru": "Сообщаем на работе, что заболели",
     "en": "Tell your boss you are ill and can't come"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.009.t1",
@@ -4095,7 +4258,17 @@
       "explanation": "I'm sorry, I'm ill and I can't come to work today — стандартная фраза для звонка начальнику."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.health",
@@ -4108,13 +4281,7 @@
     "ru": "Повторяем весь модуль: симптомы, have got, should",
     "en": "Module review: symptoms, have got, should"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.health.010.t1",
@@ -4174,7 +4341,10 @@
       "answer": "should",
       "hint": "Модальный глагол совета из середины модуля.",
       "explanation": "I should stay in bed — мне следует остаться в постели. Совет = модальный глагол + базовая форма.",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "must"
+      ]
      }
     },
     {
@@ -4185,7 +4355,8 @@
       "expected": [
        "She has got a fever and she should stay at home",
        "She's got a fever and she should stay at home",
-       "She has a fever and she should stay home"
+       "She has a fever and she should stay home",
+       "She has a fever and she should stay at home"
       ],
       "hint": "Третье лицо: has, а совет — модальным глаголом без to.",
       "explanation": "She's got a fever and she should stay at home. Обрати внимание: has got для she, а после модального глагола — сразу stay."
@@ -4221,7 +4392,17 @@
       "explanation": "Thank you, doctor. I feel much better now — спасибо, доктор, мне уже намного лучше."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.intro",
@@ -4234,13 +4415,7 @@
     "ru": "Как завершить разговор, попросить контакт и договориться быть на связи",
     "en": "Ending a conversation, asking for contacts and staying in touch"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 38,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.intro.009.t1",
@@ -4266,7 +4441,10 @@
       "answer": "send",
       "hint": "Что делают с сообщением в мессенджере?",
       "explanation": "send a message — отправить сообщение. I'll send you a message tonight — я напишу тебе сегодня вечером.",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "write"
+      ]
      }
     },
     {
@@ -4331,7 +4509,9 @@
        "I'll write to you tomorrow",
        "I will write to you tomorrow",
        "I'll text you tomorrow",
-       "I will text you tomorrow"
+       "I will text you tomorrow",
+       "I'll write you tomorrow",
+       "I'll message you tomorrow"
       ],
       "hint": "Будущее время: решение, принятое сейчас.",
       "explanation": "I'll write to you tomorrow / I'll text you tomorrow. Сокращение I'll = I will."
@@ -4348,7 +4528,17 @@
       "explanation": "Add me on Telegram — добавь меня в Телеграме; username — имя пользователя. Так обмениваются контактами в мессенджерах."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 38,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.intro",
@@ -4361,13 +4551,7 @@
     "ru": "Полный сценарий: приветствие, рассказ о себе, приглашение и прощание",
     "en": "Full scenario: greeting, introducing yourself, inviting and saying goodbye"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "hard",
-   "xpReward": 40,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.intro.010.t1",
@@ -4456,7 +4640,17 @@
       "explanation": "It was great to meet you — было здорово познакомиться; see you on Friday — увидимся в пятницу. Так завершают удачное знакомство."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 40,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.routines",
@@ -4469,13 +4663,7 @@
     "ru": "Рассказать про выходные: поспать подольше, навести порядок, отдохнуть",
     "en": "Talk about weekends: sleeping in, tidying up and relaxing"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 38,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.routines.009.t1",
@@ -4585,7 +4773,17 @@
       "explanation": "On weekends I sleep in and clean my apartment — по выходным я сплю подольше и убираю квартиру."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 38,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.routines",
@@ -4598,13 +4796,7 @@
     "ru": "Связный рассказ о дне: подъём, работа, вечер и выходной",
     "en": "A connected story of your day: getting up, work, evening and a day off"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "hard",
-   "xpReward": 40,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.routines.010.t1",
@@ -4686,7 +4878,7 @@
        }
       ],
       "hint": "Действия типичного дня — от подъёма до сна.",
-      "explanation": "Базовые коллокации дня: have breakfast (не eat breakfast в формулах), go to bed — ложиться спать, day off — выходной."
+      "explanation": "Базовые коллокации дня: have breakfast (самая частая коллокация), go to bed — ложиться спать, day off — выходной."
      }
     },
     {
@@ -4714,7 +4906,17 @@
       "explanation": "My typical day is busy, but I always find time to relax — мой типичный день насыщенный, но я всегда нахожу время отдохнуть."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 40,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -4727,13 +4929,7 @@
     "ru": "Продукты, some и any, вопрос о наличии",
     "en": "Food words, some and any, asking what the shop has"
    },
-   "order": 1,
-   "published": true,
    "estimatedMinutes": 10,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.001.t1",
@@ -4842,7 +5038,17 @@
       "explanation": "Do you have any fresh bread? — «У вас есть свежий хлеб?» Универсальная фраза для любого продукта: подставляй нужное слово вместо bread."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 1,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -4855,13 +5061,7 @@
     "ru": "How much is/are, числа 13/30, цены на слух",
     "en": "How much is/are, tricky numbers, hearing prices"
    },
-   "order": 2,
-   "published": true,
    "estimatedMinutes": 11,
-   "type": "grammar",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.002.t1",
@@ -4953,7 +5153,7 @@
        }
       ],
       "hint": "-teen — числа 13–19, -ty — десятки.",
-      "explanation": "ThirTEEN (13) и THIRty (30) различаются ударением и концовкой: -teen — ударное и длинное, -ty — короткое. Продавцы путают их специально редко, а покупатели — часто."
+      "explanation": "ThirTEEN (13) и THIRty (30) различаются ударением и концовкой: -teen — ударное и длинное, -ty — короткое. Эти пары легко перепутать на слух — переспрашивай цену, если не уверен."
      }
     },
     {
@@ -4967,7 +5167,17 @@
       "explanation": "How much is this, please? — «Сколько это стоит?» Работает с любым товаром: просто покажи на него."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 2,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -4980,13 +5190,7 @@
     "ru": "Названия одежды, размеры S/M/L, look for",
     "en": "Clothes words, sizes, looking for things"
    },
-   "order": 3,
-   "published": true,
    "estimatedMinutes": 11,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.003.t1",
@@ -5093,7 +5297,17 @@
       "explanation": "Do you have this in a medium? — «А есть это в размере M?» Так же спрашивают про цвет: Do you have this in black?"
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 3,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -5106,13 +5320,7 @@
     "ru": "this/that/these/those, try on, fit",
     "en": "this/that/these/those, trying clothes on"
    },
-   "order": 4,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.004.t1",
@@ -5201,7 +5409,17 @@
       "explanation": "These jeans fit me well — «Эти джинсы мне хорошо подходят». Fit — про размер, suit — про стиль: This colour suits you."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 4,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -5214,13 +5432,7 @@
     "ru": "pay by card / in cash, сдача и чек",
     "en": "Paying by card or in cash, change and receipts"
    },
-   "order": 5,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.005.t1",
@@ -5332,7 +5544,17 @@
       "explanation": "I'd like to pay by card, please — вежливый способ сказать «я буду платить картой». I'd like мягче, чем I want."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 5,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -5345,13 +5567,7 @@
     "ru": "on sale, 50% off, дёшево и дорого",
     "en": "Sales, percent off, cheap and expensive"
    },
-   "order": 6,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.006.t1",
@@ -5377,7 +5593,10 @@
       "answer": "sale",
       "hint": "Устойчивое выражение с on: товары стали дешевле.",
       "explanation": "On sale = со скидкой, на распродаже. Не путай с for sale — «продаётся» (например, дом).",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "offer"
+      ]
      }
     },
     {
@@ -5457,7 +5676,17 @@
       "explanation": "Is there a discount on this? — «На это есть скидка?» Скидка на что-то = discount on something."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 6,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -5470,13 +5699,7 @@
     "ru": "return, refund, exchange, чек при возврате",
     "en": "Returns, refunds, exchanges, receipts"
    },
-   "order": 7,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.007.t1",
@@ -5516,7 +5739,7 @@
        "a",
        "refund",
        "without",
-       "the",
+       "a",
        "receipt",
        "?"
       ],
@@ -5533,7 +5756,9 @@
        "I want to return these trousers.",
        "I'd like to return these trousers.",
        "I would like to return these trousers.",
-       "I want to return these pants."
+       "I want to return these pants.",
+       "I'd like to return these pants",
+       "I would like to return these pants"
       ],
       "hint": "Брюки — множественное число: «эти», не «эта».",
       "explanation": "I want to return these trousers. Trousers всегда во множественном числе, поэтому these. В американском английском брюки — pants."
@@ -5569,7 +5794,17 @@
       "explanation": "Can I exchange it? — «Можно обменять?» Exchange — обмен товара, refund — возврат денег: разные просьбы на кассе."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 7,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -5582,13 +5817,7 @@
     "ru": "Корзина, доставка, наличие товара",
     "en": "Cart, delivery, stock"
    },
-   "order": 8,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "vocabulary",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.008.t1",
@@ -5704,7 +5933,17 @@
       "explanation": "In three days = через три дня. Предлог in с будущим временем значит «через»: in an hour, in a week."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 8,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -5717,13 +5956,7 @@
     "ru": "Вес, килограммы, торг о цене",
     "en": "Weight, kilos, bargaining"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.009.t1",
@@ -5762,7 +5995,8 @@
       "question": "Переведи: «Сколько стоит килограмм помидоров?»",
       "expected": [
        "How much is a kilo of tomatoes?",
-       "How much does a kilo of tomatoes cost?"
+       "How much does a kilo of tomatoes cost?",
+       "How much is a kilogram of tomatoes?"
       ],
       "hint": "Цена — значит much; килограмм чего-то — через of.",
       "explanation": "How much is a kilo of tomatoes? Конструкция «a kilo of + продукт» — главный шаблон рынка."
@@ -5815,7 +6049,17 @@
       "explanation": "Too expensive — «слишком дорого». Can you do four euros? — разговорный способ предложить свою цену; do здесь = «согласиться на»."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.shopping",
@@ -5828,13 +6072,7 @@
     "ru": "Большой диалог: выбор, примерка, скидка, оплата",
     "en": "A full shopping dialogue: choosing, trying on, paying"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.shopping.010.t1",
@@ -5925,7 +6163,9 @@
        "I'll pay in cash.",
        "I will pay in cash.",
        "I'll pay cash.",
-       "I will pay cash."
+       "I will pay cash.",
+       "I'll pay with cash",
+       "I will pay with cash"
       ],
       "hint": "Будущее время + предлог из урока про оплату.",
       "explanation": "I'll pay in cash. Сокращение I'll = I will. Наличными — in cash (или разговорное pay cash без предлога)."
@@ -5942,7 +6182,17 @@
       "explanation": "I'll take it — «Я это беру», стандартная фраза решения о покупке. Дальше сразу вопрос об оплате: Can I pay by card?"
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -5955,13 +6205,7 @@
     "ru": "Собираем чемодан и покупаем билеты: базовая лексика и просьбы с can",
     "en": "Pack your suitcase and buy tickets: key words and requests with can"
    },
-   "order": 1,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.001.t1",
@@ -5987,7 +6231,10 @@
       "answer": "in",
       "hint": "Предлог со значением «внутри чего-то».",
       "explanation": "Внутри сумки — in my bag. Предлог in используется, когда предмет находится внутри: in the bag, in the pocket.",
-      "caseInsensitive": true
+      "caseInsensitive": true,
+      "accept": [
+       "inside"
+      ]
      }
     },
     {
@@ -6033,11 +6280,13 @@
        "can",
        "buy",
        "tickets",
-       "online",
+       "on",
+       "the",
+       "website",
        "."
       ],
       "hint": "Подлежащее → can → глагол → дополнение → обстоятельство.",
-      "explanation": "We can buy tickets online. — Мы можем купить билеты онлайн. Can ставится сразу после подлежащего, перед основным глаголом."
+      "explanation": "We can buy tickets on the website — «мы можем купить билеты на сайте»."
      }
     },
     {
@@ -6065,7 +6314,17 @@
       "explanation": "Can I buy...? — универсальная вежливая просьба. Please в конце делает её ещё вежливее."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 1,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6078,13 +6337,7 @@
     "ru": "Стойка регистрации: сдаём багаж и просим место у окна",
     "en": "At the check-in desk: drop your luggage and ask for a window seat"
    },
-   "order": 2,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.002.t1",
@@ -6140,14 +6393,13 @@
        "Where",
        "can",
        "we",
-       "check",
-       "in",
+       "leave",
        "our",
        "luggage",
        "?"
       ],
       "hint": "Вопросительное слово → can → подлежащее → глагол.",
-      "explanation": "Where can we check in our luggage? — Где мы можем сдать багаж? После вопросительного слова идёт can, потом подлежащее."
+      "explanation": "Where can we leave our luggage? — «где можно оставить багаж?» Порядок вопроса: слово-вопрос + can + подлежащее + глагол."
      }
     },
     {
@@ -6175,7 +6427,17 @@
       "explanation": "Can I have a window seat? Вежливее — Could I have... «Можно мне...» почти всегда переводится как Can/Could I have..."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 2,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6188,13 +6450,7 @@
     "ru": "Отвечаем на вопросы офицера и проходим досмотр без стресса",
     "en": "Answer the officer's questions and go through security"
    },
-   "order": 3,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.003.t1",
@@ -6306,7 +6562,17 @@
       "explanation": "I am here for tourism. — Я здесь с туристической целью. Предлог for указывает цель: for tourism, for business."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 3,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6319,13 +6585,7 @@
     "ru": "Находим место, просим воду и понимаем объявления экипажа",
     "en": "Find your seat, ask for water and understand cabin announcements"
    },
-   "order": 4,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.004.t1",
@@ -6432,7 +6692,17 @@
       "explanation": "I can't find my seat. Полная форма — cannot (пишется слитно). Место в самолёте, кино, поезде — seat, а не place."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 4,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6445,13 +6715,7 @@
     "ru": "Ресепшн: бронь, ключи и вопросы про завтрак",
     "en": "Reception: reservation, keys and breakfast questions"
    },
-   "order": 5,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.005.t1",
@@ -6542,7 +6806,17 @@
       "explanation": "Can we have breakfast in the room? — Можно нам завтрак в номер? Have breakfast — устойчивое сочетание «завтракать»."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 5,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6555,13 +6829,7 @@
     "ru": "Что есть в номере и как пожаловаться на проблему",
     "en": "What is in the room and how to report a problem"
    },
-   "order": 6,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.006.t1",
@@ -6576,7 +6844,7 @@
       ],
       "correctIndex": 1,
       "hint": "Смотри на первое существительное после пропуска — оно во множественном числе.",
-      "explanation": "There are two beds... — форма are, потому что first noun (two beds) во множественном числе. «There is two beds» — очень частая ошибка."
+      "explanation": "There are two beds... — форма are, потому что первое существительное (two beds) во множественном числе. «There is two beds» — очень частая ошибка."
      }
     },
     {
@@ -6621,7 +6889,7 @@
        }
       ],
       "hint": "Всё это можно найти (или не найти) в номере отеля.",
-      "explanation": "Товары номера: towel — полотенце, blanket — одеяло, pillow — подушка. Fridge — разговорное от refrigerator."
+      "explanation": "Предметы в номере: towel — полотенце, blanket — одеяло, pillow — подушка. Fridge — разговорное от refrigerator."
      }
     },
     {
@@ -6674,7 +6942,17 @@
       "explanation": "Is there a fridge in the room? В вопросе is и there меняются местами: There is → Is there...?"
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 6,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6687,13 +6965,7 @@
     "ru": "Автобус, метро и трамвай: покупаем билет и не проезжаем остановку",
     "en": "Bus, underground and tram: buy a ticket and get off at the right stop"
    },
-   "order": 7,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.007.t1",
@@ -6805,7 +7077,17 @@
       "explanation": "You can buy a ticket at the machine. — Билет можно купить в автомате. At the machine — у автомата, предлог точки."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 7,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6818,13 +7100,7 @@
     "ru": "Называем адрес, просим подождать и остановиться",
     "en": "Give the address, ask the driver to wait and to stop"
    },
-   "order": 8,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.008.t1",
@@ -6917,7 +7193,17 @@
       "explanation": "How much is the trip to the hotel? — Сколько стоит поездка до отеля? How much is...? — универсальный вопрос о цене."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 8,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -6930,13 +7216,7 @@
     "ru": "Гуляем по городу, просим сфотографировать и узнаём время экскурсии",
     "en": "Walk around the city, ask for a photo and find out the tour time"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.009.t1",
@@ -7043,7 +7323,17 @@
       "explanation": "Can we buy tickets here? Вопрос о возможности строится инверсией: Can + we + глагол. Слово «здесь» — here, в конце."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.travel",
@@ -7056,13 +7346,7 @@
     "ru": "Повторяем весь маршрут: отель, транспорт, просьбы и there is/are",
     "en": "Review the whole trip: hotel, transport, requests and there is/are"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.travel.010.t1",
@@ -7153,7 +7437,17 @@
       "explanation": "Thank you for your help! Have a nice day! — Спасибо за помощь! Хорошего дня! Идеальное завершение любого разговора в путешествии."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -7166,13 +7460,7 @@
     "ru": "Первый день в офисе: представься и познакомься с командой",
     "en": "Your first day at the office: introduce yourself and meet the team"
    },
-   "order": 1,
-   "published": true,
    "estimatedMinutes": 10,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.001.t1",
@@ -7280,7 +7568,17 @@
       "explanation": "Кейт говорит: I'm Kate, the new office manager — она новый офис-менеджер."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 1,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -7293,13 +7591,7 @@
     "ru": "Расскажи о своём распорядке: когда начинаешь, что делаешь, когда заканчиваешь",
     "en": "Talk about your routine: when you start, what you do, when you finish"
    },
-   "order": 2,
-   "published": true,
    "estimatedMinutes": 11,
-   "type": "grammar",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.002.t1",
@@ -7390,7 +7682,17 @@
       "explanation": "Start — начинать, finish — заканчивать. С I глагол идёт без окончания."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 2,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -7403,13 +7705,7 @@
     "ru": "Слова про задачи, отчёты и сроки + окончание -s у глаголов",
     "en": "Words for tasks, reports and deadlines + the -s ending"
    },
-   "order": 3,
-   "published": true,
    "estimatedMinutes": 11,
-   "type": "vocabulary",
-   "difficulty": "easy",
-   "xpReward": 25,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.003.t1",
@@ -7516,7 +7812,17 @@
       "explanation": "I need to + глагол — «мне нужно что-то сделать». Очень частая рабочая конструкция."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 3,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "easy",
+   "tags": [],
+   "xpReward": 25,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -7529,19 +7835,13 @@
     "ru": "Вопросы с do/does: когда встреча, кто приходит, во сколько начало",
     "en": "Questions with do/does: when is the meeting, who comes, what time it starts"
    },
-   "order": 4,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "grammar",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.004.t1",
      "type": "choice",
      "data": {
-      "question": "Спроси про командную встречу: ___ the team meet on Mondays?",
+      "question": "Спроси про встречу с руководителем: ___ your manager meet the team on Mondays?",
       "options": [
        "Is",
        "Are",
@@ -7550,7 +7850,7 @@
       ],
       "correctIndex": 3,
       "hint": "В предложении есть смысловой глагол meet, а подлежащее — единственное число.",
-      "explanation": "Вопрос в Present Simple строится через do/does. Team — единственное число, поэтому Does the team meet...? Is/Are здесь не нужны: уже есть глагол meet."
+      "explanation": "Вопрос в Present Simple строится через do/does. Your manager — единственное число, поэтому Does your manager meet...? Is/Are здесь не нужны: уже есть глагол meet."
      }
     },
     {
@@ -7625,7 +7925,17 @@
       "explanation": "Do you have...? — универсальный вопрос «у тебя есть...?». В конце вопроса интонация идёт вверх."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 4,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -7638,13 +7948,7 @@
     "ru": "Рабочая переписка и телефон: пиши, отвечай, перезванивай",
     "en": "Work correspondence and phone: write, reply, call back"
    },
-   "order": 5,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.005.t1",
@@ -7722,7 +8026,7 @@
        "no"
       ],
       "correctIndex": 2,
-      "hint": "Нужно наречие частотности со значением «никогда» — одно слово, без двойного отрицания.",
+      "hint": "Английское отрицание не удваивается: одно из наречий уже отрицательное само по себе, вспомогательный don’t ему не нужен.",
       "explanation": "I never write letters — «я никогда не пишу письма». Never само по себе отрицание, добавлять don't нельзя: «don't never» — типичная русская калька с двойным отрицанием."
      }
     },
@@ -7754,7 +8058,17 @@
       "explanation": "Thank you for your email — вежливая формула, с которой часто начинают ответ на письмо. После for идёт существительное."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 5,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -7767,13 +8081,7 @@
     "ru": "Вежливые просьбы с can и could: попроси коллегу помочь",
     "en": "Polite requests with can and could: ask a colleague for help"
    },
-   "order": 6,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "conversation",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.006.t1",
@@ -7798,7 +8106,9 @@
       "text": "I need this file today. ____ you help me, please?",
       "answer": "Could",
       "accept": [
-       "Can"
+       "Can",
+       "Would",
+       "Will"
       ],
       "hint": "Начни вопрос с модального глагола вежливой просьбы.",
       "explanation": "Could you help me, please? / Can you help me, please? — обе формы правильные, could звучит вежливее.",
@@ -7859,7 +8169,7 @@
       "question": "Что коллега отвечает на просьбу?",
       "options": [
        "He needs help",
-       "He can't help now",
+       "He can't help today",
        "He is at lunch",
        "He can help"
       ],
@@ -7868,7 +8178,17 @@
       "explanation": "Of course I can help you — «конечно, я могу помочь». Give me five minutes — «дай мне пять минут», то есть он поможет чуть позже, но поможет."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 6,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -7881,13 +8201,7 @@
     "ru": "Обеденный перерыв, кофе и разговоры на кухне",
     "en": "Lunch break, coffee and small talk in the office kitchen"
    },
-   "order": 7,
-   "published": true,
    "estimatedMinutes": 12,
-   "type": "vocabulary",
-   "difficulty": "medium",
-   "xpReward": 30,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.007.t1",
@@ -7997,7 +8311,17 @@
       "explanation": "Let's + глагол — «давай что-то сделаем». Have lunch — обедать, together — вместе."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 7,
+   "requiresPro": false,
+   "type": "vocabulary",
+   "difficulty": "medium",
+   "tags": [],
+   "xpReward": 30,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -8010,13 +8334,7 @@
     "ru": "Расскажи, как идёт работа: что делаешь регулярно и как часто",
     "en": "Say how work is going: what you do regularly and how often"
    },
-   "order": 8,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "grammar",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.008.t1",
@@ -8092,22 +8410,32 @@
      "ref": "a1.workplace.008.t6",
      "type": "listen",
      "data": {
-      "audioKey": "a1.workplace.008.t6.project-well",
-      "transcript": "The project goes well. We usually finish our tasks on time.",
+      "audioKey": "a1.workplace.008.t6.project-going-well",
+      "transcript": "The project is going well. We usually finish our tasks on time.",
       "translation": "Проект идёт хорошо. Мы обычно заканчиваем задачи вовремя.",
       "question": "Как идёт проект?",
       "options": [
-       "It goes badly",
-       "It goes well",
+       "It is going badly",
+       "It is going well",
        "It is late",
        "It is finished"
       ],
       "correctIndex": 1,
       "hint": "Оценка проекта звучит в первом предложении.",
-      "explanation": "The project goes well — «проект идёт хорошо». Goes well / goes badly — устойчивые способы сказать, как идут дела."
+      "explanation": "The project is going well — «проект идёт хорошо»: о текущем состоянии говорим в Present Continuous."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 8,
+   "requiresPro": false,
+   "type": "grammar",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -8120,13 +8448,7 @@
     "ru": "Что-то сломалось или непонятно: скажи о проблеме и попроси её решить",
     "en": "Something is broken or unclear: report the problem and ask for a fix"
    },
-   "order": 9,
-   "published": true,
    "estimatedMinutes": 13,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.009.t1",
@@ -8233,7 +8555,17 @@
       "explanation": "I have a problem with... — «у меня проблема с...». После with называем то, что сломалось."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 9,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   },
   {
    "moduleRef": "a1.workplace",
@@ -8246,13 +8578,7 @@
     "ru": "Финальный урок: собираем лексику и грамматику уроков 1–9 в один рабочий день",
     "en": "Final lesson: put the words and grammar of lessons 1-9 into one office day"
    },
-   "order": 10,
-   "published": true,
    "estimatedMinutes": 14,
-   "type": "conversation",
-   "difficulty": "hard",
-   "xpReward": 35,
-   "hasAudio": true,
    "tasks": [
     {
      "ref": "a1.workplace.010.t1",
@@ -8338,7 +8664,7 @@
       "audioKey": "a1.workplace.010.t5.go-home",
       "transcript": "It's five o'clock. I finish my tasks and go home. See you tomorrow!",
       "translation": "Пять часов. Я заканчиваю свои задачи и иду домой. До завтра!",
-      "question": "Что сейчас делает говорящий?",
+      "question": "Что говорящий делает в пять часов?",
       "options": [
        "He starts work",
        "He goes home",
@@ -8361,7 +8687,17 @@
       "explanation": "See you at the meeting tomorrow — «увидимся завтра на встрече». See you + место/время — универсальное прощание."
      }
     }
-   ]
+   ],
+   "taskTypes": [],
+   "published": true,
+   "order": 10,
+   "requiresPro": false,
+   "type": "conversation",
+   "difficulty": "hard",
+   "tags": [],
+   "xpReward": 35,
+   "hasAudio": true,
+   "hasVideo": false
   }
  ]
 }
