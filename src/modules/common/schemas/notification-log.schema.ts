@@ -2,6 +2,8 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
 export type NotificationType =
+  | 'subscription_expiring'
+  | 'subscription_expired'
   | 'daily_reminder'
   | 'lead_followup'
   | 'onboarding_nudge'

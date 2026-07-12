@@ -14,6 +14,7 @@ import {
   NotificationLogDocument,
   NotificationType,
 } from '../common/schemas/notification-log.schema';
+import { Entitlement, EntitlementDocument } from '../common/schemas/entitlement.schema';
 
 const TZ = 'Europe/Moscow';
 const MSK_OFFSET_MS = 3 * 60 * 60 * 1000; // МСК = UTC+3, без переходов
@@ -42,6 +43,8 @@ export class NotificationsService {
     private readonly ulpModel: Model<UserLessonProgressDocument>,
     @InjectModel(NotificationLog.name)
     private readonly logModel: Model<NotificationLogDocument>,
+    @InjectModel(Entitlement.name)
+    private readonly entitlementModel: Model<EntitlementDocument>,
   ) {
     const flag = process.env.NOTIFICATIONS_ENABLED;
     const isProd = (config.get<string>('app.nodeEnv') || 'development') === 'production';
@@ -71,6 +74,12 @@ export class NotificationsService {
   async hourlyJobs() {
     await this.runLeadFollowups();
     await this.runOnboardingNudges();
+  }
+
+  @Cron('0 12 * * *', { timeZone: TZ })
+  async subscriptionLifecycle() {
+    await this.runSubscriptionExpiring().catch((e) => this.logger.error('subscription_expiring failed', e));
+    await this.runSubscriptionExpired().catch((e) => this.logger.error('subscription_expired failed', e));
   }
 
   @Cron('0 20 * * *', { timeZone: TZ })
@@ -286,6 +295,63 @@ export class NotificationsService {
       this.logger.warn(`Push HTTP failed for ${payload.userId}: ${e?.message}`);
       return false;
     }
+  }
+
+  /** Подписка истекает в ближайшие 3 дня → напомнить продлить (once per endsAt-день). */
+  private async runSubscriptionExpiring() {
+    if (!this.enabled) return;
+    const now = new Date();
+    // окно ровно одного дня (2–3 дня до конца) → одно напоминание на одно истечение
+    const in2d = new Date(now.getTime() + 2 * 24 * 60 * 60 * 1000);
+    const in3d = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000);
+    const expiring = await this.entitlementModel
+      .find({ endsAt: { $gt: in2d, $lte: in3d }, userId: { $not: /^em_/ } })
+      .lean();
+    if (!expiring.length) return;
+
+    const targets: PushPayload[] = [];
+    const seen = new Set<string>();
+    for (const e of expiring) {
+      if (seen.has(e.userId)) continue;
+      seen.add(e.userId);
+      targets.push({
+        userId: e.userId,
+        text: '⏳ <b>Подписка заканчивается через 3 дня.</b>\nПродли сейчас — и уроки, словарь и повторение останутся с тобой без перерыва.',
+        buttonText: '🔓 Продлить подписку',
+        deepLink: 'paywall',
+      });
+    }
+    // dayKey от endsAt-дня: одно напоминание на одно истечение
+    await this.dispatch('subscription_expiring', this.mskDayKey(now), targets);
+  }
+
+  /** Подписка истекла за последние 2 дня и активной нет → winback со скидкой. */
+  private async runSubscriptionExpired() {
+    if (!this.enabled) return;
+    const now = new Date();
+    const twoDaysAgo = new Date(now.getTime() - 2 * 24 * 60 * 60 * 1000);
+    const lapsed = await this.entitlementModel
+      .find({ endsAt: { $gt: twoDaysAgo, $lte: now }, userId: { $not: /^em_/ } })
+      .lean();
+    if (!lapsed.length) return;
+
+    // исключаем тех, у кого есть другая активная подписка
+    const userIds = Array.from(new Set(lapsed.map((e) => e.userId)));
+    const stillActive = await this.entitlementModel
+      .find({ userId: { $in: userIds }, endsAt: { $gt: now } })
+      .distinct('userId');
+    const activeSet = new Set(stillActive.map(String));
+
+    const targets: PushPayload[] = userIds
+      .filter((u) => !activeSet.has(String(u)))
+      .map((u) => ({
+        userId: u,
+        text: '💤 <b>Подписка закончилась.</b>\nПрогресс и серия на месте. Вернись сейчас — для тебя действует персональная скидка на продление.',
+        buttonText: '🎁 Вернуться со скидкой',
+        deepLink: 'paywall',
+      }));
+
+    await this.dispatch('subscription_expired', this.mskDayKey(now), targets);
   }
 
   // ---------- Утилиты ----------

@@ -83,6 +83,14 @@ export class PricingService {
 
     if (user.isFirstOpen) return 'new_user';
     if (user.subscriptionExpired) return 'premium_trial';
+
+    // Winback-когорты: считаем по последней активности (lastActiveDate = user.updatedAt)
+    const idleDays = user.lastActiveDate
+      ? (Date.now() - new Date(user.lastActiveDate).getTime()) / (24 * 60 * 60 * 1000)
+      : 0;
+    if (idleDays > 30 && (user.lessonCount || 0) > 0) return 'churned';
+    if (idleDays > 7 && (user.lessonCount || 0) <= 2) return 'low_engagement';
+
     if ((user.lessonCount || 0) > 20) return 'high_engagement';
     return 'default';
   }
