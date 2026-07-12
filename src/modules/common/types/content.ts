@@ -24,6 +24,8 @@ export interface ModuleItem {
     userId: string;
     name?: string;
   };
+  /** Сколько первых уроков модуля бесплатны (null = весь модуль бесплатный) */
+  freeUntilOrder?: number | null;
   progress?: ModuleProgress;  // вычисляется для текущего userId
 }
 
@@ -64,6 +66,10 @@ export interface LessonItem {
   previewText?: string;
   taskTypes?: TaskType[];
   progress?: LessonProgress;
+  /** Замок для текущего пользователя (вычисляется сервером в списке уроков) */
+  isLocked?: boolean;
+  lockReason?: 'pro' | 'sequence';
+  unlockCondition?: string;
   tasks?: Task[]; // для detailed
 }
 

@@ -26,6 +26,7 @@ export function presentModule(
     // Используем переданные значения, если они есть, иначе вычисляем из схемы
     requiresPro: doc.requiresPro !== undefined ? !!doc.requiresPro : false,
     isAvailable: doc.isAvailable !== undefined ? doc.isAvailable : true,
+    freeUntilOrder: (doc as any).freeUntilOrder ?? null,
     author: doc.author,
     progress,
   };
@@ -37,7 +38,8 @@ export function presentLesson(
   progress?: Partial<{
     status: 'completed'|'in_progress'|'not_started';
     score: number; attempts: number; completedAt?: Date; timeSpent?: number;
-  }>
+  }>,
+  lock?: { isLocked: boolean; lockReason?: 'pro' | 'sequence'; unlockCondition?: string },
 ): LessonItem {
   const taskTypes: TaskType[] = doc.taskTypes
     ? (doc.taskTypes as TaskType[])
@@ -66,5 +68,6 @@ export function presentLesson(
       completedAt: progress.completedAt?.toISOString(),
       timeSpent: progress.timeSpent ?? 0,
     },
+    ...(lock ? { isLocked: lock.isLocked, lockReason: lock.lockReason, unlockCondition: lock.unlockCondition } : {}),
   };
 }

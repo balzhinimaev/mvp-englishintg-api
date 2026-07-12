@@ -35,7 +35,7 @@ export class ContentService {
    * PRO-доступ определяется НАЛИЧИЕМ активной подписки (endsAt > now),
    * а не флагом user.pro.active (который раньше выставлялся навсегда и не сбрасывался).
    */
-  private async hasActivePro(userId: string): Promise<boolean> {
+  async hasActivePro(userId: string): Promise<boolean> {
     const active = await this.entitlementModel
       .findOne({ userId: String(userId), endsAt: { $gt: new Date() } })
       .lean();

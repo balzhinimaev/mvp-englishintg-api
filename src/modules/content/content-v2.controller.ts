@@ -11,6 +11,7 @@ import { LessonMapper } from '../common/utils/mappers';
 import { parseLanguage } from '../common/utils/i18n.util';
 import { isValidLessonRef } from '../common/utils/lesson-ref';
 import { presentLesson, presentModule } from './presenter';
+import { ContentService } from './content.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { LessonPrerequisiteGuard } from './guards/lesson-prerequisite.guard';
 import { GetModulesDto } from './dto/get-content.dto';
@@ -21,6 +22,7 @@ import { LessonItemDto } from './dto/lesson-item.dto';
 @ApiExtraModels(LessonItemDto)
 export class ContentV2Controller {
   constructor(
+    private readonly contentService: ContentService,
     @InjectModel(CourseModule.name) private moduleModel: Model<CourseModuleDocument>,
     @InjectModel(Lesson.name) private lessonModel: Model<LessonDocument>,
     @InjectModel(UserLessonProgress.name) private progressModel: Model<UserLessonProgressDocument>,
@@ -67,9 +69,8 @@ export class ContentV2Controller {
 
     const countsMap = new Map(lessonCounts.map((x: any) => [x._id, x.total]));
     
-    // Получаем информацию о пользователе для проверки PRO подписки
-    const user = await this.userModel.findOne({ userId: String(userId) }).lean();
-    const hasProAccess = user?.pro?.active === true;
+    // PRO — по активному entitlement (endsAt > now), а не по стейл-флагу user.pro.active
+    const hasProAccess = await this.contentService.hasActivePro(String(userId));
 
     // Получаем прогресс пользователя по модулям
     const byModule = await this.progressModel.aggregate([
@@ -86,12 +87,10 @@ export class ContentV2Controller {
       const total = countsMap.get(m.moduleRef) || 0;
       const pr = progresses.get(m.moduleRef) || { completed: 0, inProgress: 0 };
       
-      // Вычисляем requiresPro: первый модуль каждого уровня бесплатный, остальные требуют PRO
-      const order = m.order || 0;
-      const requiresPro = m.requiresPro ?? (order > 1);
-      
-      // Вычисляем isAvailable на основе requiresPro и прав доступа
-      const isAvailable = m.isAvailable ?? (!requiresPro || hasProAccess);
+      // requiresPro — только явный флаг модуля; частично бесплатные модули (freeUntilOrder)
+      // доступны для входа, замок живёт на уровне уроков
+      const requiresPro = m.requiresPro === true;
+      const isAvailable = hasProAccess || !requiresPro;
       
       // Создаем объект модуля с правильными значениями
       const moduleData = {
@@ -181,7 +180,33 @@ export class ContentV2Controller {
       .lean();
 
     const progressMap = new Map(progresses.map((p: any) => [p.lessonRef, p]));
-    return { lessons: lessons.map(l => presentLesson(l as any, lang, progressMap.get(l.lessonRef))) };
+
+    // Замки для текущего пользователя. Семантика зеркалит canStartLesson:
+    // PRO — всё открыто; free — уроки выше freeUntilOrder модуля (или с requiresPro)
+    // требуют подписку, остальные открываются последовательно.
+    const hasPro = await this.contentService.hasActivePro(String(userId));
+    const moduleDoc = await this.moduleModel.findOne({ moduleRef }).lean();
+    const freeUntil: number | null = (moduleDoc as any)?.freeUntilOrder ?? null;
+
+    const sorted = [...lessons].sort((a: any, b: any) => (a.order || 0) - (b.order || 0));
+    let prevCompleted = true; // для первого урока предыдущего нет
+    const presented = sorted.map((l: any) => {
+      const progress = progressMap.get(l.lessonRef);
+      let lock: { isLocked: boolean; lockReason?: 'pro' | 'sequence'; unlockCondition?: string } = { isLocked: false };
+      if (!hasPro) {
+        const order = l.order || 0;
+        const proLocked = l.requiresPro === true || (freeUntil !== null && order > freeUntil);
+        if (proLocked) {
+          lock = { isLocked: true, lockReason: 'pro', unlockCondition: 'Доступно по подписке' };
+        } else if (!prevCompleted) {
+          lock = { isLocked: true, lockReason: 'sequence', unlockCondition: 'Сначала заверши предыдущий урок' };
+        }
+      }
+      prevCompleted = progress?.status === 'completed';
+      return presentLesson(l, lang, progress, lock);
+    });
+
+    return { lessons: presented };
   }
 
   @Get('lessons/:lessonRef')
